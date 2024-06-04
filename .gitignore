@@ -7,7 +7,7 @@ storage/
 
 data/
 node_modules/
-create_llama/
+# create_llama/
 ollama/
 
 !config/*
