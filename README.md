@@ -26,6 +26,8 @@ Then, access the Admin UI at http://localhost:8000/admin to configure your RAGap
 
 You can use hosted AI models from OpenAI or Gemini, and local models using [Ollama](https://ollama.com/).
 
+> _Note_: To avoid [running into any errors](https://github.com/ragapp/ragapp/issues/22), we recommend using the latest version of Docker and (if needed) Docker Compose.
+
 ## Endpoints
 
 The docker container exposes the following endpoints:
@@ -65,6 +67,8 @@ MODEL=llama3 OLLAMA_BASE_URL=http://host.docker.internal:11434 docker-compose up
 
 This is necessary if you're running RAGapp on macOS, as Docker for Mac does not support GPU acceleration.
 
+To enable Docker access to NVIDIA GPUs on Linux, [install the NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html).
+
 ### Kubernetes
 
 It's easy to deploy RAGapp in your own cloud infrastructure. Customized K8S deployment descriptors are coming soon.
@@ -82,3 +86,7 @@ make dev
 ## Contact
 
 Questions, feature requests or found a bug? [Open an issue](https://github.com/ragapp/ragapp/issues/new/choose) or reach out to [marcusschiesser](https://github.com/marcusschiesser).
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=ragapp/ragapp&type=Date)](https://star-history.com/#ragapp/ragapp&Date)
