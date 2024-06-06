@@ -37,7 +37,7 @@ export function ChatEvents({
         </CollapsibleTrigger>
         <CollapsibleContent asChild>
           <div className="mt-4 text-sm space-y-2">
-            {data.map((eventItem, index) => (
+            {data.map((eventItem: EventData, index: number) => (
               <div key={index}>{eventItem.title}</div>
             ))}
           </div>

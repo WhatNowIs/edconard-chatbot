@@ -1,6 +1,5 @@
 import Fuse from "fuse.js";
 import { DocumentColorEnum, highlightColors } from "./colors";
-
 interface WordData {
   text: string;
   spanIdx: number;

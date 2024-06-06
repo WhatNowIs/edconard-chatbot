@@ -1,11 +1,12 @@
 import { Check, Copy } from "lucide-react";
 import { useMemo } from "react";
 import { Button } from "../button";
-import { HoverCard, HoverCardContent, HoverCardTrigger } from "../hover-card";
 import { getStaticFileDataUrl } from "../lib/url";
 import { SourceData, SourceNode } from "./index";
 import { useCopyToClipboard } from "./use-copy-to-clipboard";
 import PdfDialog from "./widgets/PdfDialog";
+import { DocumentColorEnum } from "@/app/utils/colors";
+import CitationDisplay from "./widgets/citation-display";
 
 const SCORE_THRESHOLD = 0.3;
 
@@ -28,6 +29,8 @@ type NodeInfo = {
   type: NODE_TYPE;
   path?: string;
   url?: string;
+  page_number: number;
+  text: string;
 };
 
 function getNodeInfo(node: SourceNode): NodeInfo {
@@ -38,6 +41,8 @@ function getNodeInfo(node: SourceNode): NodeInfo {
       type: NODE_TYPE.URL,
       path: url,
       url,
+      text: node.text,
+      page_number: node.metadata?.page_label as number
     };
   }
   if (typeof node.metadata["file_path"] === "string") {
@@ -47,16 +52,21 @@ function getNodeInfo(node: SourceNode): NodeInfo {
       type: NODE_TYPE.FILE,
       path: node.metadata["file_path"],
       url: getStaticFileDataUrl(fileName),
+      text: node.text,
+      page_number: node.metadata?.page_label as number
     };
   }
 
   return {
     id: node.id,
     type: NODE_TYPE.UNKNOWN,
+    text: node.text,
+    page_number: node.metadata?.page_label as number
   };
 }
 
 export function ChatSources({ data }: { data: SourceData }) {
+
   const sources: NodeInfo[] = useMemo(() => {
     // aggregate nodes by url or file_path (get the highest one by score)
     const nodesByPath: { [path: string]: NodeInfo } = {};
@@ -80,7 +90,7 @@ export function ChatSources({ data }: { data: SourceData }) {
   return (
     <div className="space-x-2 text-sm">
       <span className="font-semibold">Sources:</span>
-      <div className="inline-flex gap-1 items-center">
+      <div className="inline-flex gap-1 items-center w-full max-w-[600px]">
         {sources.map((nodeInfo: NodeInfo, index: number) => {
           if (nodeInfo.path?.endsWith(".pdf")) {
             return (
@@ -95,14 +105,21 @@ export function ChatSources({ data }: { data: SourceData }) {
           }
           return (
             <div key={nodeInfo.id}>
-              <HoverCard>
+              <CitationDisplay citation={{
+                  documentId: nodeInfo.id,
+                  snippet: nodeInfo.text,
+                  pageNumber: nodeInfo.page_number,
+                  color: DocumentColorEnum.teal,              
+                  ticker: ''
+                }}/>
+              {/* <HoverCard>
                 <HoverCardTrigger>
                   <SourceNumberButton index={index} />
                 </HoverCardTrigger>
                 <HoverCardContent className="w-[320px]">
                   <NodeInfo nodeInfo={nodeInfo} />
                 </HoverCardContent>
-              </HoverCard>
+              </HoverCard> */}
             </div>
           );
         })}
@@ -123,7 +140,9 @@ function NodeInfo({ nodeInfo }: { nodeInfo: NodeInfo }) {
           <span>{nodeInfo.path}</span>
         </a>
         <Button
-          onClick={() => copyToClipboard(nodeInfo.path!)}
+          onClick={() => {
+            copyToClipboard(nodeInfo.path!);
+          }}
           size="icon"
           variant="ghost"
           className="h-12 w-12 shrink-0"
