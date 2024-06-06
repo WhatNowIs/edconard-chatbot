@@ -1,4 +1,3 @@
-from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 from typing import List, Any, Optional, Dict, Tuple
 from fastapi import APIRouter, Depends, HTTPException, Request, status
@@ -146,17 +145,4 @@ async def chat_request(
     return _Result(
         result=_Message(role=MessageRole.ASSISTANT, content=response.response),
         nodes=_SourceNodes.from_source_nodes(response.source_nodes),
-    )
-
-# non-streaming endpoint - delete if not needed
-@r.get("/test")
-async def chat_request() -> _Result:
-    """
-    This is a test for a new endpoint
-    """
-    return JSONResponse(
-        status_code=200,
-        content={
-            "message": "Successfully reached the test endpoint",
-        }
     )

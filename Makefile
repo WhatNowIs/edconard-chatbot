@@ -24,7 +24,8 @@ create-llama-app:
 	rm -rf create_llama/backend/.env
 	rm -rf create_llama/frontend/.env
 
-patch-chat: create-llama-app
+patch-chat: 
+	# create-llama-app
 	cp -r ./patch/* ./create_llama/
 
 build-chat: patch-chat

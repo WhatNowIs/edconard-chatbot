@@ -1,0 +1,4 @@
+
+export const OBSERVER_THRESHOLD_PERCENTAGE = 0.4;
+
+export const PDF_HEADER_SIZE_PX = 44;
