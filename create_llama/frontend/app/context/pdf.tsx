@@ -1,5 +1,5 @@
-import { Citation } from "@/types/thread";
 import React, { createContext, useState, useContext } from "react";
+import { Citation } from "../types/threads";
 
 interface PdfFocusState {
   documentId: string;
