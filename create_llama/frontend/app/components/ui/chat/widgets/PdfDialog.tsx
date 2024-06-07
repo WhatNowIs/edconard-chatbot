@@ -1,4 +1,3 @@
-import { PdfFocusProvider } from "@/app/context/pdf";
 import { Button } from "../../button";
 import {
   Drawer,
@@ -43,14 +42,12 @@ export default function PdfDialog(props: PdfDialogProps) {
           </DrawerClose>
         </DrawerHeader>
         <div className="m-4">
-          <PdfFocusProvider>
             <ViewPdf
               file={{
                 id: props.documentId,
                 url: props.url,
               }}
             />
-          </PdfFocusProvider>
         </div>
       </DrawerContent>
     </Drawer>
