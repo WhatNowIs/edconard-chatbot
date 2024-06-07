@@ -1,3 +1,5 @@
+'user client'
+
 import type { CSSProperties } from "react";
 
 import React, { useCallback, useState, useEffect, useRef, memo } from "react";
@@ -25,6 +27,11 @@ import "react-pdf/dist/esm/Page/TextLayer.css";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import { usePdfFocus } from "@/app/context/pdf";
 import { multiHighlight } from "@/app/utils/multi-line-highlight";
+
+// pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+//   'pdfjs-dist/build/pdf.worker.min.mjs',
+//   import.meta.url,
+// ).toString();
 // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access
 const pdfjsOptions = pdfjs.GlobalWorkerOptions;
 // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access
@@ -290,6 +297,7 @@ const VirtualizedPDF = forwardRef<PdfFocusHandler, VirtualizedPDFProps>(
           file={file.url}
           onLoadSuccess={onDocumentLoadSuccess}
           loading={loadingDiv}
+           
         >
           {pdf ? (
             <List

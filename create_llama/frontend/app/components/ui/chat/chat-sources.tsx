@@ -5,6 +5,7 @@ import { getStaticFileDataUrl } from "../lib/url";
 import { SourceData, SourceNode } from "./index";
 import { useCopyToClipboard } from "./use-copy-to-clipboard";
 import PdfDialog from "./widgets/PdfDialog";
+import { HoverCard, HoverCardContent, HoverCardTrigger } from "../hover-card";
 import { DocumentColorEnum } from "@/app/utils/colors";
 import CitationDisplay from "./widgets/citation-display";
 
@@ -97,7 +98,7 @@ export function ChatSources({ data }: { data: SourceData }) {
               <PdfDialog
                 key={nodeInfo.id}
                 documentId={nodeInfo.id}
-                url={nodeInfo.url!}
+                url={nodeInfo.url as string}
                 path={nodeInfo.path}
                 trigger={<SourceNumberButton index={index} />}
               />
@@ -105,21 +106,14 @@ export function ChatSources({ data }: { data: SourceData }) {
           }
           return (
             <div key={nodeInfo.id}>
-              <CitationDisplay citation={{
-                  documentId: nodeInfo.id,
-                  snippet: nodeInfo.text,
-                  pageNumber: nodeInfo.page_number,
-                  color: DocumentColorEnum.teal,              
-                  ticker: ''
-                }}/>
-              {/* <HoverCard>
+              <HoverCard>
                 <HoverCardTrigger>
                   <SourceNumberButton index={index} />
                 </HoverCardTrigger>
                 <HoverCardContent className="w-[320px]">
                   <NodeInfo nodeInfo={nodeInfo} />
                 </HoverCardContent>
-              </HoverCard> */}
+              </HoverCard>
             </div>
           );
         })}
@@ -142,6 +136,7 @@ function NodeInfo({ nodeInfo }: { nodeInfo: NodeInfo }) {
         <Button
           onClick={() => {
             copyToClipboard(nodeInfo.path!);
+            console.log("Clicked on Clipboard");
           }}
           size="icon"
           variant="ghost"

@@ -2,6 +2,7 @@
 
 import { useChat } from "ai/react";
 import { ChatInput, ChatMessages } from "./ui/chat";
+import { PdfFocusProvider } from "@/app/context/pdf";
 
 type ChatUILayout = "default" | "fit";
 
@@ -26,22 +27,24 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
   });
 
   return (
-    <div
-      className={`flex flex-col space-y-4 justify-between w-full pb-4 ${layout === "fit" ? "h-full p-2" : "max-w-5xl h-[50vh]"}`}
-    >
-      <ChatMessages
-        messages={messages}
-        isLoading={isLoading}
-        reload={reload}
-        stop={stop}
-      />
-      <ChatInput
-        input={input}
-        handleSubmit={handleSubmit}
-        handleInputChange={handleInputChange}
-        isLoading={isLoading}
-        multiModal={true}
-      />
-    </div>
+    <PdfFocusProvider>
+      <div
+        className={`flex flex-col space-y-4 justify-between w-full pb-4 ${layout === "fit" ? "h-full p-2" : "max-w-5xl h-[67vh]"}`}
+      >
+        <ChatMessages
+          messages={messages}
+          isLoading={isLoading}
+          reload={reload}
+          stop={stop}
+        />
+        <ChatInput
+          input={input}
+          handleSubmit={handleSubmit}
+          handleInputChange={handleInputChange}
+          isLoading={isLoading}
+          multiModal={true}
+        />
+      </div>
+    </PdfFocusProvider>
   );
 }
