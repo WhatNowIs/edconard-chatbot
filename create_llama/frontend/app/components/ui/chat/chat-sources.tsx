@@ -6,8 +6,6 @@ import { SourceData, SourceNode } from "./index";
 import { useCopyToClipboard } from "./use-copy-to-clipboard";
 import PdfDialog from "./widgets/PdfDialog";
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "../hover-card";
-import { DocumentColorEnum } from "@/app/utils/colors";
-import CitationDisplay from "./widgets/citation-display";
 
 const SCORE_THRESHOLD = 0.3;
 
