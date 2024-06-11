@@ -30,7 +30,7 @@ export const ViewPdf: React.FC<ViewPdfProps> = ({ file }) => {
   } = usePDFViewer();
 
   return (
-    <div className="relative">
+    <div className="flex flex-col">
       {scaleText && (
         <PDFOptionsBar
           scrolledIndex={scrolledIndex}

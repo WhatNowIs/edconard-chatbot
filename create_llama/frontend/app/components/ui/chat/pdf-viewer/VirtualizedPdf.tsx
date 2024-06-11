@@ -27,6 +27,8 @@ import "react-pdf/dist/esm/Page/TextLayer.css";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import { usePdfFocus } from "@/app/context/pdf";
 import { multiHighlight } from "@/app/utils/multi-line-highlight";
+import { Citation } from "@/app/types/threads";
+import { DocumentColorEnum } from "@/app/utils/colors";
 
 // pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 //   'pdfjs-dist/build/pdf.worker.min.mjs',
@@ -152,15 +154,18 @@ const PageRenderer: React.FC<PageRenderer> = ({
     debounce(() => {
       if (
         documentFocused &&
-        pdfFocusState.citation?.pageNumber === pageNumber + 1 &&
-        !isHighlighted
+        pdfFocusState.citation?.pageNumber === pageNumber + 1 
+        // &&
+        // !isHighlighted
       ) {
+        console.log("Arrived");
         multiHighlight(
-          pdfFocusState.citation.snippet,
-          pageNumber,
-          pdfFocusState.citation.color
+          // (pdfFocusState?.citation as Citation).snippet as string,
+          "I said,",
+          5,
+          DocumentColorEnum.yellow,
         );
-        setIsHighlighted(true);
+        // setIsHighlighted(true);
       }
     }, 50),
     [pdfFocusState.citation?.snippet, pageNumber, isHighlighted]
@@ -207,6 +212,7 @@ const VirtualizedPDF = forwardRef<PdfFocusHandler, VirtualizedPDFProps>(
   ({ file, scale, setIndex, setScaleFit, setNumPages }, ref) => {
     const windowWidth = useWindowWidth();
     const windowHeight = useWindowHeight();
+    const ADDED_WIDTH_VALUE = 140;
     const height = (windowHeight || 0) - PDF_HEADER_SIZE_PX;
     const newWidthPx =
       PDF_WIDTH_PERCENTAGE * 0.01 * (windowWidth || 0) -
@@ -289,20 +295,19 @@ const VirtualizedPDF = forwardRef<PdfFocusHandler, VirtualizedPDFProps>(
 
     return (
       <div
-        className={`relative h-[calc(100vh-44px)] w-full border-gray-pdf bg-gray-pdf`}
+        className={`flex items-center h-[calc(100vh-44px)] w-full border-gray-pdf bg-gray-pdf`}
       >
         <Document
           key={file.url}
           onItemClick={onItemClick}
           file={file.url}
           onLoadSuccess={onDocumentLoadSuccess}
-          loading={loadingDiv}
-           
+          loading={loadingDiv}           
         >
           {pdf ? (
             <List
               ref={listRef}
-              width={newWidthPx + HORIZONTAL_GUTTER_SIZE_PX}
+              width={newWidthPx + HORIZONTAL_GUTTER_SIZE_PX + ADDED_WIDTH_VALUE}
               height={height}
               itemCount={pdf.numPages}
               itemSize={getPageHeight}
@@ -317,7 +322,7 @@ const VirtualizedPDF = forwardRef<PdfFocusHandler, VirtualizedPDFProps>(
                   pageNumber={index}
                   style={style}
                   scale={scale}
-                  listWidth={newWidthPx}
+                  listWidth={newWidthPx + ADDED_WIDTH_VALUE}
                   setPageInView={setIndex}
                 />
               )}

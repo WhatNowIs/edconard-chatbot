@@ -5,7 +5,9 @@ from fastapi.responses import JSONResponse
 accounts_router = r = APIRouter()
 
 @r.get("")
-def get_current_user():
+def get_current_user(
+    
+):
     """
     This is a test for a new endpoint
     """
