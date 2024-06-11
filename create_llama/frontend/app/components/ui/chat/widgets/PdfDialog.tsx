@@ -7,7 +7,7 @@ import {
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
-} from "../../drawer";
+} from "@/app/components/ui/drawer";
 import { ViewPdf } from "../pdf-viewer/ViewPdf";
 
 export interface PdfDialogProps {
@@ -41,7 +41,7 @@ export default function PdfDialog(props: PdfDialogProps) {
             <Button variant="outline">Close</Button>
           </DrawerClose>
         </DrawerHeader>
-        <div className="m-4">
+        <div>
             <ViewPdf
               file={{
                 id: props.documentId,

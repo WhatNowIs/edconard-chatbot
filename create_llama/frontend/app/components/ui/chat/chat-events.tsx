@@ -53,7 +53,8 @@ export function ChatEvents({
               pageNumber: citation.metadata?.page_label as number,
               ticker: citation.metadata?.file_name as string,
               color: DocumentColorEnum.teal,
-            }} />)
+            }}
+            source={citation} />)
           }
           </div>          
         </CollapsibleContent>
