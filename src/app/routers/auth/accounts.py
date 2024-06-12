@@ -36,7 +36,6 @@ def get_current_user(
         status_code=200,
         content={
             "username": form_data.username,
-            "email": "patrick@whatnow.is",
             "Password": form_data.password
         }
     )
