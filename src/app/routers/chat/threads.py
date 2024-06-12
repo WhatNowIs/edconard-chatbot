@@ -1,7 +1,7 @@
-from fastapi import APIRouter, UploadFile
+from typing import List
+from fastapi import APIRouter
 from fastapi.responses import JSONResponse
 from src.core.models.base import Thread
-from src.llm.file import File
 from src.app.controllers.threads import ThreadManager
 
 
@@ -9,15 +9,15 @@ threads_router = r = APIRouter()
 
 
 @r.get("")
-def fetch_threads() -> list[File]:
+async def fetch_threads() -> List[Thread]:
     """
     Get the current threads.
     """
-    return ThreadManager.get_all_threads()
+    return await ThreadManager.get_all_threads()
 
 
 @r.post("")
-async def create_thread() -> Thread:
+async def create_thread() -> Thread | None:
     """
     Create a new thread.
     """
@@ -26,7 +26,7 @@ async def create_thread() -> Thread:
 
 
 @r.delete("/{thread_id}")
-def remove_thread(thread_id: str):
+async def remove_thread(thread_id: str) -> None:
     """
     Remove a thread.
     """

@@ -10,7 +10,7 @@ class ThreadNotFoundError(Exception):
 class ThreadManager():
 
     @classmethod
-    def get_all_threads(cls) -> List[Thread]:
+    async def get_all_threads(cls) -> List[Thread]:
         """
         Fetch and return all thread created by a particular user.
         """
@@ -27,7 +27,7 @@ class ThreadManager():
         return None
 
     @classmethod
-    def remove_thread(cls) -> None:
+    async def remove_thread(cls) -> None:
         """
         Remove thread for a particular user
         """
