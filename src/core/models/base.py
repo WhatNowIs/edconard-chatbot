@@ -1,7 +1,7 @@
 from datetime import datetime
 import enum
 import uuid
-from sqlalchemy import ARRAY, UUID, Boolean, Column, DateTime, Float, Integer, Numeric, String, ForeignKey, Table, Enum, Text
+from sqlalchemy import Column, DateTime, String, ForeignKey, Table, Enum, Text
 from sqlalchemy.orm import relationship
 from sqlalchemy.ext.declarative import declarative_base
 
