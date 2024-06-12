@@ -20,9 +20,11 @@ from src.app.routers.chat.threads import threads_router
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
+
 init_settings()
 
 environment = os.getenv("ENVIRONMENT")
+
 # if environment == "dev":
 app.add_middleware(
     CORSMiddleware,
