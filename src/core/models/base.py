@@ -126,19 +126,19 @@ class Message(Base):
     __tablename__ = "messages"
 
     id = Column(String, primary_key=True)
-    conversation_id = Column(String, ForeignKey('conversations.id'))
+    thread_id = Column(String, ForeignKey('threads.id'))
     sender = Column(String)
     content = Column(String)
     timestamp = Column(DateTime, default=datetime.utcnow)
 
-    conversation = relationship("Conversation", back_populates="messages")
+    thread = relationship("Thread", back_populates="messages")
 
 
-class Conversation(Base):
-    __tablename__ = "conversations"
+class Thread(Base):
+    __tablename__ = "threads"
 
     id = Column(String, primary_key=True)
-    messages = relationship("Message", back_populates="conversation")
+    messages = relationship("Message", back_populates="thread")
 
 class Tenant(Base):
     __tablename__ = "tenants"
