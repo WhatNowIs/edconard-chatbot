@@ -15,7 +15,6 @@ const CitationDisplay: React.FC<CitationDisplayProps> = ({ citation, source}) =>
   const { setPdfFocusState } = usePdfFocus();
   const handleCitationClick = (documentId: string, pageNumber: number) => {
     setPdfFocusState({ documentId, pageNumber, citation });
-    console.log(`Clicked Page Number ${pageNumber}`);
   };
 
   const CitationNode = () => {
@@ -43,7 +42,7 @@ const CitationDisplay: React.FC<CitationDisplayProps> = ({ citation, source}) =>
 
   return (
     <>   
-    {source ? <PdfDialog  documentId={citation.documentId} path={`data/${source.metadata?.file_name}`} trigger={<CitationNode />} url={getStaticFileDataUrl(source.metadata?.file_name as string)}/> : ""}
+    {source ? <PdfDialog currentPageNumber={citation.pageNumber}  documentId={citation.documentId} path={`data/${source.metadata?.file_name}`} trigger={<CitationNode />} url={getStaticFileDataUrl(source.metadata?.file_name as string)}/> : ""}
     </>
   );
 };
