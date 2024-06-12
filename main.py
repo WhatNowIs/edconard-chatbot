@@ -1,5 +1,5 @@
 from dotenv import load_dotenv
-from src.constants import ENV_FILE_PATH
+from src.app.constants import ENV_FILE_PATH
 
 load_dotenv(
     dotenv_path=ENV_FILE_PATH,
@@ -12,10 +12,10 @@ from fastapi.responses import RedirectResponse, FileResponse
 from fastapi.staticfiles import StaticFiles
 from create_llama.backend.app.settings import init_settings
 from create_llama.backend.app.api.routers.chat import chat_router
-from src.routers.management.config import config_router
-from src.routers.management.files import files_router
-from src.routers.management.tools import tools_router
-from src.routers.auth.accounts import accounts_router
+from src.app.routers.management.config import config_router
+from src.app.routers.management.files import files_router
+from src.app.routers.management.tools import tools_router
+from src.app.routers.auth.accounts import accounts_router
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
@@ -40,7 +40,7 @@ app.include_router(accounts_router, prefix="/api/auth/accounts")
 
 @app.get("/")
 async def redirect():
-    from src.models.env_config import get_config
+    from src.llm.env_config import get_config
 
     config = get_config()
     if config.configured:
