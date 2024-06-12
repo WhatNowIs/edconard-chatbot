@@ -24,19 +24,19 @@ create-llama-app:
 	rm -rf create_llama/backend/.env
 	rm -rf create_llama/frontend/.env
 
-patch-chat: create-llama-app
+patch-chat: 
 	cp -r ./patch/* ./create_llama/
 
 build-chat: patch-chat
 	@echo "\nBuilding Chat UI..."
-	cd ./create_llama/frontend && npm install && npm run build
+	cd ./create_llama/frontend && npm run build
 	@echo "\nCopying Chat UI to static folder..."
 	mkdir -p ./static && cp -r ./create_llama/frontend/out/* ./static/
 	@echo "\nDone!"
 
 build-admin:
 	@echo "\nBuilding Admin UI..."
-	cd ./admin && npm install && npm run build
+	cd ./admin && npm run build
 	@echo "\nCopying Admin UI to static folder..."
 	mkdir -p ./static/admin && cp -r ./admin/out/* ./static/admin/
 	@echo "\nDone!"

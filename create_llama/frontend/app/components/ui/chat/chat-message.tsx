@@ -68,7 +68,7 @@ function ChatMessageContent({
       order: -2,
       component:
         eventData.length > 0 ? (
-          <ChatEvents isLoading={isLoading} data={eventData} />
+          <ChatEvents isLoading={isLoading} data={eventData} citations={sourceData[0] ? sourceData[0].nodes : []} />
         ) : null,
     },
     {

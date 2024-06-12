@@ -1,4 +1,3 @@
-import { PDFViewer, PdfFocusProvider } from "@llamaindex/pdf-viewer";
 import { Button } from "../../button";
 import {
   Drawer,
@@ -8,23 +7,26 @@ import {
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
-} from "../../drawer";
+} from "@/app/components/ui/drawer";
+import { ViewPdf } from "../pdf-viewer/ViewPdf";
 
 export interface PdfDialogProps {
   documentId: string;
   path: string;
   url: string;
   trigger: React.ReactNode;
+  currentPageNumber: number;
 }
 
 export default function PdfDialog(props: PdfDialogProps) {
+
   return (
     <Drawer direction="left">
       <DrawerTrigger>{props.trigger}</DrawerTrigger>
       <DrawerContent className="w-3/5 mt-24 h-full max-h-[96%] ">
         <DrawerHeader className="flex justify-between">
           <div className="space-y-2">
-            <DrawerTitle>PDF Content</DrawerTitle>
+            <DrawerTitle>PDF Content Modified</DrawerTitle>
             <DrawerDescription>
               File path:{" "}
               <a
@@ -40,17 +42,17 @@ export default function PdfDialog(props: PdfDialogProps) {
             <Button variant="outline">Close</Button>
           </DrawerClose>
         </DrawerHeader>
-        <div className="m-4">
-          <PdfFocusProvider>
-            <PDFViewer
+        <div>
+            <ViewPdf
               file={{
                 id: props.documentId,
                 url: props.url,
               }}
+              startingPageNumber={props.currentPageNumber}
             />
-          </PdfFocusProvider>
         </div>
       </DrawerContent>
     </Drawer>
   );
 }
+

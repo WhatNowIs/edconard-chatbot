@@ -1094,6 +1094,17 @@ test-full = ["adlfs", "aiohttp (!=4.0.0a0,!=4.0.0a1)", "cloudpickle", "dask", "d
 tqdm = ["tqdm"]
 
 [[package]]
+name = "git-filter-repo"
+version = "2.38.0"
+description = "Quickly rewrite git repository history"
+optional = false
+python-versions = ">=3.5"
+files = [
+    {file = "git-filter-repo-2.38.0.tar.gz", hash = "sha256:fe1753e18f0bd6d3c9b57868c8011ae7d056a6ebab706706396a15ef5312725e"},
+    {file = "git_filter_repo-2.38.0-py2.py3-none-any.whl", hash = "sha256:c2646206dfdbf06ce27c06c5b77ea33209d8e32d1e33f6bd4c25b1ccc59f9864"},
+]
+
+[[package]]
 name = "google-ai-generativelanguage"
 version = "0.6.4"
 description = "Google Ai Generativelanguage API client library"
@@ -4934,4 +4945,8 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "jaraco.test", "more
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.10,<3.13"
+<<<<<<< HEAD
 content-hash = "61e0f1915e858f57ef49255e1311ab325a44e2dde81b7056f25e5b6695a0ba20"
+=======
+content-hash = "7d6babb967bc34c0137a7734de9a6c222b5bacba336087e5fabeffa147933a0a"
+>>>>>>> dev
