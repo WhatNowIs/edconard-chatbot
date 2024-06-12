@@ -22,14 +22,14 @@ app = FastAPI()
 init_settings()
 
 environment = os.getenv("ENVIRONMENT")
-if environment == "dev":
-    app.add_middleware(
-        CORSMiddleware,
-        allow_origins=["*"],
-        allow_credentials=True,
-        allow_methods=["*"],
-        allow_headers=["*"],
-    )
+# if environment == "dev":
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # Add chat router from create_llama/backend
 app.include_router(chat_router, prefix="/api/chat")

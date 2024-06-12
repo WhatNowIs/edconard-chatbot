@@ -6,13 +6,17 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from "../collapsible";
-import { EventData } from "./index";
+import { EventData, SourceNode } from "./index";
+import CitationDisplay from "./widgets/citation-display";
+import { DocumentColorEnum } from "@/app/utils/colors";
 
 export function ChatEvents({
   data,
+  citations,
   isLoading,
 }: {
   data: EventData[];
+  citations: SourceNode[];
   isLoading: boolean;
 }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,11 +40,23 @@ export function ChatEvents({
           </Button>
         </CollapsibleTrigger>
         <CollapsibleContent asChild>
+        <div>
           <div className="mt-4 text-sm space-y-2">
-            {data.map((eventItem, index) => (
+            {data.map((eventItem: EventData, index: number) => (
               <div key={index}>{eventItem.title}</div>
             ))}
           </div>
+          {
+            citations.map((citation) => <CitationDisplay citation={{ 
+              documentId: citation.id,
+              snippet: citation.text,
+              pageNumber: citation.metadata?.page_label as number,
+              ticker: citation.metadata?.file_name as string,
+              color: DocumentColorEnum.teal,
+            }}
+            source={citation} />)
+          }
+          </div>          
         </CollapsibleContent>
       </Collapsible>
     </div>
