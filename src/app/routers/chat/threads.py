@@ -1,15 +1,15 @@
-from typing import List
+from typing import Any, List
 from fastapi import APIRouter
 from fastapi.responses import JSONResponse
-from src.core.models.base import Thread
 from src.app.controllers.threads import ThreadManager
+from src.schema import ResponseConversationThread
 
 
 threads_router = r = APIRouter()
 
 
 @r.get("")
-async def fetch_threads() -> List[Thread]:
+async def fetch_threads() -> List[ResponseConversationThread]:
     """
     Get the current threads.
     """
@@ -17,7 +17,7 @@ async def fetch_threads() -> List[Thread]:
 
 
 @r.post("")
-async def create_thread() -> Thread | None:
+async def create_thread() -> ResponseConversationThread | Any:
     """
     Create a new thread.
     """
@@ -26,11 +26,12 @@ async def create_thread() -> Thread | None:
 
 
 @r.delete("/{thread_id}")
-async def remove_thread(thread_id: str) -> None:
+async def remove_thread(thread_id: str):
     """
     Remove a thread.
     """
     ThreadManager.remove_thread()
+
     return JSONResponse(
         status_code=200,
         content={"message": f"Thread {thread_id} removed successfully."},
