@@ -98,6 +98,7 @@ export function ChatSources({ data }: { data: SourceData }) {
                 documentId={nodeInfo.id}
                 url={nodeInfo.url as string}
                 path={nodeInfo.path}
+                currentPageNumber={1}
                 trigger={<SourceNumberButton index={index} />}
               />
             );

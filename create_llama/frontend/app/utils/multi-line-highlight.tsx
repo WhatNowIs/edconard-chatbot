@@ -1,5 +1,6 @@
 import Fuse from "fuse.js";
 import { DocumentColorEnum, highlightColors } from "./colors";
+
 interface WordData {
   text: string;
   spanIdx: number;
@@ -19,41 +20,50 @@ export const multiHighlight = (
   pageNumber: number,
   color = DocumentColorEnum.yellow
 ) => {
+  
   const highlightColor = highlightColors[color];
   const spans = document.querySelectorAll(
     `div[data-page-number='${
-      pageNumber + 1
+      pageNumber
     }'] .react-pdf__Page__textContent.textLayer span`
   );
 
   const words: WordData[] = [];
+  
   spans.forEach((span, spanIdx) => {
     const htmlSpan = span as HTMLElement;
     const spanWords = htmlSpan.textContent || "";
+    
 
     spanWords.split(" ").map((text, wordIdx) => {
       words.push({ text, spanIdx, wordIdx });
     });
   });
+  
 
-  let searchString = textToHighlight;
-  searchString = searchString.replace(/\s{2,}/g, " ");
-  searchString = searchString.replace(/\t/g, " ");
-  searchString = searchString
-    .toString()
-    .trim()
-    .replace(/(\r\n|\n|\r)/g, "");
+  const searchString = textToHighlight;
+  // searchString = searchString.replace(/\s{2,}/g, " ");
+  // searchString = searchString.replace(/\t/g, " ");
+  // searchString = searchString
+  // //   .toString()
+  // //   .trim()
+  //   .replaceAll("\n", "");
 
-  const searchWords = searchString.split(" ");
+    
+
+  const searchWords = searchString.split("\n").map((word) => word.replaceAll(" ", ""));
+
   const lenSearchString = searchWords.length;
   if (!lenSearchString) {
     return;
   }
+  
 
   const firstWord = searchWords[0];
   if (!firstWord) {
     return;
   }
+
   const searchData = generateDirectSearchData(
     firstWord,
     words,
@@ -70,17 +80,20 @@ export const multiHighlight = (
     keys: ["text"], // This tells Fuse.js to search in the `text` property of the items in your list
   };
 
-  const fuse = new Fuse(searchData, options);
-  const result = fuse.search(searchString);
+  // const fuse = new Fuse(searchData, options);
+  // const result = fuse.search(searchString);
+  // console.log(`result: ${JSON.stringify(result)}`);
 
-  if (result.length > 0) {
-    const searchResult = result[0]?.item;
+
+  if (searchData.length > 0) {
+    const searchResult = searchData[0];
 
     const startSpan = searchResult?.startSpan || 0;
     const endSpan = searchResult?.endSpan || 0;
     const startWordIdx = searchResult?.startWordIdx || 0;
     const endWordIdx = searchResult?.endWordIdx || 0;
 
+    
     for (let i = startSpan; i < endSpan + 1; i++) {
       const spanToHighlight = spans[i] as HTMLElement;
       if (i == startSpan) {
@@ -112,6 +125,8 @@ const highlightHtmlElement = (div: HTMLElement, color: string) => {
   newSpan.innerText = text;
   div.innerText = "";
   div.appendChild(newSpan);
+  console.log(`newSpan: ${newSpan.className}`);
+  
 };
 
 enum DIRECTION {
@@ -200,6 +215,8 @@ function generateDirectSearchData(
   words: WordData[],
   n: number
 ): SearchStrings[] {
+  
+  // console.log(`words: ${JSON.stringify(words)}\ntartString: ${JSON.stringify(startString)}`);
   const searchStrings: SearchStrings[] = [];
 
   for (let i = 0; i <= words.length - n; i++) {

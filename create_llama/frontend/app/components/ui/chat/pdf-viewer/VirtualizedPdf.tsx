@@ -28,12 +28,7 @@ import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import { usePdfFocus } from "@/app/context/pdf";
 import { multiHighlight } from "@/app/utils/multi-line-highlight";
 import { Citation } from "@/app/types/threads";
-import { DocumentColorEnum } from "@/app/utils/colors";
 
-// pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-//   'pdfjs-dist/build/pdf.worker.min.mjs',
-//   import.meta.url,
-// ).toString();
 // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access
 const pdfjsOptions = pdfjs.GlobalWorkerOptions;
 // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access
@@ -153,23 +148,22 @@ const PageRenderer: React.FC<PageRenderer> = ({
   const maybeHighlight = useCallback(
     debounce(() => {
       if (
-        documentFocused &&
-        pdfFocusState.citation?.pageNumber === pageNumber + 1 
+        documentFocused 
+        &&
+        // pdfFocusState.citation?.pageNumber === pageNumber + 1 
         // &&
-        // !isHighlighted
+        !isHighlighted
       ) {
-        console.log("Arrived");
         multiHighlight(
-          // (pdfFocusState?.citation as Citation).snippet as string,
-          "I said,",
-          5,
-          DocumentColorEnum.yellow,
+          (pdfFocusState?.citation as Citation).snippet as string,
+          (pdfFocusState?.citation as Citation).pageNumber
         );
-        // setIsHighlighted(true);
+        setIsHighlighted(true);
       }
     }, 50),
-    [pdfFocusState.citation?.snippet, pageNumber, isHighlighted]
-  );
+    
+    [pdfFocusState.citation?.snippet, pdfFocusState.citation?.pageNumber, pageNumber, isHighlighted]
+  );  
 
   return (
     <div
@@ -199,6 +193,7 @@ const PageRenderer: React.FC<PageRenderer> = ({
 interface VirtualizedPDFProps {
   file: PdfDocument;
   scale: number;
+  startingPageNumber: number;
   setIndex: (n: number) => void;
   setScaleFit: (n: number) => void;
   setNumPages: (n: number) => void;
@@ -209,7 +204,7 @@ export interface PdfFocusHandler {
 
 // eslint-disable-next-line react/display-name
 const VirtualizedPDF = forwardRef<PdfFocusHandler, VirtualizedPDFProps>(
-  ({ file, scale, setIndex, setScaleFit, setNumPages }, ref) => {
+  ({ file, startingPageNumber, scale, setIndex, setScaleFit, setNumPages }, ref) => {
     const windowWidth = useWindowWidth();
     const windowHeight = useWindowHeight();
     const ADDED_WIDTH_VALUE = 140;
@@ -270,6 +265,7 @@ const VirtualizedPDF = forwardRef<PdfFocusHandler, VirtualizedPDFProps>(
       },
     }));
 
+
     const onItemClick = ({
       pageNumber: itemPageNumber,
     }: {
@@ -277,10 +273,15 @@ const VirtualizedPDF = forwardRef<PdfFocusHandler, VirtualizedPDFProps>(
     }) => {
       const fixedPosition =
         itemPageNumber * (PAGE_HEIGHT + VERTICAL_GUTTER_SIZE_PX) * scale;
+        console.log(`fixedPosition: ${fixedPosition}`);
       if (listRef.current) {
         listRef.current.scrollTo(fixedPosition);
       }
     };
+  
+    if (listRef.current) {
+      onItemClick({ pageNumber: (startingPageNumber - 1) });
+    }
 
     const loadingDiv = () => {
       return (

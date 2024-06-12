@@ -15,6 +15,7 @@ export interface PdfDialogProps {
   path: string;
   url: string;
   trigger: React.ReactNode;
+  currentPageNumber: number;
 }
 
 export default function PdfDialog(props: PdfDialogProps) {
@@ -47,6 +48,7 @@ export default function PdfDialog(props: PdfDialogProps) {
                 id: props.documentId,
                 url: props.url,
               }}
+              startingPageNumber={props.currentPageNumber}
             />
         </div>
       </DrawerContent>
