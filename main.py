@@ -38,7 +38,7 @@ app.include_router(config_router, prefix="/api/management/config")
 app.include_router(files_router, prefix="/api/management/files")
 app.include_router(tools_router, prefix="/api/management/tools")
 app.include_router(accounts_router, prefix="/api/auth/accounts")
-app.include_router(threads_router, prefix="api/chat/threads")
+app.include_router(threads_router, prefix="/api/chat/threads")
 
 @app.get("/")
 async def redirect():
