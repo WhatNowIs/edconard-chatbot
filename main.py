@@ -16,6 +16,7 @@ from src.app.routers.management.config import config_router
 from src.app.routers.management.files import files_router
 from src.app.routers.management.tools import tools_router
 from src.app.routers.auth.accounts import accounts_router
+from src.app.routers.chat.threads import threads_router
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
@@ -37,6 +38,7 @@ app.include_router(config_router, prefix="/api/management/config")
 app.include_router(files_router, prefix="/api/management/files")
 app.include_router(tools_router, prefix="/api/management/tools")
 app.include_router(accounts_router, prefix="/api/auth/accounts")
+app.include_router(threads_router, prefix="api/chat/threads")
 
 @app.get("/")
 async def redirect():
