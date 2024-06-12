@@ -120,6 +120,25 @@ class Address(Base):
     # Functions
     def to_dict(self):
         return {column.name: getattr(self, column.name) for column in self.__table__.columns}
+    
+
+class Message(Base):
+    __tablename__ = "messages"
+
+    id = Column(String, primary_key=True)
+    conversation_id = Column(String, ForeignKey('conversations.id'))
+    sender = Column(String)
+    content = Column(String)
+    timestamp = Column(DateTime, default=datetime.utcnow)
+
+    conversation = relationship("Conversation", back_populates="messages")
+
+
+class Conversation(Base):
+    __tablename__ = "conversations"
+
+    id = Column(String, primary_key=True)
+    messages = relationship("Message", back_populates="conversation")
 
 class Tenant(Base):
     __tablename__ = "tenants"
