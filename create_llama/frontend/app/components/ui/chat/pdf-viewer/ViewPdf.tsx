@@ -7,9 +7,10 @@ import  usePDFViewer  from "@/app/hooks/usePdfViewer";
 
 interface ViewPdfProps {
   file: PdfDocument;
+  startingPageNumber: number;
 }
 
-export const ViewPdf: React.FC<ViewPdfProps> = ({ file }) => {
+export const ViewPdf: React.FC<ViewPdfProps> = ({ file, startingPageNumber }) => {
   const {
     scrolledIndex,
     setCurrentPageNumber,
@@ -55,6 +56,7 @@ export const ViewPdf: React.FC<ViewPdfProps> = ({ file }) => {
         scale={scale}
         setScaleFit={setScaleFit}
         setNumPages={setNumPages}
+        startingPageNumber={startingPageNumber}
       />
     </div>
   );
