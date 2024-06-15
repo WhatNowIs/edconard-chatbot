@@ -29,7 +29,7 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
   return (
     <PdfFocusProvider>
       <div
-        className={`flex flex-col space-y-4 justify-between w-full pb-4 ${layout === "fit" ? "h-full p-2" : "max-w-5xl h-[67vh]"}`}
+        className={`flex flex-col space-y-4 justify-between w-full p-4`}
       >
         <ChatMessages
           messages={messages}
