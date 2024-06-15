@@ -1,4 +1,4 @@
-import SigninForm from "../components/ui/account/signin-form";
+import SigninForm from "../components/ui/auth/signin-form";
 import { Google, Microsoft } from "../components/ui/chat/icons/main-icons";
 
 export default function Signin() {
