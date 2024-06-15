@@ -1,4 +1,3 @@
-import Header from "@/app/components/header";
 import ChatSection from "@/app/components/chat-section";
 import LeftNav from "@/app/components/left-nav";
 import RightNav from "@/app/components/right-nav";
