@@ -4,7 +4,6 @@ from fastapi import APIRouter, Depends, HTTPException
 from fastapi.responses import JSONResponse
 from fastapi.security import OAuth2PasswordRequestForm
 
-from src.app.constants import HTTP_401_UNAUTHORIZED
 
 
 accounts_router = r = APIRouter()
