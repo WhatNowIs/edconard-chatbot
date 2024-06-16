@@ -18,14 +18,22 @@ from src.app.routers.management.tools import tools_router
 from src.app.routers.auth.accounts import accounts_router
 from src.app.routers.chat.threads import threads_router
 from fastapi.middleware.cors import CORSMiddleware
+from src.core.dbconfig.postgres import get_db
 
-app = FastAPI()
+app = FastAPI(
+    title="Edconrad Chatboat",
+    description="Edconrad Chatboat is an AI RAG chatbot.",
+    version="1.0.0",
+    docs_url="/api/docs",
+    redoc_url=None,
+    openapi_url="/api/openapi.json",
+    swagger_ui_parameters={"defaultModelsExpandDepth": -1},
+)
 
 init_settings()
 
 environment = os.getenv("ENVIRONMENT")
 
-# if environment == "dev":
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -35,12 +43,12 @@ app.add_middleware(
 )
 
 # Add chat router from create_llama/backend
-app.include_router(chat_router, prefix="/api/chat")
-app.include_router(config_router, prefix="/api/management/config")
-app.include_router(files_router, prefix="/api/management/files")
-app.include_router(tools_router, prefix="/api/management/tools")
-app.include_router(accounts_router, prefix="/api/auth/accounts")
-app.include_router(threads_router, prefix="/api/chat/threads")
+app.include_router(config_router, prefix="/api/management/config", tags=["Management"])
+app.include_router(files_router, prefix="/api/management/files", tags=["Management"])
+app.include_router(tools_router, prefix="/api/management/tools", tags=["Management"])
+app.include_router(accounts_router, prefix="/api/auth/accounts", tags=["Auth"])
+app.include_router(threads_router, prefix="/api/chat/threads", tags=["Chat"])
+app.include_router(chat_router, prefix="/api/chat", tags=["Chat"])
 
 @app.get("/")
 async def redirect():
@@ -57,6 +65,19 @@ async def redirect():
 
 app.mount("/api/data", StaticFiles(directory="data"), name="static")
 app.mount("", StaticFiles(directory="static", html=True), name="static")
+
+# Customize Swagger UI
+app.openapi_schema = app.openapi()
+app.openapi_schema["info"] = {
+    "title": "Edconrad Chatboat",
+    "version": "1.0.0",
+    "description": "Edconrad Chatboat is an AI RAG chatbot.",
+    "contact": {
+        "name": "WhatNow.is Support",
+        "url": "https://whatnow.is/support",
+        "email": "support@whatnow.is",
+    }
+}
 
 if __name__ == "__main__":
     app_host = os.getenv("APP_HOST", "0.0.0.0")

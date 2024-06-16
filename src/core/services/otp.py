@@ -1,6 +1,6 @@
 from sqlalchemy.ext.asyncio import AsyncSession as Session
-from models.base import OTP
-from services.service import Service
+from src.core.models.base import OTP
+from src.core.services.service import Service
 
 class OTPService(Service):
     def __init__(self, db_session: Session):
