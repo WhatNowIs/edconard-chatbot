@@ -13,6 +13,7 @@ import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { ModelConfig } from "./model";
 import { RAGConfig } from "./rag";
+import { DbConfig } from "./db";
 
 export const ConfigForm = ({ setConfigured }: { setConfigured: any }) => {
   const form = useForm({
@@ -94,6 +95,7 @@ export const ConfigForm = ({ setConfigured }: { setConfigured: any }) => {
         {defaultValues.configured && (
           <RAGConfig form={form} isSubmitting={isSubmitting} />
         )}
+        <DbConfig form={form} isSubmitting={isSubmitting} />
       </form>
     </Form>
   );
