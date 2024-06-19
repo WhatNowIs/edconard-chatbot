@@ -1,23 +1,28 @@
 "use client"
 
-import { useState } from "react";
 import { Button } from "../button";
 import { useRouter } from 'next/navigation';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { ForgotPasswordSchema } from '@/app/service/user-service';
-import { Form, FormControl, FormField, FormItem, FormLabel } from "../form";
+import { ForgotPasswordSchema, ForgotPasswordType, forgotPassword } from '@/app/service/user-service';
+import { Form, FormControl, FormField, FormItem } from "../form";
 import { Input } from "../input";
 
 export default function ForgotPasswordForm(){
     const form = useForm({
         resolver: zodResolver(ForgotPasswordSchema),
     })
-    const [isPasswordInputEnabled, setIsPasswordInputEnabled] = useState<boolean>(false);
     const router = useRouter();
 
-    const onSubmit = () => {
-        router.push("/reset-password");
+    const forgot = async (data: any) => {
+        const response = await forgotPassword(data as ForgotPasswordType);        
+        if(response.message){
+            router.push("/auth/reset-password-msg");
+        }
+    }
+    
+    const onSubmit = (data: any) => {
+       forgot(data).catch((error) => console.log(error))
     }
 
     return (   

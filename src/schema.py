@@ -9,6 +9,7 @@ class EmailTypeEnum(Enum):
     WELCOME_EMAIL = "welcome_email"
     NEWSLETTER = "newsletter"
     PROMOTIONAL = "promotional"
+    PASSWORD_UPDATE = "password_update"
 
 class ResponseMessage(BaseModel):
     id : str
@@ -49,4 +50,9 @@ class VerifyOtp(BaseModel):
     otp_type: EmailTypeEnum
 
 class ResetPassword(BaseModel):    
+    email: EmailStr
+
+
+class UpdatePassword(BaseModel):    
+    password: str
     email: EmailStr
