@@ -48,6 +48,11 @@ class EmailTemplateService(Service):
         )
         return result.scalars().first()
 
+    def convert_snake_case_to_title(self, snake_case_string):
+        words = snake_case_string.split('_')
+        title_string = ' '.join(word.capitalize() for word in words)
+        return title_string
+
     async def populate_email_templates(self, templates_dir: str):
         template_files = os.listdir(templates_dir)
 
@@ -65,7 +70,7 @@ class EmailTemplateService(Service):
                     content = file.read()
                     new_email_template = EmailTemplate(
                         name=template_name,
-                        subject=f"Subject for {template_name}",
+                        subject=f"{self.convert_snake_case_to_title(template_name)}",
                         content=content
                     )
                     self.db_session.add(new_email_template)

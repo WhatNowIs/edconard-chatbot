@@ -73,7 +73,7 @@ app.mount("", StaticFiles(directory="static", html=True), name="static")
 # Customize Swagger UI
 app.openapi_schema = app.openapi()
 app.openapi_schema["info"] = {
-    "title": "Edconrad Chatboat",
+    "title": "Edconrad Chatbot",
     "version": "1.0.0",
     "description": "Edconrad Chatboat is an AI RAG chatbot.",
     "contact": {
