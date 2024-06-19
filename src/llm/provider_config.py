@@ -53,7 +53,25 @@ class AzureOpenAIConfig(BaseModel):
         env="AZURE_OPENAI_EMBEDDING_DEPLOYMENT",
     )
 
+class DBConfig(BaseModel):
+    db_uri: str | None = Field(
+        default=None,
+        description="The url to connect to the database which will be used to store all related user conversations",
+        env="DB_URI"
+    )
 
+class MailConfig(BaseModel):
+    resend_api_key: str | None = Field(
+        default=None,
+        description="API key for sending emails using resend",
+        env="RESEND_API_KEY"
+    )
+    from_email: str | None = Field(
+        default=None,
+        description="Master email from where the email need to be sent from",
+        env="FROM_EMAIL"
+    )
+    
 # We're using inheritance to flatten all the fields into a single class
 # Todo: Refactor API to nested structure
 class ProviderConfig(

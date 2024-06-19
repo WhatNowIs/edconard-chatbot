@@ -1,5 +1,9 @@
+import alembic
 from dotenv import load_dotenv
 from src.app.constants import ENV_FILE_PATH
+from src.core.dbconfig.postgres import get_db
+from src.core.services.mail import EmailTemplateService, EmailTypeService
+from src.utils.logger import get_logger
 
 load_dotenv(
     dotenv_path=ENV_FILE_PATH,
@@ -7,7 +11,8 @@ load_dotenv(
 
 import os
 import uvicorn
-from fastapi import FastAPI
+from fastapi import Depends, FastAPI
+from sqlalchemy.ext.asyncio import AsyncSession
 from fastapi.responses import RedirectResponse, FileResponse
 from fastapi.staticfiles import StaticFiles
 from create_llama.backend.app.settings import init_settings
@@ -18,7 +23,7 @@ from src.app.routers.management.tools import tools_router
 from src.app.routers.auth.accounts import accounts_router
 from src.app.routers.chat.threads import threads_router
 from fastapi.middleware.cors import CORSMiddleware
-from src.core.dbconfig.postgres import get_db
+from src.llm.env_config import get_config
 
 app = FastAPI(
     title="Edconrad Chatboat",
@@ -52,7 +57,6 @@ app.include_router(chat_router, prefix="/api/chat", tags=["Chat"])
 
 @app.get("/")
 async def redirect():
-    from src.llm.env_config import get_config
 
     config = get_config()
     if config.configured:
@@ -78,6 +82,23 @@ app.openapi_schema["info"] = {
         "email": "support@whatnow.is",
     }
 }
+
+@app.on_event("startup")
+async def startup(
+):
+    async for db in get_db():
+        # Get the current directory
+        templates_directory = os.path.join(os.getcwd(), 'src', 'templates')
+
+        # Call the populate methods
+        email_type_service = EmailTypeService(db_session=db)
+        email_template_service = EmailTemplateService(db_session=db)
+
+        await email_type_service.populate_email_types()
+        await email_template_service.populate_email_templates(templates_directory)
+
+    get_logger().info("Successfully populated default email templates and types")
+
 
 if __name__ == "__main__":
     app_host = os.getenv("APP_HOST", "0.0.0.0")

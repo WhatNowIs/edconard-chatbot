@@ -1,15 +1,12 @@
-# src/core/dbconfig/connection.py
-
-import os
 from sqlalchemy.ext.asyncio import AsyncSession, async_sessionmaker, create_async_engine
 from sqlalchemy.engine import Engine
-from sqlalchemy.orm import sessionmaker
 from src.core.dbconfig.datasource import Datasource
+from src.llm.env_config import get_config
 
 class PostgresDatasource(Datasource):
     def __init__(self, db_uri, base=None):
         super().__init__()
-        self.db_uri = db_uri
+        self.db_uri: str = db_uri
         self.base = base
         self.engine = self.create_connection()
 
@@ -23,7 +20,10 @@ class PostgresDatasource(Datasource):
             if self.db_uri.startswith("postgresql+asyncpg"):
                 engine = create_async_engine(self.db_uri)
             else:
-                raise Exception("Only asyncpg connection strings are supported for async operations.")
+
+                self.db_uri = self.db_uri.replace("postgresql", "postgresql+asyncpg")
+                engine = create_async_engine(self.db_uri)
+
             return engine
         except Exception as e:
             raise Exception(f"Error creating connection: {e}")
@@ -44,7 +44,8 @@ class PostgresDatasource(Datasource):
             yield session
 
 # Initialize the database connection
-DATABASE_URL = os.getenv("DB_URI")
+DATABASE_URL = get_config().db_uri
+
 database = PostgresDatasource(db_uri=DATABASE_URL)
 
 # Dependency to get DB session
