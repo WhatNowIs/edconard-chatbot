@@ -1,11 +1,23 @@
 from datetime import datetime
+import random
+from datetime import datetime, timedelta
 import enum
 import uuid
-from sqlalchemy import Column, DateTime, String, ForeignKey, Table, Enum, Text
+from sqlalchemy import Column, DateTime, Integer, String, ForeignKey, Table, Enum
 from sqlalchemy.orm import relationship
 from sqlalchemy.ext.declarative import declarative_base
 
+from src.utils.logger import get_logger
+
 Base = declarative_base()
+
+def get_otp_expiration(minutes: int = 10) -> datetime:
+    expiration_time = datetime.now() + timedelta(minutes=minutes)
+    return expiration_time
+
+def generate_otp() -> str:
+    otp = random.randint(100000, 999999)
+    return str(otp)
 
 class EntityStatus(enum.Enum):
     Active = "Active"
@@ -88,21 +100,21 @@ class Credential(Base):
     def to_dict(self):
         return {column.name: getattr(self, column.name) for column in self.__table__.columns}
 
-class OTP(Base):
-    __tablename__ = "otp"
-    id = Column(String(36), primary_key=True, default=lambda: str(uuid.uuid4()))
-    code = Column(String)
-    user_id = Column(String(36), ForeignKey('users.id'))
-    created_at = Column(DateTime, index=True, default=datetime.now)
-    deleted_at = Column(DateTime)
-    updated_at = Column(DateTime)
-    status = Column(Enum(EntityStatus), nullable=True)
+# class OTP(Base):
+#     __tablename__ = "otp"
+#     id = Column(String(36), primary_key=True, default=lambda: str(uuid.uuid4()))
+#     code = Column(String)
+#     user_id = Column(String(36), ForeignKey('users.id'))
+#     created_at = Column(DateTime, index=True, default=datetime.now)
+#     deleted_at = Column(DateTime)
+#     updated_at = Column(DateTime)
+#     status = Column(Enum(EntityStatus), nullable=True)
 
-    # Relationships
-    user = relationship("User", uselist=False, backref="otp")
+#     # Relationships
+#     user = relationship("User", uselist=False, backref="otp")
 
-    def to_dict(self):
-        return {column.name: getattr(self, column.name) for column in self.__table__.columns}
+#     def to_dict(self):
+#         return {column.name: getattr(self, column.name) for column in self.__table__.columns}
 
 class Address(Base):
     __tablename__ = "addresses"
@@ -155,5 +167,44 @@ class Tenant(Base):
     # Functions
     def to_dict(self):
         return {column.name: getattr(self, column.name) for column in self.__table__.columns}
-    
 
+class EmailType(Base):
+    __tablename__ = 'email_types'
+    id = Column(Integer, primary_key=True, index=True)
+    type = Column(String, unique=True, index=True)
+    
+class EmailTemplate(Base):
+    __tablename__ = 'email_templates'
+    id = Column(Integer, primary_key=True, index=True)
+    name = Column(String, unique=True, index=True)
+    subject = Column(String)
+    content = Column(String)
+
+class OTP(Base):
+    __tablename__ = "otp"
+    id = Column(String(36), primary_key=True, default=lambda: str(uuid.uuid4()))
+    code = Column(String, default=generate_otp())
+    email = Column(String, index=True)
+    user_id = Column(String(36), ForeignKey('users.id'))
+    email_template_id = Column(Integer, ForeignKey('email_templates.id'))
+    email_type_id = Column(Integer, ForeignKey('email_types.id'))
+    expires_at = Column(DateTime, default=get_otp_expiration())
+    created_at = Column(DateTime, index=True, default=datetime.now())
+    deleted_at = Column(DateTime)
+    updated_at = Column(DateTime, default=datetime.now())
+    status = Column(Enum(EntityStatus), nullable=True)
+
+    # Relationships
+    user = relationship("User", uselist=False, backref="otp")
+    email_template = relationship("EmailTemplate")
+    email_type = relationship("EmailType")
+
+    # Functions
+    def is_expired(self):
+        current_time = datetime.now()
+        get_logger().info(f"Current time: {current_time}, Expiry time: {self.expires_at}")
+
+        return current_time > self.expires_at
+
+    def to_dict(self):
+        return {column.name: getattr(self, column.name) for column in self.__table__.columns}
