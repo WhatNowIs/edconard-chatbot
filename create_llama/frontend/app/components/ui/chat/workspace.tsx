@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { ShevronDown, ShevronUp } from "./icons/main-icons";
-import { useThreadsStore } from "@/app/data/ThreadsState";
+import { useThreadsStore } from "@/app/store/ThreadsState";
 import { MessageCircle } from "lucide-react";
 
 export default function Workspaces() {
