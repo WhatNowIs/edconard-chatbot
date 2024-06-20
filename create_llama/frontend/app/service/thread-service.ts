@@ -31,14 +31,16 @@ export type ThreadCreate = z.TypeOf<typeof ThreadCreateSchema>;
 
 const baseURL = `${getBaseURL()}/api/chat/threads`;
 
-async function fetchWithAuth(url: string, options: RequestInit = {}) {
+async function fetchWithAuth(url: string, options: RequestInit = {}) {  
+  const access_token = localStorage.getItem('access_token');
+
   const res = await fetch(url, {
     ...options,
     headers: {
       ...options.headers,
       'Content-Type': 'application/json',
+      Authorization: `Bearer ${access_token}`
     },
-    credentials: 'include', // Assuming you're using cookies for session management
   });
 
   if (!res.ok) {

@@ -9,15 +9,15 @@ import Workspaces from "@/app/components/ui/chat/workspace";
 import ChatBundles from "@/app/components/ui/chat/chat-bundles";
 import Marketplace from "@/app/components/ui/chat/marketplace";
 import Link from "next/link";
-import { useThreadsStore } from "@/app/store/ThreadsState";
 import { useState } from "react";
 
 import AuthContext from "../context/auth-context";
 import { useContext } from "react";
+import ChatContext from "../context/chat-context";
 
 export default function LeftNav() {
     const currentPath = usePathname();
-    const { createThread } = useThreadsStore();
+    const chatContext = useContext(ChatContext);
     const [isLoading, setIsLoading] = useState<boolean>(false);
     const [isButtonDisabled, setIsButtonDisabled] = useState<boolean>(false);
 
@@ -28,14 +28,18 @@ export default function LeftNav() {
     }
     const { user } = authContext;
     
-    const handleNewThread = async (): Promise<void> => {
+    const handleNewThread = () => {
         setIsLoading(true);
         setIsButtonDisabled(true);
-        await createThread("New Thread", "This is a new thread");
-        setIsLoading(false);
-        setTimeout(() => setIsButtonDisabled(false), 2000);
+        if(chatContext){
+            chatContext.addThread({
+                title: "New thread",
+                user_id: user?.id as string
+            });
+            setIsLoading(false);
+            setIsButtonDisabled(false)
+        }
     };
-
 
     return (
         <div className="w-80 flex flex-col h-screen bg-white border-r border-gray-200 p-4">
