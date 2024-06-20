@@ -65,6 +65,8 @@ class User(Base):
     # Relationships
     addresses = relationship("Address", secondary=user_addresses, backref="users")
     tenants = relationship("Tenant", secondary=tenant_users, backref="users")
+    messages = relationship("Message", back_populates="user")
+    threads = relationship("Thread", back_populates="user")
 
     # Functions
     def to_dict(self):
@@ -99,22 +101,6 @@ class Credential(Base):
 
     def to_dict(self):
         return {column.name: getattr(self, column.name) for column in self.__table__.columns}
-
-# class OTP(Base):
-#     __tablename__ = "otp"
-#     id = Column(String(36), primary_key=True, default=lambda: str(uuid.uuid4()))
-#     code = Column(String)
-#     user_id = Column(String(36), ForeignKey('users.id'))
-#     created_at = Column(DateTime, index=True, default=datetime.now)
-#     deleted_at = Column(DateTime)
-#     updated_at = Column(DateTime)
-#     status = Column(Enum(EntityStatus), nullable=True)
-
-#     # Relationships
-#     user = relationship("User", uselist=False, backref="otp")
-
-#     def to_dict(self):
-#         return {column.name: getattr(self, column.name) for column in self.__table__.columns}
 
 class Address(Base):
     __tablename__ = "addresses"

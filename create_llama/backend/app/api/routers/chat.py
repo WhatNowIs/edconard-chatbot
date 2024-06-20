@@ -9,6 +9,8 @@ from app.api.routers.vercel_response import VercelStreamResponse
 from app.api.routers.messaging import EventCallbackHandler
 from aiostream import stream
 
+from src.app.routers.auth.accounts import get_session
+
 chat_router = r = APIRouter()
 
 
@@ -131,6 +133,30 @@ async def chat(
         )
 
     return VercelStreamResponse(content=content_generator())
+
+
+# streaming endpoint - delete if not needed
+@r.post("/message/{thread_id}")
+async def chat(
+    request: Request,
+    data: _ChatData,
+    session: dict = Depends(get_session),
+    chat_engine: BaseChatEngine = Depends(get_chat_engine),
+):
+    
+    if "sub" in session:
+        user_id = session["sub"]
+        
+        last_message_content, messages = await parse_chat_data(data)
+    
+
+        return VercelStreamResponse(content=parse_chat_data())
+    
+    raise HTTPException(
+        status_code=status.HTTP_401_UNAUTHORIZED,
+        detail="Not authorized to access threads",
+    )
+
 
 
 # non-streaming endpoint - delete if not needed
