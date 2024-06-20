@@ -52,7 +52,7 @@ app.include_router(config_router, prefix="/api/management/config", tags=["Manage
 app.include_router(files_router, prefix="/api/management/files", tags=["Management"])
 app.include_router(tools_router, prefix="/api/management/tools", tags=["Management"])
 app.include_router(accounts_router, prefix="/api/auth/accounts", tags=["Auth"])
-app.include_router(threads_router, prefix="/api/chat/threads", tags=["Chat"])
+app.include_router(threads_router, prefix="/api/chat/threads", tags=["Thread"])
 app.include_router(chat_router, prefix="/api/chat", tags=["Chat"])
 
 @app.get("/")
