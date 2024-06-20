@@ -1,4 +1,5 @@
-from typing import Optional
+from typing import Optional, Tuple
+import jwt
 from sqlalchemy.ext.asyncio import AsyncSession as Session
 from sqlalchemy.future import select
 from src.core.models.base import User, Credential
@@ -7,7 +8,11 @@ from src.core.services.credential import CredentialService
 from src.utils.encryption import encrypt, verify
 from src.utils.logger import get_logger
 import uuid
-from datetime import datetime
+from datetime import datetime, timedelta
+
+SECRET_KEY = "CE586DECFCBF526AFA26846516E9F" 
+ALGORITHM = "HS256"
+ACCESS_TOKEN_EXPIRE_MINUTES = 4320
 
 class UserService(Service):
     def __init__(self, db_session: Session):
@@ -50,7 +55,7 @@ class UserService(Service):
 
     async def verify_user_password(self, user_id: str, password: str) -> bool:
         self.logger.info(f"Verifying password for user with id: {user_id}")
-        user_credential = await self.credential_service.get(user_id)
+        user_credential = await self.credential_service.get_by_user_id(user_id)
         if user_credential:
             is_valid = verify(password, user_credential.password, user_credential.salt)
             if is_valid:
@@ -61,11 +66,36 @@ class UserService(Service):
         self.logger.warning(f"User with id: {user_id} not found for password verification")
         return False
 
-    async def login(self, email: str, password: str) -> bool:
+    async def login(self, email: str, password: str) -> Tuple[bool, Optional[str],  Optional[User], str]:
         self.logger.info(f"User login attempt with email: {email}")
         user = await self.get_by_email(email)
+        
         if user and await self.verify_user_password(user.id, password):
             self.logger.info(f"User login successful for email: {email}")
-            return True
+
+            token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
+            token = self.create_access_token(data={ "sub": user.id, "email": user.email }, expires_delta=token_expires)
+
+            return True, token, user, "Login successfully"
+            
         self.logger.warning(f"User login failed for email: {email}")
-        return False
+
+        return False, None, None, "Your email or password is incorrect"
+    
+    def create_access_token(self, data: dict, expires_delta: timedelta = None):
+        to_encode = data.copy()
+        if expires_delta:
+            expire = datetime.utcnow() + expires_delta
+        else:
+            expire = datetime.utcnow() + timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
+        to_encode.update({"exp": expire})
+        encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
+        return encoded_jwt
+
+    def decode_access_token(self, token: str):
+        try:
+            decoded_token = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+            exp = datetime.fromtimestamp(decoded_token["exp"])
+            return decoded_token if exp >= datetime.utcnow() else None
+        except jwt.PyJWTError:
+            return None

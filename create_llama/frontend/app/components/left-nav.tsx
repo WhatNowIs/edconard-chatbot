@@ -12,19 +12,30 @@ import Link from "next/link";
 import { useThreadsStore } from "@/app/store/ThreadsState";
 import { useState } from "react";
 
+import AuthContext from "../context/auth-context";
+import { useContext } from "react";
+
 export default function LeftNav() {
     const currentPath = usePathname();
-    const { createThread } = useThreadsStore();
+    // const { createThread } = useThreadsStore();
     const [isLoading, setIsLoading] = useState<boolean>(false);
     const [isButtonDisabled, setIsButtonDisabled] = useState<boolean>(false);
 
+    const authContext = useContext(AuthContext);
+
+    if (!authContext) {
+        throw new Error('useContext must be used within an AuthProvider');
+    }
+    const { user } = authContext;
+    
     const handleNewThread = async (): Promise<void> => {
         setIsLoading(true);
         setIsButtonDisabled(true);
-        await createThread("New Thread", "This is a new thread");
+        // await createThread("New Thread", "This is a new thread");
         setIsLoading(false);
         setTimeout(() => setIsButtonDisabled(false), 2000);
     };
+
 
     return (
         <div className="w-80 flex flex-col h-screen bg-white border-r border-gray-200 p-4">
@@ -35,19 +46,22 @@ export default function LeftNav() {
                 </Link>
                 <Harmburger />
             </div>
-            <div className="flex items-center mb-6 border p-2 rounded-md">
-                <Image 
-                    src="https://via.placeholder.com/40" 
-                    alt="Profile Picture" 
-                    width={40}
-                    height={40} 
-                    className="w-10 h-10 rounded-full mr-3" 
-                />
-                <div>
-                <div className="text-sm text-gray-500">Marc Hill</div>
-                <div className="text-sm text-gray-500 text-xs">mhill@edconard.com</div>
-                </div>
-            </div>            
+            {user && (
+                    <div className="flex items-center mb-6 border p-2 rounded-md">
+                        <Image 
+                            src="https://via.placeholder.com/40" 
+                            alt="Profile Picture" 
+                            width={40}
+                            height={40} 
+                            className="w-10 h-10 rounded-full mr-3" 
+                        />
+                        <div>
+                        <div className="text-sm text-gray-500">{`${user.first_name} ${user.last_name}`}</div>
+                        <div className="text-sm text-gray-500 text-xs">{user.email}</div>
+                        </div>
+                    </div> 
+                )
+            }           
             {
                 currentPath !== "/accounts" && (
                     <>
@@ -58,9 +72,15 @@ export default function LeftNav() {
                             disabled={isButtonDisabled}
                         >
                             {isLoading ? "Loading..." : <><PlusIcon /> New Thread</>}
-                        </Button>
-                        <Workspaces />
-                        
+                        </Button>                        
+                        {user && (
+                            <>                        
+                                <Workspaces />
+                                <RecentThreads />
+                                <ChatBundles />
+                                <Marketplace />
+                            </>
+                        )}
                     </>
                 )
             }
