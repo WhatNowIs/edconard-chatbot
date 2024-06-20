@@ -13,7 +13,7 @@ threads_router = r = APIRouter()
 def get_thread_service(db: AsyncSession = Depends(get_db)) -> ThreadService:
     return ThreadService(db)
 
-@r.get("")
+@r.post("")
 async def create_thread(
     data: ThreadCreate,
     session: dict = Depends(get_session),
@@ -50,6 +50,25 @@ async def fetch_threads(
         detail="Not authorized to access threads",
     )
 
+@r.patch("/{thread_id}", response_model=ResponseThread)
+async def update_thread(
+    thread_id: str,
+    data: ThreadCreate,
+    session: dict = Depends(get_session),
+    thread_service: ThreadService = Depends(get_thread_service)
+):    
+    if "sub" in session:
+        user_id = session["sub"]
+        thread: Thread = await thread_service.get_by_user_id_abd_thread_id(uid=user_id, thread_id=thread_id)
+        thread.title = data.title
+        await thread_service.update(thread)
+        
+        return thread
+
+    raise HTTPException(
+        status_code=status.HTTP_401_UNAUTHORIZED,
+        detail="Not authorized to access this thread",
+    )
 
 @r.get("/{thread_id}", response_model=ResponseThread)
 async def get_thread(
