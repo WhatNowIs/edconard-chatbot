@@ -1,34 +1,22 @@
 from typing import Any, List
 from src.core.models.base import Thread
 from src.utils.logger import get_logger
+from src.core.services.chat import ChatService
+from sqlalchemy.ext.asyncio import AsyncSession
 
-
-class ThreadNotFoundError(Exception):
-    pass
-
-
-class ThreadManager():
+class ThreadManager:
+    @classmethod
+    async def get_all_threads(cls, db_session: AsyncSession) -> List[Thread]:
+        chat_service = ChatService(Thread, db_session)
+        return await chat_service.get_all_messages()
 
     @classmethod
-    async def get_all_threads(cls) -> List[Thread]:
-        """
-        Fetch and return all thread created by a particular user.
-        """
-
-        return []
+    async def create_thread(cls, db_session: AsyncSession, thread: Thread) -> Thread:
+        chat_service = ChatService(Thread, db_session)
+        return await chat_service.create_message(thread)
 
     @classmethod
-    async def create_thread(
-        cls, 
-    ) -> Thread | Any:
-        """
-        Create a particular thread by user id
-        """
-        return None
-
-    @classmethod
-    async def remove_thread(cls):
-        """
-        Remove thread for a particular user
-        """
-        get_logger()
+    async def remove_thread(cls, db_session: AsyncSession, thread_id: str):
+        chat_service = ChatService(Thread, db_session)
+        await chat_service.delete_message(thread_id)
+        get_logger().info(f"Thread {thread_id} removed successfully.")
