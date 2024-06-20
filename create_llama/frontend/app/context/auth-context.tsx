@@ -18,6 +18,7 @@ interface AuthProviderProps {
 
 export const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
   const [user, setUser] = useState<UserFormType | null>(null);
+  // const [threads, setThreads] = useState<UserFormType | null>(null);
 
   useEffect(() => {
     const token = localStorage.getItem('access_token');
@@ -64,9 +65,12 @@ export const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
 
   const logout = async () => {
     try {
-      await signOut();
-      localStorage.removeItem('access_token');
-      setUser(null);
+      const token = localStorage.getItem('access_token');
+      if(token){
+        await signOut(token as string);
+        localStorage.removeItem('access_token');
+        setUser(null);
+      }
     } catch (error) {
       throw error;
     }

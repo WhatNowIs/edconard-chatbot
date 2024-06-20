@@ -9,10 +9,11 @@ from src.utils.encryption import encrypt, verify
 from src.utils.logger import get_logger
 import uuid
 from datetime import datetime, timedelta
+from redis.asyncio.client import Redis
 
 SECRET_KEY = "CE586DECFCBF526AFA26846516E9F" 
 ALGORITHM = "HS256"
-ACCESS_TOKEN_EXPIRE_MINUTES = 4320
+ACCESS_TOKEN_EXPIRE_MINUTES = 1440
 
 class UserService(Service):
     def __init__(self, db_session: Session):
@@ -66,7 +67,7 @@ class UserService(Service):
         self.logger.warning(f"User with id: {user_id} not found for password verification")
         return False
 
-    async def login(self, email: str, password: str) -> Tuple[bool, Optional[str],  Optional[User], str]:
+    async def login(self, email: str, password: str, redis_client: Redis) -> Tuple[bool, Optional[str],  Optional[User], str]:
         self.logger.info(f"User login attempt with email: {email}")
         user = await self.get_by_email(email)
         
@@ -75,6 +76,8 @@ class UserService(Service):
 
             token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
             token = self.create_access_token(data={ "sub": user.id, "email": user.email }, expires_delta=token_expires)
+
+            await redis_client.setex(f"session:{user.id}", ACCESS_TOKEN_EXPIRE_MINUTES * 60, token)
 
             return True, token, user, "Login successfully"
             

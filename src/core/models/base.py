@@ -144,6 +144,10 @@ class Message(Base):
     timestamp = Column(DateTime, default=datetime.utcnow)
 
     thread = relationship("Thread", back_populates="messages")
+    
+    # Functions
+    def to_dict(self):
+        return {column.name: getattr(self, column.name) for column in self.__table__.columns}
 
 
 class Thread(Base):
@@ -151,6 +155,11 @@ class Thread(Base):
 
     id = Column(String, primary_key=True)
     messages = relationship("Message", back_populates="thread")
+
+    # Functions
+    def to_dict(self):
+        return {column.name: getattr(self, column.name) for column in self.__table__.columns}
+
 
 class Tenant(Base):
     __tablename__ = "tenants"

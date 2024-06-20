@@ -1,10 +1,10 @@
 import create from 'zustand';
 
 // Dummy data for threads
-const dummyThreads = [
-  { id: 1, title: 'Thread 1', content: 'This is thread 1' },
-  { id: 2, title: 'Thread 2', content: 'This is thread 2' },
-  { id: 3, title: 'Thread 3', content: 'This is thread 3' },
+const dummyThreads: { id: number; title: string; content: string; }[] = [
+  // { id: 1, title: 'Thread 1', content: 'This is thread 1' },
+  // { id: 2, title: 'Thread 2', content: 'This is thread 2' },
+  // { id: 3, title: 'Thread 3', content: 'This is thread 3' },
 ];
 
 type Thread = {
