@@ -1,7 +1,7 @@
-from typing import Any
-from fastapi import APIRouter, Depends, HTTPException, logger
+from typing import Any, Optional
+from fastapi import APIRouter, Depends, HTTPException, logger, status
 from fastapi.responses import JSONResponse
-from fastapi.security import OAuth2PasswordRequestForm
+from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from sqlalchemy.ext.asyncio import AsyncSession
 from starlette.status import HTTP_400_BAD_REQUEST
 from src.core.services.credential import CredentialService
@@ -16,14 +16,43 @@ from src.utils.logger import get_logger
 
 accounts_router = APIRouter()
 
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
+
 def get_user_service(db: AsyncSession = Depends(get_db)) -> UserService:
     return UserService(db)
+
+async def get_session(
+    token: str = Depends(oauth2_scheme), 
+    user_service: UserService = Depends(get_user_service)
+) -> Optional[dict]:
+    payload = user_service.decode_access_token(token)
+    if payload is None:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Invalid authentication credentials",
+            headers={"WWW-Authenticate": "Bearer"},
+        )
+    return payload
 
 def get_otp_service(db: AsyncSession = Depends(get_db)) -> OTPService:
     return OTPService(db)
 
 def get_credential_service(db: AsyncSession = Depends(get_db)) -> CredentialService:
     return CredentialService(db)
+
+@accounts_router.get("/me")
+async def get_me(
+    session: dict = Depends(get_session),
+    user_service: UserService = Depends(get_user_service)
+):
+    if "sub" in session:
+        user_id = session["sub"]
+
+        user = await user_service.get(user_id)
+
+        return UserModel(**user.to_dict())
+    
+    return {"message": "Not authenticated"}
 
 @accounts_router.post("/create", response_model=UserModel)
 async def create_user(
@@ -75,16 +104,13 @@ async def authenticate_user(
     form_data: OAuth2PasswordRequestForm = Depends(),
     user_service: UserService = Depends(get_user_service)
 ):
-    is_authenticated = await user_service.login(form_data.username, form_data.password)
+    is_authenticated, token, user, message = await user_service.login(form_data.username, form_data.password)
     if not is_authenticated:
         raise HTTPException(
             status_code=HTTP_400_BAD_REQUEST,
             detail="Incorrect username or password"
         )
-    return JSONResponse(
-        status_code=200,
-        content={"message": "Login successful"}
-    )
+    return {"access_token": token, "token_type": "bearer", "user": UserModel(**user.to_dict()), "message": message}
 
 @accounts_router.post("/verify-otp")
 async def verify_otp_code(
