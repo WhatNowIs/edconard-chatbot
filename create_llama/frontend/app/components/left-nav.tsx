@@ -9,14 +9,25 @@ import Workspaces from "@/app/components/ui/chat/workspace";
 import ChatBundles from "@/app/components/ui/chat/chat-bundles";
 import Marketplace from "@/app/components/ui/chat/marketplace";
 import Link from "next/link";
-
-
+import { useThreadsStore } from "@/app/data/ThreadsState";
+import { useState } from "react";
 
 export default function LeftNav() {
     const currentPath = usePathname();
+    const { createThread } = useThreadsStore();
+    const [isLoading, setIsLoading] = useState<boolean>(false);
+    const [isButtonDisabled, setIsButtonDisabled] = useState<boolean>(false);
+
+    const handleNewThread = async (): Promise<void> => {
+        setIsLoading(true);
+        setIsButtonDisabled(true);
+        await createThread("New Thread", "This is a new thread");
+        setIsLoading(false);
+        setTimeout(() => setIsButtonDisabled(false), 2000);
+    };
 
     return (
-        <div className="w-64 flex flex-col h-screen bg-white border-r border-gray-200 p-4">
+        <div className="w-80 flex flex-col h-screen bg-white border-r border-gray-200 p-4">
             <div className="w-full flex mb-4 justify-between items-center gap-2">
                 <Link href={"/"} className="flex gap-2">
                     <EdConardLogo />
@@ -40,14 +51,16 @@ export default function LeftNav() {
             {
                 currentPath !== "/accounts" && (
                     <>
-                        <Button type="submit" className="w-full flex items-center mb-6">
-                            <PlusIcon />
-                            New Thread
+                        <Button 
+                            type="submit" 
+                            className="w-full flex items-center mb-6" 
+                            onClick={handleNewThread} 
+                            disabled={isButtonDisabled}
+                        >
+                            {isLoading ? "Loading..." : <><PlusIcon /> New Thread</>}
                         </Button>
                         <Workspaces />
-                        <RecentThreads />
-                        <ChatBundles />
-                        <Marketplace />
+                        
                     </>
                 )
             }
