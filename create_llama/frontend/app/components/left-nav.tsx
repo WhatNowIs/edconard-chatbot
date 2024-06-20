@@ -9,7 +9,7 @@ import Workspaces from "@/app/components/ui/chat/workspace";
 import ChatBundles from "@/app/components/ui/chat/chat-bundles";
 import Marketplace from "@/app/components/ui/chat/marketplace";
 import Link from "next/link";
-import { useThreadsStore } from "@/app/data/ThreadsState";
+import { useThreadsStore } from "@/app/store/ThreadsState";
 import { useState } from "react";
 
 export default function LeftNav() {
