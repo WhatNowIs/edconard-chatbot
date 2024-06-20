@@ -1,13 +1,31 @@
 
 'use client'
 
-import { useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { ShevronDown, ShevronUp } from "./icons/main-icons";
+import ChatContext from "@/app/context/chat-context";
+import AuthContext from "@/app/context/auth-context";
 
-export default function RecentThreads(
-) {
-
+export default function RecentThreads() {    
     const [isShevronOpen, setShevronIsOpen] = useState<boolean>(true);
+    const authContext = useContext(AuthContext);
+    const chatContext = useContext(ChatContext);
+
+    if (!authContext || !chatContext) {
+        throw new Error('useContext must be used within an AuthProvider and ChatProvider');
+    }
+    const { user } = authContext;
+    const { threads, loadThreads, selectThread } = chatContext;
+
+    useEffect(() => {
+        if (user) {
+            loadThreads();
+        }
+    }, []);
+
+    const onSelect = (threadId: string) => {
+        selectThread(threadId)
+    }
 
     return (    
         <div className="mb-6">
@@ -18,14 +36,13 @@ export default function RecentThreads(
                 </button>
             </div>
             {
-                isShevronOpen && (
-                    <>
-                        <div className="text-gray-600 my-2 cursor-pointer">Capitalisms Class Debate</div>
-                        <div className="text-gray-600 my-2 cursor-pointer">Capitalisms Impact</div>
-                        <div className="text-gray-600 my-2 cursor-pointer">Capitalisms Effectiveness</div>
-                        <div className="text-gray-600 my-2 cursor-pointer">Untitled Thread</div>
-                    </>
-                )
+                isShevronOpen && threads && threads.map((thread) => (
+                    <div 
+                        onClick={() => onSelect(thread.id)}
+                        className="text-gray-600 my-2 cursor-pointer">
+                        {thread.title}
+                    </div>
+                ))
             }
         </div>
     );
