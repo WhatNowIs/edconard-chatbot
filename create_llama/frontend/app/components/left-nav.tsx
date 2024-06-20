@@ -17,7 +17,7 @@ import { useContext } from "react";
 
 export default function LeftNav() {
     const currentPath = usePathname();
-    // const { createThread } = useThreadsStore();
+    const { createThread } = useThreadsStore();
     const [isLoading, setIsLoading] = useState<boolean>(false);
     const [isButtonDisabled, setIsButtonDisabled] = useState<boolean>(false);
 
@@ -31,7 +31,7 @@ export default function LeftNav() {
     const handleNewThread = async (): Promise<void> => {
         setIsLoading(true);
         setIsButtonDisabled(true);
-        // await createThread("New Thread", "This is a new thread");
+        await createThread("New Thread", "This is a new thread");
         setIsLoading(false);
         setTimeout(() => setIsButtonDisabled(false), 2000);
     };
