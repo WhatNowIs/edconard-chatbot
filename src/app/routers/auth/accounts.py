@@ -2,8 +2,10 @@ from typing import Any, Optional
 from fastapi import APIRouter, Depends, HTTPException, logger, status
 from fastapi.responses import JSONResponse
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
+import jwt
 from sqlalchemy.ext.asyncio import AsyncSession
 from starlette.status import HTTP_400_BAD_REQUEST
+from src.core.dbconfig.redis import get_redis_client
 from src.core.services.credential import CredentialService
 from src.core.services.mail import EmailTemplateService, EmailTypeService, ResendClient, get_mail_service
 from src.core.services.otp import OTPService
@@ -13,6 +15,7 @@ from src.core.models.base import OTP, EmailTemplate, EmailType, EntityStatus, Us
 from src.schema import EmailTypeEnum, ResetPassword, UpdatePassword, UserCreateModel, UserModel, VerifyOtp
 from src.utils.encryption import encrypt, to_base64
 from src.utils.logger import get_logger 
+from redis.asyncio.client import Redis
 
 accounts_router = APIRouter()
 
@@ -23,7 +26,8 @@ def get_user_service(db: AsyncSession = Depends(get_db)) -> UserService:
 
 async def get_session(
     token: str = Depends(oauth2_scheme), 
-    user_service: UserService = Depends(get_user_service)
+    user_service: UserService = Depends(get_user_service),
+    redis_client: Redis = Depends(get_redis_client)
 ) -> Optional[dict]:
     payload = user_service.decode_access_token(token)
     if payload is None:
@@ -32,7 +36,18 @@ async def get_session(
             detail="Invalid authentication credentials",
             headers={"WWW-Authenticate": "Bearer"},
         )
-    return payload
+    # Retrieve session from Redis
+    session_data = redis_client.get(f"session:{payload['sub']}")
+    if session_data:
+        get_logger().info(session_data)
+        return user_service.decode_access_token(token)
+    
+    raise HTTPException(
+        status_code=status.HTTP_401_UNAUTHORIZED,
+        detail="Session not found",
+        headers={"WWW-Authenticate": "Bearer"},
+    )
+
 
 def get_otp_service(db: AsyncSession = Depends(get_db)) -> OTPService:
     return OTPService(db)
@@ -102,9 +117,10 @@ async def create_user(
 @accounts_router.post("/signin")
 async def authenticate_user(
     form_data: OAuth2PasswordRequestForm = Depends(),
-    user_service: UserService = Depends(get_user_service)
+    user_service: UserService = Depends(get_user_service),    
+    redis_client: Redis = Depends(get_redis_client)
 ):
-    is_authenticated, token, user, message = await user_service.login(form_data.username, form_data.password)
+    is_authenticated, token, user, message = await user_service.login(form_data.username, form_data.password, redis_client)
     if not is_authenticated:
         raise HTTPException(
             status_code=HTTP_400_BAD_REQUEST,
@@ -307,3 +323,21 @@ async def reset_password(
     except Exception as e:
         get_logger().error(f"Error sending email: {e}")
         return {"message": str(e), "status": 400}
+
+
+@accounts_router.get("/signout")
+async def signout(
+    session: dict = Depends(get_session), 
+    redis_client: Redis = Depends(get_redis_client)
+):
+    if "sub" in session:
+        user_id = session["sub"]
+        # Remove the session from Redis
+        redis_client.delete(f"session:{user_id}")
+        
+        return JSONResponse(status_code=200, content={"message": "Successfully signed out"})
+    raise HTTPException(
+        status_code=status.HTTP_401_UNAUTHORIZED,
+        detail="Invalid session",
+        headers={"WWW-Authenticate": "Bearer"},
+    )

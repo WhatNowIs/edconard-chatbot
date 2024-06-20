@@ -106,11 +106,12 @@ export async function signIn(
   return (await res.json()) as { access_token: string; token_type: string; user: UserFormType, message: string; };
 }
 
-export async function signOut(): Promise<{ message: string; }> {
+export async function signOut(access_token: string): Promise<{ message: string; }> {
   const res = await fetch(`${getBaseURL()}/api/auth/accounts/signout`, {
-    method: "POST",
+    method: "GET",
     headers: {
       "Content-Type": "application/json",
+      Authorization: `Bearer ${access_token}`
     },
   });
 
@@ -119,7 +120,7 @@ export async function signOut(): Promise<{ message: string; }> {
     throw new Error(error);
   }
 
-  return (await res.json()).data as { message: string; };
+  return (await res.json()) as { message: string; };
 }
 
 

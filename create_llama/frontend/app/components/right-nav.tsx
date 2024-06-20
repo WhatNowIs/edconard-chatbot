@@ -1,9 +1,8 @@
 "use client"
 
-import { useEffect, useRef, useState } from 'react'
-import { HiMiniCog6Tooth  } from 'react-icons/hi2'
+import { useEffect, useRef, useState } from 'react';
+import { HiMiniCog6Tooth  } from 'react-icons/hi2';
 import { Settings } from './ui/account/settings';
-
 export default function RightNav(){
     const [isSettingOpen, setIsSettingsOpen] = useState<boolean>(false);
 
@@ -21,7 +20,6 @@ export default function RightNav(){
             document.removeEventListener('mousedown', handleClickOutside);
         };
     }, [settingsRef]);
-
 
     return (
         <div className="flex flex-col justify-between items-center w-14 h-screen bg-white border-l border-gray-200 p-4">
