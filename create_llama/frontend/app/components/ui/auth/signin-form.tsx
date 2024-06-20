@@ -1,15 +1,16 @@
 "use client"
 import Link from 'next/link';
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { useRouter } from 'next/navigation';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { UserSigninSchema, UserSigninType, signIn } from '@/app/service/user-service';
+import { UserSigninSchema, UserSigninType } from '@/app/service/user-service';
 import { Form, FormControl, FormField, FormItem, FormLabel } from "../form";
 import { Input } from "../input";
 import { useToast } from '../use-toast';
 import { cn } from '../lib/utils';
 import { SubmitButton } from '../custom/submitButton';
+import AuthContext from '@/app/context/auth-context';
 
 export default function SigninForm(){
     const form = useForm({
@@ -18,15 +19,20 @@ export default function SigninForm(){
     const { toast } = useToast();
     const router = useRouter();
     const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
+    const authContext = useContext(AuthContext);
 
+    if (!authContext) {
+        throw new Error('useContext must be used within an AuthProvider');
+    }
+    const { login } = authContext;
+    
     const onSubmit = async (data: any) => {        
         setIsSubmitting(true);
-        // Send the data to the server
         try {
-            const configData = await signIn(data as UserSigninType);
-            console.log(configData);
-
-            router.push("/signin");
+            const configData = await login(data as UserSigninType);
+            if(configData.user !== null){
+                router.push("/");
+            }
         } catch (err) {
             console.error(err);
             toast({

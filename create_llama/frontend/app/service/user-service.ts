@@ -83,7 +83,7 @@ export async function createUserAccount(
 
 export async function signIn(
   data: UserSigninType,
-): Promise<{ message: string; }> {
+): Promise<{ access_token: string; token_type: string; user: UserFormType, message: string; }> {
   // Ignore configured attribute
 
   const formData = new URLSearchParams();
@@ -103,8 +103,25 @@ export async function signIn(
     throw new Error(error);
   }
 
+  return (await res.json()) as { access_token: string; token_type: string; user: UserFormType, message: string; };
+}
+
+export async function signOut(): Promise<{ message: string; }> {
+  const res = await fetch(`${getBaseURL()}/api/auth/accounts/signout`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
+
+  if (!res.ok) {
+    const error = await res.text();
+    throw new Error(error);
+  }
+
   return (await res.json()).data as { message: string; };
 }
+
 
 export async function verifyOtp(
   data: VerifyOtpType,
