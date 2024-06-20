@@ -133,33 +133,36 @@ class Address(Base):
     def to_dict(self):
         return {column.name: getattr(self, column.name) for column in self.__table__.columns}
     
-
 class Message(Base):
     __tablename__ = "messages"
 
-    id = Column(String, primary_key=True)
+    id = Column(String, primary_key=True, default=lambda: str(uuid.uuid4()))
     thread_id = Column(String, ForeignKey('threads.id'))
-    sender = Column(String)
+    user_id = Column(String, ForeignKey('users.id'))
+    role = Column(String)
     content = Column(String)
     timestamp = Column(DateTime, default=datetime.utcnow)
 
     thread = relationship("Thread", back_populates="messages")
+    user = relationship("User", back_populates="messages")
     
     # Functions
     def to_dict(self):
         return {column.name: getattr(self, column.name) for column in self.__table__.columns}
 
-
 class Thread(Base):
     __tablename__ = "threads"
 
-    id = Column(String, primary_key=True)
+    id = Column(String, primary_key=True, default=lambda: str(uuid.uuid4()))
+    user_id = Column(String, ForeignKey('users.id'))
+    title =  Column(String)
+
     messages = relationship("Message", back_populates="thread")
+    user = relationship("User", back_populates="threads")
 
     # Functions
     def to_dict(self):
         return {column.name: getattr(self, column.name) for column in self.__table__.columns}
-
 
 class Tenant(Base):
     __tablename__ = "tenants"
