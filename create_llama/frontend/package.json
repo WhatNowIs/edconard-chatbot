@@ -11,12 +11,9 @@
     "generate": "tsx app/api/chat/engine/generate.ts"
   },
   "dependencies": {
-    "@hookform/resolvers": "^3.6.0",
     "@radix-ui/react-collapsible": "^1.0.3",
     "@radix-ui/react-hover-card": "^1.0.7",
-    "@radix-ui/react-label": "^2.0.2",
     "@radix-ui/react-slot": "^1.0.2",
-    "@radix-ui/react-toast": "^1.1.5",
     "@types/lodash.debounce": "^4.0.9",
     "@types/react-icons": "^3.0.0",
     "@types/react-window": "^1.8.8",
@@ -34,7 +31,6 @@
     "pdf2json": "3.0.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-hook-form": "^7.52.0",
     "react-icons": "^5.2.1",
     "react-intersection-observer": "9.5.1",
     "react-markdown": "^8.0.7",
@@ -48,7 +44,8 @@
     "remark-math": "^5.1.1",
     "supports-color": "^8.1.1",
     "tailwind-merge": "^2.1.0",
-    "vaul": "^0.9.1"
+    "vaul": "^0.9.1",
+    "zustand": "^4.5.2"
   },
   "devDependencies": {
     "@types/node": "^20.10.3",
