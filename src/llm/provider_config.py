@@ -59,6 +59,11 @@ class DBConfig(BaseModel):
         description="The url to connect to the database which will be used to store all related user conversations",
         env="DB_URI"
     )
+    redis_url: str | None = Field(
+        default=None,
+        description="The url to connect to the database which will be used to store all related user conversations",
+        env="REDIS_URL"
+    )
 
 class MailConfig(BaseModel):
     resend_api_key: str | None = Field(
