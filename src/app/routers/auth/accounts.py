@@ -29,7 +29,9 @@ async def get_session(
     user_service: UserService = Depends(get_user_service),
     redis_client: Redis = Depends(get_redis_client)
 ) -> Optional[dict]:
+    
     payload = user_service.decode_access_token(token)
+    
     if payload is None:
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
