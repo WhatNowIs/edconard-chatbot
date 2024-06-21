@@ -1,6 +1,6 @@
 from sqlalchemy.ext.asyncio import AsyncSession as Session
-from models.base import Tenant
-from services.service import Service
+from src.core.models.base import Tenant
+from src.core.services.service import Service
 
 class TenantService(Service):
     def __init__(self, db_session: Session):

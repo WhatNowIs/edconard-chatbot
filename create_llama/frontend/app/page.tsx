@@ -4,13 +4,10 @@ import RightNav from "@/app/components/right-nav";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen">
-      {/* <Header />      */}
-      <LeftNav />
-
-      <ChatSection />
-
-      <RightNav />
-    </main>
+      <main className="flex min-h-screen">
+        <LeftNav />
+        <ChatSection />
+        <RightNav />
+      </main>
   );
 }

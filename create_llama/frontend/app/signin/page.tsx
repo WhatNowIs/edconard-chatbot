@@ -1,4 +1,5 @@
-import SigninForm from "../components/ui/account/signin-form";
+import Link from "next/link";
+import SigninForm from "../components/ui/auth/signin-form";
 import { Google, Microsoft } from "../components/ui/chat/icons/main-icons";
 
 export default function Signin() {
@@ -45,9 +46,9 @@ export default function Signin() {
             </div>
             <p className="mt-10 text-center text-sm text-gray-500">
                 Not a member?{' '}
-                <a href="#" className="font-semibold leading-6 text-secondary-foreground">
+                <Link href="/signup" className="font-semibold leading-6 text-secondary-foreground">
                     Create a new account
-                </a>
+                </Link>
             </p>
           </div>
         </div>

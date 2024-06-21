@@ -1,6 +1,9 @@
+import base64
 import hashlib
 import json
 import os
+
+
 
 def encrypt(value: str) -> tuple[str, str]:
     """Hash the value and generate a salt."""
@@ -34,3 +37,10 @@ def generate_hash(*args):
             arg_str = str(arg)
         hasher.update(arg_str.encode("utf-8"))
     return hasher.hexdigest()
+
+def to_base64(input_string: str) -> str:
+    string_bytes = input_string.encode('utf-8')
+    base64_bytes = base64.b64encode(string_bytes)
+    # Convert the base64 bytes back to a string
+    base64_string = base64_bytes.decode('utf-8')
+    return base64_string
