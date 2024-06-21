@@ -52,7 +52,7 @@ export function ChatEvents({
               snippet: citation.text,
               pageNumber: citation.metadata?.page_label as number,
               ticker: citation.metadata?.file_name as string,
-              color: DocumentColorEnum.teal,
+              color: DocumentColorEnum.gray,
             }}
             source={citation} />)
           }

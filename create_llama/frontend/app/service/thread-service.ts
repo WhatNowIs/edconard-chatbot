@@ -8,6 +8,7 @@ const ResponseMessageSchema = z.object({
     role: z.string(),
     content: z.string(),
     timestamp: z.string(),
+    annotations: z.array(z.any())
 });
   
 const ResponseThreadSchema = z.object({

@@ -26,7 +26,7 @@ export default function SignupForm(){
             const configData = await createUserAccount(data as UserFormType);
             console.log(configData);
 
-            router.push("/signin");
+            router.push("/auth/verify-account-msg");
         } catch (err) {
             console.error(err);
             toast({

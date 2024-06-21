@@ -138,6 +138,7 @@ async def verify_otp_code(
     user_service: UserService = Depends(get_user_service)
 ) -> Any:
     try:
+        get_logger().info(data)
         user = await user_service.get_by_email(data.email)
     except Exception as e:
         logger.error(f"Error creating user: {e}")
@@ -157,12 +158,12 @@ async def verify_otp_code(
             return { "message": "Your one-time password has expired", "status": 400 }
         else:            
             otp.status = EntityStatus.Used
-            
             await otp_service.update(otp.id, otp)
 
-            if(otp.email_type.type == EmailTypeEnum.ACCOUNT_VERIFICATION.value):
+            if(data.otp_type == EmailTypeEnum.ACCOUNT_VERIFICATION.value):
                 user.status = EntityStatus.Active
                 await user_service.update(user.id, user)
+
                 return { "message": "Account verified successfully", "status": 200 }
         
         return { "message": "OTP verified successfully", "status": 200 }

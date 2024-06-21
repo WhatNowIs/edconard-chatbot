@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { ShevronDown, ShevronUp } from "./icons/main-icons";
-import { MessageCircle } from "lucide-react";
+// import { MessageCircle } from "lucide-react";
 
 export default function Workspaces() {
     const [isShevronOpen, setShevronIsOpen] = useState<boolean>(true);
@@ -15,12 +15,12 @@ export default function Workspaces() {
                     {isShevronOpen ? <ShevronDown /> : <ShevronUp />}
                 </button>
             </div>
-            <div 
-                className={`p-2 mb-2 bg-gray-100 rounded-md shadow-sm hover:bg-gray-200 transition-colors duration-200 flex items-center cursor-pointer`}
-            >
-                <MessageCircle className="text-gray-500 mr-2" />
-                <span className="text-gray-800 font-medium mr-2">Edconard workspace</span>
-            </div>
+           {isShevronOpen && (
+                <div className={`text-gray-600 my-2 cursor-pointer`}>
+                    {/* <MessageCircle className="text-gray-500 mr-2" /> */}
+                    <span className="mr-2">Edconard workspace</span>
+                </div>
+            )}
         </div>
     );
 }

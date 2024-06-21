@@ -1,11 +1,13 @@
 from datetime import datetime
+import json
 import random
 from datetime import datetime, timedelta
 import enum
 import uuid
-from sqlalchemy import Column, DateTime, Integer, String, ForeignKey, Table, Enum
+from sqlalchemy import Column, DateTime, Integer, String, ForeignKey, Table, Enum, JSON, ARRAY
 from sqlalchemy.orm import relationship
 from sqlalchemy.ext.declarative import declarative_base
+
 
 from src.utils.logger import get_logger
 
@@ -118,7 +120,8 @@ class Address(Base):
     # Functions
     def to_dict(self):
         return {column.name: getattr(self, column.name) for column in self.__table__.columns}
-    
+
+
 class Message(Base):
     __tablename__ = "messages"
 
@@ -128,6 +131,7 @@ class Message(Base):
     role = Column(String)
     content = Column(String)
     timestamp = Column(DateTime, default=datetime.utcnow)
+    annotations = Column(ARRAY(JSON), nullable=True)
 
     thread = relationship("Thread", back_populates="messages")
     user = relationship("User", back_populates="messages")
