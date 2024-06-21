@@ -1,11 +1,12 @@
 "use client"
 
-import { createContext, useState, useEffect, ReactNode, FC } from 'react';
+import { createContext, useState, useEffect, ReactNode, FC, Dispatch, SetStateAction } from 'react';
 import { getBaseURL } from '../service/utils';
 import { UserFormType, UserSigninType, signIn, signOut } from '../service/user-service';
 
 interface AuthContextType {
     user: UserFormType | null;
+    setUser: Dispatch<SetStateAction<UserFormType | null>>;
     login: (credentials: UserSigninType) => Promise<{ message: string; user: UserFormType | null; }>;
     logout: () => Promise<void>;
 }
@@ -18,19 +19,16 @@ interface AuthProviderProps {
 
 export const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
   const [user, setUser] = useState<UserFormType | null>(null);
-  // const [threads, setThreads] = useState<UserFormType | null>(null);
 
   useEffect(() => {
     const token = localStorage.getItem('access_token');
-    if (token) {
+    if (token && !user) {
       const checkAuth = async () => {
         try {
           const response = await fetch(`${getBaseURL()}/api/auth/accounts/me`, {
             headers: { Authorization: `Bearer ${token}` },
           });
           const userData = await response.json();
-
-          console.log("checkAuth: ", userData);
 
           setUser(userData);
         } catch (error) {
@@ -40,15 +38,13 @@ export const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
       };
       checkAuth();
     }
-    console.log("token: ", token);
   }, []);
 
   const login = async (credentials: UserSigninType) => {
     try {
       const { access_token, user, message } = await signIn(credentials);
       localStorage.setItem('access_token', access_token);
-
-      console.log("Login: ", user)
+      document.cookie = `access_token=${access_token}; path=/;`;
       setUser(user);
 
       return {
@@ -69,6 +65,7 @@ export const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
       if(token){
         await signOut(token as string);
         localStorage.removeItem('access_token');
+        document.cookie = 'access_token=; Max-Age=0; path=/;';
         setUser(null);
       }
     } catch (error) {
@@ -77,7 +74,7 @@ export const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
   };
 
   return (
-    <AuthContext.Provider value={{ user, login, logout }}>
+    <AuthContext.Provider value={{ user, setUser, login, logout }}>
       {children}
     </AuthContext.Provider>
   );

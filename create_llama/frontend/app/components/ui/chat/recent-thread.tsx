@@ -5,7 +5,6 @@ import { useContext, useEffect, useState } from "react";
 import { ShevronDown, ShevronUp } from "./icons/main-icons";
 import ChatContext from "@/app/context/chat-context";
 import AuthContext from "@/app/context/auth-context";
-import { HiMiniPencil } from "react-icons/hi2";
 
 export default function RecentThreads() {    
     const [isShevronOpen, setShevronIsOpen] = useState<boolean>(true);
@@ -19,21 +18,16 @@ export default function RecentThreads() {
     const { threads, loadThreads, selectThread, selectedThread } = chatContext;
 
     useEffect(() => {
-        if (user) {
+        if (user && threads.length === 0) {
             loadThreads();
         }
     }, []);
 
-    // useEffect(() => {
-    //     if(selectedThread){
-
-    //     }
-
-    // }, [selectedThread]);
-
     const onSelect = (threadId: string) => {
         selectThread(threadId)
     }
+
+    console.log("threads-------:", threads);
 
     return (    
         <div className="mb-6">
@@ -44,10 +38,10 @@ export default function RecentThreads() {
                 </button>
             </div>
             {
-                isShevronOpen && threads && threads.slice().reverse().map((thread) => (
+                (isShevronOpen && threads) && threads.slice().reverse().map((thread) => (
                     <div 
                         onClick={() => onSelect(thread.id)}
-                        className={`flex justify-between text-gray-600 my-2 cursor-pointer p-2 ${selectedThread?.id === thread.id ? "bg-gray-100 rounded-md": ""}`}>
+                        className={`flex justify-between text-gray-600 text-sm my-2 cursor-pointer p-2 ${selectedThread?.id === thread.id ? "bg-gray-100 rounded-md": ""}`}>
                         <span>{thread.title}</span>
                         {/* <HiMiniPencil/> */}
                     </div>

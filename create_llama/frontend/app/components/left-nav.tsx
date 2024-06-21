@@ -14,8 +14,10 @@ import { useState } from "react";
 import AuthContext from "../context/auth-context";
 import { useContext } from "react";
 import ChatContext from "../context/chat-context";
+import { ResponseThread } from "../service/thread-service";
+import { UserFormType } from "../service/user-service";
 
-export default function LeftNav() {
+export default function LeftNav({ userThreads, userData }: { userThreads: ResponseThread[]; userData: UserFormType | null; }) {
     const currentPath = usePathname();
     const chatContext = useContext(ChatContext);
     const [isLoading, setIsLoading] = useState<boolean>(false);
@@ -26,7 +28,16 @@ export default function LeftNav() {
     if (!authContext) {
         throw new Error('useContext must be used within an AuthProvider');
     }
-    const { user } = authContext;
+    const { user, setUser } = authContext;
+
+    if(chatContext){
+        const { setThreads, threads } = chatContext;
+        threads.length === 0 && setThreads(userThreads);
+    }
+
+    if(!user){
+        setUser(userData);
+    }
     
     const handleNewThread = () => {
         setIsLoading(true);
@@ -68,23 +79,23 @@ export default function LeftNav() {
             }           
             {
                 currentPath !== "/accounts" && (
-                    <>
-                        <Button 
-                            type="submit" 
-                            className="w-full flex items-center mb-6" 
-                            onClick={handleNewThread} 
-                            disabled={isButtonDisabled}
-                        >
-                            {isLoading ? "Loading..." : <><PlusIcon /> New Thread</>}
-                        </Button>                        
-                        {user && (
-                            <>                        
-                                <Workspaces />
-                                <RecentThreads />
-                                <ChatBundles />
-                                <Marketplace />
-                            </>
-                        )}
+                    <>              
+                    {user && (
+                        <>     
+                            <Button 
+                                type="submit" 
+                                className="w-full flex items-center mb-6" 
+                                onClick={handleNewThread} 
+                                disabled={isButtonDisabled}
+                            >
+                                {isLoading ? "Loading..." : <><PlusIcon /> New Thread</>}
+                            </Button>                        
+                            <Workspaces />
+                            <RecentThreads />
+                            <ChatBundles />
+                            <Marketplace />
+                        </>
+                    )}
                     </>
                 )
             }

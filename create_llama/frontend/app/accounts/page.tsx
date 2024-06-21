@@ -4,17 +4,54 @@ import { Button } from "@/app/components/ui/button";
 import { Input } from "@/app/components/ui/input";
 import UpdateProfile from "@/app/components/ui/account/update-profile";
 import AccountOverview from "@/app/components/ui/account/account-overview"
+import { cookies } from 'next/headers';
+import { redirect } from 'next/navigation';
+import { ResponseThread } from "../service/thread-service";
 
+async function getThreads(token: string): Promise<ResponseThread[]> {  
+    const threadResponse = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/threads`, {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    });
 
-export default function AccountSettings() {    
+    if (!threadResponse.ok) {
+        return []
+    }
+  
+    return await threadResponse.json() as ResponseThread[];  
+}  
+  
+async function getUser(token: string){
+    const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/auth/me`, {
+        headers: {
+        Authorization: `Bearer ${token}`,
+        },
+    });
+
+    if (!response.ok) {
+        redirect('/signin');
+    }  
+
+    return await response.json();  
+}
+export default async function AccountSettings() { 
+    const token = cookies().get('access_token');
+    
+    if (!token) {
+        redirect('/signin');
+    }
+
+    const threadData = token.value ? await getThreads(token.value as string) : [];
+    const userData = token.value ? await getUser(token.value as string) : null; 
 
     return (
         <div className="w-full flex h-screen">
-                <LeftNav />
+                <LeftNav userThreads={threadData} userData={userData}/>
                 <main className="w-full h-screen items-center flex flex-col overflow-auto">
                     <div className="grid w-full grid-cols-1 gap-y-10 px-4 py-16 sm:px-6 md:grid-cols-3 lg:px-8 py-6">
-                        <UpdateProfile />
-                        <AccountOverview />
+                        <UpdateProfile user={userData} />
+                        <AccountOverview userData={userData} />
                     </div>
 
                     <div className="grid w-full grid-cols-1 gap-y-10 px-4 py-16 sm:px-6 md:grid-cols-3 lg:px-8">

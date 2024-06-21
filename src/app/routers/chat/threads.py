@@ -6,7 +6,7 @@ from src.app.routers.auth.accounts import get_session
 from src.core.dbconfig.postgres import get_db
 from src.core.models.base import Thread
 from src.core.services.thread import ThreadService
-from src.schema import ResponseMessage, ResponseThread, ThreadCreate
+from src.schema import ResponseMessage, ResponseThread, ThreadCreate, ThreadUpdate
 
 threads_router = r = APIRouter()
 
@@ -54,17 +54,20 @@ async def fetch_threads(
 @r.patch("/{thread_id}", response_model=ResponseThread)
 async def update_thread(
     thread_id: str,
-    data: ThreadCreate,
+    data: ThreadUpdate,
     session: dict = Depends(get_session),
     thread_service: ThreadService = Depends(get_thread_service)
 ):    
     if "sub" in session:
-        user_id = session["sub"]
-        thread: Thread = await thread_service.get_by_user_id_abd_thread_id(uid=user_id, thread_id=thread_id)
-        thread.title = data.title
-        await thread_service.update(thread)
-        
-        return thread
+        thread = await thread_service.get_by_user_id_and_thread_id(uid=data.user_id, thread_id=thread_id)
+
+        if(thread):
+            thread.title = data.title
+            await thread_service.update(thread_id, thread)
+            
+            return ResponseThread(**thread.to_dict())
+        else:
+            print("Thread not found")
 
     raise HTTPException(
         status_code=status.HTTP_401_UNAUTHORIZED,

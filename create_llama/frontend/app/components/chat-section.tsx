@@ -3,7 +3,7 @@
 import { useChat } from "ai/react";
 import { ChatInput, ChatMessages } from "./ui/chat";
 import { PdfFocusProvider } from "@/app/context/pdf";
-import { useContext, useEffect } from "react";
+import { useContext, useEffect, useState } from "react";
 import AuthContext from "../context/auth-context";
 import ChatContext from "../context/chat-context";
 
@@ -12,7 +12,7 @@ type ChatUILayout = "default" | "fit";
 export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
   const authContext = useContext(AuthContext);
   const chatContext = useContext(ChatContext);
-  const access_token = localStorage.getItem('access_token');
+  const [accessToken, setAccessToken] = useState<string>('');
   
   const getChatUrl = () => {
     const isWithinContext = (chatContext && authContext)
@@ -36,7 +36,7 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
     api: getChatUrl(),
     headers: {
       "Content-Type": "application/json",
-      ...(authContext && authContext?.user ? { Authorization: `Bearer ${access_token}` } : {}),
+      ...(authContext && authContext?.user ? { Authorization: `Bearer ${accessToken}` } : {}),
     },
     onError: (error) => {
       const message = JSON.parse(error.message);
@@ -45,6 +45,14 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
   });
 
   
+
+  useEffect(() => {
+    if(localStorage){      
+      const access_token = localStorage ? localStorage.getItem('access_token') : null;
+      setAccessToken(access_token as string);
+    }
+
+  }, []);
 
   useEffect(() => {
 
