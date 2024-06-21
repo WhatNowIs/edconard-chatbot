@@ -5,20 +5,23 @@ import { useContext } from "react";
 import AuthContext from "@/app/context/auth-context";
 import { Input } from "../input";
 import { Button } from "../button";
+import { UserFormType } from "@/app/service/user-service";
 
-export default function AccountOverview(){
+export default function AccountOverview({ userData }: { userData: UserFormType; }){
     const authContext = useContext(AuthContext);
     
     if (!authContext) {
         throw new Error('useContext must be used within an AuthProvider');
     }
-    const { user } = authContext;
-    
+    const { user, setUser } = authContext;
 
-    return (
-        
+    if(!user){
+        setUser(userData);
+    }
+
+    return (        
         <form className="md:col-span-2">
-        <h1 className="md:col-span-1 text-gray-800 text-3xl">Account Settings</h1>
+            <h1 className="md:col-span-1 text-gray-800 text-3xl">Account Settings</h1>
         <div className="grid grid-cols-1 gap-x-6 gap-y-8 sm:max-w-xl sm:grid-cols-6 my-6">
             <div className="sm:col-span-3">
                 <label htmlFor="first-name" className="block text-sm font-medium leading-6 ">
