@@ -37,7 +37,7 @@
     "react-icons": "^5.2.1",
     "react-intersection-observer": "9.5.1",
     "react-markdown": "^8.0.7",
-    "react-pdf": "^6.2.2",
+    "react-pdf": "^9.0.0",
     "react-syntax-highlighter": "^15.5.0",
     "react-window": "1.8.9",
     "rehype-katex": "^7.0.0",
