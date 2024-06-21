@@ -27,6 +27,11 @@ class ResponseThread(BaseModel):
 
 class ThreadCreate(BaseModel):
     title: str
+    user_id: str
+
+class ThreadUpdate(BaseModel):
+    title: str
+    user_id: str
 
 class UserModel(BaseModel):
     id: Optional[str] = None

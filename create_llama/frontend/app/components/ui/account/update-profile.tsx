@@ -3,8 +3,9 @@
 import { useRef, ChangeEvent, useState } from "react";
 import { Input } from "../input";
 import Image from "next/image";
+import { UserFormType } from "@/app/service/user-service";
 
-export default function UpdateProfile(){
+export default function UpdateProfile({ user }: { user: UserFormType; }){
     const [fileUrl, setFileUrl] = useState<string>("https://via.placeholder.com/80");
     const [fileName, setFileName] = useState<string>("Change profile");
     const fileInputRef = useRef<HTMLInputElement>(null);

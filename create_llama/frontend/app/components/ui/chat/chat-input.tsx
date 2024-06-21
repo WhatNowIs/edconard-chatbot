@@ -1,9 +1,12 @@
-import { useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Button } from "../button";
 import FileUploader from "../file-uploader";
 import { Input } from "../input";
 import UploadImagePreview from "../upload-image-preview";
 import { ChatHandler } from "./chat.interface";
+import { useGenerateTitle } from "@/app/utils/thread-title-generator";
+import ChatContext from "@/app/context/chat-context";
+import AuthContext from "@/app/context/auth-context";
 
 export default function ChatInput(
   props: Pick<
@@ -18,6 +21,9 @@ export default function ChatInput(
     multiModal?: boolean;
   },
 ) {
+  const { generateTitle, loading, title } = useGenerateTitle();
+  const chatContext = useContext(ChatContext);
+  const authContext = useContext(AuthContext);
   const [imageUrl, setImageUrl] = useState<string | null>(null);
 
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -27,6 +33,14 @@ export default function ChatInput(
       });
       setImageUrl(null);
       return;
+    }
+    if(authContext && chatContext){
+      const { user } = authContext;
+      const { messages } = chatContext;     
+      
+      console.log("Clicked messages: ", messages);
+      
+      user && messages.length === 0 && generateTitle(props.input).catch((error) => console.log(error));
     }
     props.handleSubmit(e);
   };
@@ -53,6 +67,18 @@ export default function ChatInput(
       props.onFileError?.(error.message);
     }
   };
+
+  useEffect(() => {
+    if(!loading){
+      if(chatContext && authContext){
+        const { editThread, selectedThread, setSelectedThread } = chatContext;
+        const { user } = authContext;
+        (user && selectedThread) && editThread(selectedThread?.id as string, { title: title, user_id: user.id as string})
+        selectedThread && setSelectedThread({...selectedThread, title: title})
+      }
+
+    }
+  }, [loading]);
 
   return (
     <form
