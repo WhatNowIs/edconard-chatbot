@@ -17,13 +17,13 @@ class ResponseMessage(BaseModel):
     user_id : str
     role : str
     content : str
-    timestamp : str
+    annotations: Optional[List[dict]] = None
 
 class ResponseThread(BaseModel):
     id : str 
     user_id : str
     title : str
-    messages : List[ResponseMessage]
+    # messages : List[ResponseMessage]
 
 class ThreadCreate(BaseModel):
     title: str

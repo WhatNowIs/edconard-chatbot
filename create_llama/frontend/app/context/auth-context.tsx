@@ -32,7 +32,7 @@ export const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
 
           console.log("checkAuth: ", userData);
 
-          setUser(userData.data);
+          setUser(userData);
         } catch (error) {
           localStorage.removeItem('access_token');
           setUser(null);
