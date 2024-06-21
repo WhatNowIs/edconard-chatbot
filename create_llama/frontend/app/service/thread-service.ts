@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { getBaseURL } from "./utils";
+import { getBackendURL, getBaseURL } from "./utils";
 
 const ResponseMessageSchema = z.object({
     id: z.string(),
@@ -30,7 +30,7 @@ export type ResponseThread = z.TypeOf<typeof ResponseThreadSchema>;
 export type ThreadCreate = z.TypeOf<typeof ThreadCreateSchema>;
 
 
-const baseURL = `${getBaseURL()}/api/chat/threads`;
+const baseURL = `${getBackendURL()}/api/chat/threads`;
 
 async function fetchWithAuth(url: string, options: RequestInit = {}) {  
   const access_token = localStorage.getItem('access_token');
@@ -40,7 +40,7 @@ async function fetchWithAuth(url: string, options: RequestInit = {}) {
     headers: {
       ...options.headers,
       'Content-Type': 'application/json',
-      Authorization: `Bearer ${access_token}`
+      "Authorization": `Bearer ${access_token}`
     },
   });
 
@@ -68,7 +68,7 @@ export async function fetchThreads(): Promise<ResponseThread[]> {
 export async function updateThread(thread_id: string, data: ThreadCreate): Promise<ResponseThread> {
   const res = await fetchWithAuth(`${baseURL}/${thread_id}`, {
     method: 'PATCH',
-    body: JSON.stringify(data),
+    body: JSON.stringify({...data}),
   });
   return res as ResponseThread;
 }
