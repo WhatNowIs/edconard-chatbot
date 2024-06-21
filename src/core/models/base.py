@@ -1,11 +1,25 @@
 from datetime import datetime
+import json
+import random
+from datetime import datetime, timedelta
 import enum
 import uuid
-from sqlalchemy import Column, DateTime, String, ForeignKey, Table, Enum, Text
+from sqlalchemy import Column, DateTime, Integer, String, ForeignKey, Table, Enum, JSON, ARRAY
 from sqlalchemy.orm import relationship
 from sqlalchemy.ext.declarative import declarative_base
 
+
+from src.utils.logger import get_logger
+
 Base = declarative_base()
+
+def get_otp_expiration(minutes: int = 10) -> datetime:
+    expiration_time = datetime.now() + timedelta(minutes=minutes)
+    return expiration_time
+
+def generate_otp() -> str:
+    otp = random.randint(100000, 999999)
+    return str(otp)
 
 class EntityStatus(enum.Enum):
     Active = "Active"
@@ -53,6 +67,8 @@ class User(Base):
     # Relationships
     addresses = relationship("Address", secondary=user_addresses, backref="users")
     tenants = relationship("Tenant", secondary=tenant_users, backref="users")
+    messages = relationship("Message", back_populates="user")
+    threads = relationship("Thread", back_populates="user")
 
     # Functions
     def to_dict(self):
@@ -88,22 +104,6 @@ class Credential(Base):
     def to_dict(self):
         return {column.name: getattr(self, column.name) for column in self.__table__.columns}
 
-class OTP(Base):
-    __tablename__ = "otp"
-    id = Column(String(36), primary_key=True, default=lambda: str(uuid.uuid4()))
-    code = Column(String)
-    user_id = Column(String(36), ForeignKey('users.id'))
-    created_at = Column(DateTime, index=True, default=datetime.now)
-    deleted_at = Column(DateTime)
-    updated_at = Column(DateTime)
-    status = Column(Enum(EntityStatus), nullable=True)
-
-    # Relationships
-    user = relationship("User", uselist=False, backref="otp")
-
-    def to_dict(self):
-        return {column.name: getattr(self, column.name) for column in self.__table__.columns}
-
 class Address(Base):
     __tablename__ = "addresses"
     id = Column(String(36), primary_key=True, default=lambda: str(uuid.uuid4()))
@@ -120,25 +120,39 @@ class Address(Base):
     # Functions
     def to_dict(self):
         return {column.name: getattr(self, column.name) for column in self.__table__.columns}
-    
+
 
 class Message(Base):
     __tablename__ = "messages"
 
-    id = Column(String, primary_key=True)
+    id = Column(String, primary_key=True, default=lambda: str(uuid.uuid4()))
     thread_id = Column(String, ForeignKey('threads.id'))
-    sender = Column(String)
+    user_id = Column(String, ForeignKey('users.id'))
+    role = Column(String)
     content = Column(String)
     timestamp = Column(DateTime, default=datetime.utcnow)
+    annotations = Column(ARRAY(JSON), nullable=True)
 
     thread = relationship("Thread", back_populates="messages")
-
+    user = relationship("User", back_populates="messages")
+    
+    # Functions
+    def to_dict(self):
+        return {column.name: getattr(self, column.name) for column in self.__table__.columns}
 
 class Thread(Base):
     __tablename__ = "threads"
 
-    id = Column(String, primary_key=True)
+    id = Column(String, primary_key=True, default=lambda: str(uuid.uuid4()))
+    user_id = Column(String, ForeignKey('users.id'))
+    title =  Column(String)
+
     messages = relationship("Message", back_populates="thread")
+    user = relationship("User", back_populates="threads")
+
+    # Functions
+    def to_dict(self):
+        return {column.name: getattr(self, column.name) for column in self.__table__.columns}
 
 class Tenant(Base):
     __tablename__ = "tenants"
@@ -155,5 +169,44 @@ class Tenant(Base):
     # Functions
     def to_dict(self):
         return {column.name: getattr(self, column.name) for column in self.__table__.columns}
-    
 
+class EmailType(Base):
+    __tablename__ = 'email_types'
+    id = Column(Integer, primary_key=True, index=True)
+    type = Column(String, unique=True, index=True)
+    
+class EmailTemplate(Base):
+    __tablename__ = 'email_templates'
+    id = Column(Integer, primary_key=True, index=True)
+    name = Column(String, unique=True, index=True)
+    subject = Column(String)
+    content = Column(String)
+
+class OTP(Base):
+    __tablename__ = "otp"
+    id = Column(String(36), primary_key=True, default=lambda: str(uuid.uuid4()))
+    code = Column(String, default=generate_otp())
+    email = Column(String, index=True)
+    user_id = Column(String(36), ForeignKey('users.id'))
+    email_template_id = Column(Integer, ForeignKey('email_templates.id'))
+    email_type_id = Column(Integer, ForeignKey('email_types.id'))
+    expires_at = Column(DateTime, default=get_otp_expiration())
+    created_at = Column(DateTime, index=True, default=datetime.now())
+    deleted_at = Column(DateTime)
+    updated_at = Column(DateTime, default=datetime.now())
+    status = Column(Enum(EntityStatus), nullable=True)
+
+    # Relationships
+    user = relationship("User", uselist=False, backref="otp")
+    email_template = relationship("EmailTemplate")
+    email_type = relationship("EmailType")
+
+    # Functions
+    def is_expired(self):
+        current_time = datetime.now()
+        get_logger().info(f"Current time: {current_time}, Expiry time: {self.expires_at}")
+
+        return current_time > self.expires_at
+
+    def to_dict(self):
+        return {column.name: getattr(self, column.name) for column in self.__table__.columns}

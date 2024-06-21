@@ -67,6 +67,7 @@ const config: Config = {
         "llama-blue": "#87B6F3",
         "llama-indigo-light": "#EDECFD",
         "llama-indigo": "#817AF2",
+        "llama-gray": "#A9A9A9",
       },
       borderRadius: {
         xl: `calc(var(--radius) + 4px)`,
