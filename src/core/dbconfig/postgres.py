@@ -1,7 +1,15 @@
+import os
+from pathlib import Path
+from dotenv import load_dotenv
 from sqlalchemy.ext.asyncio import AsyncSession, async_sessionmaker, create_async_engine
 from sqlalchemy.engine import Engine
 from src.core.dbconfig.datasource import Datasource
-from src.llm.env_config import get_config
+
+current_file = Path(__file__).resolve()
+root_directory = current_file.parents[3]
+env_path = root_directory / 'config' / '.env'
+
+load_dotenv(dotenv_path=env_path)
 
 class PostgresDatasource(Datasource):
     def __init__(self, db_uri, base=None):
@@ -44,7 +52,7 @@ class PostgresDatasource(Datasource):
             yield session
 
 # Initialize the database connection
-DATABASE_URL = get_config().db_uri
+DATABASE_URL = os.getenv('DB_URI')
 
 database = PostgresDatasource(db_uri=DATABASE_URL)
 

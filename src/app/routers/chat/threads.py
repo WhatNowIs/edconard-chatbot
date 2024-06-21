@@ -25,7 +25,8 @@ async def create_thread(
             user_id = user_id,
             title = data.title,
         )
-        created_thread = await thread_service.create(thread)        
+        created_thread = await thread_service.create(thread)   
+
         return ResponseThread(**created_thread.to_dict())
     
     raise HTTPException(
@@ -42,7 +43,7 @@ async def fetch_threads(
         user_id = session["sub"]
 
         threads = await thread_service.get_all_by_user_id(user_id)
-        
+
         return [ResponseThread(**thread.to_dict()) for thread in threads]
     
     raise HTTPException(

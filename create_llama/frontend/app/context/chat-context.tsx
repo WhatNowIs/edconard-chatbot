@@ -35,12 +35,23 @@ export const ChatProvider: FC<ChatProviderProps> = ({ children }) => {
       console.error('Failed to fetch threads:', error);
     }
   };
+  
+  const fetchMessages = async (thread_id: string) => {
+    try {
+      const fetchedMessages = await getMessagesByThreadId(thread_id);
+      setMessages(fetchedMessages);
+      return fetchedMessages;
+    } catch (error) {
+      console.error('Failed to fetch messages:', error);
+      return [];
+    }
+  };
 
-  const selectThread = (thread_id: string) => {
+  const selectThread = async (thread_id: string) => {
     const currentThread = threads.find((thread) => thread.id === thread_id);
     currentThread && setSelectedThread(currentThread);
+    await fetchMessages(thread_id)
   }
-
 
   useEffect(() => {
     const token = localStorage.getItem('access_token');
@@ -56,6 +67,11 @@ export const ChatProvider: FC<ChatProviderProps> = ({ children }) => {
       fetchUserThreads();
     }
   }, []);
+
+  
+  useEffect(() => {
+    setSelectedThread(threads[threads.length - 1] as unknown as ResponseThread);    
+  }, [threads]);
 
   const addThread = async (data: ThreadCreate) => {
     try {
@@ -86,17 +102,6 @@ export const ChatProvider: FC<ChatProviderProps> = ({ children }) => {
     } catch (error) {
       console.error('Failed to fetch thread:', error);
       return null;
-    }
-  };
-
-  const fetchMessages = async (thread_id: string) => {
-    try {
-      const fetchedMessages = await getMessagesByThreadId(thread_id);
-      setMessages(fetchedMessages);
-      return fetchedMessages;
-    } catch (error) {
-      console.error('Failed to fetch messages:', error);
-      return [];
     }
   };
 

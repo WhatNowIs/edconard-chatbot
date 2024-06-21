@@ -1,7 +1,15 @@
+import os
+from pathlib import Path
+from dotenv import load_dotenv
 import redis.asyncio as redis
 from src.core.dbconfig.datasource import Datasource
-from src.llm.env_config import get_config
 from redis.asyncio.client import Redis
+
+current_file = Path(__file__).resolve()
+root_directory = current_file.parents[3]  
+
+env_path = root_directory / 'config' / '.env'
+load_dotenv(dotenv_path=env_path)
 
 class RedisDatasource(Datasource):
     def __init__(self, uri):
@@ -19,7 +27,7 @@ class RedisDatasource(Datasource):
             self.redis_client.close()
 
 # Initialize the database connection
-REDIS_URL = get_config().redis_url
+REDIS_URL = os.getenv('REDIS_URL')
 
 redis_db = RedisDatasource(uri=REDIS_URL)
 

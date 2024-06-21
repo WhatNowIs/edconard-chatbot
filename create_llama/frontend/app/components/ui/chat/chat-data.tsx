@@ -1,7 +1,7 @@
 import { SourceNode } from "./index";
 import CitationDisplay from "./widgets/citation-display";
 import { Citation } from "@/app/types/threads";
-import { borderColors } from '@/app/utils/colors'
+import { DocumentColorEnum, borderColors } from '@/app/utils/colors'
 
 export function ChatData({
   data,
@@ -25,9 +25,10 @@ export function ChatData({
                     snippet: citation.text,
                     pageNumber: citation.metadata?.page_label as number,
                     ticker: citation.metadata?.file_name,
-                    color: borderColors["llama-lime"],
+                    color: DocumentColorEnum.gray,
                   } as Citation
                 }
+                source={citation}
               />
             );
           }
