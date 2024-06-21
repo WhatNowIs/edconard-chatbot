@@ -1,12 +1,14 @@
 "use client";
 
-import { createContext, useState, ReactNode, FC, useContext, useEffect } from 'react';
+import { createContext, useState, ReactNode, FC, useContext, useEffect, Dispatch, SetStateAction } from 'react';
 import { ResponseMessage, ResponseThread, ThreadCreate, createThread, fetchThreads, getMessagesByThreadId, getThread, removeThread, updateThread } from '../service/thread-service';
 
 interface ChatContextType {
   threads: ResponseThread[];
   messages: ResponseMessage[];
   selectedThread: ResponseThread | null;
+  setSelectedThread: Dispatch<SetStateAction<ResponseThread | null>>;
+  setThreads: Dispatch<SetStateAction<ResponseThread[]>>;
   loadThreads: () => Promise<void>;
   addThread: (data: ThreadCreate) => Promise<ResponseThread | null>;
   editThread: (thread_id: string, data: ThreadCreate) => Promise<ResponseThread | null>;
@@ -55,7 +57,7 @@ export const ChatProvider: FC<ChatProviderProps> = ({ children }) => {
 
   useEffect(() => {
     const token = localStorage.getItem('access_token');
-    if (token) {
+    if (token && threads.length === 0) {
       const fetchUserThreads = async () => {
         try {
           await loadThreads();
@@ -70,7 +72,9 @@ export const ChatProvider: FC<ChatProviderProps> = ({ children }) => {
 
   
   useEffect(() => {
-    setSelectedThread(threads[threads.length - 1] as unknown as ResponseThread);    
+    const currentThread = threads[threads.length - 1] as unknown as ResponseThread;
+    setSelectedThread(currentThread);
+    currentThread && fetchMessages(currentThread.id).catch(error => console.log(error)); 
   }, [threads]);
 
   const addThread = async (data: ThreadCreate) => {
@@ -120,6 +124,8 @@ export const ChatProvider: FC<ChatProviderProps> = ({ children }) => {
         threads,
         messages,
         selectedThread,
+        setSelectedThread,
+        setThreads,
         loadThreads,
         addThread,
         editThread,
