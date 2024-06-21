@@ -3,10 +3,26 @@
 import { useChat } from "ai/react";
 import { ChatInput, ChatMessages } from "./ui/chat";
 import { PdfFocusProvider } from "@/app/context/pdf";
+import { useContext, useEffect } from "react";
+import AuthContext from "../context/auth-context";
+import ChatContext from "../context/chat-context";
 
 type ChatUILayout = "default" | "fit";
 
 export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
+  const authContext = useContext(AuthContext);
+  const chatContext = useContext(ChatContext);
+  const access_token = localStorage.getItem('access_token');
+  
+  const getChatUrl = () => {
+    const isWithinContext = (chatContext && authContext)
+    if(isWithinContext && authContext?.user && chatContext.selectedThread){
+      return `${process.env.NEXT_PUBLIC_CHAT_API}/${chatContext.selectedThread?.id}/message`;
+    }
+
+    return process.env.NEXT_PUBLIC_CHAT_API
+  }
+
   const {
     messages,
     input,
@@ -15,16 +31,38 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
     handleInputChange,
     reload,
     stop,
+    setMessages
   } = useChat({
-    api: process.env.NEXT_PUBLIC_CHAT_API,
+    api: getChatUrl(),
     headers: {
-      "Content-Type": "application/json", // using JSON because of vercel/ai 2.2.26
+      "Content-Type": "application/json",
+      ...(authContext && authContext?.user ? { Authorization: `Bearer ${access_token}` } : {}),
     },
     onError: (error) => {
       const message = JSON.parse(error.message);
-      alert(message.detail);
+      alert(`Chat error: ${JSON.stringify(message.detail)}`);
     },
   });
+
+  
+
+  useEffect(() => {
+
+    console.log('Old messages: ');
+    console.log(messages)
+
+    if(chatContext){
+      const { messages } = chatContext;
+      const finalMessages =  messages.map((msg) => ({ 
+        content: msg.content, 
+        role: msg.role as ('system' | 'user' | 'assistant' | 'function' | 'data' | 'tool'), 
+        id: msg.id,
+        annotations: msg.annotations
+      }));
+      setMessages(finalMessages)
+    }
+
+  }, [chatContext?.messages]);
 
   return (
     <PdfFocusProvider>

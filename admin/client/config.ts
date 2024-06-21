@@ -110,6 +110,26 @@ export async function updateConfig(
   return (await res.json()).data as ConfigFormType;
 }
 
+export async function updateDBConfig(
+  data: ConfigFormType,
+): Promise<ConfigFormType> {
+  // Ignore configured attribute
+  const { configured, ...updateValues } = data;
+
+  const res = await fetch(`${getBaseURL()}/api/management/config`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(updateValues),
+  });
+  if (!res.ok) {
+    const error = await res.text();
+    throw new Error(error);
+  }
+  return (await res.json()).data as ConfigFormType;
+}
+
 export async function fetchModels(
   provider: string,
   providerUrl?: string,

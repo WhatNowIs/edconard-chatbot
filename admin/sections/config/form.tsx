@@ -53,6 +53,7 @@ export const ConfigForm = ({ setConfigured }: { setConfigured: any }) => {
     setIsSubmitting(false);
   }
 
+
   useEffect(() => {
     fetchConfig()
       .then((config) => {
@@ -94,6 +95,7 @@ export const ConfigForm = ({ setConfigured }: { setConfigured: any }) => {
         {defaultValues.configured && (
           <RAGConfig form={form} isSubmitting={isSubmitting} />
         )}
+        {/* <DbConfig form={form} isSubmitting={isSubmitting} /> */}
       </form>
     </Form>
   );
