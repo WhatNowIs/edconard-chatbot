@@ -76,7 +76,7 @@ export default function ChatInput(
           onFileError={props.onFileError}
         />
         <Button type="submit" disabled={props.isLoading}>
-          Send messages
+          Send message
         </Button>
       </div>
     </form>
