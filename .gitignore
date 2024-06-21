@@ -4,6 +4,7 @@ storage/
 **/__pycache__/
 
 **/.env
+.venv/
 
 data/
 node_modules/

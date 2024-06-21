@@ -1,11 +1,13 @@
-import Header from "@/app/components/header";
-import ChatSection from "./components/chat-section";
+import ChatSection from "@/app/components/chat-section";
+import LeftNav from "@/app/components/left-nav";
+import RightNav from "@/app/components/right-nav";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center gap-10 p-24 background-gradient">
-      <Header />
-      <ChatSection />
-    </main>
+      <main className="flex min-h-screen">
+        <LeftNav />
+        <ChatSection />
+        <RightNav />
+      </main>
   );
 }
