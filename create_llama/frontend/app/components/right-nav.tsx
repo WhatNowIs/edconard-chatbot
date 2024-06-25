@@ -1,5 +1,6 @@
 "use client"
 
+import React from 'react'; 
 import { useEffect, useRef, useState } from 'react';
 import { HiMiniCog6Tooth  } from 'react-icons/hi2';
 import { Settings } from './ui/account/settings';

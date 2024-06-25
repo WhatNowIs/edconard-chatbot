@@ -1,5 +1,6 @@
 "use client"
 
+import React, { useEffect } from 'react'; 
 import { useRef, ChangeEvent, useState } from "react";
 import { Input } from "../input";
 import Image from "next/image";
@@ -38,6 +39,10 @@ export default function UpdateProfile({ user }: { user: UserFormType; }){
         }
       }
     };
+
+    useEffect(() => {
+      console.log(user);
+    }, [user]);
 
     return (
         <div>                        
