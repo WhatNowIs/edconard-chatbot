@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { getBackendURL, getBaseURL } from "./utils";
+import { getBackendURL } from "./utils";
 
 const ResponseMessageSchema = z.object({
     id: z.string(),

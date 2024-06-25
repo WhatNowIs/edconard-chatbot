@@ -1,5 +1,7 @@
 "use client";
 
+import React from 'react';
+
 import { createContext, useState, ReactNode, FC, useContext, useEffect, Dispatch, SetStateAction } from 'react';
 import { ResponseMessage, ResponseThread, ThreadCreate, createThread, fetchThreads, getMessagesByThreadId, getThread, removeThread, updateThread } from '../service/thread-service';
 

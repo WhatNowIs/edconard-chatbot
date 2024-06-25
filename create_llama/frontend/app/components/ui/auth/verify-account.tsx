@@ -1,7 +1,7 @@
 "use client"
-
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import React from 'react'; 
 import { useEffect, useState } from "react";
-import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 import { Button } from "../button";
 import { useRouter } from 'next/navigation';
@@ -88,7 +88,7 @@ export default function VerifyAccountForm(){
                     )}
                 />
                 <div className="flex gap-2 text-sm leading-6">
-                    <span>Didn't recieve code? </span>
+                    <span>Didn&apos;t recieve code? </span>
                     <button onClick={() => resendOtp(base64ToString(uid as string))} className="border-none bg-white font-semibold text-secondary-foreground">
                         resend
                     </button>

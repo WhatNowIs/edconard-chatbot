@@ -1,3 +1,4 @@
+import React from 'react'; 
 export interface WeatherData {
   latitude: number;
   longitude: number;
