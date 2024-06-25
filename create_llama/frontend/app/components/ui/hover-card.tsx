@@ -1,5 +1,5 @@
 "use client";
-
+/* eslint-disable react/prop-types */
 import * as HoverCardPrimitive from "@radix-ui/react-hover-card";
 import * as React from "react";
 
@@ -11,7 +11,7 @@ const HoverCardTrigger = HoverCardPrimitive.Trigger;
 
 const HoverCardContent = React.forwardRef<
   React.ElementRef<typeof HoverCardPrimitive.Content>,
-  React.ComponentPropsWithoutRef<typeof HoverCardPrimitive.Content>
+  React.ComponentPropsWithoutRef<typeof HoverCardPrimitive.Content>  & { className?: string }
 >(({ className, align = "center", sideOffset = 4, ...props }, ref) => (
   <HoverCardPrimitive.Content
     ref={ref}

@@ -2,6 +2,7 @@
  * Patching:
  * Add a new chat page which only includes the chat section with responsive layout
  */
+import React from 'react'; 
 
 import ChatSection from "../components/chat-section";
 

@@ -1,3 +1,4 @@
+import React from 'react'; 
 import Link from "next/link";
 import ForgotPasswordForm from "../components/ui/auth/forgot-password-form";
 

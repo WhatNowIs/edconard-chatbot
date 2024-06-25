@@ -1,3 +1,4 @@
+import React from 'react'; 
 import { Button } from "../../button";
 import {
   Drawer,
@@ -33,6 +34,7 @@ export default function PdfDialog(props: PdfDialogProps) {
                 className="hover:text-blue-900"
                 href={props.url}
                 target="_blank"
+                rel="noreferrer"
               >
                 {props.path}
               </a>

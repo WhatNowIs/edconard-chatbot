@@ -1,4 +1,4 @@
-import Fuse from "fuse.js";
+// import Fuse from "fuse.js";
 import { DocumentColorEnum, highlightColors } from "./colors";
 
 interface WordData {
@@ -41,15 +41,7 @@ export const multiHighlight = (
   });
   
 
-  const searchString = textToHighlight;
-  // searchString = searchString.replace(/\s{2,}/g, " ");
-  // searchString = searchString.replace(/\t/g, " ");
-  // searchString = searchString
-  // //   .toString()
-  // //   .trim()
-  //   .replaceAll("\n", "");
-
-    
+  const searchString = textToHighlight;    
 
   const searchWords = searchString.split("\n").map((word) => word.replaceAll(" ", ""));
 
@@ -69,21 +61,6 @@ export const multiHighlight = (
     words,
     lenSearchString
   );
-
-  const options = {
-    includeScore: true,
-    threshold: 0.1, // Adjust this threshold according to your requirement.
-    minMatchCharLength: 10, // You might want to increase this for sentences.
-    shouldSort: true,
-    findAllMatches: true,
-    includeMatches: true,
-    keys: ["text"], // This tells Fuse.js to search in the `text` property of the items in your list
-  };
-
-  // const fuse = new Fuse(searchData, options);
-  // const result = fuse.search(searchString);
-  // console.log(`result: ${JSON.stringify(result)}`);
-
 
   if (searchData.length > 0) {
     const searchResult = searchData[0];
@@ -190,25 +167,25 @@ interface SearchStrings {
   endWordIdx: number;
 }
 
-function generateFuzzySearchData(arr: WordData[], n: number): SearchStrings[] {
-  // used when we need to fuzzy search across the page
-  const searchStrings: SearchStrings[] = [];
+// function generateFuzzySearchData(arr: WordData[], n: number): SearchStrings[] {
+//   // used when we need to fuzzy search across the page
+//   const searchStrings: SearchStrings[] = [];
 
-  for (let i = 0; i <= arr.length - n; i++) {
-    // constructs sentence of length n
-    const text = arr
-      .slice(i, i + n)
-      .reduce((acc, val) => acc + " " + val.text, "");
+//   for (let i = 0; i <= arr.length - n; i++) {
+//     // constructs sentence of length n
+//     const text = arr
+//       .slice(i, i + n)
+//       .reduce((acc, val) => acc + " " + val.text, "");
 
-    const startSpan = arr[i]?.spanIdx || 0; // have to add these defaults because typescript is dumb
-    const endSpan = arr[i + n]?.spanIdx || 0;
-    const startWordIdx = arr[i]?.wordIdx || 0;
-    const endWordIdx = arr[i + n]?.wordIdx || 0;
-    searchStrings.push({ text, startSpan, endSpan, startWordIdx, endWordIdx });
-  }
+//     const startSpan = arr[i]?.spanIdx || 0; // have to add these defaults because typescript is dumb
+//     const endSpan = arr[i + n]?.spanIdx || 0;
+//     const startWordIdx = arr[i]?.wordIdx || 0;
+//     const endWordIdx = arr[i + n]?.wordIdx || 0;
+//     searchStrings.push({ text, startSpan, endSpan, startWordIdx, endWordIdx });
+//   }
 
-  return searchStrings;
-}
+//   return searchStrings;
+// }
 
 function generateDirectSearchData(
   startString: string,

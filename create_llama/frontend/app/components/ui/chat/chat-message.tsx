@@ -1,3 +1,4 @@
+import React from 'react'; 
 import { Check, Copy } from "lucide-react";
 
 import { Message } from "ai";

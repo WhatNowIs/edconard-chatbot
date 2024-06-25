@@ -1,3 +1,4 @@
+import React from 'react'; 
 import { usePdfFocus } from "@/app/context/pdf";
 import { Citation } from "@/app/types/threads";
 import { borderColors } from "@/app/utils/colors";

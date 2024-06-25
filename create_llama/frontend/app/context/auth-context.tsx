@@ -1,5 +1,7 @@
 "use client"
+/* eslint-disable no-useless-catch */
 
+import React from 'react'; 
 import { createContext, useState, useEffect, ReactNode, FC, Dispatch, SetStateAction } from 'react';
 import { getBaseURL } from '../service/utils';
 import { UserFormType, UserSigninType, signIn, signOut } from '../service/user-service';
@@ -24,17 +26,17 @@ export const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
     const token = localStorage.getItem('access_token');
     if (token && !user) {
       const checkAuth = async () => {
-        try {
-          const response = await fetch(`${getBaseURL()}/api/auth/accounts/me`, {
+          const userData = await fetch(`${getBaseURL()}/api/auth/accounts/me`, {
             headers: { Authorization: `Bearer ${token}` },
+          })
+          .then(response => {
+            return response.json();
+          })
+          .catch(() => {
+            localStorage.removeItem('access_token');
+            setUser(null);
           });
-          const userData = await response.json();
-
           setUser(userData);
-        } catch (error) {
-          localStorage.removeItem('access_token');
-          setUser(null);
-        }
       };
       checkAuth();
     }
