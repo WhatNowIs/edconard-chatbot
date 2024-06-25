@@ -1,5 +1,7 @@
 "use client";
 
+import React from 'react'; 
+import PropTypes from 'prop-types';
 import { Check, Copy, Download } from "lucide-react";
 import { FC, memo } from "react";
 import { Prism, SyntaxHighlighterProps } from "react-syntax-highlighter";
@@ -135,5 +137,10 @@ const CodeBlock: FC<Props> = memo(({ language, value }) => {
   );
 });
 CodeBlock.displayName = "CodeBlock";
+
+CodeBlock.propTypes = {
+  language: PropTypes.string.isRequired,
+  value: PropTypes.string.isRequired,
+};
 
 export { CodeBlock };

@@ -1,5 +1,6 @@
 "use client";
 
+import React from 'react'; 
 import { Loader2, Paperclip } from "lucide-react";
 import { ChangeEvent, useState } from "react";
 import { buttonVariants } from "./button";

@@ -90,6 +90,7 @@ const PageRenderer: React.FC<PageRenderer> = ({
     },
     [inViewRef]
   );
+  
 
   useEffect(() => {
     if (inView) {
@@ -148,8 +149,7 @@ const PageRenderer: React.FC<PageRenderer> = ({
   const maybeHighlight = useCallback(
     debounce(() => {
       if (
-        documentFocused 
-        &&
+        documentFocused &&
         // pdfFocusState.citation?.pageNumber === pageNumber + 1 
         // &&
         !isHighlighted
@@ -161,9 +161,34 @@ const PageRenderer: React.FC<PageRenderer> = ({
         setIsHighlighted(true);
       }
     }, 50),
+    [
+      documentFocused,
+      pdfFocusState.citation?.snippet,
+      pdfFocusState.citation?.pageNumber,
+      pageNumber,
+      isHighlighted,
+    ]
+  );
+
+  // const maybeHighlight = useCallback(
+  //   debounce(() => {
+  //     if (
+  //       documentFocused 
+  //       &&
+  //       // pdfFocusState.citation?.pageNumber === pageNumber + 1 
+  //       // &&
+  //       !isHighlighted
+  //     ) {
+  //       multiHighlight(
+  //         (pdfFocusState?.citation as Citation).snippet as string,
+  //         (pdfFocusState?.citation as Citation).pageNumber
+  //       );
+  //       setIsHighlighted(true);
+  //     }
+  //   }, 50),
     
-    [pdfFocusState.citation?.snippet, pdfFocusState.citation?.pageNumber, pageNumber, isHighlighted]
-  );  
+  //   [pdfFocusState.citation?.snippet, pdfFocusState.citation?.pageNumber, pageNumber, isHighlighted]
+  // );  
 
   return (
     <div

@@ -1,5 +1,6 @@
 'use client'
 
+import React from 'react'; 
 import { useState } from "react";
 import { ShevronDown, ShevronUp } from "./icons/main-icons";
 // import { MessageCircle } from "lucide-react";

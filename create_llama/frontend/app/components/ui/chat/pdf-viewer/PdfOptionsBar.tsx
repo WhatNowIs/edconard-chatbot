@@ -1,4 +1,5 @@
 // PDFOptionsBar.tsx
+import React from 'react'; 
 import { zoomLevels } from "@/app/hooks/usePdfViewer";
 import { useEffect, useState } from "react";
 import {

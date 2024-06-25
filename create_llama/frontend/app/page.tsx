@@ -1,8 +1,10 @@
+import React from 'react'; 
 import ChatSection from "@/app/components/chat-section";
 import LeftNav from "@/app/components/left-nav";
 import RightNav from "@/app/components/right-nav";
 import { cookies } from "next/headers";
 import { ResponseThread } from "./service/thread-service";
+import { Suspense } from "react";
 
 async function getThreads(token: string): Promise<ResponseThread[]> {  
   const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/threads`, {
@@ -40,9 +42,11 @@ export default async function Home() {
   
   return (
       <main className="flex min-h-screen">
-        <LeftNav userThreads={threadData} userData={userData} />
-        <ChatSection />
-        <RightNav />
+        <Suspense fallback={<div>Loading...</div>}>
+          <LeftNav userThreads={threadData} userData={userData} />
+          <ChatSection />
+          <RightNav />
+        </Suspense>
       </main>
   );
 }
