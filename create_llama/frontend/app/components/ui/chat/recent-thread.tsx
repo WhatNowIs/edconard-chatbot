@@ -1,6 +1,7 @@
 
 'use client'
 
+import React from 'react'; 
 import { useContext, useEffect, useState } from "react";
 import { ShevronDown, ShevronUp } from "./icons/main-icons";
 import ChatContext from "@/app/context/chat-context";
@@ -40,6 +41,7 @@ export default function RecentThreads() {
             {
                 (isShevronOpen && threads) && threads.slice().reverse().map((thread) => (
                     <div 
+                        key={thread.id}
                         onClick={() => onSelect(thread.id)}
                         className={`flex justify-between text-gray-600 text-sm my-2 cursor-pointer p-2 ${selectedThread?.id === thread.id ? "bg-gray-100 rounded-md": ""}`}>
                         <span>{thread.title}</span>

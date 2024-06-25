@@ -4,7 +4,7 @@ import ChatContext from '../context/chat-context';
 export function useGenerateTitle() {
   const [title, setTitle] = useState('');
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
+  const [error, setError] = useState<string | null>(null);
   const chatContext = useContext(ChatContext);
 
   const generateTitle = async (question: string) => {
@@ -31,8 +31,8 @@ export function useGenerateTitle() {
       setTitle(finalResponse);
 
       chatContext && chatContext.selectedThread && chatContext.setSelectedThread({...chatContext.selectedThread, title: finalResponse})
-    } catch (err: any) {
-      setError(err.message);
+    } catch (err: unknown) {
+      setError("Error");
     } finally {
       setLoading(false);
     }

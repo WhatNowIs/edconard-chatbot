@@ -1,3 +1,5 @@
+import React from 'react'; 
+
 const EdConardLogo = () => (    
     <svg version="1.0" width="35" height="35" viewBox="0 0 512.000000 512.000000"
     preserveAspectRatio="xMidYMid meet">

@@ -1,5 +1,6 @@
 "use client"
 
+import React from 'react'; 
 import AuthContext from "@/app/context/auth-context";
 import Link from "next/link";
 import { useRouter } from 'next/navigation';
