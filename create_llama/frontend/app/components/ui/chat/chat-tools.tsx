@@ -1,3 +1,7 @@
+
+/* eslint-disable  no-case-declarations */
+/* eslint-disable   @typescript-eslint/no-unused-vars */
+import React from 'react'; 
 import { ToolData } from "./index";
 import { WeatherCard, WeatherData } from "./widgets/WeatherCard";
 

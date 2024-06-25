@@ -1,6 +1,7 @@
 
 "use client"
 
+import React from 'react'; 
 import { useContext } from "react";
 import AuthContext from "@/app/context/auth-context";
 import { Input } from "../input";
