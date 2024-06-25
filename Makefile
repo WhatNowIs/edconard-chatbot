@@ -53,4 +53,6 @@ dev:
 	trap 'kill 0' SIGINT; \
 	poetry run python main.py & \
 	npm run dev --prefix ./admin & \
+	wait & \
+	npm run dev --prefix ./create_llama/frontend & \
 	wait

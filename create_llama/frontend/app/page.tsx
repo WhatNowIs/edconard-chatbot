@@ -5,6 +5,7 @@ import RightNav from "@/app/components/right-nav";
 import { cookies } from "next/headers";
 import { ResponseThread } from "./service/thread-service";
 import { Suspense } from "react";
+import SkeletonRightNav, { SkeletonChatSection, SkeletonLeftNav, SuspenseMainChat } from '@/app/components/suspense/suspense-chat-section';
 
 async function getThreads(token: string): Promise<ResponseThread[]> {  
   const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/threads`, {
@@ -42,9 +43,13 @@ export default async function Home() {
   
   return (
       <main className="flex min-h-screen">
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<SkeletonLeftNav />}>
           <LeftNav userThreads={threadData} userData={userData} />
+        </Suspense>
+        <Suspense fallback={<SkeletonChatSection />}>
           <ChatSection />
+        </Suspense>
+        <Suspense fallback={<SkeletonRightNav />}>
           <RightNav />
         </Suspense>
       </main>
