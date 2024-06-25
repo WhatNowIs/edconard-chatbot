@@ -1,22 +1,15 @@
-import alembic
-from dotenv import load_dotenv
-from src.app.constants import ENV_FILE_PATH
-from src.core.dbconfig.postgres import get_db
-from src.core.services.mail import EmailTemplateService, EmailTypeService
-from src.utils.logger import get_logger
-
-load_dotenv(
-    dotenv_path=ENV_FILE_PATH,
-)
-
 import os
 import uvicorn
-from fastapi import Depends, FastAPI
-from sqlalchemy.ext.asyncio import AsyncSession
+from fastapi import FastAPI
+from dotenv import load_dotenv
 from fastapi.responses import RedirectResponse, FileResponse
 from fastapi.staticfiles import StaticFiles
 from create_llama.backend.app.settings import init_settings
 from create_llama.backend.app.api.routers.chat import chat_router
+from src.app.constants import ENV_FILE_PATH
+from src.core.dbconfig.postgres import get_db
+from src.core.services.mail import EmailTemplateService, EmailTypeService
+from src.utils.logger import get_logger
 from src.app.routers.management.config import config_router
 from src.app.routers.management.files import files_router
 from src.app.routers.management.tools import tools_router
@@ -24,6 +17,10 @@ from src.app.routers.auth.accounts import accounts_router
 from src.app.routers.chat.threads import threads_router
 from fastapi.middleware.cors import CORSMiddleware
 from src.llm.env_config import get_config
+
+load_dotenv(
+    dotenv_path=ENV_FILE_PATH,
+)
 
 app = FastAPI(
     title="Edconrad Chatboat",
