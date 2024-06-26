@@ -173,8 +173,6 @@ async def verify_otp_code(
 
         return {"message": str(e), "status": 400}
     
-    
-
 @accounts_router.get("/resend-otp/{uid}")
 async def verify_otp_code(
     uid: str,
@@ -289,7 +287,6 @@ async def forgot_password(
 
         return {"message": str(e), "status": 400}
     
-
 @accounts_router.post("/reset-password")
 async def reset_password(
     data: UpdatePassword,
@@ -327,7 +324,6 @@ async def reset_password(
         get_logger().error(f"Error sending email: {e}")
         return {"message": str(e), "status": 400}
 
-
 @accounts_router.get("/signout")
 async def signout(
     session: dict = Depends(get_session), 
@@ -336,7 +332,8 @@ async def signout(
     if "sub" in session:
         user_id = session["sub"]
         # Remove the session from Redis
-        redis_client.delete(f"session:{user_id}")
+        await redis_client.delete(f"session:{user_id}")
+        await redis_client.delete(f"chat_mode:{user_id}")
         
         return JSONResponse(status_code=200, content={"message": "Successfully signed out"})
     raise HTTPException(
