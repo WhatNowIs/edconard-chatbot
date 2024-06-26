@@ -1,4 +1,5 @@
 import { ChatRequestOptions, Message } from "ai";
+import { Dispatch, SetStateAction } from "react";
 
 export interface ChatHandler {
   messages: Message[];
@@ -10,4 +11,7 @@ export interface ChatHandler {
   stop?: () => void;
   onFileUpload?: (file: File) => Promise<void>;
   onFileError?: (errMsg: string) => void;
+  form: any;
+  isSubmitting: boolean;
+  setIsSubmitting?: Dispatch<SetStateAction<boolean>>;
 }
