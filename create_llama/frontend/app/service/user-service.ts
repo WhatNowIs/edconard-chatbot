@@ -124,6 +124,41 @@ export async function signOut(access_token: string): Promise<{ message: string; 
 }
 
 
+export async function getChatMode(user_id: string, access_token: string): Promise<{ mode: string;  }> {
+  const res = await fetch(`${getBaseURL()}/api/chat/chat-mode/${user_id}`, {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${access_token}`
+    },
+  });
+
+  if (!res.ok) {
+    const error = await res.text();
+    throw new Error(error);
+  }
+
+  return (await res.json()) as { mode: string; };
+}
+
+export async function updateChatMode(chatMode: string, user_id: string, access_token: string): Promise<{ message: string;  }> {
+  const res = await fetch(`${getBaseURL()}/api/chat/chat-mode/${user_id}`, {
+    method: "PATCH",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${access_token}`
+    },
+    body: JSON.stringify({mode: chatMode})
+  });
+
+  if (!res.ok) {
+    const error = await res.text();
+    throw new Error(error);
+  }
+
+  return (await res.json()) as { message: string; };
+}
+
 export async function verifyOtp(
   data: VerifyOtpType,
 ): Promise<{ message: string; status: number }> {

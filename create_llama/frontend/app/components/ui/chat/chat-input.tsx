@@ -2,6 +2,7 @@
 import React from 'react'; 
 import { useContext, useEffect, useState } from "react";
 import { Button } from "../button";
+import { HiArrowSmallUp } from "react-icons/hi2";
 import FileUploader from "../file-uploader";
 import { Input } from "../input";
 import UploadImagePreview from "../upload-image-preview";
@@ -103,8 +104,9 @@ export default function ChatInput(
           onFileUpload={handleUploadFile}
           onFileError={props.onFileError}
         />
-        <Button type="submit" disabled={props.isLoading}>
-          Send message
+        <Button type="submit" className='flex gap-1' disabled={props.isLoading}>
+          <span>Send </span>
+          <HiArrowSmallUp />
         </Button>
       </div>
     </form>

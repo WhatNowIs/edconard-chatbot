@@ -67,7 +67,7 @@ class UserService(Service):
         self.logger.warning(f"User with id: {user_id} not found for password verification")
         return False
 
-    async def login(self, email: str, password: str, redis_client: Redis) -> Tuple[bool, Optional[str],  Optional[User], str]:
+    async def login(self, email: str, password: str, redis_client: Redis, chat_mode="research-or-exploration") -> Tuple[bool, Optional[str],  Optional[User], str]:
         self.logger.info(f"User login attempt with email: {email}")
         user = await self.get_by_email(email)
         
@@ -78,12 +78,31 @@ class UserService(Service):
             token = self.create_access_token(data={ "sub": user.id, "email": user.email }, expires_delta=token_expires)
 
             await redis_client.setex(f"session:{user.id}", ACCESS_TOKEN_EXPIRE_MINUTES * 60, token)
+            # Store the chat mode information
+            await redis_client.setex(f"chat_mode:{user.id}", ACCESS_TOKEN_EXPIRE_MINUTES * 60, chat_mode)
+
 
             return True, token, user, "Login successfully"
             
         self.logger.warning(f"User login failed for email: {email}")
 
         return False, None, None, "Your email or password is incorrect"
+
+    async def update_chat_mode(self, user_id: str, chat_mode: str, redis_client: Redis) -> None:
+        self.logger.info(f"Updating chat mode for user ID: {user_id} to {chat_mode}")
+        # Update the chat mode in Redis without expiration
+        await redis_client.set(f"chat_mode:{user_id}", value=chat_mode)
+        self.logger.info(f"Chat mode for user ID: {user_id} updated successfully")
+    
+    async def get_chat_mode(self, user_id: str, redis_client: Redis) -> Optional[str]:
+        self.logger.info(f"Retrieving chat mode for user ID: {user_id}")
+        # Retrieve the chat mode from Redis
+        chat_mode = await redis_client.get(f"chat_mode:{user_id}")
+        if chat_mode is None:
+            self.logger.warning(f"No chat mode found for user ID: {user_id}")
+        else:
+            self.logger.info(f"Chat mode for user ID: {user_id} is {chat_mode}")
+        return chat_mode if chat_mode else None
     
     def create_access_token(self, data: dict, expires_delta: timedelta = None):
         to_encode = data.copy()

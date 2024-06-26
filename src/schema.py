@@ -33,6 +33,9 @@ class ThreadUpdate(BaseModel):
     title: str
     user_id: str
 
+class ChatMode(BaseModel):
+    mode: str
+
 class UserModel(BaseModel):
     id: Optional[str] = None
     first_name: str
