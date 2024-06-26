@@ -54,9 +54,8 @@ export const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
         await getChatModeByUser(user.id as string);
       };
       fetchChatMode();
-
     }
-  }, [user])
+  }, [user, chatMode])
 
   const login = async (credentials: UserSigninType) => {
     try {

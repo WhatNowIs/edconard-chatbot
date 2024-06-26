@@ -43,9 +43,8 @@ export default function RecentThreads() {
                     <div 
                         key={thread.id}
                         onClick={() => onSelect(thread.id)}
-                        className={`flex justify-between text-gray-600 text-sm my-2 cursor-pointer p-2 ${selectedThread?.id === thread.id ? "bg-gray-100 rounded-md": ""}`}>
-                        <span>{thread.title}</span>
-                        {/* <HiMiniPencil/> */}
+                        className={`flex justify-between text-gray-600 text-xs my-1 cursor-pointer p-2 ${selectedThread?.id === thread.id ? "bg-gray-100 rounded-md": ""}`}>
+                        <span>{thread.title.length > 30 ? `${thread.title.substring(0, 30)}...` : thread.title.substring(0, 30)}</span>
                     </div>
                 ))
             }
