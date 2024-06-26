@@ -304,7 +304,7 @@ async def chat_request(
     
         chat_mode = await user_service.get_chat_mode(user_id, redis_client)
 
-        get_logger().infor(f"retrieved chat mode: {chat_mode}")
+        get_logger().info(f"retrieved chat mode: {chat_mode}")
     
         return JSONResponse(status_code=200, content={"mode": chat_mode})
 
