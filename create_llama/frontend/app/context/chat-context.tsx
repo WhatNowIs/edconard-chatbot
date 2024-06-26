@@ -71,12 +71,17 @@ export const ChatProvider: FC<ChatProviderProps> = ({ children }) => {
       fetchUserThreads();
     }
   }, []);
-
   
   useEffect(() => {
     const currentThread = threads[threads.length - 1] as unknown as ResponseThread;
     setSelectedThread(currentThread);
-    currentThread && fetchMessages(currentThread.id).catch(error => console.log(error)); 
+    
+    if(currentThread){
+      const loadMessages = async () => {
+        await fetchMessages(currentThread.id); 
+      }
+      loadMessages().catch(error => console.log(error));
+    }
   }, [threads]);
 
   const addThread = async (data: ThreadCreate) => {
