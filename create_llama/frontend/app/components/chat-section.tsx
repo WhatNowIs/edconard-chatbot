@@ -10,6 +10,7 @@ import ChatContext from "../context/chat-context";
 
 type ChatUILayout = "default" | "fit";
 
+
 export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
   const authContext = useContext(AuthContext);
   const chatContext = useContext(ChatContext);
@@ -43,9 +44,7 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
       const message = JSON.parse(error.message);
       alert(`Chat error: ${JSON.stringify(message.detail)}`);
     },
-  });
-
-  
+  });  
 
   useEffect(() => {
     if(localStorage){      

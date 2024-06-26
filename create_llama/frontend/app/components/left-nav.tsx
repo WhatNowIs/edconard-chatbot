@@ -18,7 +18,7 @@ import ChatContext from "../context/chat-context";
 import { ResponseThread } from "../service/thread-service";
 import { UserFormType } from "../service/user-service";
 
-export default function LeftNav({ userThreads, userData }: { userThreads: ResponseThread[]; userData: UserFormType | null; }) {
+export default function LeftNav({ userThreads, userData, mode }: { userThreads: ResponseThread[]; userData: UserFormType | null; mode: string | null; }) {
     const currentPath = usePathname();
     const chatContext = useContext(ChatContext);
     const [isLoading, setIsLoading] = useState<boolean>(false);
@@ -29,7 +29,7 @@ export default function LeftNav({ userThreads, userData }: { userThreads: Respon
     if (!authContext) {
         throw new Error('useContext must be used within an AuthProvider');
     }
-    const { user, setUser } = authContext;
+    const { user, chatMode, setUser, setChatMode } = authContext;
 
     if(chatContext){
         const { setThreads, threads } = chatContext;
@@ -38,6 +38,7 @@ export default function LeftNav({ userThreads, userData }: { userThreads: Respon
 
     if(!user){
         setUser(userData);
+        setChatMode(mode);
     }
     
     const handleNewThread = () => {
