@@ -21,7 +21,7 @@ const CitationDisplay: React.FC<CitationDisplayProps> = ({ citation, source}) =>
   const CitationNode = () => {
     return (
       <div
-      className={`mx-1.5 mb-2 min-h-[25px] min-w-[160px] cursor-pointer rounded border-l-8 bg-gray-00 p-1 hover:bg-gray-15  ${
+      className={`mx-1.5 mb-2 min-h-[25px] min-w-[160px] cursor-pointer border-l-8 bg-gray-00 p-1 hover:bg-gray-15  ${
         borderColors[citation.color]
       }`}
       onClick={() =>

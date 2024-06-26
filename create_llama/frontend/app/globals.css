@@ -92,3 +92,17 @@
       radial-gradient(at 8% 40%, rgba(251, 218, 239, 0.46) 0, transparent 50%);
   }
 }
+
+@keyframes bg-animation {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.bg-animate {
+  background-size: 200% 100%;
+  animation: bg-animation 1.5s linear infinite;
+}
