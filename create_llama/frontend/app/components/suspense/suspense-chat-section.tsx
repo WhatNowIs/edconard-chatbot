@@ -38,8 +38,9 @@ export default function SkeletonRightNav() {
 export function SkeletonChatSection() {
     return (
         <div className="flex flex-col space-y-4 justify-between w-full p-4 animate-pulse">
-        <div className="w-full h-[80%] bg-gradient-to-r from-gray-50 via-gray-100 to-gray-50 bg-animate rounded"></div>
-        <div className="w-full h-16 bg-gradient-to-r from-gray-50 via-gray-100 to-gray-50 bg-animate rounded"></div>
+            <div className='w-[35%] h-10 flex gap-2 justify-center bg-gradient-to-r from-gray-50 via-gray-100 to-gray-50 bg-animate rounded'></div>
+            <div className="w-full h-[80%] bg-gradient-to-r from-gray-50 via-gray-100 to-gray-50 bg-animate rounded"></div>
+            <div className="w-full h-16 bg-gradient-to-r from-gray-50 via-gray-100 to-gray-50 bg-animate rounded"></div>
         </div>
     );
 }

@@ -1,3 +1,4 @@
+from fastapi.responses import JSONResponse
 from fastapi.security import OAuth2PasswordBearer
 from pydantic import BaseModel
 from typing import List, Any, Optional, Dict, Tuple
@@ -12,10 +13,15 @@ from app.api.routers.messaging import EventCallbackHandler
 from aiostream import stream
 from src.app.routers.auth.accounts import get_session
 from src.core.dbconfig.postgres import get_db
+from src.core.dbconfig.redis import get_redis_client
 from src.core.models.base import Message
 from src.core.services.message import MessageService
 from src.core.services.thread import ThreadService
-from src.core.services.user import UserService
+from src.core.services.user import UserService 
+from redis.asyncio.client import Redis
+
+from src.schema import ChatMode
+from src.utils.logger import get_logger
 
 chat_router = r = APIRouter()
 
@@ -27,38 +33,6 @@ def get_thread_service(db: AsyncSession = Depends(get_db)) -> ThreadService:
 
 def get_user_service(db: AsyncSession = Depends(get_db)) -> UserService:
     return UserService(db)
-
-# async def get_session(
-#     token: str = Depends(oauth2_scheme), 
-# ) -> Optional[dict]:
-    
-#     db: AsyncSession = get_db()
-#     redis_client: Redis = await get_redis_client()
-#     user_service: UserService = UserService(db)
-    
-#     payload = user_service.decode_access_token(token)
-
-#     print(payload)
-    
-#     if payload is None:
-#         raise HTTPException(
-#             status_code=status.HTTP_401_UNAUTHORIZED,
-#             detail="Invalid authentication credentials",
-#             headers={"WWW-Authenticate": "Bearer"},
-#         )
-#     # Retrieve session from Redis
-#     session_data = redis_client.get(f"session:{payload['sub']}")
-
-#     print(session_data)
-#     if session_data:
-#         get_logger().info(session_data)
-#         return user_service.decode_access_token(token)
-    
-#     raise HTTPException(
-#         status_code=status.HTTP_401_UNAUTHORIZED,
-#         detail="Session not found",
-#         headers={"WWW-Authenticate": "Bearer"},
-#     )
 
 class _Message(BaseModel):
     role: MessageRole
@@ -278,8 +252,6 @@ async def chat(
         detail="Not authorized to access threads",
     )
 
-
-
 # non-streaming endpoint - delete if not needed
 @r.post("/request")
 async def chat_request(
@@ -292,4 +264,52 @@ async def chat_request(
     return _Result(
         result=_Message(role=MessageRole.ASSISTANT, content=response.response),
         nodes=_SourceNodes.from_source_nodes(response.source_nodes),
+    )
+
+
+# non-streaming endpoint - delete if not needed
+@r.patch("/chat-mode/{user_id}")
+async def chat_request(
+    user_id: str,
+    data: ChatMode,
+    session: dict = Depends(get_session),    
+    redis_client: Redis = Depends(get_redis_client),
+    user_service: UserService = Depends(get_user_service),
+):
+    
+    if "sub" in session and user_id == session["sub"]:
+
+        get_logger().info(f"chat mode sent: {data.mode}")
+    
+        await user_service.update_chat_mode(user_id, data.mode, redis_client)
+    
+        return JSONResponse(status_code=200, content={"message": f"Successfully switched to {data.mode.replace('-', ' ')} mode."})
+    
+    raise HTTPException(
+        status_code=status.HTTP_401_UNAUTHORIZED,
+        detail="Invalid session",
+        headers={"WWW-Authenticate": "Bearer"},
+    )
+
+# non-streaming endpoint - delete if not needed
+@r.get("/chat-mode/{user_id}")
+async def chat_request(
+    user_id: str,
+    session: dict = Depends(get_session),    
+    redis_client: Redis = Depends(get_redis_client),
+    user_service: UserService = Depends(get_user_service),
+) -> _Result:
+    
+    if "sub" in session and user_id == session["sub"]:
+    
+        chat_mode = await user_service.get_chat_mode(user_id, redis_client)
+
+        get_logger().infor(f"retrieved chat mode: {chat_mode}")
+    
+        return JSONResponse(status_code=200, content={"mode": chat_mode})
+
+    raise HTTPException(
+        status_code=status.HTTP_401_UNAUTHORIZED,
+        detail="Invalid session",
+        headers={"WWW-Authenticate": "Bearer"},
     )
