@@ -76,8 +76,8 @@ export default function ChatInput(
       if(chatContext && authContext){
         const { editThread, selectedThread, setSelectedThread } = chatContext;
         const { user } = authContext;
-        (user && selectedThread) && editThread(selectedThread?.id as string, { title: title, user_id: user.id as string})
-        selectedThread && setSelectedThread({...selectedThread, title: title})
+        (user && (selectedThread && title !== "" )) && editThread(selectedThread?.id as string, { title: title, user_id: user.id as string});
+        (user && (selectedThread && title !== "" )) && setSelectedThread({...selectedThread, title: title});
       }
 
     }

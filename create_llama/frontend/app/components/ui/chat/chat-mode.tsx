@@ -17,6 +17,8 @@ export const ChatMode = () => {
     }
 
     const { chatMode, updateChatModeByUser } = authContext;
+    console.log(chatMode);
+
   
     const changeChatMode = async (chatMode: string) => {
       const {  status, message } = await updateChatModeByUser(chatMode);
@@ -43,7 +45,7 @@ export const ChatMode = () => {
         <div className="w-[35%] h-10 flex gap-2 items-center justify-start">
           <label className="text-md font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 mr-2">Mode</label>
           <Select
-            defaultValue={chatMode || "research-or-exploration"}
+            defaultValue={chatMode as string}
             onValueChange={changeChatMode}
           >
             <SelectTrigger>
