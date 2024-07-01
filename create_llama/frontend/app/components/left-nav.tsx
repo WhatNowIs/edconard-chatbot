@@ -29,7 +29,7 @@ export default function LeftNav({ userThreads, userData, mode }: { userThreads: 
     if (!authContext) {
         throw new Error('useContext must be used within an AuthProvider');
     }
-    const { user, chatMode, setUser, setChatMode } = authContext;
+    const { user, setUser, setChatMode } = authContext;
 
     if(chatContext){
         const { setThreads, threads } = chatContext;
@@ -55,13 +55,15 @@ export default function LeftNav({ userThreads, userData, mode }: { userThreads: 
     };
 
     return (
-        <div className="w-80 flex flex-col h-screen bg-white border-r border-gray-200 p-4">
+        <div className="w-80 flex flex-col h-screen overflow-y-auto bg-white border-r border-gray-200 p-4">
             <div className="w-full flex mb-4 justify-between items-center gap-2">
                 <Link href={"/"} className="flex gap-2">
                     <EdConardLogo />
                     <span className="text-2xl">CRI</span>
                 </Link>
-                <Harmburger />
+                <div className='p-2 rounded-md hover:bg-gray-100'>
+                    <Harmburger />
+                </div>
             </div>
             {user && (
                     <div className="flex items-center mb-6 border p-2 rounded-md">

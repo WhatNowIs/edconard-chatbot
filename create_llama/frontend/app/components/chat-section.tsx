@@ -2,14 +2,13 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import React from 'react';
 import { useChat } from "ai/react";
-import { ChatInput, ChatMessages } from "./ui/chat";
+import { ChatInput, ChatMessages } from "@/app/components/ui/chat";
 import { PdfFocusProvider } from "@/app/context/pdf";
 import { useContext, useEffect, useState } from "react";
-import AuthContext from "../context/auth-context";
-import ChatContext from "../context/chat-context";
+import AuthContext from "@/app/context/auth-context";
+import ChatContext from "@/app/context/chat-context";
 
 type ChatUILayout = "default" | "fit";
-
 
 export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
   const authContext = useContext(AuthContext);
@@ -55,10 +54,6 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
   }, []);
 
   useEffect(() => {
-
-    console.log('Old messages: ');
-    console.log(messages)
-
     if(chatContext){
       const { messages } = chatContext;
       const finalMessages =  messages.map((msg) => ({ 
@@ -75,7 +70,7 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
   return (
     <PdfFocusProvider>
       <div
-        className={`flex flex-col space-y-4 justify-between w-full p-4`}
+        className={`flex flex-col space-y-4 h-screen overflow-y-auto justify-between w-full pl-4 pb-2`}
       >
         <ChatMessages
           messages={messages}

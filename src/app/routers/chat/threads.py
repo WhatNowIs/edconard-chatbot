@@ -3,7 +3,7 @@ from fastapi import APIRouter, Depends, HTTPException, status
 from fastapi.responses import JSONResponse
 from sqlalchemy.ext.asyncio import AsyncSession
 from src.app.routers.auth.accounts import get_session
-from src.core.dbconfig.postgres import get_db
+from src.core.config.postgres import get_db
 from src.core.models.base import Thread
 from src.core.services.thread import ThreadService
 from src.schema import ResponseMessage, ResponseThread, ThreadCreate, ThreadUpdate

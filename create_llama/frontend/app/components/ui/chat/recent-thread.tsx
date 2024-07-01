@@ -28,12 +28,10 @@ export default function RecentThreads() {
         selectThread(threadId)
     }
 
-    console.log("threads-------:", threads);
-
     return (    
-        <div className="mb-6">
+        <div className="mb-2">
             <div className="flex justify-between items-center text-gray-700 mb-2">
-            <div className="font-semibold">Recent Threads</div>
+            <div className="font-semibold text-sm">Recent Threads</div>
                 <button className="bg-transparent border-none" onClick={() => setShevronIsOpen(!isShevronOpen)}>
                     {isShevronOpen ? <ShevronDown /> : <ShevronUp />}
                 </button>
@@ -43,7 +41,7 @@ export default function RecentThreads() {
                     <div 
                         key={thread.id}
                         onClick={() => onSelect(thread.id)}
-                        className={`flex justify-between text-gray-600 text-xs my-1 cursor-pointer p-2 ${selectedThread?.id === thread.id ? "bg-gray-100 rounded-md": ""}`}>
+                        className={`flex justify-between text-gray-600 text-xs my-1 cursor-pointer hover:bg-gray-100 hover:rounded-md p-2 ${selectedThread?.id === thread.id ? "bg-gray-100 rounded-md": ""}`}>
                         <span>{thread.title.length > 30 ? `${thread.title.substring(0, 30)}...` : thread.title.substring(0, 30)}</span>
                     </div>
                 ))
