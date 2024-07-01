@@ -3,12 +3,23 @@
 import React from 'react';
 
 import { createContext, useState, ReactNode, FC, useContext, useEffect, Dispatch, SetStateAction } from 'react';
-import { ResponseMessage, ResponseThread, ThreadCreate, createThread, fetchThreads, getMessagesByThreadId, getThread, removeThread, updateThread } from '../service/thread-service';
+import { 
+  ResponseMessage, 
+  ResponseThread, 
+  ThreadCreate, 
+  createThread, 
+  fetchThreads, 
+  getMessagesByThreadId, 
+  getThread, removeThread, 
+  updateThread 
+} from '@/app/service/thread-service';
+import { Article } from '@/app/utils/multi-mode-select';
 
 interface ChatContextType {
   threads: ResponseThread[];
   messages: ResponseMessage[];
   selectedThread: ResponseThread | null;
+  article: Article | null;
   setSelectedThread: Dispatch<SetStateAction<ResponseThread | null>>;
   setThreads: Dispatch<SetStateAction<ResponseThread[]>>;
   loadThreads: () => Promise<void>;
@@ -18,6 +29,7 @@ interface ChatContextType {
   fetchMessages: (thread_id: string) => Promise<ResponseMessage[]>;
   deleteThread: (thread_id: string) => Promise<void>;
   selectThread: (thread_id: string) => void;
+  setArticle: Dispatch<SetStateAction<Article | null>>;
 }
 
 const ChatContext = createContext<ChatContextType | undefined>(undefined);
@@ -30,6 +42,7 @@ export const ChatProvider: FC<ChatProviderProps> = ({ children }) => {
   const [threads, setThreads] = useState<ResponseThread[]>([]);
   const [messages, setMessages] = useState<ResponseMessage[]>([]);
   const [selectedThread, setSelectedThread] = useState<ResponseThread | null>(null);
+  const [article, setArticle] = useState<Article | null>(null);
 
   const loadThreads = async () => {
     try {
@@ -131,6 +144,7 @@ export const ChatProvider: FC<ChatProviderProps> = ({ children }) => {
         threads,
         messages,
         selectedThread,
+        article,
         setSelectedThread,
         setThreads,
         loadThreads,
@@ -139,7 +153,8 @@ export const ChatProvider: FC<ChatProviderProps> = ({ children }) => {
         fetchThread,
         fetchMessages,
         deleteThread,
-        selectThread
+        selectThread,
+        setArticle
       }}
     >
       {children}

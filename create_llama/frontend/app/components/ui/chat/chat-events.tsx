@@ -31,7 +31,7 @@ export function ChatEvents({
   );
 
   return (
-    <div className="border-l-2 border-indigo-400 pl-2">
+    <div className="border-l-2 border-gray-800 pl-2">
       <Collapsible open={isOpen} onOpenChange={setIsOpen}>
         <CollapsibleTrigger asChild>
           <Button variant="secondary" className="space-x-2">
