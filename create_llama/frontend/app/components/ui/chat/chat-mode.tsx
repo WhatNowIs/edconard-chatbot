@@ -42,18 +42,19 @@ export const ChatMode = () => {
     };
   
     return (
-        <div className="w-[35%] h-10 flex gap-2 items-center justify-start">
+        <div className="w-[35%] h-8 flex gap-2 items-center justify-start">
           <label className="text-md font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 mr-2">Mode</label>
           <Select
             defaultValue={chatMode as string}
             onValueChange={changeChatMode}
+
           >
             <SelectTrigger>
               <SelectValue placeholder="Research/Exploration" />
             </SelectTrigger>
             <SelectContent>
               {supportedChatMode.map((chatMode) => (
-                <SelectItem key={chatMode.value} value={chatMode.value}>
+                <SelectItem className="text-xs" key={chatMode.value} value={chatMode.value}>
                   {chatMode.name}
                 </SelectItem>
               ))}

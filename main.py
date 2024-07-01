@@ -1,4 +1,5 @@
 import os
+from create_llama.backend.app.engine.generate import generate_datasource
 import uvicorn
 from fastapi import FastAPI
 from dotenv import load_dotenv
@@ -7,7 +8,7 @@ from fastapi.staticfiles import StaticFiles
 from create_llama.backend.app.settings import init_settings
 from create_llama.backend.app.api.routers.chat import chat_router
 from src.app.constants import ENV_FILE_PATH
-from src.core.dbconfig.postgres import get_db
+from src.core.config.postgres import get_db
 from src.core.services.mail import EmailTemplateService, EmailTypeService
 from src.utils.logger import get_logger
 from src.app.routers.management.config import config_router
@@ -95,6 +96,8 @@ async def startup(
         await email_template_service.populate_email_templates(templates_directory)
 
     get_logger().info("Successfully populated default email templates and types")
+    # generate_datasource()
+    # get_logger().info("Successfully upserted data to chromadb")
 
 
 if __name__ == "__main__":
