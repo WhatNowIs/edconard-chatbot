@@ -13,7 +13,7 @@ export default function Marketplace(
     return (        
         <div>
             <div className="flex justify-between items-center text-gray-700 mb-2">
-            <div className="font-semibold">Marketplace</div>
+            <div className="font-semibold text-sm">Marketplace</div>
             <button className="bg-transparent border-none" onClick={() => setShevronIsOpen(!isShevronOpen)}>
                 {isShevronOpen ? <ShevronDown /> : <ShevronUp />}
             </button>
