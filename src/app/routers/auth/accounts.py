@@ -5,12 +5,12 @@ from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 import jwt
 from sqlalchemy.ext.asyncio import AsyncSession
 from starlette.status import HTTP_400_BAD_REQUEST
-from src.core.dbconfig.redis import get_redis_client
+from src.core.config.redis import get_redis_client
 from src.core.services.credential import CredentialService
 from src.core.services.mail import EmailTemplateService, EmailTypeService, ResendClient, get_mail_service
 from src.core.services.otp import OTPService
 from src.core.services.user import UserService
-from src.core.dbconfig.postgres import get_db
+from src.core.config.postgres import get_db
 from src.core.models.base import OTP, EmailTemplate, EmailType, EntityStatus, User
 from src.schema import EmailTypeEnum, ResetPassword, UpdatePassword, UserCreateModel, UserModel, VerifyOtp
 from src.utils.encryption import encrypt, to_base64
