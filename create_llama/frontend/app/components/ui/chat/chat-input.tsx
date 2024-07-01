@@ -10,6 +10,7 @@ import { ChatHandler } from "./chat.interface";
 import { useGenerateTitle } from "@/app/utils/thread-title-generator";
 import ChatContext from "@/app/context/chat-context";
 import AuthContext from "@/app/context/auth-context";
+import { SupportedChatModeEnum, extractArticleDataFromString, convertArticleToString } from '@/app/utils/multi-mode-select';
 
 export default function ChatInput(
   props: Pick<
@@ -38,14 +39,27 @@ export default function ChatInput(
       return;
     }
     if(authContext && chatContext){
-      const { user } = authContext;
-      const { messages } = chatContext;     
-      
-      console.log("Clicked messages: ", messages);
+      const { user, chatMode } = authContext;
+      const { messages, setArticle } = chatContext;  
       
       user && messages.length === 0 && generateTitle(props.input).catch((error) => console.log(error));
-    }
+
+      if(chatMode === SupportedChatModeEnum.MacroRoundupArticleTweetGeneration){
+        const form = e.currentTarget;
+        let inputString = form.elements.namedItem("message") as HTMLInputElement;
+        
+        const currentArticleData = extractArticleDataFromString(inputString.value);
+        user && messages.length === 0 && generateTitle(props.input).catch((error) => console.log(error));
+
+        if(currentArticleData !== null){
+          setArticle(currentArticleData)    
+          props.handleSubmit(e);
+          return;
+        }
+      }
+    }  
     props.handleSubmit(e);
+
   };
 
   const onRemovePreviewImage = () => setImageUrl(null);
@@ -86,7 +100,7 @@ export default function ChatInput(
   return (
     <form
       onSubmit={onSubmit}
-      className="rounded-xl bg-white p-4 shadow-xl space-y-4"
+      className="rounded-xl bg-white p-4 space-y-4 mr-4"
     >
       {imageUrl && (
         <UploadImagePreview url={imageUrl} onRemove={onRemovePreviewImage} />

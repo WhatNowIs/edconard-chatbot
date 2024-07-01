@@ -1,5 +1,5 @@
 from typing import List, Optional
-from sqlalchemy import select
+from sqlalchemy import asc, select
 from sqlalchemy.ext.asyncio import AsyncSession as Session
 from src.core.models.base import Message, Thread
 from src.core.services.service import Service
@@ -30,6 +30,7 @@ class ThreadService(Service):
     async def get_messages_by_thread_id(self, uid: str, thread_id: str) -> List[Message]:
         get_logger().info(f"Fetching messages with thread id: {thread_id}")
         
-        # async with self.db_session as session:
-        result = await self.db_session.execute(select(Message).filter(Message.thread_id == thread_id, Message.user_id == uid))
+        result = await self.db_session.execute(
+            select(Message).filter(Message.thread_id == thread_id, Message.user_id == uid).order_by(asc(Message.timestamp))
+        )
         return result.scalars().all()

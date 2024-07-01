@@ -1,5 +1,5 @@
+from create_llama.backend.app.utils.enums import SupportedChatMode
 from fastapi.responses import JSONResponse
-from fastapi.security import OAuth2PasswordBearer
 from pydantic import BaseModel
 from typing import List, Any, Optional, Dict, Tuple
 from fastapi import APIRouter, Depends, HTTPException, Request, status
@@ -12,13 +12,14 @@ from app.api.routers.vercel_response import VercelStreamResponse
 from app.api.routers.messaging import EventCallbackHandler
 from aiostream import stream
 from src.app.routers.auth.accounts import get_session
-from src.core.dbconfig.postgres import get_db
-from src.core.dbconfig.redis import get_redis_client
+from src.core.config.postgres import get_db
+from src.core.config.redis import get_redis_client
 from src.core.models.base import Message
 from src.core.services.message import MessageService
 from src.core.services.thread import ThreadService
 from src.core.services.user import UserService 
 from redis.asyncio.client import Redis
+from app.utils.helpers import Article, extract_article_data_from_string
 
 from src.schema import ChatMode
 from src.utils.logger import get_logger
@@ -157,23 +158,60 @@ async def chat(
 
 # streaming endpoint - delete if not needed
 @r.post("/{thread_id}/message")
-async def chat(
+async def chat_thread(
     thread_id: str,
     request: Request,
     data: _ChatData,
     session: dict = Depends(get_session),
     thread_service: ThreadService = Depends(get_thread_service),
-    chat_engine: BaseChatEngine = Depends(get_chat_engine),
-    message_service: MessageService = Depends(get_message_service)
+    message_service: MessageService = Depends(get_message_service),
+    user_service: UserService = Depends(get_user_service),
+    redis_client: Redis = Depends(get_redis_client)
 ):    
-    # session: dict = await get_session()
     last_message_content, messages = await parse_chat_data(data)
+
 
     if "sub" in session:
         user_id = session["sub"]
+        chat_mode = await user_service.get_chat_mode(user_id, redis_client)
+        
+        in_research_or_exploration_modality = chat_mode == SupportedChatMode.RESEARCH_EXPLORATION.value
+        in_research_or_tweet_modality = chat_mode == SupportedChatMode.MACRO_ROUNDUP_ARTICLE_TWEET_GENERATION.value
+
+        extracted_data = extract_article_data_from_string(last_message_content) if not in_research_or_exploration_modality else None
+        chat_history = ''
         messages_tmp: List[Message] = await thread_service.get_messages_by_thread_id(thread_id=thread_id, uid=user_id)
-        messages = [ChatMessage(content=last_message_content, role=message.role) for message in messages_tmp]        
-     
+        
+        chat_history += ''.join(
+            f"""
+            Role: {message.role}
+            Content: {message.content}
+            """ for message in messages_tmp
+        ) if len(messages_tmp) > 0 else ''
+
+        messages = [ChatMessage(content=last_message_content, role=MessageRole.USER if str(message.role) == "user" else MessageRole.ASSISTANT) for message in messages_tmp]        
+
+        extracted_data_tmp = extract_article_data_from_string(messages_tmp[0].content) if extracted_data is None and not in_research_or_exploration_modality and len(messages_tmp) > 0 else extracted_data
+        
+        last_message_content_final = ''.join(
+            f"""
+            headline={extracted_data_tmp.headline};
+            publisher={extracted_data_tmp.publisher};
+            authors={extracted_data_tmp.authors};
+            abstract={extracted_data_tmp.abstract};
+            question={last_message_content};
+
+            
+            {'N.B: When generating tweet always bear in mind about about the maximum characters allowed for a perfect tweet. Also use hash tag for broader audience.' if in_research_or_tweet_modality else ''}
+            """
+        )  if extracted_data_tmp is not None else last_message_content
+
+        chat_engine: BaseChatEngine = await get_chat_engine(
+            user_id=user_id, 
+            data=extracted_data, 
+            chat_history=chat_history
+        )
+
         new_message = Message(
             thread_id=thread_id,
             user_id=user_id,
@@ -184,8 +222,8 @@ async def chat(
         await message_service.create(new_message)
 
         event_handler = EventCallbackHandler()
-        chat_engine.callback_manager.handlers.append(event_handler)  # type: ignore
-        response = await chat_engine.astream_chat(last_message_content, messages)
+        chat_engine.callback_manager.handlers.append(event_handler)
+        response = await chat_engine.astream_chat(last_message_content_final, messages)
         
         tmp_message_container = [""]
         sources = []
@@ -269,7 +307,7 @@ async def chat_request(
 
 # non-streaming endpoint - delete if not needed
 @r.patch("/chat-mode/{user_id}")
-async def chat_request(
+async def chat_mode_request(
     user_id: str,
     data: ChatMode,
     session: dict = Depends(get_session),    
@@ -293,7 +331,7 @@ async def chat_request(
 
 # non-streaming endpoint - delete if not needed
 @r.get("/chat-mode/{user_id}")
-async def chat_request(
+async def get_chat_mode(
     user_id: str,
     session: dict = Depends(get_session),    
     redis_client: Redis = Depends(get_redis_client),
@@ -306,7 +344,7 @@ async def chat_request(
 
         get_logger().info(f"retrieved chat mode: {chat_mode}")
     
-        return JSONResponse(status_code=200, content={"mode": chat_mode})
+        return JSONResponse(status_code=200, content={"mode": chat_mode}) # type: ignore
 
     raise HTTPException(
         status_code=status.HTTP_401_UNAUTHORIZED,
