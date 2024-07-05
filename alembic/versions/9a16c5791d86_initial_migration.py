@@ -1,8 +1,8 @@
-"""Initial migration
+"""initial migration
 
-Revision ID: 3a60c2715079
+Revision ID: 9a16c5791d86
 Revises: 
-Create Date: 2024-06-17 21:25:01.014214
+Create Date: 2024-07-05 08:44:21.158770
 
 """
 from typing import Sequence, Union
@@ -12,7 +12,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision: str = '3a60c2715079'
+revision: str = '9a16c5791d86'
 down_revision: Union[str, None] = None
 branch_labels: Union[str, Sequence[str], None] = None
 depends_on: Union[str, Sequence[str], None] = None
@@ -34,6 +34,22 @@ def upgrade() -> None:
     sa.PrimaryKeyConstraint('id')
     )
     op.create_index(op.f('ix_addresses_created_at'), 'addresses', ['created_at'], unique=False)
+    op.create_table('email_templates',
+    sa.Column('id', sa.Integer(), nullable=False),
+    sa.Column('name', sa.String(), nullable=True),
+    sa.Column('subject', sa.String(), nullable=True),
+    sa.Column('content', sa.String(), nullable=True),
+    sa.PrimaryKeyConstraint('id')
+    )
+    op.create_index(op.f('ix_email_templates_id'), 'email_templates', ['id'], unique=False)
+    op.create_index(op.f('ix_email_templates_name'), 'email_templates', ['name'], unique=True)
+    op.create_table('email_types',
+    sa.Column('id', sa.Integer(), nullable=False),
+    sa.Column('type', sa.String(), nullable=True),
+    sa.PrimaryKeyConstraint('id')
+    )
+    op.create_index(op.f('ix_email_types_id'), 'email_types', ['id'], unique=False)
+    op.create_index(op.f('ix_email_types_type'), 'email_types', ['type'], unique=True)
     op.create_table('roles',
     sa.Column('id', sa.String(), nullable=False),
     sa.Column('name', sa.String(), nullable=True),
@@ -50,19 +66,6 @@ def upgrade() -> None:
     sa.PrimaryKeyConstraint('id')
     )
     op.create_index(op.f('ix_tenants_created_at'), 'tenants', ['created_at'], unique=False)
-    op.create_table('threads',
-    sa.Column('id', sa.String(), nullable=False),
-    sa.PrimaryKeyConstraint('id')
-    )
-    op.create_table('messages',
-    sa.Column('id', sa.String(), nullable=False),
-    sa.Column('thread_id', sa.String(), nullable=True),
-    sa.Column('sender', sa.String(), nullable=True),
-    sa.Column('content', sa.String(), nullable=True),
-    sa.Column('timestamp', sa.DateTime(), nullable=True),
-    sa.ForeignKeyConstraint(['thread_id'], ['threads.id'], ),
-    sa.PrimaryKeyConstraint('id')
-    )
     op.create_table('tenant_addresses',
     sa.Column('tenant_id', sa.String(length=36), nullable=True),
     sa.Column('address_id', sa.String(length=36), nullable=True),
@@ -102,20 +105,34 @@ def upgrade() -> None:
     op.create_table('otp',
     sa.Column('id', sa.String(length=36), nullable=False),
     sa.Column('code', sa.String(), nullable=True),
+    sa.Column('email', sa.String(), nullable=True),
     sa.Column('user_id', sa.String(length=36), nullable=True),
+    sa.Column('email_template_id', sa.Integer(), nullable=True),
+    sa.Column('email_type_id', sa.Integer(), nullable=True),
+    sa.Column('expires_at', sa.DateTime(), nullable=True),
     sa.Column('created_at', sa.DateTime(), nullable=True),
     sa.Column('deleted_at', sa.DateTime(), nullable=True),
     sa.Column('updated_at', sa.DateTime(), nullable=True),
     sa.Column('status', sa.Enum('Active', 'Inactive', 'Deleted', 'Blocked', 'Pending', 'Used', name='entitystatus'), nullable=True),
+    sa.ForeignKeyConstraint(['email_template_id'], ['email_templates.id'], ),
+    sa.ForeignKeyConstraint(['email_type_id'], ['email_types.id'], ),
     sa.ForeignKeyConstraint(['user_id'], ['users.id'], ),
     sa.PrimaryKeyConstraint('id')
     )
     op.create_index(op.f('ix_otp_created_at'), 'otp', ['created_at'], unique=False)
+    op.create_index(op.f('ix_otp_email'), 'otp', ['email'], unique=False)
     op.create_table('tenant_users',
     sa.Column('user_id', sa.String(length=36), nullable=True),
     sa.Column('tenant_id', sa.String(length=36), nullable=True),
     sa.ForeignKeyConstraint(['tenant_id'], ['tenants.id'], ),
     sa.ForeignKeyConstraint(['user_id'], ['users.id'], )
+    )
+    op.create_table('threads',
+    sa.Column('id', sa.String(), nullable=False),
+    sa.Column('user_id', sa.String(), nullable=True),
+    sa.Column('title', sa.String(), nullable=True),
+    sa.ForeignKeyConstraint(['user_id'], ['users.id'], ),
+    sa.PrimaryKeyConstraint('id')
     )
     op.create_table('user_addresses',
     sa.Column('user_id', sa.String(length=36), nullable=True),
@@ -123,13 +140,28 @@ def upgrade() -> None:
     sa.ForeignKeyConstraint(['address_id'], ['addresses.id'], ),
     sa.ForeignKeyConstraint(['user_id'], ['users.id'], )
     )
+    op.create_table('messages',
+    sa.Column('id', sa.String(), nullable=False),
+    sa.Column('thread_id', sa.String(), nullable=True),
+    sa.Column('user_id', sa.String(), nullable=True),
+    sa.Column('role', sa.String(), nullable=True),
+    sa.Column('content', sa.String(), nullable=True),
+    sa.Column('timestamp', sa.DateTime(), nullable=True),
+    sa.Column('annotations', sa.ARRAY(sa.JSON()), nullable=True),
+    sa.ForeignKeyConstraint(['thread_id'], ['threads.id'], ),
+    sa.ForeignKeyConstraint(['user_id'], ['users.id'], ),
+    sa.PrimaryKeyConstraint('id')
+    )
     # ### end Alembic commands ###
 
 
 def downgrade() -> None:
     # ### commands auto generated by Alembic - please adjust! ###
+    op.drop_table('messages')
     op.drop_table('user_addresses')
+    op.drop_table('threads')
     op.drop_table('tenant_users')
+    op.drop_index(op.f('ix_otp_email'), table_name='otp')
     op.drop_index(op.f('ix_otp_created_at'), table_name='otp')
     op.drop_table('otp')
     op.drop_index(op.f('ix_credentials_created_at'), table_name='credentials')
@@ -138,11 +170,15 @@ def downgrade() -> None:
     op.drop_index(op.f('ix_users_created_at'), table_name='users')
     op.drop_table('users')
     op.drop_table('tenant_addresses')
-    op.drop_table('messages')
-    op.drop_table('threads')
     op.drop_index(op.f('ix_tenants_created_at'), table_name='tenants')
     op.drop_table('tenants')
     op.drop_table('roles')
+    op.drop_index(op.f('ix_email_types_type'), table_name='email_types')
+    op.drop_index(op.f('ix_email_types_id'), table_name='email_types')
+    op.drop_table('email_types')
+    op.drop_index(op.f('ix_email_templates_name'), table_name='email_templates')
+    op.drop_index(op.f('ix_email_templates_id'), table_name='email_templates')
+    op.drop_table('email_templates')
     op.drop_index(op.f('ix_addresses_created_at'), table_name='addresses')
     op.drop_table('addresses')
     # ### end Alembic commands ###
