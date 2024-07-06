@@ -9,6 +9,7 @@ class BaseArticle(BaseModel):
 
 class Article(BaseArticle):
     authors: str
+    question: str
 
 class GeneratorType(BaseArticle):
     publisher_weight: float
