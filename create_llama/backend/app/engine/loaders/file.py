@@ -1,5 +1,7 @@
+import datetime
 import os
 import logging
+from create_llama.backend.app import csv_to_pdf, csv_blog_to_pdf
 from llama_parse import LlamaParse
 from pydantic import BaseModel, validator
 
@@ -15,24 +17,38 @@ class FileLoaderConfig(BaseModel):
             raise ValueError(f"Directory '{v}' does not exist")
         return v
 
-def llama_parse_parser():
-    if os.getenv("LLAMA_CLOUD_API_KEY") is None:
-        raise ValueError(
-            "LLAMA_CLOUD_API_KEY environment variable is not set. "
-            "Please set it in .env file or in your shell environment then run again!"
-        )
-    parser = LlamaParse(result_type="markdown", verbose=True, language="en")
-    return parser
+class CSVLoaderConfig(BaseModel):
+    data_dir: str = "tmp/csv/topic"
+    use_llama_parse: bool = False
+    is_called_on_topic: bool = False
 
-def csv_parser(filepath):
-    import pandas as pd
-    df = pd.read_csv(filepath)
-    return df.to_markdown(index=False)
+    @validator("data_dir")
+    def data_dir_must_exist(cls, v):
+        if not os.path.isdir(v):
+            raise ValueError(f"Directory '{v}' does not exist")
+        return v
 
-def get_file_documents(config: FileLoaderConfig):
+def get_file_documents(config: FileLoaderConfig | CSVLoaderConfig):
     from llama_index.core.readers import SimpleDirectoryReader
 
     try:
+
+        if isinstance(config, CSVLoaderConfig):
+            if not os.path.isdir("tmp/converted_csv"):
+                os.makedirs("tmp/converted_csv")
+                
+            file_name = f"{'tmp/converted_csv/' if config.is_called_on_topic else 'data/'}converted_csv_data{str(datetime.datetime.now().timestamp())}.pdf"
+
+            success_message = csv_to_pdf(config.data_dir, file_name) if config.is_called_on_topic else csv_blog_to_pdf(config.data_dir, file_name)
+
+            if success_message is not None:                
+                reader = SimpleDirectoryReader(
+                    input_files=[file_name],
+                    filename_as_id=True,
+                )
+                return reader.load_data()
+            return []
+
         reader = SimpleDirectoryReader(
             config.data_dir,
             recursive=True,
