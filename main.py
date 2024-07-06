@@ -1,5 +1,7 @@
 import os
-from create_llama.backend.app.engine.generate import generate_datasource
+import shutil
+from create_llama.backend.app.engine import init_topic_engine
+from src.app.tasks.indexing import index_all, reset_index
 import uvicorn
 from fastapi import FastAPI
 from dotenv import load_dotenv
@@ -81,6 +83,24 @@ app.openapi_schema["info"] = {
     }
 }
 
+def delete_all_converted_csv(folder_path):
+    # Check if the folder exists
+    if not os.path.exists(folder_path):
+        print(f"The folder {folder_path} does not exist.")
+        return
+
+    # Loop through all files and folders in the specified directory
+    for filename in os.listdir(folder_path):
+        file_path = os.path.join(folder_path, filename)
+        try:
+            if os.path.isfile(file_path) or os.path.islink(file_path):
+                os.unlink(file_path)  # Delete the file or link
+            elif os.path.isdir(file_path):
+                shutil.rmtree(file_path)  # Delete the directory and its contents
+        except Exception as e:
+            print(f"Failed to delete {file_path}. Reason: {e}")
+
+
 @app.on_event("startup")
 async def startup(
 ):
@@ -96,8 +116,11 @@ async def startup(
         await email_template_service.populate_email_templates(templates_directory)
 
     get_logger().info("Successfully populated default email templates and types")
-    # generate_datasource()
-    # get_logger().info("Successfully upserted data to chromadb")
+    init_topic_engine()
+
+    delete_all_converted_csv("tmp/converted_csv")
+    reset_index()
+    get_logger().info("Successfully upserted data to chromadb")
 
 
 if __name__ == "__main__":

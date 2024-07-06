@@ -176,40 +176,29 @@ async def chat_thread(
         chat_mode = await user_service.get_chat_mode(user_id, redis_client)
         
         in_research_or_exploration_modality = chat_mode == SupportedChatMode.RESEARCH_EXPLORATION.value
-        in_research_or_tweet_modality = chat_mode == SupportedChatMode.MACRO_ROUNDUP_ARTICLE_TWEET_GENERATION.value
+        # in_research_or_tweet_modality = chat_mode == SupportedChatMode.MACRO_ROUNDUP_ARTICLE_TWEET_GENERATION.value
 
         extracted_data = extract_article_data_from_string(last_message_content) if not in_research_or_exploration_modality else None
-        chat_history = ''
+        # chat_history = ''
         messages_tmp: List[Message] = await thread_service.get_messages_by_thread_id(thread_id=thread_id, uid=user_id)
         
-        chat_history += ''.join(
-            f"""
-            Role: {message.role}
-            Content: {message.content}
-            """ for message in messages_tmp
-        ) if len(messages_tmp) > 0 else ''
+        # chat_history += ''.join(
+        #     f"""
+        #     Role: {message.role}
+        #     Content: {message.content}
+        #     """ for message in messages_tmp
+        # ) if len(messages_tmp) > 0 else ''
 
         messages = [ChatMessage(content=last_message_content, role=MessageRole.USER if str(message.role) == "user" else MessageRole.ASSISTANT) for message in messages_tmp]        
 
         extracted_data_tmp = extract_article_data_from_string(messages_tmp[0].content) if extracted_data is None and not in_research_or_exploration_modality and len(messages_tmp) > 0 else extracted_data
         
-        last_message_content_final = ''.join(
-            f"""
-            headline={extracted_data_tmp.headline};
-            publisher={extracted_data_tmp.publisher};
-            authors={extracted_data_tmp.authors};
-            abstract={extracted_data_tmp.abstract};
-            question={last_message_content};
-
-            
-            {'N.B: When generating tweet always bear in mind about about the maximum characters allowed for a perfect tweet. Also use hash tag for broader audience.' if in_research_or_tweet_modality else ''}
-            """
-        )  if extracted_data_tmp is not None else last_message_content
+        last_message_content_final =  extracted_data_tmp.question if extracted_data_tmp is not None else last_message_content
 
         chat_engine: BaseChatEngine = await get_chat_engine(
             user_id=user_id, 
-            data=extracted_data, 
-            chat_history=chat_history
+            data=extracted_data_tmp, 
+            chat_history=messages
         )
 
         new_message = Message(
