@@ -1,6 +1,7 @@
 
 
 import csv
+import os
 from googleapiclient.errors import HttpError
 from src.core.config.gcp import GCPConfig
 from src.llm.env_config import get_config
@@ -32,10 +33,14 @@ def store_spreadsheet(spreadsheet_id: str):
 
             file_name = sheet_name.replace(' ', '_').lower()
 
-            # Write the values to a CSV file
-            with open(f'data/{file_name}.csv', 'w', newline='') as file:
-                writer = csv.writer(file)
-                writer.writerows(values)
+            if file_name != "importances":
+                data_dir = "tmp/csv/topics"
+                if not os.path.isdir(data_dir):
+                    os.makedirs(data_dir)
+                # Write the values to a CSV file
+                with open(f'{data_dir}/{file_name}.csv', 'w', newline='') as file:
+                    writer = csv.writer(file)
+                    writer.writerows(values)
 
     except HttpError as error:
         print(f'An error occurred: {error}')

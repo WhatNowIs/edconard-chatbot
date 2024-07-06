@@ -1,7 +1,7 @@
 {
-    "python.pythonPath": "/home/byamasu-patrick/.cache/pypoetry/virtualenvs/rag-box-PO2dp6Pn-py3.10/bin/python",
+    "python.pythonPath": "/home/byamasu-patrick/.cache/pypoetry/virtualenvs/edcornard-chatbot-PO2dp6Pn-py3.10/bin/python",
     "python.analysis.extraPaths": [
-        "/home/byamasu-patrick/.cache/pypoetry/virtualenvs/rag-box-PO2dp6Pn-py3.10/lib/python3.10/site-packages"
+        "/home/byamasu-patrick/.cache/pypoetry/virtualenvs/edcornard-chatbot-PO2dp6Pn-py3.10/lib/python3.10/site-packages"
     ],
     // "python.linting.enabled": true,
     // "python.linting.pylintEnabled": true,
