@@ -3,7 +3,7 @@ import yaml
 import importlib
 import logging
 from typing import Dict
-from app.engine.loaders.file import FileLoaderConfig, get_file_documents
+from app.engine.loaders.file import CSVLoaderConfig, FileLoaderConfig, get_file_documents
 from app.engine.loaders.web import WebLoaderConfig, get_web_documents
 from app.engine.loaders.db import DBLoaderConfig, get_db_documents
 
@@ -32,8 +32,30 @@ def get_documents():
                 document = get_db_documents(
                     configs=[DBLoaderConfig(**cfg) for cfg in loader_config]
                 )
+            case "csv":                
+                data_dir = "tmp/csv"
+                if not os.path.isdir(data_dir):
+                    os.makedirs(data_dir)
+                document = get_file_documents(
+                    config=CSVLoaderConfig(**loader_config, data_dir="tmp/csv", is_called_on_topic=False)
+                )
             case _:
                 raise ValueError(f"Invalid loader type: {loader_type}")
         documents.extend(document)
+
+    return documents
+
+def get_csv_documents(data_dir: str):
+    documents = []
+    config = load_configs()
+    for loader_type, loader_config in config.items():
+        logger.info(
+            f"Loading documents from loader: {loader_type}, config: {loader_config}"
+        )
+        if loader_type == "csv":
+            document = get_file_documents(
+                config=CSVLoaderConfig(**loader_config, data_dir=data_dir, is_called_on_topic=True)
+            )
+            documents.extend(document)
 
     return documents
