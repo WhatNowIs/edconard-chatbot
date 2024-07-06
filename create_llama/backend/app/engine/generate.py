@@ -1,7 +1,7 @@
 import re
+from create_llama.backend.app.engine.index import get_topic_index
 from dotenv import load_dotenv
 from src.core.services.gcp import store_spreadsheet
-from src.llm.env_config import get_config
 
 load_dotenv()
 
@@ -21,7 +21,6 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger()
 
 STORAGE_DIR = os.getenv("STORAGE_DIR", "storage")
-
 
 def get_doc_store():
 
@@ -87,6 +86,7 @@ def generate_datasource():
     persist_storage(docstore, vector_store)
 
     logger.info("Finished generating the index")
+
 
 
 if __name__ == "__main__":
