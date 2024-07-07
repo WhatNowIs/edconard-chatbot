@@ -1,7 +1,7 @@
 import datetime
 import os
 import logging
-from create_llama.backend.app import csv_to_pdf, csv_blog_to_pdf
+from create_llama.backend.app import csv_to_pdf, macro_roundup_preprocessor, process_blog_articles
 from llama_parse import LlamaParse
 from pydantic import BaseModel, validator
 
@@ -22,6 +22,8 @@ class CSVLoaderConfig(BaseModel):
     data_dir: str = "tmp/csv/topic"
     use_llama_parse: bool = False
     is_called_on_topic: bool = False
+    is_blog_post: bool = False
+    is_macroroundup: bool = False
 
     @validator("data_dir")
     def data_dir_must_exist(cls, v):
@@ -44,22 +46,30 @@ def get_file_documents(config: FileLoaderConfig | CSVLoaderConfig):
     from llama_index.core.readers import SimpleDirectoryReader
 
     try:
-
         if isinstance(config, CSVLoaderConfig):
             if not os.path.isdir("tmp/converted_csv"):
                 os.makedirs("tmp/converted_csv")
-                
-            file_name = f"{'tmp/converted_csv/' if config.is_called_on_topic else 'data/'}converted_csv_data{str(datetime.datetime.now().timestamp())}.pdf"
+                                
+            if config.is_called_on_topic:
+                file_name = f"{'tmp/converted_csv/' if config.is_called_on_topic else 'data/'}converted_csv_data{str(datetime.datetime.now().timestamp())}.pdf"
+                success_message = csv_to_pdf(config.data_dir, file_name)
+                if success_message is not None:                
+                    reader = SimpleDirectoryReader(
+                        input_files=[file_name],
+                        filename_as_id=True,
+                    )
+                    return reader.load_data()
+                return []
+            else:
+                macro_files = macro_roundup_preprocessor(f"{config.data_dir}/macro_roundup", "data")
+                blog_post_files = process_blog_articles(f"{config.data_dir}/blog_post", "data")
 
-            success_message = csv_to_pdf(config.data_dir, file_name) if config.is_called_on_topic else csv_blog_to_pdf(config.data_dir, file_name)
-
-            if success_message is not None:                
+                output_files = blog_post_files + macro_files             
                 reader = SimpleDirectoryReader(
-                    input_files=[file_name],
+                    input_files=output_files,
                     filename_as_id=True,
                 )
                 return reader.load_data()
-            return []
 
         reader = SimpleDirectoryReader(
             config.data_dir,

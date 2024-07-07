@@ -37,7 +37,7 @@ def get_documents():
                 if not os.path.isdir(data_dir):
                     os.makedirs(data_dir)
                 document = get_file_documents(
-                    config=CSVLoaderConfig(**loader_config, data_dir="tmp/csv", is_called_on_topic=False)
+                    config=CSVLoaderConfig(**loader_config, data_dir="tmp/csv", is_called_on_topic=False, is_macroroundup=True, is_blog_post=True)
                 )
             case _:
                 raise ValueError(f"Invalid loader type: {loader_type}")
