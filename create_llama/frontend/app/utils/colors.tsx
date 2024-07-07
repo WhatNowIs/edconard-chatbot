@@ -24,6 +24,7 @@ export enum DocumentColorEnum {
     DocumentColorEnum.teal,
     DocumentColorEnum.indigo,
     DocumentColorEnum.blue,
+    DocumentColorEnum.gray,
   ];
   
   // need this because tailwind doesn't support dynamic template literals
