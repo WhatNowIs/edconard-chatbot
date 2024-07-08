@@ -1,7 +1,6 @@
 import os
-from typing import List, Optional
+from typing import List
 from create_llama.backend.app.engine.tools.prompt import MasterPrompt
-from create_llama.backend.app.utils.enums import SupportedChatMode
 from create_llama.backend.app.utils.helpers import Article
 from llama_index.core.chat_engine import CondensePlusContextChatEngine
 from llama_index.core.settings import Settings
@@ -53,7 +52,7 @@ async def get_chat_engine(user_id: str | None = None, data: Article | None = Non
     if len(tools) == 0:
         chat_mode = await get_current_chat_mode(user_id)
         
-        in_research_or_exploration_modality = chat_mode == SupportedChatMode.RESEARCH_EXPLORATION.value
+        in_research_or_exploration_modality = chat_mode == True
         if in_research_or_exploration_modality:
             get_logger().info(f"We are research and exploration mode {chat_mode}")
 

@@ -124,7 +124,7 @@ export async function signOut(access_token: string): Promise<{ message: string; 
 }
 
 
-export async function getChatMode(user_id: string, access_token: string): Promise<{ mode: string;  }> {
+export async function getChatMode(user_id: string, access_token: string): Promise<{ mode: boolean;  }> {
   const res = await fetch(`${getBaseURL()}/api/chat/chat-mode/${user_id}`, {
     method: "GET",
     headers: {
@@ -138,17 +138,17 @@ export async function getChatMode(user_id: string, access_token: string): Promis
     throw new Error(error);
   }
 
-  return (await res.json()) as { mode: string; };
+  return (await res.json()) as { mode: boolean; };
 }
 
-export async function updateChatMode(chatMode: string, user_id: string, access_token: string): Promise<{ message: string;  }> {
+export async function updateChatMode(checked: boolean, user_id: string, access_token: string): Promise<{ message: string;  }> {
   const res = await fetch(`${getBaseURL()}/api/chat/chat-mode/${user_id}`, {
     method: "PATCH",
     headers: {
       "Content-Type": "application/json",
       Authorization: `Bearer ${access_token}`
     },
-    body: JSON.stringify({mode: chatMode})
+    body: JSON.stringify({is_research_exploration: checked})
   });
 
   if (!res.ok) {
