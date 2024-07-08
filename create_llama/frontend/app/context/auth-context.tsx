@@ -8,13 +8,13 @@ import { UserFormType, UserSigninType, getChatMode, signIn, signOut, updateChatM
 
 interface AuthContextType {
     user: UserFormType | null;
-    chatMode: string | null;
-    setChatMode: Dispatch<SetStateAction<string | null>>;
+    isResearchExploration: boolean | null;
+    setIsResearchExploration: Dispatch<SetStateAction<boolean | null>>;
     setUser: Dispatch<SetStateAction<UserFormType | null>>;
     login: (credentials: UserSigninType) => Promise<{ message: string; user: UserFormType | null; }>;
     logout: () => Promise<void>;
-    getChatModeByUser: (userId: string) => Promise<{mode: string}>;
-    updateChatModeByUser: (mode: string) => Promise<{ message: string; status: number; }>;
+    getChatModeByUser: (userId: string) => Promise<{mode: boolean}>;
+    updateChatModeByUser: (checked: boolean) => Promise<{ message: string; status: number; }>;
 }
   
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
@@ -25,7 +25,7 @@ interface AuthProviderProps {
 
 export const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
   const [user, setUser] = useState<UserFormType | null>(null);
-  const [chatMode, setChatMode] = useState<string | null>(null);
+  const [isResearchExploration, setIsResearchExploration] = useState<boolean | null>(true);
 
   useEffect(() => {
     const token = localStorage.getItem('access_token');
@@ -49,13 +49,13 @@ export const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
   }, []);
 
   useEffect(() => {    
-    if(chatMode === null && user){
+    if(isResearchExploration === null && user){
       const fetchChatMode = async () => {
         await getChatModeByUser(user.id as string);
       };
       fetchChatMode();
     }
-  }, [user, chatMode])
+  }, [user, isResearchExploration])
 
   const login = async (credentials: UserSigninType) => {
     try {
@@ -76,27 +76,27 @@ export const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
 
   };
 
-  const getChatModeByUser = async (userId: string): Promise<{mode: string}> => {
+  const getChatModeByUser = async (userId: string): Promise<{mode: boolean}> => {
     try {
       const token = localStorage.getItem('access_token');
       const { mode } = await getChatMode(userId, token as string);
-      setChatMode(mode);
+      setIsResearchExploration(mode);
       return {
         mode
       }
     } catch (error) {
         return {
-            mode: "research-or-exploration",
+            mode: true,
         }
     }
   };
   
 
-  const updateChatModeByUser = async (mode: string): Promise<{status: number; message: string}> => {
+  const updateChatModeByUser = async (checked: boolean): Promise<{status: number; message: string}> => {
     try {
       const token = localStorage.getItem('access_token');
-      const { message } = await updateChatMode(mode, user?.id as string, token as string);
-      setChatMode(mode);
+      const { message } = await updateChatMode(checked, user?.id as string, token as string);
+      setIsResearchExploration(checked);
 
       return {
         status: 200,
@@ -105,7 +105,7 @@ export const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
     } catch (error) {
         return {
           status: 400,
-          message: `Failed to update chat mode to ${mode}`,
+          message: `Failed to update chat mode to ${checked}`,
         }
     }
   };
@@ -125,7 +125,7 @@ export const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
   };
 
   return (
-    <AuthContext.Provider value={{ user, chatMode, setChatMode, setUser, login, logout, getChatModeByUser, updateChatModeByUser }}>
+    <AuthContext.Provider value={{ user, isResearchExploration, setIsResearchExploration, setUser, login, logout, getChatModeByUser, updateChatModeByUser }}>
       {children}
     </AuthContext.Provider>
   );

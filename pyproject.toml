@@ -54,6 +54,8 @@ html2text = "^2024.2.26"
 llama-index = "0.10.52"
 llama-index-core = "0.10.52.post1"
 llama-index-readers-file = "^0.1.27"
+ftfy = "^6.2.0"
+fpdf2 = "^2.7.9"
 
 
 [tool.poetry.group.dev.dependencies]
