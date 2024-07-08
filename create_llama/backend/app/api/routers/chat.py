@@ -1,4 +1,3 @@
-from create_llama.backend.app.utils.enums import SupportedChatMode
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 from typing import List, Any, Optional, Dict, Tuple
@@ -174,8 +173,10 @@ async def chat_thread(
     if "sub" in session:
         user_id = session["sub"]
         chat_mode = await user_service.get_chat_mode(user_id, redis_client)
+
+        get_logger().info(f"Current chat mode: {chat_mode}")
         
-        in_research_or_exploration_modality = chat_mode == SupportedChatMode.RESEARCH_EXPLORATION.value
+        in_research_or_exploration_modality = chat_mode == True
         # in_research_or_tweet_modality = chat_mode == SupportedChatMode.MACRO_ROUNDUP_ARTICLE_TWEET_GENERATION.value
 
         extracted_data = extract_article_data_from_string(last_message_content) if not in_research_or_exploration_modality else None
@@ -306,11 +307,11 @@ async def chat_mode_request(
     
     if "sub" in session and user_id == session["sub"]:
 
-        get_logger().info(f"chat mode sent: {data.mode}")
+        get_logger().info(f"chat mode sent: {data.is_research_exploration}")
     
-        await user_service.update_chat_mode(user_id, data.mode, redis_client)
+        await user_service.update_chat_mode(user_id, data.is_research_exploration, redis_client)
     
-        return JSONResponse(status_code=200, content={"message": f"Successfully switched to {data.mode.replace('-', ' ')} mode."})
+        return JSONResponse(status_code=200, content={"message": f"Successfully switched to {data.is_research_exploration} mode."})
     
     raise HTTPException(
         status_code=status.HTTP_401_UNAUTHORIZED,
@@ -333,7 +334,7 @@ async def get_chat_mode(
 
         get_logger().info(f"retrieved chat mode: {chat_mode}")
     
-        return JSONResponse(status_code=200, content={"mode": chat_mode}) # type: ignore
+        return JSONResponse(status_code=200, content={"mode": bool(chat_mode)}) # type: ignore
 
     raise HTTPException(
         status_code=status.HTTP_401_UNAUTHORIZED,

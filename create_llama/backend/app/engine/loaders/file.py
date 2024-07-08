@@ -51,6 +51,7 @@ def get_file_documents(config: FileLoaderConfig | CSVLoaderConfig):
                 os.makedirs("tmp/converted_csv")
                                 
             if config.is_called_on_topic:
+                logger.info(f"Loading predefined topics")
                 file_name = f"{'tmp/converted_csv/' if config.is_called_on_topic else 'data/'}converted_csv_data{str(datetime.datetime.now().timestamp())}.pdf"
                 success_message = csv_to_pdf(config.data_dir, file_name)
                 if success_message is not None:                
@@ -60,16 +61,21 @@ def get_file_documents(config: FileLoaderConfig | CSVLoaderConfig):
                     )
                     return reader.load_data()
                 return []
-            else:
+            elif not config.is_called_on_topic and (config.is_blog_post or config.is_macroroundup):
                 macro_files = macro_roundup_preprocessor(f"{config.data_dir}/macro_roundup", "data")
                 blog_post_files = process_blog_articles(f"{config.data_dir}/blog_post", "data")
+
+                logger.info(f"Macro Roundup files: {macro_files}")
+                # logger.info(f"Blog Post files: {blog_post_files}")
 
                 output_files = blog_post_files + macro_files             
                 reader = SimpleDirectoryReader(
                     input_files=output_files,
                     filename_as_id=True,
                 )
+                logger.info(f"Loading {len(output_files)} both Macro Roundup and Blog Post files")
                 return reader.load_data()
+
 
         reader = SimpleDirectoryReader(
             config.data_dir,

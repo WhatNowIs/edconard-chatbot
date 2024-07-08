@@ -34,7 +34,7 @@ class ThreadUpdate(BaseModel):
     user_id: str
 
 class ChatMode(BaseModel):
-    mode: str
+    is_research_exploration: bool
 
 class UserModel(BaseModel):
     id: Optional[str] = None
