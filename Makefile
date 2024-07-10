@@ -56,3 +56,9 @@ dev:
 	# sleep 1; \
 	# npm run dev --prefix ./admin & \
 	wait
+
+# dev:
+# 	set ENVIRONMENT=dev && \
+# 	start poetry run python main.py && \
+# 	cd create_llama/frontend && \
+# 	npm run dev
