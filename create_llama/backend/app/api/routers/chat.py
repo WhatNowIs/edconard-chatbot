@@ -194,10 +194,10 @@ async def chat_thread(
 
         extracted_data_tmp = extract_article_data_from_string(messages_tmp[0].content) if extracted_data is None and not in_research_or_exploration_modality and len(messages_tmp) > 0 else extracted_data
         
-        last_message_content_final =  extracted_data_tmp.question if extracted_data_tmp is not None else last_message_content
+        last_message_content_final =  extracted_data_tmp.question if extracted_data is not None else last_message_content
 
-        chat_engine: BaseChatEngine = await get_chat_engine(
-            user_id=user_id, 
+        chat_engine = await get_chat_engine(
+            chat_mode=chat_mode, 
             data=extracted_data_tmp, 
             chat_history=messages
         )

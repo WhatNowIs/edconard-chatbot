@@ -102,7 +102,7 @@ class UserService(Service):
             self.logger.warning(f"No chat mode found for user ID: {user_id}")
         else:
             self.logger.info(f"Chat mode for user ID: {user_id} is {chat_mode}")
-        return bool(chat_mode)
+        return chat_mode
     
     def create_access_token(self, data: dict, expires_delta: timedelta = None):
         to_encode = data.copy()
