@@ -1,3 +1,4 @@
+import os
 from typing import Optional, Tuple
 from create_llama.backend.app.utils.helpers import Article
 import jwt
@@ -13,8 +14,10 @@ from datetime import datetime, timedelta
 from redis.asyncio.client import Redis
 
 SECRET_KEY = "CE586DECFCBF526AFA26846516E9F" 
+REFRESH_SECRET_KEY = "qkM3CsTaKd2vMOzb4RiKE9LaDaQqZiZU"
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 1440
+REFRESH_TOKEN_EXPIRE_MINUTES = ACCESS_TOKEN_EXPIRE_MINUTES * 7
 
 class UserService(Service):
     def __init__(self, db_session: Session):
@@ -68,7 +71,14 @@ class UserService(Service):
         self.logger.warning(f"User with id: {user_id} not found for password verification")
         return False
 
-    async def login(self, email: str, password: str, redis_client: Redis, is_research_or_exploration: bool) -> Tuple[bool, Optional[str],  Optional[User], str]:
+    async def login(
+        self,
+        email: str, 
+        password: str, 
+        redis_client: Redis, 
+        is_research_or_exploration: bool
+    ) -> Tuple[bool, Optional[str],  Optional[User], str]:
+        
         self.logger.info(f"User login attempt with email: {email}")
         user = await self.get_by_email(email)
         
@@ -76,18 +86,47 @@ class UserService(Service):
             self.logger.info(f"User login successful for email: {email}")
 
             token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
-            token = self.create_access_token(data={ "sub": user.id, "email": user.email }, expires_delta=token_expires)
+            refresh_token_expires = timedelta(minutes = REFRESH_TOKEN_EXPIRE_MINUTES)
 
-            await redis_client.setex(f"session:{user.id}", ACCESS_TOKEN_EXPIRE_MINUTES * 60, token)
+            token = self.create_access_token(
+                data = { 
+                    "sub": user.id, 
+                    "email": user.email
+                }, 
+                expires_delta = token_expires
+            )
+
+            refresh_token = self.create_access_token(
+                data = { 
+                    "sub": user.id, 
+                    "email": user.email
+                }, 
+                expires_delta = refresh_token_expires, 
+                secret_key = REFRESH_SECRET_KEY
+            )
+
+            await redis_client.setex(
+                f"session:{user.id}", 
+                ACCESS_TOKEN_EXPIRE_MINUTES * 60, 
+                token
+            )
+            await redis_client.setex(
+                f"refresh_session:{user.id}", 
+                REFRESH_TOKEN_EXPIRE_MINUTES * 60, 
+                refresh_token
+            )
             # Store the chat mode information
-            await redis_client.setex(f"chat_mode:{user.id}", ACCESS_TOKEN_EXPIRE_MINUTES * 60, str(is_research_or_exploration))
+            await redis_client.setex(
+                f"chat_mode:{user.id}", 
+                ACCESS_TOKEN_EXPIRE_MINUTES * 60, 
+                str(is_research_or_exploration)
+            )
 
-
-            return True, token, user, "Login successfully"
+            return True, token, refresh_token, user, "Login successfully"
             
         self.logger.warning(f"User login failed for email: {email}")
 
-        return False, None, None, "Your email or password is incorrect"
+        return False, None, None, None, "Your email or password is incorrect"
 
     async def update_chat_mode(self, user_id: str, is_research_or_explorationde: bool, redis_client: Redis) -> None:
         self.logger.info(f"Updating chat mode for user ID: {user_id} to {is_research_or_explorationde}")

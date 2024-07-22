@@ -1,3 +1,4 @@
+from datetime import timedelta
 from typing import Any, Optional
 from fastapi import APIRouter, Depends, HTTPException, logger, status
 from fastapi.responses import JSONResponse
@@ -9,7 +10,7 @@ from src.core.config.redis import get_redis_client
 from src.core.services.credential import CredentialService
 from src.core.services.mail import EmailTemplateService, EmailTypeService, ResendClient, get_mail_service
 from src.core.services.otp import OTPService
-from src.core.services.user import UserService
+from src.core.services.user import ACCESS_TOKEN_EXPIRE_MINUTES, REFRESH_SECRET_KEY, UserService
 from src.core.config.postgres import get_db
 from src.core.models.base import OTP, EmailTemplate, EmailType, EntityStatus, User
 from src.schema import EmailTypeEnum, ResetPassword, UpdatePassword, UserCreateModel, UserModel, VerifyOtp
@@ -122,13 +123,64 @@ async def authenticate_user(
     user_service: UserService = Depends(get_user_service),    
     redis_client: Redis = Depends(get_redis_client)
 ):
-    is_authenticated, token, user, message = await user_service.login(form_data.username, form_data.password, redis_client, True)
+    is_authenticated, token, refresh_token, user, message = await user_service.login(
+        form_data.username, 
+        form_data.password, 
+        redis_client, True
+    )
     if not is_authenticated:
         raise HTTPException(
             status_code=HTTP_400_BAD_REQUEST,
             detail="Incorrect username or password"
         )
-    return {"access_token": token, "token_type": "bearer", "user": UserModel(**user.to_dict()), "message": message}
+    return {
+        "access_token": token, 
+        "refresh_token": refresh_token, 
+        "token_type": "bearer", 
+        "user": UserModel(**user.to_dict()), 
+        "message": message
+    }
+
+@accounts_router.post("/refresh")
+async def refresh_token(
+    refresh_token: str,
+    user_service: UserService = Depends(get_user_service),
+    redis_client: Redis = Depends(get_redis_client)
+):
+    try:
+        payload = jwt.decode(refresh_token, REFRESH_SECRET_KEY, algorithms=["HS256"])
+        user_id = payload["sub"]
+        email = payload["email"]
+
+        # Verify the refresh token is stored in Redis
+        stored_refresh_token = await redis_client.get(f"refresh_session:{user_id}")
+        if stored_refresh_token != refresh_token:
+            raise HTTPException(
+                status_code=status.HTTP_401_UNAUTHORIZED,
+                detail="Invalid refresh token",
+                headers={"WWW-Authenticate": "Bearer"},
+            )
+
+        token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
+        new_access_token = user_service.create_access_token({"sub": user_id, "email": email}, token_expires)
+
+        await redis_client.setex(f"session:{user_id}", ACCESS_TOKEN_EXPIRE_MINUTES * 60, new_access_token)
+
+        return {"access_token": new_access_token, "token_type": "bearer"}
+
+    except jwt.ExpiredSignatureError:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Refresh token expired",
+            headers={"WWW-Authenticate": "Bearer"},
+        )
+    except jwt.InvalidTokenError:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Invalid refresh token",
+            headers={"WWW-Authenticate": "Bearer"},
+        )
+
 
 @accounts_router.post("/verify-otp")
 async def verify_otp_code(
@@ -333,6 +385,7 @@ async def signout(
         user_id = session["sub"]
         # Remove the session from Redis
         await redis_client.delete(f"session:{user_id}")
+        await redis_client.delete(f"refresh_session:{user_id}")
         await redis_client.delete(f"chat_mode:{user_id}")
         
         return JSONResponse(status_code=200, content={"message": "Successfully signed out"})
