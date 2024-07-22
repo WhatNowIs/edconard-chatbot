@@ -1,23 +1,22 @@
 from typing import Any, Optional
-from fastapi import APIRouter, Depends, HTTPException, logger, status
+from fastapi import APIRouter, Depends, HTTPException, status
 from fastapi.responses import JSONResponse
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
-import jwt
 from sqlalchemy.ext.asyncio import AsyncSession
-from starlette.status import HTTP_400_BAD_REQUEST
+from redis.asyncio.client import Redis
 from src.core.config.redis import get_redis_client
 from src.core.services.credential import CredentialService
 from src.core.services.mail import EmailTemplateService, EmailTypeService, ResendClient, get_mail_service
 from src.core.services.otp import OTPService
 from src.core.services.user import UserService
+from src.core.services.otp import get_otp_service
 from src.core.config.postgres import get_db
 from src.core.models.base import OTP, EmailTemplate, EmailType, EntityStatus, User
 from src.schema import EmailTypeEnum, ResetPassword, UpdatePassword, UserCreateModel, UserModel, VerifyOtp
 from src.utils.encryption import encrypt, to_base64
 from src.utils.logger import get_logger 
-from redis.asyncio.client import Redis
 
-accounts_router = APIRouter()
+accounts_router = APIRouter() 
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
@@ -50,13 +49,6 @@ async def get_session(
         headers={"WWW-Authenticate": "Bearer"},
     )
 
-
-def get_otp_service(db: AsyncSession = Depends(get_db)) -> OTPService:
-    return OTPService(db)
-
-def get_credential_service(db: AsyncSession = Depends(get_db)) -> CredentialService:
-    return CredentialService(db)
-
 @accounts_router.get("/me")
 async def get_me(
     session: dict = Depends(get_session),
@@ -64,9 +56,7 @@ async def get_me(
 ):
     if "sub" in session:
         user_id = session["sub"]
-
         user = await user_service.get(user_id)
-
         return UserModel(**user.to_dict())
     
     return {"message": "Not authenticated"}
@@ -108,14 +98,13 @@ async def create_user(
         }
 
         email_content = ResendClient.render_template(email_template.content, context)
-
         await mail_client.send_email(content=email_content, subject=email_template.subject, to_email=user.email)
 
         return UserModel(**user.to_dict())
     except Exception as e:
         get_logger().error(f"Error sending email: {e}")
         raise HTTPException(status_code=500, detail=f"Error sending email: {e}")
-
+    
 @accounts_router.post("/signin")
 async def authenticate_user(
     form_data: OAuth2PasswordRequestForm = Depends(),
@@ -125,7 +114,7 @@ async def authenticate_user(
     is_authenticated, token, user, message = await user_service.login(form_data.username, form_data.password, redis_client)
     if not is_authenticated:
         raise HTTPException(
-            status_code=HTTP_400_BAD_REQUEST,
+            status_code=status.HTTP_400_BAD_REQUEST,
             detail="Incorrect username or password"
         )
     return {"access_token": token, "token_type": "bearer", "user": UserModel(**user.to_dict()), "message": message}
@@ -141,11 +130,10 @@ async def verify_otp_code(
         get_logger().info(data)
         user = await user_service.get_by_email(data.email)
     except Exception as e:
-        logger.error(f"Error creating user: {e}")
+        get_logger().error(f"Error creating user: {e}")
         raise HTTPException(status_code=500, detail="Internal server error while creating user")
 
     try:
-        otp_service = OTPService(db)
         otp = await otp_service.get_otp_by_user_email_code(user.id, user.email, data.code)
 
         if otp is None:
@@ -170,11 +158,10 @@ async def verify_otp_code(
         
     except Exception as e:
         get_logger().error(f"Error verifying otp: {e}")
-
         return {"message": str(e), "status": 400}
     
 @accounts_router.get("/resend-otp/{uid}")
-async def verify_otp_code(
+async def resend_otp_code(
     uid: str,
     db: AsyncSession = Depends(get_db),
     otp_service: OTPService = Depends(get_otp_service),
@@ -182,13 +169,12 @@ async def verify_otp_code(
     user_service: UserService = Depends(get_user_service)
 ) -> Any:
     try:
-        otp_service = OTPService(db)
+        otp = await otp_service.get_otp_by_email(uid)
         email_type_service = EmailTypeService(db)
         email_template_service = EmailTemplateService(db)
-        otp = await otp_service.get_otp_by_email(uid)
         email_template: EmailTemplate = await email_template_service.get_template_by_name(EmailTypeEnum.ACCOUNT_VERIFICATION.value)
 
-        if(otp is not None):
+        if otp is not None:
             context = {
                 "username": otp.email,
                 "code": otp.code,
@@ -202,8 +188,6 @@ async def verify_otp_code(
             return {"message": "An email with 6 OTP Digits has been sent to your email address", "status": 200}
 
         email_type: EmailType = await email_type_service.get_email_type_by_name(EmailTypeEnum.ACCOUNT_VERIFICATION.value)
-    
-        otp_service = OTPService(db)
         user = await user_service.get_by_email(uid)
         otp = OTP(
             email=uid,
@@ -224,15 +208,14 @@ async def verify_otp_code(
         }
 
         email_content = ResendClient.render_template(email_template.content, context)
-
         await mail_client.send_email(content=email_content, subject=email_template.subject, to_email=user.email)
         
         return {"message": "An email with 6 OTP Digits has been sent to your email address", "status": 200}
         
     except Exception as e:
         get_logger().error(f"Error verifying otp: {e}")
-
         return {"message": str(e), "status": 400}
+    
 
 @accounts_router.post("/forgot-password")
 async def forgot_password(
@@ -245,99 +228,5 @@ async def forgot_password(
     try:
         user = await user_service.get_by_email(data.email)
     except Exception as e:
-        logger.error(f"Error creating user: {e}")
-        raise HTTPException(status_code=500, detail="Internal server error while creating user")
-
-    try:
-        
-        email_type_service = EmailTypeService(db)
-        email_template_service = EmailTemplateService(db)
-
-        email_type: EmailType = await email_type_service.get_email_type_by_name(EmailTypeEnum.RESET_PASSWORD.value)
-        email_template: EmailTemplate = await email_template_service.get_template_by_name(EmailTypeEnum.RESET_PASSWORD.value)
-
-        otp_service = OTPService(db)
-    
-        otp = OTP(
-            email=user.email,
-            user_id=user.id,
-            email_template_id=email_template.id,
-            email_type_id=email_type.id,
-            status=EntityStatus.Active
-        )
-        await otp_service.create(otp)
-
-        # Define the context for the email template
-        context = {
-            "username": user.email,
-            "expiry_minutes": 10,
-            "uid": to_base64(user.email),
-            "code": otp.code,
-            "verification_type": to_base64(EmailTypeEnum.RESET_PASSWORD.value)
-        }
-
-        email_content = ResendClient.render_template(email_template.content, context)
-
-        await mail_client.send_email(content=email_content, subject=email_template.subject, to_email=user.email)
-
-        return {"message": "An email with a reset link has been sent to your email address", "status": 200}
-        
-    except Exception as e:
-        get_logger().error(f"Error sending email: {e}")
-
-        return {"message": str(e), "status": 400}
-    
-@accounts_router.post("/reset-password")
-async def reset_password(
-    data: UpdatePassword,
-    db: AsyncSession = Depends(get_db),
-    user_service: UserService = Depends(get_user_service),
-    credential_service: CredentialService = Depends(get_credential_service),
-    mail_client: ResendClient = Depends(get_mail_service)
-) -> Any:
-    try:
-        user = await user_service.get_by_email(data.email)
-
-        if (user is not None):
-
-            credential = await credential_service.get_by_user_id(user.id)
-            hashed_password, salt = encrypt(data.password)
-            credential.password = hashed_password
-            credential.salt = salt
-
-            await credential_service.update(credential)
-
-            email_template_service = EmailTemplateService(db)
-            email_template: EmailTemplate = await email_template_service.get_template_by_name(EmailTypeEnum.PASSWORD_UPDATE.value)
-            context = {
-                "username": user.email
-            }
-            email_content = ResendClient.render_template(email_template.content, context)
-
-            await mail_client.send_email(content=email_content, subject=email_template.subject, to_email=user.email)
-
-
-            return {"message": "Your password been updated successfully", "status": 200}
-        
-        return {"message": "No account linked with the email you provided", "status": 400}
-    except Exception as e:
-        get_logger().error(f"Error sending email: {e}")
-        return {"message": str(e), "status": 400}
-
-@accounts_router.get("/signout")
-async def signout(
-    session: dict = Depends(get_session), 
-    redis_client: Redis = Depends(get_redis_client)
-):
-    if "sub" in session:
-        user_id = session["sub"]
-        # Remove the session from Redis
-        await redis_client.delete(f"session:{user_id}")
-        await redis_client.delete(f"chat_mode:{user_id}")
-        
-        return JSONResponse(status_code=200, content={"message": "Successfully signed out"})
-    raise HTTPException(
-        status_code=status.HTTP_401_UNAUTHORIZED,
-        detail="Invalid session",
-        headers={"WWW-Authenticate": "Bearer"},
-    )
+        get_logger().error(f"Error creating user: {e}")
+        raise HTTPException
