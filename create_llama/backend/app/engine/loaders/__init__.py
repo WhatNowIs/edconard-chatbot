@@ -1,8 +1,6 @@
 import os
 import yaml
-import importlib
 import logging
-from typing import Dict
 from app.engine.loaders.file import CSVLoaderConfig, FileLoaderConfig, get_file_documents
 from app.engine.loaders.web import WebLoaderConfig, get_web_documents
 from app.engine.loaders.db import DBLoaderConfig, get_db_documents
@@ -36,9 +34,16 @@ def get_documents():
                 data_dir = "tmp/csv"
                 if not os.path.isdir(data_dir):
                     os.makedirs(data_dir)
-                document = get_file_documents(
-                    config=CSVLoaderConfig(**loader_config, data_dir="tmp/csv", is_called_on_topic=False)
+
+                loader_config = CSVLoaderConfig(
+                    **loader_config, 
+                    data_dir="tmp/csv", 
+                    is_called_on_topic=False, 
+                    is_macroroundup=True, 
+                    is_blog_post=True
                 )
+                
+                document = get_file_documents(config=loader_config)
             case _:
                 raise ValueError(f"Invalid loader type: {loader_type}")
         documents.extend(document)

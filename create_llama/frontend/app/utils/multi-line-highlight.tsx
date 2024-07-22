@@ -1,4 +1,3 @@
-// import Fuse from "fuse.js";
 import { DocumentColorEnum, highlightColors } from "./colors";
 
 interface WordData {
@@ -18,38 +17,43 @@ interface WordData {
 export const multiHighlight = (
   textToHighlight: string,
   pageNumber: number,
-  color = DocumentColorEnum.yellow
+  color = DocumentColorEnum.yellow,
 ) => {
-  
   const highlightColor = highlightColors[color];
   const spans = document.querySelectorAll(
     `div[data-page-number='${
       pageNumber
-    }'] .react-pdf__Page__textContent.textLayer span`
+    }'] .react-pdf__Page__textContent.textLayer span`,
   );
 
   const words: WordData[] = [];
-  
+
   spans.forEach((span, spanIdx) => {
     const htmlSpan = span as HTMLElement;
     const spanWords = htmlSpan.textContent || "";
-    
 
     spanWords.split(" ").map((text, wordIdx) => {
       words.push({ text, spanIdx, wordIdx });
     });
   });
-  
+  let searchString = textToHighlight;
+  searchString = searchString.replace(/\s{2,}/g, " ");
+  searchString = searchString.replace(/\t/g, " ");
+  searchString = searchString
+    .toString()
+    .trim()
+    .replace(/(\r\n|\n|\r)/g, "");
 
-  const searchString = textToHighlight;    
+  const searchWords = searchString.split(" ");
+  // .map((word) => word.replaceAll(" ", ""));
 
-  const searchWords = searchString.split("\n").map((word) => word.replaceAll(" ", ""));
+  console.log(`Text to Highlight words:`);
+  console.log(searchWords);
 
   const lenSearchString = searchWords.length;
   if (!lenSearchString) {
     return;
   }
-  
 
   const firstWord = searchWords[0];
   if (!firstWord) {
@@ -59,7 +63,7 @@ export const multiHighlight = (
   const searchData = generateDirectSearchData(
     firstWord,
     words,
-    lenSearchString
+    lenSearchString,
   );
 
   if (searchData.length > 0) {
@@ -70,7 +74,6 @@ export const multiHighlight = (
     const startWordIdx = searchResult?.startWordIdx || 0;
     const endWordIdx = searchResult?.endWordIdx || 0;
 
-    
     for (let i = startSpan; i < endSpan + 1; i++) {
       const spanToHighlight = spans[i] as HTMLElement;
       if (i == startSpan) {
@@ -103,7 +106,6 @@ const highlightHtmlElement = (div: HTMLElement, color: string) => {
   div.innerText = "";
   div.appendChild(newSpan);
   console.log(`newSpan: ${newSpan.className}`);
-  
 };
 
 enum DIRECTION {
@@ -113,7 +115,7 @@ enum DIRECTION {
 const partialHighlight = (
   idx: number,
   span: HTMLElement,
-  direction = DIRECTION.START
+  direction = DIRECTION.START,
 ) => {
   const text = span.textContent;
   if (!text) {
@@ -190,9 +192,8 @@ interface SearchStrings {
 function generateDirectSearchData(
   startString: string,
   words: WordData[],
-  n: number
+  n: number,
 ): SearchStrings[] {
-  
   // console.log(`words: ${JSON.stringify(words)}\ntartString: ${JSON.stringify(startString)}`);
   const searchStrings: SearchStrings[] = [];
 
