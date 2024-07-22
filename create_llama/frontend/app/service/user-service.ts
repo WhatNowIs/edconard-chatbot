@@ -144,7 +144,7 @@ export async function signOut(
 export async function getChatMode(
   user_id: string,
   access_token: string,
-): Promise<{ mode: string }> {
+): Promise<{ mode: boolean }> {
   const res = await fetch(`${getBaseURL()}/api/chat/chat-mode/${user_id}`, {
     method: "GET",
     headers: {
@@ -158,11 +158,11 @@ export async function getChatMode(
     throw new Error(error);
   }
 
-  return (await res.json()) as { mode: string };
+  return (await res.json()) as { mode: boolean };
 }
 
 export async function updateChatMode(
-  chatMode: string,
+  checked: boolean,
   user_id: string,
   access_token: string,
 ): Promise<{ message: string }> {
@@ -172,7 +172,7 @@ export async function updateChatMode(
       "Content-Type": "application/json",
       Authorization: `Bearer ${access_token}`,
     },
-    body: JSON.stringify({ mode: chatMode }),
+    body: JSON.stringify({ is_research_exploration: checked }),
   });
 
   if (!res.ok) {

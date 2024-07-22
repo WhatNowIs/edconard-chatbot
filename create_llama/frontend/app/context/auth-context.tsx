@@ -24,16 +24,16 @@ import { getBaseURL } from "../service/utils";
 
 interface AuthContextType {
   user: UserFormType | null;
-  chatMode: string | null;
-  setChatMode: Dispatch<SetStateAction<string | null>>;
+  isResearchExploration: boolean | null;
+  setIsResearchExploration: Dispatch<SetStateAction<boolean | null>>;
   setUser: Dispatch<SetStateAction<UserFormType | null>>;
   login: (
     credentials: UserSigninType,
   ) => Promise<{ message: string; user: UserFormType | null }>;
   logout: () => Promise<void>;
-  getChatModeByUser: (userId: string) => Promise<{ mode: string }>;
+  getChatModeByUser: (userId: string) => Promise<{ mode: boolean }>;
   updateChatModeByUser: (
-    mode: string,
+    checked: boolean,
   ) => Promise<{ message: string; status: number }>;
   refreshAccessToken: () => Promise<string | null | undefined>;
 }
@@ -46,7 +46,9 @@ interface AuthProviderProps {
 
 export const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
   const [user, setUser] = useState<UserFormType | null>(null);
-  const [chatMode, setChatMode] = useState<string | null>(null);
+  const [isResearchExploration, setIsResearchExploration] = useState<
+    boolean | null
+  >(true);
 
   useEffect(() => {
     const token =
@@ -64,7 +66,9 @@ export const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
             return response.json();
           })
           .catch(() => {
-            const access_token = refreshAccessToken();
+            const access_token = refreshAccessToken().catch((error) =>
+              console.log(error),
+            );
 
             if (!access_token) {
               localStorage.removeItem("access_token");
@@ -88,13 +92,13 @@ export const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
   }, []);
 
   useEffect(() => {
-    if (chatMode === null && user) {
+    if (isResearchExploration === null && user) {
       const fetchChatMode = async () => {
         await getChatModeByUser(user.id as string);
       };
       fetchChatMode();
     }
-  }, [user, chatMode]);
+  }, [user, isResearchExploration]);
 
   const login = async (credentials: UserSigninType) => {
     try {
@@ -121,19 +125,19 @@ export const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
 
   const getChatModeByUser = async (
     userId: string,
-  ): Promise<{ mode: string }> => {
+  ): Promise<{ mode: boolean }> => {
     try {
       const token =
         localStorage.getItem("access_token") || getCookie("access_token");
 
       const { mode } = await getChatMode(userId, token as string);
-      setChatMode(mode);
+      setIsResearchExploration(mode);
       return {
         mode,
       };
     } catch (error) {
       return {
-        mode: "research-or-exploration",
+        mode: true,
       };
     }
   };
@@ -156,17 +160,17 @@ export const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
   };
 
   const updateChatModeByUser = async (
-    mode: string,
+    checked: boolean,
   ): Promise<{ status: number; message: string }> => {
     try {
       const token =
         localStorage.getItem("access_token") || getCookie("access_token");
       const { message } = await updateChatMode(
-        mode,
+        checked,
         user?.id as string,
         token as string,
       );
-      setChatMode(mode);
+      setIsResearchExploration(checked);
 
       return {
         status: 200,
@@ -175,7 +179,7 @@ export const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
     } catch (error) {
       return {
         status: 400,
-        message: `Failed to update chat mode to ${mode}`,
+        message: `Failed to update chat mode to ${checked}`,
       };
     }
   };
@@ -205,8 +209,8 @@ export const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
     <AuthContext.Provider
       value={{
         user,
-        chatMode,
-        setChatMode,
+        isResearchExploration, 
+        setIsResearchExploration,
         setUser,
         login,
         logout,
