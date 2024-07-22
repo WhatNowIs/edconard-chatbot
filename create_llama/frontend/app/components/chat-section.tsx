@@ -1,28 +1,28 @@
 "use client";
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import React from 'react';
-import { useChat } from "ai/react";
 import { ChatInput, ChatMessages } from "@/app/components/ui/chat";
-import { PdfFocusProvider } from "@/app/context/pdf";
-import { useContext, useEffect, useState } from "react";
 import AuthContext from "@/app/context/auth-context";
 import ChatContext from "@/app/context/chat-context";
+import { PdfFocusProvider } from "@/app/context/pdf";
+import { useChat } from "ai/react";
+import { useContext, useEffect, useState } from "react";
+import { getCookie } from "../service/user-service";
 
 type ChatUILayout = "default" | "fit";
 
 export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
   const authContext = useContext(AuthContext);
   const chatContext = useContext(ChatContext);
-  const [accessToken, setAccessToken] = useState<string>('');
-  
+  const [accessToken, setAccessToken] = useState<string>("");
+
   const getChatUrl = () => {
-    const isWithinContext = (chatContext && authContext)
-    if(isWithinContext && authContext?.user && chatContext.selectedThread){
+    const isWithinContext = chatContext && authContext;
+    if (isWithinContext && authContext?.user && chatContext.selectedThread) {
       return `${process.env.NEXT_PUBLIC_CHAT_API}/${chatContext.selectedThread?.id}/message`;
     }
 
-    return process.env.NEXT_PUBLIC_CHAT_API
-  }
+    return process.env.NEXT_PUBLIC_CHAT_API;
+  };
 
   const {
     messages,
@@ -32,39 +32,47 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
     handleInputChange,
     reload,
     stop,
-    setMessages
+    setMessages,
   } = useChat({
     api: getChatUrl(),
     headers: {
       "Content-Type": "application/json",
-      ...(authContext && authContext?.user ? { Authorization: `Bearer ${accessToken}` } : {}),
+      ...(authContext && authContext?.user
+        ? { Authorization: `Bearer ${accessToken}` }
+        : {}),
     },
     onError: (error) => {
       const message = JSON.parse(error.message);
       alert(`Chat error: ${JSON.stringify(message.detail)}`);
     },
-  });  
+  });
 
   useEffect(() => {
-    if(localStorage){      
-      const access_token = localStorage ? localStorage.getItem('access_token') : null;
+    if (localStorage) {
+      const access_token = localStorage
+        ? localStorage.getItem("access_token")
+        : getCookie("access_token");
       setAccessToken(access_token as string);
     }
-
   }, []);
 
   useEffect(() => {
-    if(chatContext){
+    if (chatContext) {
       const { messages } = chatContext;
-      const finalMessages =  messages.map((msg) => ({ 
-        content: msg.content, 
-        role: msg.role as ('system' | 'user' | 'assistant' | 'function' | 'data' | 'tool'), 
+      const finalMessages = messages.map((msg) => ({
+        content: msg.content,
+        role: msg.role as
+          | "system"
+          | "user"
+          | "assistant"
+          | "function"
+          | "data"
+          | "tool",
         id: msg.id,
-        annotations: msg.annotations
+        annotations: msg.annotations,
       }));
-      setMessages(finalMessages)
+      setMessages(finalMessages);
     }
-
   }, [chatContext?.messages]);
 
   return (
