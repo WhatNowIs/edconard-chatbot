@@ -2,12 +2,17 @@
 
 import csv
 import os
+from dotenv import load_dotenv
 from googleapiclient.errors import HttpError
 from src.core.config.gcp import GCPConfig
 from src.llm.env_config import get_config
 
+load_dotenv(
+    "config/.env"
+)
+
 env = get_config()
-SCOPES = env.gcp_scopes.split(',')
+SCOPES = os.getenv("GCP_SCOPES").split(",")
 SUBJECT = 'patrick@whatnow.is'
 
 # # Initialize the Drive API

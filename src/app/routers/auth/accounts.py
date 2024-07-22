@@ -111,7 +111,7 @@ async def authenticate_user(
     user_service: UserService = Depends(get_user_service),    
     redis_client: Redis = Depends(get_redis_client)
 ):
-    is_authenticated, token, user, message = await user_service.login(form_data.username, form_data.password, redis_client)
+    is_authenticated, token, user, message = await user_service.login(form_data.username, form_data.password, redis_client, True)
     if not is_authenticated:
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
