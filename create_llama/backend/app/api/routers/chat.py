@@ -169,7 +169,6 @@ async def chat_thread(
 ):    
     last_message_content, messages = await parse_chat_data(data)
 
-
     if "sub" in session:
         user_id = session["sub"]
         chat_mode = await user_service.get_chat_mode(user_id, redis_client)
@@ -177,30 +176,22 @@ async def chat_thread(
         get_logger().info(f"Current chat mode: {chat_mode}")
         
         in_research_or_exploration_modality = chat_mode == True
-        # in_research_or_tweet_modality = chat_mode == SupportedChatMode.MACRO_ROUNDUP_ARTICLE_TWEET_GENERATION.value
 
         extracted_data = extract_article_data_from_string(last_message_content) if not in_research_or_exploration_modality else None
-        # chat_history = ''
         messages_tmp: List[Message] = await thread_service.get_messages_by_thread_id(thread_id=thread_id, uid=user_id)
         
-        # chat_history += ''.join(
-        #     f"""
-        #     Role: {message.role}
-        #     Content: {message.content}
-        #     """ for message in messages_tmp
-        # ) if len(messages_tmp) > 0 else ''
+        chat_history = '\n'.join([f"role: \"{msg_tmp.role}\"\ncontent: \"{msg_tmp.content}\"" for msg_tmp in messages_tmp])
 
         messages = [ChatMessage(content=last_message_content, role=MessageRole.USER if str(message.role) == "user" else MessageRole.ASSISTANT) for message in messages_tmp]        
 
         extracted_data_tmp = extract_article_data_from_string(messages_tmp[0].content) if extracted_data is None and not in_research_or_exploration_modality and len(messages_tmp) > 0 else extracted_data
-        
-        last_message_content_final =  extracted_data_tmp.question if extracted_data is not None else last_message_content
 
-        chat_engine = await get_chat_engine(
-            chat_mode=chat_mode, 
-            data=extracted_data_tmp, 
-            chat_history=messages
-        )
+        if isinstance(extracted_data, Article):
+            get_logger().info('extracted_data is instance of Article')
+            await user_service.update_article(user_id=user_id, article=extracted_data, redis_client=redis_client)
+        else:
+            get_logger().info('extracted_data is not instance of Article')
+
 
         new_message = Message(
             thread_id=thread_id,
@@ -210,6 +201,37 @@ async def chat_thread(
         )
 
         await message_service.create(new_message)
+    
+
+        get_logger().info(chat_history)
+
+        if not in_research_or_exploration_modality:
+            last_message_content = last_message_content + f"""
+                Here is user id: {user_id}
+
+                <chat_history>
+                {chat_history}
+            """
+
+        additional_data = f"""        
+            Here is user id: {user_id}
+            
+            <chat_history>
+            {chat_history}
+        """
+
+        last_message_content_final =  f"""
+            {extracted_data_tmp.question}
+            
+            {additional_data if not in_research_or_exploration_modality else ""}
+        """ if extracted_data is not None else last_message_content
+
+        chat_engine = await get_chat_engine(
+            chat_mode=chat_mode, 
+            user_id=user_id, 
+            question=last_message_content_final,
+            chat_history=messages
+        )
 
         event_handler = EventCallbackHandler()
         chat_engine.callback_manager.handlers.append(event_handler)
@@ -271,7 +293,6 @@ async def chat_thread(
                     annotations=events + sources
                 )
                 await message_service.create(new_message)
-
 
         return VercelStreamResponse(content=content_generator())
     

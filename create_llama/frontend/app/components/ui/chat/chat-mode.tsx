@@ -41,7 +41,7 @@ export const ChatMode = () => {
     };
   
     return (
-        <div className="w-[40%] h-8 flex gap-2 items-center justify-start">          
+        <div className="w-[40%] h-8 flex bg-white gap-2 items-center justify-start fixed top-0">          
           <form>
             <div style={{ display: 'flex', alignItems: 'center' }}>
               <SwitchLabel className="pr-4" htmlFor="airplane-mode">
