@@ -1,4 +1,5 @@
 from typing import Optional, Tuple
+from create_llama.backend.app.utils.helpers import Article
 import jwt
 from sqlalchemy.ext.asyncio import AsyncSession as Session
 from sqlalchemy.future import select
@@ -93,6 +94,26 @@ class UserService(Service):
         # Update the chat mode in Redis without expiration
         await redis_client.set(f"chat_mode:{user_id}", value=str(is_research_or_explorationde))
         self.logger.info(f"Chat mode for user ID: {user_id} updated successfully")
+
+    async def update_article(self, user_id: str, article: Article, redis_client: Redis) -> None:
+        self.logger.info(f"Updating current article for user ID: {user_id}")
+        # Serialize the Pydantic object to a JSON string
+        article_json = article.model_dump_json()
+        # Update the chat mode in Redis without expiration
+        await redis_client.set(f"article:{user_id}", article_json)
+        self.logger.info(f"Chat mode for user ID: {user_id} updated successfully")
+
+    async def get_article(self, user_id: str, redis_client: Redis) -> Article:
+        self.logger.info(f"Retrieving current article for user ID: {user_id}")
+        # Retrieve the JSON string from Redis
+        article_json = await redis_client.get(f"article:{user_id}")
+        if article_json is None:
+            self.logger.info(f"No article found for user ID: {user_id}")
+            return None
+        # Deserialize the JSON string back to the Pydantic object
+        article = Article.model_validate_json(article_json)
+        self.logger.info(f"Article for user ID: {user_id} retrieved successfully")
+        return article
     
     async def get_chat_mode(self, user_id: str, redis_client: Redis) -> Optional[str]:
         self.logger.info(f"Retrieving chat mode for user ID: {user_id}")
