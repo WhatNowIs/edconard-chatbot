@@ -1,6 +1,6 @@
 import os
 from typing import List
-from create_llama.backend.app.engine.tools.prompt import MasterPrompt
+from create_llama.backend.app.engine.tools.chains import title_and_meta_chain, tweet_chain, master_prompt_template
 from create_llama.backend.app.utils.helpers import Article
 from llama_index.core.chat_engine import CondensePlusContextChatEngine
 from llama_index.core.settings import Settings
@@ -9,10 +9,16 @@ from app.engine.index import get_index, get_topic_index
 from llama_index.core.llms import ChatMessage
 from src.utils.logger import get_logger
 from llama_index.core.agent import AgentRunner
-from llama_index.core.tools import RetrieverTool
 from llama_index.agent.openai import OpenAIAgent
 from llama_index.core.tools.query_engine import QueryEngineTool
+from llama_index.core.tools import FunctionTool
 
+from pydantic import BaseModel
+
+class FnSchema(BaseModel):
+    chat_history: str
+    user_id: str
+    input: str
 
 def init_topic_engine():
     index = get_topic_index(data_dir="tmp/csv/topics")
@@ -22,7 +28,7 @@ def init_topic_engine():
     return (topic_query_engine, topic_retriever)
 
 
-async def get_chat_engine(chat_mode: bool, data: Article | None = None, chat_history: str | List[ChatMessage] = None):
+async def get_chat_engine(chat_mode: bool, user_id: str, question: str, chat_history: str | List[ChatMessage] = None):
     # from src.core.dbconfig.postgres import get_db
     top_k = int(os.getenv("TOP_K", "3"))
     system_prompt = os.getenv("SYSTEM_PROMPT")
@@ -37,7 +43,7 @@ async def get_chat_engine(chat_mode: bool, data: Article | None = None, chat_his
     if len(tools) == 0:
         get_logger().info(f"chat_mode: {chat_mode}")
         
-        if chat_mode:
+        if bool(chat_mode) == True:
             get_logger().info(f"We are research and exploration mode {chat_mode}")
 
             return CondensePlusContextChatEngine.from_defaults(
@@ -45,29 +51,33 @@ async def get_chat_engine(chat_mode: bool, data: Article | None = None, chat_his
                 system_prompt=system_prompt,
                 llm=Settings.llm
             )
-        
-        summarization_tool =  QueryEngineTool.from_defaults(
-            query_engine=index.as_query_engine(),
-            name="article_summary_enhancement_tool",
-            description="""\
-                Helpful for optimizing the summary of the article, ensuring it is clear, concise, and grammatically correct
-            """,
+        get_logger().info(f"We are not research and exploration mode {chat_mode}")
+
+        fn_schema_instance = FnSchema(
+            chat_history=str(chat_history),
+            user_id = user_id,
+            input = question,
         )
 
-        tweet_generation_tool =  QueryEngineTool.from_defaults(
-            query_engine=index.as_query_engine(),
-            name="tweet_generation_tool",
-            description="""\
-                Useful for crafting a perfect tweet could be used by Ed as a factoid in a media appearance: 
+        tweet_generation_tool =  FunctionTool.from_defaults(
+            fn = tweet_chain,
+            async_fn = tweet_chain,
+            name = "tweet_generation_tool",
+            fn_schema = fn_schema_instance,
+            description = """\
+                Useful for answering anything related to crafting a perfect tweet that could be used by Edward Conard as a factoid in a media appearance: 
                 interesting, backed up with facts, with minimal commentary, and no personal references
             """,
         )
 
-        title_and_meta_description_tool =  QueryEngineTool.from_defaults(
-            query_engine=index.as_query_engine(),
-            name="title_and_meta_description_tool",
-            description="""\
-                Helpful for generating an article title and its meta description for search engine optimization (SEO)
+        title_and_meta_description_tool =  FunctionTool.from_defaults(
+            fn = title_and_meta_chain,
+            async_fn = title_and_meta_chain, 
+            fn_schema = fn_schema_instance,            
+            name = "title_and_meta_description_tool",
+            description = """\
+                Helpful for answering anything related to SEO title and SEO meta description that enhance visibility in search engine results pages (SERPs), \
+                improve click-through rates (CTR), and drive more organic traffic to the website for a macro-economic related article.
             """,
         )
 
@@ -81,42 +91,15 @@ async def get_chat_engine(chat_mode: bool, data: Article | None = None, chat_his
             """,
         )
 
-        base_tools = [tweet_generation_tool, topic_suggestion_tool, summarization_tool, title_and_meta_description_tool]
+        base_tools = [tweet_generation_tool, title_and_meta_description_tool, topic_suggestion_tool]        
 
-        system_prompt = MasterPrompt.format_prompt_template(
-            abstract=data.abstract,
-            headline=data.headline,
-            abstract_weight=0.6,
-            headline_weight=0.2,
-        )
-        
-
-        return AgentRunner.from_llm(
+        return OpenAIAgent.from_llm(
             llm=Settings.llm,
             tools=base_tools,
-            system_prompt=str(system_prompt),
+            system_prompt=master_prompt_template,
             verbose=True,  # Show agent logs to console
             chat_history=chat_history,
         )
-
-        # return CondensePlusContextChatEngine.from_defaults(
-        #     retriever=topic_retriever,
-        #     llm=Settings.llm,
-        #     chat_history=chat_history,
-        #     system_prompt=system_prompt,
-        #     condense_prompt=system_prompt
-        # )
-        
-        # return OpenAIAgent.from_tools(
-        #     tools=base_tools,
-        #     llm=Settings.llm,
-        #     system_prompt=str(system_prompt),
-        #     verbose=True,
-        #     max_function_calls=3,
-        #     chat_history=chat_history
-        # )
-
-        # CondenseQuestionChatEngine
         
     else:
         # Add the query engine tool to the list of tools
