@@ -87,3 +87,8 @@ class DocumentResponse(BaseModel):
     publication: str
     summary: str
     order_of_appearance: str
+
+class ChangePassword(BaseModel):
+    current_password: str
+    new_password: str
+    confirm_password: str
