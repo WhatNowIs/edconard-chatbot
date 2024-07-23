@@ -18,6 +18,11 @@ export const UserSchema = z.object({
   status: z.string().optional(),
 });
 
+export const MacroRoundupSchema = z.object({
+  document_link: z.string(),
+  order: z.string(),
+});
+
 export const UserSigninSchema = z.object({
   email: z.string(),
   password: z.string(),
@@ -34,35 +39,42 @@ export const VerifyAccountSchema = z.object({
 export const VerifyOtpSchema = z.object({
   code: z.string(),
   email: z.string(),
-  otp_type: z.string()
+  otp_type: z.string(),
 });
 
 export const ResetPasswordSchema = z.object({
   code: z.string(),
   email: z.string(),
   otp_type: z.string(),
-  password: z.string()
+  password: z.string(),
 });
 
-export const ResetPasswordFormSchema = z.object({
-  new_password: z.string().min(6, "Password must be at least 6 characters long"),
-  confirm_password: z.string().min(6, "Password must be at least 6 characters long")
-}).refine(data => data.new_password === data.confirm_password, {
-  message: "Passwords do not match",
-  path: ["confirm_password"] // path of error
-});
+export const ResetPasswordFormSchema = z
+  .object({
+    new_password: z
+      .string()
+      .min(6, "Password must be at least 6 characters long"),
+    confirm_password: z
+      .string()
+      .min(6, "Password must be at least 6 characters long"),
+  })
+  .refine((data) => data.new_password === data.confirm_password, {
+    message: "Passwords do not match",
+    path: ["confirm_password"], // path of error
+  });
 
 export type UserFormType = z.TypeOf<typeof UserSchema>;
 export type UserSigninType = z.TypeOf<typeof UserSigninSchema>;
 export type VerifyOtpType = z.TypeOf<typeof VerifyOtpSchema>;
 export type ForgotPasswordType = z.TypeOf<typeof ForgotPasswordSchema>;
 export type ResetPasswordType = z.TypeOf<typeof ResetPasswordSchema>;
+export type MacroRoundupType = z.TypeOf<typeof MacroRoundupSchema>;
 
 export async function createUserAccount(
   data: UserFormType,
 ): Promise<UserFormType> {
   // Ignore configured attribute
-  const { password, ...userData} = data;
+  const { password, ...userData } = data;
 
   const res = await fetch(`${getBaseURL()}/api/auth/accounts/create`, {
     method: "POST",
@@ -71,7 +83,7 @@ export async function createUserAccount(
     },
     body: JSON.stringify({
       password,
-      user_data: userData
+      user_data: userData,
     }),
   });
   if (!res.ok) {
@@ -81,14 +93,17 @@ export async function createUserAccount(
   return (await res.json()) as UserFormType;
 }
 
-export async function signIn(
-  data: UserSigninType,
-): Promise<{ access_token: string; token_type: string; user: UserFormType, message: string; }> {
+export async function signIn(data: UserSigninType): Promise<{
+  access_token: string;
+  token_type: string;
+  user: UserFormType;
+  message: string;
+}> {
   // Ignore configured attribute
 
   const formData = new URLSearchParams();
-  formData.append('username', data.email);
-  formData.append('password', data.password);
+  formData.append("username", data.email);
+  formData.append("password", data.password);
 
   const res = await fetch(`${getBaseURL()}/api/auth/accounts/signin`, {
     method: "POST",
@@ -103,15 +118,22 @@ export async function signIn(
     throw new Error(error);
   }
 
-  return (await res.json()) as { access_token: string; token_type: string; user: UserFormType, message: string; };
+  return (await res.json()) as {
+    access_token: string;
+    token_type: string;
+    user: UserFormType;
+    message: string;
+  };
 }
 
-export async function signOut(access_token: string): Promise<{ message: string; }> {
+export async function signOut(
+  access_token: string,
+): Promise<{ message: string }> {
   const res = await fetch(`${getBaseURL()}/api/auth/accounts/signout`, {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
-      Authorization: `Bearer ${access_token}`
+      Authorization: `Bearer ${access_token}`,
     },
   });
 
@@ -120,16 +142,18 @@ export async function signOut(access_token: string): Promise<{ message: string; 
     throw new Error(error);
   }
 
-  return (await res.json()) as { message: string; };
+  return (await res.json()) as { message: string };
 }
 
-
-export async function getChatMode(user_id: string, access_token: string): Promise<{ mode: boolean;  }> {
+export async function getChatMode(
+  user_id: string,
+  access_token: string,
+): Promise<{ mode: boolean }> {
   const res = await fetch(`${getBaseURL()}/api/chat/chat-mode/${user_id}`, {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
-      Authorization: `Bearer ${access_token}`
+      Authorization: `Bearer ${access_token}`,
     },
   });
 
@@ -138,17 +162,21 @@ export async function getChatMode(user_id: string, access_token: string): Promis
     throw new Error(error);
   }
 
-  return (await res.json()) as { mode: boolean; };
+  return (await res.json()) as { mode: boolean };
 }
 
-export async function updateChatMode(checked: boolean, user_id: string, access_token: string): Promise<{ message: string;  }> {
+export async function updateChatMode(
+  checked: boolean,
+  user_id: string,
+  access_token: string,
+): Promise<{ message: string }> {
   const res = await fetch(`${getBaseURL()}/api/chat/chat-mode/${user_id}`, {
     method: "PATCH",
     headers: {
       "Content-Type": "application/json",
-      Authorization: `Bearer ${access_token}`
+      Authorization: `Bearer ${access_token}`,
     },
-    body: JSON.stringify({is_research_exploration: checked})
+    body: JSON.stringify({ is_research_exploration: checked }),
   });
 
   if (!res.ok) {
@@ -156,7 +184,7 @@ export async function updateChatMode(checked: boolean, user_id: string, access_t
     throw new Error(error);
   }
 
-  return (await res.json()) as { message: string; };
+  return (await res.json()) as { message: string };
 }
 
 export async function verifyOtp(
@@ -171,17 +199,16 @@ export async function verifyOtp(
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify(data)
+    body: JSON.stringify(data),
   });
 
   if (!res.ok) {
     const error = await res.text();
-    return { message: error, status: 400 }
+    return { message: error, status: 400 };
   }
 
-  return { ...((await res.json()) as { message: string; status: number })};
+  return { ...((await res.json()) as { message: string; status: number }) };
 }
-
 
 export async function forgotPassword(
   data: ForgotPasswordType,
@@ -193,61 +220,83 @@ export async function forgotPassword(
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify(data)
+    body: JSON.stringify(data),
   });
 
   if (!res.ok) {
     const error = await res.text();
-    return { message: error, status: 400 }
+    return { message: error, status: 400 };
   }
 
-  return { ...((await res.json()) as { message: string; status: number })};
+  return { ...((await res.json()) as { message: string; status: number }) };
 }
-
 
 export async function resendActivationOtp(
   data: string,
 ): Promise<{ message: string; status: number }> {
   // Ignore configured attribute
 
-  const res = await fetch(`${getBaseURL()}/api/auth/accounts/resend-otp/${data}`, {
-    method: "GET",
+  const res = await fetch(
+    `${getBaseURL()}/api/auth/accounts/resend-otp/${data}`,
+    {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    },
+  );
+
+  if (!res.ok) {
+    const error = await res.text();
+    return { message: error, status: 400 };
+  }
+
+  return { ...((await res.json()) as { message: string; status: number }) };
+}
+
+export async function resetPassword(data: ResetPasswordType) {
+  const { password, ...verifyPasswordData } = data;
+  const response = await verifyOtp(verifyPasswordData);
+
+  if (response.status === 200) {
+    const res = await fetch(
+      `${getBaseURL()}/api/auth/accounts/reset-password`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email: verifyPasswordData.email,
+          password,
+        }),
+      },
+    );
+
+    if (!res.ok) {
+      const error = await res.text();
+      return { message: error, status: 400 };
+    }
+
+    return { ...((await res.json()) as { message: string; status: number }) };
+  }
+
+  return response;
+}
+
+export async function saveMacroRoundupData(data: MacroRoundupType) {
+  const res = await fetch(`${getBaseURL()}/api/chat/article`, {
+    method: "POST",
     headers: {
       "Content-Type": "application/json",
-    }
+    },
+    body: JSON.stringify(data),
   });
 
   if (!res.ok) {
     const error = await res.text();
-    return { message: error, status: 400 }
+    return { message: error, status: 400 };
   }
 
-  return { ...((await res.json()) as { message: string; status: number })};
-}
-
-export async function resetPassword(data: ResetPasswordType){
-  const { password, ...verifyPasswordData } = data;
-  const response = await verifyOtp(verifyPasswordData)
-
-  if(response.status === 200){    
-    const res = await fetch(`${getBaseURL()}/api/auth/accounts/reset-password`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        email: verifyPasswordData.email,
-        password
-      })
-    });
-
-    if (!res.ok) {
-      const error = await res.text();
-      return { message: error, status: 400 }
-    }
-
-    return { ...((await res.json()) as { message: string; status: number })};
-  }
-
-  return response;
+  return { ...((await res.json()) as { message: string; status: number }) };
 }
