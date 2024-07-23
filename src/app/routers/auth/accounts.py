@@ -13,7 +13,7 @@ from src.core.services.otp import OTPService
 from src.core.services.user import ACCESS_TOKEN_EXPIRE_MINUTES, REFRESH_SECRET_KEY, UserService
 from src.core.config.postgres import get_db
 from src.core.models.base import OTP, EmailTemplate, EmailType, EntityStatus, User
-from src.schema import EmailTypeEnum, ResetPassword, UpdatePassword, UserCreateModel, UserModel, VerifyOtp
+from src.schema import ChangePassword, EmailTypeEnum, ResetPassword, UpdatePassword, UserCreateModel, UserModel, VerifyOtp
 from src.utils.encryption import encrypt, to_base64
 from src.utils.logger import get_logger 
 from redis.asyncio.client import Redis
@@ -372,6 +372,50 @@ async def reset_password(
             return {"message": "Your password been updated successfully", "status": 200}
         
         return {"message": "No account linked with the email you provided", "status": 400}
+    except Exception as e:
+        get_logger().error(f"Error sending email: {e}")
+        return {"message": str(e), "status": 400}  
+    
+@accounts_router.post("/change-password")
+async def change_password(
+    data: ChangePassword,
+    db: AsyncSession = Depends(get_db),
+    session: dict = Depends(get_session), 
+    user_service: UserService = Depends(get_user_service),
+    mail_client: ResendClient = Depends(get_mail_service)
+) -> Any:
+    try:
+        
+        if "sub" in session:
+            email = session["email"]
+            user = await user_service.get_by_email(email)
+
+            if (user is not None):
+
+                is_updated, _ = await user_service.change_password(user=user, current_password=data.current_password, new_password=data.new_password)
+
+                if(is_updated):
+
+                    email_template_service = EmailTemplateService(db)
+                    email_template: EmailTemplate = await email_template_service.get_template_by_name(EmailTypeEnum.PASSWORD_UPDATE.value)
+                    context = {
+                        "username": user.email
+                    }
+                    email_content = ResendClient.render_template(email_template.content, context)
+
+                    await mail_client.send_email(content=email_content, subject=email_template.subject, to_email=user.email)
+
+                    return {"message": "Your password been updated successfully", "status": 200}
+                else:
+                    return {"message": "Failed to update password", "status": 400}
+            
+            return {"message": "No account linked with the email you provided", "status": 400}
+        
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Invalid session",
+            headers={"WWW-Authenticate": "Bearer"},
+        )
     except Exception as e:
         get_logger().error(f"Error sending email: {e}")
         return {"message": str(e), "status": 400}

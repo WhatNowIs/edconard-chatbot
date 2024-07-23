@@ -181,3 +181,28 @@ class UserService(Service):
             return decoded_token if exp >= datetime.utcnow() else None
         except jwt.PyJWTError:
             return None
+        
+
+    async def change_password(self, user: User, current_password: str, new_password: str) -> Tuple[bool, str]:
+        self.logger.info(f"Password change attempt for user with email: {user.email}")
+
+        if not await self.verify_user_password(user.id, current_password):
+            self.logger.warning(f"Current password for user with email {user.email} is incorrect")
+            return False, "Current password is incorrect"
+
+        hashed_password, salt = encrypt(new_password)
+
+        async with self.db_session as session:
+            result = await session.execute(select(Credential).filter(Credential.user_id == user.id))
+            credential = result.scalars().first()
+            if credential:
+                credential.password = hashed_password
+                credential.salt = salt
+                credential.updated_at = datetime.utcnow()
+                session.add(credential)
+                await session.commit()
+                self.logger.info(f"Password updated successfully for user with email: {user.email}")
+                return True, "Password updated successfully"
+
+        self.logger.error(f"Failed to update password for user with email: {user.email}")
+        return False, "Failed to update password"
