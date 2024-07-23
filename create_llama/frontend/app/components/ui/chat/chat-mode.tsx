@@ -61,7 +61,9 @@ export const ChatMode = () => {
 
           <ArticleDialog
             trigger={
-              <button type="button" className="hidden" ref={buttonRef}></button>
+              <button type="button" className="hidden" ref={buttonRef}>
+                Hidden
+              </button>
             }
           />
           <Switch
