@@ -43,7 +43,7 @@ export const ChatMode = () => {
   };
 
   useEffect(() => {
-    if (shouldDrawerOpen && buttonRef.current) {
+    if (!shouldDrawerOpen && buttonRef.current) {
       buttonRef.current.click();
     }
   }, [shouldDrawerOpen]);
