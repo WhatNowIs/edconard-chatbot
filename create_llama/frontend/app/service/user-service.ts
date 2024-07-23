@@ -18,6 +18,23 @@ export const UserSchema = z.object({
   status: z.string().optional(),
 });
 
+export const ChangePasswordSchema = z
+  .object({
+    current_password: z
+      .string()
+      .min(1, { message: "Current password is required" }),
+    new_password: z
+      .string()
+      .min(8, { message: "New password must be at least 8 characters long" }),
+    confirm_password: z.string().min(8, {
+      message: "Confirm password must be at least 8 characters long",
+    }),
+  })
+  .refine((data) => data.new_password === data.confirm_password, {
+    message: "Passwords don't match",
+    path: ["confirm_password"], // This will set the error on the confirm_password field
+  });
+
 export const MacroRoundupSchema = z.object({
   document_link: z.string(),
   order: z.string(),
@@ -69,6 +86,7 @@ export type VerifyOtpType = z.TypeOf<typeof VerifyOtpSchema>;
 export type ForgotPasswordType = z.TypeOf<typeof ForgotPasswordSchema>;
 export type ResetPasswordType = z.TypeOf<typeof ResetPasswordSchema>;
 export type MacroRoundupType = z.TypeOf<typeof MacroRoundupSchema>;
+export type ChangePasswordType = z.infer<typeof ChangePasswordSchema>;
 
 export async function createUserAccount(
   data: UserFormType,
@@ -286,10 +304,13 @@ export async function resetPassword(data: ResetPasswordType) {
   return response;
 }
 export async function saveMacroRoundupData(data: MacroRoundupType) {
+  const access_token =
+    localStorage.getItem("access_token") || getCookie("access_token");
   const res = await fetch(`${getBaseURL()}/api/chat/article`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
+      Authorization: `Bearer ${access_token}`,
     },
     body: JSON.stringify(data),
   });
@@ -322,6 +343,30 @@ export async function refreshToken(token: string): Promise<{
 
   return {
     ...((await res.json()) as { access_token: string; token_type: string }),
+  };
+}
+
+export async function changePassword(
+  data: ChangePasswordType,
+): Promise<{ message: string; status: number }> {
+  const access_token =
+    localStorage.getItem("access_token") || getCookie("access_token");
+  const res = await fetch(`${getBaseURL()}/api/auth/accounts/refresh`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${access_token}`,
+    },
+    body: JSON.stringify(data),
+  });
+
+  if (!res.ok) {
+    const error = await res.text();
+    return { message: error, status: 400 };
+  }
+
+  return {
+    ...((await res.json()) as { message: string; status: number }),
   };
 }
 
