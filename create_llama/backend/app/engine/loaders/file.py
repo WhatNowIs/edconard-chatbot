@@ -7,7 +7,6 @@ from pydantic import BaseModel, validator
 
 logger = logging.getLogger(__name__)
 
-
 class FileLoaderConfig(BaseModel):
     data_dir: str = "data"
     use_llama_parse: bool = False
@@ -30,17 +29,6 @@ class CSVLoaderConfig(BaseModel):
         if not os.path.isdir(v):
             raise ValueError(f"Directory '{v}' does not exist")
         return v
-
-
-def llama_parse_parser():
-    if os.getenv("LLAMA_CLOUD_API_KEY") is None:
-        raise ValueError(
-            "LLAMA_CLOUD_API_KEY environment variable is not set. "
-            "Please set it in .env file or in your shell environment then run again!"
-        )
-    parser = LlamaParse(result_type="markdown", verbose=True, language="en")
-    return parser
-
 
 def get_file_documents(config: FileLoaderConfig | CSVLoaderConfig):
     from llama_index.core.readers import SimpleDirectoryReader
@@ -84,7 +72,9 @@ def get_file_documents(config: FileLoaderConfig | CSVLoaderConfig):
         )
         if config.use_llama_parse:
             parser = llama_parse_parser()
-            reader.file_extractor = {".pdf": parser}
+            reader.file_extractor = {".pdf": parser, ".csv": csv_parser}
+        else:
+            reader.file_extractor = {".csv": csv_parser}
         return reader.load_data()
     except ValueError as e:
         import sys, traceback

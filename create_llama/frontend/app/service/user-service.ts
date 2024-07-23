@@ -95,6 +95,7 @@ export async function createUserAccount(
 
 export async function signIn(data: UserSigninType): Promise<{
   access_token: string;
+  refresh_token: string;
   token_type: string;
   user: UserFormType;
   message: string;
@@ -121,6 +122,7 @@ export async function signIn(data: UserSigninType): Promise<{
   return (await res.json()) as {
     access_token: string;
     token_type: string;
+    refresh_token: string;
     user: UserFormType;
     message: string;
   };
@@ -283,7 +285,6 @@ export async function resetPassword(data: ResetPasswordType) {
 
   return response;
 }
-
 export async function saveMacroRoundupData(data: MacroRoundupType) {
   const res = await fetch(`${getBaseURL()}/api/chat/article`, {
     method: "POST",
@@ -299,4 +300,37 @@ export async function saveMacroRoundupData(data: MacroRoundupType) {
   }
 
   return { ...((await res.json()) as { message: string; status: number }) };
+}
+
+export async function refreshToken(token: string): Promise<{
+  access_token: string | null;
+  token_type: string | null;
+}> {
+  const res = await fetch(`${getBaseURL()}/api/auth/accounts/refresh`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      refresh_token: token,
+    }),
+  });
+
+  if (!res.ok) {
+    return { access_token: null, token_type: null };
+  }
+
+  return {
+    ...((await res.json()) as { access_token: string; token_type: string }),
+  };
+}
+
+export function getCookie(name: string): string {
+  const value = `; ${document.cookie}`;
+  const parts = value.split(`; ${name}=`);
+
+  if (parts.length === 2) {
+    const last = parts.pop() as string;
+    return last.split(";").shift() as string;
+  } else return "";
 }
