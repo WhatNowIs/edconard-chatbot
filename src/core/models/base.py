@@ -64,7 +64,8 @@ class User(Base):
     status = Column(Enum(EntityStatus), nullable=True)
     role_id = Column(String, ForeignKey('roles.id'))
 
-    # Relationships
+    # Relationships  
+
     addresses = relationship("Address", secondary=user_addresses, backref="users")
     tenants = relationship("Tenant", secondary=tenant_users, backref="users")
     messages = relationship("Message", back_populates="user")
@@ -81,6 +82,7 @@ class Role(Base):
     description = Column(String)
 
     # Relationships
+    
     users = relationship("User", backref="role")
 
     # Functions

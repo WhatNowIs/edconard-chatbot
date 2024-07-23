@@ -3,6 +3,9 @@
     "python.analysis.extraPaths": [
         "/home/byamasu-patrick/.cache/pypoetry/virtualenvs/edcornard-chatbot-PO2dp6Pn-py3.10/lib/python3.10/site-packages"
     ],
+    "cSpell.words": [
+        "signin"
+    ],
     // "python.linting.enabled": true,
     // "python.linting.pylintEnabled": true,
     // "python.linting.flake8Enabled": true,
