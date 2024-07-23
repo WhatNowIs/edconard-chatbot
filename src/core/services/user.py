@@ -164,14 +164,14 @@ class UserService(Service):
             self.logger.info(f"Chat mode for user ID: {user_id} is {chat_mode}")
         return chat_mode
     
-    def create_access_token(self, data: dict, expires_delta: timedelta = None):
+    def create_access_token(self, data: dict, expires_delta: timedelta = None, secret_key: str = SECRET_KEY):
         to_encode = data.copy()
         if expires_delta:
             expire = datetime.utcnow() + expires_delta
         else:
             expire = datetime.utcnow() + timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
         to_encode.update({"exp": expire})
-        encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
+        encoded_jwt = jwt.encode(to_encode, secret_key, algorithm=ALGORITHM)
         return encoded_jwt
 
     def decode_access_token(self, token: str):
