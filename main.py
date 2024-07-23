@@ -18,6 +18,7 @@ from src.app.routers.management.files import files_router
 from src.app.routers.management.tools import tools_router
 from src.app.routers.auth.accounts import accounts_router
 from src.app.routers.chat.threads import threads_router
+from src.app.routers.chat.workspace import workspace_router
 from fastapi.middleware.cors import CORSMiddleware
 from src.llm.env_config import get_config
 
@@ -54,6 +55,7 @@ app.include_router(tools_router, prefix="/api/management/tools", tags=["Manageme
 app.include_router(accounts_router, prefix="/api/auth/accounts", tags=["Auth"])
 app.include_router(threads_router, prefix="/api/chat/threads", tags=["Thread"])
 app.include_router(chat_router, prefix="/api/chat", tags=["Chat"])
+app.include_router(workspace_router, prefix="/api/workspaces", tags=["Workspaces"])
 
 @app.get("/")
 async def redirect():
