@@ -18,6 +18,7 @@ SUBJECT = 'patrick@whatnow.is'
 # # Initialize the Drive API
 gcp_config = GCPConfig(env.s3_bucket_name, 'gcp credentials/updated-service-account-credentials.json')
 
+docs_service = gcp_config.get_google_service('docs', 'v1', SCOPES, SUBJECT)
 spreadsheet_service = gcp_config.get_google_service('sheets', 'v4', SCOPES, SUBJECT)
 
 def store_spreadsheet(spreadsheet_id: str):
