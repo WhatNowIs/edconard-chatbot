@@ -28,14 +28,27 @@ export default function ChangePasswordForm() {
     setIsSubmitting(true);
     // Send the data to the server
     try {
-      await changePassword(data as ChangePasswordType);
-      toast({
-        className: cn(
-          "top-0 right-0 flex fixed md:max-w-[420px] md:top-4 md:right-4 text-green-500",
-        ),
-        title: "Password changed successfully",
-      });
-      router.refresh();
+      const response = await changePassword(data as ChangePasswordType);
+
+      if (response.status === 200) {
+        toast({
+          className: cn(
+            "top-0 right-0 flex fixed md:max-w-[420px] md:top-4 md:right-4 text-green-500",
+          ),
+          title: "Password changed successfully",
+        });
+        router.refresh();
+        form.setValue("current_password", "");
+        form.setValue("new_password", "");
+        form.setValue("confirm_password", "");
+      } else {
+        toast({
+          className: cn(
+            "top-0 right-0 flex fixed md:max-w-[420px] md:top-4 md:right-4 text-red-500",
+          ),
+          title: "Failed to change password",
+        });
+      }
     } catch (err) {
       console.error(err);
       toast({
