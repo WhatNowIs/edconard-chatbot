@@ -227,7 +227,7 @@ async def chat_thread(
         """ if extracted_data is not None else last_message_content
 
         chat_engine = await get_chat_engine(
-            chat_mode=chat_mode, 
+            in_research_or_exploration_modality=in_research_or_exploration_modality, 
             user_id=user_id, 
             question=last_message_content_final,
             chat_history=messages
