@@ -18,9 +18,9 @@ from src.core.services.message import MessageService
 from src.core.services.thread import ThreadService
 from src.core.services.user import UserService 
 from redis.asyncio.client import Redis
-from app.utils.helpers import Article, extract_article_data_from_string
+from app.utils.helpers import Article, extract_article_data_from_string, get_document_by_url
 
-from src.schema import ChatMode
+from src.schema import ChatMode, SetArticleData
 from src.utils.logger import get_logger
 
 chat_router = r = APIRouter()
@@ -177,21 +177,11 @@ async def chat_thread(
         
         in_research_or_exploration_modality = chat_mode == True
 
-        extracted_data = extract_article_data_from_string(last_message_content) if not in_research_or_exploration_modality else None
         messages_tmp: List[Message] = await thread_service.get_messages_by_thread_id(thread_id=thread_id, uid=user_id)
         
         chat_history = '\n'.join([f"role: \"{msg_tmp.role}\"\ncontent: \"{msg_tmp.content}\"" for msg_tmp in messages_tmp])
 
-        messages = [ChatMessage(content=last_message_content, role=MessageRole.USER if str(message.role) == "user" else MessageRole.ASSISTANT) for message in messages_tmp]        
-
-        extracted_data_tmp = extract_article_data_from_string(messages_tmp[0].content) if extracted_data is None and not in_research_or_exploration_modality and len(messages_tmp) > 0 else extracted_data
-
-        if isinstance(extracted_data, Article):
-            get_logger().info('extracted_data is instance of Article')
-            await user_service.update_article(user_id=user_id, article=extracted_data, redis_client=redis_client)
-        else:
-            get_logger().info('extracted_data is not instance of Article')
-
+        messages = [ChatMessage(content=last_message_content, role=MessageRole.USER if str(message.role) == "user" else MessageRole.ASSISTANT) for message in messages_tmp]
 
         new_message = Message(
             thread_id=thread_id,
@@ -200,8 +190,7 @@ async def chat_thread(
             content=last_message_content
         )
 
-        await message_service.create(new_message)
-    
+        await message_service.create(new_message)    
 
         get_logger().info(chat_history)
 
@@ -221,10 +210,10 @@ async def chat_thread(
         """
 
         last_message_content_final =  f"""
-            {extracted_data_tmp.question}
+            {last_message_content}
             
             {additional_data if not in_research_or_exploration_modality else ""}
-        """ if extracted_data is not None else last_message_content
+        """
 
         chat_engine = await get_chat_engine(
             in_research_or_exploration_modality=in_research_or_exploration_modality, 
@@ -355,7 +344,50 @@ async def get_chat_mode(
 
         get_logger().info(f"retrieved chat mode: {chat_mode}")
     
-        return JSONResponse(status_code=200, content={"mode": bool(chat_mode)}) # type: ignore
+        return JSONResponse(status_code=200, content={"mode": bool(chat_mode)}) 
+    raise HTTPException(
+        status_code=status.HTTP_401_UNAUTHORIZED,
+        detail="Invalid session",
+        headers={"WWW-Authenticate": "Bearer"},
+    )
+
+# non-streaming endpoint - delete if not needed
+@r.post("/article")
+async def get_chat_mode(
+    data: SetArticleData,
+    session: dict = Depends(get_session),    
+    redis_client: Redis = Depends(get_redis_client),
+    user_service: UserService = Depends(get_user_service),
+) -> _Result:
+    
+    if "sub" in session:
+        user_id = session['sub']
+        documents = await get_document_by_url(data.document_link)
+
+        doc = [document for document in documents if int(document.order_of_appearance) == data.order]
+
+        if len(doc) == 0:            
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail="Order of appearance is out bound",
+            )
+        else:
+            doc = doc[0]
+
+
+        article = Article(
+            abstract=doc.summary,
+            authors=doc.authors,
+            headline=doc.headline,
+            publisher=doc.publication,
+            question=""
+        )
+        await user_service.update_article(user_id, article, redis_client)
+
+        get_logger().info(f"Updated article data with order {data.order}")
+        get_logger().info(article.dict())
+    
+        return JSONResponse(status_code=200, content={"message": f"Successfully updated article data with order of appearance # {data.order}", "status": 200}) 
 
     raise HTTPException(
         status_code=status.HTTP_401_UNAUTHORIZED,
