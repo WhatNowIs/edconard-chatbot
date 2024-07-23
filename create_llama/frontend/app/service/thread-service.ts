@@ -5,6 +5,7 @@ import { getBackendURL } from "./utils";
 const ResponseMessageSchema = z.object({
   id: z.string(),
   thread_id: z.string(),
+  workspace_id: z.string(),
   user_id: z.string(),
   role: z.string(),
   content: z.string(),
@@ -15,12 +16,14 @@ const ResponseMessageSchema = z.object({
 const ResponseThreadSchema = z.object({
   id: z.string(),
   user_id: z.string(),
+  workspace_id: z.string(),
   title: z.string(),
   messages: z.array(ResponseMessageSchema),
 });
 
 const ThreadCreateSchema = z.object({
   user_id: z.string(),
+  workspace_id: z.string(),
   title: z.string(),
 });
 

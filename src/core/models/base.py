@@ -48,6 +48,11 @@ tenant_addresses = Table(
     Column('address_id', String(36), ForeignKey('addresses.id'))
 )
 
+workspace_users = Table(
+    'workspace_users', Base.metadata,
+    Column('user_id', String(36), ForeignKey('users.id')),
+    Column('workspace_id', String(36), ForeignKey('workspaces.id'))
+)
 # Models
 
 class User(Base):
@@ -70,6 +75,8 @@ class User(Base):
     tenants = relationship("Tenant", secondary=tenant_users, backref="users")
     messages = relationship("Message", back_populates="user")
     threads = relationship("Thread", back_populates="user")
+    workspaces = relationship("Workspace", secondary=workspace_users, back_populates="users")
+
 
     # Functions
     def to_dict(self):
@@ -147,10 +154,12 @@ class Thread(Base):
 
     id = Column(String, primary_key=True, default=lambda: str(uuid.uuid4()))
     user_id = Column(String, ForeignKey('users.id'))
+    workspace_id = Column(String(36), ForeignKey('workspaces.id'))
     title =  Column(String)
 
     messages = relationship("Message", back_populates="thread")
     user = relationship("User", back_populates="threads")
+    workspace = relationship("Workspace", back_populates="threads")
 
     # Functions
     def to_dict(self):
@@ -210,5 +219,23 @@ class OTP(Base):
 
         return current_time > self.expires_at
 
+    def to_dict(self):
+        return {column.name: getattr(self, column.name) for column in self.__table__.columns}
+
+
+class Workspace(Base):
+    __tablename__ = "workspaces"
+
+    id = Column(String(36), primary_key=True, default=lambda: str(uuid.uuid4()))
+    name = Column(String, nullable=False)
+    created_at = Column(DateTime, index=True, default=datetime.now)
+    updated_at = Column(DateTime)
+    status = Column(Enum(EntityStatus), nullable=True)
+
+    # Relationships
+    users = relationship("User", secondary="workspace_users", back_populates="workspaces")
+    threads = relationship("Thread", back_populates="workspace")
+
+    # Functions
     def to_dict(self):
         return {column.name: getattr(self, column.name) for column in self.__table__.columns}
