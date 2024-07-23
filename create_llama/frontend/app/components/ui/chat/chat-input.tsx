@@ -1,16 +1,15 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import React from 'react'; 
-import { useContext, useEffect, useState } from "react";
-import { Button } from "../button";
+import AuthContext from "@/app/context/auth-context";
+import ChatContext from "@/app/context/chat-context";
+import { extractArticleDataFromString } from "@/app/utils/multi-mode-select";
+import { useGenerateTitle } from "@/app/utils/thread-title-generator";
+import React, { useContext, useEffect, useState } from "react";
 import { HiArrowSmallUp } from "react-icons/hi2";
+import { Button } from "../button";
 import FileUploader from "../file-uploader";
 import { Input } from "../input";
 import UploadImagePreview from "../upload-image-preview";
 import { ChatHandler } from "./chat.interface";
-import { useGenerateTitle } from "@/app/utils/thread-title-generator";
-import ChatContext from "@/app/context/chat-context";
-import AuthContext from "@/app/context/auth-context";
-import { SupportedChatModeEnum, extractArticleDataFromString, convertArticleToString } from '@/app/utils/multi-mode-select';
 
 export default function ChatInput(
   props: Pick<
@@ -38,28 +37,35 @@ export default function ChatInput(
       setImageUrl(null);
       return;
     }
-    if(authContext && chatContext){
-      const { user, chatMode } = authContext;
-      const { messages, setArticle } = chatContext;  
-      
-      user && messages.length === 0 && generateTitle(props.input).catch((error) => console.log(error));
+    if (authContext && chatContext) {
+      const { user, isResearchExploration } = authContext;
+      const { messages, setArticle } = chatContext;
 
-      if(chatMode === SupportedChatModeEnum.MacroRoundupArticleTweetGeneration){
+      user &&
+        messages.length === 0 &&
+        generateTitle(props.input).catch((error) => console.log(error));
+
+      if (!isResearchExploration) {
         const form = e.currentTarget;
-        let inputString = form.elements.namedItem("message") as HTMLInputElement;
-        
-        const currentArticleData = extractArticleDataFromString(inputString.value);
-        user && messages.length === 0 && generateTitle(props.input).catch((error) => console.log(error));
+        let inputString = form.elements.namedItem(
+          "message",
+        ) as HTMLInputElement;
 
-        if(currentArticleData !== null){
-          setArticle(currentArticleData)    
+        const currentArticleData = extractArticleDataFromString(
+          inputString.value,
+        );
+        user &&
+          messages.length === 0 &&
+          generateTitle(props.input).catch((error) => console.log(error));
+
+        if (currentArticleData !== null) {
+          setArticle(currentArticleData);
           props.handleSubmit(e);
           return;
         }
       }
-    }  
+    }
     props.handleSubmit(e);
-
   };
 
   const onRemovePreviewImage = () => setImageUrl(null);
@@ -86,14 +92,22 @@ export default function ChatInput(
   };
 
   useEffect(() => {
-    if(!loading){
-      if(chatContext && authContext){
+    if (!loading) {
+      if (chatContext && authContext) {
         const { editThread, selectedThread, setSelectedThread } = chatContext;
         const { user } = authContext;
-        (user && (selectedThread && title !== "" )) && editThread(selectedThread?.id as string, { title: title, user_id: user.id as string});
-        (user && (selectedThread && title !== "" )) && setSelectedThread({...selectedThread, title: title});
+        user &&
+          selectedThread &&
+          title !== "" &&
+          editThread(selectedThread?.id as string, {
+            title: title,
+            user_id: user.id as string,
+          });
+        user &&
+          selectedThread &&
+          title !== "" &&
+          setSelectedThread({ ...selectedThread, title: title });
       }
-
     }
   }, [loading]);
 
@@ -118,7 +132,7 @@ export default function ChatInput(
           onFileUpload={handleUploadFile}
           onFileError={props.onFileError}
         />
-        <Button type="submit" className='flex gap-1' disabled={props.isLoading}>
+        <Button type="submit" className="flex gap-1" disabled={props.isLoading}>
           <span>Send </span>
           <HiArrowSmallUp />
         </Button>
