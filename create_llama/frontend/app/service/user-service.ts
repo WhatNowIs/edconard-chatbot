@@ -351,7 +351,7 @@ export async function changePassword(
 ): Promise<{ message: string; status: number }> {
   const access_token =
     localStorage.getItem("access_token") || getCookie("access_token");
-  const res = await fetch(`${getBaseURL()}/api/auth/accounts/refresh`, {
+  const res = await fetch(`${getBaseURL()}/api/auth/accounts/change-password`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
