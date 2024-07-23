@@ -2,12 +2,15 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
 import AuthContext from "@/app/context/auth-context";
-import { useContext } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import { cn } from "../lib/utils";
 import { Switch, SwitchLabel, SwitchThumb } from "../switch";
 import { useToast } from "../use-toast";
+import ArticleDialog from "./widgets/article-dialog";
 
 export const ChatMode = () => {
+  const buttonRef = useRef<HTMLButtonElement>(null);
+  const [shouldDrawerOpen, setShouldDrawerOpen] = useState<boolean>(false);
   const authContext = useContext(AuthContext);
   const { toast } = useToast();
 
@@ -28,6 +31,7 @@ export const ChatMode = () => {
         ),
         title: message,
       });
+      setShouldDrawerOpen(checked);
     } else {
       toast({
         className: cn(
@@ -37,6 +41,12 @@ export const ChatMode = () => {
       });
     }
   };
+
+  useEffect(() => {
+    if (shouldDrawerOpen && buttonRef.current) {
+      buttonRef.current.click();
+    }
+  }, [shouldDrawerOpen]);
 
   return (
     <div className="w-[40%] h-8 flex bg-white gap-2 items-center justify-start fixed top-0">
@@ -48,6 +58,12 @@ export const ChatMode = () => {
           >
             Research/Exploration
           </SwitchLabel>
+
+          <ArticleDialog
+            trigger={
+              <button type="button" className="hidden" ref={buttonRef}></button>
+            }
+          />
           <Switch
             className="SwitchRoot"
             id="airplane-mode"
