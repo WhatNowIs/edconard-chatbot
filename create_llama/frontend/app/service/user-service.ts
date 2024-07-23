@@ -18,6 +18,11 @@ export const UserSchema = z.object({
   status: z.string().optional(),
 });
 
+export const MacroRoundupSchema = z.object({
+  document_link: z.string(),
+  order: z.string(),
+});
+
 export const UserSigninSchema = z.object({
   email: z.string(),
   password: z.string(),
@@ -63,6 +68,7 @@ export type UserSigninType = z.TypeOf<typeof UserSigninSchema>;
 export type VerifyOtpType = z.TypeOf<typeof VerifyOtpSchema>;
 export type ForgotPasswordType = z.TypeOf<typeof ForgotPasswordSchema>;
 export type ResetPasswordType = z.TypeOf<typeof ResetPasswordSchema>;
+export type MacroRoundupType = z.TypeOf<typeof MacroRoundupSchema>;
 
 export async function createUserAccount(
   data: UserFormType,
@@ -278,6 +284,22 @@ export async function resetPassword(data: ResetPasswordType) {
   }
 
   return response;
+}
+export async function saveMacroRoundupData(data: MacroRoundupType) {
+  const res = await fetch(`${getBaseURL()}/api/chat/article`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data),
+  });
+
+  if (!res.ok) {
+    const error = await res.text();
+    return { message: error, status: 400 };
+  }
+
+  return { ...((await res.json()) as { message: string; status: number }) };
 }
 
 export async function refreshToken(token: string): Promise<{

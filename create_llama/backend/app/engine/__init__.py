@@ -28,7 +28,7 @@ def init_topic_engine():
     return (topic_query_engine, topic_retriever)
 
 
-async def get_chat_engine(chat_mode: bool, user_id: str, question: str, chat_history: str | List[ChatMessage] = None):
+async def get_chat_engine(in_research_or_exploration_modality: bool, user_id: str, question: str, chat_history: str | List[ChatMessage] = None):
     # from src.core.dbconfig.postgres import get_db
     top_k = int(os.getenv("TOP_K", "3"))
     system_prompt = os.getenv("SYSTEM_PROMPT")
@@ -37,21 +37,23 @@ async def get_chat_engine(chat_mode: bool, user_id: str, question: str, chat_his
     if index is None:
         raise RuntimeError("Index is not found")
 
-    tools = ToolFactory.from_env()
+    # tools = ToolFactory.from_env()
 
     # Use the context chat engine if no tools are provided
-    if len(tools) == 0:
-        get_logger().info(f"chat_mode: {chat_mode}")
-        
-        if bool(chat_mode) == True:
-            get_logger().info(f"We are research and exploration mode {chat_mode}")
+    # if len(tools) == 0:
+    get_logger().info(f"chat_mode: {in_research_or_exploration_modality}")
+    
+    if in_research_or_exploration_modality:
+        get_logger().info(f"We are research and exploration mode {in_research_or_exploration_modality}")
 
-            return CondensePlusContextChatEngine.from_defaults(
-                retriever=index.as_retriever(top_k=top_k),
-                system_prompt=system_prompt,
-                llm=Settings.llm
-            )
-        get_logger().info(f"We are not research and exploration mode {chat_mode}")
+        return CondensePlusContextChatEngine.from_defaults(
+            retriever=index.as_retriever(top_k=top_k),
+            system_prompt=system_prompt,
+            llm=Settings.llm
+        )
+    else:
+    
+        get_logger().info(f"We are not research and exploration mode {in_research_or_exploration_modality}")
 
         fn_schema_instance = FnSchema(
             chat_history=str(chat_history),
@@ -100,16 +102,16 @@ async def get_chat_engine(chat_mode: bool, user_id: str, question: str, chat_his
             verbose=True,  # Show agent logs to console
             chat_history=chat_history,
         )
-        
-    else:
-        # Add the query engine tool to the list of tools
-        query_engine_tool = QueryEngineTool.from_defaults(
-            query_engine=index.as_query_engine(similarity_top_k=top_k),
-        )
-        tools.append(query_engine_tool)
-        return AgentRunner.from_llm(
-            llm=Settings.llm,
-            tools=tools,
-            system_prompt=system_prompt,
-            verbose=True,  # Show agent logs to console
-        )
+    
+    # else:
+    #     # Add the query engine tool to the list of tools
+    #     query_engine_tool = QueryEngineTool.from_defaults(
+    #         query_engine=index.as_query_engine(similarity_top_k=top_k),
+    #     )
+    #     tools.append(query_engine_tool)
+    #     return AgentRunner.from_llm(
+    #         llm=Settings.llm,
+    #         tools=tools,
+    #         system_prompt=system_prompt,
+    #         verbose=True,  # Show agent logs to console
+    #     )
