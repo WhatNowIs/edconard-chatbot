@@ -1,4 +1,4 @@
-from typing import List, Optional
+from typing import Any, List, Optional
 from pydantic import BaseModel, EmailStr
 from datetime import datetime
 from enum import Enum
@@ -69,3 +69,21 @@ class ResetPassword(BaseModel):
 class UpdatePassword(BaseModel):    
     password: str
     email: EmailStr
+    
+    
+class SetArticleData(BaseModel):    
+    document_link: str
+    order: int
+
+
+class Document(BaseModel):
+    title: str
+    content: Optional[List[Any]] = None
+    inline_objects: Optional[Any] = None
+
+class DocumentResponse(BaseModel):
+    headline: str
+    authors: str
+    publication: str
+    summary: str
+    order_of_appearance: str
