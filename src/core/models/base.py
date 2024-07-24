@@ -230,7 +230,7 @@ class Workspace(Base):
     name = Column(String, nullable=False)
     created_at = Column(DateTime, index=True, default=datetime.now)
     updated_at = Column(DateTime)
-    status = Column(Enum(EntityStatus), nullable=True)
+    status = Column(String, nullable=True)
 
     # Relationships
     users = relationship("User", secondary="workspace_users", back_populates="workspaces")
