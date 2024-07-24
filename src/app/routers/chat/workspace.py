@@ -1,3 +1,4 @@
+import src.schema as dto
 from typing import List
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.ext.asyncio import AsyncSession
@@ -5,14 +6,14 @@ from src.app.routers.auth.accounts import get_session
 from src.core.config.postgres import get_db
 from src.core.models.base import Workspace
 from src.core.services.workspace import WorkspaceService
-from src.schema import WorkspaceCreate, Workspace
+from src.schema import WorkspaceCreate
 
 workspace_router = APIRouter()
 
 def get_workspace_service(db: AsyncSession = Depends(get_db)) -> WorkspaceService:
     return WorkspaceService(db)
 
-@workspace_router.post("/", response_model=Workspace)
+@workspace_router.post("/", response_model=dto.Workspace)
 async def create_workspace(
     data: WorkspaceCreate,
     session: dict = Depends(get_session),
@@ -20,7 +21,7 @@ async def create_workspace(
 ):
     if "sub" in session:
         user_id = session["sub"]
-        workspace = Workspace(name=data.name)
+        workspace = dto.Workspace(name=data.name)
         created_workspace = await workspace_service.create(workspace)
         await workspace_service.add_user_to_workspace(created_workspace.id, user_id)
         return Workspace.model_validate(created_workspace)
@@ -94,7 +95,7 @@ async def remove_thread_from_workspace(
         detail="Not authorized to remove thread from workspace",
     )
 
-@workspace_router.get("/", response_model=List[Workspace])
+@workspace_router.get("/", response_model=List[dto.Workspace])
 async def fetch_workspaces(
     session: dict = Depends(get_session),
     workspace_service: WorkspaceService = Depends(get_workspace_service)
@@ -102,7 +103,7 @@ async def fetch_workspaces(
     if "sub" in session:
         user_id = session["sub"]
         workspaces = await workspace_service.get_all_by_user_id(user_id)
-        return [Workspace.model_validate(workspace) for workspace in workspaces]
+        return [dto.Workspace.model_validate(workspace) for workspace in workspaces]
 
     raise HTTPException(
         status_code=status.HTTP_401_UNAUTHORIZED,
