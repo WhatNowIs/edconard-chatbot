@@ -1,12 +1,9 @@
 "use client";
 
-interface Workspace {
-  id: string;
-  name: string;
-}
+import { ResponseWorkspace } from "@/app/service/workspace-service";
 
 interface WorkspaceListProps {
-  workspaces: Workspace[];
+  workspaces: ResponseWorkspace[];
   fetchWorkspacesList: () => Promise<void>;
 }
 

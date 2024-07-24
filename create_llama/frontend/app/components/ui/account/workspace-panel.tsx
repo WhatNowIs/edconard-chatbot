@@ -1,3 +1,7 @@
+"use client";
+
+import AuthContext from "@/app/context/auth-context";
+import ChatContext from "@/app/context/chat-context";
 import {
   addThreadToWorkspace,
   addUserToWorkspace,
@@ -5,9 +9,9 @@ import {
   fetchWorkspaces,
   removeThreadFromWorkspace,
   removeUserFromWorkspace,
-  ResponseWorkspace,
+  WorkspaceCreate,
 } from "@/app/service/workspace-service";
-import { useEffect, useState } from "react";
+import { useContext, useEffect } from "react";
 import WorkspaceCreationForm from "./workspace/create-form";
 import ThreadManagement from "./workspace/thread-management";
 import UserManagementForm from "./workspace/user-management";
@@ -16,19 +20,23 @@ import WorkspaceList from "./workspace/workspace-list";
 // Define interfaces for the props of each component
 
 export default function WorkspacePanel() {
-  const [workspaceName, setWorkspaceName] = useState<string>("");
-  const [userId, setUserId] = useState<string>("");
-  const [threadId, setThreadId] = useState<string>("");
-  const [workspaceId, setWorkspaceId] = useState<string>("");
-  const [workspaces, setWorkspaces] = useState<ResponseWorkspace[]>([]);
+  const authContext = useContext(AuthContext);
+  const chatContext = useContext(ChatContext);
+
+  if (!authContext || !chatContext) {
+    return <></>;
+  }
+
+  const { user } = authContext;
+  const { currentWorkspace, workspaces, setWorkspaces } = chatContext;
 
   useEffect(() => {
     fetchWorkspacesList();
   }, []);
 
-  const handleCreateWorkspace = async () => {
+  const handleCreateWorkspace = async (data: WorkspaceCreate) => {
     try {
-      await createWorkspace({ name: workspaceName });
+      await createWorkspace(data);
       alert("Workspace created successfully");
       fetchWorkspacesList();
     } catch (error) {
@@ -38,7 +46,10 @@ export default function WorkspacePanel() {
 
   const handleRemoveUser = async () => {
     try {
-      await removeUserFromWorkspace(workspaceId, userId);
+      await removeUserFromWorkspace(
+        currentWorkspace?.id as string,
+        user?.id as string,
+      );
       alert("User removed successfully");
     } catch (error) {
       console.error("Error removing user:", error);
@@ -47,7 +58,10 @@ export default function WorkspacePanel() {
 
   const handleRemoveThread = async () => {
     try {
-      await removeThreadFromWorkspace(workspaceId, threadId);
+      await removeThreadFromWorkspace(
+        currentWorkspace?.id as string,
+        "threadId",
+      );
       alert("Thread removed successfully");
     } catch (error) {
       console.error("Error removing thread:", error);
@@ -56,7 +70,10 @@ export default function WorkspacePanel() {
 
   const handleAddUser = async () => {
     try {
-      await addUserToWorkspace(workspaceId, userId);
+      await addUserToWorkspace(
+        currentWorkspace?.id as string,
+        user?.id as string,
+      );
       alert("User added successfully");
     } catch (error) {
       console.error("Error adding user:", error);
@@ -65,7 +82,7 @@ export default function WorkspacePanel() {
 
   const handleAddThread = async () => {
     try {
-      await addThreadToWorkspace(workspaceId, threadId);
+      await addThreadToWorkspace(currentWorkspace?.id as string, "threadId");
       alert("Thread added successfully");
     } catch (error) {
       console.error("Error adding thread:", error);
@@ -74,8 +91,9 @@ export default function WorkspacePanel() {
 
   const fetchWorkspacesList = async () => {
     try {
-      const workspaces = await fetchWorkspaces();
-      setWorkspaces(workspaces);
+      const data = await fetchWorkspaces();
+
+      setWorkspaces(data);
     } catch (error) {
       console.error("Error fetching workspaces:", error);
     }
