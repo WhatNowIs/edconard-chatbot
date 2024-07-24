@@ -111,7 +111,8 @@ class Workspace(BaseModel):
     id: str
     name: str
     created_at: datetime
-    status: Optional[EntityStatusEnum]
+    updated_at: Optional[datetime] = None
+    status: Optional[str] = None
 
     class Config:
-        orm_mode = True
+        from_attributes = True

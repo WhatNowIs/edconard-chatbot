@@ -21,10 +21,12 @@ async def create_workspace(
 ):
     if "sub" in session:
         user_id = session["sub"]
-        workspace = dto.Workspace(name=data.name)
+        workspace = Workspace(name=data.name)
         created_workspace = await workspace_service.create(workspace)
         await workspace_service.add_user_to_workspace(created_workspace.id, user_id)
-        return Workspace.model_validate(created_workspace)
+        await workspace_service.db_session.commit()
+
+        return dto.Workspace.model_validate(created_workspace)
 
     raise HTTPException(
         status_code=status.HTTP_401_UNAUTHORIZED,

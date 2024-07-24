@@ -118,11 +118,11 @@ async def startup(
         await email_template_service.populate_email_templates(templates_directory)
 
     get_logger().info("Successfully populated default email templates and types")
-    init_topic_engine()
 
     # delete_all_converted_csv("tmp/converted_csv")
     # reset_index()
     # get_logger().info("Successfully upserted data to chromadb")
+    init_topic_engine()
 
 
 if __name__ == "__main__":
