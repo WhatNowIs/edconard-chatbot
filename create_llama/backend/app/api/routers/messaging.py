@@ -27,7 +27,7 @@ class CallbackEvent(BaseModel):
             return None
 
     def get_tool_message(self) -> dict | None:
-        func_call_args = self.payload.get("function_call")
+        func_call_args = self.payload.get("function_call") if self.payload is not None else None
         if func_call_args is not None and "tool" in self.payload:
             tool = self.payload.get("tool")
             return {
@@ -45,7 +45,7 @@ class CallbackEvent(BaseModel):
             return False
 
     def get_agent_tool_response(self) -> dict | None:
-        response = self.payload.get("response")
+        response = self.payload.get("response") if self.payload is not None else None
         if response is not None:
             sources = response.sources
             for source in sources:

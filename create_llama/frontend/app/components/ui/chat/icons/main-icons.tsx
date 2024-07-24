@@ -1,3 +1,5 @@
+import React from 'react'; 
+
 const EdConardLogo = () => (    
     <svg version="1.0" width="35" height="35" viewBox="0 0 512.000000 512.000000"
     preserveAspectRatio="xMidYMid meet">
@@ -24,26 +26,26 @@ const EdConardLogo = () => (
 
 const PlusIcon = () => (
     <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path stroke-linecap="round" stroke-linejoin="round" strokeWidth="2" d="M12 4v16m8-8H4"></path>
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4"></path>
     </svg>
 )
 
 const ShevronDown = () => (
     <svg className="w-5 h-5 text-gray-500 cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path stroke-linecap="round" stroke-linejoin="round" strokeWidth="2" d="M6 9l6 6 6-6"></path>
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 9l6 6 6-6"></path>
     </svg>
 )
 
 const ShevronUp = () => (
     <svg className="w-5 h-5 text-gray-500 cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path stroke-linecap="round" stroke-linejoin="round" strokeWidth="2" d="M18 15l-6-6-6 6"></path>
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M18 15l-6-6-6 6"></path>
     </svg>
 
 )
 
 const Harmburger = () => (
     <svg className="w-6 h-6 cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-    <path stroke-linecap="round" stroke-linejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
     </svg>
 )
 

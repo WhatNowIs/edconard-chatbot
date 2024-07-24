@@ -5,7 +5,7 @@ from pydantic import Field, validator
 from pydantic_settings import BaseSettings
 from typing import Dict, Tuple, List
 
-from src.llm.tools import DuckDuckGoTool, WikipediaTool, Tools
+from src.llm.tools import DuckDuckGoTool, WikipediaTool, Tools, TwitterGenerationTool
 from src.llm.env_config import get_config
 from src.app.constants import TOOL_CONFIG_FILE
 
@@ -26,6 +26,8 @@ class ToolsManager:
                 return DuckDuckGoTool(**kwargs)
             case "Wikipedia" | "wikipedia.WikipediaToolSpec" | "wikipedia":
                 return WikipediaTool(**kwargs)
+            case "TwitterGenerationTool" | "twittertool.TwitterGenerationTool" | "twittertool" | "twitter":
+                return TwitterGenerationTool(**kwargs)
             case _:
                 raise ValueError(f"Tool {tool_name} not found")
 
@@ -42,7 +44,7 @@ class ToolsManager:
             self.config[tool.tool_type][tool.name] = config
         else:
             self.config[tool.tool_type].pop(tool.name)
-        self._update_config_file()
+        self._update_config_file()   
 
     @staticmethod
     def load_config_file() -> Dict:

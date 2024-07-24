@@ -1,4 +1,6 @@
+import React from 'react'; 
 import ResetPasswordFrom from "@/app/components/ui/auth/reset-password";
+import { Suspense } from "react";
 
 export default function VerifyAccount() {
     return (
@@ -12,7 +14,9 @@ export default function VerifyAccount() {
   
           <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-[480px]">
             <div className="bg-white px-6 py-12 shadow sm:rounded-lg sm:px-12">
+              <Suspense fallback={<div>Loading...</div>}>
                 <ResetPasswordFrom />
+              </Suspense>
             </div>
           </div>
         </div>

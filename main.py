@@ -1,29 +1,30 @@
-import alembic
-from dotenv import load_dotenv
-from src.app.constants import ENV_FILE_PATH
-from src.core.dbconfig.postgres import get_db
-from src.core.services.mail import EmailTemplateService, EmailTypeService
-from src.utils.logger import get_logger
-
-load_dotenv(
-    dotenv_path=ENV_FILE_PATH,
-)
-
 import os
+import shutil
+from create_llama.backend.app.engine import init_topic_engine
+from src.app.tasks.indexing import index_all, reset_index
 import uvicorn
-from fastapi import Depends, FastAPI
-from sqlalchemy.ext.asyncio import AsyncSession
+from fastapi import FastAPI
+from dotenv import load_dotenv
 from fastapi.responses import RedirectResponse, FileResponse
 from fastapi.staticfiles import StaticFiles
 from create_llama.backend.app.settings import init_settings
 from create_llama.backend.app.api.routers.chat import chat_router
+from src.app.constants import ENV_FILE_PATH
+from src.core.config.postgres import get_db
+from src.core.services.mail import EmailTemplateService, EmailTypeService
+from src.utils.logger import get_logger
 from src.app.routers.management.config import config_router
 from src.app.routers.management.files import files_router
 from src.app.routers.management.tools import tools_router
 from src.app.routers.auth.accounts import accounts_router
 from src.app.routers.chat.threads import threads_router
+from src.app.routers.chat.workspace import workspace_router
 from fastapi.middleware.cors import CORSMiddleware
 from src.llm.env_config import get_config
+
+load_dotenv(
+    dotenv_path=ENV_FILE_PATH,
+)
 
 app = FastAPI(
     title="Edconrad Chatboat",
@@ -54,6 +55,7 @@ app.include_router(tools_router, prefix="/api/management/tools", tags=["Manageme
 app.include_router(accounts_router, prefix="/api/auth/accounts", tags=["Auth"])
 app.include_router(threads_router, prefix="/api/chat/threads", tags=["Thread"])
 app.include_router(chat_router, prefix="/api/chat", tags=["Chat"])
+app.include_router(workspace_router, prefix="/api/workspaces", tags=["Workspaces"])
 
 @app.get("/")
 async def redirect():
@@ -83,6 +85,24 @@ app.openapi_schema["info"] = {
     }
 }
 
+def delete_all_converted_csv(folder_path):
+    # Check if the folder exists
+    if not os.path.exists(folder_path):
+        print(f"The folder {folder_path} does not exist.")
+        return
+
+    # Loop through all files and folders in the specified directory
+    for filename in os.listdir(folder_path):
+        file_path = os.path.join(folder_path, filename)
+        try:
+            if os.path.isfile(file_path) or os.path.islink(file_path):
+                os.unlink(file_path)  # Delete the file or link
+            elif os.path.isdir(file_path):
+                shutil.rmtree(file_path)  # Delete the directory and its contents
+        except Exception as e:
+            print(f"Failed to delete {file_path}. Reason: {e}")
+
+
 @app.on_event("startup")
 async def startup(
 ):
@@ -98,6 +118,11 @@ async def startup(
         await email_template_service.populate_email_templates(templates_directory)
 
     get_logger().info("Successfully populated default email templates and types")
+    init_topic_engine()
+
+    # delete_all_converted_csv("tmp/converted_csv")
+    # reset_index()
+    # get_logger().info("Successfully upserted data to chromadb")
 
 
 if __name__ == "__main__":
