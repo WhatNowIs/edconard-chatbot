@@ -24,11 +24,19 @@ import {
 } from "react";
 import { getCookie } from "../service/user-service";
 
+export enum SettingPanel {
+  Profile = "Profile",
+  Billing = "Billing",
+  Reports = "Reports",
+  Workspace = "Workspaces",
+}
+
 interface ChatContextType {
   threads: ResponseThread[];
   messages: ResponseMessage[];
   selectedThread: ResponseThread | null;
   article: Article | null;
+  currentSettingPanel: SettingPanel;
   setSelectedThread: Dispatch<SetStateAction<ResponseThread | null>>;
   setThreads: Dispatch<SetStateAction<ResponseThread[]>>;
   loadThreads: () => Promise<void>;
@@ -42,6 +50,7 @@ interface ChatContextType {
   deleteThread: (thread_id: string) => Promise<void>;
   selectThread: (thread_id: string) => void;
   setArticle: Dispatch<SetStateAction<Article | null>>;
+  setCurrentSettingPanel: Dispatch<SetStateAction<SettingPanel>>;
 }
 
 const ChatContext = createContext<ChatContextType | undefined>(undefined);
@@ -55,6 +64,9 @@ export const ChatProvider: FC<ChatProviderProps> = ({ children }) => {
   const [messages, setMessages] = useState<ResponseMessage[]>([]);
   const [selectedThread, setSelectedThread] = useState<ResponseThread | null>(
     null,
+  );
+  const [currentSettingPanel, setCurrentSettingPanel] = useState<SettingPanel>(
+    SettingPanel.Profile,
   );
   const [article, setArticle] = useState<Article | null>(null);
 
@@ -166,6 +178,7 @@ export const ChatProvider: FC<ChatProviderProps> = ({ children }) => {
         messages,
         selectedThread,
         article,
+        currentSettingPanel,
         setSelectedThread,
         setThreads,
         loadThreads,
@@ -176,6 +189,7 @@ export const ChatProvider: FC<ChatProviderProps> = ({ children }) => {
         deleteThread,
         selectThread,
         setArticle,
+        setCurrentSettingPanel,
       }}
     >
       {children}
