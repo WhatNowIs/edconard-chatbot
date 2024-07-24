@@ -1,7 +1,16 @@
-from typing import List, Optional
+import enum
+from typing import Any, List, Optional
 from pydantic import BaseModel, EmailStr
 from datetime import datetime
 from enum import Enum
+
+class EntityStatusEnum(str, enum.Enum):
+    Active = "Active"
+    Inactive = "Inactive"
+    Deleted = "Deleted"
+    Blocked = "Blocked"
+    Pending = "Pending"
+    Used = "Used"
 
 class EmailTypeEnum(Enum):
     ACCOUNT_VERIFICATION = "account_verification"
@@ -22,11 +31,21 @@ class ResponseMessage(BaseModel):
 class ResponseThread(BaseModel):
     id : str 
     user_id : str
+    workspace_id: str
     title : str
-    # messages : List[ResponseMessage]
 
 class ThreadCreate(BaseModel):
     title: str
+    workspace_id: str
+    user_id: str
+
+class ThreadUpdate(BaseModel):
+    title: str
+    workspace_id: str
+    user_id: str
+
+class ChatMode(BaseModel):
+    is_research_exploration: bool
 
 class UserModel(BaseModel):
     id: Optional[str] = None
@@ -61,3 +80,38 @@ class ResetPassword(BaseModel):
 class UpdatePassword(BaseModel):    
     password: str
     email: EmailStr
+    
+    
+class SetArticleData(BaseModel):    
+    document_link: str
+    order: int
+
+
+class Document(BaseModel):
+    title: str
+    content: Optional[List[Any]] = None
+    inline_objects: Optional[Any] = None
+
+class DocumentResponse(BaseModel):
+    headline: str
+    authors: str
+    publication: str
+    summary: str
+    order_of_appearance: str
+
+class ChangePassword(BaseModel):
+    current_password: str
+    new_password: str
+    confirm_password: str
+
+class WorkspaceCreate(BaseModel):
+    name: str
+
+class Workspace(BaseModel):
+    id: str
+    name: str
+    created_at: datetime
+    status: Optional[EntityStatusEnum]
+
+    class Config:
+        orm_mode = True

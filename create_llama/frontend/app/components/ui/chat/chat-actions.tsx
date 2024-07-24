@@ -1,3 +1,4 @@
+import React from 'react'; 
 import { PauseCircle, RefreshCw } from "lucide-react";
 
 import { Button } from "../button";

@@ -1,7 +1,8 @@
+import React from 'react';
 import { SourceNode } from "./index";
 import CitationDisplay from "./widgets/citation-display";
 import { Citation } from "@/app/types/threads";
-import { DocumentColorEnum, borderColors } from '@/app/utils/colors'
+import { DocumentColorEnum } from '@/app/utils/colors'
 
 export function ChatData({
   data,

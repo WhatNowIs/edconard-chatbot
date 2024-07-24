@@ -1,3 +1,4 @@
+from datetime import timedelta
 from typing import Any, Optional
 from fastapi import APIRouter, Depends, HTTPException, logger, status
 from fastapi.responses import JSONResponse
@@ -5,14 +6,14 @@ from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 import jwt
 from sqlalchemy.ext.asyncio import AsyncSession
 from starlette.status import HTTP_400_BAD_REQUEST
-from src.core.dbconfig.redis import get_redis_client
+from src.core.config.redis import get_redis_client
 from src.core.services.credential import CredentialService
 from src.core.services.mail import EmailTemplateService, EmailTypeService, ResendClient, get_mail_service
 from src.core.services.otp import OTPService
-from src.core.services.user import UserService
-from src.core.dbconfig.postgres import get_db
+from src.core.services.user import ACCESS_TOKEN_EXPIRE_MINUTES, REFRESH_SECRET_KEY, UserService
+from src.core.config.postgres import get_db
 from src.core.models.base import OTP, EmailTemplate, EmailType, EntityStatus, User
-from src.schema import EmailTypeEnum, ResetPassword, UpdatePassword, UserCreateModel, UserModel, VerifyOtp
+from src.schema import ChangePassword, EmailTypeEnum, ResetPassword, UpdatePassword, UserCreateModel, UserModel, VerifyOtp
 from src.utils.encryption import encrypt, to_base64
 from src.utils.logger import get_logger 
 from redis.asyncio.client import Redis
@@ -122,13 +123,64 @@ async def authenticate_user(
     user_service: UserService = Depends(get_user_service),    
     redis_client: Redis = Depends(get_redis_client)
 ):
-    is_authenticated, token, user, message = await user_service.login(form_data.username, form_data.password, redis_client)
+    is_authenticated, token, refresh_token, user, message = await user_service.login(
+        form_data.username, 
+        form_data.password, 
+        redis_client, True
+    )
     if not is_authenticated:
         raise HTTPException(
             status_code=HTTP_400_BAD_REQUEST,
             detail="Incorrect username or password"
         )
-    return {"access_token": token, "token_type": "bearer", "user": UserModel(**user.to_dict()), "message": message}
+    return {
+        "access_token": token, 
+        "refresh_token": refresh_token, 
+        "token_type": "bearer", 
+        "user": UserModel(**user.to_dict()), 
+        "message": message
+    }
+
+@accounts_router.post("/refresh")
+async def refresh_token(
+    refresh_token: str,
+    user_service: UserService = Depends(get_user_service),
+    redis_client: Redis = Depends(get_redis_client)
+):
+    try:
+        payload = jwt.decode(refresh_token, REFRESH_SECRET_KEY, algorithms=["HS256"])
+        user_id = payload["sub"]
+        email = payload["email"]
+
+        # Verify the refresh token is stored in Redis
+        stored_refresh_token = await redis_client.get(f"refresh_session:{user_id}")
+        if stored_refresh_token != refresh_token:
+            raise HTTPException(
+                status_code=status.HTTP_401_UNAUTHORIZED,
+                detail="Invalid refresh token",
+                headers={"WWW-Authenticate": "Bearer"},
+            )
+
+        token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
+        new_access_token = user_service.create_access_token({"sub": user_id, "email": email}, token_expires)
+
+        await redis_client.setex(f"session:{user_id}", ACCESS_TOKEN_EXPIRE_MINUTES * 60, new_access_token)
+
+        return {"access_token": new_access_token, "token_type": "bearer"}
+
+    except jwt.ExpiredSignatureError:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Refresh token expired",
+            headers={"WWW-Authenticate": "Bearer"},
+        )
+    except jwt.InvalidTokenError:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Invalid refresh token",
+            headers={"WWW-Authenticate": "Bearer"},
+        )
+
 
 @accounts_router.post("/verify-otp")
 async def verify_otp_code(
@@ -173,8 +225,6 @@ async def verify_otp_code(
 
         return {"message": str(e), "status": 400}
     
-    
-
 @accounts_router.get("/resend-otp/{uid}")
 async def verify_otp_code(
     uid: str,
@@ -289,7 +339,6 @@ async def forgot_password(
 
         return {"message": str(e), "status": 400}
     
-
 @accounts_router.post("/reset-password")
 async def reset_password(
     data: UpdatePassword,
@@ -325,8 +374,51 @@ async def reset_password(
         return {"message": "No account linked with the email you provided", "status": 400}
     except Exception as e:
         get_logger().error(f"Error sending email: {e}")
-        return {"message": str(e), "status": 400}
+        return {"message": str(e), "status": 400}  
+    
+@accounts_router.post("/change-password")
+async def change_password(
+    data: ChangePassword,
+    db: AsyncSession = Depends(get_db),
+    session: dict = Depends(get_session), 
+    user_service: UserService = Depends(get_user_service),
+    mail_client: ResendClient = Depends(get_mail_service)
+) -> Any:
+    try:
+        
+        if "sub" in session:
+            email = session["email"]
+            user = await user_service.get_by_email(email)
 
+            if (user is not None):
+
+                is_updated, _ = await user_service.change_password(user=user, current_password=data.current_password, new_password=data.new_password)
+
+                if(is_updated):
+
+                    email_template_service = EmailTemplateService(db)
+                    email_template: EmailTemplate = await email_template_service.get_template_by_name(EmailTypeEnum.PASSWORD_UPDATE.value)
+                    context = {
+                        "username": user.email
+                    }
+                    email_content = ResendClient.render_template(email_template.content, context)
+
+                    await mail_client.send_email(content=email_content, subject=email_template.subject, to_email=user.email)
+
+                    return {"message": "Your password been updated successfully", "status": 200}
+                else:
+                    return {"message": "Failed to update password", "status": 400}
+            
+            return {"message": "No account linked with the email you provided", "status": 400}
+        
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Invalid session",
+            headers={"WWW-Authenticate": "Bearer"},
+        )
+    except Exception as e:
+        get_logger().error(f"Error sending email: {e}")
+        return {"message": str(e), "status": 400}
 
 @accounts_router.get("/signout")
 async def signout(
@@ -336,7 +428,9 @@ async def signout(
     if "sub" in session:
         user_id = session["sub"]
         # Remove the session from Redis
-        redis_client.delete(f"session:{user_id}")
+        await redis_client.delete(f"session:{user_id}")
+        await redis_client.delete(f"refresh_session:{user_id}")
+        await redis_client.delete(f"chat_mode:{user_id}")
         
         return JSONResponse(status_code=200, content={"message": "Successfully signed out"})
     raise HTTPException(

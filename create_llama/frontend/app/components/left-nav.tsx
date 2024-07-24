@@ -1,5 +1,6 @@
 "use client"
 
+import React from 'react'; 
 import Image from "next/image";
 import { usePathname } from 'next/navigation';
 import { Button } from "@/app/components/ui/button";
@@ -14,8 +15,10 @@ import { useState } from "react";
 import AuthContext from "../context/auth-context";
 import { useContext } from "react";
 import ChatContext from "../context/chat-context";
+import { ResponseThread } from "../service/thread-service";
+import { UserFormType } from "../service/user-service";
 
-export default function LeftNav() {
+export default function LeftNav({ userThreads, userData, mode }: { userThreads: ResponseThread[]; userData: UserFormType | null; mode: boolean; }) {
     const currentPath = usePathname();
     const chatContext = useContext(ChatContext);
     const [isLoading, setIsLoading] = useState<boolean>(false);
@@ -26,7 +29,17 @@ export default function LeftNav() {
     if (!authContext) {
         throw new Error('useContext must be used within an AuthProvider');
     }
-    const { user } = authContext;
+    const { user, setUser, setIsResearchExploration } = authContext;
+
+    if(chatContext){
+        const { setThreads, threads } = chatContext;
+        threads.length === 0 && setThreads(userThreads);
+    }
+
+    if(!user){
+        setUser(userData);
+        setIsResearchExploration(mode);
+    }
     
     const handleNewThread = () => {
         setIsLoading(true);
@@ -42,13 +55,15 @@ export default function LeftNav() {
     };
 
     return (
-        <div className="w-80 flex flex-col h-screen bg-white border-r border-gray-200 p-4">
+        <div className="w-80 flex flex-col h-screen overflow-y-auto bg-white border-r border-gray-200 p-4">
             <div className="w-full flex mb-4 justify-between items-center gap-2">
                 <Link href={"/"} className="flex gap-2">
                     <EdConardLogo />
                     <span className="text-2xl">CRI</span>
                 </Link>
-                <Harmburger />
+                <div className='p-2 rounded-md hover:bg-gray-100'>
+                    <Harmburger />
+                </div>
             </div>
             {user && (
                     <div className="flex items-center mb-6 border p-2 rounded-md">
@@ -68,23 +83,23 @@ export default function LeftNav() {
             }           
             {
                 currentPath !== "/accounts" && (
-                    <>
-                        <Button 
-                            type="submit" 
-                            className="w-full flex items-center mb-6" 
-                            onClick={handleNewThread} 
-                            disabled={isButtonDisabled}
-                        >
-                            {isLoading ? "Loading..." : <><PlusIcon /> New Thread</>}
-                        </Button>                        
-                        {user && (
-                            <>                        
-                                <Workspaces />
-                                <RecentThreads />
-                                <ChatBundles />
-                                <Marketplace />
-                            </>
-                        )}
+                    <>              
+                    {user && (
+                        <>     
+                            <Button 
+                                type="submit" 
+                                className="w-full flex items-center mb-6" 
+                                onClick={handleNewThread} 
+                                disabled={isButtonDisabled}
+                            >
+                                {isLoading ? "Loading..." : <><PlusIcon /> New Thread</>}
+                            </Button>                        
+                            <Workspaces />
+                            <RecentThreads />
+                            <ChatBundles />
+                            <Marketplace />
+                        </>
+                    )}
                     </>
                 )
             }

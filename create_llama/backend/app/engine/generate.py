@@ -1,4 +1,7 @@
+import re
+from create_llama.backend.app.engine.index import get_topic_index
 from dotenv import load_dotenv
+from src.core.services.gcp import store_spreadsheet
 
 load_dotenv()
 
@@ -18,7 +21,6 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger()
 
 STORAGE_DIR = os.getenv("STORAGE_DIR", "storage")
-
 
 def get_doc_store():
 
@@ -60,12 +62,22 @@ def persist_storage(docstore, vector_store):
 
 def generate_datasource():
     init_settings()
+
+    logger.info("Getting speadsheet which contains topics and subtopics data")
+    topics_speadsheet_url = "https://docs.google.com/spreadsheets/d/1hW-vUFcWBM40MZpbSwqLsWVgtel0Z2Aj-3hffNX3VXc/edit"
+    match = re.search(r'spreadsheets/d/([a-zA-Z0-9-_]+)/edit', topics_speadsheet_url)
+
+    spreadsheet_id = match.group(1)
+
+    store_spreadsheet(spreadsheet_id)
+
     logger.info("Generate index for the provided data")
 
     # Get the stores and documents or create new ones
     documents = get_documents()
     docstore = get_doc_store()
     vector_store = get_vector_store()
+
 
     # Run the ingestion pipeline
     _ = run_pipeline(docstore, vector_store, documents)
@@ -74,6 +86,7 @@ def generate_datasource():
     persist_storage(docstore, vector_store)
 
     logger.info("Finished generating the index")
+
 
 
 if __name__ == "__main__":

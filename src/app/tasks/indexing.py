@@ -29,7 +29,7 @@ def reset_index():
             chroma_client.delete_collection(collection_name)
 
     def reset_index_qdrant():
-        from app.engine.vectordbs.qdrant import get_vector_store
+        from create_llama.backend.app.engine.vectordbs.qdrant import get_vector_store
 
         store = get_vector_store()
         store.client.delete_collection(

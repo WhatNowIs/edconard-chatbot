@@ -1,3 +1,4 @@
+import React from 'react'; 
 import { Computer, User2 } from "lucide-react";
 
 export default function ChatAvatar({ role }: { role: string }) {

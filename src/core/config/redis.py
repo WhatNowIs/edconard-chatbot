@@ -2,7 +2,7 @@ import os
 from pathlib import Path
 from dotenv import load_dotenv
 import redis.asyncio as redis
-from src.core.dbconfig.datasource import Datasource
+from src.core.config.datasource import Datasource
 from redis.asyncio.client import Redis
 
 current_file = Path(__file__).resolve()
