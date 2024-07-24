@@ -23,6 +23,13 @@
     },
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["next-env.d.ts", "app/modules/react-pdf.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/types/thread.tss"],
+  "include": [
+    "next-env.d.ts",
+    "app/modules/react-pdf.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "app/types/thread.ts"
+  ],
   "exclude": ["node_modules"]
 }

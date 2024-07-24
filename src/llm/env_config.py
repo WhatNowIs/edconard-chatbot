@@ -12,12 +12,14 @@ from pydantic import (
 )
 from pydantic_settings import BaseSettings, SettingsConfigDict
 from src.app.constants import ENV_FILE_PATH
-from src.llm.provider_config import DBConfig, MailConfig, ProviderConfig
+from src.llm.base_config import BaseEnvConfig, MailConfig
+from src.llm.db_config import DBConfig
+from src.llm.provider_config import ProviderConfig
 
 
 # We're using inheritance to flatten all the fields into a single class
 # Todo: Refactor API to nested structure
-class EnvConfig(ProviderConfig, DBConfig, MailConfig):
+class EnvConfig(ProviderConfig, BaseEnvConfig, DBConfig, MailConfig):
     """
     Inference configuration settings from environment variables.
     """

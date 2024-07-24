@@ -52,5 +52,13 @@ dev:
 	@export ENVIRONMENT=dev; \
 	trap 'kill 0' SIGINT; \
 	poetry run python main.py & \
+	# npm run dev --prefix ./create_llama/frontend & \
+	# sleep 1; \
 	# npm run dev --prefix ./admin & \
 	wait
+
+# dev:
+# 	set ENVIRONMENT=dev && \
+# 	start poetry run python main.py && \
+# 	cd create_llama/frontend && \
+# 	npm run dev

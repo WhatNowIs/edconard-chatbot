@@ -3,7 +3,7 @@ from pathlib import Path
 from dotenv import load_dotenv
 from sqlalchemy.ext.asyncio import AsyncSession, async_sessionmaker, create_async_engine
 from sqlalchemy.engine import Engine
-from src.core.dbconfig.datasource import Datasource
+from src.core.config.datasource import Datasource
 
 current_file = Path(__file__).resolve()
 root_directory = current_file.parents[3]

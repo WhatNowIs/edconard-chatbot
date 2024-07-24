@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import React from 'react'; 
 import "katex/dist/katex.min.css";
 import { FC, memo } from "react";
 import ReactMarkdown, { Options } from "react-markdown";
@@ -34,12 +36,12 @@ export default function Markdown({ content }: { content: string }) {
     <MemoizedReactMarkdown
       className="prose dark:prose-invert prose-p:leading-relaxed prose-pre:p-0 break-words custom-markdown"
       remarkPlugins={[remarkGfm, remarkMath]}
-      rehypePlugins={[rehypeKatex as any]}
+      rehypePlugins={[rehypeKatex as unknown as any]}
       components={{
         p({ children }) {
           return <p className="mb-2 last:mb-0">{children}</p>;
         },
-        code({ node, inline, className, children, ...props }) {
+        code({ inline, className, children, ...props }) {
           if (children.length) {
             if (children[0] == "▍") {
               return (

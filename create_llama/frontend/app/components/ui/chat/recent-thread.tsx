@@ -1,11 +1,11 @@
 
 'use client'
 
+import React from 'react'; 
 import { useContext, useEffect, useState } from "react";
 import { ShevronDown, ShevronUp } from "./icons/main-icons";
 import ChatContext from "@/app/context/chat-context";
 import AuthContext from "@/app/context/auth-context";
-import { HiMiniPencil } from "react-icons/hi2";
 
 export default function RecentThreads() {    
     const [isShevronOpen, setShevronIsOpen] = useState<boolean>(true);
@@ -19,37 +19,30 @@ export default function RecentThreads() {
     const { threads, loadThreads, selectThread, selectedThread } = chatContext;
 
     useEffect(() => {
-        if (user) {
+        if (user && threads.length === 0) {
             loadThreads();
         }
     }, []);
-
-    // useEffect(() => {
-    //     if(selectedThread){
-
-    //     }
-
-    // }, [selectedThread]);
 
     const onSelect = (threadId: string) => {
         selectThread(threadId)
     }
 
     return (    
-        <div className="mb-6">
+        <div className="mb-2">
             <div className="flex justify-between items-center text-gray-700 mb-2">
-            <div className="font-semibold">Recent Threads</div>
+            <div className="font-semibold text-sm">Recent Threads</div>
                 <button className="bg-transparent border-none" onClick={() => setShevronIsOpen(!isShevronOpen)}>
                     {isShevronOpen ? <ShevronDown /> : <ShevronUp />}
                 </button>
             </div>
             {
-                isShevronOpen && threads && threads.slice().reverse().map((thread) => (
+                (isShevronOpen && threads) && threads.slice().reverse().map((thread) => (
                     <div 
+                        key={thread.id}
                         onClick={() => onSelect(thread.id)}
-                        className={`flex justify-between text-gray-600 my-2 cursor-pointer p-2 ${selectedThread?.id === thread.id ? "bg-gray-100 rounded-md": ""}`}>
-                        <span>{thread.title}</span>
-                        {/* <HiMiniPencil/> */}
+                        className={`flex justify-between text-gray-600 text-xs my-1 cursor-pointer hover:bg-gray-100 hover:rounded-md p-2 ${selectedThread?.id === thread.id ? "bg-gray-100 rounded-md": ""}`}>
+                        <span>{thread.title.length > 30 ? `${thread.title.substring(0, 30)}...` : thread.title.substring(0, 30)}</span>
                     </div>
                 ))
             }

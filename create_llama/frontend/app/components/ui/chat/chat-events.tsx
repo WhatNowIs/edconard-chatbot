@@ -1,3 +1,4 @@
+import React from 'react'; 
 import { ChevronDown, ChevronRight, Loader2 } from "lucide-react";
 import { useState } from "react";
 import { Button } from "../button";
@@ -30,7 +31,7 @@ export function ChatEvents({
   );
 
   return (
-    <div className="border-l-2 border-indigo-400 pl-2">
+    <div className="border-l-2 border-gray-800 pl-2">
       <Collapsible open={isOpen} onOpenChange={setIsOpen}>
         <CollapsibleTrigger asChild>
           <Button variant="secondary" className="space-x-2">
@@ -47,14 +48,18 @@ export function ChatEvents({
             ))}
           </div>
           {
-            citations.map((citation) => <CitationDisplay citation={{ 
-              documentId: citation.id,
-              snippet: citation.text,
-              pageNumber: citation.metadata?.page_label as number,
-              ticker: citation.metadata?.file_name as string,
-              color: DocumentColorEnum.gray,
-            }}
-            source={citation} />)
+            citations.map((citation) => (
+            <CitationDisplay 
+              key={citation.id}
+              citation={{ 
+                documentId: citation.id,
+                snippet: citation.text,
+                pageNumber: citation.metadata?.page_label as number,
+                ticker: citation.metadata?.file_name as string,
+                color: DocumentColorEnum.gray,
+              }}
+              source={citation} 
+            />))
           }
           </div>          
         </CollapsibleContent>
