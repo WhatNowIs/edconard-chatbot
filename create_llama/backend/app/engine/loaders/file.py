@@ -71,10 +71,9 @@ def get_file_documents(config: FileLoaderConfig | CSVLoaderConfig):
             filename_as_id=True,
         )
         if config.use_llama_parse:
-            parser = llama_parse_parser()
-            reader.file_extractor = {".pdf": parser, ".csv": csv_parser}
-        else:
-            reader.file_extractor = {".csv": csv_parser}
+            parser = LlamaParse()
+            reader.file_extractor = {".pdf": parser, ".csv": parser}
+
         return reader.load_data()
     except ValueError as e:
         import sys, traceback
