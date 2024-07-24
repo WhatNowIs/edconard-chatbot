@@ -23,7 +23,10 @@ import {
   useState,
 } from "react";
 import { getCookie } from "../service/user-service";
-import { fetchWorkspacesByUser, ResponseWorkspace } from "../service/workspace-service";
+import {
+  ResponseWorkspace,
+  fetchWorkspaces,
+} from "../service/workspace-service";
 
 export enum SettingPanel {
   Profile = "Profile",
@@ -88,9 +91,9 @@ export const ChatProvider: FC<ChatProviderProps> = ({ children }) => {
     }
   };
 
-  const loadWorkspaces = async (userId: string) => {
+  const loadWorkspaces = async () => {
     try {
-      const fetchedWorkspaces = await fetchWorkspacesByUser(userId);
+      const fetchedWorkspaces = await fetchWorkspaces();
       setWorkspaces(fetchedWorkspaces);
     } catch (error) {
       console.error("Failed to fetch threads:", error);
@@ -120,13 +123,25 @@ export const ChatProvider: FC<ChatProviderProps> = ({ children }) => {
     if (token && threads.length === 0) {
       const fetchUserThreads = async () => {
         try {
-          await loadThreads();
+          await loadWorkspaces();
         } catch (error) {
           console.error("Failed to load threads:", error);
         }
       };
 
       fetchUserThreads();
+    }
+
+    if (token && workspaces.length === 0) {
+      const fetchUserWorkspaces = async () => {
+        try {
+          await loadThreads();
+        } catch (error) {
+          console.error("Failed to load threads:", error);
+        }
+      };
+
+      fetchUserWorkspaces().catch((error) => console.log(error));
     }
   }, []);
 
@@ -143,6 +158,13 @@ export const ChatProvider: FC<ChatProviderProps> = ({ children }) => {
       loadMessages().catch((error) => console.log(error));
     }
   }, [threads]);
+
+  useEffect(() => {
+    const currentWS = workspaces[
+      workspaces.length - 1
+    ] as unknown as ResponseWorkspace;
+    setCurrentWorkspace(currentWS);
+  }, [workspaces]);
 
   const addThread = async (data: ThreadCreate) => {
     try {
@@ -212,7 +234,7 @@ export const ChatProvider: FC<ChatProviderProps> = ({ children }) => {
         setCurrentSettingPanel,
         setWorkspaces,
         setCurrentWorkspace,
-        loadWorkspaces
+        loadWorkspaces,
       }}
     >
       {children}

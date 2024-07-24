@@ -2,7 +2,7 @@
 
 import AuthContext from "@/app/context/auth-context";
 import ChatContext from "@/app/context/chat-context";
-import { useContext, useEffect, useState } from "react";
+import { useContext, useState } from "react";
 import { ShevronDown, ShevronUp } from "./icons/main-icons";
 // import { MessageCircle } from "lucide-react";
 
@@ -13,21 +13,8 @@ export default function Workspaces() {
 
   if (!chatContext || !authContext) return <></>;
 
-  const {
-    currentWorkspace,
-    setCurrentWorkspace,
-    workspaces,
-    loadThreads,
-    loadWorkspaces,
-  } = chatContext;
-
-  const { user } = authContext;
-
-  useEffect(() => {
-    if (user && workspaces.length === 0) {
-      loadWorkspaces(user.id as string);
-    }
-  }, []);
+  const { currentWorkspace, setCurrentWorkspace, workspaces, loadThreads } =
+    chatContext;
 
   const onSelect = (workspace_Id: string) => {
     const currentWS = workspaces.find(
