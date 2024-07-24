@@ -1,12 +1,10 @@
 import LeftNav from "@/app/components/left-nav";
 import RightNav from "@/app/components/right-nav";
-import AccountOverview from "@/app/components/ui/account/account-overview";
-import UpdateProfile from "@/app/components/ui/account/update-profile";
 import { ResponseThread } from "@/app/service/thread-service";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import { Suspense } from "react";
-import ChangePasswordForm from "../components/ui/account/change-password-form";
+import SettingsPanel from "../components/ui/account/settings-panel";
 import { UserFormType, getChatMode } from "../service/user-service";
 
 async function getThreads(token: string): Promise<ResponseThread[]> {
@@ -67,23 +65,7 @@ export default async function AccountSettings() {
           mode={userData.mode}
         />
         <main className="w-full h-screen items-center flex flex-col overflow-auto">
-          <div className="grid w-full grid-cols-1 gap-y-10 px-4 py-16 sm:px-6 md:grid-cols-3 lg:px-8">
-            <UpdateProfile user={userData.user as UserFormType} />
-            <AccountOverview userData={userData.user as UserFormType} />
-          </div>
-
-          <div className="grid w-full grid-cols-1 gap-y-10 px-4 py-16 sm:px-6 md:grid-cols-3 lg:px-8">
-            <div>
-              <h2 className="text-base font-semibold leading-7">
-                Change password
-              </h2>
-              <p className="mt-1 text-sm leading-6 text-gray-400">
-                Update your password associated with your account.
-              </p>
-            </div>
-
-            <ChangePasswordForm />
-          </div>
+          <SettingsPanel userData={userData.user as UserFormType} />
         </main>
         <RightNav />
       </div>
