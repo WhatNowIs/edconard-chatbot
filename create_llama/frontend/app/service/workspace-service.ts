@@ -17,9 +17,7 @@ export const ResponseWorkspaceSchema = z.object({
   name: z.string(),
   created_at: z.string(),
   updated_at: z.string().nullable(),
-  status: z
-    .enum(["Active", "Inactive", "Deleted", "Blocked", "Pending", "Used"])
-    .nullable(),
+  status: z.string().nullable(),
   users: z.array(z.any()).optional(),
   threads: z.array(z.any()).optional(),
 });
