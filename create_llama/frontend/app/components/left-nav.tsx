@@ -55,6 +55,9 @@ export default function LeftNav({
     if (chatContext) {
       chatContext.addThread({
         title: "New thread",
+        workspace_id: chatContext
+          ? (chatContext.currentWorkspace?.id as string)
+          : "",
         user_id: user?.id as string,
       });
       setIsLoading(false);

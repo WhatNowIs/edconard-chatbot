@@ -71,6 +71,13 @@ export async function fetchWorkspaces(): Promise<ResponseWorkspace[]> {
   return res as ResponseWorkspace[];
 }
 
+export async function fetchWorkspacesByUser(
+  userId: string,
+): Promise<ResponseWorkspace[]> {
+  const res = await fetchWithAuth(`${baseURL}user/${userId}`);
+  return res as ResponseWorkspace[];
+}
+
 export async function updateWorkspace(
   workspace_id: string,
   data: WorkspaceCreate,
