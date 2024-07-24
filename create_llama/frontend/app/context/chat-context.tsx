@@ -23,6 +23,7 @@ import {
   useState,
 } from "react";
 import { getCookie } from "../service/user-service";
+import { fetchWorkspacesByUser, ResponseWorkspace } from "../service/workspace-service";
 
 export enum SettingPanel {
   Profile = "Profile",
@@ -37,9 +38,12 @@ interface ChatContextType {
   selectedThread: ResponseThread | null;
   article: Article | null;
   currentSettingPanel: SettingPanel;
+  workspaces: ResponseWorkspace[];
+  currentWorkspace: ResponseWorkspace | null;
   setSelectedThread: Dispatch<SetStateAction<ResponseThread | null>>;
   setThreads: Dispatch<SetStateAction<ResponseThread[]>>;
   loadThreads: () => Promise<void>;
+  loadWorkspaces: (userId: string) => Promise<void>;
   addThread: (data: ThreadCreate) => Promise<ResponseThread | null>;
   editThread: (
     thread_id: string,
@@ -51,6 +55,8 @@ interface ChatContextType {
   selectThread: (thread_id: string) => void;
   setArticle: Dispatch<SetStateAction<Article | null>>;
   setCurrentSettingPanel: Dispatch<SetStateAction<SettingPanel>>;
+  setCurrentWorkspace: Dispatch<SetStateAction<ResponseWorkspace | null>>;
+  setWorkspaces: Dispatch<SetStateAction<ResponseWorkspace[]>>;
 }
 
 const ChatContext = createContext<ChatContextType | undefined>(undefined);
@@ -65,6 +71,9 @@ export const ChatProvider: FC<ChatProviderProps> = ({ children }) => {
   const [selectedThread, setSelectedThread] = useState<ResponseThread | null>(
     null,
   );
+  const [workspaces, setWorkspaces] = useState<ResponseWorkspace[]>([]);
+  const [currentWorkspace, setCurrentWorkspace] =
+    useState<ResponseWorkspace | null>(null);
   const [currentSettingPanel, setCurrentSettingPanel] = useState<SettingPanel>(
     SettingPanel.Profile,
   );
@@ -74,6 +83,15 @@ export const ChatProvider: FC<ChatProviderProps> = ({ children }) => {
     try {
       const fetchedThreads = await fetchThreads();
       setThreads(fetchedThreads);
+    } catch (error) {
+      console.error("Failed to fetch threads:", error);
+    }
+  };
+
+  const loadWorkspaces = async (userId: string) => {
+    try {
+      const fetchedWorkspaces = await fetchWorkspacesByUser(userId);
+      setWorkspaces(fetchedWorkspaces);
     } catch (error) {
       console.error("Failed to fetch threads:", error);
     }
@@ -179,6 +197,8 @@ export const ChatProvider: FC<ChatProviderProps> = ({ children }) => {
         selectedThread,
         article,
         currentSettingPanel,
+        workspaces,
+        currentWorkspace,
         setSelectedThread,
         setThreads,
         loadThreads,
@@ -190,6 +210,9 @@ export const ChatProvider: FC<ChatProviderProps> = ({ children }) => {
         selectThread,
         setArticle,
         setCurrentSettingPanel,
+        setWorkspaces,
+        setCurrentWorkspace,
+        loadWorkspaces
       }}
     >
       {children}

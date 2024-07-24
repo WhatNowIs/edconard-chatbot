@@ -33,7 +33,6 @@ export const WorkspaceCreationForm = ({
         ),
         title: "Workspace created successfully",
       });
-      form.reset(); // Reset form on success
       form.setValue("name", "");
     } catch (error) {
       toast({
