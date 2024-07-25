@@ -28,11 +28,18 @@ class ResponseMessage(BaseModel):
     content : str
     annotations: Optional[List[dict]] = None
 
+    class Config:
+        from_attributes = True
+
+
 class ResponseThread(BaseModel):
     id : str 
     user_id : str
-    workspace_id: str
+    workspace_id: Optional[str] = None
     title : str
+    
+    class Config:
+        from_attributes = True
 
 class ThreadCreate(BaseModel):
     title: str
@@ -60,6 +67,10 @@ class UserModel(BaseModel):
     deleted_at: Optional[datetime] = None
     updated_at: Optional[datetime] = None
 
+    class Config:
+        from_attributes = True
+
+
 class UserCreateModel(BaseModel):
     password: str
     user_data: UserModel
@@ -81,11 +92,9 @@ class UpdatePassword(BaseModel):
     password: str
     email: EmailStr
     
-    
 class SetArticleData(BaseModel):    
     document_link: str
     order: int
-
 
 class Document(BaseModel):
     title: str

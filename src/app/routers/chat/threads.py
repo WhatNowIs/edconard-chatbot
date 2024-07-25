@@ -27,7 +27,7 @@ async def create_thread(
         )
         created_thread = await thread_service.create(thread)   
 
-        return ResponseThread(**created_thread.to_dict())
+        return ResponseThread.model_validate(created_thread)
     
     raise HTTPException(
         status_code=status.HTTP_401_UNAUTHORIZED,
@@ -44,7 +44,7 @@ async def fetch_threads(
 
         threads = await thread_service.get_all_by_user_id(user_id)
 
-        return [ResponseThread(**thread.to_dict()) for thread in threads]
+        return [ResponseThread.model_validate(thread) for thread in threads]
     
     raise HTTPException(
         status_code=status.HTTP_401_UNAUTHORIZED,
@@ -65,7 +65,7 @@ async def update_thread(
             thread.title = data.title
             await thread_service.update(thread_id, thread)
             
-            return ResponseThread(**thread.to_dict())
+            return ResponseThread.model_validate(thread)
         else:
             print("Thread not found")
 
@@ -99,7 +99,7 @@ async def get_messages_by_thread_id(
     if "sub" in session:
         user_id = session["sub"]
         messages = await thread_service.get_messages_by_thread_id(uid=user_id, thread_id=thread_id)
-        reponse_messages = [ResponseMessage(**message.to_dict()) for message in messages]        
+        reponse_messages = [ResponseMessage.model_validate(message) for message in messages]        
         return reponse_messages
 
     raise HTTPException(

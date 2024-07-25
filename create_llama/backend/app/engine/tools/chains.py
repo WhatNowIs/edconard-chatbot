@@ -1,14 +1,23 @@
 import os
-from typing import Optional
+from typing import List, Optional
 from langchain.callbacks.manager import AsyncCallbackManager 
 from langchain_community.chat_models.openai import ChatOpenAI
 from langchain_core.output_parsers import StrOutputParser
 from langchain.prompts import PromptTemplate
 from langchain.chains.llm import LLMChain
+from llama_cloud import MessageRole
 from src.core.config.postgres import get_db
 from src.core.config.redis import get_redis_client
+from src.core.models.base import Message
+from src.core.services.thread import ThreadService
 from src.core.services.user import UserService
 from src.utils.logger import get_logger
+from llama_index.llms.groq import Groq
+from llama_index.core.llms import ChatMessage
+
+
+MODEL_NAME = "llama-3.1-405b-reasoning"
+GROK_API_KEY = "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"
 
 master_prompt_template = """
 Given a conversation (between Human and Assistant) and a follow up message from Human, your focus should be to understand the context from the conversation and answer very well a follow up question.
@@ -110,11 +119,12 @@ Energy: []
 For the other tasks please use the tools at your disposal to answer questions related to tweet generation, title and meta description generation etc.
 """
 
-async def tweet_chain(
+
+async def grok_tweet_chain(
     input: str,
     user_id: str,
-    chat_history: Optional[str],
-) -> LLMChain:
+    thread_id: str
+):
 
     """
     Useful for handling any question related to tweet generation and optimization based on the article data like headline, authors, publisher, and summary
@@ -125,21 +135,14 @@ async def tweet_chain(
         - input: This is an input question which the ai agent is supposed to answer.
         - article: This an object which contains the article's information such as headline, publisher, authors and the summary of the article
     """   
-    stream_manager = AsyncCallbackManager([])
     
     redis = await get_redis_client()
     db = get_db()
     user_service = UserService(db)
-
+    messages_tmp: List[Message] = await user_service.get_chat_history(user_id = user_id, redis_client = redis)
     article = await user_service.get_article(user_id = user_id, redis_client = redis)
-
-    llm = ChatOpenAI(
-        temperature = 0.6,
-        model = os.getenv("MODEL", "gpt-4o"),
-        verbose = True,
-        streaming = True,
-        callback_manager = stream_manager,
-    )  # type: ignore    
+    
+    llm = Groq(model=MODEL_NAME, api_key=GROK_API_KEY, is_chat_model=True)
 
     article_data = f"""
     Headline = "{article.headline}"
@@ -180,33 +183,30 @@ async def tweet_chain(
     This is a conversation between a human and an assistant some messages might be out of context of your main task, always make sure you are able to get track of what you are supposed to do, Follow the instuctions given below:\n
     """
 
-    template = master_prompt + """
-    
-    {chat_history}
+    chat_history = [ChatMessage(content=message.content, role=MessageRole.USER if str(message.role) == "user" else MessageRole.ASSISTANT) for message in messages_tmp]
 
-    Answer this question {input}:
-    """
-
-    prompt = PromptTemplate(
-        input_variables=["input", "chat_history"], template=template
+    messages = [
+        ChatMessage(
+            role="system", content=master_prompt
+        ),
+    ]
+    messages.extend(chat_history)
+    messages.append(        
+        ChatMessage(
+            role="user", content=input
+        ),
     )
 
-    tweet_generation_chain = prompt | llm | StrOutputParser()
-
-    response = await tweet_generation_chain.ainvoke({
-        "input": input, 
-        "chat_history": chat_history,
-    })
-
+    response = llm.astream_chat(messages)
+    
     return response
 
 
-
-async def title_and_meta_chain(
+async def grok_title_and_meta_chain(
     input: str,
     user_id: str,
-    chat_history: Optional[str],
-) -> LLMChain:
+    thread_id: str,
+):
 
     """
     Useful for handling a conversation to help user craft a perfect SEO title and SEO meta description based on the article data like headline, authors, publisher, and summary
@@ -217,21 +217,15 @@ async def title_and_meta_chain(
         - input: This is an input question which the ai agent is supposed to answer.
         - article: This an object which contains the article's information such as headline, publisher, authors and the summary of the article
     """
-    stream_manager = AsyncCallbackManager([])
     
     redis = await get_redis_client()
     db = get_db()
     user_service = UserService(db)
-
+    messages_tmp: List[Message] = await user_service.get_chat_history(user_id = user_id, redis_client = redis)
     article = await user_service.get_article(user_id = user_id, redis_client = redis)
-
-    llm = ChatOpenAI(
-        temperature = 0.6,
-        model = os.getenv("MODEL", "gpt-4o"),
-        verbose = True,
-        streaming = True,
-        callback_manager = stream_manager,
-    )  # type: ignore
+    
+    
+    llm = Groq(model=MODEL_NAME, api_key=GROK_API_KEY, is_chat_model=True)
 
     get_logger().info(f"Here are article data: {article}")
 
@@ -296,22 +290,226 @@ async def title_and_meta_chain(
     This is a conversation between a human and an assistant some messages might be out of context of your main task, always make sure you are able to get track of what you are supposed to do, Follow the instuctions given below:\n
     """
 
-    template = master_prompt + """
-    
-    {chat_history}
+    chat_history = [ChatMessage(content=message.content, role=MessageRole.USER if str(message.role) == "user" else MessageRole.ASSISTANT) for message in messages_tmp]
 
-    Answer this question {input}:
-    """
-
-    prompt = PromptTemplate(
-        input_variables=["input", "chat_history"], template=template
+    messages = [
+        ChatMessage(
+            role="system", content=master_prompt
+        ),
+    ]
+    messages.extend(chat_history)
+    messages.append(        
+        ChatMessage(
+            role="user", content=input
+        ),
     )
 
-    title_and_meta_generation_chain = prompt | llm | StrOutputParser()
-
-    response = await title_and_meta_generation_chain.ainvoke({
-        "input": input, 
-        "chat_history": chat_history,
-    })
-
+    response = llm.astream_chat(messages)
+    
     return response
+
+# async def tweet_chain(
+#     input: str,
+#     user_id: str,
+#     chat_history: Optional[str],
+# ) -> LLMChain:
+
+#     """
+#     Useful for handling any question related to tweet generation and optimization based on the article data like headline, authors, publisher, and summary
+
+#     Args:
+#         - stream_handler: is an object that handle the chat stream.
+#         - chat_history: This is a string of previous messages in the chat, this is used to give context to the LLM on how to answer the incoming question.
+#         - input: This is an input question which the ai agent is supposed to answer.
+#         - article: This an object which contains the article's information such as headline, publisher, authors and the summary of the article
+#     """   
+#     stream_manager = AsyncCallbackManager([])
+    
+#     redis = await get_redis_client()
+#     db = get_db()
+#     user_service = UserService(db)
+
+#     article = await user_service.get_article(user_id = user_id, redis_client = redis)
+
+#     llm = ChatOpenAI(
+#         temperature = 0.6,
+#         model = os.getenv("MODEL", "gpt-4o"),
+#         verbose = True,
+#         streaming = True,
+#         callback_manager = stream_manager,
+#     )  # type: ignore    
+
+#     article_data = f"""
+#     Headline = "{article.headline}"
+#     Summary = "{article.abstract}"
+#     Author(s) = "{article.authors}"
+#     Publication = "{article.publisher}"
+#     """
+
+#     start_prompt = f"""
+#     Your task is to help user with their question in generating a perfect tweet based on the article with the following headline, publisher, author(s) and article summary:\n
+
+#     {article_data}
+#     """
+
+#     end_prompt = f"""\n
+#     Instructions:
+#     * Ensure the tweet does not exceed 254 characters.
+#     * Always include the source, mentioning the authors and/or the publication.
+#     * Use abbreviations where necessary to stay within the 254 character limit. For example, use '%' instead of percent, 'mm' instead of million.
+#     * Use hashtags and @ symbols to increase engagement.
+
+#     Style and Tone:
+#     * Professional: Maintain a professional and informative tone.
+#     * Engaging: Write in an engaging manner to capture the audience’s interest.
+#     * Concise: Be clear and to the point.
+#     * Authoritative: Convey authority and credibility.
+
+#     Additional Guidelines:
+#     * Avoid using adjectives like 'massive', 'huge', 'totally', 'very'.
+#     * Rarely, if ever, use the word 'got'.
+#     * Rarely, if ever, use the word 'indeed'.
+#     """
+
+#     master_prompt = f"""    
+#     {start_prompt}
+
+#     {end_prompt}
+#     This is a conversation between a human and an assistant some messages might be out of context of your main task, always make sure you are able to get track of what you are supposed to do, Follow the instuctions given below:\n
+#     """
+
+#     template = master_prompt + """
+    
+#     {chat_history}
+
+#     Answer this question {input}:
+#     """
+
+#     prompt = PromptTemplate(
+#         input_variables=["input", "chat_history"], template=template
+#     )
+
+#     tweet_generation_chain = prompt | llm | StrOutputParser()
+
+#     response = await tweet_generation_chain.ainvoke({
+#         "input": input, 
+#         "chat_history": chat_history,
+#     })
+
+#     return response
+
+
+
+# async def title_and_meta_chain(
+#     input: str,
+#     user_id: str,
+#     chat_history: Optional[str],
+# ) -> LLMChain:
+
+#     """
+#     Useful for handling a conversation to help user craft a perfect SEO title and SEO meta description based on the article data like headline, authors, publisher, and summary
+    
+#     Args:
+#         - stream_handler: is an object that handle the chat stream.
+#         - chat_history: This is a string of previous messages in the chat, this is used to give context to the LLM on how to answer the incoming question.
+#         - input: This is an input question which the ai agent is supposed to answer.
+#         - article: This an object which contains the article's information such as headline, publisher, authors and the summary of the article
+#     """
+#     stream_manager = AsyncCallbackManager([])
+    
+#     redis = await get_redis_client()
+#     db = get_db()
+#     user_service = UserService(db)
+
+#     article = await user_service.get_article(user_id = user_id, redis_client = redis)
+
+#     llm = ChatOpenAI(
+#         temperature = 0.6,
+#         model = os.getenv("MODEL", "gpt-4o"),
+#         verbose = True,
+#         streaming = True,
+#         callback_manager = stream_manager,
+#     )  # type: ignore
+
+#     get_logger().info(f"Here are article data: {article}")
+
+#     article_data = f"""
+#     Headline = "{article.headline}"
+#     Summary = "{article.abstract}"
+#     Author(s) = "{article.authors}"
+#     Publication = "{article.publisher}"
+#     """
+
+#     start_prompt = f"""
+#     You are a helpful assistant. Your task is to help user with their questions such that they are able to generate a perfect SEO-optimized title and meta descriptions that enhance visibility in search engine results pages (SERPs), \
+#     improve click-through rates (CTR), and drive more organic traffic to the website for a macro-economica related article.
+
+#     Please answer the question for an article with the following headline, publisher, author(s) and article summary:\n
+
+#     {article_data}
+
+#     Use the below guideline to help you generate an optimized SEO title and meta description
+#     """
+
+#     end_prompt = f"""\n
+#     General Guidelines:
+#     * For SEO Title:
+#         - Write titles that are both informative and engaging to encourage clicks.
+#         - Use keywords naturally and avoid overloading the title with too many keywords, which can be seen as spammy by search engines.
+        
+#     * For SEO Meta descriptions:
+#         - Summarize the content clearly and concisely, ensuring the description is easy to read and understand.
+#         - Ensure the meta description accurately reflects the article content provided to you to avoid high bounce rates from users who feel misled.
+
+#     Instructions:
+#     * For SEO Title:
+#         - Ensure the title is between 50-60 characters to avoid truncation in SERPs.
+#         - Include primary keywords at the beginning of the title
+#         - The title must accurately reflect the article content provided to you.
+#         - Focus on the main topic of the article and identify the primary keywords related to this topic.
+#         - Place the most important keywords towards the beginning of the title.
+#         - Ensure the title is easy to read and understand, avoiding complex structures or jargon.
+#         - Craft the title to be engaging and enticing, prompting users to click through to the article.
+#         - Ensure the title accurately represents the content of the article to set the right expectations for readers.
+
+#     * For SEO Meta descriptions:
+#         - Ensure the meta description is between 150-160 characters to prevent truncation in SERPs.
+#         - Include primary keywords naturally within the description.
+#         - The meta description must accurately reflect the article content provided to you.
+#         - Focus on the main topic of the article and identify the primary keywords related to this topic.
+#         - Integrate the primary keywords naturally within the description.
+#         - Ensure the meta description is easy to read and flows naturally.
+#         - Craft the description to be engaging and enticing, prompting users to click through to the article.
+#         - Ensure the meta description accurately represents the content of the article to set the right expectations for readers.
+
+#     Output Format:
+#         * Title: the text for the SEO Title here.
+#         * Meta Description: the text for SEO Meta description here.
+#     """
+
+#     master_prompt = f"""
+#     {start_prompt}
+
+#     {end_prompt}
+#     This is a conversation between a human and an assistant some messages might be out of context of your main task, always make sure you are able to get track of what you are supposed to do, Follow the instuctions given below:\n
+#     """
+
+#     template = master_prompt + """
+    
+#     {chat_history}
+
+#     Answer this question {input}:
+#     """
+
+#     prompt = PromptTemplate(
+#         input_variables=["input", "chat_history"], template=template
+#     )
+
+#     title_and_meta_generation_chain = prompt | llm | StrOutputParser()
+
+#     response = await title_and_meta_generation_chain.ainvoke({
+#         "input": input, 
+#         "chat_history": chat_history,
+#     })
+
+#     return response

@@ -1,10 +1,12 @@
 import os
-from typing import Optional, Tuple
+from typing import List, Optional, Tuple
 from create_llama.backend.app.utils.helpers import Article
 import jwt
-from sqlalchemy.ext.asyncio import AsyncSession as Session
+import json
 from sqlalchemy.future import select
-from src.core.models.base import User, Credential
+from pydantic import parse_obj_as
+from src.core.models.base import Message, User, Credential
+from sqlalchemy.ext.asyncio import AsyncSession as Session
 from src.core.services.service import Service
 from src.core.services.credential import CredentialService
 from src.utils.encryption import encrypt, verify
@@ -153,6 +155,27 @@ class UserService(Service):
         article = Article.model_validate_json(article_json)
         self.logger.info(f"Article for user ID: {user_id} retrieved successfully")
         return article
+    
+    async def update_chat_history(self, user_id: str, chat_history: List[Message], redis_client: Redis) -> None:
+        self.logger.info(f"Updating chat history for user ID: {user_id}")
+        # Serialize the Pydantic object to a JSON string
+        chat_history_json = json.dumps([message.to_dict() for message in chat_history])
+        # Update the chat history in Redis without expiration
+        await redis_client.set(f"chat_history:{user_id}", chat_history_json)
+        self.logger.info(f"Chat history for user ID: {user_id} updated successfully")
+
+    async def get_chat_history(self, user_id: str, redis_client: Redis) -> Optional[List[Message]]:
+        self.logger.info(f"Retrieving chat history for user ID: {user_id}")
+        # Retrieve the JSON string from Redis
+        chat_history_json = await redis_client.get(f"chat_history:{user_id}")
+        if chat_history_json is None:
+            self.logger.info(f"No chat history found for user ID: {user_id}")
+            return None
+        # Deserialize the JSON string back to a list of ChatMessage objects
+        chat_history_dicts = json.loads(chat_history_json)
+        chat_history = parse_obj_as(List[Message], chat_history_dicts)
+        self.logger.info(f"Chat history for user ID: {user_id} retrieved successfully")
+        return chat_history
     
     async def get_chat_mode(self, user_id: str, redis_client: Redis) -> Optional[str]:
         self.logger.info(f"Retrieving chat mode for user ID: {user_id}")

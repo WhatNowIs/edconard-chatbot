@@ -181,7 +181,7 @@ async def chat_thread(
         
         chat_history = '\n'.join([f"role: \"{msg_tmp.role}\"\ncontent: \"{msg_tmp.content}\"" for msg_tmp in messages_tmp])
 
-        messages = [ChatMessage(content=last_message_content, role=MessageRole.USER if str(message.role) == "user" else MessageRole.ASSISTANT) for message in messages_tmp]
+        messages = [ChatMessage(content=message.content, role=MessageRole.USER if str(message.role) == "user" else MessageRole.ASSISTANT) for message in messages_tmp]
 
         new_message = Message(
             thread_id=thread_id,
@@ -189,6 +189,8 @@ async def chat_thread(
             role=MessageRole.USER.value,
             content=last_message_content
         )
+
+        await user_service.update_chat_history(user_id, messages_tmp, redis_client)
 
         await message_service.create(new_message)    
 
@@ -198,15 +200,13 @@ async def chat_thread(
             last_message_content = last_message_content + f"""
                 Here is user id: {user_id}
 
-                <chat_history>
-                {chat_history}
+                This is the thread_id: {thread_id}
             """
 
         additional_data = f"""        
-            Here is user id: {user_id}
+            Here is user_id: {user_id}
             
-            <chat_history>
-            {chat_history}
+            This is the thread_id: {thread_id}
         """
 
         last_message_content_final =  f"""
@@ -219,6 +219,7 @@ async def chat_thread(
             in_research_or_exploration_modality=in_research_or_exploration_modality, 
             user_id=user_id, 
             question=last_message_content_final,
+            thread_id=thread_id,
             chat_history=messages
         )
 
