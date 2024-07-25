@@ -111,3 +111,18 @@ async def fetch_workspaces(
         status_code=status.HTTP_401_UNAUTHORIZED,
         detail="Not authorized to access workspaces",
     )
+
+@workspace_router.get("/user/{user_id}", response_model=List[dto.Workspace])
+async def fetch_workspaces(
+    user_id: str,
+    session: dict = Depends(get_session),
+    workspace_service: WorkspaceService = Depends(get_workspace_service)
+):
+    if "sub" in session and session["sub"] == user_id:
+        workspaces = await workspace_service.get_all_by_user_id(user_id)
+        return [dto.Workspace.model_validate(workspace) for workspace in workspaces]
+
+    raise HTTPException(
+        status_code=status.HTTP_401_UNAUTHORIZED,
+        detail="Not authorized to access workspaces",
+    )
