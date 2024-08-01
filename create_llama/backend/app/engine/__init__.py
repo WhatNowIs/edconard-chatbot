@@ -1,6 +1,6 @@
 import os
 from typing import List
-from create_llama.backend.app.engine.tools.chains import grok_title_and_meta_chain, grok_tweet_chain, master_prompt_template
+from create_llama.backend.app.engine.tools.chains import cri_title_and_meta_chain, cri_tweet_chain, master_prompt_template
 from llama_index.core.chat_engine import CondensePlusContextChatEngine
 from llama_index.core.settings import Settings
 from app.engine.index import get_index, get_topic_index
@@ -13,7 +13,6 @@ from llama_index.core.tools import FunctionTool
 from pydantic import BaseModel
 
 class FnSchema(BaseModel):
-    thread_id: str
     user_id: str
     input: str
 
@@ -59,8 +58,8 @@ async def get_chat_engine(in_research_or_exploration_modality: bool, user_id: st
         )
 
         tweet_generation_tool =  FunctionTool.from_defaults(
-            fn = grok_tweet_chain,
-            async_fn = grok_tweet_chain,
+            fn = cri_tweet_chain,
+            async_fn = cri_tweet_chain,
             name = "tweet_generation_tool",
             fn_schema = fn_schema_instance,
             description = """\
@@ -70,8 +69,8 @@ async def get_chat_engine(in_research_or_exploration_modality: bool, user_id: st
         )
 
         title_and_meta_description_tool =  FunctionTool.from_defaults(
-            fn = grok_title_and_meta_chain,
-            async_fn = grok_title_and_meta_chain, 
+            fn = cri_title_and_meta_chain,
+            async_fn = cri_title_and_meta_chain, 
             fn_schema = fn_schema_instance,            
             name = "title_and_meta_description_tool",
             description = """\
