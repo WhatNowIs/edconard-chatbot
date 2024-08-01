@@ -9,6 +9,7 @@ from src.core.models.base import Message, User, Credential
 from sqlalchemy.ext.asyncio import AsyncSession as Session
 from src.core.services.service import Service
 from src.core.services.credential import CredentialService
+from src.utils import datetime_to_str
 from src.utils.encryption import encrypt, verify
 from src.utils.logger import get_logger
 import uuid
@@ -151,6 +152,7 @@ class UserService(Service):
         if article_json is None:
             self.logger.info(f"No article found for user ID: {user_id}")
             return None
+        self.logger.info(article_json)
         # Deserialize the JSON string back to the Pydantic object
         article = Article.model_validate_json(article_json)
         self.logger.info(f"Article for user ID: {user_id} retrieved successfully")
@@ -159,12 +161,12 @@ class UserService(Service):
     async def update_chat_history(self, user_id: str, chat_history: List[Message], redis_client: Redis) -> None:
         self.logger.info(f"Updating chat history for user ID: {user_id}")
         # Serialize the Pydantic object to a JSON string
-        chat_history_json = json.dumps([message.to_dict() for message in chat_history])
+        chat_history_json = json.dumps([message.to_dict() for message in chat_history],  default=datetime_to_str)
         # Update the chat history in Redis without expiration
         await redis_client.set(f"chat_history:{user_id}", chat_history_json)
         self.logger.info(f"Chat history for user ID: {user_id} updated successfully")
 
-    async def get_chat_history(self, user_id: str, redis_client: Redis) -> Optional[List[Message]]:
+    async def get_chat_history(self, user_id: str, redis_client: Redis):
         self.logger.info(f"Retrieving chat history for user ID: {user_id}")
         # Retrieve the JSON string from Redis
         chat_history_json = await redis_client.get(f"chat_history:{user_id}")
@@ -172,8 +174,8 @@ class UserService(Service):
             self.logger.info(f"No chat history found for user ID: {user_id}")
             return None
         # Deserialize the JSON string back to a list of ChatMessage objects
-        chat_history_dicts = json.loads(chat_history_json)
-        chat_history = parse_obj_as(List[Message], chat_history_dicts)
+        chat_history = json.loads(chat_history_json)
+        # chat_history = parse_obj_as(List[Message], chat_history_dicts)
         self.logger.info(f"Chat history for user ID: {user_id} retrieved successfully")
         return chat_history
     

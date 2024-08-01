@@ -24,7 +24,7 @@ def init_topic_engine():
     return (topic_query_engine, topic_retriever)
 
 
-async def get_chat_engine(in_research_or_exploration_modality: bool, user_id: str, question: str, thread_id: str, chat_history: str | List[ChatMessage] | None = None):
+async def get_chat_engine(in_research_or_exploration_modality: bool, user_id: str, question: str, chat_history: str | List[ChatMessage] | None = None):
     # from src.core.dbconfig.postgres import get_db
     top_k = int(os.getenv("TOP_K", "3"))
     system_prompt = os.getenv("SYSTEM_PROMPT")
@@ -52,7 +52,6 @@ async def get_chat_engine(in_research_or_exploration_modality: bool, user_id: st
         get_logger().info(f"We are not research and exploration mode {in_research_or_exploration_modality}")
 
         fn_schema_instance = FnSchema(
-            thread_id = thread_id,
             user_id = user_id,
             input = question,
         )

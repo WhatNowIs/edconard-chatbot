@@ -200,26 +200,17 @@ async def chat_thread(
             last_message_content = last_message_content + f"""
                 Here is user id: {user_id}
 
-                This is the thread_id: {thread_id}
+            Use the tools at your disposal to answer this question
             """
-
-        additional_data = f"""        
-            Here is user_id: {user_id}
-            
-            This is the thread_id: {thread_id}
-        """
 
         last_message_content_final =  f"""
             {last_message_content}
-            
-            {additional_data if not in_research_or_exploration_modality else ""}
         """
 
         chat_engine = await get_chat_engine(
             in_research_or_exploration_modality=in_research_or_exploration_modality, 
             user_id=user_id, 
             question=last_message_content_final,
-            thread_id=thread_id,
             chat_history=messages
         )
 

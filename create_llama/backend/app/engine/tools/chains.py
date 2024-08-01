@@ -1,13 +1,17 @@
 import os
 from typing import List
 import httpx
-from llama_cloud import MessageRole
+from openai import BaseModel
 from src.core.config.postgres import get_db
 from src.core.config.redis import get_redis_client
-from src.core.models.base import Message
 from src.core.services.user import UserService
 from src.utils.logger import get_logger
-from llama_index.core.llms import ChatMessage
+
+
+class _Message(BaseModel):
+    role: str
+    content: str
+
 
 master_prompt_template = """
 Given a conversation (between Human and Assistant) and a follow up message from Human, your focus should be to understand the context from the conversation and answer very well a follow up question.
@@ -110,7 +114,7 @@ For the other tasks please use the tools at your disposal to answer questions re
 """
 
 
-async def fetch_stream(messages: List[ChatMessage]):
+async def fetch_stream(messages: List[_Message]):
     data = {
         "messages": [msg.dict() for msg in messages],
         "streaming": True
@@ -118,7 +122,7 @@ async def fetch_stream(messages: List[ChatMessage]):
     
     async with httpx.AsyncClient() as client:
         response = await client.post(
-            f'{os.getenv('MODEL_BASE_URL')}/chat/stream',
+            f"{os.getenv('MODEL_BASE_URL')}/chat/stream",
             headers={
                 'Content-Type': 'application/json',
                 'Accept': 'text/event-stream'
@@ -129,11 +133,11 @@ async def fetch_stream(messages: List[ChatMessage]):
         if response.status_code != 200:
             return {"error": f"Failed to connect to stream: {response.status_code}"}
         
-        response = ''
+        accumulated_response = ''
         async for chunk in response.aiter_text():
-            response += chunk
-            
-        return response
+            accumulated_response += chunk
+            # yield chunk
+        return accumulated_response
 
 async def cri_tweet_chain(
     input: str,
@@ -144,16 +148,14 @@ async def cri_tweet_chain(
     Useful for handling any question related to tweet generation and optimization based on the article data like headline, authors, publisher, and summary
 
     Args:
-        - stream_handler: is an object that handle the chat stream.
-        - chat_history: This is a string of previous messages in the chat, this is used to give context to the LLM on how to answer the incoming question.
         - input: This is an input question which the ai agent is supposed to answer.
-        - article: This an object which contains the article's information such as headline, publisher, authors and the summary of the article
+        - user_id: A string user id, which will be used to get artcle data
     """   
     
     redis = await get_redis_client()
     db = get_db()
     user_service = UserService(db)
-    messages_tmp: List[Message] = await user_service.get_chat_history(user_id = user_id, redis_client = redis)
+    messages_tmp = await user_service.get_chat_history(user_id = user_id, redis_client = redis)
     article = await user_service.get_article(user_id = user_id, redis_client = redis)
 
     article_data = f"""
@@ -193,22 +195,21 @@ async def cri_tweet_chain(
     This is a conversation between a human and an assistant some messages might be out of context of your main task, always make sure you are able to get track of what you are supposed to do, Follow the instuctions given below:\n
     """
 
-    chat_history = [ChatMessage(content=message.content, role=MessageRole.USER if str(message.role) == "user" else MessageRole.ASSISTANT) for message in messages_tmp]
+    chat_history = [_Message(content=message['content'], role=message['role']) for message in messages_tmp]
 
     messages = [
-        ChatMessage(
+        _Message(
             role="system", content=master_prompt
         ),
     ]
     messages.extend(chat_history)
     messages.append(        
-        ChatMessage(
+        _Message(
             role="user", content=f"{input}\n\nHere is the article data:\n{article_data}"
         ),
     )
     
     return await fetch_stream(messages)
-
 
 async def cri_title_and_meta_chain(
     input: str,
@@ -219,19 +220,18 @@ async def cri_title_and_meta_chain(
     Useful for handling a conversation to help user craft a perfect SEO title and SEO meta description based on the article data like headline, authors, publisher, and summary
     
     Args:
-        - stream_handler: is an object that handle the chat stream.
-        - chat_history: This is a string of previous messages in the chat, this is used to give context to the LLM on how to answer the incoming question.
         - input: This is an input question which the ai agent is supposed to answer.
-        - article: This an object which contains the article's information such as headline, publisher, authors and the summary of the article
+        - user_id: A string user id, which will be used to get artcle data
     """
     
     redis = await get_redis_client()
     db = get_db()
     user_service = UserService(db)
-    messages_tmp: List[Message] = await user_service.get_chat_history(user_id = user_id, redis_client = redis)
-    article = await user_service.get_article(user_id = user_id, redis_client = redis)
-
-    get_logger().info(f"Here are article data: {article}")
+    messages_tmp = await user_service.get_chat_history(user_id=user_id, redis_client=redis)
+    article = await user_service.get_article(user_id=user_id, redis_client=redis)
+    
+    # get_logger().info(f"Here are article data: {article}")
+    get_logger().info(f"Here messages_tmp: {messages_tmp}")
 
     article_data = f"""
     Headline = "{article.headline}"
@@ -290,22 +290,21 @@ async def cri_title_and_meta_chain(
     This is a conversation between a human and an assistant some messages might be out of context of your main task, always make sure you are able to get track of what you are supposed to do, Follow the instuctions given below:\n
     """
 
-    chat_history = [ChatMessage(content=message.content, role=MessageRole.USER if str(message.role) == "user" else MessageRole.ASSISTANT) for message in messages_tmp]
+    chat_history = [_Message(content=message['content'], role=message['role']) for message in messages_tmp]
 
     messages = [
-        ChatMessage(
+        _Message(
             role="system", content=master_prompt
         ),
     ]
     messages.extend(chat_history)
     messages.append(        
-        ChatMessage(
+        _Message(
             role="user", content=f"{input}\n\nHere is the article data:\n{article_data}"
         ),
     )
     
     return await fetch_stream(messages)
-
 # async def tweet_chain(
 #     input: str,
 #     user_id: str,
