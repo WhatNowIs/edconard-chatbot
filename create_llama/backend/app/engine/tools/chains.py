@@ -1,23 +1,13 @@
 import os
-from typing import List, Optional
-from langchain.callbacks.manager import AsyncCallbackManager 
-from langchain_community.chat_models.openai import ChatOpenAI
-from langchain_core.output_parsers import StrOutputParser
-from langchain.prompts import PromptTemplate
-from langchain.chains.llm import LLMChain
+from typing import List
+import httpx
 from llama_cloud import MessageRole
 from src.core.config.postgres import get_db
 from src.core.config.redis import get_redis_client
 from src.core.models.base import Message
-from src.core.services.thread import ThreadService
 from src.core.services.user import UserService
 from src.utils.logger import get_logger
-from llama_index.llms.groq import Groq
 from llama_index.core.llms import ChatMessage
-
-
-MODEL_NAME = "llama-3.1-405b-reasoning"
-GROK_API_KEY = "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"
 
 master_prompt_template = """
 Given a conversation (between Human and Assistant) and a follow up message from Human, your focus should be to understand the context from the conversation and answer very well a follow up question.
@@ -120,10 +110,34 @@ For the other tasks please use the tools at your disposal to answer questions re
 """
 
 
-async def grok_tweet_chain(
+async def fetch_stream(messages: List[ChatMessage]):
+    data = {
+        "messages": [msg.dict() for msg in messages],
+        "streaming": True
+    }
+    
+    async with httpx.AsyncClient() as client:
+        response = await client.post(
+            f'{os.getenv('MODEL_BASE_URL')}/chat/stream',
+            headers={
+                'Content-Type': 'application/json',
+                'Accept': 'text/event-stream'
+            },
+            json=data
+        )
+        
+        if response.status_code != 200:
+            return {"error": f"Failed to connect to stream: {response.status_code}"}
+        
+        response = ''
+        async for chunk in response.aiter_text():
+            response += chunk
+            
+        return response
+
+async def cri_tweet_chain(
     input: str,
     user_id: str,
-    thread_id: str
 ):
 
     """
@@ -141,8 +155,6 @@ async def grok_tweet_chain(
     user_service = UserService(db)
     messages_tmp: List[Message] = await user_service.get_chat_history(user_id = user_id, redis_client = redis)
     article = await user_service.get_article(user_id = user_id, redis_client = redis)
-    
-    llm = Groq(model=MODEL_NAME, api_key=GROK_API_KEY, is_chat_model=True)
 
     article_data = f"""
     Headline = "{article.headline}"
@@ -152,9 +164,7 @@ async def grok_tweet_chain(
     """
 
     start_prompt = f"""
-    Your task is to help user with their question in generating a perfect tweet based on the article with the following headline, publisher, author(s) and article summary:\n
-
-    {article_data}
+    Your task is to help user with their question in generating a perfect tweet based on different articles. Follow the instruction below to guide your output:\n
     """
 
     end_prompt = f"""\n
@@ -193,19 +203,16 @@ async def grok_tweet_chain(
     messages.extend(chat_history)
     messages.append(        
         ChatMessage(
-            role="user", content=input
+            role="user", content=f"{input}\n\nHere is the article data:\n{article_data}"
         ),
     )
-
-    response = llm.astream_chat(messages)
     
-    return response
+    return await fetch_stream(messages)
 
 
-async def grok_title_and_meta_chain(
+async def cri_title_and_meta_chain(
     input: str,
     user_id: str,
-    thread_id: str,
 ):
 
     """
@@ -223,9 +230,6 @@ async def grok_title_and_meta_chain(
     user_service = UserService(db)
     messages_tmp: List[Message] = await user_service.get_chat_history(user_id = user_id, redis_client = redis)
     article = await user_service.get_article(user_id = user_id, redis_client = redis)
-    
-    
-    llm = Groq(model=MODEL_NAME, api_key=GROK_API_KEY, is_chat_model=True)
 
     get_logger().info(f"Here are article data: {article}")
 
@@ -239,10 +243,6 @@ async def grok_title_and_meta_chain(
     start_prompt = f"""
     You are a helpful assistant. Your task is to help user with their questions such that they are able to generate a perfect SEO-optimized title and meta descriptions that enhance visibility in search engine results pages (SERPs), \
     improve click-through rates (CTR), and drive more organic traffic to the website for a macro-economica related article.
-
-    Please answer the question for an article with the following headline, publisher, author(s) and article summary:\n
-
-    {article_data}
 
     Use the below guideline to help you generate an optimized SEO title and meta description
     """
@@ -300,13 +300,11 @@ async def grok_title_and_meta_chain(
     messages.extend(chat_history)
     messages.append(        
         ChatMessage(
-            role="user", content=input
+            role="user", content=f"{input}\n\nHere is the article data:\n{article_data}"
         ),
     )
-
-    response = llm.astream_chat(messages)
     
-    return response
+    return await fetch_stream(messages)
 
 # async def tweet_chain(
 #     input: str,
