@@ -152,7 +152,6 @@ class UserService(Service):
         if article_json is None:
             self.logger.info(f"No article found for user ID: {user_id}")
             return None
-        self.logger.info(article_json)
         # Deserialize the JSON string back to the Pydantic object
         article = Article.model_validate_json(article_json)
         self.logger.info(f"Article for user ID: {user_id} retrieved successfully")
