@@ -1,3 +1,5 @@
+import asyncio
+from create_llama.backend.app.engine.tools.chains import cri_chatbot
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 from typing import List, Any, Optional, Dict, Tuple
@@ -18,7 +20,7 @@ from src.core.services.message import MessageService
 from src.core.services.thread import ThreadService
 from src.core.services.user import UserService 
 from redis.asyncio.client import Redis
-from app.utils.helpers import Article, extract_article_data_from_string, get_document_by_url
+from app.utils.helpers import Article, get_document_by_url
 
 from src.schema import ChatMode, SetArticleData
 from src.utils.logger import get_logger
@@ -164,25 +166,21 @@ async def chat_thread(
     session: dict = Depends(get_session),
     thread_service: ThreadService = Depends(get_thread_service),
     message_service: MessageService = Depends(get_message_service),
-    user_service: UserService = Depends(get_user_service),
-    redis_client: Redis = Depends(get_redis_client)
+    # user_service: UserService = Depends(get_user_service),
+    # redis_client: Redis = Depends(get_redis_client)
 ):    
     last_message_content, messages = await parse_chat_data(data)
 
     if "sub" in session:
         user_id = session["sub"]
-        chat_mode = await user_service.get_chat_mode(user_id, redis_client)
-
-        get_logger().info(f"Current chat mode: {chat_mode}")
+        # chat_mode = await user_service.get_chat_mode(user_id, redis_client)
         
-        in_research_or_exploration_modality = chat_mode == True
+        # in_research_or_exploration_modality = chat_mode == True
 
         messages_tmp: List[Message] = await thread_service.get_messages_by_thread_id(thread_id=thread_id, uid=user_id)
-        
-        chat_history = '\n'.join([f"role: \"{msg_tmp.role}\"\ncontent: \"{msg_tmp.content}\"" for msg_tmp in messages_tmp])
-
-        messages = [ChatMessage(content=message.content, role=MessageRole.USER if str(message.role) == "user" else MessageRole.ASSISTANT) for message in messages_tmp]
-
+        # article = await user_service.get_article(user_id=user_id, redis_client=redis_client)
+        # update_chat_history_task = asyncio.create_task(user_service.update_chat_history(user_id, messages_tmp, redis_client))
+            
         new_message = Message(
             thread_id=thread_id,
             user_id=user_id,
@@ -190,33 +188,25 @@ async def chat_thread(
             content=last_message_content
         )
 
-        await user_service.update_chat_history(user_id, messages_tmp, redis_client)
+        create_message_task = asyncio.create_task(message_service.create(new_message))
+        
+        # Await the tasks to ensure they complete
+        await asyncio.gather(create_message_task)
 
-        await message_service.create(new_message)    
+        # if not in_research_or_exploration_modality:
+        #     async def content_generator():
+        #         async for chunk in cri_chatbot(input=last_message_content, article=article, messages_tmp=messages_tmp):
+        #             yield chunk
 
-        get_logger().info(chat_history)
+        #     return VercelStreamResponse(content=content_generator())
 
-        if not in_research_or_exploration_modality:
-            last_message_content = last_message_content + f"""
-                Here is user id: {user_id}
-
-            Use the tools at your disposal to answer this question
-            """
-
-        last_message_content_final =  f"""
-            {last_message_content}
-        """
-
-        chat_engine = await get_chat_engine(
-            in_research_or_exploration_modality=in_research_or_exploration_modality, 
-            user_id=user_id, 
-            question=last_message_content_final,
-            chat_history=messages
-        )
+        chat_engine = await get_chat_engine()
+    
+        messages = [ChatMessage(content=message.content, role=MessageRole.USER if str(message.role) == "user" else MessageRole.ASSISTANT) for message in messages_tmp]
 
         event_handler = EventCallbackHandler()
         chat_engine.callback_manager.handlers.append(event_handler)
-        response = await chat_engine.astream_chat(last_message_content_final, messages)
+        response = await chat_engine.astream_chat(last_message_content, messages)
         
         tmp_message_container = [""]
         sources = []

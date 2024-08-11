@@ -1,9 +1,11 @@
 import os
-from typing import List
+from typing import AsyncGenerator, List
+from create_llama.backend.app.utils.helpers import Article
 import httpx
 from openai import BaseModel
 from src.core.config.postgres import get_db
 from src.core.config.redis import get_redis_client
+from src.core.models.base import Message
 from src.core.services.user import UserService
 from src.utils.logger import get_logger
 
@@ -12,19 +14,87 @@ class _Message(BaseModel):
     role: str
     content: str
 
+predefined_topics = """
+1. Comparisons:
+    - Age
+    - Cross-country
+    - Gender
+    - Geography (Urban/Rural)
+    - Historical
+    - Liberal/Conservative
+    - No Comparison
+    - Other Comparison
+    - Race
+    - Sector
+    - Skill Level
+
+2. Fiscal Policy:
+    - Fiscal Deficits
+    - Government Spending
+    - Infrastructure
+    - Multiplier/Rational Expectations
+    - Regulation
+    - Taxation
+
+2. GDP:
+    - Business Cycle
+    - Financial Markets
+    - Growth
+    - Housing
+    - Inflation
+    - Savings Glut/Trade Deficit
+    - Trade (not deficits)
+
+3. Monetary Policy:
+    - Banking
+    - Financial Crisis
+    - M&M
+
+4. Science:
+    - Cosmos
+    - Evolution/Heredity
+    - Fraudulent Studies
+    - Global Warming
+    - Other Science
+
+5. Workforce:
+    - Demographics
+    - Education
+    - Family/Marriage
+    - Gender Pay Gap
+    - Immigration
+    - Inequality
+    - Minimum Wage
+    - Mobility/Assortive Mating
+    - Poverty/Crime
+    - Unemployment/Participation
+    - Wages/Income
+    - Workforce Reorganization/Participation
+
+6.Productivity:
+    - Cronyism
+    - Incentives/Risk-Taking
+    - Innovation/Research
+    - Institutional Capabilities
+    - Intangibles
+    - Investment
+    - Startups
+    - Workforce Reorganization/Participation
+
+7. Energy
+"""
 
 master_prompt_template = """
-Given a conversation (between Human and Assistant) and a follow up message from Human, your focus should be to understand the context from the conversation and answer very well a follow up question.
-You will be responsible responsible for handling various tasks as well making sure that you keep a conversation between you and human, your taks will include:
+Given a conversation (between Human and Assistant) and a follow up message from Human, your focus should be to understand the context from the conversation and choose suitables tool(s) to use, you tools for:
     
 * Topics and subtopics suggestions,
-* Helping human being with a perfect tweet
+* Helping human generate a perfect tweet
 * Generating title and meta description to enhance SEO
-* As well as enhancing the article summary by ensuring it is clear, concise, and grammatically correct.
-    
-I. For topic classification, your role will be to act as an AI agent responsible for suggesting topics and subtopics given an article headline and summary you will be asked to suggest topics and subtopic (also known as level 0 and level 1 topics) to which a macroeconomic roundup article belongs to. These topics are organized such that each one has its own description and associated subtopics.
 
-Your main job here is classifify or to suggest up 3 or 4 of the most relevant topics and subtopics for an article given its headline and summary.
+    
+I. For topic classification, your role will be to act as an AI agent responsible for suggesting topics and subtopics given the article data.
+
+Your main job here is classifify/suggest up 3 or 4 of the most relevant topics and subtopics for an article given its headline and summary.
 
 Please note the following guidelines while processing the document:
 
@@ -39,90 +109,18 @@ Please note the following guidelines while processing the document:
 Each level 1 topic belongs to a specific level 0 topic, and each level 0 and level 1 topic has its own description. They are organized in a tree structure format with parent and child topics. Among the selected topics and subtopics, identify one that is most likely to be the primary topic, based on its relevance to the article. The primary topic can be either a level 0 or a level 1 topic.
 
 Important: please make use of the description for both level 1 and level 0 topics to make your decision. The description should help you understand the context of the topic and subtopic and how they relate to the article, always make sure you identify the level 1 topic that belongs to the level 0 topic.
-
-Here are all the predefined topics and subtopics do not return anything which is not listed here:
-
-Comparisons:
-    - Age
-    - Cross-country
-    - Gender
-    - Geography (Urban/Rural)
-    - Historical
-    - Liberal/Conservative
-    - No Comparison
-    - Other Comparison
-    - Race
-    - Sector
-    - Skill Level
-
-Fiscal Policy:
-    - Fiscal Deficits
-    - Government Spending
-    - Infrastructure
-    - Multiplier/Rational Expectations
-    - Regulation
-    - Taxation
-
-GDP:
-    - Business Cycle
-    - Financial Markets
-    - Growth
-    - Housing
-    - Inflation
-    - Savings Glut/Trade Deficit
-    - Trade (not deficits)
-
-Monetary Policy:
-    - Banking
-    - Financial Crisis
-    - M&M
-
-Science:
-    - Cosmos
-    - Evolution/Heredity
-    - Fraudulent Studies
-    - Global Warming
-    - Other Science
-
-Workforce:
-    - Demographics
-    - Education
-    - Family/Marriage
-    - Gender Pay Gap
-    - Immigration
-    - Inequality
-    - Minimum Wage
-    - Mobility/Assortive Mating
-    - Poverty/Crime
-    - Unemployment/Participation
-    - Wages/Income
-    - Workforce Reorganization/Participation
-
-Productivity:
-    - Cronyism
-    - Incentives/Risk-Taking
-    - Innovation/Research
-    - Institutional Capabilities
-    - Intangibles
-    - Investment
-    - Startups
-    - Workforce Reorganization/Participation
-
-Energy: []
-
-For the other tasks please use the tools at your disposal to answer questions related to tweet generation, title and meta description generation etc.
 """
 
 
-async def fetch_stream(messages: List[_Message]):
+async def fetch_stream(messages: List[_Message])-> AsyncGenerator[str, None]:
     data = {
         "messages": [msg.dict() for msg in messages],
         "streaming": True
     }
     
-    async with httpx.AsyncClient() as client:
+    async with httpx.AsyncClient(timeout=20.0) as client:
         response = await client.post(
-            f"{os.getenv('MODEL_BASE_URL')}/chat/stream",
+            f"http://54.89.10.40/chat/stream",
             headers={
                 'Content-Type': 'application/json',
                 'Accept': 'text/event-stream'
@@ -131,13 +129,11 @@ async def fetch_stream(messages: List[_Message]):
         )
         
         if response.status_code != 200:
-            return {"error": f"Failed to connect to stream: {response.status_code}"}
+            yield {"error": f"Failed to connect to stream: {response.status_code}"}
+            return
         
-        accumulated_response = ''
         async for chunk in response.aiter_text():
-            accumulated_response += chunk
-            # yield chunk
-        return accumulated_response
+            yield chunk
 
 async def cri_tweet_chain(
     input: str,
@@ -229,9 +225,6 @@ async def cri_title_and_meta_chain(
     user_service = UserService(db)
     messages_tmp = await user_service.get_chat_history(user_id=user_id, redis_client=redis)
     article = await user_service.get_article(user_id=user_id, redis_client=redis)
-    
-    # get_logger().info(f"Here are article data: {article}")
-    get_logger().info(f"Here messages_tmp: {messages_tmp}")
 
     article_data = f"""
     Headline = "{article.headline}"
@@ -305,208 +298,57 @@ async def cri_title_and_meta_chain(
     )
     
     return await fetch_stream(messages)
-# async def tweet_chain(
-#     input: str,
-#     user_id: str,
-#     chat_history: Optional[str],
-# ) -> LLMChain:
 
-#     """
-#     Useful for handling any question related to tweet generation and optimization based on the article data like headline, authors, publisher, and summary
 
-#     Args:
-#         - stream_handler: is an object that handle the chat stream.
-#         - chat_history: This is a string of previous messages in the chat, this is used to give context to the LLM on how to answer the incoming question.
-#         - input: This is an input question which the ai agent is supposed to answer.
-#         - article: This an object which contains the article's information such as headline, publisher, authors and the summary of the article
-#     """   
-#     stream_manager = AsyncCallbackManager([])
+async def cri_chatbot(
+    input: str,
+    messages_tmp: List[Message],
+    article: Article,
+):
+
+    """
+    Useful for handling a conversation to help user craft a perfect SEO title and SEO meta description based on the article data like headline, authors, publisher, and summary
     
-#     redis = await get_redis_client()
-#     db = get_db()
-#     user_service = UserService(db)
+    Args:
+        - input: This is an input question which the ai agent is supposed to answer.
+        - user_id: A string user id, which will be used to get artcle data
+    """
+    article_data = f"""
+    Headline = "{article.headline}"
+    Summary = "{article.abstract}"
+    Author(s) = "{article.authors}"
+    Publication = "{article.publisher}"
+    """
 
-#     article = await user_service.get_article(user_id = user_id, redis_client = redis)
-
-#     llm = ChatOpenAI(
-#         temperature = 0.6,
-#         model = os.getenv("MODEL", "gpt-4o"),
-#         verbose = True,
-#         streaming = True,
-#         callback_manager = stream_manager,
-#     )  # type: ignore    
-
-#     article_data = f"""
-#     Headline = "{article.headline}"
-#     Summary = "{article.abstract}"
-#     Author(s) = "{article.authors}"
-#     Publication = "{article.publisher}"
-#     """
-
-#     start_prompt = f"""
-#     Your task is to help user with their question in generating a perfect tweet based on the article with the following headline, publisher, author(s) and article summary:\n
-
-#     {article_data}
-#     """
-
-#     end_prompt = f"""\n
-#     Instructions:
-#     * Ensure the tweet does not exceed 254 characters.
-#     * Always include the source, mentioning the authors and/or the publication.
-#     * Use abbreviations where necessary to stay within the 254 character limit. For example, use '%' instead of percent, 'mm' instead of million.
-#     * Use hashtags and @ symbols to increase engagement.
-
-#     Style and Tone:
-#     * Professional: Maintain a professional and informative tone.
-#     * Engaging: Write in an engaging manner to capture the audience’s interest.
-#     * Concise: Be clear and to the point.
-#     * Authoritative: Convey authority and credibility.
-
-#     Additional Guidelines:
-#     * Avoid using adjectives like 'massive', 'huge', 'totally', 'very'.
-#     * Rarely, if ever, use the word 'got'.
-#     * Rarely, if ever, use the word 'indeed'.
-#     """
-
-#     master_prompt = f"""    
-#     {start_prompt}
-
-#     {end_prompt}
-#     This is a conversation between a human and an assistant some messages might be out of context of your main task, always make sure you are able to get track of what you are supposed to do, Follow the instuctions given below:\n
-#     """
-
-#     template = master_prompt + """
+    system_prompt = f"""
+    Given a conversation (between Human and Assistant) and a follow up message from Human, your focus should be to understand the context from the conversation and choose suitables tool(s) to use, you tools for:
     
-#     {chat_history}
-
-#     Answer this question {input}:
-#     """
-
-#     prompt = PromptTemplate(
-#         input_variables=["input", "chat_history"], template=template
-#     )
-
-#     tweet_generation_chain = prompt | llm | StrOutputParser()
-
-#     response = await tweet_generation_chain.ainvoke({
-#         "input": input, 
-#         "chat_history": chat_history,
-#     })
-
-#     return response
+    * Topics and subtopics suggestions,
+    * Helping human generate a perfect tweet
+    * Generating title and meta description to enhance SEO
+    """
 
 
+    chat_history = [_Message(content=message.content, role=message.role) for message in messages_tmp] if len(messages_tmp) > 0  else []
 
-# async def title_and_meta_chain(
-#     input: str,
-#     user_id: str,
-#     chat_history: Optional[str],
-# ) -> LLMChain:
-
-#     """
-#     Useful for handling a conversation to help user craft a perfect SEO title and SEO meta description based on the article data like headline, authors, publisher, and summary
-    
-#     Args:
-#         - stream_handler: is an object that handle the chat stream.
-#         - chat_history: This is a string of previous messages in the chat, this is used to give context to the LLM on how to answer the incoming question.
-#         - input: This is an input question which the ai agent is supposed to answer.
-#         - article: This an object which contains the article's information such as headline, publisher, authors and the summary of the article
-#     """
-#     stream_manager = AsyncCallbackManager([])
-    
-#     redis = await get_redis_client()
-#     db = get_db()
-#     user_service = UserService(db)
-
-#     article = await user_service.get_article(user_id = user_id, redis_client = redis)
-
-#     llm = ChatOpenAI(
-#         temperature = 0.6,
-#         model = os.getenv("MODEL", "gpt-4o"),
-#         verbose = True,
-#         streaming = True,
-#         callback_manager = stream_manager,
-#     )  # type: ignore
-
-#     get_logger().info(f"Here are article data: {article}")
-
-#     article_data = f"""
-#     Headline = "{article.headline}"
-#     Summary = "{article.abstract}"
-#     Author(s) = "{article.authors}"
-#     Publication = "{article.publisher}"
-#     """
-
-#     start_prompt = f"""
-#     You are a helpful assistant. Your task is to help user with their questions such that they are able to generate a perfect SEO-optimized title and meta descriptions that enhance visibility in search engine results pages (SERPs), \
-#     improve click-through rates (CTR), and drive more organic traffic to the website for a macro-economica related article.
-
-#     Please answer the question for an article with the following headline, publisher, author(s) and article summary:\n
-
-#     {article_data}
-
-#     Use the below guideline to help you generate an optimized SEO title and meta description
-#     """
-
-#     end_prompt = f"""\n
-#     General Guidelines:
-#     * For SEO Title:
-#         - Write titles that are both informative and engaging to encourage clicks.
-#         - Use keywords naturally and avoid overloading the title with too many keywords, which can be seen as spammy by search engines.
+    messages = [
+        _Message(
+            role="system", content=system_prompt
+        ),
+    ]
+    messages.extend(chat_history)
+    messages.append(        
+        _Message(
+            role="user", content=f"""
+            Here is the article data:\n{article_data}\n
+            {predefined_topics}        
         
-#     * For SEO Meta descriptions:
-#         - Summarize the content clearly and concisely, ensuring the description is easy to read and understand.
-#         - Ensure the meta description accurately reflects the article content provided to you to avoid high bounce rates from users who feel misled.
+            If the question is to generated topics use these predefined topics. Here are all the predefined topics and subtopics, do not return anything which is not listed here:     
 
-#     Instructions:
-#     * For SEO Title:
-#         - Ensure the title is between 50-60 characters to avoid truncation in SERPs.
-#         - Include primary keywords at the beginning of the title
-#         - The title must accurately reflect the article content provided to you.
-#         - Focus on the main topic of the article and identify the primary keywords related to this topic.
-#         - Place the most important keywords towards the beginning of the title.
-#         - Ensure the title is easy to read and understand, avoiding complex structures or jargon.
-#         - Craft the title to be engaging and enticing, prompting users to click through to the article.
-#         - Ensure the title accurately represents the content of the article to set the right expectations for readers.
-
-#     * For SEO Meta descriptions:
-#         - Ensure the meta description is between 150-160 characters to prevent truncation in SERPs.
-#         - Include primary keywords naturally within the description.
-#         - The meta description must accurately reflect the article content provided to you.
-#         - Focus on the main topic of the article and identify the primary keywords related to this topic.
-#         - Integrate the primary keywords naturally within the description.
-#         - Ensure the meta description is easy to read and flows naturally.
-#         - Craft the description to be engaging and enticing, prompting users to click through to the article.
-#         - Ensure the meta description accurately represents the content of the article to set the right expectations for readers.
-
-#     Output Format:
-#         * Title: the text for the SEO Title here.
-#         * Meta Description: the text for SEO Meta description here.
-#     """
-
-#     master_prompt = f"""
-#     {start_prompt}
-
-#     {end_prompt}
-#     This is a conversation between a human and an assistant some messages might be out of context of your main task, always make sure you are able to get track of what you are supposed to do, Follow the instuctions given below:\n
-#     """
-
-#     template = master_prompt + """
+            Question: {input}
+            """
+        ),
+    )
     
-#     {chat_history}
-
-#     Answer this question {input}:
-#     """
-
-#     prompt = PromptTemplate(
-#         input_variables=["input", "chat_history"], template=template
-#     )
-
-#     title_and_meta_generation_chain = prompt | llm | StrOutputParser()
-
-#     response = await title_and_meta_generation_chain.ainvoke({
-#         "input": input, 
-#         "chat_history": chat_history,
-#     })
-
-#     return response
+    async for chunk in fetch_stream(messages):
+        yield chunk
