@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { Article } from "../utils/multi-mode-select";
 import { getBaseURL } from "./utils";
 
 export const SUCCESS_MESSAGE = "Account verified successfully";
@@ -321,6 +322,27 @@ export async function saveMacroRoundupData(data: MacroRoundupType) {
   }
 
   return { ...((await res.json()) as { message: string; status: number }) };
+}
+
+export async function getMacroRoundupData(): Promise<
+  Article | { message: string; status: number }
+> {
+  const access_token =
+    localStorage.getItem("access_token") || getCookie("access_token");
+  const res = await fetch("/api/article", {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${access_token}`,
+    },
+  });
+
+  if (!res.ok) {
+    const error = await res.text();
+    return { message: error, status: 400 };
+  }
+
+  return { ...((await res.json()) as Article) };
 }
 
 export async function refreshToken(token: string): Promise<{

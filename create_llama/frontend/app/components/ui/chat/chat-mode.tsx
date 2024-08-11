@@ -19,7 +19,6 @@ export const ChatMode = () => {
   }
 
   const { isResearchExploration, updateChatModeByUser } = authContext;
-  console.log(isResearchExploration);
 
   const changeChatMode = async (checked: boolean) => {
     const { status, message } = await updateChatModeByUser(checked);
