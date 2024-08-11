@@ -101,6 +101,7 @@ export default function ChatInput(
           title !== "" &&
           editThread(selectedThread?.id as string, {
             title: title,
+            workspace_id: chatContext.currentWorkspace?.id as string,
             user_id: user.id as string,
           });
         user &&
