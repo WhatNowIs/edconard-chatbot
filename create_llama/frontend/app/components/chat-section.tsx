@@ -146,7 +146,7 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
     setIsMessageLoading(true);
 
     const response = await fetch(
-      `${process.env.NEXT_PUBLIC_MODEL_BASE_URL}chat/stream`,
+      `${process.env.NEXT_PUBLIC_MODEL_BASE_URL}/chat/stream`,
       {
         method: "POST",
         headers: {
