@@ -352,7 +352,7 @@ export async function addChatMessage(data: UpdateMessagesType) {
     return { message: error, status: 400 };
   }
 
-  return { ...((await res.json()) as { message: string; status: number }) };
+  return await res.json();
 }
 
 export async function getMacroRoundupData(): Promise<
