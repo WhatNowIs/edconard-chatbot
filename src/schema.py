@@ -125,3 +125,11 @@ class Workspace(BaseModel):
 
     class Config:
         from_attributes = True
+
+class _Message(BaseModel):
+    role: str
+    content: str
+
+class _UpdateChat(BaseModel):
+    messages: List[_Message]
+    thread_id: str
