@@ -19,7 +19,6 @@ export const ChatMode = () => {
   }
 
   const { isResearchExploration, updateChatModeByUser } = authContext;
-  console.log(isResearchExploration);
 
   const changeChatMode = async (checked: boolean) => {
     const { status, message } = await updateChatModeByUser(checked);
@@ -43,7 +42,7 @@ export const ChatMode = () => {
   };
 
   useEffect(() => {
-    if (!shouldDrawerOpen && buttonRef.current) {
+    if (!shouldDrawerOpen && buttonRef.current && !isResearchExploration) {
       buttonRef.current.click();
     }
   }, [shouldDrawerOpen]);
@@ -70,6 +69,7 @@ export const ChatMode = () => {
             className="SwitchRoot"
             id="airplane-mode"
             onCheckedChange={changeChatMode}
+            checked={isResearchExploration as boolean}
           >
             <SwitchThumb className="SwitchThumb" />
           </Switch>
