@@ -97,7 +97,6 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
     thread_id: string,
     setNonResearchExplorationLLMMessage: Dispatch<SetStateAction<string>>,
   ) {
-    setIsMessageLoading(true);
     const articleData: Article = (await getMacroRoundupData()) as Article;
     const signal = controller.signal;
 
@@ -115,6 +114,49 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
     );
 
     const messagesData = [
+      {
+        role: "system",
+        content: `
+        You are an AI assistant tasked with generating perfect content for various use cases, including tweets, article classification, and SEO-optimized titles and meta descriptions. Your primary objective is to follow the instructions closely, ensuring precision, relevance, and engagement across all outputs.
+
+        General Guidelines:
+        - Stay within the character limits specified for each task.
+        - Always include relevant sources, keywords, and context to enhance credibility and visibility.
+        - Maintain a professional, engaging, and authoritative tone in all content.
+
+        Instructions:
+        
+        * For Tweets:
+            - Ensure the tweet does not exceed 254 characters.
+            - Always include the source, mentioning the authors and/or the publication.
+            - Use abbreviations where necessary to stay within the character limit.
+            - Incorporate hashtags and @ symbols to increase engagement.
+            - Avoid adjectives like 'massive', 'huge', 'totally', 'very', and the words 'got' and 'indeed'.
+
+        * For Article Classification:
+            - Recommend 3 to 4 of the most relevant topics and/or subtopics based on the article's summary and tweet text.
+            - Prioritize specific subtopics over broader topics whenever possible.
+            - Rank topics/subtopics based on their relevance and the strength of their association with the article content.
+            - Be precise in your classifications, using only predefined topics.
+
+        * For SEO-Optimized Titles and Meta Descriptions:
+            - Ensure the title is between 50-60 characters and the meta description between 150-160 characters to prevent truncation in SERPs.
+            - Use primary keywords naturally, placing them towards the beginning of the title and within the meta description.
+            - Ensure both the title and meta description accurately reflect the article content to set the right expectations for readers.
+            - Craft titles and descriptions to be engaging and enticing, prompting users to click through to the article.
+
+        Style and Tone:
+        - Professional: Maintain a professional and informative tone.
+        - Engaging: Write in an engaging manner to capture the audience's interest.
+        - Concise: Be clear and to the point.
+        - Authoritative: Convey authority and credibility.
+
+        Additional Guidelines:
+        - Avoid overloading content with too many keywords or complex structures.
+        - Ensure content is easy to read and flows naturally, without jargon or misleading information.
+        - Focus on relevance, clarity, and the user's intent behind each content piece.
+        `,
+      },
       ...cleanedData,
       {
         role: "user",
@@ -204,20 +246,26 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
       thread_id: thread_id,
     });
 
-    chatContext?.setMessages([
-      ...(chatContext?.messages as ResponseMessage[]),
+    const newMessages = [
+      ...(messages as ResponseMessage[]),
       ...(messageResponse as ResponseMessage[]),
-    ]);
+    ];
 
-    const response = await fetch("http://54.89.10.40/chat/stream", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "text/event-stream",
+    chatContext?.setMessages(newMessages);
+    setIsMessageLoading(true);
+
+    const response = await fetch(
+      `${process.env.NEXT_PUBLIC_MODEL_BASE_URL}chat/stream`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "text/event-stream",
+        },
+        body: JSON.stringify({ messages: messagesData, streaming: true }),
+        signal,
       },
-      body: JSON.stringify({ messages: messagesData, streaming: true }),
-      signal,
-    });
+    );
     const reader =
       response.body?.getReader() as ReadableStreamDefaultReader<Uint8Array>;
     const decoder = new TextDecoder("utf-8");
@@ -230,8 +278,7 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
 
       const chunk = decoder.decode(value);
       result += chunk;
-
-      setNonResearchExplorationLLMMessage((result += chunk));
+      setNonResearchExplorationLLMMessage(result);
     }
 
     const assistantMessageResponse = await addChatMessage({
@@ -243,10 +290,13 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
       ],
       thread_id: thread_id,
     });
-    chatContext?.setMessages([
-      ...(chatContext?.messages as ResponseMessage[]),
+
+    const aiNewMessages = [
+      ...(messages as ResponseMessage[]),
       ...(assistantMessageResponse as ResponseMessage[]),
-    ]);
+    ];
+
+    chatContext?.setMessages(aiNewMessages);
     setIsMessageLoading(false);
   }
 
@@ -258,9 +308,6 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
 
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(
-      `authContext?.isResearchExploration: ${authContext?.isResearchExploration}`,
-    );
     if (authContext && chatContext) {
       const { user, isResearchExploration } = authContext;
       const { messages, setNonResearchExplorationLLMMessage, selectedThread } =
