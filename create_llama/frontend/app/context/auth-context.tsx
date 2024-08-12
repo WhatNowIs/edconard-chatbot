@@ -48,7 +48,7 @@ export const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
   const [user, setUser] = useState<UserFormType | null>(null);
   const [isResearchExploration, setIsResearchExploration] = useState<
     boolean | null
-  >(false);
+  >(null);
 
   useEffect(() => {
     const token =
@@ -83,7 +83,8 @@ export const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
           setUser(userData);
           console.log("userData: ", userData);
           // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
-          await getChatModeByUser(userData.id as string);
+          const { mode } = await getChatModeByUser(userData.id as string);
+          setIsResearchExploration(mode);
         }
       };
       checkAuth();
@@ -133,6 +134,7 @@ export const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
       const { mode } = await getChatMode(userId, token as string);
       console.log(`got chat mode: ${mode}`);
       setIsResearchExploration(mode);
+      console.log(`got chat mode - 1: ${isResearchExploration}`);
       return {
         mode,
       };

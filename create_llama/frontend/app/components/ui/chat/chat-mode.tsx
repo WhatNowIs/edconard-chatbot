@@ -65,14 +65,24 @@ export const ChatMode = () => {
               </button>
             }
           />
-          <Switch
-            className="SwitchRoot"
-            id="airplane-mode"
-            onCheckedChange={changeChatMode}
-            checked={isResearchExploration as boolean}
-          >
-            <SwitchThumb className="SwitchThumb" />
-          </Switch>
+          {isResearchExploration !== null ? (
+            <Switch
+              className="SwitchRoot"
+              id="airplane-mode"
+              onCheckedChange={changeChatMode}
+              checked={isResearchExploration}
+            >
+              <SwitchThumb className="SwitchThumb" />
+            </Switch>
+          ) : (
+            <Switch
+              className="SwitchRoot"
+              id="airplane-mode"
+              onCheckedChange={changeChatMode}
+            >
+              <SwitchThumb className="SwitchThumb" />
+            </Switch>
+          )}
         </div>
       </form>
     </div>

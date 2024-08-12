@@ -62,6 +62,7 @@ interface ChatContextType {
   setCurrentWorkspace: Dispatch<SetStateAction<ResponseWorkspace | null>>;
   setWorkspaces: Dispatch<SetStateAction<ResponseWorkspace[]>>;
   setNonResearchExplorationLLMMessage: Dispatch<SetStateAction<string>>;
+  setMessages: Dispatch<SetStateAction<ResponseMessage[]>>;
 }
 
 const ChatContext = createContext<ChatContextType | undefined>(undefined);
@@ -243,6 +244,7 @@ export const ChatProvider: FC<ChatProviderProps> = ({ children }) => {
         setCurrentWorkspace,
         loadWorkspaces,
         setNonResearchExplorationLLMMessage,
+        setMessages,
       }}
     >
       {children}
