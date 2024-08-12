@@ -23,15 +23,31 @@ import {
   useState,
 } from "react";
 import { getCookie } from "../service/user-service";
+import {
+  ResponseWorkspace,
+  fetchWorkspaces,
+} from "../service/workspace-service";
+
+export enum SettingPanel {
+  Profile = "Profile",
+  Billing = "Billing",
+  Reports = "Reports",
+  Workspace = "Workspaces",
+}
 
 interface ChatContextType {
   threads: ResponseThread[];
   messages: ResponseMessage[];
   selectedThread: ResponseThread | null;
   article: Article | null;
+  currentSettingPanel: SettingPanel;
+  workspaces: ResponseWorkspace[];
+  currentWorkspace: ResponseWorkspace | null;
+  nonResearchExplorationLLMMessage: string;
   setSelectedThread: Dispatch<SetStateAction<ResponseThread | null>>;
   setThreads: Dispatch<SetStateAction<ResponseThread[]>>;
   loadThreads: () => Promise<void>;
+  loadWorkspaces: (userId: string) => Promise<void>;
   addThread: (data: ThreadCreate) => Promise<ResponseThread | null>;
   editThread: (
     thread_id: string,
@@ -42,6 +58,10 @@ interface ChatContextType {
   deleteThread: (thread_id: string) => Promise<void>;
   selectThread: (thread_id: string) => void;
   setArticle: Dispatch<SetStateAction<Article | null>>;
+  setCurrentSettingPanel: Dispatch<SetStateAction<SettingPanel>>;
+  setCurrentWorkspace: Dispatch<SetStateAction<ResponseWorkspace | null>>;
+  setWorkspaces: Dispatch<SetStateAction<ResponseWorkspace[]>>;
+  setNonResearchExplorationLLMMessage: Dispatch<SetStateAction<string>>;
 }
 
 const ChatContext = createContext<ChatContextType | undefined>(undefined);
@@ -56,12 +76,31 @@ export const ChatProvider: FC<ChatProviderProps> = ({ children }) => {
   const [selectedThread, setSelectedThread] = useState<ResponseThread | null>(
     null,
   );
+  const [workspaces, setWorkspaces] = useState<ResponseWorkspace[]>([]);
+  const [currentWorkspace, setCurrentWorkspace] =
+    useState<ResponseWorkspace | null>(null);
+  const [currentSettingPanel, setCurrentSettingPanel] = useState<SettingPanel>(
+    SettingPanel.Profile,
+  );
   const [article, setArticle] = useState<Article | null>(null);
+  const [
+    nonResearchExplorationLLMMessage,
+    setNonResearchExplorationLLMMessage,
+  ] = useState<string>("");
 
   const loadThreads = async () => {
     try {
       const fetchedThreads = await fetchThreads();
       setThreads(fetchedThreads);
+    } catch (error) {
+      console.error("Failed to fetch threads:", error);
+    }
+  };
+
+  const loadWorkspaces = async () => {
+    try {
+      const fetchedWorkspaces = await fetchWorkspaces();
+      setWorkspaces(fetchedWorkspaces);
     } catch (error) {
       console.error("Failed to fetch threads:", error);
     }
@@ -90,13 +129,25 @@ export const ChatProvider: FC<ChatProviderProps> = ({ children }) => {
     if (token && threads.length === 0) {
       const fetchUserThreads = async () => {
         try {
-          await loadThreads();
+          await loadWorkspaces();
         } catch (error) {
           console.error("Failed to load threads:", error);
         }
       };
 
       fetchUserThreads();
+    }
+
+    if (token && workspaces.length === 0) {
+      const fetchUserWorkspaces = async () => {
+        try {
+          await loadThreads();
+        } catch (error) {
+          console.error("Failed to load threads:", error);
+        }
+      };
+
+      fetchUserWorkspaces().catch((error) => console.log(error));
     }
   }, []);
 
@@ -113,6 +164,13 @@ export const ChatProvider: FC<ChatProviderProps> = ({ children }) => {
       loadMessages().catch((error) => console.log(error));
     }
   }, [threads]);
+
+  useEffect(() => {
+    const currentWS = workspaces[
+      workspaces.length - 1
+    ] as unknown as ResponseWorkspace;
+    setCurrentWorkspace(currentWS);
+  }, [workspaces]);
 
   const addThread = async (data: ThreadCreate) => {
     try {
@@ -166,6 +224,10 @@ export const ChatProvider: FC<ChatProviderProps> = ({ children }) => {
         messages,
         selectedThread,
         article,
+        currentSettingPanel,
+        workspaces,
+        currentWorkspace,
+        nonResearchExplorationLLMMessage,
         setSelectedThread,
         setThreads,
         loadThreads,
@@ -176,6 +238,11 @@ export const ChatProvider: FC<ChatProviderProps> = ({ children }) => {
         deleteThread,
         selectThread,
         setArticle,
+        setCurrentSettingPanel,
+        setWorkspaces,
+        setCurrentWorkspace,
+        loadWorkspaces,
+        setNonResearchExplorationLLMMessage,
       }}
     >
       {children}

@@ -1,7 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import AuthContext from "@/app/context/auth-context";
 import ChatContext from "@/app/context/chat-context";
-import { extractArticleDataFromString } from "@/app/utils/multi-mode-select";
 import { useGenerateTitle } from "@/app/utils/thread-title-generator";
 import React, { useContext, useEffect, useState } from "react";
 import { HiArrowSmallUp } from "react-icons/hi2";
@@ -37,33 +36,14 @@ export default function ChatInput(
       setImageUrl(null);
       return;
     }
+
     if (authContext && chatContext) {
-      const { user, isResearchExploration } = authContext;
-      const { messages, setArticle } = chatContext;
+      const { user } = authContext;
+      const { messages } = chatContext;
 
       user &&
         messages.length === 0 &&
         generateTitle(props.input).catch((error) => console.log(error));
-
-      if (!isResearchExploration) {
-        const form = e.currentTarget;
-        let inputString = form.elements.namedItem(
-          "message",
-        ) as HTMLInputElement;
-
-        const currentArticleData = extractArticleDataFromString(
-          inputString.value,
-        );
-        user &&
-          messages.length === 0 &&
-          generateTitle(props.input).catch((error) => console.log(error));
-
-        if (currentArticleData !== null) {
-          setArticle(currentArticleData);
-          props.handleSubmit(e);
-          return;
-        }
-      }
     }
     props.handleSubmit(e);
   };
@@ -101,6 +81,7 @@ export default function ChatInput(
           title !== "" &&
           editThread(selectedThread?.id as string, {
             title: title,
+            workspace_id: chatContext.currentWorkspace?.id as string,
             user_id: user.id as string,
           });
         user &&

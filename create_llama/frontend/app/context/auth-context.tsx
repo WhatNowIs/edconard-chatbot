@@ -48,7 +48,7 @@ export const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
   const [user, setUser] = useState<UserFormType | null>(null);
   const [isResearchExploration, setIsResearchExploration] = useState<
     boolean | null
-  >(true);
+  >(false);
 
   useEffect(() => {
     const token =
@@ -131,6 +131,7 @@ export const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
         localStorage.getItem("access_token") || getCookie("access_token");
 
       const { mode } = await getChatMode(userId, token as string);
+      console.log(`got chat mode: ${mode}`);
       setIsResearchExploration(mode);
       return {
         mode,
@@ -163,6 +164,7 @@ export const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
     checked: boolean,
   ): Promise<{ status: number; message: string }> => {
     try {
+      console.log(`Update chat mode to: ${checked}`);
       const token =
         localStorage.getItem("access_token") || getCookie("access_token");
       const { message } = await updateChatMode(
@@ -209,7 +211,7 @@ export const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
     <AuthContext.Provider
       value={{
         user,
-        isResearchExploration, 
+        isResearchExploration,
         setIsResearchExploration,
         setUser,
         login,

@@ -73,7 +73,7 @@ export default function MacroRoundupForm(props: Props) {
             name="order"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Order of Article</FormLabel>
+                <FormLabel>Article by Order of Appearance</FormLabel>
                 <FormControl>
                   <Input
                     {...field}
