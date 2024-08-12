@@ -14,7 +14,8 @@ class BaseArticle(BaseModel):
 
 class Article(BaseArticle):
     authors: str
-    question: str
+    url: str
+    order: int
 
 class GeneratorType(BaseArticle):
     publisher_weight: float
