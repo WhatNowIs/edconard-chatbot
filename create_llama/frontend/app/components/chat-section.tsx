@@ -5,12 +5,25 @@ import AuthContext from "@/app/context/auth-context";
 import ChatContext from "@/app/context/chat-context";
 import { PdfFocusProvider } from "@/app/context/pdf";
 import { useChat } from "ai/react";
-import { useContext, useEffect, useState } from "react";
-import { getCookie } from "../service/user-service";
+import {
+  Dispatch,
+  SetStateAction,
+  useContext,
+  useEffect,
+  useState,
+} from "react";
+import {
+  addChatMessage,
+  getCookie,
+  getMacroRoundupData,
+} from "../service/user-service";
+import { Article } from "../utils/multi-mode-select";
+import { useGenerateTitle } from "../utils/thread-title-generator";
 
 type ChatUILayout = "default" | "fit";
 
 export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
+  const { generateTitle } = useGenerateTitle();
   const authContext = useContext(AuthContext);
   const chatContext = useContext(ChatContext);
   const [accessToken, setAccessToken] = useState<string>("");
@@ -75,6 +88,173 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
     }
   }, [chatContext?.messages]);
 
+  async function fetchStream(
+    data: { role: string; content: string }[],
+    input: string,
+    thread_id: string,
+    setNonResearchExplorationLLMMessage: Dispatch<SetStateAction<string>>,
+  ) {
+    const articleData: Article = (await getMacroRoundupData()) as Article;
+
+    const article_data = `
+      Headline="${articleData.headline}"
+      Authors="${articleData.authors}"
+      Summary="${articleData.abstract}"
+      Publisher="${articleData.publisher}"
+    `;
+
+    const cleanedData: { role: string; content: string }[] = data.map(
+      (c: { role: string; content: string }) => {
+        return { role: c.role, content: c.content };
+      },
+    );
+
+    const messagesData = [
+      ...cleanedData,
+      {
+        role: "user",
+        content: `
+        Here is the article data: ${article_data}\n
+          
+        Here are all the predefined topics and subtopics, do not return anything which is not listed here:     
+        "1. Comparisons:
+            - Age
+            - Cross-country
+            - Gender
+            - Geography (Urban/Rural)
+            - Historical
+            - Liberal/Conservative
+            - No Comparison
+            - Other Comparison
+            - Race
+            - Sector
+            - Skill Level
+        
+        2. Fiscal Policy:
+            - Fiscal Deficits
+            - Government Spending
+            - Infrastructure
+            - Multiplier/Rational Expectations
+            - Regulation
+            - Taxation
+        
+        3. GDP:
+            - Business Cycle
+            - Financial Markets
+            - Growth
+            - Housing
+            - Inflation
+            - Savings Glut/Trade Deficit
+            - Trade (not deficits)
+        
+        4. Monetary Policy:
+            - Banking
+            - Financial Crisis
+            - M&M
+        
+        5. Science:
+            - Cosmos
+            - Evolution/Heredity
+            - Fraudulent Studies
+            - Global Warming
+            - Other Science
+        
+        6. Workforce:
+            - Demographics
+            - Education
+            - Family/Marriage
+            - Gender Pay Gap
+            - Immigration
+            - Inequality
+            - Minimum Wage
+            - Mobility/Assortive Mating
+            - Poverty/Crime
+            - Unemployment/Participation
+            - Wages/Income
+            - Workforce Reorganization/Participation
+        
+        7. Productivity:
+            - Cronyism
+            - Incentives/Risk-Taking
+            - Innovation/Research
+            - Institutional Capabilities
+            - Intangibles
+            - Investment
+            - Startups
+            - Workforce Reorganization/Participation
+        
+        8. Energy"
+        Question: ${input}
+      `,
+      },
+    ];
+
+    const response = await fetch("http://54.89.10.40/chat/stream", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "text/event-stream",
+      },
+      body: JSON.stringify({ messages: messagesData, streaming: true }),
+    });
+    const reader =
+      response.body?.getReader() as ReadableStreamDefaultReader<Uint8Array>;
+    const decoder = new TextDecoder("utf-8");
+
+    let result = "";
+
+    while (true) {
+      const { value, done } = await reader.read();
+      if (done) break;
+
+      const chunk = decoder.decode(value);
+      result += chunk;
+
+      setNonResearchExplorationLLMMessage((result += chunk));
+    }
+
+    const responseMessage = await addChatMessage({
+      messages: [
+        {
+          role: "user",
+          content: input,
+        },
+        {
+          role: "assistant",
+          content: result,
+        },
+      ],
+      thread_id: thread_id,
+    });
+
+    return responseMessage;
+  }
+
+  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    console.log(
+      `authContext?.isResearchExploration: ${authContext?.isResearchExploration}`,
+    );
+    if (authContext && chatContext) {
+      const { user, isResearchExploration } = authContext;
+      const { messages, setNonResearchExplorationLLMMessage, selectedThread } =
+        chatContext;
+
+      user &&
+        messages.length === 0 &&
+        generateTitle(input).catch((error) => console.log(error));
+
+      if (!isResearchExploration) {
+        fetchStream(
+          messages,
+          input,
+          selectedThread?.id as string,
+          setNonResearchExplorationLLMMessage,
+        ).catch(console.error);
+      }
+    }
+  };
+
   return (
     <PdfFocusProvider>
       <div
@@ -88,7 +268,9 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
         />
         <ChatInput
           input={input}
-          handleSubmit={handleSubmit}
+          handleSubmit={
+            authContext?.isResearchExploration ? handleSubmit : onSubmit
+          }
           handleInputChange={handleInputChange}
           isLoading={isLoading}
           multiModal={true}

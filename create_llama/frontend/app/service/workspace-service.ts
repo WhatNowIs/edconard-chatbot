@@ -2,24 +2,36 @@ import { z } from "zod";
 import { getCookie } from "./user-service";
 import { getBackendURL } from "./utils";
 
-const ResponseWorkspaceSchema = z.object({
+export const UserManagementSchema = z.object({
+  workspace_id: z.string().min(1, "Workspace ID is required"),
+  user_id: z.string().min(1, "User ID is required"),
+});
+
+export const ThreadManagementSchema = z.object({
+  workspace_id: z.string().min(1, "Workspace ID is required"),
+  thread_id: z.string().min(1, "Thread ID is required"),
+});
+
+export const ResponseWorkspaceSchema = z.object({
   id: z.string(),
   name: z.string(),
   created_at: z.string(),
   updated_at: z.string().nullable(),
-  status: z.enum(["Active", "Inactive", "Deleted", "Blocked", "Pending", "Used"]).nullable(),
+  status: z.string().nullable(),
   users: z.array(z.any()).optional(),
   threads: z.array(z.any()).optional(),
 });
 
-const WorkspaceCreateSchema = z.object({
+export const WorkspaceCreateSchema = z.object({
   name: z.string(),
 });
 
 export type ResponseWorkspace = z.TypeOf<typeof ResponseWorkspaceSchema>;
 export type WorkspaceCreate = z.TypeOf<typeof WorkspaceCreateSchema>;
+export type UserManagementType = z.infer<typeof UserManagementSchema>;
+export type ThreadManagementType = z.infer<typeof ThreadManagementSchema>;
 
-const baseURL = `${getBackendURL()}/api/chat/workspaces`;
+const baseURL = `${getBackendURL()}/api/workspaces/`;
 
 async function fetchWithAuth(url: string, options: RequestInit = {}) {
   const access_token =
@@ -57,19 +69,28 @@ export async function fetchWorkspaces(): Promise<ResponseWorkspace[]> {
   return res as ResponseWorkspace[];
 }
 
+export async function fetchWorkspacesByUser(
+  userId: string,
+): Promise<ResponseWorkspace[]> {
+  const res = await fetchWithAuth(`${baseURL}user/${userId}`);
+  return res as ResponseWorkspace[];
+}
+
 export async function updateWorkspace(
   workspace_id: string,
   data: WorkspaceCreate,
 ): Promise<ResponseWorkspace> {
-  const res = await fetchWithAuth(`${baseURL}/${workspace_id}`, {
+  const res = await fetchWithAuth(`${baseURL}${workspace_id}`, {
     method: "PATCH",
     body: JSON.stringify(data),
   });
   return res as ResponseWorkspace;
 }
 
-export async function getWorkspace(workspace_id: string): Promise<ResponseWorkspace> {
-  const res = await fetchWithAuth(`${baseURL}/${workspace_id}`);
+export async function getWorkspace(
+  workspace_id: string,
+): Promise<ResponseWorkspace> {
+  const res = await fetchWithAuth(`${baseURL}${workspace_id}`);
   return res as ResponseWorkspace;
 }
 
@@ -77,7 +98,7 @@ export async function addUserToWorkspace(
   workspace_id: string,
   user_id: string,
 ): Promise<ResponseWorkspace> {
-  const res = await fetchWithAuth(`${baseURL}/${workspace_id}/add_user`, {
+  const res = await fetchWithAuth(`${baseURL}${workspace_id}/add_user`, {
     method: "POST",
     body: JSON.stringify({ user_id }),
   });
@@ -88,7 +109,7 @@ export async function removeUserFromWorkspace(
   workspace_id: string,
   user_id: string,
 ): Promise<ResponseWorkspace> {
-  const res = await fetchWithAuth(`${baseURL}/${workspace_id}/remove_user`, {
+  const res = await fetchWithAuth(`${baseURL}${workspace_id}/remove_user`, {
     method: "POST",
     body: JSON.stringify({ user_id }),
   });
@@ -99,7 +120,7 @@ export async function addThreadToWorkspace(
   workspace_id: string,
   thread_id: string,
 ): Promise<ResponseWorkspace> {
-  const res = await fetchWithAuth(`${baseURL}/${workspace_id}/add_thread`, {
+  const res = await fetchWithAuth(`${baseURL}${workspace_id}/add_thread`, {
     method: "POST",
     body: JSON.stringify({ thread_id }),
   });
@@ -110,7 +131,7 @@ export async function removeThreadFromWorkspace(
   workspace_id: string,
   thread_id: string,
 ): Promise<ResponseWorkspace> {
-  const res = await fetchWithAuth(`${baseURL}/${workspace_id}/remove_thread`, {
+  const res = await fetchWithAuth(`${baseURL}${workspace_id}/remove_thread`, {
     method: "POST",
     body: JSON.stringify({ thread_id }),
   });
@@ -120,7 +141,7 @@ export async function removeThreadFromWorkspace(
 export async function removeWorkspace(
   workspace_id: string,
 ): Promise<{ message: string }> {
-  const res = await fetchWithAuth(`${baseURL}/${workspace_id}`, {
+  const res = await fetchWithAuth(`${baseURL}${workspace_id}`, {
     method: "DELETE",
   });
   return res as { message: string };

@@ -1,6 +1,7 @@
-import React from 'react'; 
 import { Check, Copy } from "lucide-react";
+import { useContext } from "react";
 
+import ChatContext from "@/app/context/chat-context";
 import { Message } from "ai";
 import { Fragment } from "react";
 import { Button } from "../button";
@@ -40,6 +41,7 @@ function ChatMessageContent({
   message: Message;
   isLoading: boolean;
 }) {
+  const chatContext = useContext(ChatContext);
   const annotations = message.annotations as MessageAnnotation[] | undefined;
   if (!annotations?.length) return <Markdown content={message.content} />;
 
@@ -69,7 +71,11 @@ function ChatMessageContent({
       order: -2,
       component:
         eventData.length > 0 ? (
-          <ChatEvents isLoading={isLoading} data={eventData} citations={sourceData[0] ? sourceData[0].nodes : []} />
+          <ChatEvents
+            isLoading={isLoading}
+            data={eventData}
+            citations={sourceData[0] ? sourceData[0].nodes : []}
+          />
         ) : null,
     },
     {
@@ -93,6 +99,7 @@ function ChatMessageContent({
         .map((content, index) => (
           <Fragment key={index}>{content.component}</Fragment>
         ))}
+      {chatContext?.nonResearchExplorationLLMMessage}
     </div>
   );
 }

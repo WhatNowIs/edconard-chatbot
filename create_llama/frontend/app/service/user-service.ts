@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { Article } from "../utils/multi-mode-select";
 import { getBaseURL } from "./utils";
 
 export const SUCCESS_MESSAGE = "Account verified successfully";
@@ -38,6 +39,16 @@ export const ChangePasswordSchema = z
 export const MacroRoundupSchema = z.object({
   document_link: z.string(),
   order: z.string(),
+});
+
+export const AddMessageSchema = z.object({
+  role: z.string(),
+  content: z.string(),
+});
+
+export const UpdateMessagesSchema = z.object({
+  messages: z.array(AddMessageSchema),
+  thread_id: z.string(),
 });
 
 export const UserSigninSchema = z.object({
@@ -87,6 +98,7 @@ export type ForgotPasswordType = z.TypeOf<typeof ForgotPasswordSchema>;
 export type ResetPasswordType = z.TypeOf<typeof ResetPasswordSchema>;
 export type MacroRoundupType = z.TypeOf<typeof MacroRoundupSchema>;
 export type ChangePasswordType = z.infer<typeof ChangePasswordSchema>;
+export type UpdateMessagesType = z.infer<typeof UpdateMessagesSchema>;
 
 export async function createUserAccount(
   data: UserFormType,
@@ -321,6 +333,47 @@ export async function saveMacroRoundupData(data: MacroRoundupType) {
   }
 
   return { ...((await res.json()) as { message: string; status: number }) };
+}
+
+export async function addChatMessage(data: UpdateMessagesType) {
+  const access_token =
+    localStorage.getItem("access_token") || getCookie("access_token");
+  const res = await fetch(`${getBaseURL()}/api/chat`, {
+    method: "PATCH",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${access_token}`,
+    },
+    body: JSON.stringify(data),
+  });
+
+  if (!res.ok) {
+    const error = await res.text();
+    return { message: error, status: 400 };
+  }
+
+  return { ...((await res.json()) as { message: string; status: number }) };
+}
+
+export async function getMacroRoundupData(): Promise<
+  Article | { message: string; status: number }
+> {
+  const access_token =
+    localStorage.getItem("access_token") || getCookie("access_token");
+  const res = await fetch("/api/article", {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${access_token}`,
+    },
+  });
+
+  if (!res.ok) {
+    const error = await res.text();
+    return { message: error, status: 400 };
+  }
+
+  return { ...((await res.json()) as Article) };
 }
 
 export async function refreshToken(token: string): Promise<{
