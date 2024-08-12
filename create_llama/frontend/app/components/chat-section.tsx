@@ -4,7 +4,7 @@ import { ChatInput, ChatMessages } from "@/app/components/ui/chat";
 import AuthContext from "@/app/context/auth-context";
 import ChatContext from "@/app/context/chat-context";
 import { PdfFocusProvider } from "@/app/context/pdf";
-import { useChat } from "ai/react";
+import { Message, useChat } from "ai/react";
 import {
   Dispatch,
   SetStateAction,
@@ -49,6 +49,7 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
     reload,
     stop,
     setMessages,
+    setInput,
   } = useChat({
     api: getChatUrl(),
     headers: {
@@ -102,7 +103,7 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
 
     const article_data = `
       Headline="${articleData.headline}"
-      Authors="${articleData.authors}"
+      Author(s)="${articleData.authors}"
       Summary="${articleData.abstract}"
       Publisher="${articleData.publisher}"
     `;
@@ -133,6 +134,8 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
       ],
       thread_id: thread_id,
     });
+
+    setInput("");
 
     const newMessages = [
       ...(messages as ResponseMessage[]),
@@ -198,8 +201,11 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
     e.preventDefault();
     if (authContext && chatContext) {
       const { user, isResearchExploration } = authContext;
-      const { messages, setNonResearchExplorationLLMMessage, selectedThread } =
-        chatContext;
+      const {
+        messages: dataMessages,
+        setNonResearchExplorationLLMMessage,
+        selectedThread,
+      } = chatContext;
 
       user &&
         messages.length === 0 &&
@@ -207,7 +213,7 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
 
       if (!isResearchExploration) {
         fetchStream(
-          messages,
+          dataMessages,
           input,
           selectedThread?.id as string,
           setNonResearchExplorationLLMMessage,
@@ -222,7 +228,11 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
         className={`flex flex-col space-y-4 h-screen overflow-y-auto justify-between w-full pl-4 pb-2`}
       >
         <ChatMessages
-          messages={messages}
+          messages={
+            authContext?.isResearchExploration
+              ? messages
+              : (chatContext?.messages as Message[])
+          }
           isLoading={
             authContext?.isResearchExploration ? isLoading : isMessageLoading
           }
