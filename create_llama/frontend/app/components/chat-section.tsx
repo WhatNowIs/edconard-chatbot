@@ -12,6 +12,7 @@ import {
   useEffect,
   useState,
 } from "react";
+import { ResponseMessage } from "../service/thread-service";
 import {
   addChatMessage,
   getCookie,
@@ -27,6 +28,8 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
   const authContext = useContext(AuthContext);
   const chatContext = useContext(ChatContext);
   const [accessToken, setAccessToken] = useState<string>("");
+  const [isMessageLoading, setIsMessageLoading] = useState<boolean>(false);
+  const controller = new AbortController();
 
   const getChatUrl = () => {
     const isWithinContext = chatContext && authContext;
@@ -94,7 +97,9 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
     thread_id: string,
     setNonResearchExplorationLLMMessage: Dispatch<SetStateAction<string>>,
   ) {
+    setIsMessageLoading(true);
     const articleData: Article = (await getMacroRoundupData()) as Article;
+    const signal = controller.signal;
 
     const article_data = `
       Headline="${articleData.headline}"
@@ -189,6 +194,21 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
       },
     ];
 
+    const messageResponse = await addChatMessage({
+      messages: [
+        {
+          role: "user",
+          content: input,
+        },
+      ],
+      thread_id: thread_id,
+    });
+
+    chatContext?.setMessages([
+      ...(chatContext?.messages as ResponseMessage[]),
+      ...(messageResponse as ResponseMessage[]),
+    ]);
+
     const response = await fetch("http://54.89.10.40/chat/stream", {
       method: "POST",
       headers: {
@@ -196,6 +216,7 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
         Accept: "text/event-stream",
       },
       body: JSON.stringify({ messages: messagesData, streaming: true }),
+      signal,
     });
     const reader =
       response.body?.getReader() as ReadableStreamDefaultReader<Uint8Array>;
@@ -213,12 +234,8 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
       setNonResearchExplorationLLMMessage((result += chunk));
     }
 
-    const responseMessage = await addChatMessage({
+    const assistantMessageResponse = await addChatMessage({
       messages: [
-        {
-          role: "user",
-          content: input,
-        },
         {
           role: "assistant",
           content: result,
@@ -226,8 +243,17 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
       ],
       thread_id: thread_id,
     });
+    chatContext?.setMessages([
+      ...(chatContext?.messages as ResponseMessage[]),
+      ...(assistantMessageResponse as ResponseMessage[]),
+    ]);
+    setIsMessageLoading(false);
+  }
 
-    return responseMessage;
+  function cancelRequest() {
+    controller.abort();
+
+    setIsMessageLoading(false);
   }
 
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -262,9 +288,11 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
       >
         <ChatMessages
           messages={messages}
-          isLoading={isLoading}
+          isLoading={
+            authContext?.isResearchExploration ? isLoading : isMessageLoading
+          }
           reload={reload}
-          stop={stop}
+          stop={authContext?.isResearchExploration ? stop : cancelRequest}
         />
         <ChatInput
           input={input}
@@ -272,7 +300,9 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
             authContext?.isResearchExploration ? handleSubmit : onSubmit
           }
           handleInputChange={handleInputChange}
-          isLoading={isLoading}
+          isLoading={
+            authContext?.isResearchExploration ? isLoading : isMessageLoading
+          }
           multiModal={true}
         />
       </div>

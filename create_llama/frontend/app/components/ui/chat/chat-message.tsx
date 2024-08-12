@@ -99,7 +99,6 @@ function ChatMessageContent({
         .map((content, index) => (
           <Fragment key={index}>{content.component}</Fragment>
         ))}
-      {chatContext?.nonResearchExplorationLLMMessage}
     </div>
   );
 }
