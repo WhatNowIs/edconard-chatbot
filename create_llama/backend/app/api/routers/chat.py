@@ -22,7 +22,7 @@ from src.core.services.user import UserService
 from redis.asyncio.client import Redis
 from app.utils.helpers import Article, get_document_by_url
 
-from src.schema import ChatMode, SetArticleData
+from src.schema import _UpdateChat, ChatMode, ResponseMessage, SetArticleData
 from src.utils.logger import get_logger
 
 chat_router = r = APIRouter()
@@ -286,7 +286,6 @@ async def chat_request(
         nodes=_SourceNodes.from_source_nodes(response.source_nodes),
     )
 
-
 # non-streaming endpoint - delete if not needed
 @r.patch("/chat-mode/{user_id}")
 async def chat_mode_request(
@@ -310,6 +309,44 @@ async def chat_mode_request(
         detail="Invalid session",
         headers={"WWW-Authenticate": "Bearer"},
     )
+# non-streaming endpoint - delete if not needed
+@r.patch("")
+async def add_chat_messages(
+    data: _UpdateChat,
+    session: dict = Depends(get_session),    
+    redis_client: Redis = Depends(get_redis_client),
+    user_service: UserService = Depends(get_user_service),
+    message_service: MessageService = Depends(get_message_service),
+):
+    
+    if "sub" in session:
+        user_id = session["sub"]
+        
+        article = await  user_service.get_article(user_id=user_id, redis_client=redis_client)
+        responses = []
+        for message in data.messages:
+            new_message = Message(
+                thread_id=data.thread_id,
+                user_id=user_id,
+                role=MessageRole.ASSISTANT.value if MessageRole.ASSISTANT.value == message.role else MessageRole.USER.value,
+                content=message.content,
+                annotations=[{
+                    "url": article.url,
+                    "order": article.order,
+                    "headline": article.headline,
+                    "is_research_exploration": False
+                }]
+            )
+            created_obj = await message_service.create(new_message)
+            responses.append(ResponseMessage.model_validate(created_obj))
+    
+        return responses
+    
+    raise HTTPException(
+        status_code=status.HTTP_401_UNAUTHORIZED,
+        detail="Invalid session",
+        headers={"WWW-Authenticate": "Bearer"},
+    )
 
 # non-streaming endpoint - delete if not needed
 @r.get("/chat-mode/{user_id}")
@@ -326,7 +363,7 @@ async def get_chat_mode(
 
         get_logger().info(f"retrieved chat mode: {chat_mode}")
     
-        return JSONResponse(status_code=200, content={"mode": bool(chat_mode)}) 
+        return JSONResponse(status_code=200, content={"mode": chat_mode}) 
     raise HTTPException(
         status_code=status.HTTP_401_UNAUTHORIZED,
         detail="Invalid session",
@@ -335,7 +372,7 @@ async def get_chat_mode(
 
 # non-streaming endpoint - delete if not needed
 @r.post("/article")
-async def get_chat_mode(
+async def update_article(
     data: SetArticleData,
     session: dict = Depends(get_session),    
     redis_client: Redis = Depends(get_redis_client),
@@ -362,7 +399,8 @@ async def get_chat_mode(
             authors=doc.authors,
             headline=doc.headline,
             publisher=doc.publication,
-            question=""
+            order=data.order,
+            url=data.document_link
         )
         await user_service.update_article(user_id, article, redis_client)
 
@@ -370,6 +408,29 @@ async def get_chat_mode(
         get_logger().info(article.dict())
     
         return JSONResponse(status_code=200, content={"message": f"Successfully updated article data with order of appearance # {data.order}", "status": 200}) 
+
+    raise HTTPException(
+        status_code=status.HTTP_401_UNAUTHORIZED,
+        detail="Invalid session",
+        headers={"WWW-Authenticate": "Bearer"},
+    )
+
+
+
+# non-streaming endpoint - delete if not needed
+@r.get("/article")
+async def get_article(
+    session: dict = Depends(get_session),    
+    redis_client: Redis = Depends(get_redis_client),
+    user_service: UserService = Depends(get_user_service),
+) -> _Result:
+    
+    if "sub" in session:
+        user_id = session['sub']
+
+        article = await user_service.get_article(user_id=user_id, redis_client=redis_client)
+    
+        return JSONResponse(status_code=200, content=article.dict()) 
 
     raise HTTPException(
         status_code=status.HTTP_401_UNAUTHORIZED,

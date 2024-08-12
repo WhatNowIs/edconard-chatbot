@@ -131,10 +131,11 @@ class UserService(Service):
 
         return False, None, None, None, "Your email or password is incorrect"
 
-    async def update_chat_mode(self, user_id: str, is_research_or_explorationde: bool, redis_client: Redis) -> None:
-        self.logger.info(f"Updating chat mode for user ID: {user_id} to {is_research_or_explorationde}")
+    async def update_chat_mode(self, user_id: str, is_research_or_exploration: bool, redis_client: Redis) -> None:
+        self.logger.info(f"Updating chat mode for user ID: {user_id} to {is_research_or_exploration}")
         # Update the chat mode in Redis without expiration
-        await redis_client.set(f"chat_mode:{user_id}", value=str(is_research_or_explorationde))
+        value = int(is_research_or_exploration)
+        await redis_client.set(f"chat_mode:{user_id}", value=value)
         self.logger.info(f"Chat mode for user ID: {user_id} updated successfully")
 
     async def update_article(self, user_id: str, article: Article, redis_client: Redis) -> None:
@@ -184,9 +185,11 @@ class UserService(Service):
         chat_mode = await redis_client.get(f"chat_mode:{user_id}")
         if chat_mode is None:
             self.logger.warning(f"No chat mode found for user ID: {user_id}")
+            return None
         else:
+            chat_mode = bool(int(chat_mode))
             self.logger.info(f"Chat mode for user ID: {user_id} is {chat_mode}")
-        return chat_mode
+            return chat_mode
     
     def create_access_token(self, data: dict, expires_delta: timedelta = None, secret_key: str = SECRET_KEY):
         to_encode = data.copy()
