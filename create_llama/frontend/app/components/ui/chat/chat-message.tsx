@@ -1,7 +1,5 @@
 import { Check, Copy } from "lucide-react";
-import { useContext } from "react";
 
-import ChatContext from "@/app/context/chat-context";
 import { Message } from "ai";
 import { Fragment } from "react";
 import { Button } from "../button";
@@ -41,9 +39,15 @@ function ChatMessageContent({
   message: Message;
   isLoading: boolean;
 }) {
-  const chatContext = useContext(ChatContext);
   const annotations = message.annotations as MessageAnnotation[] | undefined;
-  if (!annotations?.length) return <Markdown content={message.content} />;
+  if (!annotations?.length)
+    return (
+      <Markdown
+        content={message.content}
+        role={message.role}
+        annotations={message.annotations as any[]}
+      />
+    );
 
   const imageData = getAnnotationData<ImageData>(
     annotations,
@@ -84,7 +88,13 @@ function ChatMessageContent({
     },
     {
       order: 0,
-      component: <Markdown content={message.content} />,
+      component: (
+        <Markdown
+          content={message.content}
+          annotations={message.annotations as any[]}
+          role={message.role}
+        />
+      ),
     },
     {
       order: 1,
