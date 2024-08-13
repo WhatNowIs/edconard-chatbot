@@ -49,7 +49,9 @@ export default function Markdown({
       components={{
         p({ children }) {
           let result =
-            !authContext?.isResearchExploration && annotations?.length > 0
+            !authContext?.isResearchExploration &&
+            role === "assistant" &&
+            annotations?.length > 0
               ? `{${annotations[0]?.headline}}, Article Order of Appearance - ${annotations[0]?.order}: ${annotations[0]?.url}\n\n`
               : "";
           return (
