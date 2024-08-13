@@ -51,6 +51,8 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
     stop,
     setMessages,
     setInput,
+    addToolResult,
+    append,
   } = useChat({
     api: getChatUrl(),
     headers: {
@@ -94,13 +96,17 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
   }, [chatContext?.messages]);
 
   const updateLastMessage = (index: number, newMessage: Partial<Message>) => {
-    const updatedMessages = [...messages];
-    updatedMessages[messages.length - index] = {
-      ...updatedMessages[messages.length - index],
-      ...newMessage,
-    };
+    setMessages((prevMessages) => {
+      // Copy the existing
+      if (prevMessages.length === 0) return prevMessages;
+      const updatedMessages = [...prevMessages];
+      updatedMessages[updatedMessages.length - index] = {
+        ...updatedMessages[updatedMessages.length - index],
+        ...newMessage,
+      };
 
-    setMessages(updatedMessages);
+      return updatedMessages;
+    });
   };
 
   const updateLastMessageStore = (
@@ -119,26 +125,30 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
       return updatedMessages;
     });
   };
+
   function updateMessages(
-    messages: ResponseMessage[],
+    // messages: ResponseMessage[],
     newMessage: ResponseMessage,
   ) {
-    const newMessages: ResponseMessage[] = [
-      ...(messages.length > 0 ? (messages as ResponseMessage[]) : []),
-      newMessage,
-    ];
+    // const newMessages: ResponseMessage[] = [
+    //   ...(messages.length > 0 ? (messages as ResponseMessage[]) : []),
+    //   newMessage,
+    // ];
 
-    const updatedMessages = newMessages.map((msg) => ({
-      content: msg.content,
-      role: msg.role as Role,
-      id: msg.id,
-      annotations: msg.annotations,
-    }));
+    // const updatedMessages = newMessages.map((msg) => ({
+    //   content: msg.content,
+    //   role: msg.role as Role,
+    //   id: msg.id,
+    //   annotations: msg.annotations,
+    // }));
 
-    chatContext?.setMessages(newMessages);
-    setMessages(updatedMessages);
-
-    return newMessages;
+    chatContext?.messages.push(newMessage);
+    messages.push({
+      role: newMessage.role as Role,
+      content: newMessage.content,
+      id: "",
+      annotations: newMessage.annotations,
+    });
   }
 
   async function fetchStream(
@@ -160,7 +170,7 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
         return { role: c.role, content: c.content };
       },
     );
-    updateMessages(chatContext?.messages as ResponseMessage[], {
+    updateMessages({
       thread_id: thread_id,
       id: "",
       workspace_id: chatContext?.currentWorkspace?.id as string,
@@ -210,6 +220,17 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
 
     setNonResearchExplorationLLMMessage(result);
 
+    updateMessages({
+      thread_id: thread_id,
+      id: "",
+      workspace_id: chatContext?.currentWorkspace?.id as string,
+      user_id: authContext?.user?.id as string,
+      timestamp: new Date().toISOString(),
+      annotations: [],
+      role: "assistant" as Role,
+      content: result,
+    });
+
     while (true) {
       const { value, done } = await reader.read();
       if (done) break;
@@ -218,10 +239,15 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
 
       const chunk = decoder.decode(value);
       result += chunk;
-      setNonResearchExplorationLLMMessage(result);
+      updateLastMessageStore(1, {
+        content: result,
+      });
+      updateLastMessage(1, {
+        content: result,
+      });
     }
 
-    await addChatMessage({
+    const assistantMessageResponse = (await addChatMessage({
       messages: [
         {
           role: "user",
@@ -233,20 +259,16 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
         },
       ],
       thread_id: thread_id,
-    });
+    })) as ResponseMessage[];
 
-    // assistantMessageResponse
-    //   .reverse()
-    //   .forEach((aiMessage: Partial<ResponseMessage>, index: number) => {
-    //     updateLastMessageStore(index + 1, {
-    //       id: aiMessage.id,
-    //       annotations: aiMessage.annotations,
-    //     });
-    //     updateLastMessage(index + 1, {
-    //       id: aiMessage.id,
-    //       annotations: aiMessage.annotations,
-    //     });
-    //   });
+    updateLastMessageStore(1, {
+      id: assistantMessageResponse[1].id,
+      annotations: assistantMessageResponse[1].annotations,
+    });
+    updateLastMessage(1, {
+      id: assistantMessageResponse[1].id,
+      annotations: assistantMessageResponse[1].annotations,
+    });
   }
 
   function cancelRequest() {
