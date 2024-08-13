@@ -61,7 +61,7 @@ export const ChatMode = () => {
   }, [shouldDrawerOpen]);
 
   return (
-    <div className="w-full h-8 flex bg-white gap-2 items-center justify-start fixed top-0">
+    <div className="w-[2/3] h-8 flex bg-white gap-2 items-center justify-start fixed top-0">
       <form>
         <div style={{ display: "flex", alignItems: "center" }}>
           <SwitchLabel

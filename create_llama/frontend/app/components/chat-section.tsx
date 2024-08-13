@@ -126,22 +126,7 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
     });
   };
 
-  function updateMessages(
-    // messages: ResponseMessage[],
-    newMessage: ResponseMessage,
-  ) {
-    // const newMessages: ResponseMessage[] = [
-    //   ...(messages.length > 0 ? (messages as ResponseMessage[]) : []),
-    //   newMessage,
-    // ];
-
-    // const updatedMessages = newMessages.map((msg) => ({
-    //   content: msg.content,
-    //   role: msg.role as Role,
-    //   id: msg.id,
-    //   annotations: msg.annotations,
-    // }));
-
+  function updateMessages(newMessage: ResponseMessage) {
     chatContext?.messages.push(newMessage);
     messages.push({
       role: newMessage.role as Role,
@@ -304,7 +289,7 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
         className={`flex flex-col space-y-4 h-screen overflow-y-auto justify-between w-full pl-4 pb-2`}
       >
         <ChatMessages
-          messages={messages}
+          messages={chatContext?.messages as Message[]}
           isLoading={
             authContext?.isResearchExploration ? isLoading : isMessageLoading
           }
