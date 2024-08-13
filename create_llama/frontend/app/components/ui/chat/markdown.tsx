@@ -48,9 +48,12 @@ export default function Markdown({
       rehypePlugins={[rehypeKatex as unknown as any]}
       components={{
         p({ children }) {
-          let result = `{${annotations[0].headline}}, Article Order of Appearance - ${annotations[0].order}: ${annotations[0].url}\n\n`;
+          let result =
+            !authContext?.isResearchExploration && annotations?.length > 0
+              ? `{${annotations[0]?.headline}}, Article Order of Appearance - ${annotations[0]?.order}: ${annotations[0]?.url}\n\n`
+              : "";
           return (
-            <p className="mb-2 last:mb-0 whitespace-pre-line">{`${role === "assistant" && !authContext?.isResearchExploration && result} ${children}`}</p>
+            <p className="mb-2 last:mb-0 whitespace-pre-line">{`${role === "assistant" && !authContext?.isResearchExploration ? result : ""}${children}`}</p>
           );
         },
         code({ inline, className, children, ...props }) {
