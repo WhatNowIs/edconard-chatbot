@@ -50,6 +50,13 @@ export const ChatMode = () => {
   useEffect(() => {
     if (!shouldDrawerOpen && buttonRef.current && !isResearchExploration) {
       buttonRef.current.click();
+      const fetchArticle = async () => {
+        const article = await getMacroRoundupData();
+        chatContext?.setArticle(article as Article);
+      };
+      if (!chatContext.article) {
+        fetchArticle().catch((error) => console.log(error));
+      }
     }
   }, [shouldDrawerOpen]);
 
