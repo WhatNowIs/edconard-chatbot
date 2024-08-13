@@ -1,11 +1,12 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import "katex/dist/katex.min.css";
-import { FC, memo } from "react";
+import { FC, memo, useContext } from "react";
 import ReactMarkdown, { Options } from "react-markdown";
 import rehypeKatex from "rehype-katex";
 import remarkGfm from "remark-gfm";
 import remarkMath from "remark-math";
 
+import AuthContext from "@/app/context/auth-context";
 import { CodeBlock } from "./codeblock";
 
 const MemoizedReactMarkdown: FC<Options> = memo(
@@ -29,7 +30,16 @@ const preprocessLaTeX = (content: string) => {
   return inlineProcessedContent;
 };
 
-export default function Markdown({ content }: { content: string }) {
+export default function Markdown({
+  content,
+  annotations,
+  role,
+}: {
+  content: string;
+  role: string;
+  annotations: any[];
+}) {
+  const authContext = useContext(AuthContext);
   const processedContent = preprocessLaTeX(content);
   return (
     <MemoizedReactMarkdown
@@ -38,8 +48,9 @@ export default function Markdown({ content }: { content: string }) {
       rehypePlugins={[rehypeKatex as unknown as any]}
       components={{
         p({ children }) {
+          let result = `{${annotations[0].headline}}, Article Order of Appearance - ${annotations[0].order}: ${annotations[0].url}\n\n`;
           return (
-            <p className="mb-2 last:mb-0 whitespace-pre-line">{children}</p>
+            <p className="mb-2 last:mb-0 whitespace-pre-line">{`${role === "assistant" && !authContext?.isResearchExploration && result} ${children}`}</p>
           );
         },
         code({ inline, className, children, ...props }) {
