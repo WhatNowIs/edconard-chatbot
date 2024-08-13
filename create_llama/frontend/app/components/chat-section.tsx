@@ -158,7 +158,9 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
     chatContext?.setMessages(newMessages);
     setMessages(updatedMessages);
 
-    const articleData: Article = (await getMacroRoundupData()) as Article;
+    const articleData: Article = chatContext?.article
+      ? chatContext.article
+      : ((await getMacroRoundupData()) as Article);
     const signal = controller.signal;
 
     const article_data = `
