@@ -5,13 +5,7 @@ import AuthContext from "@/app/context/auth-context";
 import ChatContext from "@/app/context/chat-context";
 import { PdfFocusProvider } from "@/app/context/pdf";
 import { Message, useChat } from "ai/react";
-import {
-  Dispatch,
-  SetStateAction,
-  useContext,
-  useEffect,
-  useState,
-} from "react";
+import { useContext, useEffect, useState } from "react";
 import { ResponseMessage } from "../service/thread-service";
 import {
   addChatMessage,
@@ -31,6 +25,7 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
   const [accessToken, setAccessToken] = useState<string>("");
   const [isMessageLoading, setIsMessageLoading] = useState<boolean>(false);
   const controller = new AbortController();
+  let question = "";
 
   const getChatUrl = () => {
     const isWithinContext = chatContext && authContext;
@@ -76,29 +71,25 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
     }
   }, []);
 
-  useEffect(() => {
-    if (chatContext) {
-      const { messages } = chatContext;
-      const finalMessages = messages.map((msg) => ({
-        content: msg.content,
-        role: msg.role as
-          | "system"
-          | "user"
-          | "assistant"
-          | "function"
-          | "data"
-          | "tool",
-        id: msg.id,
-        annotations: msg.annotations,
-      }));
-      setMessages(finalMessages);
-    }
-  }, [chatContext?.messages]);
+  // useEffect(() => {
+  //   if (chatContext) {
+  //     const { messages } = chatContext;
+  //     const finalMessages = messages.map((msg) => ({
+  //       content: msg.content,
+  //       role: msg.role as Role,
+  //       id: msg.id,
+  //       annotations: msg.annotations,
+  //     }));
+  //     setMessages(finalMessages);
+  //   }
+  // }, [chatContext?.messages]);
 
   const updateLastMessage = (index: number, newMessage: Partial<Message>) => {
     setMessages((prevMessages) => {
       // Copy the existing
-      if (prevMessages.length === 0) return prevMessages;
+      if (prevMessages.length === 0) {
+        return [newMessage];
+      }
       const updatedMessages = [...prevMessages];
       updatedMessages[updatedMessages.length - index] = {
         ...updatedMessages[updatedMessages.length - index],
@@ -115,7 +106,9 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
   ) => {
     chatContext?.setMessages((prevMessages) => {
       // Copy the existing
-      if (prevMessages.length === 0) return prevMessages;
+      if (prevMessages.length === 0) {
+        return [newMessage];
+      }
       const updatedMessages = [...prevMessages];
       updatedMessages[updatedMessages.length - index] = {
         ...updatedMessages[updatedMessages.length - index],
@@ -127,21 +120,92 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
   };
 
   function updateMessages(newMessage: ResponseMessage) {
-    chatContext?.messages.push(newMessage);
-    messages.push({
-      role: newMessage.role as Role,
-      content: newMessage.content,
-      id: "",
-      annotations: newMessage.annotations,
+    if (chatContext?.messages?.length === 0 || messages?.length === 0) {
+      setMessages([
+        {
+          role: newMessage.role as Role,
+          content: newMessage.content,
+          id: "",
+          annotations: newMessage.annotations,
+        },
+      ]);
+      chatContext?.setMessages([newMessage]);
+    } else {
+      chatContext?.messages.push(newMessage);
+      messages.push({
+        role: newMessage.role as Role,
+        content: newMessage.content,
+        id: "",
+        annotations: newMessage.annotations,
+      });
+    }
+  }
+  async function processChatMessages(
+    reader: ReadableStreamDefaultReader<Uint8Array>,
+    thread_id: string,
+    question: string,
+  ) {
+    let result = "";
+    const decoder = new TextDecoder();
+
+    while (true) {
+      const { value, done } = await reader.read();
+      if (done) break;
+
+      if (value) {
+        setIsMessageLoading(false);
+
+        updateMessages({
+          thread_id: thread_id,
+          id: "",
+          workspace_id: chatContext?.currentWorkspace?.id as string,
+          user_id: authContext?.user?.id as string,
+          timestamp: new Date().toISOString(),
+          annotations: [],
+          role: "assistant",
+          content: result,
+        });
+      }
+
+      const chunk = decoder.decode(value);
+      result += chunk;
+
+      updateLastMessageStore(1, {
+        content: result,
+      });
+      updateLastMessage(1, {
+        content: result,
+      });
+    }
+
+    const assistantMessageResponse = (await addChatMessage({
+      messages: [
+        {
+          role: "user",
+          content: question,
+        },
+        {
+          role: "assistant",
+          content: result,
+        },
+      ],
+      thread_id: thread_id,
+    })) as ResponseMessage[];
+
+    updateLastMessageStore(1, {
+      id: assistantMessageResponse[1].id,
+      annotations: assistantMessageResponse[1].annotations,
     });
+    updateLastMessage(1, {
+      id: assistantMessageResponse[1].id,
+      annotations: assistantMessageResponse[1].annotations,
+    });
+
+    // console.log()
   }
 
-  async function fetchStream(
-    input: string,
-    thread_id: string,
-    setNonResearchExplorationLLMMessage: Dispatch<SetStateAction<string>>,
-  ) {
-    const question = input;
+  async function fetchStream(input: string, thread_id: string) {
+    question = input;
     setIsMessageLoading(true);
     setInput("");
 
@@ -199,61 +263,7 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
 
     const reader =
       response.body?.getReader() as ReadableStreamDefaultReader<Uint8Array>;
-    const decoder = new TextDecoder("utf-8");
-
-    let result = "";
-
-    setNonResearchExplorationLLMMessage(result);
-
-    updateMessages({
-      thread_id: thread_id,
-      id: "",
-      workspace_id: chatContext?.currentWorkspace?.id as string,
-      user_id: authContext?.user?.id as string,
-      timestamp: new Date().toISOString(),
-      annotations: [],
-      role: "assistant" as Role,
-      content: result,
-    });
-
-    while (true) {
-      const { value, done } = await reader.read();
-      if (done) break;
-
-      if (value) setIsMessageLoading(false);
-
-      const chunk = decoder.decode(value);
-      result += chunk;
-      updateLastMessageStore(1, {
-        content: result,
-      });
-      updateLastMessage(1, {
-        content: result,
-      });
-    }
-
-    const assistantMessageResponse = (await addChatMessage({
-      messages: [
-        {
-          role: "user",
-          content: question,
-        },
-        {
-          role: "assistant",
-          content: result,
-        },
-      ],
-      thread_id: thread_id,
-    })) as ResponseMessage[];
-
-    updateLastMessageStore(1, {
-      id: assistantMessageResponse[1].id,
-      annotations: assistantMessageResponse[1].annotations,
-    });
-    updateLastMessage(1, {
-      id: assistantMessageResponse[1].id,
-      annotations: assistantMessageResponse[1].annotations,
-    });
+    processChatMessages(reader, thread_id, question);
   }
 
   function cancelRequest() {
