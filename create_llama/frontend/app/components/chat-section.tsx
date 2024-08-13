@@ -204,7 +204,7 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
       response.body?.getReader() as ReadableStreamDefaultReader<Uint8Array>;
     const decoder = new TextDecoder("utf-8");
 
-    let result = "";
+    let result = `{${articleData.headline}}, ${articleData.order}: ${articleData.url}`;
 
     while (true) {
       const { value, done } = await reader.read();
