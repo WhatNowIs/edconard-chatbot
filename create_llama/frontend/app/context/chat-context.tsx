@@ -22,7 +22,7 @@ import {
   useEffect,
   useState,
 } from "react";
-import { getCookie } from "../service/user-service";
+import { getCookie, getMacroRoundupData } from "../service/user-service";
 import {
   ResponseWorkspace,
   fetchWorkspaces,
@@ -130,7 +130,13 @@ export const ChatProvider: FC<ChatProviderProps> = ({ children }) => {
     if (token && threads.length === 0) {
       const fetchUserThreads = async () => {
         try {
-          await loadWorkspaces();
+          const [_, savedArticle] = await Promise.all([
+            loadWorkspaces(),
+            getMacroRoundupData(),
+          ]);
+          if (savedArticle !== null) {
+            setArticle(savedArticle as Article);
+          }
         } catch (error) {
           console.error("Failed to load threads:", error);
         }

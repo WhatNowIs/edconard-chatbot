@@ -2,6 +2,9 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
 import AuthContext from "@/app/context/auth-context";
+import ChatContext from "@/app/context/chat-context";
+import { getMacroRoundupData } from "@/app/service/user-service";
+import { Article } from "@/app/utils/multi-mode-select";
 import { useContext, useEffect, useRef, useState } from "react";
 import { cn } from "../lib/utils";
 import { Switch, SwitchLabel, SwitchThumb } from "../switch";
@@ -12,9 +15,10 @@ export const ChatMode = () => {
   const buttonRef = useRef<HTMLButtonElement>(null);
   const [shouldDrawerOpen, setShouldDrawerOpen] = useState<boolean>(false);
   const authContext = useContext(AuthContext);
+  const chatContext = useContext(ChatContext);
   const { toast } = useToast();
 
-  if (!authContext) {
+  if (!authContext || !chatContext) {
     return <></>;
   }
 
@@ -31,6 +35,8 @@ export const ChatMode = () => {
         title: message,
       });
       setShouldDrawerOpen(checked);
+      const article = await getMacroRoundupData();
+      chatContext?.setArticle(article as Article);
     } else {
       toast({
         className: cn(
