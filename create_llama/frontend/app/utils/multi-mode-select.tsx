@@ -6,6 +6,8 @@ export const ArticleSchema = z.object({
   authors: z.string(),
   abstract: z.string(),
   question: z.string(),
+  url: z.string(),
+  order: z.number(),
 });
 
 export type Article = z.infer<typeof ArticleSchema>;
