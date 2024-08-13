@@ -119,7 +119,7 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
     setInput("");
 
     const newMessages = [
-      ...(messages as ResponseMessage[]),
+      ...(messages.length > 0 ? (messages as ResponseMessage[]) : []),
       {
         thread_id: thread_id,
         id: "",
@@ -177,7 +177,7 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
     );
 
     const messagesData = [
-      ...cleanedData,
+      ...(cleanedData.length > 0 ? cleanedData : []),
       {
         role: "user",
         content: `
@@ -204,7 +204,7 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
       response.body?.getReader() as ReadableStreamDefaultReader<Uint8Array>;
     const decoder = new TextDecoder("utf-8");
 
-    let result = `{${articleData.headline}}, ${articleData.order}: ${articleData.url}`;
+    let result = `{${articleData.headline}}, Article Order of Appearance - ${articleData.order}: ${articleData.url}\n\n`;
 
     while (true) {
       const { value, done } = await reader.read();
@@ -280,11 +280,7 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
         className={`flex flex-col space-y-4 h-screen overflow-y-auto justify-between w-full pl-4 pb-2`}
       >
         <ChatMessages
-          messages={
-            authContext?.isResearchExploration
-              ? messages
-              : (chatContext?.messages as Message[])
-          }
+          messages={messages}
           isLoading={
             authContext?.isResearchExploration ? isLoading : isMessageLoading
           }

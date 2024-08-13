@@ -1,5 +1,4 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import React from 'react'; 
 import "katex/dist/katex.min.css";
 import { FC, memo } from "react";
 import ReactMarkdown, { Options } from "react-markdown";
@@ -39,13 +38,17 @@ export default function Markdown({ content }: { content: string }) {
       rehypePlugins={[rehypeKatex as unknown as any]}
       components={{
         p({ children }) {
-          return <p className="mb-2 last:mb-0">{children}</p>;
+          return (
+            <p className="mb-2 last:mb-0 whitespace-pre-line">{children}</p>
+          );
         },
         code({ inline, className, children, ...props }) {
           if (children.length) {
             if (children[0] == "▍") {
               return (
-                <span className="mt-1 animate-pulse cursor-default">▍</span>
+                <span className="mt-1 animate-pulse cursor-default whitespace-pre-line">
+                  ▍
+                </span>
               );
             }
 
