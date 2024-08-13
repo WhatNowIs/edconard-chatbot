@@ -2,14 +2,14 @@
  * Path:
  * Removed the fixed height of the chat container.
  */
-import React, { useContext } from 'react'; 
+import AuthContext from "@/app/context/auth-context";
 import { Loader2 } from "lucide-react";
-import { useEffect, useRef } from "react";
+import { useContext, useEffect, useRef } from "react";
+import { v4 as uuidv4 } from "uuid";
 import ChatActions from "./chat-actions";
 import ChatMessage from "./chat-message";
+import { ChatMode } from "./chat-mode";
 import { ChatHandler } from "./chat.interface";
-import { ChatMode } from './chat-mode';
-import AuthContext from '@/app/context/auth-context';
 
 export default function ChatMessages(
   props: Pick<ChatHandler, "messages" | "isLoading" | "reload" | "stop">,
@@ -49,7 +49,11 @@ export default function ChatMessages(
         ref={scrollableChatContainerRef}
       >
         {props.messages.map((m) => (
-          <ChatMessage key={m.id} chatMessage={m} isLoading={props.isLoading} />
+          <ChatMessage
+            key={m.id ? m.id : uuidv4()}
+            chatMessage={m}
+            isLoading={props.isLoading}
+          />
         ))}
         {isPending && (
           <div className="flex justify-center items-center pt-10">

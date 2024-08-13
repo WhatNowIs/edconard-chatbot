@@ -1,7 +1,8 @@
 import { Check, Copy } from "lucide-react";
 
+import AuthContext from "@/app/context/auth-context";
 import { Message } from "ai";
-import { Fragment } from "react";
+import { Fragment, useContext } from "react";
 import { Button } from "../button";
 import ChatAvatar from "./chat-avatar";
 import { ChatEvents } from "./chat-events";
@@ -39,8 +40,9 @@ function ChatMessageContent({
   message: Message;
   isLoading: boolean;
 }) {
+  const authContext = useContext(AuthContext);
   const annotations = message.annotations as MessageAnnotation[] | undefined;
-  if (!annotations?.length)
+  if (!annotations?.length && authContext?.isResearchExploration)
     return (
       <Markdown
         content={message.content}
@@ -49,43 +51,70 @@ function ChatMessageContent({
       />
     );
 
-  const imageData = getAnnotationData<ImageData>(
-    annotations,
-    MessageAnnotationType.IMAGE,
-  );
-  const eventData = getAnnotationData<EventData>(
-    annotations,
-    MessageAnnotationType.EVENTS,
-  );
-  const sourceData = getAnnotationData<SourceData>(
-    annotations,
-    MessageAnnotationType.SOURCES,
-  );
-  const toolData = getAnnotationData<ToolData>(
-    annotations,
-    MessageAnnotationType.TOOLS,
-  );
+  if (authContext?.isResearchExploration) {
+    const imageData = getAnnotationData<ImageData>(
+      annotations as MessageAnnotation[],
+      MessageAnnotationType.IMAGE,
+    );
+    const eventData = getAnnotationData<EventData>(
+      annotations as MessageAnnotation[],
+      MessageAnnotationType.EVENTS,
+    );
+    const sourceData = getAnnotationData<SourceData>(
+      annotations as MessageAnnotation[],
+      MessageAnnotationType.SOURCES,
+    );
+    const toolData = getAnnotationData<ToolData>(
+      annotations as MessageAnnotation[],
+      MessageAnnotationType.TOOLS,
+    );
 
-  const contents: ContentDisplayConfig[] = [
-    {
-      order: -3,
-      component: imageData[0] ? <ChatImage data={imageData[0]} /> : null,
-    },
-    {
-      order: -2,
-      component:
-        eventData.length > 0 ? (
-          <ChatEvents
-            isLoading={isLoading}
-            data={eventData}
-            citations={sourceData[0] ? sourceData[0].nodes : []}
+    const contents: ContentDisplayConfig[] = [
+      {
+        order: -3,
+        component: imageData[0] ? <ChatImage data={imageData[0]} /> : null,
+      },
+      {
+        order: -2,
+        component:
+          eventData.length > 0 ? (
+            <ChatEvents
+              isLoading={isLoading}
+              data={eventData}
+              citations={sourceData[0] ? sourceData[0].nodes : []}
+            />
+          ) : null,
+      },
+      {
+        order: -1,
+        component: toolData[0] ? <ChatTools data={toolData[0]} /> : null,
+      },
+      {
+        order: 0,
+        component: (
+          <Markdown
+            content={message.content}
+            annotations={message.annotations as any[]}
+            role={message.role}
           />
-        ) : null,
-    },
-    {
-      order: -1,
-      component: toolData[0] ? <ChatTools data={toolData[0]} /> : null,
-    },
+        ),
+      },
+      {
+        order: 1,
+        component: sourceData[0] ? <ChatSources data={sourceData[0]} /> : null,
+      },
+    ];
+    return (
+      <div className="flex-1 gap-4 flex flex-col">
+        {contents
+          .sort((a, b) => a.order - b.order)
+          .map((content, index) => (
+            <Fragment key={index}>{content.component}</Fragment>
+          ))}
+      </div>
+    );
+  }
+  const contents: ContentDisplayConfig[] = [
     {
       order: 0,
       component: (
@@ -95,10 +124,6 @@ function ChatMessageContent({
           role={message.role}
         />
       ),
-    },
-    {
-      order: 1,
-      component: sourceData[0] ? <ChatSources data={sourceData[0]} /> : null,
     },
   ];
 
