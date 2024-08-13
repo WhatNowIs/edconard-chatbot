@@ -22,6 +22,7 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
   const { generateTitle } = useGenerateTitle();
   const authContext = useContext(AuthContext);
   const chatContext = useContext(ChatContext);
+  const [isNonResearchMode, setIsNonResearch] = useState<boolean>(true);
   const [accessToken, setAccessToken] = useState<string>("");
   const [isMessageLoading, setIsMessageLoading] = useState<boolean>(false);
   const controller = new AbortController();
@@ -46,8 +47,6 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
     stop,
     setMessages,
     setInput,
-    addToolResult,
-    append,
   } = useChat({
     api: getChatUrl(),
     headers: {
@@ -71,30 +70,31 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
     }
   }, []);
 
-  // useEffect(() => {
-  //   if (chatContext) {
-  //     const { messages } = chatContext;
-  //     const finalMessages = messages.map((msg) => ({
-  //       content: msg.content,
-  //       role: msg.role as Role,
-  //       id: msg.id,
-  //       annotations: msg.annotations,
-  //     }));
-  //     setMessages(finalMessages);
-  //   }
-  // }, [chatContext?.messages]);
+  useEffect(() => {
+    if (chatContext) {
+      const { messages } = chatContext;
+      const finalMessages = messages.map((msg) => ({
+        content: msg.content,
+        role: msg.role as Role,
+        id: msg.id,
+        annotations: msg.annotations,
+      }));
+      setMessages(finalMessages);
+    }
+  }, [chatContext?.messages]);
 
   const updateLastMessage = (index: number, newMessage: Partial<Message>) => {
-    setMessages((prevMessages) => {
+    setMessages((prevMessages: Message[] = messages) => {
       // Copy the existing
-      if (prevMessages.length === 0) {
+      if (prevMessages?.length === 0) {
         return [newMessage];
       }
       const updatedMessages = [...prevMessages];
-      updatedMessages[updatedMessages.length - index] = {
+      const result = {
         ...updatedMessages[updatedMessages.length - index],
         ...newMessage,
       };
+      updatedMessages[updatedMessages.length - index] = result;
 
       return updatedMessages;
     });
@@ -104,41 +104,32 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
     index: number,
     newMessage: Partial<ResponseMessage>,
   ) => {
-    chatContext?.setMessages((prevMessages) => {
-      // Copy the existing
-      if (prevMessages.length === 0) {
-        return [newMessage];
-      }
-      const updatedMessages = [...prevMessages];
-      updatedMessages[updatedMessages.length - index] = {
-        ...updatedMessages[updatedMessages.length - index],
-        ...newMessage,
-      };
+    chatContext?.setMessages(
+      (prevMessages: ResponseMessage[] = chatContext.messages) => {
+        // Copy the existing
+        if (prevMessages?.length === 0) {
+          return [newMessage];
+        }
+        const updatedMessages = [...prevMessages];
+        const result = {
+          ...updatedMessages[updatedMessages.length - index],
+          ...newMessage,
+        };
+        updatedMessages[updatedMessages.length - index] = result;
 
-      return updatedMessages;
-    });
+        return updatedMessages;
+      },
+    );
   };
 
   function updateMessages(newMessage: ResponseMessage) {
-    if (chatContext?.messages?.length === 0 || messages?.length === 0) {
-      setMessages([
-        {
-          role: newMessage.role as Role,
-          content: newMessage.content,
-          id: "",
-          annotations: newMessage.annotations,
-        },
-      ]);
-      chatContext?.setMessages([newMessage]);
-    } else {
-      chatContext?.messages.push(newMessage);
-      messages.push({
-        role: newMessage.role as Role,
-        content: newMessage.content,
-        id: "",
-        annotations: newMessage.annotations,
-      });
-    }
+    chatContext?.messages.push(newMessage);
+    messages.push({
+      role: newMessage.role as Role,
+      content: newMessage.content,
+      id: "",
+      annotations: newMessage.annotations,
+    });
   }
   async function processChatMessages(
     reader: ReadableStreamDefaultReader<Uint8Array>,
@@ -146,26 +137,23 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
     question: string,
   ) {
     let result = "";
+    setIsMessageLoading(false);
+    setIsNonResearch(true);
+    updateMessages({
+      thread_id: thread_id,
+      id: "",
+      workspace_id: chatContext?.currentWorkspace?.id as string,
+      user_id: authContext?.user?.id as string,
+      timestamp: new Date().toISOString(),
+      annotations: [],
+      role: "assistant",
+      content: result,
+    });
     const decoder = new TextDecoder();
 
     while (true) {
       const { value, done } = await reader.read();
       if (done) break;
-
-      if (value) {
-        setIsMessageLoading(false);
-
-        updateMessages({
-          thread_id: thread_id,
-          id: "",
-          workspace_id: chatContext?.currentWorkspace?.id as string,
-          user_id: authContext?.user?.id as string,
-          timestamp: new Date().toISOString(),
-          annotations: [],
-          role: "assistant",
-          content: result,
-        });
-      }
 
       const chunk = decoder.decode(value);
       result += chunk;
@@ -200,8 +188,8 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
       id: assistantMessageResponse[1].id,
       annotations: assistantMessageResponse[1].annotations,
     });
-
-    // console.log()
+    console.log("messages - 1: ", messages);
+    console.log("chatContext?.messages - 1: ", chatContext?.messages);
   }
 
   async function fetchStream(input: string, thread_id: string) {
@@ -225,7 +213,7 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
       workspace_id: chatContext?.currentWorkspace?.id as string,
       user_id: authContext?.user?.id as string,
       timestamp: new Date().toISOString(),
-      annotations: [],
+      annotations: [articleData],
       role: "user" as Role,
       content: question,
     });
@@ -247,6 +235,8 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
       `,
       },
     ];
+    console.log("messages: ", messages);
+    console.log("chatContext?.messages: ", chatContext?.messages);
 
     const response = await fetch(
       `${process.env.NEXT_PUBLIC_MODEL_BASE_URL}/chat/stream`,
@@ -263,7 +253,10 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
 
     const reader =
       response.body?.getReader() as ReadableStreamDefaultReader<Uint8Array>;
-    processChatMessages(reader, thread_id, question);
+    processChatMessages(reader, thread_id, question).catch((error) =>
+      console.log(error),
+    );
+    setIsNonResearch(false);
   }
 
   function cancelRequest() {
@@ -284,11 +277,7 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
         generateTitle(input).catch((error) => console.log(error));
 
       if (!isResearchExploration) {
-        fetchStream(
-          input,
-          selectedThread?.id as string,
-          setNonResearchExplorationLLMMessage,
-        ).catch(console.error);
+        fetchStream(input, selectedThread?.id as string).catch(console.error);
       }
     }
   };
@@ -299,7 +288,7 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
         className={`flex flex-col space-y-4 h-screen overflow-y-auto justify-between w-full pl-4 pb-2`}
       >
         <ChatMessages
-          messages={chatContext?.messages as Message[]}
+          messages={messages}
           isLoading={
             authContext?.isResearchExploration ? isLoading : isMessageLoading
           }
