@@ -5,7 +5,13 @@ import AuthContext from "@/app/context/auth-context";
 import ChatContext from "@/app/context/chat-context";
 import { PdfFocusProvider } from "@/app/context/pdf";
 import { Message, useChat } from "ai/react";
-import { useContext, useEffect, useState } from "react";
+import {
+  Dispatch,
+  SetStateAction,
+  useContext,
+  useEffect,
+  useState,
+} from "react";
 import { ResponseMessage } from "../service/thread-service";
 import {
   addChatMessage,
@@ -16,6 +22,7 @@ import { Article } from "../utils/multi-mode-select";
 import { useGenerateTitle } from "../utils/thread-title-generator";
 
 type ChatUILayout = "default" | "fit";
+type Role = "system" | "user" | "assistant" | "function" | "data" | "tool";
 
 export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
   const { generateTitle } = useGenerateTitle();
@@ -112,45 +119,18 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
       return updatedMessages;
     });
   };
-
-  async function fetchStream(input: string, thread_id: string) {
-    const question = input;
-    setIsMessageLoading(true);
-    setInput("");
-
-    const newMessages = [
+  function updateMessages(
+    messages: ResponseMessage[],
+    newMessage: ResponseMessage,
+  ) {
+    const newMessages: ResponseMessage[] = [
       ...(messages.length > 0 ? (messages as ResponseMessage[]) : []),
-      {
-        thread_id: thread_id,
-        id: "",
-        workspace_id: chatContext?.currentWorkspace?.id as string,
-        user_id: authContext?.user?.id as string,
-        timestamp: new Date().toISOString(),
-        annotations: [],
-        role: "user",
-        content: question,
-      },
-      {
-        thread_id: thread_id,
-        id: "",
-        workspace_id: chatContext?.currentWorkspace?.id as string,
-        user_id: authContext?.user?.id as string,
-        timestamp: new Date().toISOString(),
-        annotations: [],
-        role: "assistant",
-        content: "",
-      },
+      newMessage,
     ];
 
     const updatedMessages = newMessages.map((msg) => ({
       content: msg.content,
-      role: msg.role as
-        | "system"
-        | "user"
-        | "assistant"
-        | "function"
-        | "data"
-        | "tool",
+      role: msg.role as Role,
       id: msg.id,
       annotations: msg.annotations,
     }));
@@ -158,10 +138,38 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
     chatContext?.setMessages(newMessages);
     setMessages(updatedMessages);
 
+    return newMessages;
+  }
+
+  async function fetchStream(
+    input: string,
+    thread_id: string,
+    setNonResearchExplorationLLMMessage: Dispatch<SetStateAction<string>>,
+  ) {
+    const question = input;
+    setIsMessageLoading(true);
+    setInput("");
+
     const articleData: Article = chatContext?.article
       ? chatContext.article
       : ((await getMacroRoundupData()) as Article);
     const signal = controller.signal;
+
+    const cleanedData: { role: string; content: string }[] = messages.map(
+      (c: { role: string; content: string }) => {
+        return { role: c.role, content: c.content };
+      },
+    );
+    updateMessages(chatContext?.messages as ResponseMessage[], {
+      thread_id: thread_id,
+      id: "",
+      workspace_id: chatContext?.currentWorkspace?.id as string,
+      user_id: authContext?.user?.id as string,
+      timestamp: new Date().toISOString(),
+      annotations: [],
+      role: "user" as Role,
+      content: question,
+    });
 
     const article_data = `
       Headline="${articleData.headline}"
@@ -169,12 +177,6 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
       Summary="${articleData.abstract}"
       Publisher="${articleData.publisher}"
     `;
-
-    const cleanedData: { role: string; content: string }[] = messages.map(
-      (c: { role: string; content: string }) => {
-        return { role: c.role, content: c.content };
-      },
-    );
 
     const messagesData = [
       ...(cleanedData.length > 0 ? cleanedData : []),
@@ -204,25 +206,22 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
       response.body?.getReader() as ReadableStreamDefaultReader<Uint8Array>;
     const decoder = new TextDecoder("utf-8");
 
-    let result = `{${articleData.headline}}, Article Order of Appearance - ${articleData.order}: ${articleData.url}\n\n`;
+    let result = "";
+
+    setNonResearchExplorationLLMMessage(result);
 
     while (true) {
       const { value, done } = await reader.read();
       if (done) break;
 
+      if (value) setIsMessageLoading(false);
+
       const chunk = decoder.decode(value);
       result += chunk;
-
-      updateLastMessage(1, {
-        content: result,
-      });
-
-      updateLastMessageStore(1, {
-        content: result,
-      });
+      setNonResearchExplorationLLMMessage(result);
     }
 
-    const assistantMessageResponse = (await addChatMessage({
+    await addChatMessage({
       messages: [
         {
           role: "user",
@@ -234,22 +233,20 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
         },
       ],
       thread_id: thread_id,
-    })) as ResponseMessage[];
+    });
 
-    assistantMessageResponse
-      .reverse()
-      .forEach((aiMessage: Partial<ResponseMessage>, index: number) => {
-        updateLastMessageStore(index + 1, {
-          id: aiMessage.id,
-          annotations: aiMessage.annotations,
-        });
-        updateLastMessage(index + 1, {
-          id: aiMessage.id,
-          annotations: aiMessage.annotations,
-        });
-      });
-
-    setIsMessageLoading(false);
+    // assistantMessageResponse
+    //   .reverse()
+    //   .forEach((aiMessage: Partial<ResponseMessage>, index: number) => {
+    //     updateLastMessageStore(index + 1, {
+    //       id: aiMessage.id,
+    //       annotations: aiMessage.annotations,
+    //     });
+    //     updateLastMessage(index + 1, {
+    //       id: aiMessage.id,
+    //       annotations: aiMessage.annotations,
+    //     });
+    //   });
   }
 
   function cancelRequest() {
@@ -262,14 +259,19 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
     e.preventDefault();
     if (authContext && chatContext) {
       const { user, isResearchExploration } = authContext;
-      const { selectedThread } = chatContext;
+      const { selectedThread, setNonResearchExplorationLLMMessage } =
+        chatContext;
 
       user &&
         messages.length === 0 &&
         generateTitle(input).catch((error) => console.log(error));
 
       if (!isResearchExploration) {
-        fetchStream(input, selectedThread?.id as string).catch(console.error);
+        fetchStream(
+          input,
+          selectedThread?.id as string,
+          setNonResearchExplorationLLMMessage,
+        ).catch(console.error);
       }
     }
   };
