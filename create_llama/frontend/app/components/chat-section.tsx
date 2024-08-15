@@ -22,9 +22,9 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
   const { generateTitle } = useGenerateTitle();
   const authContext = useContext(AuthContext);
   const chatContext = useContext(ChatContext);
-  const [isNonResearchMode, setIsNonResearch] = useState<boolean>(true);
   const [accessToken, setAccessToken] = useState<string>("");
   const [isMessageLoading, setIsMessageLoading] = useState<boolean>(false);
+  const [cMessages, setCMessages] = useState<Message[]>([]);
   const controller = new AbortController();
   let question = "";
 
@@ -80,51 +80,49 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
         annotations: msg.annotations,
       }));
       setMessages(finalMessages);
+      setCMessages(finalMessages);
     }
   }, [chatContext?.messages]);
 
-  const updateLastMessage = (index: number, newMessage: Partial<Message>) => {
-    setMessages((prevMessages: Message[] = messages) => {
-      // Copy the existing
-      if (prevMessages?.length === 0) {
-        return [newMessage];
+  const updateLastMessage = (
+    index: number,
+    newMessage: Partial<Message> | Partial<ResponseMessage>,
+  ) => {
+    chatContext?.setMessages((_ = chatContext.messages) => {
+      const updatedMessages = [...chatContext.messages];
+      const messageIndex = updatedMessages.length - index;
+      if (messageIndex >= 0) {
+        const result = {
+          ...updatedMessages[messageIndex],
+          content: newMessage.content,
+          annotations: newMessage.annotations,
+          id: newMessage.id,
+        } as ResponseMessage;
+        updatedMessages[messageIndex] = result;
       }
-      const updatedMessages = [...prevMessages];
-      const result = {
-        ...updatedMessages[updatedMessages.length - index],
-        ...newMessage,
-      };
-      updatedMessages[updatedMessages.length - index] = result;
+      return updatedMessages;
+    });
 
+    setCMessages((_ = cMessages) => {
+      console.log(cMessages);
+      const updatedMessages = [...cMessages];
+      const messageIndex = updatedMessages.length - index;
+      if (messageIndex >= 0) {
+        const result = {
+          ...updatedMessages[messageIndex],
+          content: newMessage.content,
+          annotations: newMessage.annotations,
+          id: newMessage.id,
+        } as Message;
+        updatedMessages[messageIndex] = result;
+      }
       return updatedMessages;
     });
   };
 
-  const updateLastMessageStore = (
-    index: number,
-    newMessage: Partial<ResponseMessage>,
-  ) => {
-    chatContext?.setMessages(
-      (prevMessages: ResponseMessage[] = chatContext.messages) => {
-        // Copy the existing
-        if (prevMessages?.length === 0) {
-          return [newMessage];
-        }
-        const updatedMessages = [...prevMessages];
-        const result = {
-          ...updatedMessages[updatedMessages.length - index],
-          ...newMessage,
-        };
-        updatedMessages[updatedMessages.length - index] = result;
-
-        return updatedMessages;
-      },
-    );
-  };
-
   function updateMessages(newMessage: ResponseMessage) {
     chatContext?.messages.push(newMessage);
-    messages.push({
+    cMessages.push({
       role: newMessage.role as Role,
       content: newMessage.content,
       id: "",
@@ -135,20 +133,10 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
     reader: ReadableStreamDefaultReader<Uint8Array>,
     thread_id: string,
     question: string,
+    article: Article,
   ) {
     let result = "";
     setIsMessageLoading(false);
-    setIsNonResearch(true);
-    updateMessages({
-      thread_id: thread_id,
-      id: "",
-      workspace_id: chatContext?.currentWorkspace?.id as string,
-      user_id: authContext?.user?.id as string,
-      timestamp: new Date().toISOString(),
-      annotations: [],
-      role: "assistant",
-      content: result,
-    });
     const decoder = new TextDecoder();
 
     while (true) {
@@ -158,11 +146,10 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
       const chunk = decoder.decode(value);
       result += chunk;
 
-      updateLastMessageStore(1, {
-        content: result,
-      });
       updateLastMessage(1, {
         content: result,
+        annotations: [article],
+        id: "",
       });
     }
 
@@ -180,16 +167,11 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
       thread_id: thread_id,
     })) as ResponseMessage[];
 
-    updateLastMessageStore(1, {
-      id: assistantMessageResponse[1].id,
-      annotations: assistantMessageResponse[1].annotations,
-    });
     updateLastMessage(1, {
       id: assistantMessageResponse[1].id,
+      content: assistantMessageResponse[1].content,
       annotations: assistantMessageResponse[1].annotations,
     });
-    console.log("messages - 1: ", messages);
-    console.log("chatContext?.messages - 1: ", chatContext?.messages);
   }
 
   async function fetchStream(input: string, thread_id: string) {
@@ -235,8 +217,6 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
       `,
       },
     ];
-    console.log("messages: ", messages);
-    console.log("chatContext?.messages: ", chatContext?.messages);
 
     const response = await fetch(
       `${process.env.NEXT_PUBLIC_MODEL_BASE_URL}/chat/stream`,
@@ -253,10 +233,20 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
 
     const reader =
       response.body?.getReader() as ReadableStreamDefaultReader<Uint8Array>;
-    processChatMessages(reader, thread_id, question).catch((error) =>
-      console.log(error),
+
+    updateMessages({
+      thread_id: thread_id,
+      id: "",
+      workspace_id: chatContext?.currentWorkspace?.id as string,
+      user_id: authContext?.user?.id as string,
+      timestamp: new Date().toISOString(),
+      annotations: [articleData],
+      role: "assistant",
+      content: "",
+    });
+    processChatMessages(reader, thread_id, question, articleData).catch(
+      (error) => console.log(error),
     );
-    setIsNonResearch(false);
   }
 
   function cancelRequest() {
@@ -269,8 +259,7 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
     e.preventDefault();
     if (authContext && chatContext) {
       const { user, isResearchExploration } = authContext;
-      const { selectedThread, setNonResearchExplorationLLMMessage } =
-        chatContext;
+      const { selectedThread } = chatContext;
 
       user &&
         messages.length === 0 &&
@@ -288,7 +277,7 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
         className={`flex flex-col space-y-4 h-screen overflow-y-auto justify-between w-full pl-4 pb-2`}
       >
         <ChatMessages
-          messages={messages}
+          messages={authContext?.isResearchExploration ? messages : cMessages}
           isLoading={
             authContext?.isResearchExploration ? isLoading : isMessageLoading
           }
