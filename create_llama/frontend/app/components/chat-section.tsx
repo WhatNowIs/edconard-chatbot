@@ -24,7 +24,6 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
   const chatContext = useContext(ChatContext);
   const [accessToken, setAccessToken] = useState<string>("");
   const [isMessageLoading, setIsMessageLoading] = useState<boolean>(false);
-  const [cMessages, setCMessages] = useState<Message[]>([]);
   const controller = new AbortController();
   let question = "";
 
@@ -80,7 +79,6 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
         annotations: msg.annotations,
       }));
       setMessages(finalMessages);
-      setCMessages(finalMessages);
     }
   }, [chatContext?.messages]);
 
@@ -103,9 +101,8 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
       return updatedMessages;
     });
 
-    setCMessages((_ = cMessages) => {
-      console.log(cMessages);
-      const updatedMessages = [...cMessages];
+    setMessages((_ = messages) => {
+      const updatedMessages = [...messages];
       const messageIndex = updatedMessages.length - index;
       if (messageIndex >= 0) {
         const result = {
@@ -122,7 +119,7 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
 
   function updateMessages(newMessage: ResponseMessage) {
     chatContext?.messages.push(newMessage);
-    cMessages.push({
+    messages.push({
       role: newMessage.role as Role,
       content: newMessage.content,
       id: "",
@@ -277,7 +274,7 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
         className={`flex flex-col space-y-4 h-screen overflow-y-auto justify-between w-full pl-4 pb-2`}
       >
         <ChatMessages
-          messages={authContext?.isResearchExploration ? messages : cMessages}
+          messages={messages}
           isLoading={
             authContext?.isResearchExploration ? isLoading : isMessageLoading
           }
