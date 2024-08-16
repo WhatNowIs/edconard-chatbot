@@ -123,13 +123,19 @@ export async function createUserAccount(
   return (await res.json()) as UserFormType;
 }
 
-export async function signIn(data: UserSigninType): Promise<{
+interface ErrorResponse {
+  user: UserFormType | null;
+  message: string;
+}
+export interface SignInResponse extends ErrorResponse {
   access_token: string;
   refresh_token: string;
   token_type: string;
-  user: UserFormType;
-  message: string;
-}> {
+}
+
+export async function signIn(
+  data: UserSigninType,
+): Promise<SignInResponse | ErrorResponse> {
   // Ignore configured attribute
 
   const formData = new URLSearchParams();
@@ -145,8 +151,11 @@ export async function signIn(data: UserSigninType): Promise<{
   });
 
   if (!res.ok) {
-    const error = await res.text();
-    throw new Error(error);
+    const error = JSON.parse(await res.text());
+    return {
+      message: error?.detail,
+      user: null,
+    };
   }
 
   return (await res.json()) as {
@@ -306,8 +315,8 @@ export async function resetPassword(data: ResetPasswordType) {
     );
 
     if (!res.ok) {
-      const error = await res.text();
-      return { message: error, status: 400 };
+      const error = JSON.parse(await res.text());
+      return { message: error.details, status: 400 };
     }
 
     return { ...((await res.json()) as { message: string; status: number }) };

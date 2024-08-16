@@ -15,6 +15,7 @@ import { Form, FormControl, FormField, FormItem, FormLabel } from "../form";
 import { Input } from "../input";
 import { cn } from "../lib/utils";
 import { useToast } from "../use-toast";
+import { Toaster } from "../toaster";
 
 export default function SignupForm() {
   const form = useForm({
@@ -115,6 +116,7 @@ export default function SignupForm() {
           className="w-full flex items-center"
         />
       </form>
+      <Toaster />
     </Form>
   );
 }
