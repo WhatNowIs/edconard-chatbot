@@ -9,14 +9,17 @@ import base64ToString from "@/app/utils/shared";
 import { zodResolver } from "@hookform/resolvers/zod";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
-import { Button } from "../button";
+import { SubmitButton } from "../custom/submitButton";
 import { Form, FormControl, FormField, FormItem } from "../form";
 import { Input } from "../input";
 import { cn } from "../lib/utils";
+import { Toaster } from "../toaster";
 import { useToast } from "../use-toast";
 
 export default function ResetPasswordFrom() {
+  const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
   const form = useForm({
     resolver: zodResolver(ResetPasswordFormSchema),
   });
@@ -42,19 +45,21 @@ export default function ResetPasswordFrom() {
 
     if (response.message && response.status === 200) {
       router.push("/signin");
+    } else {
+      toast({
+        className: cn(
+          "top-0 right-0 flex fixed md:max-w-[420px] md:top-4 md:right-4 text-red-500",
+        ),
+        title: "Failed to update password",
+        description: response.message,
+      });
+      console.log(response.message);
     }
-
-    toast({
-      className: cn(
-        "top-0 right-0 flex fixed md:max-w-[420px] md:top-4 md:right-4 text-red-500",
-      ),
-      title: "Failed to update password",
-      description: response.message,
-    });
+    setIsSubmitting(false);
   };
 
   const onSubmit = (data: any) => {
-    console.log(data);
+    setIsSubmitting(true);
     const currentData = data as {
       new_password: string;
       confirm_password: string;
@@ -93,13 +98,11 @@ export default function ResetPasswordFrom() {
           )}
         />
         <div className="space-y-6">
-          <Button
-            onClick={onSubmit}
-            type="submit"
-            className="w-full flex items-center mb-6"
-          >
-            Submit
-          </Button>
+          <SubmitButton
+            isSubmitting={isSubmitting}
+            text="Submit"
+            className="w-full flex items-center"
+          />
         </div>
         <p className="mt-10 text-center text-sm text-gray-500">
           Want to sign in to your account?{" "}
@@ -110,6 +113,7 @@ export default function ResetPasswordFrom() {
             Log in
           </Link>
         </p>
+        <Toaster />
       </form>
     </Form>
   );
