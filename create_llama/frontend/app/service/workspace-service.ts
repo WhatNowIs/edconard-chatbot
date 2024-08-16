@@ -69,6 +69,24 @@ export async function fetchWorkspaces(): Promise<ResponseWorkspace[]> {
   return res as ResponseWorkspace[];
 }
 
+export async function getAllWorkspaces(
+  access_token: string,
+): Promise<ResponseWorkspace[]> {
+  const res = await fetch(baseURL, {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${access_token}`,
+    },
+  });
+
+  if (!res.ok) {
+    return [];
+  }
+
+  return (await res.json()) as ResponseWorkspace[];
+}
+
 export async function fetchWorkspacesByUser(
   userId: string,
 ): Promise<ResponseWorkspace[]> {

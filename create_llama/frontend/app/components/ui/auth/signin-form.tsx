@@ -36,14 +36,15 @@ export default function SigninForm() {
       if (configData.user !== null) {
         router.push("/");
       }
-
-      toast({
-        className: cn(
-          "top-0 right-0 flex fixed md:max-w-[420px] md:top-4 md:right-4 text-red-500",
-        ),
-        title: "Failed to login",
-        description: configData.message,
-      });
+      else{        
+        toast({
+          className: cn(
+            "top-0 right-0 flex fixed md:max-w-[420px] md:top-4 md:right-4 text-red-500",
+          ),
+          title: "Failed to login",
+          description: configData.message,
+        });
+      }
     } catch (err) {
       console.error(err);
       toast({
