@@ -35,7 +35,7 @@ export default function ChangePasswordForm() {
           className: cn(
             "top-0 right-0 flex fixed md:max-w-[420px] md:top-4 md:right-4 text-green-500",
           ),
-          title: "Password changed successfully",
+          description: "Password changed successfully",
         });
         router.refresh();
         form.setValue("current_password", "");
