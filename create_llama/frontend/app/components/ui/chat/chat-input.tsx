@@ -109,10 +109,12 @@ export default function ChatInput(
           value={props.input}
           onChange={props.handleInputChange}
         />
-        <FileUploader
-          onFileUpload={handleUploadFile}
-          onFileError={props.onFileError}
-        />
+        {authContext?.isResearchExploration && (
+          <FileUploader
+            onFileUpload={handleUploadFile}
+            onFileError={props.onFileError}
+          />
+        )}
         <Button type="submit" className="flex gap-1" disabled={props.isLoading}>
           <span>Send </span>
           <HiArrowSmallUp />

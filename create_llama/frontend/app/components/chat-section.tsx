@@ -12,13 +12,23 @@ import {
   getCookie,
   getMacroRoundupData,
 } from "../service/user-service";
+import { ResponseWorkspace } from "../service/workspace-service";
 import { Article } from "../utils/multi-mode-select";
 import { useGenerateTitle } from "../utils/thread-title-generator";
+import { Toaster } from "./ui/toaster";
+import { useToast } from "./ui/use-toast";
 
 type ChatUILayout = "default" | "fit";
 type Role = "system" | "user" | "assistant" | "function" | "data" | "tool";
 
-export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
+export default function ChatSection({
+  layout,
+  workspaces,
+}: {
+  layout?: ChatUILayout;
+  workspaces: ResponseWorkspace[];
+}) {
+  const { toast } = useToast();
   const { generateTitle } = useGenerateTitle();
   const authContext = useContext(AuthContext);
   const chatContext = useContext(ChatContext);
@@ -67,6 +77,7 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
         : getCookie("access_token");
       setAccessToken(access_token as string);
     }
+    authContext?.user && chatContext?.setWorkspaces(workspaces);
   }, []);
 
   useEffect(() => {
@@ -186,64 +197,75 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
         return { role: c.role, content: c.content };
       },
     );
-    updateMessages({
-      thread_id: thread_id,
-      id: "",
-      workspace_id: chatContext?.currentWorkspace?.id as string,
-      user_id: authContext?.user?.id as string,
-      timestamp: new Date().toISOString(),
-      annotations: [articleData],
-      role: "user" as Role,
-      content: question,
-    });
 
-    const article_data = `
+    if (articleData) {
+      updateMessages({
+        thread_id: thread_id,
+        id: "",
+        workspace_id: chatContext?.currentWorkspace?.id as string,
+        user_id: authContext?.user?.id as string,
+        timestamp: new Date().toISOString(),
+        annotations: [articleData],
+        role: "user" as Role,
+        content: question,
+      });
+
+      const article_data = `
       Headline="${articleData.headline}"
       Author(s)="${articleData.authors}"
       Summary="${articleData.abstract}"
       Publisher="${articleData.publisher}"
     `;
 
-    const messagesData = [
-      ...(cleanedData.length > 0 ? cleanedData : []),
-      {
-        role: "user",
-        content: `
+      const messagesData = [
+        ...(cleanedData.length > 0 ? cleanedData : []),
+        {
+          role: "user",
+          content: `
         Here is the article data: ${article_data}\n          
         Question: ${question}
       `,
-      },
-    ];
-
-    const response = await fetch(
-      `${process.env.NEXT_PUBLIC_MODEL_BASE_URL}/chat/stream`,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "text/event-stream",
         },
-        body: JSON.stringify({ messages: messagesData, streaming: true }),
-        signal,
-      },
-    );
+      ];
 
-    const reader =
-      response.body?.getReader() as ReadableStreamDefaultReader<Uint8Array>;
+      const response = await fetch(
+        `${process.env.NEXT_PUBLIC_MODEL_BASE_URL}/chat/stream`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "text/event-stream",
+          },
+          body: JSON.stringify({ messages: messagesData, streaming: true }),
+          signal,
+        },
+      );
 
-    updateMessages({
-      thread_id: thread_id,
-      id: "",
-      workspace_id: chatContext?.currentWorkspace?.id as string,
-      user_id: authContext?.user?.id as string,
-      timestamp: new Date().toISOString(),
-      annotations: [articleData],
-      role: "assistant",
-      content: "",
-    });
-    processChatMessages(reader, thread_id, question, articleData).catch(
-      (error) => console.log(error),
-    );
+      const reader =
+        response.body?.getReader() as ReadableStreamDefaultReader<Uint8Array>;
+
+      updateMessages({
+        thread_id: thread_id,
+        id: "",
+        workspace_id: chatContext?.currentWorkspace?.id as string,
+        user_id: authContext?.user?.id as string,
+        timestamp: new Date().toISOString(),
+        annotations: [articleData],
+        role: "assistant",
+        content: "",
+      });
+      processChatMessages(reader, thread_id, question, articleData).catch(
+        (error) => console.log(error),
+      );
+    } else {
+      toast({
+        className: cn(
+          "top-0 right-0 flex fixed md:max-w-[420px] md:top-4 md:right-4 text-red-500",
+        ),
+        title: "Failed to update password",
+        description: response.message,
+      });
+    }
   }
 
   function cancelRequest() {
@@ -292,6 +314,7 @@ export default function ChatSection({ layout }: { layout?: ChatUILayout }) {
           }
           multiModal={true}
         />
+        <Toaster />
       </div>
     </PdfFocusProvider>
   );
