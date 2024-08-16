@@ -11,6 +11,7 @@ import {
   useState,
 } from "react";
 import {
+  SignInResponse,
   UserFormType,
   UserSigninType,
   getChatMode,
@@ -103,14 +104,17 @@ export const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
 
   const login = async (credentials: UserSigninType) => {
     try {
-      const { access_token, refresh_token, user, message } =
-        await signIn(credentials);
-      localStorage.setItem("access_token", access_token);
-      localStorage.setItem("refresh_token", refresh_token);
-      // Set access and refresh token in document's cookie object
-      document.cookie = `access_token=${access_token}; path=/;`;
-      document.cookie = `refresh_token=${refresh_token}; path=/;`;
-      setUser(user);
+      const { message, user, ...result } = await signIn(credentials);
+
+      if (user !== null) {
+        const { access_token, refresh_token } = result as SignInResponse;
+        localStorage.setItem("access_token", access_token);
+        localStorage.setItem("refresh_token", refresh_token);
+        // Set access and refresh token in document's cookie object
+        document.cookie = `access_token=${access_token}; path=/;`;
+        document.cookie = `refresh_token=${refresh_token}; path=/;`;
+        setUser(user);
+      }
 
       return {
         user,

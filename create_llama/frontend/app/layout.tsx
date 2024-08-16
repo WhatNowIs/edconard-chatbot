@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import React from "react";
-import { ToastProvider } from "./components/ui/toast";
 import { AuthProvider } from "./context/auth-context";
 import { ChatProvider } from "./context/chat-context";
 import "./globals.css";
@@ -25,11 +24,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <ToastProvider>
-          <AuthProvider>
-            <ChatProvider>{children}</ChatProvider>
-          </AuthProvider>
-        </ToastProvider>
+        <AuthProvider>
+          <ChatProvider>{children}</ChatProvider>
+        </AuthProvider>
       </body>
     </html>
   );
