@@ -15,6 +15,7 @@ import {
 import { ResponseWorkspace } from "../service/workspace-service";
 import { Article } from "../utils/multi-mode-select";
 import { useGenerateTitle } from "../utils/thread-title-generator";
+import { cn } from "./ui/lib/utils";
 import { Toaster } from "./ui/toaster";
 import { useToast } from "./ui/use-toast";
 
@@ -187,10 +188,10 @@ export default function ChatSection({
     setIsMessageLoading(true);
     setInput("");
 
-    const articleData: Article = chatContext?.article
-      ? chatContext.article
-      : ((await getMacroRoundupData()) as Article);
+    const articleData: Article = (await getMacroRoundupData()) as Article;
     const signal = controller.signal;
+
+    console.log(articleData);
 
     const cleanedData: { role: string; content: string }[] = messages.map(
       (c: { role: string; content: string }) => {
@@ -262,8 +263,9 @@ export default function ChatSection({
         className: cn(
           "top-0 right-0 flex fixed md:max-w-[420px] md:top-4 md:right-4 text-red-500",
         ),
-        title: "Failed to update password",
-        description: response.message,
+        title: "Failed to get article data",
+        description:
+          "An error has occurred while publishing, failed to fetch updated article data",
       });
     }
   }

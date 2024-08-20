@@ -27,5 +27,7 @@ export async function GET(req: NextRequest) {
 
   const article = await response.json();
 
+  console.log(article);
+
   return NextResponse.json(article, { status: 200 });
 }
