@@ -1,4 +1,4 @@
-from datetime import timedelta
+from datetime import datetime, timedelta
 from typing import Any, Optional
 from fastapi import APIRouter, Depends, HTTPException, logger, status
 from fastapi.responses import JSONResponse
@@ -12,7 +12,7 @@ from src.core.services.mail import EmailTemplateService, EmailTypeService, Resen
 from src.core.services.otp import OTPService
 from src.core.services.user import ACCESS_TOKEN_EXPIRE_MINUTES, REFRESH_SECRET_KEY, UserService
 from src.core.config.postgres import get_db
-from src.core.models.base import OTP, EmailTemplate, EmailType, EntityStatus, User
+from src.core.models.base import OTP, EmailTemplate, EmailType, EntityStatus, OTPGenerator, User, get_otp_expiration
 from src.schema import ChangePassword, EmailTypeEnum, ResetPassword, UpdatePassword, UserCreateModel, UserModel, VerifyOtp
 from src.utils.encryption import encrypt, to_base64
 from src.utils.logger import get_logger 
@@ -90,12 +90,16 @@ async def create_user(
         email_template: EmailTemplate = await email_template_service.get_template_by_name(EmailTypeEnum.ACCOUNT_VERIFICATION.value)
     
         otp_service = OTPService(db)
+        code = OTPGenerator().generate_unique_otp()
         otp = OTP(
             email=user.email,
             user_id=user.id,
             email_template_id=email_template.id,
             email_type_id=email_type.id,
-            status=EntityStatus.Active
+            status=EntityStatus.Active,
+            code=code,
+            created_at=datetime.now(),
+            expires_at=get_otp_expiration()
         )
         await otp_service.create(otp)
 
@@ -210,11 +214,11 @@ async def verify_otp_code(
             return { "message": "Your one-time password has expired", "status": 400 }
         else:            
             otp.status = EntityStatus.Used
-            await otp_service.update(otp.id, otp)
+            await otp_service.update(id=otp.id, obj_in=otp)
 
             if(data.otp_type == EmailTypeEnum.ACCOUNT_VERIFICATION.value):
                 user.status = EntityStatus.Active
-                await user_service.update(user.id, user)
+                await user_service.update(id=user.id, obj_in=user)
 
                 return { "message": "Account verified successfully", "status": 200 }
         
@@ -226,7 +230,7 @@ async def verify_otp_code(
         return {"message": str(e), "status": 400}
     
 @accounts_router.get("/resend-otp/{uid}")
-async def verify_otp_code(
+async def resend_otp_code(
     uid: str,
     db: AsyncSession = Depends(get_db),
     otp_service: OTPService = Depends(get_otp_service),
@@ -309,13 +313,17 @@ async def forgot_password(
         email_template: EmailTemplate = await email_template_service.get_template_by_name(EmailTypeEnum.RESET_PASSWORD.value)
 
         otp_service = OTPService(db)
+        code = OTPGenerator().generate_unique_otp()
     
         otp = OTP(
             email=user.email,
             user_id=user.id,
             email_template_id=email_template.id,
             email_type_id=email_type.id,
-            status=EntityStatus.Active
+            status=EntityStatus.Active,
+            code=code,
+            created_at=datetime.now(),
+            expires_at=get_otp_expiration()
         )
         await otp_service.create(otp)
 
@@ -357,7 +365,7 @@ async def reset_password(
             credential.password = hashed_password
             credential.salt = salt
 
-            await credential_service.update(credential)
+            await credential_service.update(id=credential.id, obj_in=credential)
 
             email_template_service = EmailTemplateService(db)
             email_template: EmailTemplate = await email_template_service.get_template_by_name(EmailTypeEnum.PASSWORD_UPDATE.value)

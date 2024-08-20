@@ -138,13 +138,33 @@ class UserService(Service):
         await redis_client.set(f"chat_mode:{user_id}", value=value)
         self.logger.info(f"Chat mode for user ID: {user_id} updated successfully")
 
-    async def update_article(self, user_id: str, article: Article, redis_client: Redis) -> None:
-        self.logger.info(f"Updating current article for user ID: {user_id}")
-        # Serialize the Pydantic object to a JSON string
-        article_json = article.model_dump_json()
-        # Update the chat mode in Redis without expiration
-        await redis_client.set(f"article:{user_id}", article_json)
-        self.logger.info(f"Chat mode for user ID: {user_id} updated successfully")
+    async def update_article(self, user_id: str, article: Article, redis_client: Redis):
+        self.logger.info(f"Updating article for user ID: {user_id}")
+        try:
+            # Serialize the Pydantic object to a JSON string
+            article_json = article.model_dump_json()
+
+            # Update the article in Redis without expiration
+            update_status = await redis_client.set(f"article:{user_id}", article_json)
+            if update_status:
+                self.logger.info(f"Article for user ID: {user_id} updated successfully")
+                self.logger.debug(f"Updated article data: {article_json}")
+            else:
+                self.logger.error(f"Failed to update article for user ID: {user_id}")
+                return None
+
+            # Verify the update
+            stored_article_json = await redis_client.get(f"article:{user_id}")
+            if stored_article_json != article_json:
+                self.logger.error(f"Mismatch detected! Retrieved article data doesn't match the updated data for user ID: {user_id}")
+                return None
+            
+            self.logger.info(stored_article_json)
+
+            return Article.model_validate_json(stored_article_json)
+        except Exception as e:
+            self.logger.exception(f"An error occurred while updating article for user ID: {user_id}: {e}")
+            return None
 
     async def get_article(self, user_id: str, redis_client: Redis) -> Article:
         self.logger.info(f"Retrieving current article for user ID: {user_id}")

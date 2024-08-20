@@ -17,9 +17,17 @@ def get_otp_expiration(minutes: int = 10) -> datetime:
     expiration_time = datetime.now() + timedelta(minutes=minutes)
     return expiration_time
 
-def generate_otp() -> str:
-    otp = random.randint(100000, 999999)
-    return str(otp)
+class OTPGenerator:
+    def __init__(self):
+        self.otps = random.sample(range(100000, 1000000), 900000)
+        self.index = 0
+
+    def generate_unique_otp(self) -> str:
+        if self.index >= len(self.otps):
+            raise ValueError("All possible OTPs have been generated.")
+        otp = self.otps[self.index]
+        self.index += 1
+        return str(otp)
 
 class EntityStatus(enum.Enum):
     Active = "Active"
@@ -196,7 +204,7 @@ class EmailTemplate(Base):
 class OTP(Base):
     __tablename__ = "otp"
     id = Column(String(36), primary_key=True, default=lambda: str(uuid.uuid4()))
-    code = Column(String, default=generate_otp())
+    code = Column(String, default=OTPGenerator().generate_unique_otp())
     email = Column(String, index=True)
     user_id = Column(String(36), ForeignKey('users.id'))
     email_template_id = Column(Integer, ForeignKey('email_templates.id'))
