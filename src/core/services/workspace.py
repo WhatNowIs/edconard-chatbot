@@ -18,33 +18,29 @@ class WorkspaceService(Service):
         await self.db_session.refresh(workspace)
         return workspace
     
-    async def create_default_workspace_if_not_exists(self, user_id: str) -> Workspace:
-        self.logger.info(f"Creating default workspace for user {user_id}")
+    async def create_default_workspace_if_not_exists(self, user: User) -> Workspace:
+        self.logger.info(f"Creating default workspace for user {user.id}")
 
-        default_workspace = await self.db_session.execute(
-            select(Workspace).filter(Workspace.name == "default")
-        )
-        default_workspace = default_workspace.scalar_one_or_none()
+        try:
+            default_workspace = await self.db_session.execute(
+                select(Workspace).filter(Workspace.name == "default")
+            )
+            default_workspace = default_workspace.scalar_one_or_none()
 
-        if not default_workspace:
-            default_workspace = Workspace(name="default")
-            self.db_session.add(default_workspace)
-            await self.db_session.flush()
-            await self.db_session.refresh(default_workspace)
-            self.logger.info(f"Created default workspace for user {user_id}")
-        else:
-            self.logger.info(f"Default workspace already exists")
-
-        user = await self.db_session.get(User, user_id)
-        if user and default_workspace:
-            if user not in default_workspace.users:
-                default_workspace.users.append(user)
-                await self.db_session.commit()
-                self.logger.info(f"Added user {user_id} to default workspace")
+            if not default_workspace:
+                default_workspace = Workspace(name="default")
+                self.db_session.add(default_workspace)
+                await self.db_session.flush()
+                await self.db_session.refresh(default_workspace)
+                self.logger.info(f"Created default workspace for user {user.id}")
             else:
-                self.logger.info(f"User {user_id} is already in the default workspace")
+                self.logger.info(f"Default workspace already exists")
 
-        return default_workspace
+            return default_workspace
+
+        except Exception as e:
+            self.logger.error(f"Error creating default workspace for user {user.id}: {e}")
+            raise
 
     async def add_user_to_workspace(self, workspace_id: str, user_id: str) -> None:
         self.logger.info(f"Adding user {user_id} to workspace {workspace_id}")
