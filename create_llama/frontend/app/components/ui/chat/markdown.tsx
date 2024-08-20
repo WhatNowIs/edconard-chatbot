@@ -51,7 +51,7 @@ export default function Markdown({
           let result =
             role === "assistant" &&
             annotations[0] &&
-            "headline" in annotations[0]
+            annotations[0]?.headline !== undefined
               ? `{${annotations[0]?.headline}}, Article Order of Appearance - ${annotations[0]?.order}: ${annotations[0]?.url}\n\n`
               : "";
           return (

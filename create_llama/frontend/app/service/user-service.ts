@@ -324,7 +324,9 @@ export async function resetPassword(data: ResetPasswordType) {
 
   return response;
 }
-export async function saveMacroRoundupData(data: MacroRoundupType) {
+export async function saveMacroRoundupData(
+  data: MacroRoundupType,
+): Promise<Article | { message: string; status: number }> {
   const access_token =
     localStorage.getItem("access_token") || getCookie("access_token");
   const res = await fetch(`${getBaseURL()}/api/chat/article`, {
@@ -337,11 +339,11 @@ export async function saveMacroRoundupData(data: MacroRoundupType) {
   });
 
   if (!res.ok) {
-    const error = await res.text();
-    return { message: error, status: 400 };
+    const error = JSON.parse(await res.text());
+    return { message: error?.details as string, status: 400 };
   }
 
-  return { ...((await res.json()) as { message: string; status: number }) };
+  return { ...((await res.json()) as Article) };
 }
 
 export async function addChatMessage(data: UpdateMessagesType) {
@@ -369,7 +371,8 @@ export async function getMacroRoundupData(): Promise<
 > {
   const access_token =
     localStorage.getItem("access_token") || getCookie("access_token");
-  const res = await fetch("/api/article", {
+
+  const res = await fetch(`${getBaseURL()}/api/chat/article`, {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
@@ -378,11 +381,11 @@ export async function getMacroRoundupData(): Promise<
   });
 
   if (!res.ok) {
-    const error = await res.text();
-    return { message: error, status: 400 };
+    const error = JSON.parse(await res.text());
+    return { message: error?.details as string, status: 400 };
   }
 
-  return { ...((await res.json()) as Article) };
+  return (await res.json()) as Article;
 }
 
 export async function refreshToken(token: string): Promise<{

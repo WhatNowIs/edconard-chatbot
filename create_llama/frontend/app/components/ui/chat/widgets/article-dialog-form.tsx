@@ -1,13 +1,14 @@
 "use client";
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
+import ChatContext from "@/app/context/chat-context";
 import {
   MacroRoundupSchema,
   MacroRoundupType,
   saveMacroRoundupData,
 } from "@/app/service/user-service";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { useForm } from "react-hook-form";
 import { SubmitButton } from "../../custom/submitButton";
 import { Form, FormControl, FormField, FormItem, FormLabel } from "../../form";
@@ -20,6 +21,7 @@ export interface Props {
 }
 
 export default function MacroRoundupForm(props: Props) {
+  const chatContext = useContext(ChatContext);
   const form = useForm({
     resolver: zodResolver(MacroRoundupSchema),
   });
@@ -32,17 +34,25 @@ export default function MacroRoundupForm(props: Props) {
     try {
       const response = await saveMacroRoundupData(data as MacroRoundupType);
 
-      if (response.status === 200) {
+      if (chatContext && !("message" in response)) {
+        const { setArticle } = chatContext;
+
+        setArticle(response);
         console.log(data);
         props.close();
+      } else {
+        throw Error(
+          "An error has occurred while fetching and storing article data",
+        );
       }
-    } catch (err) {
+    } catch (err: any) {
       console.error(err);
       toast({
         className: cn(
           "top-0 right-0 flex fixed md:max-w-[420px] md:top-4 md:right-4 text-red-500",
         ),
         title: "Failed to update config",
+        description: err?.message,
       });
     }
     setIsSubmitting(false);
