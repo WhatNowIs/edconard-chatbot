@@ -355,7 +355,7 @@ async def get_chat_mode(
     session: dict = Depends(get_session),    
     redis_client: Redis = Depends(get_redis_client),
     user_service: UserService = Depends(get_user_service),
-) -> _Result:
+):
     
     if "sub" in session and user_id == session["sub"]:
     
@@ -377,7 +377,7 @@ async def update_article(
     session: dict = Depends(get_session),    
     redis_client: Redis = Depends(get_redis_client),
     user_service: UserService = Depends(get_user_service),
-) -> _Result:
+) -> Article:
     
     if "sub" in session:
         user_id = session['sub']
@@ -402,12 +402,13 @@ async def update_article(
             order=data.order,
             url=data.document_link
         )
-        await user_service.update_article(user_id, article, redis_client)
+        result = await user_service.update_article(user_id, article, redis_client)
 
         get_logger().info(f"Updated article data with order {data.order}")
-        get_logger().info(article.dict())
+
+        if result != None:
     
-        return JSONResponse(status_code=200, content={"message": f"Successfully updated article data with order of appearance # {data.order}", "status": 200}) 
+            return result
 
     raise HTTPException(
         status_code=status.HTTP_401_UNAUTHORIZED,
@@ -423,14 +424,14 @@ async def get_article(
     session: dict = Depends(get_session),    
     redis_client: Redis = Depends(get_redis_client),
     user_service: UserService = Depends(get_user_service),
-) -> _Result:
+) -> Article:
     
     if "sub" in session:
         user_id = session['sub']
 
         article = await user_service.get_article(user_id=user_id, redis_client=redis_client)
     
-        return JSONResponse(status_code=200, content=article.dict()) 
+        return article
 
     raise HTTPException(
         status_code=status.HTTP_401_UNAUTHORIZED,

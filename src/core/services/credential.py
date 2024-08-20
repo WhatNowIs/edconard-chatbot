@@ -11,6 +11,5 @@ class CredentialService(Service):
 
     async def get_by_user_id(self, uid: str) -> Optional[Credential]:
         get_logger().info(f"Fetching credentials with user id: {uid}")
-        async with self.db_session as session:
-            result = await session.execute(select(Credential).filter(Credential.user_id == uid))
-            return result.scalars().first()
+        result = await self.db_session.execute(select(Credential).filter(Credential.user_id == uid))
+        return result.scalars().first()
