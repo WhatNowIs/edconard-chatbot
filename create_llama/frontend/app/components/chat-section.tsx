@@ -98,35 +98,36 @@ export default function ChatSection({
     index: number,
     newMessage: Partial<Message> | Partial<ResponseMessage>,
   ) => {
-    chatContext?.setMessages((_ = chatContext.messages) => {
-      const updatedMessages = [...chatContext.messages];
+    const updateContextFn = (prevMessages: ResponseMessage[]) => {
+      const updatedMessages = [...prevMessages];
       const messageIndex = updatedMessages.length - index;
       if (messageIndex >= 0) {
         const result = {
           ...updatedMessages[messageIndex],
-          content: newMessage.content,
-          annotations: newMessage.annotations,
-          id: newMessage.id,
+          ...newMessage,
         } as ResponseMessage;
         updatedMessages[messageIndex] = result;
       }
       return updatedMessages;
-    });
+    };
+    chatContext?.setMessages(updateContextFn);
 
-    setMessages((_ = messages) => {
-      const updatedMessages = [...messages];
+    const updateMessagesFn = (prevMessages: Message[]) => {
+      const updatedMessages = [...prevMessages];
       const messageIndex = updatedMessages.length - index;
       if (messageIndex >= 0) {
         const result = {
           ...updatedMessages[messageIndex],
-          content: newMessage.content,
-          annotations: newMessage.annotations,
-          id: newMessage.id,
+          ...newMessage,
         } as Message;
         updatedMessages[messageIndex] = result;
       }
       return updatedMessages;
-    });
+    };
+
+    const updatedMessages = updateMessagesFn(messages as Message[]);
+
+    setMessages(updatedMessages);
   };
 
   function updateMessages(newMessage: ResponseMessage) {
@@ -142,7 +143,6 @@ export default function ChatSection({
     reader: ReadableStreamDefaultReader<Uint8Array>,
     thread_id: string,
     question: string,
-    article: Article,
   ) {
     let result = "";
     setIsMessageLoading(false);
@@ -157,7 +157,6 @@ export default function ChatSection({
 
       updateLastMessage(1, {
         content: result,
-        annotations: [article],
         id: "",
       });
     }
@@ -191,8 +190,6 @@ export default function ChatSection({
     const articleData: Article = (await getMacroRoundupData()) as Article;
     const signal = controller.signal;
 
-    console.log(articleData);
-
     const cleanedData: { role: string; content: string }[] = messages.map(
       (c: { role: string; content: string }) => {
         return { role: c.role, content: c.content };
@@ -206,7 +203,7 @@ export default function ChatSection({
         workspace_id: chatContext?.currentWorkspace?.id as string,
         user_id: authContext?.user?.id as string,
         timestamp: new Date().toISOString(),
-        annotations: [articleData],
+        annotations: [],
         role: "user" as Role,
         content: question,
       });
@@ -225,6 +222,11 @@ export default function ChatSection({
           content: `
         Here is the article data: ${article_data}\n          
         Question: ${question}
+
+        N.B: - Mention the fields you are using to guide the generation:
+             - For seo title and meta description: only use Headline and Summary
+             - For tweets use: Headline, Summary, Author(s) and Publisher
+             - For topics: use Headline and Summary
       `,
         },
       ];
@@ -245,18 +247,20 @@ export default function ChatSection({
       const reader =
         response.body?.getReader() as ReadableStreamDefaultReader<Uint8Array>;
 
+      const annotations = [articleData];
+
       updateMessages({
         thread_id: thread_id,
         id: "",
         workspace_id: chatContext?.currentWorkspace?.id as string,
         user_id: authContext?.user?.id as string,
         timestamp: new Date().toISOString(),
-        annotations: [articleData],
+        annotations: annotations,
         role: "assistant",
         content: "",
       });
-      processChatMessages(reader, thread_id, question, articleData).catch(
-        (error) => console.log(error),
+      processChatMessages(reader, thread_id, question).catch((error) =>
+        console.log(error),
       );
     } else {
       toast({
@@ -298,7 +302,16 @@ export default function ChatSection({
         className={`flex flex-col space-y-4 h-screen overflow-y-auto justify-between w-full pl-4 pb-2`}
       >
         <ChatMessages
-          messages={messages}
+          messages={
+            authContext?.isResearchExploration
+              ? messages
+              : (chatContext?.messages.map((msg) => ({
+                  content: msg.content,
+                  role: msg.role as Role,
+                  id: msg.id,
+                  annotations: msg.annotations,
+                })) as Message[])
+          }
           isLoading={
             authContext?.isResearchExploration ? isLoading : isMessageLoading
           }

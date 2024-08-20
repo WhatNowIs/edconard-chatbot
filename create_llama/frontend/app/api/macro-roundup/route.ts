@@ -34,6 +34,9 @@ export async function POST(req: NextRequest) {
       content: `
       Here is the article data: ${article_data}\n
       Question: ${input}
+
+      N.B: - Never return duplicates in your answer.
+           - Always tell the user the fields you are using to guide your generation.
     `,
     },
   ];

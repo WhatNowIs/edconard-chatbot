@@ -42,6 +42,16 @@ function ChatMessageContent({
 }) {
   const authContext = useContext(AuthContext);
   const annotations = message.annotations as MessageAnnotation[] | undefined;
+
+  const source =
+    message.role === "assistant" &&
+    !authContext?.isResearchExploration &&
+    message.annotations &&
+    message.annotations[0] &&
+    (message?.annotations[0] as any)?.headline !== undefined
+      ? `Editorial Template: ${(message.annotations[0] as any)?.url}\nHeadline: ${(message.annotations[0] as any)?.headline}\nOrder of Appearance: ${(message.annotations[0] as any)?.order}\n\n`
+      : "";
+
   if (!annotations?.length && authContext?.isResearchExploration)
     return (
       <Markdown
@@ -93,7 +103,7 @@ function ChatMessageContent({
         order: 0,
         component: (
           <Markdown
-            content={message.content}
+            content={source + message.content}
             annotations={message.annotations as any[]}
             role={message.role}
           />
@@ -119,7 +129,7 @@ function ChatMessageContent({
       order: 0,
       component: (
         <Markdown
-          content={message.content}
+          content={source + message.content}
           annotations={message.annotations as any[]}
           role={message.role}
         />
