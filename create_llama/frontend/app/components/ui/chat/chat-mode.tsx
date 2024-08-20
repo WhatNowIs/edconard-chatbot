@@ -68,7 +68,7 @@ export const ChatMode = () => {
             className="pr-4 text-xs text-gray-600"
             htmlFor="airplane-mode"
           >
-            Research/Exploration
+            {isResearchExploration ? "Research Assistant" : "Editorial Assistant"}
           </SwitchLabel>
 
           <ArticleDialog
