@@ -1,22 +1,20 @@
-import React from 'react'; 
 import Link from "next/link";
 import SigninForm from "../components/ui/auth/signin-form";
-import { Google, Microsoft } from "../components/ui/chat/icons/main-icons";
 
 export default function Signin() {
-    return (
-      <>
-        <div className="flex min-h-full flex-1 flex-col justify-center py-12 sm:px-6 lg:px-8">
-            <div className="items-center sm:mx-auto sm:w-full sm:max-w-md">
-                <h2 className="mt-6 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
-                Sign in to your account
-                </h2>
-            </div>
-  
-          <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-[480px]">
-            <div className="bg-white px-6 py-12 shadow sm:rounded-lg sm:px-12">
-                <SigninForm />
-                <div>
+  return (
+    <>
+      <div className="flex min-h-full flex-1 flex-col justify-center py-12 sm:px-6 lg:px-8">
+        <div className="items-center sm:mx-auto sm:w-full sm:max-w-md">
+          <h2 className="mt-6 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
+            Sign in to your account
+          </h2>
+        </div>
+
+        <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-[480px]">
+          <div className="bg-white px-6 py-12 shadow sm:rounded-lg sm:px-12">
+            <SigninForm />
+            {/* <div>
                     <div className="relative mt-10">
                     <div className="absolute inset-0 flex items-center" aria-hidden="true">
                         <div className="w-full border-t border-gray-200" />
@@ -43,17 +41,19 @@ export default function Signin() {
                         <span className="text-sm font-semibold leading-6">Microsoft</span>
                     </a>
                     </div>
-                </div>
-            </div>
-            <p className="mt-10 text-center text-sm text-gray-500">
-                Not a member?{' '}
-                <Link href="/signup" className="font-semibold leading-6 text-secondary-foreground">
-                    Create a new account
-                </Link>
-            </p>
+                </div> */}
           </div>
+          <p className="mt-10 text-center text-sm text-gray-500">
+            Not a member?{" "}
+            <Link
+              href="/signup"
+              className="font-semibold leading-6 text-secondary-foreground"
+            >
+              Create a new account
+            </Link>
+          </p>
         </div>
-      </>
-    )
-  }
-  
+      </div>
+    </>
+  );
+}
