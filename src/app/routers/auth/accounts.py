@@ -5,6 +5,7 @@ from fastapi.responses import JSONResponse
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 import jwt
 from sqlalchemy.ext.asyncio import AsyncSession
+from src.core.services.workspace import WorkspaceService
 from starlette.status import HTTP_400_BAD_REQUEST
 from src.core.config.redis import get_redis_client
 from src.core.services.credential import CredentialService
@@ -24,6 +25,9 @@ oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
 def get_user_service(db: AsyncSession = Depends(get_db)) -> UserService:
     return UserService(db)
+
+def get_workspace_service(db: AsyncSession = Depends(get_db)) -> WorkspaceService:
+    return WorkspaceService(db)
 
 async def get_session(
     token: str = Depends(oauth2_scheme), 
@@ -77,11 +81,16 @@ async def create_user(
     data: UserCreateModel,
     db: AsyncSession = Depends(get_db),
     user_service: UserService = Depends(get_user_service),
-    mail_client: ResendClient = Depends(get_mail_service)
+    mail_client: ResendClient = Depends(get_mail_service),
+    workspace_service: WorkspaceService = Depends(get_workspace_service)
 ) -> Any:
     try:
         user_in = User(**data.user_data.dict())
         user = await user_service.create(user_in, data.password)
+
+        workspace = await workspace_service.create_default_workspace_if_not_exists(user.id)
+
+        get_logger.info(f"{workspace.name} workspace has been created for user with {user.id}")
         
         email_type_service = EmailTypeService(db)
         email_template_service = EmailTemplateService(db)
