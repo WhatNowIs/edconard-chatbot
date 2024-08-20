@@ -12,8 +12,6 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ message: "Not authenticated" }, { status: 401 });
   }
 
-  const token = authHeader.split(" ")[1];
-
   const articleData: Article = (await getMacroRoundupData()) as Article;
 
   const article_data = `
@@ -35,81 +33,12 @@ export async function POST(req: NextRequest) {
       role: "user",
       content: `
       Here is the article data: ${article_data}\n
-        
-      Here are all the predefined topics and subtopics, do not return anything which is not listed here:     
-      "1. Comparisons:
-          - Age
-          - Cross-country
-          - Gender
-          - Geography (Urban/Rural)
-          - Historical
-          - Liberal/Conservative
-          - No Comparison
-          - Other Comparison
-          - Race
-          - Sector
-          - Skill Level
-      
-      2. Fiscal Policy:
-          - Fiscal Deficits
-          - Government Spending
-          - Infrastructure
-          - Multiplier/Rational Expectations
-          - Regulation
-          - Taxation
-      
-      3. GDP:
-          - Business Cycle
-          - Financial Markets
-          - Growth
-          - Housing
-          - Inflation
-          - Savings Glut/Trade Deficit
-          - Trade (not deficits)
-      
-      4. Monetary Policy:
-          - Banking
-          - Financial Crisis
-          - M&M
-      
-      5. Science:
-          - Cosmos
-          - Evolution/Heredity
-          - Fraudulent Studies
-          - Global Warming
-          - Other Science
-      
-      6. Workforce:
-          - Demographics
-          - Education
-          - Family/Marriage
-          - Gender Pay Gap
-          - Immigration
-          - Inequality
-          - Minimum Wage
-          - Mobility/Assortive Mating
-          - Poverty/Crime
-          - Unemployment/Participation
-          - Wages/Income
-          - Workforce Reorganization/Participation
-      
-      7. Productivity:
-          - Cronyism
-          - Incentives/Risk-Taking
-          - Innovation/Research
-          - Institutional Capabilities
-          - Intangibles
-          - Investment
-          - Startups
-          - Workforce Reorganization/Participation
-      
-      8. Energy"
       Question: ${input}
     `,
     },
   ];
 
-  const response = await fetch("http://54.89.10.40/chat/stream", {
+  const response = await fetch("http://54.234.177.154/chat/stream", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

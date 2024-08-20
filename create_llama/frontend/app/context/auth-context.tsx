@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 "use client";
 /* eslint-disable no-useless-catch */
+import { useRouter } from "next/navigation";
 import {
   Dispatch,
   FC,
@@ -46,6 +47,7 @@ interface AuthProviderProps {
 }
 
 export const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
+  const router = useRouter();
   const [user, setUser] = useState<UserFormType | null>(null);
   const [isResearchExploration, setIsResearchExploration] = useState<
     boolean | null
@@ -66,10 +68,12 @@ export const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
           .then((response) => {
             return response.json();
           })
-          .catch(() => {
-            const access_token = refreshAccessToken().catch((error) =>
-              console.log(error),
-            );
+          .catch((error) => {
+            console.log("Me error: ", error);
+            const access_token = refreshAccessToken().catch((error) => {
+              console.log("Failed to use refresh token: ", error);
+              router.push("/signin");
+            });
 
             if (!access_token) {
               localStorage.removeItem("access_token");
