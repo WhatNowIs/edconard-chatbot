@@ -87,10 +87,7 @@ async def create_user(
     try:
         user_in = User(**data.user_data.dict())
         user = await user_service.create(user_in, data.password)
-
-        workspace = await workspace_service.create_default_workspace_if_not_exists(user.id)
-
-        get_logger.info(f"{workspace.name} workspace has been created for user with {user.id}")
+        workspace = await workspace_service.create_default_workspace_if_not_exists(user)
         
         email_type_service = EmailTypeService(db)
         email_template_service = EmailTemplateService(db)
@@ -111,6 +108,8 @@ async def create_user(
             expires_at=get_otp_expiration()
         )
         await otp_service.create(otp)
+        await workspace_service.add_user_to_workspace(workspace.id, user.id)
+        await workspace_service.db_session.commit()
 
         # Define the context for the email template
         context = {
@@ -127,8 +126,8 @@ async def create_user(
 
         return UserModel(**user.to_dict())
     except Exception as e:
-        get_logger().error(f"Error sending email: {e}")
-        raise HTTPException(status_code=500, detail=f"Error sending email: {e}")
+        get_logger().error(f"Error has occured: {e}")
+        raise HTTPException(status_code=500, detail=f"Error has occured: {e}")
 
 @accounts_router.post("/signin")
 async def authenticate_user(

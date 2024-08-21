@@ -31,10 +31,9 @@ class UserService(Service):
     async def create(self, user_in: User, password: str) -> User:
         self.logger.info(f"Creating a new user with first name: {user_in.first_name}")
         user_in.created_at = datetime.utcnow()
-        async with self.db_session as session:
-            session.add(user_in)
-            await session.commit()
-            await session.refresh(user_in)
+        self.db_session.add(user_in)
+        await self.db_session.commit()
+        await self.db_session.refresh(user_in)
         self.logger.info(f"Created user with id: {user_in.id}")
 
         self.logger.info(f"Creating credentials for user with id: {user_in.id}")
@@ -47,19 +46,17 @@ class UserService(Service):
             created_at=datetime.utcnow(),
             status='Active'
         )
-        async with self.db_session as session:
-            session.add(credential)
-            await session.commit()
-            await session.refresh(credential)
+        self.db_session.add(credential)
+        await self.db_session.commit()
+        await self.db_session.refresh(credential)
         self.logger.info(f"Created credentials for user with id: {user_in.id}")
 
         return user_in
 
     async def get_by_email(self, email: str) -> Optional[User]:
         self.logger.info(f"Fetching user with email: {email}")
-        async with self.db_session as session:
-            result = await session.execute(select(User).filter(User.email == email))
-            return result.scalars().first()
+        result = await self.db_session.execute(select(User).filter(User.email == email))
+        return result.scalars().first()
 
     async def verify_user_password(self, user_id: str, password: str) -> bool:
         self.logger.info(f"Verifying password for user with id: {user_id}")
@@ -239,17 +236,17 @@ class UserService(Service):
 
         hashed_password, salt = encrypt(new_password)
 
-        async with self.db_session as session:
-            result = await session.execute(select(Credential).filter(Credential.user_id == user.id))
-            credential = result.scalars().first()
-            if credential:
-                credential.password = hashed_password
-                credential.salt = salt
-                credential.updated_at = datetime.utcnow()
-                session.add(credential)
-                await session.commit()
-                self.logger.info(f"Password updated successfully for user with email: {user.email}")
-                return True, "Password updated successfully"
+        # async with self.db_session as session:
+        result = await self.db_session.execute(select(Credential).filter(Credential.user_id == user.id))
+        credential = result.scalars().first()
+        if credential:
+            credential.password = hashed_password
+            credential.salt = salt
+            credential.updated_at = datetime.utcnow()
+            self.db_session.add(credential)
+            await self.db_session.commit()
+            self.logger.info(f"Password updated successfully for user with email: {user.email}")
+            return True, "Password updated successfully"
 
         self.logger.error(f"Failed to update password for user with email: {user.email}")
         return False, "Failed to update password"
