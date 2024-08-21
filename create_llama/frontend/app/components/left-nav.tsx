@@ -1,8 +1,6 @@
 "use client";
 
 import { Button } from "@/app/components/ui/button";
-import ChatBundles from "@/app/components/ui/chat/chat-bundles";
-import Marketplace from "@/app/components/ui/chat/marketplace";
 import RecentThreads from "@/app/components/ui/chat/recent-thread";
 import Workspaces from "@/app/components/ui/chat/workspace";
 import Image from "next/image";
@@ -109,8 +107,8 @@ export default function LeftNav({
               </Button>
               <Workspaces />
               <RecentThreads />
-              <ChatBundles />
-              <Marketplace />
+              {/* <ChatBundles /> */}
+              {/* <Marketplace /> */}
             </>
           )}
         </>
