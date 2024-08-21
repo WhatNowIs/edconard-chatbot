@@ -26,8 +26,8 @@ export default function Workspaces() {
 
   return (
     <div className="mb-4">
-      <div className="flex justify-between items-center text-gray-700 mb-2">
-        <div className="font-semibold text-sm">Workspaces</div>
+      <div className="flex justify-between items-center text-gray-800 mb-2">
+        <div className="font-sans text-sm">Workspaces</div>
         <button
           className="bg-transparent border-none"
           onClick={() => setShevronIsOpen(!isShevronOpen)}
