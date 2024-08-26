@@ -22,10 +22,6 @@ export default function OtherSettings() {
     switch (panel) {
       case SettingPanel.Profile:
         return <HiUserCircle className="mr-2" />;
-      // case SettingPanel.Billing:
-      //   return <HiCreditCard className="mr-2" />;
-      // case SettingPanel.Reports:
-      //   return <HiChartBar className="mr-2" />;
       case SettingPanel.Workspace:
         return <HiBriefcase className="mr-2" />;
       default:
@@ -37,9 +33,8 @@ export default function OtherSettings() {
     <div className="mb-2 w-full">
       <div className="w-full flex flex-col justify-between items-center text-gray-700 mb-2">
         {Object.values(SettingPanel).map((panel) => {
-          console.log(user?.role.name === UserRole.SUPER_ADMIN);
           if (panel === "Workspaces") {
-            if (user?.role.name === UserRole.SUPER_ADMIN) {
+            if (user?.role?.name as string === UserRole.SUPER_ADMIN) {
               return (
                 <div
                   key={panel}

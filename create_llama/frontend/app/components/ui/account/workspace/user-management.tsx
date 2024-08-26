@@ -117,12 +117,14 @@ export const UserManagementForm = ({
 
     getWorkspaceUsers().catch((error) => console.log(error));
   };
+
   const onUserSelect = (value: string) => {
     form.setValue("user_id", value);
   };
 
   useEffect(() => {
-    form.setValue("workspace_id", workspaces[0]?.id as string);
+    if (workspaces.length > 0)
+      form.setValue("workspace_id", workspaces[0]?.id as string);
   }, []);
 
   const UserCard = ({ user }: { user: UserFormType }) => {
@@ -142,19 +144,21 @@ export const UserManagementForm = ({
           <p className="text-xs text-gray-500">{user.email}</p>
           <p className="text-xs text-gray-700">{user?.role?.name as string}</p>
         </div>{" "}
-        <button
-          type="button"
-          disabled={isDeleting}
-          className="w-6 h-full bg-none border-none hover:cursor-pointer"
-          onClick={() =>
-            onSubmitRemove({
-              workspace_id: form.getValues().workspace_id,
-              user_id: user.id as string,
-            }).catch((error) => console.log(error))
-          }
-        >
-          <HiOutlineTrash className="w-5 h-5 rounded-md text-slate-700 hover:text-slate-900" />
-        </button>
+        <div className="w-6">
+          <button
+            type="button"
+            disabled={isDeleting}
+            className="w-6 h-full bg-none border-none hover:cursor-pointer"
+            onClick={() =>
+              onSubmitRemove({
+                workspace_id: form.getValues().workspace_id,
+                user_id: user.id as string,
+              }).catch((error) => console.log(error))
+            }
+          >
+            <HiOutlineTrash className="w-5 h-5 rounded-md text-slate-700 hover:text-slate-900" />
+          </button>
+        </div>
       </div>
     );
   };

@@ -90,32 +90,28 @@ export default function LeftNav({
         </div>
       )}
       {currentPath !== "/accounts" ? (
-        <>
-          {user && (
-            <>
-              <Button
-                type="submit"
-                className="w-full flex items-center mb-6"
-                onClick={handleNewThread}
-                disabled={isButtonDisabled}
-              >
-                {isLoading ? (
-                  "Loading..."
-                ) : (
-                  <>
-                    <PlusIcon /> New Thread
-                  </>
-                )}
-              </Button>
-              <Workspaces />
-              <RecentThreads />
-            </>
-          )}
-        </>
+        user && (
+          <>
+            <Button
+              type="submit"
+              className="w-full flex items-center mb-6"
+              onClick={handleNewThread}
+              disabled={isButtonDisabled}
+            >
+              {isLoading ? (
+                "Loading..."
+              ) : (
+                <>
+                  <PlusIcon /> New Thread
+                </>
+              )}
+            </Button>
+            <Workspaces />
+            <RecentThreads />
+          </>
+        )
       ) : (
-        <>
-          <OtherSettings />
-        </>
+        <OtherSettings />
       )}
     </div>
   );
