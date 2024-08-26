@@ -7,6 +7,7 @@ from src.core.config.postgres import get_db
 from src.core.models.base import Workspace
 from src.core.services.workspace import WorkspaceService
 from src.schema import WorkspaceCreate
+from src.utils.logger import get_logger
 
 workspace_router = APIRouter()
 
@@ -112,7 +113,7 @@ async def fetch_workspaces(
         detail="Not authorized to access workspaces",
     )
 
-@workspace_router.get("/workspace/{workspace_id}/users", response_model=List[dto.UserModel])
+@workspace_router.get("/{workspace_id}/users", response_model=List[dto.UserModel])
 async def fetch_users_from_workspace(
     workspace_id: str,
     session: dict = Depends(get_session),
@@ -120,7 +121,11 @@ async def fetch_users_from_workspace(
 ):
     # Check if the user is authenticated (you can customize this condition as needed)
     if "sub" in session:
-        users = await workspace_service.get_users_by_workspace_id(workspace_id)
+        user_id = session['sub']
+        users = await workspace_service.get_users_by_workspace_id(user_id, workspace_id)
+
+        get_logger().info([user.to_dict() for user in users])
+        
         return [dto.UserModel(**user.to_dict()) for user in users]
 
     raise HTTPException(
