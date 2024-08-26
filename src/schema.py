@@ -54,6 +54,11 @@ class ThreadUpdate(BaseModel):
 class ChatMode(BaseModel):
     is_research_exploration: bool
 
+class RoleModel(BaseModel):
+    id: str
+    name: str
+    description: str
+    
 class UserModel(BaseModel):
     id: Optional[str] = None
     first_name: str
@@ -63,12 +68,14 @@ class UserModel(BaseModel):
     sex: Optional[str] = None
     status: Optional[str] = 'Pending'
     role_id: Optional[str] = None
+    role: Optional[RoleModel] = None
     created_at: Optional[datetime] = None
     deleted_at: Optional[datetime] = None
     updated_at: Optional[datetime] = None
 
     class Config:
         from_attributes = True
+
 
 
 class UserCreateModel(BaseModel):

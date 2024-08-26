@@ -2,6 +2,10 @@ import os
 import shutil
 from create_llama.backend.app.engine import init_topic_engine
 from src.app.tasks.indexing import index_all, reset_index
+from src.core.models.base import EntityStatus, User, UserRole
+from src.core.services.role import RoleService, setup_roles
+from src.core.services.user import UserService, create_default_super_admin_account
+from src.core.services.workspace import WorkspaceService
 import uvicorn
 from fastapi import FastAPI
 from dotenv import load_dotenv
@@ -113,9 +117,33 @@ async def startup(
         # Call the populate methods
         email_type_service = EmailTypeService(db_session=db)
         email_template_service = EmailTemplateService(db_session=db)
+        role_service = RoleService(db_session = db)
 
         await email_type_service.populate_email_types()
         await email_template_service.populate_email_templates(templates_directory)
+        await setup_roles(role_service)
+
+        async def create_admin():
+            obj_in = User(
+                first_name = "Byamasu",
+                last_name = "Patrick",
+                sex = "Male",
+                email = "patrick@whatnow.is",
+                phone_number = "+265996668149",
+                status = EntityStatus.Active
+            )
+            user_service = UserService(db_session = db)
+            workspace_service = WorkspaceService(db_session = db)
+
+            user, is_created = await user_service.create_default_super_admin_account_if_not_exists(obj_in, "Patrick2020")
+            
+            workspace = await workspace_service.create_default_workspace_if_not_exists(user)
+            if is_created:
+                await workspace_service.add_user_to_workspace(workspace.id, user.id)
+                await workspace_service.db_session.commit()
+
+        await create_admin()
+
 
     get_logger().info("Successfully populated default email templates and types")
 
