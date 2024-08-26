@@ -1,6 +1,5 @@
 
 import jwt
-from fastapi import Body
 from datetime import datetime, timedelta
 from typing import Any, List, Optional
 from fastapi import APIRouter, Depends, HTTPException, logger, status
