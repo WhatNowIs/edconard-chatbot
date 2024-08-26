@@ -1,20 +1,32 @@
 "use client";
 
+import ChatContext from "@/app/context/chat-context";
 import {
+  ResponseWorkspace,
   UserManagementSchema,
   UserManagementType,
 } from "@/app/service/workspace-service";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { useContext } from "react";
 import { useForm } from "react-hook-form";
 import { SubmitButton } from "../../custom/submitButton";
-import { Form, FormControl, FormField, FormItem, FormLabel } from "../../form";
-import { Input } from "../../input";
+import { Form, FormControl, FormField, FormItem } from "../../form";
 import { cn } from "../../lib/utils";
+import {
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectLabel,
+  SelectTrigger,
+  SelectValue,
+} from "../../select";
 import { useToast } from "../../use-toast";
 
 interface UserManagementFormProps {
   handleAddUser: (data: UserManagementType) => Promise<void>;
   handleRemoveUser: (data: UserManagementType) => Promise<void>;
+  fetchWorkspacesList: () => Promise<ResponseWorkspace[]>;
 }
 
 export const UserManagementForm = ({
@@ -25,6 +37,10 @@ export const UserManagementForm = ({
   const form = useForm<UserManagementType>({
     resolver: zodResolver(UserManagementSchema),
   });
+
+  const chatContext = useContext(ChatContext);
+
+  if (!chatContext) return <></>;
 
   const onSubmitAdd = async (data: UserManagementType) => {
     try {
@@ -64,6 +80,13 @@ export const UserManagementForm = ({
     }
   };
 
+  const onWorkspaceSelect = (value: string) => {
+    form.setValue("workspace_id", value);
+  };
+  const onUserSelect = (value: string) => {
+    form.setValue("user_id", value);
+  };
+
   return (
     <Form {...form}>
       <form
@@ -75,9 +98,22 @@ export const UserManagementForm = ({
           name="workspace_id"
           render={({ field }) => (
             <FormItem className="sm:col-span-3">
-              <FormLabel>Workspace ID</FormLabel>
               <FormControl>
-                <Input type="text" {...field} />
+                <Select onValueChange={onWorkspaceSelect} value={field.value}>
+                  <SelectTrigger>
+                    <SelectValue placeholder="Select a workspace" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectGroup>
+                      <SelectLabel>Workspaces</SelectLabel>
+                      {chatContext.workspaces.map((workspace) => (
+                        <SelectItem key={workspace.id} value={workspace.id}>
+                          {workspace.name}
+                        </SelectItem>
+                      ))}
+                    </SelectGroup>
+                  </SelectContent>
+                </Select>
               </FormControl>
             </FormItem>
           )}
@@ -87,9 +123,22 @@ export const UserManagementForm = ({
           name="user_id"
           render={({ field }) => (
             <FormItem className="sm:col-span-3">
-              <FormLabel>User ID</FormLabel>
               <FormControl>
-                <Input type="text" {...field} />
+                <Select onValueChange={onUserSelect} value={field.value}>
+                  <SelectTrigger>
+                    <SelectValue placeholder="Choose a user" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectGroup>
+                      <SelectLabel>Users</SelectLabel>
+                      {chatContext.users.map((user) => (
+                        <SelectItem key={user.id} value={user.id as string}>
+                          {user.first_name} {user.last_name} - {user.email}
+                        </SelectItem>
+                      ))}
+                    </SelectGroup>
+                  </SelectContent>
+                </Select>
               </FormControl>
             </FormItem>
           )}

@@ -2,24 +2,30 @@
 
 import AuthContext from "@/app/context/auth-context";
 import ChatContext from "@/app/context/chat-context";
+import { UserFormType } from "@/app/service/user-service";
 import {
-  addThreadToWorkspace,
   addUserToWorkspace,
   createWorkspace,
   fetchWorkspaces,
-  removeThreadFromWorkspace,
   removeUserFromWorkspace,
+  ResponseWorkspace,
+  UserManagementType,
   WorkspaceCreate,
 } from "@/app/service/workspace-service";
 import { useContext, useEffect } from "react";
 import WorkspaceCreationForm from "./workspace/create-form";
-import ThreadManagement from "./workspace/thread-management";
 import UserManagementForm from "./workspace/user-management";
 import WorkspaceList from "./workspace/workspace-list";
 
 // Define interfaces for the props of each component
 
-export default function WorkspacePanel() {
+export default function WorkspacePanel({
+  workspaceData,
+  users,
+}: {
+  workspaceData: ResponseWorkspace[];
+  users: UserFormType[];
+}) {
   const authContext = useContext(AuthContext);
   const chatContext = useContext(ChatContext);
 
@@ -27,8 +33,7 @@ export default function WorkspacePanel() {
     return <></>;
   }
 
-  const { user } = authContext;
-  const { currentWorkspace, workspaces, setWorkspaces } = chatContext;
+  const { workspaces, setWorkspaces, setUsers } = chatContext;
 
   useEffect(() => {
     fetchWorkspacesList();
@@ -44,48 +49,21 @@ export default function WorkspacePanel() {
     }
   };
 
-  const handleRemoveUser = async () => {
+  const handleRemoveUser = async (data: UserManagementType) => {
     try {
-      await removeUserFromWorkspace(
-        currentWorkspace?.id as string,
-        user?.id as string,
-      );
+      await removeUserFromWorkspace(data.workspace_id, data.user_id);
       alert("User removed successfully");
     } catch (error) {
       console.error("Error removing user:", error);
     }
   };
 
-  const handleRemoveThread = async () => {
+  const handleAddUser = async (data: UserManagementType) => {
     try {
-      await removeThreadFromWorkspace(
-        currentWorkspace?.id as string,
-        "threadId",
-      );
-      alert("Thread removed successfully");
-    } catch (error) {
-      console.error("Error removing thread:", error);
-    }
-  };
-
-  const handleAddUser = async () => {
-    try {
-      await addUserToWorkspace(
-        currentWorkspace?.id as string,
-        user?.id as string,
-      );
+      await addUserToWorkspace(data.workspace_id, data.user_id);
       alert("User added successfully");
     } catch (error) {
       console.error("Error adding user:", error);
-    }
-  };
-
-  const handleAddThread = async () => {
-    try {
-      await addThreadToWorkspace(currentWorkspace?.id as string, "threadId");
-      alert("Thread added successfully");
-    } catch (error) {
-      console.error("Error adding thread:", error);
     }
   };
 
@@ -94,10 +72,19 @@ export default function WorkspacePanel() {
       const data = await fetchWorkspaces();
 
       setWorkspaces(data);
+
+      return data;
     } catch (error) {
       console.error("Error fetching workspaces:", error);
+
+      return [];
     }
   };
+
+  useEffect(() => {
+    setWorkspaces(workspaceData);
+    setUsers(users);
+  }, []);
 
   return (
     <>
@@ -107,14 +94,15 @@ export default function WorkspacePanel() {
         <UserManagementForm
           handleAddUser={handleAddUser}
           handleRemoveUser={handleRemoveUser}
+          fetchWorkspacesList={fetchWorkspacesList}
         />
 
         <hr />
-        <ThreadManagement
+        {/* <ThreadManagement
           handleAddThread={handleAddThread}
           handleRemoveThread={handleRemoveThread}
         />
-        <hr />
+        <hr /> */}
       </div>
 
       <div className="grid w-full grid-cols-1 gap-y-10 px-4 py-16 sm:px-6 lg:px-8">

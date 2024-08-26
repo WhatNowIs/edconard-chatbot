@@ -2,13 +2,9 @@
 
 import AuthContext from "@/app/context/auth-context";
 import ChatContext, { SettingPanel } from "@/app/context/chat-context";
+import { UserRole } from "@/app/utils/multi-mode-select";
 import { useContext } from "react";
-import {
-  HiBriefcase,
-  HiChartBar,
-  HiCreditCard,
-  HiUserCircle,
-} from "react-icons/hi2";
+import { HiBriefcase, HiUserCircle } from "react-icons/hi2";
 
 export default function OtherSettings() {
   const authContext = useContext(AuthContext);
@@ -26,10 +22,10 @@ export default function OtherSettings() {
     switch (panel) {
       case SettingPanel.Profile:
         return <HiUserCircle className="mr-2" />;
-      case SettingPanel.Billing:
-        return <HiCreditCard className="mr-2" />;
-      case SettingPanel.Reports:
-        return <HiChartBar className="mr-2" />;
+      // case SettingPanel.Billing:
+      //   return <HiCreditCard className="mr-2" />;
+      // case SettingPanel.Reports:
+      //   return <HiChartBar className="mr-2" />;
       case SettingPanel.Workspace:
         return <HiBriefcase className="mr-2" />;
       default:
@@ -40,18 +36,42 @@ export default function OtherSettings() {
   return (
     <div className="mb-2 w-full">
       <div className="w-full flex flex-col justify-between items-center text-gray-700 mb-2">
-        {Object.values(SettingPanel).map((panel) => (
-          <div
-            key={panel}
-            className={`w-full flex items-center justify-left text-gray-800 text-sm my-2 cursor-pointer hover:bg-gray-100 hover:rounded-md p-2 ${
-              currentSettingPanel === panel ? "bg-gray-100 rounded-md" : ""
-            }`}
-            onClick={() => setCurrentSettingPanel(panel)}
-          >
-            {getIcon(panel)}
-            <span>{panel}</span>
-          </div>
-        ))}
+        {Object.values(SettingPanel).map((panel) => {
+          console.log(user?.role.name === UserRole.SUPER_ADMIN);
+          if (panel === "Workspaces") {
+            if (user?.role.name === UserRole.SUPER_ADMIN) {
+              return (
+                <div
+                  key={panel}
+                  className={`w-full flex items-center justify-left text-gray-800 text-sm my-2 cursor-pointer hover:bg-gray-100 hover:rounded-md p-2 ${
+                    currentSettingPanel === panel
+                      ? "bg-gray-100 rounded-md"
+                      : ""
+                  }`}
+                  onClick={() => setCurrentSettingPanel(panel)}
+                >
+                  {getIcon(panel)}
+                  <span>{panel}</span>
+                </div>
+              );
+            } else {
+              return null;
+            }
+          } else {
+            return (
+              <div
+                key={panel}
+                className={`w-full flex items-center justify-left text-gray-800 text-sm my-2 cursor-pointer hover:bg-gray-100 hover:rounded-md p-2 ${
+                  currentSettingPanel === panel ? "bg-gray-100 rounded-md" : ""
+                }`}
+                onClick={() => setCurrentSettingPanel(panel)}
+              >
+                {getIcon(panel)}
+                <span>{panel}</span>
+              </div>
+            );
+          }
+        })}
       </div>
     </div>
   );

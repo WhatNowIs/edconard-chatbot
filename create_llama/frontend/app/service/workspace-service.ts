@@ -47,8 +47,8 @@ async function fetchWithAuth(url: string, options: RequestInit = {}) {
   });
 
   if (!res.ok) {
-    const error = await res.text();
-    throw new Error(error);
+    const error = JSON.parse(await res.text());
+    throw new Error(error.detail);
   }
 
   return res.json();
@@ -116,10 +116,12 @@ export async function addUserToWorkspace(
   workspace_id: string,
   user_id: string,
 ): Promise<ResponseWorkspace> {
-  const res = await fetchWithAuth(`${baseURL}${workspace_id}/add_user`, {
-    method: "POST",
-    body: JSON.stringify({ user_id }),
-  });
+  const res = await fetchWithAuth(
+    `${baseURL}${workspace_id}/users/${user_id}`,
+    {
+      method: "POST",
+    },
+  );
   return res as ResponseWorkspace;
 }
 
@@ -127,10 +129,13 @@ export async function removeUserFromWorkspace(
   workspace_id: string,
   user_id: string,
 ): Promise<ResponseWorkspace> {
-  const res = await fetchWithAuth(`${baseURL}${workspace_id}/remove_user`, {
-    method: "POST",
-    body: JSON.stringify({ user_id }),
-  });
+  const res = await fetchWithAuth(
+    `${baseURL}${workspace_id}/users/${user_id}`,
+    {
+      method: "POST",
+      body: JSON.stringify({ user_id }),
+    },
+  );
   return res as ResponseWorkspace;
 }
 

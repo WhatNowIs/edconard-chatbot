@@ -4,7 +4,7 @@ import { ResponseWorkspace } from "@/app/service/workspace-service";
 
 interface WorkspaceListProps {
   workspaces: ResponseWorkspace[];
-  fetchWorkspacesList: () => Promise<void>;
+  fetchWorkspacesList: () => Promise<ResponseWorkspace[]>;
 }
 
 export const WorkspaceList = ({

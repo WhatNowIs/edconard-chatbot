@@ -23,6 +23,7 @@ import {
   updateChatMode,
 } from "../service/user-service";
 import { getBaseURL } from "../service/utils";
+import { getAccessToken } from "../utils/shared";
 
 interface AuthContextType {
   user: UserFormType | null;
@@ -54,8 +55,7 @@ export const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
   >(null);
 
   useEffect(() => {
-    const token =
-      localStorage.getItem("access_token") || getCookie("access_token");
+    const token = getAccessToken();
     if (token && !user) {
       if (!localStorage.getItem("access_token")) {
         localStorage.setItem("access_token", token);
@@ -124,10 +124,10 @@ export const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
         user,
         message,
       };
-    } catch (error) {
+    } catch (error: any) {
       return {
         user: null,
-        message: "",
+        message: "An error has occurred while trying to login",
       };
     }
   };
@@ -136,8 +136,7 @@ export const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
     userId: string,
   ): Promise<{ mode: boolean }> => {
     try {
-      const token =
-        localStorage.getItem("access_token") || getCookie("access_token");
+      const token = getAccessToken();
 
       const { mode } = await getChatMode(userId, token as string);
       console.log(`got chat mode: ${mode}`);
@@ -155,8 +154,7 @@ export const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
 
   const refreshAccessToken = async () => {
     try {
-      const accessToken = localStorage.getItem("refresh_token");
-      const token = accessToken ? accessToken : getCookie("refresh_token");
+      const token = getAccessToken();
 
       const { access_token } = await refreshToken(token as string);
 

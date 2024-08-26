@@ -9,7 +9,7 @@ import "./markdown.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "EdConard Chatbot",
+  title: "Coherent Research Institute",
   description: `
     AI-powered chatbot designed to answer questions and deliver insights regarding macroeconomics. 
     The chatbot will mimic the rhetorical and analytical style of Edward Conard,

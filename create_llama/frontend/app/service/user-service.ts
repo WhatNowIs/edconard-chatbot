@@ -3,6 +3,12 @@ import { Article } from "../utils/multi-mode-select";
 import { getBaseURL } from "./utils";
 
 export const SUCCESS_MESSAGE = "Account verified successfully";
+
+export const RoleSchema = z.object({
+  id: z.string(),
+  name: z.string(),
+  description: z.string(),
+});
 // Rag config scheme
 export const UserSchema = z.object({
   id: z.string().optional(),
@@ -12,7 +18,8 @@ export const UserSchema = z.object({
   password: z.string().optional(),
   phone_number: z.string(),
   sex: z.string().optional(),
-  role: z.string().optional(),
+  role_id: z.string().optional(),
+  role: RoleSchema.optional(),
   created_at: z.string().optional(),
   updated_at: z.string().optional(),
   deleted_at: z.string().optional(),
@@ -102,7 +109,7 @@ export type UpdateMessagesType = z.infer<typeof UpdateMessagesSchema>;
 
 export async function createUserAccount(
   data: UserFormType,
-): Promise<UserFormType> {
+): Promise<{ message: string; status: number; data: UserFormType | null }> {
   // Ignore configured attribute
   const { password, ...userData } = data;
 
@@ -117,10 +124,12 @@ export async function createUserAccount(
     }),
   });
   if (!res.ok) {
-    const error = await res.text();
-    throw new Error(error);
+    const error = JSON.parse(await res.text());
+    return { message: error.detail, status: 400, data: null };
   }
-  return (await res.json()) as UserFormType;
+  const result = (await res.json()) as UserFormType;
+
+  return { message: "Account created successfully", status: 200, data: result };
 }
 
 interface ErrorResponse {
@@ -199,8 +208,8 @@ export async function getChatMode(
   });
 
   if (!res.ok) {
-    const error = await res.text();
-    throw new Error(error);
+    const error = JSON.parse(await res.text());
+    throw new Error(error.detail);
   }
 
   return (await res.json()) as { mode: boolean };
@@ -210,7 +219,7 @@ export async function updateChatMode(
   checked: boolean,
   user_id: string,
   access_token: string,
-): Promise<{ message: string }> {
+): Promise<{ message: string; status: number }> {
   const res = await fetch(`${getBaseURL()}/api/chat/chat-mode/${user_id}`, {
     method: "PATCH",
     headers: {
@@ -221,11 +230,11 @@ export async function updateChatMode(
   });
 
   if (!res.ok) {
-    const error = await res.text();
-    throw new Error(error);
+    const error = JSON.parse(await res.text());
+    return { message: error.detail, status: 400 };
   }
 
-  return (await res.json()) as { message: string };
+  return (await res.json()) as { message: string; status: number };
 }
 
 export async function verifyOtp(
@@ -244,8 +253,8 @@ export async function verifyOtp(
   });
 
   if (!res.ok) {
-    const error = await res.text();
-    return { message: error, status: 400 };
+    const error = JSON.parse(await res.text());
+    return { message: error.detail, status: 400 };
   }
 
   return { ...((await res.json()) as { message: string; status: number }) };
@@ -265,8 +274,8 @@ export async function forgotPassword(
   });
 
   if (!res.ok) {
-    const error = await res.text();
-    return { message: error, status: 400 };
+    const error = JSON.parse(await res.text());
+    return { message: error.detail, status: 400 };
   }
 
   return { ...((await res.json()) as { message: string; status: number }) };
@@ -288,8 +297,8 @@ export async function resendActivationOtp(
   );
 
   if (!res.ok) {
-    const error = await res.text();
-    return { message: error, status: 400 };
+    const error = JSON.parse(await res.text());
+    return { message: error.detail, status: 400 };
   }
 
   return { ...((await res.json()) as { message: string; status: number }) };
@@ -316,7 +325,7 @@ export async function resetPassword(data: ResetPasswordType) {
 
     if (!res.ok) {
       const error = JSON.parse(await res.text());
-      return { message: error.details, status: 400 };
+      return { message: error.detail, status: 400 };
     }
 
     return { ...((await res.json()) as { message: string; status: number }) };
@@ -340,7 +349,7 @@ export async function saveMacroRoundupData(
 
   if (!res.ok) {
     const error = JSON.parse(await res.text());
-    return { message: error?.details as string, status: 400 };
+    return { message: error?.detail as string, status: 400 };
   }
 
   return { ...((await res.json()) as Article) };
@@ -359,8 +368,8 @@ export async function addChatMessage(data: UpdateMessagesType) {
   });
 
   if (!res.ok) {
-    const error = await res.text();
-    return { message: error, status: 400 };
+    const error = JSON.parse(await res.text());
+    return { message: error.detail, status: 400 };
   }
 
   return await res.json();
@@ -382,7 +391,7 @@ export async function getMacroRoundupData(): Promise<
 
   if (!res.ok) {
     const error = JSON.parse(await res.text());
-    return { message: error?.details as string, status: 400 };
+    return { message: error?.detail as string, status: 400 };
   }
 
   return (await res.json()) as Article;
@@ -426,8 +435,8 @@ export async function changePassword(
   });
 
   if (!res.ok) {
-    const error = await res.text();
-    return { message: error, status: 400 };
+    const error = JSON.parse(await res.text());
+    return { message: error.detail, status: 400 };
   }
 
   return {

@@ -5,14 +5,20 @@ import UpdateProfile from "@/app/components/ui/account/update-profile";
 import AuthContext from "@/app/context/auth-context";
 import ChatContext, { SettingPanel } from "@/app/context/chat-context";
 import { UserFormType } from "@/app/service/user-service";
+import { ResponseWorkspace } from "@/app/service/workspace-service";
+import { UserRole } from "@/app/utils/multi-mode-select";
 import { useContext } from "react";
 import ChangePasswordForm from "./change-password-form";
 import WorkspacePanel from "./workspace-panel";
 
 export default function SettingsPanel({
+  users,
   userData,
+  workspaces,
 }: {
+  users: UserFormType[];
   userData: UserFormType;
+  workspaces: ResponseWorkspace[];
 }) {
   const authContext = useContext(AuthContext);
   const chatContext = useContext(ChatContext);
@@ -52,9 +58,12 @@ export default function SettingsPanel({
   return (
     <>
       {currentSettingPanel === SettingPanel.Profile && <ProfilePanel />}
-      {currentSettingPanel === SettingPanel.Billing && <ProfilePanel />}
-      {currentSettingPanel === SettingPanel.Reports && <ProfilePanel />}
-      {currentSettingPanel === SettingPanel.Workspace && <WorkspacePanel />}
+      {/* {currentSettingPanel === SettingPanel.Billing && <ProfilePanel />}
+      {currentSettingPanel === SettingPanel.Reports && <ProfilePanel />} */}
+      {currentSettingPanel === SettingPanel.Workspace &&
+        (user?.role?.name as string) === UserRole.SUPER_ADMIN && (
+          <WorkspacePanel workspaceData={workspaces} users={users} />
+        )}
     </>
   );
 }

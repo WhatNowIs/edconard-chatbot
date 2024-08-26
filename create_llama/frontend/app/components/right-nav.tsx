@@ -41,12 +41,12 @@ export default function RightNav() {
           }
         />
 
-        <button className="w-full h-5 flex items-center px-3 py-3 hover:bg-gray-100 text-gray-800 rounded-lg mb-4">
+        {/* <button className="w-full h-5 flex items-center px-3 py-3 hover:bg-gray-100 text-gray-800 rounded-lg mb-4">
           <HiArrowDownTray />
         </button>
         <button className="w-full h-5 flex items-center px-3 py-3 hover:bg-gray-100 text-gray-800 rounded-lg">
           <HiOutlineArrowUturnRight />
-        </button>
+        </button> */}
       </div>
       <div ref={settingsRef}>
         {isSettingOpen && <Settings />}
