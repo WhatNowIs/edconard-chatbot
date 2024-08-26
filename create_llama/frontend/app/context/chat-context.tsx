@@ -47,6 +47,7 @@ interface ChatContextType {
   currentSettingPanel: SettingPanel;
   workspaces: ResponseWorkspace[];
   users: UserFormType[];
+  workspaceUsers: UserFormType[];
   currentWorkspace: ResponseWorkspace | null;
   nonResearchExplorationLLMMessage: string;
   setSelectedThread: Dispatch<SetStateAction<ResponseThread | null>>;
@@ -69,6 +70,7 @@ interface ChatContextType {
   setNonResearchExplorationLLMMessage: Dispatch<SetStateAction<string>>;
   setMessages: Dispatch<SetStateAction<ResponseMessage[]>>;
   setUsers: Dispatch<SetStateAction<UserFormType[]>>;
+  setWorkspaceUsers: Dispatch<SetStateAction<UserFormType[]>>;
 }
 
 const ChatContext = createContext<ChatContextType | undefined>(undefined);
@@ -85,6 +87,7 @@ export const ChatProvider: FC<ChatProviderProps> = ({ children }) => {
   );
   const [workspaces, setWorkspaces] = useState<ResponseWorkspace[]>([]);
   const [users, setUsers] = useState<UserFormType[]>([]);
+  const [workspaceUsers, setWorkspaceUsers] = useState<UserFormType[]>([]);
   const [currentWorkspace, setCurrentWorkspace] =
     useState<ResponseWorkspace | null>(null);
   const [currentSettingPanel, setCurrentSettingPanel] = useState<SettingPanel>(
@@ -241,6 +244,7 @@ export const ChatProvider: FC<ChatProviderProps> = ({ children }) => {
         currentSettingPanel,
         workspaces,
         users,
+        workspaceUsers,
         currentWorkspace,
         nonResearchExplorationLLMMessage,
         setSelectedThread,
@@ -259,7 +263,8 @@ export const ChatProvider: FC<ChatProviderProps> = ({ children }) => {
         loadWorkspaces,
         setNonResearchExplorationLLMMessage,
         setMessages,
-        setUsers
+        setUsers,
+        setWorkspaceUsers
       }}
     >
       {children}
