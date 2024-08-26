@@ -41,7 +41,7 @@ async def add_user_to_workspace(
     workspace_service: WorkspaceService = Depends(get_workspace_service)
 ):
     if "sub" in session:
-        await workspace_service.add_user_to_workspace(workspace_id, user_id)
+        await workspace_service.add_user(workspace_id, user_id)
         return {"message": f"User {user_id} added to workspace {workspace_id}."}
 
     raise HTTPException(
@@ -112,17 +112,18 @@ async def fetch_workspaces(
         detail="Not authorized to access workspaces",
     )
 
-@workspace_router.get("/user/{user_id}", response_model=List[dto.Workspace])
-async def fetch_workspaces(
-    user_id: str,
+@workspace_router.get("/workspace/{workspace_id}/users", response_model=List[dto.User])
+async def fetch_users_from_workspace(
+    workspace_id: str,
     session: dict = Depends(get_session),
     workspace_service: WorkspaceService = Depends(get_workspace_service)
 ):
-    if "sub" in session and session["sub"] == user_id:
-        workspaces = await workspace_service.get_all_by_user_id(user_id)
-        return [dto.Workspace.model_validate(workspace) for workspace in workspaces]
+    # Check if the user is authenticated (you can customize this condition as needed)
+    if "sub" in session:
+        users = await workspace_service.get_users_by_workspace_id(workspace_id)
+        return [dto.User.model_validate(user) for user in users]
 
     raise HTTPException(
         status_code=status.HTTP_401_UNAUTHORIZED,
-        detail="Not authorized to access workspaces",
+        detail="Not authorized to access workspace users",
     )

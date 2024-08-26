@@ -28,6 +28,12 @@ class OTPGenerator:
         otp = self.otps[self.index]
         self.index += 1
         return str(otp)
+    
+class UserRole(enum.Enum):
+    SUPER_ADMIN = "Super Admin"
+    ADMIN = "Admin"
+    EDITOR = "Editor"
+    USER = "User"
 
 class EntityStatus(enum.Enum):
     Active = "Active"
@@ -36,7 +42,13 @@ class EntityStatus(enum.Enum):
     Blocked = "Blocked"
     Pending = "Pending"
     Used = "Used"
-
+# Role description
+role_descriptions = {
+    UserRole.SUPER_ADMIN: "Has access to all system features, including user management and system configuration.",
+    UserRole.ADMIN: "Can manage most aspects of the system but has some restrictions on critical operations.",
+    UserRole.EDITOR: "Can create and manage content, but cannot manage users or system settings.",
+    UserRole.USER: "Can view and interact with content but has no administrative privileges.",
+}
 # Association Tables
 tenant_users = Table(
     'tenant_users', Base.metadata,
@@ -84,21 +96,24 @@ class User(Base):
     messages = relationship("Message", back_populates="user")
     threads = relationship("Thread", back_populates="user")
     workspaces = relationship("Workspace", secondary=workspace_users, back_populates="users")
+    role = relationship("Role")
 
 
     # Functions
     def to_dict(self):
-        return {column.name: getattr(self, column.name) for column in self.__table__.columns}
+        user_dict = {column.name: getattr(self, column.name) for column in self.__table__.columns}
+        user_dict['role'] = self.role.to_dict() if self.role else None
+        return user_dict
 
 class Role(Base):
     __tablename__ = "roles"
     id = Column(String, primary_key=True)
-    name = Column(String)
+    name = Column(String, unique=True)
     description = Column(String)
 
     # Relationships
     
-    users = relationship("User", backref="role")
+    # users = relationship("User")
 
     # Functions
     def to_dict(self):
