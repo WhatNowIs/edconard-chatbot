@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { Article } from "../utils/multi-mode-select";
-import { getBaseURL } from "./utils";
+import { getBackendURL, getBaseURL } from "./utils";
 
 export const SUCCESS_MESSAGE = "Account verified successfully";
 
@@ -460,7 +460,7 @@ export async function getUsersNotInWorkspace(
   options: RequestInit = {},
 ): Promise<{ message: string; status: number; data: UserFormType[] | null }> {
   const res = await fetch(
-    `${getBaseURL()}/api/auth/accounts/users/${workspaceId}`,
+    `${getBackendURL()}/api/auth/accounts/users/${workspaceId}`,
     {
       ...options,
       headers: {
