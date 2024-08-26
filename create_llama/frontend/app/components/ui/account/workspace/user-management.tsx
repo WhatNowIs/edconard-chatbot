@@ -11,11 +11,14 @@ import {
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Loader2 } from "lucide-react";
 import Image from "next/image";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { HiOutlineTrash } from "react-icons/hi2";
 import { SubmitButton } from "../../custom/submitButton";
 import { Form, FormControl, FormField, FormItem } from "../../form";
+
+import { getUsersNotInWorkspace } from "@/app/service/user-service";
+import { getAccessToken } from "@/app/utils/shared";
 import { cn } from "../../lib/utils";
 import {
   Select,
@@ -49,7 +52,8 @@ export const UserManagementForm = ({
 
   if (!chatContext) return <></>;
 
-  const { workspaceUsers, setWorkspaceUsers } = chatContext;
+  const { workspaceUsers, setWorkspaceUsers, workspaces, setUsers } =
+    chatContext;
 
   const onSubmitAdd = async (data: UserManagementType) => {
     try {
@@ -93,10 +97,18 @@ export const UserManagementForm = ({
     form.setValue("workspace_id", value);
     const getWorkspaceUsers = async () => {
       setIsWorkspaceUserFetching(true);
-      const result = await getUsers(value);
+      const [result, resultUsers] = await Promise.all([
+        getUsers(value),
+        getUsersNotInWorkspace(getAccessToken(), value),
+      ]);
+
+      const updatedUsers =
+        resultUsers.status === 200 ? (resultUsers.data as UserFormType[]) : [];
 
       setWorkspaceUsers(result);
+      setUsers(updatedUsers);
       setIsWorkspaceUserFetching(false);
+
       return;
     };
 
@@ -105,6 +117,10 @@ export const UserManagementForm = ({
   const onUserSelect = (value: string) => {
     form.setValue("user_id", value);
   };
+
+  useEffect(() => {
+    form.setValue("workspace_id", workspaces[0]?.id as string);
+  }, []);
 
   const UserCard = ({ user }: { user: UserFormType }) => {
     return (
@@ -157,7 +173,7 @@ export const UserManagementForm = ({
                       <SelectContent>
                         <SelectGroup>
                           <SelectLabel>Workspaces</SelectLabel>
-                          {chatContext.workspaces.map((workspace) => (
+                          {workspaces.map((workspace) => (
                             <SelectItem key={workspace.id} value={workspace.id}>
                               {workspace.name}
                             </SelectItem>
@@ -206,26 +222,6 @@ export const UserManagementForm = ({
       <div className="col-span-2 h-[400px] overflow-y-auto">
         <div className="flex gap-6">
           <h2 className="mb-2">Current workspace users</h2>
-          {/* <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmitAdd)} className="w-full">
-              <FormField
-                control={form.control}
-                name="workspace_id"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormControl>
-                      <Input
-                        type="text"
-                        {...field}
-                        placeholder="Search workspace by name"
-                        className="w-96"
-                      />
-                    </FormControl>
-                  </FormItem>
-                )}
-              />
-            </form>
-          </Form> */}
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {!isWorkspaceUserFetching ? (

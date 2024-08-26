@@ -1,6 +1,7 @@
 import LeftNav from "@/app/components/left-nav";
 import RightNav from "@/app/components/right-nav";
 import { ResponseThread } from "@/app/service/thread-service";
+import { getUsersNotInWorkspace } from "@/app/service/user-service";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import { Suspense } from "react";
@@ -10,27 +11,6 @@ import { getBackendURL } from "../service/utils";
 import { ResponseWorkspace } from "../service/workspace-service";
 import { UserRole } from "../utils/multi-mode-select";
 import { decodeToken } from "../utils/shared";
-
-async function getUsers(
-  token: string,
-  options: RequestInit = {},
-): Promise<UserFormType[]> {
-  const res = await fetch(`${getBackendURL()}/api/auth/accounts/users`, {
-    ...options,
-    headers: {
-      ...options.headers,
-      "Content-Type": "application/json",
-      Authorization: `Bearer ${token}`,
-    },
-  });
-
-  if (!res.ok) {
-    const error = JSON.parse(await res.text());
-    throw new Error(error.detail);
-  }
-
-  return res.json() as unknown as UserFormType[];
-}
 
 async function getWorkspaces(token: string, options: RequestInit = {}) {
   const res = await fetch(`${getBackendURL()}/api/workspaces/`, {
@@ -109,11 +89,18 @@ export default async function AccountSettings() {
   let users: UserFormType[] = [];
 
   if (decodedToken.role === UserRole.SUPER_ADMIN) {
-    [workspaces, users] = await Promise.all([
+    [workspaces] = await Promise.all([
       getWorkspaces(token.value as string),
-      getUsers(token.value as string),
+      // getUsers(token.value as string),
     ]);
   }
+
+  const response = await getUsersNotInWorkspace(
+    token.value as string,
+    workspaces.reverse()[0].id,
+  );
+
+  users = response.status === 200 ? response.data as UserFormType[] : [];
 
   return (
     <Suspense fallback={<div>Loading...</div>}>
@@ -126,7 +113,7 @@ export default async function AccountSettings() {
         <main className="w-full h-screen items-center flex flex-col overflow-auto">
           <SettingsPanel
             userData={userData.user as UserFormType}
-            workspaces={workspaces}
+            workspaces={workspaces.reverse()}
             users={users}
           />
         </main>
