@@ -17,12 +17,12 @@ import {
   UserSigninType,
   getChatMode,
   getCookie,
+  getMe,
   refreshToken,
   signIn,
   signOut,
   updateChatMode,
 } from "../service/user-service";
-import { getBaseURL } from "../service/utils";
 import { getAccessToken } from "../utils/shared";
 
 interface AuthContextType {
@@ -56,39 +56,19 @@ export const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
 
   useEffect(() => {
     const token = getAccessToken();
-    if (token && !user) {
+    if (token && user === null) {
       if (!localStorage.getItem("access_token")) {
         localStorage.setItem("access_token", token);
       }
 
       const checkAuth = async () => {
-        const userData = await fetch(`${getBaseURL()}/api/auth/accounts/me`, {
-          headers: { Authorization: `Bearer ${token}` },
-        })
-          .then((response) => {
-            return response.json();
-          })
-          .catch((error) => {
-            console.log("Me error: ", error);
-            const access_token = refreshAccessToken().catch((error) => {
-              console.log("Failed to use refresh token: ", error);
-              router.push("/signin");
-            });
+        const response = await getMe(token);
 
-            if (!access_token) {
-              localStorage.removeItem("access_token");
-              localStorage.removeItem("refresh_token");
-              document.cookie = "access_token=; Max-Age=0; path=/;";
-              document.cookie = "refresh_token=; Max-Age=0; path=/;";
-              setUser(null);
-            }
-          });
-
-        if (userData) {
-          setUser(userData);
-          console.log("userData: ", userData);
+        if (response.data !== null) {
+          setUser(response.data);
+          console.log("userData: ", response.data);
           // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
-          const { mode } = await getChatModeByUser(userData.id as string);
+          const { mode } = await getChatModeByUser(response.data.id as string);
           setIsResearchExploration(mode);
         }
       };

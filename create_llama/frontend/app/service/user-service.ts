@@ -480,3 +480,26 @@ export async function getUsersNotInWorkspace(
 
   return { message: "Successfully fetched user", status: 200, data: response };
 }
+
+export async function getMe(
+  token: string,
+  options: RequestInit = {},
+): Promise<{ message: string; status: number; data: UserFormType | null }> {
+  const res = await fetch(`${getBackendURL()}/api/auth/accounts/me`, {
+    ...options,
+    headers: {
+      ...options.headers,
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${token}`,
+    },
+  });
+
+  if (!res.ok) {
+    const error = JSON.parse(await res.text());
+    return { message: error.detail, status: 400, data: null };
+  }
+
+  const response = res.json() as unknown as UserFormType;
+
+  return { message: "Successfully fetched user", status: 200, data: response };
+}
