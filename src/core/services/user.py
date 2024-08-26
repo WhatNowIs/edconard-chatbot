@@ -289,7 +289,7 @@ class UserService(Service):
         return False, "Failed to update password"
     
     async def get_all_users(self, exclude_user_id: str, workspace_id: str) -> List[User]:
-        self.logger.info(f"Fetching all users except user with id: {exclude_user_id} and not in workspace id: {workspace_id}")
+        self.logger.info(f"Fetching all users except user with id: {exclude_user_id} and user who are not in workspace id: {workspace_id}")
         try:
             # Get users that are not in the specified workspace and not the excluded user
             result = await self.db_session.execute(
@@ -313,11 +313,11 @@ class UserService(Service):
             result = await self.db_session.execute(
                 select(User)
                 .options(selectinload(User.role))
-                .options(selectinload(User.workspaces))
-                .filter(User.id != user_id)
+                .filter(User.id == user_id)
             )
-            users = result.scalars().first()
-            return users
+            user = result.scalars().first()
+            self.logger.info(f"Fetched user with id: {user_id}")
+            return user
         except Exception as e:
             self.logger.error(f"Error fetching users: {e}")
             raise
