@@ -54,6 +54,9 @@ class ThreadUpdate(BaseModel):
 class ChatMode(BaseModel):
     is_research_exploration: bool
 
+class RefreshBody(BaseModel):
+    refresh_token: str
+
 class RoleModel(BaseModel):
     id: str
     name: str
