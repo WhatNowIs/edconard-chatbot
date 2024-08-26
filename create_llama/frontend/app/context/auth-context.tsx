@@ -65,9 +65,8 @@ export const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
         const response = await getMe(token);
 
         if (response.data !== null) {
-          setUser(response.data);
           console.log("userData: ", response.data);
-          // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+          setUser(response.data);
           const { mode } = await getChatModeByUser(response.data.id as string);
           setIsResearchExploration(mode);
         }

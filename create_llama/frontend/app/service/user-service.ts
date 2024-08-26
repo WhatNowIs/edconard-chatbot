@@ -199,6 +199,7 @@ export async function getChatMode(
   user_id: string,
   access_token: string,
 ): Promise<{ mode: boolean }> {
+  console.log("Chat mode User ID: ", user_id);
   const res = await fetch(`${getBaseURL()}/api/chat/chat-mode/${user_id}`, {
     method: "GET",
     headers: {
@@ -476,7 +477,7 @@ export async function getUsersNotInWorkspace(
     return { message: error.detail, status: 400, data: null };
   }
 
-  const response = res.json() as unknown as UserFormType[];
+  const response = (await res.json()) as UserFormType[];
 
   return { message: "Successfully fetched user", status: 200, data: response };
 }
@@ -499,7 +500,7 @@ export async function getMe(
     return { message: error.detail, status: 400, data: null };
   }
 
-  const response = res.json() as unknown as UserFormType;
+  const data = (await res.json()) as UserFormType;
 
-  return { message: "Successfully fetched user", status: 200, data: response };
+  return { message: "Successfully fetched user", status: 200, data: data };
 }
