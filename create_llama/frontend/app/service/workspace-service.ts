@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { getCookie } from "./user-service";
+import { getCookie, UserFormType } from "./user-service";
 import { getBackendURL } from "./utils";
 
 export const UserManagementSchema = z.object({
@@ -110,6 +110,11 @@ export async function getWorkspace(
 ): Promise<ResponseWorkspace> {
   const res = await fetchWithAuth(`${baseURL}${workspace_id}`);
   return res as ResponseWorkspace;
+}
+
+export async function getUsers(workspace_id: string): Promise<UserFormType[]> {
+  const res = await fetchWithAuth(`${baseURL}${workspace_id}/users`);
+  return res as UserFormType[];
 }
 
 export async function addUserToWorkspace(
