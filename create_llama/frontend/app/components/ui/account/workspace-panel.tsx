@@ -32,7 +32,7 @@ export default function WorkspacePanel({
     return <></>;
   }
 
-  const { workspaces, setWorkspaces, setUsers } = chatContext;
+  const { setWorkspaces, setUsers } = chatContext;
 
   useEffect(() => {
     fetchWorkspacesList();
@@ -95,8 +95,6 @@ export default function WorkspacePanel({
           handleRemoveUser={handleRemoveUser}
           fetchWorkspacesList={fetchWorkspacesList}
         />
-
-        <hr />
       </div>
     </>
   );

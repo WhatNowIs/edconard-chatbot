@@ -92,10 +92,13 @@ export default async function AccountSettings() {
     workspaces = await getWorkspaces(token.value as string);
     const response = await getUsersNotInWorkspace(
       token.value as string,
-      workspaces.reverse()[0].id,
+      workspaces[0].id,
     );
 
     users = response.status === 200 ? (response.data as UserFormType[]) : [];
+
+    console.log(users);
+    console.log(workspaces);
   }
 
   return (
@@ -109,7 +112,7 @@ export default async function AccountSettings() {
         <main className="w-full h-screen items-center flex flex-col overflow-auto">
           <SettingsPanel
             userData={userData.user as UserFormType}
-            workspaces={workspaces.reverse()}
+            workspaces={workspaces}
             users={users}
           />
         </main>

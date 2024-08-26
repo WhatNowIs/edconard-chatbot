@@ -35,3 +35,16 @@ export function getAccessToken() {
     ? localStorage.getItem("access_token") || getCookie("access_token")
     : "";
 }
+
+export function hasTokenExpired(decodedString: any) {
+  const currentTime = Math.floor(Date.now() / 1000);
+  if (decodedString) {
+    // Compare current time with the exp value
+    if (currentTime > decodedString?.exp) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+  return true;
+}

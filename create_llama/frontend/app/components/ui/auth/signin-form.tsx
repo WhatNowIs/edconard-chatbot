@@ -3,10 +3,11 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import AuthContext from "@/app/context/auth-context";
 import { UserSigninSchema, UserSigninType } from "@/app/service/user-service";
+import { decodeToken, getAccessToken, hasTokenExpired } from "@/app/utils/shared";
 import { zodResolver } from "@hookform/resolvers/zod";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { SubmitButton } from "../custom/submitButton";
 import { Form, FormControl, FormField, FormItem, FormLabel } from "../form";
@@ -35,8 +36,7 @@ export default function SigninForm() {
       const configData = await login(data as UserSigninType);
       if (configData.user !== null) {
         router.push("/");
-      }
-      else{        
+      } else {
         toast({
           className: cn(
             "top-0 right-0 flex fixed md:max-w-[420px] md:top-4 md:right-4 text-red-500",
@@ -56,6 +56,14 @@ export default function SigninForm() {
     }
     setIsSubmitting(false);
   };
+
+  useEffect(() => {
+    const decodedString = decodeToken(getAccessToken()) as any;
+
+    if (!hasTokenExpired(decodedString)) {
+      router.push("/");
+    }
+  }, []);
 
   return (
     <Form {...form}>
