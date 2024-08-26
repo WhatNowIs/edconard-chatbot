@@ -453,3 +453,30 @@ export function getCookie(name: string): string {
     return last.split(";").shift() as string;
   } else return "";
 }
+
+export async function getUsersNotInWorkspace(
+  token: string,
+  workspaceId: string,
+  options: RequestInit = {},
+): Promise<{ message: string; status: number; data: UserFormType[] | null }> {
+  const res = await fetch(
+    `${getBaseURL()}/api/auth/accounts/users/${workspaceId}`,
+    {
+      ...options,
+      headers: {
+        ...options.headers,
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${token}`,
+      },
+    },
+  );
+
+  if (!res.ok) {
+    const error = JSON.parse(await res.text());
+    return { message: error.detail, status: 400, data: null };
+  }
+
+  const response = res.json() as unknown as UserFormType[];
+
+  return { message: "Successfully fetched user", status: 200, data: response };
+}
