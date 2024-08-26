@@ -1,10 +1,11 @@
 from datetime import datetime, timedelta
-from typing import Any, Optional
+from typing import Any, List, Optional
 from fastapi import APIRouter, Depends, HTTPException, logger, status
 from fastapi.responses import JSONResponse
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 import jwt
 from sqlalchemy.ext.asyncio import AsyncSession
+from src.core.services.role import RoleService
 from src.core.services.workspace import WorkspaceService
 from starlette.status import HTTP_400_BAD_REQUEST
 from src.core.config.redis import get_redis_client
@@ -13,7 +14,7 @@ from src.core.services.mail import EmailTemplateService, EmailTypeService, Resen
 from src.core.services.otp import OTPService
 from src.core.services.user import ACCESS_TOKEN_EXPIRE_MINUTES, REFRESH_SECRET_KEY, UserService
 from src.core.config.postgres import get_db
-from src.core.models.base import OTP, EmailTemplate, EmailType, EntityStatus, OTPGenerator, User, get_otp_expiration
+from src.core.models.base import OTP, EmailTemplate, EmailType, EntityStatus, OTPGenerator, User, UserRole, get_otp_expiration
 from src.schema import ChangePassword, EmailTypeEnum, ResetPassword, UpdatePassword, UserCreateModel, UserModel, VerifyOtp
 from src.utils.encryption import encrypt, to_base64
 from src.utils.logger import get_logger 
@@ -28,6 +29,9 @@ def get_user_service(db: AsyncSession = Depends(get_db)) -> UserService:
 
 def get_workspace_service(db: AsyncSession = Depends(get_db)) -> WorkspaceService:
     return WorkspaceService(db)
+
+def get_role_service(db: AsyncSession = Depends(get_db)) -> RoleService:
+    return RoleService(db)
 
 async def get_session(
     token: str = Depends(oauth2_scheme), 
@@ -82,10 +86,15 @@ async def create_user(
     db: AsyncSession = Depends(get_db),
     user_service: UserService = Depends(get_user_service),
     mail_client: ResendClient = Depends(get_mail_service),
-    workspace_service: WorkspaceService = Depends(get_workspace_service)
+    workspace_service: WorkspaceService = Depends(get_workspace_service),
+    role_service: RoleService = Depends(get_role_service)
 ) -> Any:
     try:
+        role = await role_service.get_role_by_name(UserRole.USER.value)
         user_in = User(**data.user_data.dict())
+        user_in.role_id = role.id
+        # user_in.role = role
+
         user = await user_service.create(user_in, data.password)
         workspace = await workspace_service.create_default_workspace_if_not_exists(user)
         
@@ -94,6 +103,7 @@ async def create_user(
 
         email_type: EmailType = await email_type_service.get_email_type_by_name(EmailTypeEnum.ACCOUNT_VERIFICATION.value)
         email_template: EmailTemplate = await email_template_service.get_template_by_name(EmailTypeEnum.ACCOUNT_VERIFICATION.value)
+
     
         otp_service = OTPService(db)
         code = OTPGenerator().generate_unique_otp()
@@ -124,6 +134,7 @@ async def create_user(
 
         await mail_client.send_email(content=email_content, subject=email_template.subject, to_email=user.email)
 
+
         return UserModel(**user.to_dict())
     except Exception as e:
         get_logger().error(f"Error has occured: {e}")
@@ -138,7 +149,8 @@ async def authenticate_user(
     is_authenticated, token, refresh_token, user, message = await user_service.login(
         form_data.username, 
         form_data.password, 
-        redis_client, True
+        redis_client, 
+        True
     )
     if not is_authenticated:
         raise HTTPException(
@@ -435,6 +447,26 @@ async def change_password(
     except Exception as e:
         get_logger().error(f"Error sending email: {e}")
         return {"message": str(e), "status": 400}
+
+@accounts_router.get("/users", response_model=List[UserModel])
+async def get_all_users(
+    session: dict = Depends(get_session),
+    user_service: UserService = Depends(get_user_service)
+):
+    # Check if the user is authenticated and has the necessary permissions (optional)
+    if "sub" in session:
+        try:
+            users = await user_service.get_all_users(session['sub'])
+            return [UserModel(**user.to_dict()) for user in users]
+        except Exception as e:
+            get_logger().error(f"Error retrieving users: {e}")
+            raise HTTPException(status_code=500, detail="Internal server error while retrieving users")
+    raise HTTPException(
+        status_code=status.HTTP_401_UNAUTHORIZED,
+        detail="Invalid session",
+        headers={"WWW-Authenticate": "Bearer"},
+    )
+
 
 @accounts_router.get("/signout")
 async def signout(

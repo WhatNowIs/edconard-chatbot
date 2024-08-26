@@ -1,8 +1,8 @@
-"""Update relationships
+"""Added backprops for user's role and remove backref on role
 
-Revision ID: 822f730fb8d2
-Revises: fe971527672c
-Create Date: 2024-06-20 18:23:53.713067
+Revision ID: 82e7160f4a2e
+Revises: c3868b81915a
+Create Date: 2024-08-26 06:10:12.194873
 
 """
 from typing import Sequence, Union
@@ -12,8 +12,8 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision: str = '822f730fb8d2'
-down_revision: Union[str, None] = 'fe971527672c'
+revision: str = '82e7160f4a2e'
+down_revision: Union[str, None] = 'c3868b81915a'
 branch_labels: Union[str, Sequence[str], None] = None
 depends_on: Union[str, Sequence[str], None] = None
 
