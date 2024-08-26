@@ -1,12 +1,11 @@
 import LeftNav from "@/app/components/left-nav";
 import RightNav from "@/app/components/right-nav";
 import { ResponseThread } from "@/app/service/thread-service";
-import { getUsersNotInWorkspace } from "@/app/service/user-service";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import { Suspense } from "react";
 import SettingsPanel from "../components/ui/account/settings-panel";
-import { UserFormType, getChatMode } from "../service/user-service";
+import { UserFormType, getChatMode, getUsersNotInWorkspace } from "../service/user-service";
 import { getBackendURL } from "../service/utils";
 import { ResponseWorkspace } from "../service/workspace-service";
 import { UserRole } from "../utils/multi-mode-select";
@@ -68,8 +67,6 @@ async function getUser(
 export default async function AccountSettings() {
   const token = cookies().get("access_token");
 
-  console.log(token);
-
   if (!token) {
     redirect("/signin");
   }
@@ -90,15 +87,15 @@ export default async function AccountSettings() {
 
   if (decodedToken.role === UserRole.SUPER_ADMIN) {
     workspaces = await getWorkspaces(token.value as string);
+
+    const workspaceId = workspaces[0].id;
+
     const response = await getUsersNotInWorkspace(
       token.value as string,
       workspaces[0].id,
     );
 
     users = response.status === 200 ? (response.data as UserFormType[]) : [];
-
-    console.log(users);
-    console.log(workspaces);
   }
 
   return (

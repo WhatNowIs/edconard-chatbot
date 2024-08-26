@@ -96,9 +96,10 @@ export const UserManagementForm = ({
     }
   };
 
-  const onWorkspaceSelect = (value: string) => {
-    form.setValue("workspace_id", value);
-    const getWorkspaceUsers = async () => {
+  const onWorkspaceSelect = (workspaceIdValue: string) => {
+    form.setValue("workspace_id", workspaceIdValue);
+
+    const getWorkspaceUsers = async (value: string) => {
       setIsWorkspaceUserFetching(true);
       const [result, resultUsers] = await Promise.all([
         getUsers(value),
@@ -115,7 +116,9 @@ export const UserManagementForm = ({
       return;
     };
 
-    getWorkspaceUsers().catch((error) => console.log(error));
+    if (workspaceIdValue) {
+      getWorkspaceUsers(workspaceIdValue).catch((error) => console.log(error));
+    }
   };
 
   const onUserSelect = (value: string) => {
@@ -123,8 +126,9 @@ export const UserManagementForm = ({
   };
 
   useEffect(() => {
-    if (workspaces.length > 0)
+    if (workspaces.length > 0 && !form.getValues().workspace_id) {
       form.setValue("workspace_id", workspaces[0]?.id as string);
+    }
   }, []);
 
   const UserCard = ({ user }: { user: UserFormType }) => {

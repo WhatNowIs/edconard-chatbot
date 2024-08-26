@@ -31,9 +31,7 @@ export const decodeToken = (token: string) => {
 };
 
 export function getAccessToken() {
-  return localStorage
-    ? localStorage.getItem("access_token") || getCookie("access_token")
-    : "";
+  return getCookie("access_token");
 }
 
 export function hasTokenExpired(decodedString: any) {
