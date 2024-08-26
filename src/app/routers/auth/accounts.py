@@ -1,9 +1,11 @@
+
+import jwt
+from fastapi import Body
 from datetime import datetime, timedelta
 from typing import Any, List, Optional
 from fastapi import APIRouter, Depends, HTTPException, logger, status
 from fastapi.responses import JSONResponse
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
-import jwt
 from sqlalchemy.ext.asyncio import AsyncSession
 from src.core.services.role import RoleService
 from src.core.services.workspace import WorkspaceService
@@ -15,7 +17,7 @@ from src.core.services.otp import OTPService
 from src.core.services.user import ACCESS_TOKEN_EXPIRE_MINUTES, REFRESH_SECRET_KEY, UserService
 from src.core.config.postgres import get_db
 from src.core.models.base import OTP, EmailTemplate, EmailType, EntityStatus, OTPGenerator, User, UserRole, get_otp_expiration
-from src.schema import ChangePassword, EmailTypeEnum, ResetPassword, UpdatePassword, UserCreateModel, UserModel, VerifyOtp
+from src.schema import ChangePassword, EmailTypeEnum, RefreshBody, ResetPassword, UpdatePassword, UserCreateModel, UserModel, VerifyOtp
 from src.utils.encryption import encrypt, to_base64
 from src.utils.logger import get_logger 
 from redis.asyncio.client import Redis
@@ -74,7 +76,7 @@ async def get_me(
     if "sub" in session:
         user_id = session["sub"]
 
-        user = await user_service.get(user_id)
+        user = await user_service.get_user(user_id)
 
         return UserModel(**user.to_dict())
     
@@ -167,18 +169,18 @@ async def authenticate_user(
 
 @accounts_router.post("/refresh")
 async def refresh_token(
-    refresh_token: str,
+    data: RefreshBody,
     user_service: UserService = Depends(get_user_service),
     redis_client: Redis = Depends(get_redis_client)
 ):
     try:
-        payload = jwt.decode(refresh_token, REFRESH_SECRET_KEY, algorithms=["HS256"])
+        payload = jwt.decode(data.refresh_token, REFRESH_SECRET_KEY, algorithms=["HS256"])
         user_id = payload["sub"]
         email = payload["email"]
 
         # Verify the refresh token is stored in Redis
         stored_refresh_token = await redis_client.get(f"refresh_session:{user_id}")
-        if stored_refresh_token != refresh_token:
+        if stored_refresh_token != data.refresh_token:
             raise HTTPException(
                 status_code=status.HTTP_401_UNAUTHORIZED,
                 detail="Invalid refresh token",
@@ -204,6 +206,7 @@ async def refresh_token(
             detail="Invalid refresh token",
             headers={"WWW-Authenticate": "Bearer"},
         )
+
 
 
 @accounts_router.post("/verify-otp")
@@ -448,15 +451,16 @@ async def change_password(
         get_logger().error(f"Error sending email: {e}")
         return {"message": str(e), "status": 400}
 
-@accounts_router.get("/users", response_model=List[UserModel])
+@accounts_router.get("/users/{workspace_id}", response_model=List[UserModel])
 async def get_all_users(
+    workspace_id: str,
     session: dict = Depends(get_session),
     user_service: UserService = Depends(get_user_service)
 ):
     # Check if the user is authenticated and has the necessary permissions (optional)
     if "sub" in session:
         try:
-            users = await user_service.get_all_users(session['sub'])
+            users = await user_service.get_all_users(session['sub'], workspace_id)
             return [UserModel(**user.to_dict()) for user in users]
         except Exception as e:
             get_logger().error(f"Error retrieving users: {e}")

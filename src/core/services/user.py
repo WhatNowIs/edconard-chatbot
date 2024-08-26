@@ -5,7 +5,7 @@ import jwt
 import json
 from sqlalchemy.future import select
 from pydantic import parse_obj_as
-from src.core.models.base import Message, Role, User, Credential, UserRole
+from src.core.models.base import Message, Role, User, Credential, UserRole, Workspace
 from sqlalchemy.ext.asyncio import AsyncSession as Session
 from sqlalchemy.orm import selectinload
 from src.core.services.service import Service
@@ -288,20 +288,40 @@ class UserService(Service):
         self.logger.error(f"Failed to update password for user with email: {user.email}")
         return False, "Failed to update password"
     
-    async def get_all_users(self, exclude_user_id: str) -> List[User]:
-        self.logger.info(f"Fetching all users except user with id: {exclude_user_id}")
+    async def get_all_users(self, exclude_user_id: str, workspace_id: str) -> List[User]:
+        self.logger.info(f"Fetching all users except user with id: {exclude_user_id} and not in workspace id: {workspace_id}")
         try:
+            # Get users that are not in the specified workspace and not the excluded user
             result = await self.db_session.execute(
                 select(User)
                 .options(selectinload(User.role))
+                .options(selectinload(User.workspaces))
                 .filter(User.id != exclude_user_id)
+                .filter(~User.workspaces.any(Workspace.id == workspace_id))
             )
             users = result.scalars().all()
-            self.logger.info(f"Fetched {len(users)} users excluding user id: {exclude_user_id}")
+            self.logger.info(f"Fetched {len(users)} users excluding user id: {exclude_user_id} and not in workspace id: {workspace_id}")
             return users
         except Exception as e:
             self.logger.error(f"Error fetching users: {e}")
             raise
+
+    async def get_user(self, user_id: str) -> User:
+        self.logger.info(f"Fetching user with id: {user_id}")
+        try:
+            # Get users that are not in the specified workspace and not the excluded user
+            result = await self.db_session.execute(
+                select(User)
+                .options(selectinload(User.role))
+                .options(selectinload(User.workspaces))
+                .filter(User.id != user_id)
+            )
+            users = result.scalars().first()
+            return users
+        except Exception as e:
+            self.logger.error(f"Error fetching users: {e}")
+            raise
+
 
 
 
