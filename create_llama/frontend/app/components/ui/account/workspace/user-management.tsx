@@ -43,6 +43,7 @@ export const UserManagementForm = ({
 }: UserManagementFormProps) => {
   const [isWorkspaceUserFetching, setIsWorkspaceUserFetching] =
     useState<boolean>(false);
+  const [isDeleting, setIsDeleting] = useState<boolean>(false);
   const { toast } = useToast();
   const form = useForm<UserManagementType>({
     resolver: zodResolver(UserManagementSchema),
@@ -76,6 +77,7 @@ export const UserManagementForm = ({
 
   const onSubmitRemove = async (data: UserManagementType) => {
     try {
+      setIsDeleting(true);
       await handleRemoveUser(data);
       toast({
         className: cn(
@@ -83,6 +85,7 @@ export const UserManagementForm = ({
         ),
         title: "User removed successfully",
       });
+      setIsDeleting(false);
     } catch (error) {
       toast({
         className: cn(
@@ -141,7 +144,14 @@ export const UserManagementForm = ({
         </div>{" "}
         <button
           type="button"
+          disabled={isDeleting}
           className="w-6 h-full bg-none border-none hover:cursor-pointer"
+          onClick={() =>
+            onSubmitRemove({
+              workspace_id: form.getValues().workspace_id,
+              user_id: user.id as string,
+            }).catch((error) => console.log(error))
+          }
         >
           <HiOutlineTrash className="w-5 h-5 rounded-md text-slate-700 hover:text-slate-900" />
         </button>
