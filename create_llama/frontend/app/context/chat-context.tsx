@@ -22,7 +22,11 @@ import {
   useEffect,
   useState,
 } from "react";
-import { getCookie, getMacroRoundupData } from "../service/user-service";
+import {
+  UserFormType,
+  getCookie,
+  getMacroRoundupData,
+} from "../service/user-service";
 import {
   ResponseWorkspace,
   fetchWorkspaces,
@@ -30,8 +34,8 @@ import {
 
 export enum SettingPanel {
   Profile = "Profile",
-  Billing = "Billing",
-  Reports = "Reports",
+  // Billing = "Billing",
+  // Reports = "Reports",
   Workspace = "Workspaces",
 }
 
@@ -42,6 +46,7 @@ interface ChatContextType {
   article: Article | null;
   currentSettingPanel: SettingPanel;
   workspaces: ResponseWorkspace[];
+  users: UserFormType[];
   currentWorkspace: ResponseWorkspace | null;
   nonResearchExplorationLLMMessage: string;
   setSelectedThread: Dispatch<SetStateAction<ResponseThread | null>>;
@@ -63,6 +68,7 @@ interface ChatContextType {
   setWorkspaces: Dispatch<SetStateAction<ResponseWorkspace[]>>;
   setNonResearchExplorationLLMMessage: Dispatch<SetStateAction<string>>;
   setMessages: Dispatch<SetStateAction<ResponseMessage[]>>;
+  setUsers: Dispatch<SetStateAction<UserFormType[]>>;
 }
 
 const ChatContext = createContext<ChatContextType | undefined>(undefined);
@@ -78,6 +84,7 @@ export const ChatProvider: FC<ChatProviderProps> = ({ children }) => {
     null,
   );
   const [workspaces, setWorkspaces] = useState<ResponseWorkspace[]>([]);
+  const [users, setUsers] = useState<UserFormType[]>([]);
   const [currentWorkspace, setCurrentWorkspace] =
     useState<ResponseWorkspace | null>(null);
   const [currentSettingPanel, setCurrentSettingPanel] = useState<SettingPanel>(
@@ -233,6 +240,7 @@ export const ChatProvider: FC<ChatProviderProps> = ({ children }) => {
         article,
         currentSettingPanel,
         workspaces,
+        users,
         currentWorkspace,
         nonResearchExplorationLLMMessage,
         setSelectedThread,
@@ -251,6 +259,7 @@ export const ChatProvider: FC<ChatProviderProps> = ({ children }) => {
         loadWorkspaces,
         setNonResearchExplorationLLMMessage,
         setMessages,
+        setUsers
       }}
     >
       {children}

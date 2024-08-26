@@ -6,6 +6,49 @@ import { redirect } from "next/navigation";
 import { Suspense } from "react";
 import SettingsPanel from "../components/ui/account/settings-panel";
 import { UserFormType, getChatMode } from "../service/user-service";
+import { getBackendURL } from "../service/utils";
+import { ResponseWorkspace } from "../service/workspace-service";
+import { UserRole } from "../utils/multi-mode-select";
+import { decodeToken } from "../utils/shared";
+
+async function getUsers(
+  token: string,
+  options: RequestInit = {},
+): Promise<UserFormType[]> {
+  const res = await fetch(`${getBackendURL()}/api/auth/accounts/users`, {
+    ...options,
+    headers: {
+      ...options.headers,
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${token}`,
+    },
+  });
+
+  if (!res.ok) {
+    const error = JSON.parse(await res.text());
+    throw new Error(error.detail);
+  }
+
+  return res.json() as unknown as UserFormType[];
+}
+
+async function getWorkspaces(token: string, options: RequestInit = {}) {
+  const res = await fetch(`${getBackendURL()}/api/workspaces/`, {
+    ...options,
+    headers: {
+      ...options.headers,
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${token}`,
+    },
+  });
+
+  if (!res.ok) {
+    const error = JSON.parse(await res.text());
+    throw new Error(error.detail);
+  }
+
+  return res.json();
+}
 
 async function getThreads(token: string): Promise<ResponseThread[]> {
   const threadResponse = await fetch(
@@ -56,6 +99,22 @@ export default async function AccountSettings() {
     ? await getUser(token.value as string)
     : { user: null, mode: false };
 
+  const decodedToken = decodeToken(token.value as string) as {
+    email: string;
+    sub: string;
+    role: string;
+  };
+
+  let workspaces: ResponseWorkspace[] = [];
+  let users: UserFormType[] = [];
+
+  if (decodedToken.role === UserRole.SUPER_ADMIN) {
+    [workspaces, users] = await Promise.all([
+      getWorkspaces(token.value as string),
+      getUsers(token.value as string),
+    ]);
+  }
+
   return (
     <Suspense fallback={<div>Loading...</div>}>
       <div className="w-full flex h-screen">
@@ -65,7 +124,11 @@ export default async function AccountSettings() {
           mode={userData.mode}
         />
         <main className="w-full h-screen items-center flex flex-col overflow-auto">
-          <SettingsPanel userData={userData.user as UserFormType} />
+          <SettingsPanel
+            userData={userData.user as UserFormType}
+            workspaces={workspaces}
+            users={users}
+          />
         </main>
         <RightNav />
       </div>

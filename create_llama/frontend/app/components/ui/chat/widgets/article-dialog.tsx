@@ -25,10 +25,10 @@ export default function ArticleDialog(props: ArticleDialogProps) {
   return (
     <Drawer direction="left">
       <DrawerTrigger>{props.trigger}</DrawerTrigger>
-      <DrawerContent className="w-96 mt-8 h-full max-h-[98%]">
+      <DrawerContent className="w-2/6 mt-8 h-full max-h-[98%]">
         <DrawerHeader className="flex justify-between">
           <div className="space-y-2">
-            <DrawerTitle>Macro-roundup article info</DrawerTitle>
+            <DrawerTitle>Macro Roundup: Editorial Template</DrawerTitle>
           </div>
           <DrawerClose asChild>
             <Button ref={buttonRef} variant="outline">

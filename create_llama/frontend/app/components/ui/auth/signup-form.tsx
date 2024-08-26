@@ -14,8 +14,8 @@ import { SubmitButton } from "../custom/submitButton";
 import { Form, FormControl, FormField, FormItem, FormLabel } from "../form";
 import { Input } from "../input";
 import { cn } from "../lib/utils";
-import { useToast } from "../use-toast";
 import { Toaster } from "../toaster";
+import { useToast } from "../use-toast";
 
 export default function SignupForm() {
   const form = useForm({
@@ -31,7 +31,16 @@ export default function SignupForm() {
     try {
       const configData = await createUserAccount(data as UserFormType);
 
-      router.push("/auth/verify-account-msg");
+      if (configData.status === 200) router.push("/auth/verify-account-msg");
+      else {
+        toast({
+          className: cn(
+            "top-0 right-0 flex fixed md:max-w-[420px] md:top-4 md:right-4 text-red-500",
+          ),
+          title: "Failed to create account",
+          description: configData.message,
+        });
+      }
     } catch (err) {
       console.error(err);
       toast({
