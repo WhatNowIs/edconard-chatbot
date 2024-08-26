@@ -131,13 +131,15 @@ class WorkspaceService(Service):
         self.logger.info(f"Fetched {len(workspaces)} workspaces for user {user_id}")
         return workspaces
     
-    async def get_users_by_workspace_id(self, workspace_id: str) -> List[User]:
-        workspace = await self.db_session.execute(
-            select(Workspace).options(selectinload(Workspace.users)).where(Workspace.id == workspace_id)
+    async def get_users_by_workspace_id(self, user_id: str, workspace_id: str) -> List[User]:
+        self.logger.info(f"Fetching all users for workspace_id {workspace_id}")
+        query = (
+            select(User)
+            .join(User.workspaces)
+            .options(selectinload(User.role))
+            .where(Workspace.id == workspace_id)
+            .where(User.id != user_id)
         )
-        workspace = workspace.scalar_one_or_none()
-
-        if workspace:
-            return workspace.users
-        else:
-            return []
+        users = await self.db_session.execute(query)
+        self.logger.info(f"Fetched users for workspace_id {workspace_id}")
+        return users.scalars().all()  
