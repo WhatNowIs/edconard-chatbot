@@ -1,14 +1,19 @@
 "use client";
 
 import ChatContext from "@/app/context/chat-context";
+import { UserFormType } from "@/app/service/user-service";
 import {
+  getUsers,
   ResponseWorkspace,
   UserManagementSchema,
   UserManagementType,
 } from "@/app/service/workspace-service";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useContext } from "react";
+import { Loader2 } from "lucide-react";
+import Image from "next/image";
+import { useContext, useState } from "react";
 import { useForm } from "react-hook-form";
+import { HiOutlineTrash } from "react-icons/hi2";
 import { SubmitButton } from "../../custom/submitButton";
 import { Form, FormControl, FormField, FormItem } from "../../form";
 import { cn } from "../../lib/utils";
@@ -33,6 +38,8 @@ export const UserManagementForm = ({
   handleAddUser,
   handleRemoveUser,
 }: UserManagementFormProps) => {
+  const [isWorkspaceUserFetching, setIsWorkspaceUserFetching] =
+    useState<boolean>(false);
   const { toast } = useToast();
   const form = useForm<UserManagementType>({
     resolver: zodResolver(UserManagementSchema),
@@ -41,6 +48,8 @@ export const UserManagementForm = ({
   const chatContext = useContext(ChatContext);
 
   if (!chatContext) return <></>;
+
+  const { workspaceUsers, setWorkspaceUsers } = chatContext;
 
   const onSubmitAdd = async (data: UserManagementType) => {
     try {
@@ -82,84 +91,153 @@ export const UserManagementForm = ({
 
   const onWorkspaceSelect = (value: string) => {
     form.setValue("workspace_id", value);
+    const getWorkspaceUsers = async () => {
+      setIsWorkspaceUserFetching(true);
+      const result = await getUsers(value);
+
+      setWorkspaceUsers(result);
+      setIsWorkspaceUserFetching(false);
+      return;
+    };
+
+    getWorkspaceUsers().catch((error) => console.log(error));
   };
   const onUserSelect = (value: string) => {
     form.setValue("user_id", value);
   };
 
+  const UserCard = ({ user }: { user: UserFormType }) => {
+    return (
+      <div className="w-96 flex items-center p-2 bg-white shadow-md rounded-lg">
+        <Image
+          className="rounded-full"
+          width={30}
+          height={30}
+          alt={`${user.first_name}'s avatar`}
+          src="https://via.placeholder.com/40"
+        />
+        <div className="w-full ml-4">
+          <h4 className="text-lg font-semibold">
+            {user.first_name} {user.last_name}
+          </h4>
+          <p className="text-xs text-gray-500">{user.email}</p>
+          <p className="text-xs text-gray-700">{user?.role?.name as string}</p>
+        </div>{" "}
+        <button
+          type="button"
+          className="w-6 h-full bg-none border-none hover:cursor-pointer"
+        >
+          <HiOutlineTrash className="w-5 h-5 rounded-md text-slate-700 hover:text-slate-900" />
+        </button>
+      </div>
+    );
+  };
+
   return (
-    <Form {...form}>
-      <form
-        onSubmit={form.handleSubmit(onSubmitAdd)}
-        className="w-full space-y-4 mb-4 grid grid-cols-1 gap-x-6 gap-y-3 sm:max-w-xl sm:grid-cols-3"
-      >
-        <FormField
-          control={form.control}
-          name="workspace_id"
-          render={({ field }) => (
-            <FormItem className="sm:col-span-3">
-              <FormControl>
-                <Select onValueChange={onWorkspaceSelect} value={field.value}>
-                  <SelectTrigger>
-                    <SelectValue placeholder="Select a workspace" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectGroup>
-                      <SelectLabel>Workspaces</SelectLabel>
-                      {chatContext.workspaces.map((workspace) => (
-                        <SelectItem key={workspace.id} value={workspace.id}>
-                          {workspace.name}
-                        </SelectItem>
-                      ))}
-                    </SelectGroup>
-                  </SelectContent>
-                </Select>
-              </FormControl>
-            </FormItem>
+    <div className="w-full grid grid-cols-3 gap-6">
+      <div className="col-span-1">
+        <Form {...form}>
+          <form
+            onSubmit={form.handleSubmit(onSubmitAdd)}
+            className="w-full space-y-4 mb-4 grid grid-cols-1 gap-x-6 gap-y-3 sm:max-w-xl sm:grid-cols-3"
+          >
+            <FormField
+              control={form.control}
+              name="workspace_id"
+              render={({ field }) => (
+                <FormItem className="sm:col-span-3">
+                  <FormControl>
+                    <Select
+                      onValueChange={onWorkspaceSelect}
+                      value={field.value}
+                    >
+                      <SelectTrigger>
+                        <SelectValue placeholder="Select a workspace" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        <SelectGroup>
+                          <SelectLabel>Workspaces</SelectLabel>
+                          {chatContext.workspaces.map((workspace) => (
+                            <SelectItem key={workspace.id} value={workspace.id}>
+                              {workspace.name}
+                            </SelectItem>
+                          ))}
+                        </SelectGroup>
+                      </SelectContent>
+                    </Select>
+                  </FormControl>
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="user_id"
+              render={({ field }) => (
+                <FormItem className="sm:col-span-3">
+                  <FormControl>
+                    <Select onValueChange={onUserSelect} value={field.value}>
+                      <SelectTrigger>
+                        <SelectValue placeholder="Choose a user" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        <SelectGroup>
+                          <SelectLabel>Users</SelectLabel>
+                          {chatContext.users.map((user) => (
+                            <SelectItem key={user.id} value={user.id as string}>
+                              {user.first_name} {user.last_name} - {user.email}
+                            </SelectItem>
+                          ))}
+                        </SelectGroup>
+                      </SelectContent>
+                    </Select>
+                  </FormControl>
+                </FormItem>
+              )}
+            />
+            <SubmitButton
+              isSubmitting={form.formState.isSubmitting}
+              text="Add User"
+              className="flex items-center"
+            />
+          </form>
+        </Form>
+      </div>
+
+      <div className="col-span-2 h-[400px] overflow-y-auto">
+        <div className="flex gap-6">
+          <h2 className="mb-2">Current workspace users</h2>
+          {/* <Form {...form}>
+            <form onSubmit={form.handleSubmit(onSubmitAdd)} className="w-full">
+              <FormField
+                control={form.control}
+                name="workspace_id"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormControl>
+                      <Input
+                        type="text"
+                        {...field}
+                        placeholder="Search workspace by name"
+                        className="w-96"
+                      />
+                    </FormControl>
+                  </FormItem>
+                )}
+              />
+            </form>
+          </Form> */}
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {!isWorkspaceUserFetching ? (
+            workspaceUsers.map((workspaceUser) => (
+              <UserCard key={workspaceUser.id} user={workspaceUser} />
+            ))
+          ) : (
+            <Loader2 className="h-4 w-4 animate-spin" />
           )}
-        />
-        <FormField
-          control={form.control}
-          name="user_id"
-          render={({ field }) => (
-            <FormItem className="sm:col-span-3">
-              <FormControl>
-                <Select onValueChange={onUserSelect} value={field.value}>
-                  <SelectTrigger>
-                    <SelectValue placeholder="Choose a user" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectGroup>
-                      <SelectLabel>Users</SelectLabel>
-                      {chatContext.users.map((user) => (
-                        <SelectItem key={user.id} value={user.id as string}>
-                          {user.first_name} {user.last_name} - {user.email}
-                        </SelectItem>
-                      ))}
-                    </SelectGroup>
-                  </SelectContent>
-                </Select>
-              </FormControl>
-            </FormItem>
-          )}
-        />
-        <SubmitButton
-          isSubmitting={form.formState.isSubmitting}
-          text="Add User"
-          className="flex items-center"
-        />
-      </form>
-      <form
-        onSubmit={form.handleSubmit(onSubmitRemove)}
-        className="w-full space-y-4 mb-4 grid grid-cols-1 gap-x-6 gap-y-3 sm:max-w-xl sm:grid-cols-3"
-      >
-        <SubmitButton
-          isSubmitting={form.formState.isSubmitting}
-          text="Remove User"
-          className="flex items-center"
-        />
-      </form>
-    </Form>
+        </div>
+      </div>
+    </div>
   );
 };
 

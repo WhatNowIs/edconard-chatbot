@@ -15,7 +15,6 @@ import {
 import { useContext, useEffect } from "react";
 import WorkspaceCreationForm from "./workspace/create-form";
 import UserManagementForm from "./workspace/user-management";
-import WorkspaceList from "./workspace/workspace-list";
 
 // Define interfaces for the props of each component
 
@@ -98,18 +97,6 @@ export default function WorkspacePanel({
         />
 
         <hr />
-        {/* <ThreadManagement
-          handleAddThread={handleAddThread}
-          handleRemoveThread={handleRemoveThread}
-        />
-        <hr /> */}
-      </div>
-
-      <div className="grid w-full grid-cols-1 gap-y-10 px-4 py-16 sm:px-6 lg:px-8">
-        <WorkspaceList
-          workspaces={workspaces}
-          fetchWorkspacesList={fetchWorkspacesList}
-        />
       </div>
     </>
   );
