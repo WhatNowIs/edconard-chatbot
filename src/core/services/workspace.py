@@ -41,6 +41,34 @@ class WorkspaceService(Service):
         except Exception as e:
             self.logger.error(f"Error creating default workspace for user {user.id}: {e}")
             raise
+    
+    async def add_user(self, workspace_id: str, user_id: str) -> None:
+        self.logger.info(f"Adding user {user_id} to workspace {workspace_id}")
+        
+        workspace = await self.db_session.execute(
+            select(Workspace).options(selectinload(Workspace.users)).where(Workspace.id == workspace_id)
+        )
+        workspace = workspace.scalar_one_or_none()
+
+        if workspace:
+            self.logger.info(workspace)
+
+            # Check if the user is already in the workspace
+            if any(user.id == user_id for user in workspace.users):
+                self.logger.info(f"User {user_id} is already in workspace {workspace_id}")
+                return
+
+            user = await self.db_session.get(User, user_id)
+            if user:
+                workspace.users.append(user)
+                await self.db_session.commit() 
+                self.logger.info(f"Added user {user_id} to workspace {workspace_id}")
+            else:
+                self.logger.error(f"User not found: user_id={user_id}")
+                raise ValueError("User not found")
+        else:
+            self.logger.error(f"Workspace not found: workspace_id={workspace_id}")
+            raise ValueError("Workspace not found")
 
     async def add_user_to_workspace(self, workspace_id: str, user_id: str) -> None:
         self.logger.info(f"Adding user {user_id} to workspace {workspace_id}")
@@ -102,3 +130,14 @@ class WorkspaceService(Service):
             workspaces = result.scalars().all()
         self.logger.info(f"Fetched {len(workspaces)} workspaces for user {user_id}")
         return workspaces
+    
+    async def get_users_by_workspace_id(self, workspace_id: str) -> List[User]:
+        workspace = await self.db_session.execute(
+            select(Workspace).options(selectinload(Workspace.users)).where(Workspace.id == workspace_id)
+        )
+        workspace = workspace.scalar_one_or_none()
+
+        if workspace:
+            return workspace.users
+        else:
+            return []
