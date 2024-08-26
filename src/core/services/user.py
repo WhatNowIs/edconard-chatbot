@@ -5,13 +5,15 @@ import jwt
 import json
 from sqlalchemy.future import select
 from pydantic import parse_obj_as
-from src.core.models.base import Message, User, Credential
+from src.core.models.base import Message, Role, User, Credential, UserRole
 from sqlalchemy.ext.asyncio import AsyncSession as Session
+from sqlalchemy.orm import selectinload
 from src.core.services.service import Service
 from src.core.services.credential import CredentialService
 from src.utils import datetime_to_str
 from src.utils.encryption import encrypt, verify
 from src.utils.logger import get_logger
+
 import uuid
 from datetime import datetime, timedelta
 from redis.asyncio.client import Redis
@@ -52,10 +54,44 @@ class UserService(Service):
         self.logger.info(f"Created credentials for user with id: {user_in.id}")
 
         return user_in
+    
+    
+    async def create_default_super_admin_account_if_not_exists(self, user: User, password: str) -> Tuple[User, bool]:
+        self.logger.info(f"Creating default super admin")
+
+        try:
+            role = await self.db_session.execute(
+                select(Role).filter(Role.name == UserRole.SUPER_ADMIN.value)
+            )
+            role = role.scalar_one_or_none()
+
+            default_super_admin = await self.db_session.execute(
+                select(User).filter(User.email == user.email)
+            )
+            default_super_admin = default_super_admin.scalar_one_or_none()
+
+            if not default_super_admin:
+                default_super_admin = user
+                default_super_admin.role_id = role.id
+                default_super_admin = await self.create(default_super_admin, password)
+                return default_super_admin, True
+
+            else:
+                self.logger.info(f"Default super admin account already exists")
+
+            return default_super_admin, False
+
+        except Exception as e:
+            self.logger.error(f"Error creating default super admin account: {e}")
+            raise
 
     async def get_by_email(self, email: str) -> Optional[User]:
         self.logger.info(f"Fetching user with email: {email}")
-        result = await self.db_session.execute(select(User).filter(User.email == email))
+        result = await self.db_session.execute(
+            select(User)
+            .options(selectinload(User.role)) 
+            .filter(User.email == email)
+        )
         return result.scalars().first()
 
     async def verify_user_password(self, user_id: str, password: str) -> bool:
@@ -91,7 +127,8 @@ class UserService(Service):
             token = self.create_access_token(
                 data = { 
                     "sub": user.id, 
-                    "email": user.email
+                    "email": user.email,
+                    "role": user.role.name
                 }, 
                 expires_delta = token_expires
             )
@@ -250,3 +287,23 @@ class UserService(Service):
 
         self.logger.error(f"Failed to update password for user with email: {user.email}")
         return False, "Failed to update password"
+    
+    async def get_all_users(self, exclude_user_id: str) -> List[User]:
+        self.logger.info(f"Fetching all users except user with id: {exclude_user_id}")
+        try:
+            result = await self.db_session.execute(
+                select(User)
+                .options(selectinload(User.role))
+                .filter(User.id != exclude_user_id)
+            )
+            users = result.scalars().all()
+            self.logger.info(f"Fetched {len(users)} users excluding user id: {exclude_user_id}")
+            return users
+        except Exception as e:
+            self.logger.error(f"Error fetching users: {e}")
+            raise
+
+
+
+async def create_default_super_admin_account(user_service: UserService, user: User) -> Tuple[User, bool] :
+    return await user_service.create_default_super_admin_account_if_not_exists(user)
