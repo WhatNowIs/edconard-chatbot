@@ -1,5 +1,13 @@
 import { z } from "zod";
 
+export enum UserRole {
+  SUPER_ADMIN = "Super Admin",
+  ADMIN = "Admin",
+  EDITOR = "Editor",
+  USER = "User",
+}
+
+
 export const ArticleSchema = z.object({
   headline: z.string(),
   publisher: z.string(),
@@ -65,3 +73,5 @@ export const supportedChatMode = [
     value: "macro-roundup-article-summary-optimization",
   },
 ];
+
+

@@ -67,12 +67,12 @@ export default function MacroRoundupForm(props: Props) {
             name="document_link"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Link</FormLabel>
+                <FormLabel>Google Doc Url:</FormLabel>
                 <FormControl>
                   <Input
                     {...field}
                     type="url"
-                    placeholder="Provide a link to the google doc url"
+                    placeholder="Enter the google doc url"
                   />
                 </FormControl>
               </FormItem>
@@ -83,7 +83,7 @@ export default function MacroRoundupForm(props: Props) {
             name="order"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Article by Order of Appearance</FormLabel>
+                <FormLabel>Article Order of Appearance:</FormLabel>
                 <FormControl>
                   <Input
                     {...field}

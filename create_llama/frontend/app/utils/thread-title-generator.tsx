@@ -12,7 +12,7 @@ export function useGenerateTitle() {
     setLoading(true);
     setError(null);
     try {
-      const access_token =
+      const access_token = 
         localStorage.getItem("access_token") || getCookie("access_token");
       const response = await fetch(
         `/api/chat?question=${encodeURIComponent(question)}`,
