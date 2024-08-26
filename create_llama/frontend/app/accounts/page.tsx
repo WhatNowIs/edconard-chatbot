@@ -89,18 +89,14 @@ export default async function AccountSettings() {
   let users: UserFormType[] = [];
 
   if (decodedToken.role === UserRole.SUPER_ADMIN) {
-    [workspaces] = await Promise.all([
-      getWorkspaces(token.value as string),
-      // getUsers(token.value as string),
-    ]);
+    workspaces = await getWorkspaces(token.value as string);
+    const response = await getUsersNotInWorkspace(
+      token.value as string,
+      workspaces.reverse()[0].id,
+    );
+
+    users = response.status === 200 ? (response.data as UserFormType[]) : [];
   }
-
-  const response = await getUsersNotInWorkspace(
-    token.value as string,
-    workspaces.reverse()[0].id,
-  );
-
-  users = response.status === 200 ? response.data as UserFormType[] : [];
 
   return (
     <Suspense fallback={<div>Loading...</div>}>

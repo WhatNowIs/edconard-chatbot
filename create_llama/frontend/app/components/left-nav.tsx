@@ -14,7 +14,6 @@ import AuthContext from "../context/auth-context";
 import ChatContext from "../context/chat-context";
 import { ResponseThread } from "../service/thread-service";
 import { UserFormType } from "../service/user-service";
-import { decodeToken, getAccessToken } from "../utils/shared";
 import OtherSettings from "./ui/account/other-settings";
 
 export default function LeftNav({
@@ -62,7 +61,7 @@ export default function LeftNav({
     }
   };
 
-  if (localStorage) console.log(decodeToken(getAccessToken()));
+  // if (localStorage) console.log(decodeToken(getAccessToken()));
 
   return (
     <div className="w-80 flex flex-col h-screen overflow-y-auto bg-white border-r border-gray-200 p-4">
@@ -87,9 +86,6 @@ export default function LeftNav({
           <div>
             <div className="text-sm text-gray-800">{`${user.first_name} ${user.last_name}`}</div>
             <div className="text-gray-500 text-xs">{user.email}</div>
-            {/* <div className="text-gray-700 text-xs">
-              {decodeToken(getAccessToken())?.role?.name as string}
-            </div> */}
           </div>
         </div>
       )}
@@ -113,8 +109,6 @@ export default function LeftNav({
               </Button>
               <Workspaces />
               <RecentThreads />
-              {/* <ChatBundles /> */}
-              {/* <Marketplace /> */}
             </>
           )}
         </>
