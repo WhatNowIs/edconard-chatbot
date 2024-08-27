@@ -5,14 +5,18 @@ import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import { Suspense } from "react";
 import SettingsPanel from "../components/ui/account/settings-panel";
-import { UserFormType, getChatMode, getUsersNotInWorkspace } from "../service/user-service";
+import {
+  UserFormType,
+  getChatMode,
+  getUsersNotInWorkspace,
+} from "../service/user-service";
 import { getBackendURL } from "../service/utils";
 import { ResponseWorkspace } from "../service/workspace-service";
 import { UserRole } from "../utils/multi-mode-select";
 import { decodeToken } from "../utils/shared";
 
 async function getWorkspaces(token: string, options: RequestInit = {}) {
-  const res = await fetch(`${getBackendURL()}/api/workspaces/`, {
+  const res = await fetch(`${getBackendURL()}/api/workspaces`, {
     ...options,
     headers: {
       ...options.headers,
@@ -92,7 +96,7 @@ export default async function AccountSettings() {
 
     const response = await getUsersNotInWorkspace(
       token.value as string,
-      workspaces[0].id,
+      workspaceId,
     );
 
     users = response.status === 200 ? (response.data as UserFormType[]) : [];
