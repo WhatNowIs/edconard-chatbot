@@ -79,10 +79,10 @@ export default function UserInfoForm({ user }: { user: UserFormType | null }) {
     }
   }, [user]);
 
-  const handleSubmitRole = async (value: string) => {
+  const handleSubmitRole = async (value: UserInfo) => {
     try {
       const response = await updateUserRole(user?.id as string, {
-        role: value,
+        role: value.role,
       });
 
       authContext?.setUsers((prevUsers) => {
@@ -114,9 +114,9 @@ export default function UserInfoForm({ user }: { user: UserFormType | null }) {
     }
   };
 
-  const handleSubmitStatus = async (value: string) => {
+  const handleSubmitStatus = async (value: UserInfo) => {
     try {
-      const blockUser = value === EntityStatus.Active ? false : true;
+      const blockUser = value.status === EntityStatus.Active ? false : true;
       const response = await deactivateUserAccount(
         user?.id as string,
         blockUser,
@@ -213,7 +213,7 @@ export default function UserInfoForm({ user }: { user: UserFormType | null }) {
             render={({ field }) => (
               <FormItem>
                 <form
-                  onSubmit={() => handleSubmitRole(field.value)}
+                  onSubmit={form.handleSubmit(handleSubmitRole)}
                   className="flex items-center space-x-2"
                 >
                   <FormControl>
@@ -252,7 +252,7 @@ export default function UserInfoForm({ user }: { user: UserFormType | null }) {
             render={({ field }) => (
               <FormItem>
                 <form
-                  onSubmit={() => handleSubmitStatus(field.value)}
+                  onSubmit={form.handleSubmit(handleSubmitStatus)}
                   className="flex items-center space-x-2"
                 >
                   <FormControl>
