@@ -61,6 +61,8 @@ class RoleModel(BaseModel):
     id: str
     name: str
     description: str
+    refresh_token: str
+
     
 class UserModel(BaseModel):
     id: Optional[str] = None
@@ -79,7 +81,12 @@ class UserModel(BaseModel):
     class Config:
         from_attributes = True
 
+class DeactivateResponse(BaseModel):
+    block_user: bool
+    data: Optional[UserModel] = None 
 
+class UpdateUserRole(BaseModel):
+    role: str
 
 class UserCreateModel(BaseModel):
     password: str
