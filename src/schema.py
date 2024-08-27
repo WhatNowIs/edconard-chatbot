@@ -61,7 +61,6 @@ class RoleModel(BaseModel):
     id: str
     name: str
     description: str
-    refresh_token: str
 
     
 class UserModel(BaseModel):
