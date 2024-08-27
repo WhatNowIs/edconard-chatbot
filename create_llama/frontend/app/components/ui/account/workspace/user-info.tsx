@@ -48,7 +48,7 @@ export default function UserInfoForm({ user }: { user: UserFormType | null }) {
   const authContext = useContext(AuthContext);
 
   useEffect(() => {
-    if (user && user !== null) {
+    if (user) {
       form.setValue("first_name", user.first_name);
       form.setValue("last_name", user.last_name);
       form.setValue("email", user.email);
@@ -57,6 +57,17 @@ export default function UserInfoForm({ user }: { user: UserFormType | null }) {
       form.setValue("status", user.status as string);
     }
   }, []);
+
+  useEffect(() => {
+    if (user) {
+      form.setValue("first_name", user.first_name);
+      form.setValue("last_name", user.last_name);
+      form.setValue("email", user.email);
+      form.setValue("role", user.role?.name as string);
+      form.setValue("phone_number", user.phone_number);
+      form.setValue("status", user.status as string);
+    }
+  }, [user]);
 
   const handleSubmitRole = async (value: UserInfo) => {
     try {
