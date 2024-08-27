@@ -2,8 +2,14 @@
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import AuthContext from "@/app/context/auth-context";
+import ChatContext from "@/app/context/chat-context";
 import { UserSigninSchema, UserSigninType } from "@/app/service/user-service";
-import { decodeToken, getAccessToken, hasTokenExpired } from "@/app/utils/shared";
+import { getAllWorkspaces } from "@/app/service/workspace-service";
+import {
+  decodeToken,
+  getAccessToken,
+  hasTokenExpired,
+} from "@/app/utils/shared";
 import { zodResolver } from "@hookform/resolvers/zod";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -24,6 +30,7 @@ export default function SigninForm() {
   const router = useRouter();
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
   const authContext = useContext(AuthContext);
+  const chatContext = useContext(ChatContext);
 
   if (!authContext) {
     throw new Error("useContext must be used within an AuthProvider");
@@ -35,6 +42,10 @@ export default function SigninForm() {
     try {
       const configData = await login(data as UserSigninType);
       if (configData.user !== null) {
+        const workspaces = await getAllWorkspaces(getAccessToken());
+
+        chatContext?.setWorkspaces(workspaces);
+
         router.push("/");
       } else {
         toast({
