@@ -53,8 +53,14 @@ export const UserManagementForm = ({
 
   if (!chatContext) return <></>;
 
-  const { workspaceUsers, setWorkspaceUsers, workspaces, setUsers } =
-    chatContext;
+  const {
+    workspaceUsers,
+    setWorkspaceUsers,
+    selectedWorkspace,
+    setSelectedWorkspace,
+    workspaces,
+    setUsers,
+  } = chatContext;
 
   const onSubmitAdd = async (data: UserManagementType) => {
     try {
@@ -99,6 +105,12 @@ export const UserManagementForm = ({
   const onWorkspaceSelect = (workspaceIdValue: string) => {
     form.setValue("workspace_id", workspaceIdValue);
 
+    setSelectedWorkspace(
+      workspaces.find(
+        (wsp) => wsp.id === workspaceIdValue,
+      ) as ResponseWorkspace,
+    );
+
     const getWorkspaceUsers = async (value: string) => {
       setIsWorkspaceUserFetching(true);
       const [result, resultUsers] = await Promise.all([
@@ -128,6 +140,9 @@ export const UserManagementForm = ({
   useEffect(() => {
     if (workspaces.length > 0 && !form.getValues().workspace_id) {
       form.setValue("workspace_id", workspaces[0]?.id as string);
+    }
+    if (selectedWorkspace !== null) {
+      form.setValue("workspace_id", selectedWorkspace.id);
     }
   }, []);
 
