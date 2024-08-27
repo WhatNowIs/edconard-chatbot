@@ -1,7 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 "use client";
 /* eslint-disable no-useless-catch */
-import { useRouter } from "next/navigation";
 import {
   Dispatch,
   FC,
@@ -27,6 +26,7 @@ import { getAccessToken } from "../utils/shared";
 
 interface AuthContextType {
   user: UserFormType | null;
+  currentUser: UserFormType | null;
   users: UserFormType[];
   isResearchExploration: boolean | null;
   setIsResearchExploration: Dispatch<SetStateAction<boolean | null>>;
@@ -40,6 +40,7 @@ interface AuthContextType {
   updateChatModeByUser: (
     checked: boolean,
   ) => Promise<{ message: string; status: number }>;
+  setCurrentUser: Dispatch<SetStateAction<UserFormType | null>>;
   refreshAccessToken: () => Promise<string | null | undefined>;
 }
 
@@ -51,6 +52,7 @@ interface AuthProviderProps {
 
 export const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
   const [user, setUser] = useState<UserFormType | null>(null);
+  const [currentUser, setCurrentUser] = useState<UserFormType | null>(null);
   const [users, setUsers] = useState<UserFormType[]>([]);
   const [isResearchExploration, setIsResearchExploration] = useState<
     boolean | null
@@ -200,6 +202,7 @@ export const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
     <AuthContext.Provider
       value={{
         user,
+        currentUser,
         users,
         isResearchExploration,
         setIsResearchExploration,
@@ -209,7 +212,8 @@ export const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
         getChatModeByUser,
         updateChatModeByUser,
         refreshAccessToken,
-        setUsers
+        setUsers,
+        setCurrentUser,
       }}
     >
       {children}

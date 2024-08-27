@@ -7,6 +7,14 @@ export enum UserRole {
   USER = "User",
 }
 
+export enum EntityStatus {
+  Active = "Active",
+  Inactive = "Inactive",
+  Deleted = "Deleted",
+  Blocked = "Blocked",
+  Pending = "Pending",
+  Used = "Used",
+}
 
 export const ArticleSchema = z.object({
   headline: z.string(),
@@ -73,5 +81,3 @@ export const supportedChatMode = [
     value: "macro-roundup-article-summary-optimization",
   },
 ];
-
-
