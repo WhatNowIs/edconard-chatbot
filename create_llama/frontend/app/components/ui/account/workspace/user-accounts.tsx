@@ -12,12 +12,12 @@ import { Loader2 } from "lucide-react";
 import Image from "next/image";
 import { useContext, useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
-import { HiOutlineTrash } from "react-icons/hi2";
 
 import AuthContext from "@/app/context/auth-context";
 import { getAccessToken } from "@/app/utils/shared";
 import { cn } from "../../lib/utils";
 import { useToast } from "../../use-toast";
+import UserInfoForm from "./user-info";
 
 interface UserManagementFormProps {
   handleAddUser: (data: UserManagementType) => Promise<void>;
@@ -25,10 +25,7 @@ interface UserManagementFormProps {
   fetchWorkspacesList: () => Promise<ResponseWorkspace[]>;
 }
 
-export const Accounts = ({
-  handleAddUser,
-  handleRemoveUser,
-}: UserManagementFormProps) => {
+export const Accounts = () => {
   const [isWorkspaceUsersFetching, setIsWorkspaceUsersFetching] =
     useState<boolean>(false);
   const [isDeleting, setIsDeleting] = useState<boolean>(false);
@@ -42,7 +39,7 @@ export const Accounts = ({
 
   if (!chatContext || !authContext) return <></>;
 
-  const { setUsers, users } = authContext;
+  const { setUsers, users, currentUser, setCurrentUser } = authContext;
 
   // const onSubmitAdd = async (data: UserManagementType) => {
   //   try {
@@ -66,7 +63,7 @@ export const Accounts = ({
   const onSubmitRemove = async (data: UserManagementType) => {
     try {
       setIsDeleting(true);
-      await handleRemoveUser(data);
+      // await handleRemoveUser(data);
       toast({
         className: cn(
           "top-0 right-0 flex fixed md:max-w-[420px] md:top-4 md:right-4 text-green-500",
@@ -87,11 +84,14 @@ export const Accounts = ({
   const UserCard = ({ user }: { user: UserFormType }) => {
     const onUserSelect = (user: UserFormType) => {
       console.log(user);
+      setCurrentUser(user);
     };
     return (
       <div
         onClick={() => onUserSelect(user)}
-        className="w-96 flex items-center p-2 bg-white shadow-md hover:bg-slate-100 active:bg-slate-100 rounded-lg"
+        className={`w-2/3 flex items-center p-2 shadow-sm cursor-pointer hover:bg-gray-100 active:bg-gray-100 rounded-lg ${
+          currentUser?.id === user.id ? "bg-gray-100" : "bg-white"
+        }`}
       >
         <Image
           className="rounded-full"
@@ -106,21 +106,6 @@ export const Accounts = ({
           </h4>
           <p className="text-xs text-gray-500">{user.email}</p>
           <p className="text-xs text-gray-700">{user?.role?.name as string}</p>
-        </div>{" "}
-        <div className="w-6">
-          <button
-            type="button"
-            disabled={isDeleting}
-            className="w-6 h-full bg-none border-none hover:cursor-pointer"
-            onClick={() =>
-              onSubmitRemove({
-                workspace_id: form.getValues().workspace_id,
-                user_id: user.id as string,
-              }).catch((error) => console.log(error))
-            }
-          >
-            <HiOutlineTrash className="w-5 h-5 rounded-md text-slate-700 hover:text-slate-900" />
-          </button>
         </div>
       </div>
     );
@@ -146,11 +131,13 @@ export const Accounts = ({
 
       fetchUsers().catch((error) => console.log(error));
     }
+
+    console.log(users);
   }, []);
 
   return (
-    <div className="w-full grid grid-cols-2 gap-6">
-      <div className="col-span-1 h-full overflow-y-auto">
+    <div className="w-full h-screen p-4 grid grid-cols-2 gap-4">
+      <div className="col-span-1 h-screen overflow-y-auto">
         <div className="flex gap-6">
           <h2 className="mb-2">Users</h2>
         </div>
@@ -163,6 +150,10 @@ export const Accounts = ({
             <Loader2 className="h-4 w-4 animate-spin" />
           )}
         </div>
+      </div>
+
+      <div className="col-span-1 h-screen">
+        {currentUser && <UserInfoForm user={currentUser} />}
       </div>
     </div>
   );
