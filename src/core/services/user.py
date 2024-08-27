@@ -350,7 +350,7 @@ class UserService(Service):
         self.logger.error(f"Failed to deactivated for user with user id: {user_id}")
         return user
     
-    async def get_all_users(self, exclude_user_id: str, workspace_id: str) -> List[User]:
+    async def get_all_workspace_users(self, exclude_user_id: str, workspace_id: str) -> List[User]:
         self.logger.info(f"Fetching all users except user with id: {exclude_user_id} and user who are not in workspace id: {workspace_id}")
         try:
             # Get users that are not in the specified workspace and not the excluded user

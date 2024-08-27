@@ -535,7 +535,7 @@ async def get_all_workspace_users(
     # Check if the user is authenticated and has the necessary permissions (optional)
     if "sub" in session:
         try:
-            users = await user_service.get_all_users(session['sub'], workspace_id)
+            users = await user_service.get_all_workspace_users(session['sub'], workspace_id)
             return [UserModel(**user.to_dict()) for user in users]
         except Exception as e:
             get_logger().error(f"Error retrieving users: {e}")
