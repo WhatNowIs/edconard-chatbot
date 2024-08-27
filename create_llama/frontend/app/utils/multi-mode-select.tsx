@@ -9,11 +9,7 @@ export enum UserRole {
 
 export enum EntityStatus {
   Active = "Active",
-  Inactive = "Inactive",
-  Deleted = "Deleted",
   Blocked = "Blocked",
-  Pending = "Pending",
-  Used = "Used",
 }
 
 export const ArticleSchema = z.object({
