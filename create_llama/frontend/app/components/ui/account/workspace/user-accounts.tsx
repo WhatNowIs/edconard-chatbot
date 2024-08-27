@@ -41,25 +41,6 @@ export const Accounts = () => {
 
   const { setUsers, users, currentUser, setCurrentUser } = authContext;
 
-  // const onSubmitAdd = async (data: UserManagementType) => {
-  //   try {
-  //     await handleAddUser(data);
-  //     toast({
-  //       className: cn(
-  //         "top-0 right-0 flex fixed md:max-w-[420px] md:top-4 md:right-4 text-green-500",
-  //       ),
-  //       title: "User added successfully",
-  //     });
-  //   } catch (error) {
-  //     toast({
-  //       className: cn(
-  //         "top-0 right-0 flex fixed md:max-w-[420px] md:top-4 md:right-4 text-red-500",
-  //       ),
-  //       title: "Failed to add user",
-  //     });
-  //   }
-  // };
-
   const onSubmitRemove = async (data: UserManagementType) => {
     try {
       setIsDeleting(true);

@@ -1,13 +1,19 @@
 "use client";
-import { UserFormType } from "@/app/service/user-service"; // Adjust the path as necessary
+import AuthContext from "@/app/context/auth-context";
+import {
+  deactivateUserAccount,
+  updateUserRole,
+  UserFormType,
+} from "@/app/service/user-service"; // Adjust the path as necessary
 import { EntityStatus, UserRole } from "@/app/utils/multi-mode-select";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { SubmitButton } from "../../custom/submitButton";
 import { Form, FormControl, FormField, FormItem, FormLabel } from "../../form";
 import { Input } from "../../input";
+import { cn } from "../../lib/utils";
 import {
   Select,
   SelectContent,
@@ -38,6 +44,7 @@ export default function UserInfoForm({ user }: { user: UserFormType | null }) {
   });
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
+  const authContext = useContext(AuthContext);
 
   const onSubmit = async (data: any) => {
     setIsSubmitting(true);
@@ -45,6 +52,7 @@ export default function UserInfoForm({ user }: { user: UserFormType | null }) {
       // Handle form submission logic here
       console.log("Form data:", data);
       // Example: Simulate successful submission
+
       toast({
         title: "Form submitted successfully",
         description: "User data has been saved.",
@@ -72,11 +80,75 @@ export default function UserInfoForm({ user }: { user: UserFormType | null }) {
   }, [user]);
 
   const handleSubmitRole = async (value: string) => {
-    console.log("Updated", value);
+    try {
+      const response = await updateUserRole(user?.id as string, {
+        role: value,
+      });
+
+      authContext?.setUsers((prevUsers) => {
+        return prevUsers.map((prevUser) => {
+          if ((prevUser.id as string) === response.id) {
+            return response;
+          }
+          return prevUser;
+        });
+      });
+
+      authContext?.setCurrentUser(response);
+
+      toast({
+        className: cn(
+          "top-0 right-0 flex fixed md:max-w-[420px] md:top-4 md:right-4 text-green-500",
+        ),
+        title: "Success",
+        description: "User role updated successfully",
+      });
+    } catch (error) {
+      toast({
+        className: cn(
+          "top-0 right-0 flex fixed md:max-w-[420px] md:top-4 md:right-4 text-red-500",
+        ),
+        title: "Failed to update",
+        description: "An error has occurred while updating user's role.",
+      });
+    }
   };
 
   const handleSubmitStatus = async (value: string) => {
-    console.log("Updated", value);
+    try {
+      const blockUser = value === EntityStatus.Active ? false : true;
+      const response = await deactivateUserAccount(
+        user?.id as string,
+        blockUser,
+      );
+
+      authContext?.setUsers((prevUsers) => {
+        return prevUsers.map((prevUser) => {
+          if ((prevUser.id as string) === (response.data.id as string)) {
+            return response.data;
+          }
+          return prevUser;
+        });
+      });
+
+      authContext?.setCurrentUser(response.data);
+
+      toast({
+        className: cn(
+          "top-0 right-0 flex fixed md:max-w-[420px] md:top-4 md:right-4 text-green-500",
+        ),
+        title: "Success",
+        description: "User status updated successfully",
+      });
+    } catch (error) {
+      toast({
+        className: cn(
+          "top-0 right-0 flex fixed md:max-w-[420px] md:top-4 md:right-4 text-red-500",
+        ),
+        title: "Failed to update",
+        description: "An error has occurred while updating user's status.",
+      });
+    }
   };
 
   return (
