@@ -470,7 +470,7 @@ async def get_all_users(
     )
 
     
-@accounts_router.get("{user_id}/deactivate/{block_user}", response_model=DeactivateResponse)
+@accounts_router.get("/{user_id}/deactivate/{block_user}", response_model=DeactivateResponse)
 async def deactivate_user_account(
     user_id: str,
     block_user: bool,
@@ -484,7 +484,7 @@ async def deactivate_user_account(
                 block_user, user = await user_service.deactivate_user(user_id, block_user)
                 return DeactivateResponse(
                     block_user = block_user,
-                    data = user
+                    data = UserModel(**user.to_dict())
                 )
             else:
                 return DeactivateResponse(
@@ -500,7 +500,7 @@ async def deactivate_user_account(
         headers={"WWW-Authenticate": "Bearer"},
     )
     
-@accounts_router.patch("{user_id}/role", response_model=UserModel | None)
+@accounts_router.patch("/{user_id}/role", response_model=UserModel | None)
 async def update_user_role(
     user_id: str,
     data: UpdateUserRole,
