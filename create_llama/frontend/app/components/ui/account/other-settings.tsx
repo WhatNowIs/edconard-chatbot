@@ -4,7 +4,7 @@ import AuthContext from "@/app/context/auth-context";
 import ChatContext, { SettingPanel } from "@/app/context/chat-context";
 import { UserRole } from "@/app/utils/multi-mode-select";
 import { useContext } from "react";
-import { HiBriefcase, HiUserCircle } from "react-icons/hi2";
+import { HiBriefcase, HiUserCircle, HiUserGroup } from "react-icons/hi2";
 
 export default function OtherSettings() {
   const authContext = useContext(AuthContext);
@@ -24,6 +24,8 @@ export default function OtherSettings() {
         return <HiUserCircle className="mr-2" />;
       case SettingPanel.Workspace:
         return <HiBriefcase className="mr-2" />;
+        case SettingPanel.Accounts:
+          return <HiUserGroup className="mr-2" />;
       default:
         return null;
     }

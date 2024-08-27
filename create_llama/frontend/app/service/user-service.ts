@@ -455,6 +455,33 @@ export function getCookie(name: string): string {
   } else return "";
 }
 
+export async function getAllUsers(
+  token: string,
+  options: RequestInit = {},
+): Promise<{ message: string; status: number; data: UserFormType[] }> {
+  const res = await fetch(`${getBackendURL()}/api/auth/accounts/users`, {
+    ...options,
+    headers: {
+      ...options.headers,
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${token}`,
+    },
+  });
+
+  if (!res.ok) {
+    const error = JSON.parse(await res.text());
+    return { message: error.detail, status: 400, data: [] };
+  }
+
+  const response = (await res.json()) as UserFormType[];
+
+  return {
+    message: "Successfully fetched users",
+    status: 200,
+    data: response,
+  };
+}
+
 export async function getUsersNotInWorkspace(
   token: string,
   workspaceId: string,
