@@ -285,7 +285,7 @@ class UserService(Service):
             credential.password = hashed_password
             credential.salt = salt
             credential.updated_at = datetime.utcnow()
-            self.db_session.add(credential)
+            await self.db_session.refresh(credential)
             await self.db_session.commit()
             self.logger.info(f"Password updated successfully for user with email: {user.email}")
             return True, "Password updated successfully"
@@ -294,7 +294,7 @@ class UserService(Service):
         return False, "Failed to update password"
     
     
-    async def deactivate_user(self, user_id: str) -> Tuple[bool, str]:
+    async def deactivate_user(self, user_id: str, block_user: bool) -> Tuple[bool, str]:
         self.logger.info(f"Deactivating user with id: {user_id}")
         # async with self.db_session as session:
         result = await self.db_session.execute(
@@ -304,16 +304,51 @@ class UserService(Service):
         )
         user = result.scalars().first()
         if user:
-            user.status = EntityStatus.Blocked
+            user.status = EntityStatus.Blocked if block_user else EntityStatus.Active
             user.updated_at = datetime.utcnow()
-            self.db_session.add(user)
+
+            await self.db_session.refresh(user)
             await self.db_session.commit()
-            self.logger.info(f"User deactivated successfully")
-            return True
+
+            self.logger.info(f"User (de)activated successfully")
+
+            return block_user, user
         
 
         self.logger.error(f"Failed to deactivated for user with user id: {user_id}")
-        return False
+        return block_user, user
+    
+    
+    
+    async def update_user_role(self, user_id: str, role_name: str) -> Tuple[bool, str]:
+        self.logger.info(f"Updating user role with id: {user_id}")
+        # async with self.db_session as session:
+        
+        role = await self.db_session.execute(
+            select(Role).filter(Role.name == role_name)
+        )
+        role = role.scalar_one_or_none()
+
+        result = await self.db_session.execute(
+            select(User)
+            .options(selectinload(User.role))
+            .filter(User.id == user_id)
+        )
+        user = result.scalars().first()
+        if user:
+            user.role = role
+            user.role_id = role.id
+            user.updated_at = datetime.utcnow()
+
+            await self.db_session.refresh(user)
+            await self.db_session.commit()
+
+            self.logger.info(f"User role updated successfully")
+
+            return user        
+
+        self.logger.error(f"Failed to deactivated for user with user id: {user_id}")
+        return user
     
     async def get_all_users(self, exclude_user_id: str, workspace_id: str) -> List[User]:
         self.logger.info(f"Fetching all users except user with id: {exclude_user_id} and user who are not in workspace id: {workspace_id}")
