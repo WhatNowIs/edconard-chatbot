@@ -241,7 +241,7 @@ export const UserManagementForm = ({
         <div className="flex gap-6">
           <h2 className="mb-2">Current workspace users</h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 gap-6">
           {!isWorkspaceUserFetching ? (
             workspaceUsers.map((workspaceUser) => (
               <UserCard key={workspaceUser.id} user={workspaceUser} />

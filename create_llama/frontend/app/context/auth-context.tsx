@@ -27,9 +27,11 @@ import { getAccessToken } from "../utils/shared";
 
 interface AuthContextType {
   user: UserFormType | null;
+  users: UserFormType[];
   isResearchExploration: boolean | null;
   setIsResearchExploration: Dispatch<SetStateAction<boolean | null>>;
   setUser: Dispatch<SetStateAction<UserFormType | null>>;
+  setUsers: Dispatch<SetStateAction<UserFormType[]>>;
   login: (
     credentials: UserSigninType,
   ) => Promise<{ message: string; user: UserFormType | null }>;
@@ -48,8 +50,8 @@ interface AuthProviderProps {
 }
 
 export const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
-  const router = useRouter();
   const [user, setUser] = useState<UserFormType | null>(null);
+  const [users, setUsers] = useState<UserFormType[]>([]);
   const [isResearchExploration, setIsResearchExploration] = useState<
     boolean | null
   >(null);
@@ -198,6 +200,7 @@ export const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
     <AuthContext.Provider
       value={{
         user,
+        users,
         isResearchExploration,
         setIsResearchExploration,
         setUser,
@@ -206,6 +209,7 @@ export const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
         getChatModeByUser,
         updateChatModeByUser,
         refreshAccessToken,
+        setUsers
       }}
     >
       {children}

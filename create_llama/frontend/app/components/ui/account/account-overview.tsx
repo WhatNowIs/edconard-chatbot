@@ -72,11 +72,47 @@ export default function AccountOverview({
           <div className="mt-2">
             <Input
               type="email"
+              disabled
               autoFocus
               name="message"
               placeholder="Email address"
               className="flex-1"
               value={user?.email}
+            />
+          </div>
+        </div>
+        <div className="col-span-full">
+          <label
+            htmlFor="email"
+            className="block text-sm font-medium leading-6"
+          >
+            Phone Number
+          </label>
+          <div className="mt-2">
+            <Input
+              type="tel"
+              autoFocus
+              name="phone_number"
+              placeholder="Email address"
+              className="flex-1"
+              value={user?.phone_number}
+            />
+          </div>
+        </div>
+        <div className="col-span-full">
+          <label
+            htmlFor="email"
+            className="block text-sm font-medium leading-6"
+          >
+            Account Type
+          </label>
+          <div className="mt-2">
+            <Input
+              autoFocus
+              disabled
+              name="role"
+              className="flex-1"
+              value={user?.role?.name}
             />
           </div>
         </div>
