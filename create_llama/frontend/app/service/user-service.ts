@@ -1,5 +1,6 @@
 import { z } from "zod";
 import { Article } from "../utils/multi-mode-select";
+import { getAccessToken } from "../utils/shared";
 import { getBackendURL, getBaseURL } from "./utils";
 
 export const SUCCESS_MESSAGE = "Account verified successfully";
@@ -530,4 +531,65 @@ export async function getMe(
   const data = (await res.json()) as UserFormType;
 
   return { message: "Successfully fetched user", status: 200, data: data };
+}
+
+interface DeactivateResponse {
+  block_user: boolean;
+  data: UserFormType; // Replace with the appropriate user data type
+}
+
+interface UpdateUserRole {
+  role: string;
+}
+
+export async function deactivateUserAccount(
+  userId: string,
+  blockUser: boolean,
+  options: RequestInit = {},
+): Promise<DeactivateResponse> {
+  const token = getAccessToken();
+  const res = await fetch(
+    `${getBackendURL()}/api/accounts/${userId}/deactivate/${blockUser}`,
+    {
+      ...options,
+      headers: {
+        ...options.headers,
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${token}`,
+      },
+    },
+  );
+
+  if (!res.ok) {
+    const error = await res.json();
+    throw new Error(error.detail);
+  }
+
+  return res.json();
+}
+
+export async function updateUserRole(
+  userId: string,
+  data: UpdateUserRole,
+  options: RequestInit = {},
+): Promise<any> {
+  const token = getAccessToken();
+  // Replace `any` with the appropriate user model type
+  const res = await fetch(`${getBackendURL()}/api/accounts/${userId}/role`, {
+    ...options,
+    method: "PATCH",
+    headers: {
+      ...options.headers,
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${token}`,
+    },
+    body: JSON.stringify(data),
+  });
+
+  if (!res.ok) {
+    const error = await res.json();
+    throw new Error(error.detail);
+  }
+
+  return res.json();
 }
