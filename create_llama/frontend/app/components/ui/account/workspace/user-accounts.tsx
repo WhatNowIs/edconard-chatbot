@@ -41,27 +41,6 @@ export const Accounts = () => {
 
   const { setUsers, users, currentUser, setCurrentUser } = authContext;
 
-  const onSubmitRemove = async (data: UserManagementType) => {
-    try {
-      setIsDeleting(true);
-      // await handleRemoveUser(data);
-      toast({
-        className: cn(
-          "top-0 right-0 flex fixed md:max-w-[420px] md:top-4 md:right-4 text-green-500",
-        ),
-        title: "User removed successfully",
-      });
-      setIsDeleting(false);
-    } catch (error) {
-      toast({
-        className: cn(
-          "top-0 right-0 flex fixed md:max-w-[420px] md:top-4 md:right-4 text-red-500",
-        ),
-        title: "Failed to remove user.",
-      });
-    }
-  };
-
   const UserCard = ({ user }: { user: UserFormType }) => {
     const onUserSelect = (user: UserFormType) => {
       console.log(user);

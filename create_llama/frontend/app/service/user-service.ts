@@ -133,6 +133,14 @@ export async function createUserAccount(
   return { message: "Account created successfully", status: 200, data: result };
 }
 
+interface DeactivateResponse {
+  block_user: boolean;
+  data: UserFormType;
+}
+
+interface UpdateUserRole {
+  role: string;
+}
 interface ErrorResponse {
   user: UserFormType | null;
   message: string;
@@ -533,15 +541,6 @@ export async function getMe(
   return { message: "Successfully fetched user", status: 200, data: data };
 }
 
-interface DeactivateResponse {
-  block_user: boolean;
-  data: UserFormType; // Replace with the appropriate user data type
-}
-
-interface UpdateUserRole {
-  role: string;
-}
-
 export async function deactivateUserAccount(
   userId: string,
   blockUser: boolean,
@@ -549,7 +548,7 @@ export async function deactivateUserAccount(
 ): Promise<DeactivateResponse> {
   const token = getAccessToken();
   const res = await fetch(
-    `${getBackendURL()}/api/accounts/${userId}/deactivate/${blockUser}`,
+    `${getBackendURL()}/api/auth/accounts/${userId}/deactivate/${blockUser}`,
     {
       ...options,
       headers: {
@@ -575,16 +574,19 @@ export async function updateUserRole(
 ): Promise<any> {
   const token = getAccessToken();
   // Replace `any` with the appropriate user model type
-  const res = await fetch(`${getBackendURL()}/api/accounts/${userId}/role`, {
-    ...options,
-    method: "PATCH",
-    headers: {
-      ...options.headers,
-      "Content-Type": "application/json",
-      Authorization: `Bearer ${token}`,
+  const res = await fetch(
+    `${getBackendURL()}/api/auth/accounts/${userId}/role`,
+    {
+      ...options,
+      method: "PATCH",
+      headers: {
+        ...options.headers,
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${token}`,
+      },
+      body: JSON.stringify(data),
     },
-    body: JSON.stringify(data),
-  });
+  );
 
   if (!res.ok) {
     const error = await res.json();
