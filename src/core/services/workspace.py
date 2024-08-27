@@ -99,7 +99,7 @@ class WorkspaceService(Service):
             if user and workspace:
                 workspace.users.remove(user)
                 await self.db_session.commit()
-        self.logger.info(f"Removed user {user_id} from workspace {workspace_id}")
+            self.logger.info(f"Removed user {user_id} from workspace {workspace_id}")
 
     async def add_thread_to_workspace(self, workspace_id: str, thread_id: str) -> None:
         self.logger.info(f"Adding thread {thread_id} to workspace {workspace_id}")
@@ -109,7 +109,7 @@ class WorkspaceService(Service):
             if thread and workspace:
                 workspace.threads.append(thread)
                 await self.db_session.commit()
-        self.logger.info(f"Added thread {thread_id} to workspace {workspace_id}")
+            self.logger.info(f"Added thread {thread_id} to workspace {workspace_id}")
 
     async def remove_thread_from_workspace(self, workspace_id: str, thread_id: str) -> None:
         self.logger.info(f"Removing thread {thread_id} from workspace {workspace_id}")
@@ -119,15 +119,14 @@ class WorkspaceService(Service):
             if thread and workspace:
                 workspace.threads.remove(thread)
                 await self.db_session.commit()
-        self.logger.info(f"Removed thread {thread_id} from workspace {workspace_id}")
+            self.logger.info(f"Removed thread {thread_id} from workspace {workspace_id}")
 
     async def get_all_by_user_id(self, user_id: str) -> List[Workspace]:
         self.logger.info(f"Fetching all workspaces for user {user_id}")
-        async with self.db_session.begin():
-            result = await self.db_session.execute(
-                select(Workspace).join(Workspace.users).filter(User.id == user_id)
-            )
-            workspaces = result.scalars().all()
+        result = await self.db_session.execute(
+            select(Workspace).join(Workspace.users).filter(User.id == user_id)
+        )
+        workspaces = result.scalars().all()
         self.logger.info(f"Fetched {len(workspaces)} workspaces for user {user_id}")
         return workspaces
     
