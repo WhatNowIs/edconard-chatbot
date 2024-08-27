@@ -76,7 +76,7 @@ export const Accounts = () => {
         className: cn(
           "top-0 right-0 flex fixed md:max-w-[420px] md:top-4 md:right-4 text-red-500",
         ),
-        title: "Failed to remove user",
+        title: "Failed to remove user.",
       });
     }
   };

@@ -29,6 +29,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "../../select";
+import { Toaster } from "../../toaster";
 import { useToast } from "../../use-toast";
 
 interface UserManagementFormProps {
@@ -141,7 +142,7 @@ export const UserManagementForm = ({
     if (workspaces.length > 0 && !form.getValues().workspace_id) {
       form.setValue("workspace_id", workspaces[0]?.id as string);
     }
-    if (selectedWorkspace !== null) {
+    if (selectedWorkspace && selectedWorkspace !== null) {
       form.setValue("workspace_id", selectedWorkspace.id);
     }
   }, []);
@@ -266,6 +267,7 @@ export const UserManagementForm = ({
           )}
         </div>
       </div>
+      <Toaster />
     </div>
   );
 };

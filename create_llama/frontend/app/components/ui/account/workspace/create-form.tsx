@@ -10,6 +10,7 @@ import { SubmitButton } from "../../custom/submitButton";
 import { Form, FormControl, FormField, FormItem, FormLabel } from "../../form";
 import { Input } from "../../input";
 import { cn } from "../../lib/utils";
+import { Toaster } from "../../toaster";
 import { useToast } from "../../use-toast";
 
 interface WorkspaceCreationFormProps {
@@ -31,7 +32,8 @@ export const WorkspaceCreationForm = ({
         className: cn(
           "top-0 right-0 flex fixed md:max-w-[420px] md:top-4 md:right-4 text-green-500",
         ),
-        title: "Workspace created successfully",
+        title: "Workspace created.",
+        description: `${data.name} workspace has successfully been created.`,
       });
       form.setValue("name", "");
     } catch (error) {
@@ -39,7 +41,7 @@ export const WorkspaceCreationForm = ({
         className: cn(
           "top-0 right-0 flex fixed md:max-w-[420px] md:top-4 md:right-4 text-red-500",
         ),
-        title: "Failed to create workspace",
+        title: "Failed to create workspace.ss",
       });
     }
   };
@@ -68,6 +70,7 @@ export const WorkspaceCreationForm = ({
           className="flex items-center"
         />
       </form>
+      <Toaster />
     </Form>
   );
 };

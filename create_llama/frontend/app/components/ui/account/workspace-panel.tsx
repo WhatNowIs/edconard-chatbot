@@ -41,7 +41,6 @@ export default function WorkspacePanel({
   const handleCreateWorkspace = async (data: WorkspaceCreate) => {
     try {
       await createWorkspace(data);
-      alert("Workspace created successfully");
       fetchWorkspacesList();
     } catch (error) {
       console.error("Error creating workspace:", error);
@@ -60,7 +59,6 @@ export default function WorkspacePanel({
   const handleAddUser = async (data: UserManagementType) => {
     try {
       await addUserToWorkspace(data.workspace_id, data.user_id);
-      alert("User added successfully");
     } catch (error) {
       console.error("Error adding user:", error);
     }
