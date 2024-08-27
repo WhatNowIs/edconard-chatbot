@@ -1,5 +1,6 @@
 import os
 from typing import List, Optional, Tuple
+from distutils.util import strtobool
 from create_llama.backend.app.utils.helpers import Article
 import jwt
 import json
@@ -121,7 +122,7 @@ class UserService(Service):
         if user and await self.verify_user_password(user.id, password):
             self.logger.info(f"User login successful for email: {email}")
 
-            if user.status == EntityStatus.Active.value:
+            if user.status == EntityStatus.Active:
 
                 token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
                 refresh_token_expires = timedelta(minutes = REFRESH_TOKEN_EXPIRE_MINUTES)
@@ -173,7 +174,7 @@ class UserService(Service):
     async def update_chat_mode(self, user_id: str, is_research_or_exploration: bool, redis_client: Redis) -> None:
         self.logger.info(f"Updating chat mode for user ID: {user_id} to {is_research_or_exploration}")
         # Update the chat mode in Redis without expiration
-        value = int(is_research_or_exploration)
+        value = str(is_research_or_exploration)
         await redis_client.set(f"chat_mode:{user_id}", value=value)
         self.logger.info(f"Chat mode for user ID: {user_id} updated successfully")
 
@@ -238,7 +239,7 @@ class UserService(Service):
         self.logger.info(f"Chat history for user ID: {user_id} retrieved successfully")
         return chat_history
     
-    async def get_chat_mode(self, user_id: str, redis_client: Redis) -> Optional[str]:
+    async def get_chat_mode(self, user_id: str, redis_client: Redis) -> Optional[bool]:
         self.logger.info(f"Retrieving chat mode for user ID: {user_id}")
         # Retrieve the chat mode from Redis
         chat_mode = await redis_client.get(f"chat_mode:{user_id}")
@@ -246,9 +247,9 @@ class UserService(Service):
             self.logger.warning(f"No chat mode found for user ID: {user_id}")
             return None
         else:
-            chat_mode = bool(int(chat_mode))
+            chat_mode = strtobool(chat_mode)
             self.logger.info(f"Chat mode for user ID: {user_id} is {chat_mode}")
-            return chat_mode
+            return bool(chat_mode)
     
     def create_access_token(self, data: dict, expires_delta: timedelta = None, secret_key: str = SECRET_KEY):
         to_encode = data.copy()
@@ -285,8 +286,8 @@ class UserService(Service):
             credential.password = hashed_password
             credential.salt = salt
             credential.updated_at = datetime.utcnow()
-            await self.db_session.refresh(credential)
             await self.db_session.commit()
+            await self.db_session.refresh(credential)
             self.logger.info(f"Password updated successfully for user with email: {user.email}")
             return True, "Password updated successfully"
 
@@ -294,7 +295,7 @@ class UserService(Service):
         return False, "Failed to update password"
     
     
-    async def deactivate_user(self, user_id: str, block_user: bool) -> Tuple[bool, str]:
+    async def deactivate_user(self, user_id: str, block_user: bool) -> Tuple[bool, User]:
         self.logger.info(f"Deactivating user with id: {user_id}")
         # async with self.db_session as session:
         result = await self.db_session.execute(
@@ -307,8 +308,8 @@ class UserService(Service):
             user.status = EntityStatus.Blocked if block_user else EntityStatus.Active
             user.updated_at = datetime.utcnow()
 
-            await self.db_session.refresh(user)
             await self.db_session.commit()
+            await self.db_session.refresh(user)
 
             self.logger.info(f"User (de)activated successfully")
 
@@ -317,8 +318,7 @@ class UserService(Service):
 
         self.logger.error(f"Failed to deactivated for user with user id: {user_id}")
         return block_user, user
-    
-    
+
     
     async def update_user_role(self, user_id: str, role_name: str) -> Tuple[bool, str]:
         self.logger.info(f"Updating user role with id: {user_id}")
@@ -340,8 +340,8 @@ class UserService(Service):
             user.role_id = role.id
             user.updated_at = datetime.utcnow()
 
-            await self.db_session.refresh(user)
             await self.db_session.commit()
+            await self.db_session.refresh(user)
 
             self.logger.info(f"User role updated successfully")
 
