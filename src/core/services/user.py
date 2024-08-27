@@ -5,7 +5,7 @@ import jwt
 import json
 from sqlalchemy.future import select
 from pydantic import parse_obj_as
-from src.core.models.base import Message, Role, User, Credential, UserRole, Workspace
+from src.core.models.base import EntityStatus, Message, Role, User, Credential, UserRole, Workspace
 from sqlalchemy.ext.asyncio import AsyncSession as Session
 from sqlalchemy.orm import selectinload
 from src.core.services.service import Service
@@ -121,45 +121,50 @@ class UserService(Service):
         if user and await self.verify_user_password(user.id, password):
             self.logger.info(f"User login successful for email: {email}")
 
-            token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
-            refresh_token_expires = timedelta(minutes = REFRESH_TOKEN_EXPIRE_MINUTES)
+            if user.status == EntityStatus.Active.value:
 
-            token = self.create_access_token(
-                data = { 
-                    "sub": user.id, 
-                    "email": user.email,
-                    "role": user.role.name
-                }, 
-                expires_delta = token_expires
-            )
+                token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
+                refresh_token_expires = timedelta(minutes = REFRESH_TOKEN_EXPIRE_MINUTES)
 
-            refresh_token = self.create_access_token(
-                data = { 
-                    "sub": user.id, 
-                    "email": user.email
-                }, 
-                expires_delta = refresh_token_expires, 
-                secret_key = REFRESH_SECRET_KEY
-            )
+                token = self.create_access_token(
+                    data = { 
+                        "sub": user.id, 
+                        "email": user.email,
+                        "role": user.role.name
+                    }, 
+                    expires_delta = token_expires
+                )
 
-            await redis_client.setex(
-                f"session:{user.id}", 
-                ACCESS_TOKEN_EXPIRE_MINUTES * 60, 
-                token
-            )
-            await redis_client.setex(
-                f"refresh_session:{user.id}", 
-                REFRESH_TOKEN_EXPIRE_MINUTES * 60, 
-                refresh_token
-            )
-            # Store the chat mode information
-            await redis_client.setex(
-                f"chat_mode:{user.id}", 
-                ACCESS_TOKEN_EXPIRE_MINUTES * 60, 
-                str(is_research_or_exploration)
-            )
+                refresh_token = self.create_access_token(
+                    data = { 
+                        "sub": user.id, 
+                        "email": user.email
+                    }, 
+                    expires_delta = refresh_token_expires, 
+                    secret_key = REFRESH_SECRET_KEY
+                )
 
-            return True, token, refresh_token, user, "Login successfully"
+                await redis_client.setex(
+                    f"session:{user.id}", 
+                    ACCESS_TOKEN_EXPIRE_MINUTES * 60, 
+                    token
+                )
+                await redis_client.setex(
+                    f"refresh_session:{user.id}", 
+                    REFRESH_TOKEN_EXPIRE_MINUTES * 60, 
+                    refresh_token
+                )
+                # Store the chat mode information
+                await redis_client.setex(
+                    f"chat_mode:{user.id}", 
+                    ACCESS_TOKEN_EXPIRE_MINUTES * 60, 
+                    str(is_research_or_exploration)
+                )
+
+                return True, token, refresh_token, user, "Login successfully"
+            else:               
+
+                 False, None, None, None, "Your account is not active please contact the adminitrator to activate your account"
             
         self.logger.warning(f"User login failed for email: {email}")
 
@@ -288,6 +293,28 @@ class UserService(Service):
         self.logger.error(f"Failed to update password for user with email: {user.email}")
         return False, "Failed to update password"
     
+    
+    async def deactivate_user(self, user_id: str) -> Tuple[bool, str]:
+        self.logger.info(f"Deactivating user with id: {user_id}")
+        # async with self.db_session as session:
+        result = await self.db_session.execute(
+            select(User)
+            .options(selectinload(User.role))
+            .filter(User.id == user_id)
+        )
+        user = result.scalars().first()
+        if user:
+            user.status = EntityStatus.Blocked
+            user.updated_at = datetime.utcnow()
+            self.db_session.add(user)
+            await self.db_session.commit()
+            self.logger.info(f"User deactivated successfully")
+            return True
+        
+
+        self.logger.error(f"Failed to deactivated for user with user id: {user_id}")
+        return False
+    
     async def get_all_users(self, exclude_user_id: str, workspace_id: str) -> List[User]:
         self.logger.info(f"Fetching all users except user with id: {exclude_user_id} and user who are not in workspace id: {workspace_id}")
         try:
@@ -305,6 +332,24 @@ class UserService(Service):
         except Exception as e:
             self.logger.error(f"Error fetching users: {e}")
             raise
+
+    
+    async def get_all_users(self, exclude_user_id: str) -> List[User]:
+        self.logger.info(f"Fetching all users except user with id: {exclude_user_id}")
+        try:
+            # Get users that are not in the specified workspace and not the excluded user
+            result = await self.db_session.execute(
+                select(User)
+                .options(selectinload(User.role))
+                .filter(User.id != exclude_user_id)
+            )
+            users = result.scalars().all()
+            self.logger.info(f"Fetched {len(users)} users excluding user id: {exclude_user_id}")
+            return users
+        except Exception as e:
+            self.logger.error(f"Error fetching users: {e}")
+            raise
+
 
     async def get_user(self, user_id: str) -> User:
         self.logger.info(f"Fetching user with id: {user_id}")

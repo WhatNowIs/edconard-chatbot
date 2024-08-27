@@ -94,7 +94,7 @@ async def create_user(
         role = await role_service.get_role_by_name(UserRole.USER.value)
         user_in = User(**data.user_data.dict())
         user_in.role_id = role.id
-        # user_in.role = role
+        user_in.role = role
 
         user = await user_service.create(user_in, data.password)
         workspace = await workspace_service.create_default_workspace_if_not_exists(user)
@@ -449,9 +449,53 @@ async def change_password(
     except Exception as e:
         get_logger().error(f"Error sending email: {e}")
         return {"message": str(e), "status": 400}
+    
+@accounts_router.get("", response_model=List[UserModel])
+async def get_all_users(
+    session: dict = Depends(get_session),
+    user_service: UserService = Depends(get_user_service)
+):
+    # Check if the user is authenticated and has the necessary permissions (optional)
+    if "sub" in session:
+        try:
+            users = await user_service.get_all_users(session['sub'])
+            return [UserModel(**user.to_dict()) for user in users]
+        except Exception as e:
+            get_logger().error(f"Error retrieving users: {e}")
+            raise HTTPException(status_code=500, detail="Internal server error while retrieving users")
+    raise HTTPException(
+        status_code=status.HTTP_401_UNAUTHORIZED,
+        detail="Invalid session",
+        headers={"WWW-Authenticate": "Bearer"},
+    )
+
+    
+@accounts_router.get("{user_id}/deactivate", response_model=bool)
+async def deactivate_user_account(
+    user_id: str,
+    session: dict = Depends(get_session),
+    user_service: UserService = Depends(get_user_service)
+):
+    # Check if the user is authenticated and has the necessary permissions (optional)
+    if "sub" in session:
+        try:
+            if session['role'] == UserRole.SUPER_ADMIN.value:
+                is_deactivated = await user_service.deactivate_user(user_id)
+                return is_deactivated
+            else:
+                return False
+        except Exception as e:
+            get_logger().error(f"Error retrieving users: {e}")
+            raise HTTPException(status_code=500, detail="Internal server error while retrieving users")
+    raise HTTPException(
+        status_code=status.HTTP_401_UNAUTHORIZED,
+        detail="Invalid session",
+        headers={"WWW-Authenticate": "Bearer"},
+    )
+
 
 @accounts_router.get("/users/{workspace_id}", response_model=List[UserModel])
-async def get_all_users(
+async def get_all_workspace_users(
     workspace_id: str,
     session: dict = Depends(get_session),
     user_service: UserService = Depends(get_user_service)
