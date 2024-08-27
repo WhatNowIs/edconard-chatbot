@@ -9,6 +9,7 @@ import { UserRole } from "@/app/utils/multi-mode-select";
 import { useContext } from "react";
 import ChangePasswordForm from "./change-password-form";
 import WorkspacePanel from "./workspace-panel";
+import Accounts from "./workspace/user-accounts";
 
 export default function SettingsPanel({
   users,
@@ -58,8 +59,8 @@ export default function SettingsPanel({
   return (
     <>
       {currentSettingPanel === SettingPanel.Profile && <ProfilePanel />}
-      {/* {currentSettingPanel === SettingPanel.Billing && <ProfilePanel />}
-      {currentSettingPanel === SettingPanel.Reports && <ProfilePanel />} */}
+      {/* {/* {currentSettingPanel === SettingPanel.Billing && <ProfilePanel />} */}
+      {currentSettingPanel === SettingPanel.Accounts && <Accounts />}
       {currentSettingPanel === SettingPanel.Workspace &&
         (user?.role?.name as string) === UserRole.SUPER_ADMIN && (
           <WorkspacePanel workspaceData={workspaces} users={users} />

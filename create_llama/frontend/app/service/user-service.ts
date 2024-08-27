@@ -459,7 +459,7 @@ export async function getAllUsers(
   token: string,
   options: RequestInit = {},
 ): Promise<{ message: string; status: number; data: UserFormType[] }> {
-  const res = await fetch(`${getBackendURL()}/api/auth/accounts/users`, {
+  const res = await fetch(`${getBackendURL()}/api/auth/accounts`, {
     ...options,
     headers: {
       ...options.headers,
