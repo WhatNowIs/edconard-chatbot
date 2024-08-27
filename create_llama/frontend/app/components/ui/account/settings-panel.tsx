@@ -1,7 +1,6 @@
 "use client";
 
 import AccountOverview from "@/app/components/ui/account/account-overview";
-import UpdateProfile from "@/app/components/ui/account/update-profile";
 import AuthContext from "@/app/context/auth-context";
 import ChatContext, { SettingPanel } from "@/app/context/chat-context";
 import { UserFormType } from "@/app/service/user-service";
@@ -35,7 +34,8 @@ export default function SettingsPanel({
     return (
       <>
         <div className="grid w-full grid-cols-1 gap-y-10 px-4 py-16 sm:px-6 md:grid-cols-3 lg:px-8">
-          <UpdateProfile user={userData} />
+          {/* <UpdateProfile user={userData} /> */}
+          <div></div>
           <AccountOverview userData={userData} />
         </div>
 

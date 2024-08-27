@@ -34,7 +34,7 @@ import {
 
 export enum SettingPanel {
   Profile = "Profile",
-  // Billing = "Billing",
+  Accounts = "Accounts",
   // Reports = "Reports",
   Workspace = "Workspaces",
 }
@@ -264,7 +264,7 @@ export const ChatProvider: FC<ChatProviderProps> = ({ children }) => {
         setNonResearchExplorationLLMMessage,
         setMessages,
         setUsers,
-        setWorkspaceUsers
+        setWorkspaceUsers,
       }}
     >
       {children}
