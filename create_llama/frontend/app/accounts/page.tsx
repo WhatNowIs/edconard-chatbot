@@ -16,7 +16,7 @@ import { UserRole } from "../utils/multi-mode-select";
 import { decodeToken } from "../utils/shared";
 
 async function getWorkspaces(token: string, options: RequestInit = {}) {
-  const res = await fetch(`${getBackendURL()}/api/workspaces`, {
+  const res = await fetch(`${getBackendURL()}/api/workspaces/`, {
     ...options,
     headers: {
       ...options.headers,
