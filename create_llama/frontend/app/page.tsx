@@ -9,17 +9,15 @@ import { cookies } from "next/headers";
 import { Suspense } from "react";
 import { ResponseThread } from "./service/thread-service";
 import { UserFormType, getChatMode } from "./service/user-service";
+import { getBackendURL } from "./service/utils";
 import { getAllWorkspaces } from "./service/workspace-service";
 
 async function getThreads(token: string): Promise<ResponseThread[]> {
-  const response = await fetch(
-    `${process.env.NEXT_PUBLIC_BASE_URL}/api/threads`,
-    {
-      headers: {
-        Authorization: `Bearer ${token}`,
-      },
+  const response = await fetch(`${getBackendURL()}/api/threads`, {
+    headers: {
+      Authorization: `Bearer ${token}`,
     },
-  );
+  });
 
   if (!response.ok) {
     return [];
