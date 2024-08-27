@@ -16,7 +16,7 @@ from src.core.services.otp import OTPService
 from src.core.services.user import ACCESS_TOKEN_EXPIRE_MINUTES, REFRESH_SECRET_KEY, UserService
 from src.core.config.postgres import get_db
 from src.core.models.base import OTP, EmailTemplate, EmailType, EntityStatus, OTPGenerator, User, UserRole, get_otp_expiration
-from src.schema import ChangePassword, EmailTypeEnum, RefreshBody, ResetPassword, UpdatePassword, UserCreateModel, UserModel, VerifyOtp
+from src.schema import ChangePassword, DeactivateResponse, EmailTypeEnum, RefreshBody, ResetPassword, UpdatePassword, UpdateUserRole, UserCreateModel, UserModel, VerifyOtp
 from src.utils.encryption import encrypt, to_base64
 from src.utils.logger import get_logger 
 from redis.asyncio.client import Redis
@@ -470,9 +470,10 @@ async def get_all_users(
     )
 
     
-@accounts_router.get("{user_id}/deactivate", response_model=bool)
+@accounts_router.get("{user_id}/deactivate/{block_user}", response_model=DeactivateResponse)
 async def deactivate_user_account(
     user_id: str,
+    block_user: bool,
     session: dict = Depends(get_session),
     user_service: UserService = Depends(get_user_service)
 ):
@@ -480,10 +481,16 @@ async def deactivate_user_account(
     if "sub" in session:
         try:
             if session['role'] == UserRole.SUPER_ADMIN.value:
-                is_deactivated = await user_service.deactivate_user(user_id)
-                return is_deactivated
+                block_user, user = await user_service.deactivate_user(user_id, block_user)
+                return DeactivateResponse(
+                    block_user = block_user,
+                    data = user
+                )
             else:
-                return False
+                return DeactivateResponse(
+                    block_user=block_user,
+                    data = None
+                )
         except Exception as e:
             get_logger().error(f"Error retrieving users: {e}")
             raise HTTPException(status_code=500, detail="Internal server error while retrieving users")
@@ -492,7 +499,32 @@ async def deactivate_user_account(
         detail="Invalid session",
         headers={"WWW-Authenticate": "Bearer"},
     )
-
+    
+@accounts_router.patch("{user_id}/role", response_model=UserModel | None)
+async def update_user_role(
+    user_id: str,
+    data: UpdateUserRole,
+    session: dict = Depends(get_session),
+    user_service: UserService = Depends(get_user_service)
+):
+    # Check if the user is authenticated and has the necessary permissions (optional)
+    if "sub" in session:
+        try:
+            if session['role'] == UserRole.SUPER_ADMIN.value:
+                user = await user_service.update_user_role(user_id, data.role)
+                return user
+            else:
+                return None
+            
+        except Exception as e:
+            get_logger().error(f"Error retrieving users: {e}")
+            raise HTTPException(status_code=500, detail="Internal server error while retrieving users")
+        
+    raise HTTPException(
+        status_code=status.HTTP_401_UNAUTHORIZED,
+        detail="Invalid session",
+        headers={"WWW-Authenticate": "Bearer"},
+    )
 
 @accounts_router.get("/users/{workspace_id}", response_model=List[UserModel])
 async def get_all_workspace_users(
