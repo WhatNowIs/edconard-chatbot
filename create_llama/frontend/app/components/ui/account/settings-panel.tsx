@@ -59,8 +59,8 @@ export default function SettingsPanel({
   return (
     <>
       {currentSettingPanel === SettingPanel.Profile && <ProfilePanel />}
-      {/* {/* {currentSettingPanel === SettingPanel.Billing && <ProfilePanel />} */}
-      {currentSettingPanel === SettingPanel.Accounts && <Accounts />}
+      {currentSettingPanel === SettingPanel.Accounts &&
+        (user?.role?.name as string) === UserRole.SUPER_ADMIN && <Accounts />}
       {currentSettingPanel === SettingPanel.Workspace &&
         (user?.role?.name as string) === UserRole.SUPER_ADMIN && (
           <WorkspacePanel workspaceData={workspaces} users={users} />
