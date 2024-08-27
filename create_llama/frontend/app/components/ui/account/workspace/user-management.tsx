@@ -100,6 +100,7 @@ export const UserManagementForm = ({
         ),
         title: "Failed to remove user",
       });
+      setIsDeleting(false);
     }
   };
 

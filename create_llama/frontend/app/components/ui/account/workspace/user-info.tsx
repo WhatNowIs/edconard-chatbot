@@ -44,29 +44,8 @@ export default function UserInfoForm({ user }: { user: UserFormType | null }) {
   });
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
+  const [isRoleSubmitting, setIsRoleSubmitting] = useState<boolean>(false);
   const authContext = useContext(AuthContext);
-
-  const onSubmit = async (data: any) => {
-    setIsSubmitting(true);
-    try {
-      // Handle form submission logic here
-      console.log("Form data:", data);
-      // Example: Simulate successful submission
-
-      toast({
-        title: "Form submitted successfully",
-        description: "User data has been saved.",
-      });
-    } catch (err) {
-      console.error(err);
-      toast({
-        title: "Failed to submit the form",
-        description: "An error occurred.",
-        className: "text-red-500",
-      });
-    }
-    setIsSubmitting(false);
-  };
 
   useEffect(() => {
     if (user && user !== null) {
@@ -77,10 +56,11 @@ export default function UserInfoForm({ user }: { user: UserFormType | null }) {
       form.setValue("phone_number", user.phone_number);
       form.setValue("status", user.status as string);
     }
-  }, [user]);
+  }, []);
 
   const handleSubmitRole = async (value: UserInfo) => {
     try {
+      setIsRoleSubmitting(true);
       const response = await updateUserRole(user?.id as string, {
         role: value.role,
       });
@@ -103,6 +83,7 @@ export default function UserInfoForm({ user }: { user: UserFormType | null }) {
         title: "Success",
         description: "User role updated successfully",
       });
+      setIsRoleSubmitting(false);
     } catch (error) {
       toast({
         className: cn(
@@ -111,11 +92,13 @@ export default function UserInfoForm({ user }: { user: UserFormType | null }) {
         title: "Failed to update",
         description: "An error has occurred while updating user's role.",
       });
+      setIsRoleSubmitting(false);
     }
   };
 
   const handleSubmitStatus = async (value: UserInfo) => {
     try {
+      setIsSubmitting(true);
       const blockUser = value.status === EntityStatus.Active ? false : true;
       const response = await deactivateUserAccount(
         user?.id as string,
@@ -140,6 +123,7 @@ export default function UserInfoForm({ user }: { user: UserFormType | null }) {
         title: "Success",
         description: "User status updated successfully",
       });
+      setIsSubmitting(false);
     } catch (error) {
       toast({
         className: cn(
@@ -148,16 +132,14 @@ export default function UserInfoForm({ user }: { user: UserFormType | null }) {
         title: "Failed to update",
         description: "An error has occurred while updating user's status.",
       });
+      setIsSubmitting(false);
     }
   };
 
   return (
     <>
       <Form {...form}>
-        <form
-          onSubmit={form.handleSubmit(onSubmit)}
-          className="w-full space-y-4 mb-4 overflow-y-auto px-2"
-        >
+        <div className="w-full space-y-4 mb-4 h-screen overflow-y-auto p-2">
           <FormField
             control={form.control}
             name="first_name"
@@ -237,7 +219,7 @@ export default function UserInfoForm({ user }: { user: UserFormType | null }) {
                     </Select>
                   </FormControl>
                   <SubmitButton
-                    isSubmitting={isSubmitting}
+                    isSubmitting={isRoleSubmitting}
                     text="Update"
                     className="flex items-center"
                   />
@@ -285,7 +267,7 @@ export default function UserInfoForm({ user }: { user: UserFormType | null }) {
             )}
           />
           <Toaster />
-        </form>
+        </div>
       </Form>
     </>
   );
