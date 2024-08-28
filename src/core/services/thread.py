@@ -35,19 +35,20 @@ class ThreadService(Service):
         )
         return result.scalars().all()
     
-    async def get_threads_by_workspace_id(self, workspace_id: str) -> List[Thread]:
+    async def get_threads_by_user_and_workspace(self, user_id: str, workspace_id: str) -> List[Thread]:
         """
-        Fetches all threads by workspace ID.
+        Fetches all threads by user ID and workspace ID.
 
         Args:
+            user_id (str): The ID of the user.
             workspace_id (str): The ID of the workspace.
 
         Returns:
-            List[Thread]: A list of threads associated with the given workspace.
+            List[Thread]: A list of threads associated with the given user and workspace.
         """
-        get_logger().info(f"Fetching threads with workspace id: {workspace_id}")
+        get_logger().info(f"Fetching threads for user id: {user_id} and workspace id: {workspace_id}")
         
         result = await self.db_session.execute(
-            select(Thread).filter(Thread.workspace_id == workspace_id)
+            select(Thread).filter(Thread.user_id == user_id, Thread.workspace_id == workspace_id)
         )
         return result.scalars().all()
