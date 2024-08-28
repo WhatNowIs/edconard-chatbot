@@ -34,3 +34,20 @@ class ThreadService(Service):
             select(Message).filter(Message.thread_id == thread_id, Message.user_id == uid).order_by(asc(Message.timestamp))
         )
         return result.scalars().all()
+    
+    async def get_threads_by_workspace_id(self, workspace_id: str) -> List[Thread]:
+        """
+        Fetches all threads by workspace ID.
+
+        Args:
+            workspace_id (str): The ID of the workspace.
+
+        Returns:
+            List[Thread]: A list of threads associated with the given workspace.
+        """
+        get_logger().info(f"Fetching threads with workspace id: {workspace_id}")
+        
+        result = await self.db_session.execute(
+            select(Thread).filter(Thread.workspace_id == workspace_id)
+        )
+        return result.scalars().all()

@@ -90,6 +90,24 @@ async def get_thread(
         detail="Not authorized to access this thread",
     )
 
+
+@r.get("/workspace/{workspace_id}", response_model=List[ResponseThread])
+async def get_threads_by_workspace_id(
+    thread_id: str, 
+    session: dict = Depends(get_session),
+    thread_service: ThreadService = Depends(get_thread_service)
+):    
+    if "sub" in session:
+        user_id = session["sub"]
+        messages = await thread_service.get_threads_by_workspace_id(uid=user_id, thread_id=thread_id)
+        reponse_messages = [ResponseMessage.model_validate(message) for message in messages]        
+        return reponse_messages
+
+    raise HTTPException(
+        status_code=status.HTTP_401_UNAUTHORIZED,
+        detail="Not authorized to access threads",
+    )
+
 @r.get("/messages/{thread_id}")
 async def get_messages_by_thread_id(
     thread_id: str, 

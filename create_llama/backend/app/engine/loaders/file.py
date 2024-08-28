@@ -1,4 +1,3 @@
-import datetime
 import os
 import logging
 from create_llama.backend.app import csv_to_pdf, macro_roundup_preprocessor, process_blog_articles
@@ -71,7 +70,10 @@ def get_file_documents(config: FileLoaderConfig | CSVLoaderConfig):
             filename_as_id=True,
         )
         if config.use_llama_parse:
-            parser = LlamaParse()
+            parser = LlamaParse(
+                show_progress=True,
+                api_key=os.getenv("LLAMA_CLOUD_API_KEY")
+            )
             reader.file_extractor = {".pdf": parser, ".csv": parser}
 
         return reader.load_data()
@@ -89,4 +91,4 @@ def get_file_documents(config: FileLoaderConfig | CSVLoaderConfig):
             return []
         else:
             # Raise the error if it is not the case of empty data dir
-            raise e
+            raise 

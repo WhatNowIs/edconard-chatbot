@@ -45,6 +45,18 @@ italic_style = ParagraphStyle('Italic', fontSize=12, fontName='Arial-Italic', le
 content_style = ParagraphStyle('Content', fontSize=11, fontName='Arial', leading=14, spaceAfter=10)
 
 
+def clean_string_for_filename(input_string: str) -> str:
+    cleaned_string = re.sub(r'[<>:"/\\|?*\x00-\x1F\']', '_', input_string) 
+    
+    cleaned_string = re.sub(r'[\s_]+', '_', cleaned_string)
+
+    cleaned_string = cleaned_string.strip().strip('.')
+
+    max_length = 255
+    cleaned_string = cleaned_string[:max_length]
+
+    return cleaned_string
+
 def csv_to_pdf(folder_path, output_dir):
     def create_table(df):
         # Create a paragraph style for table cells
@@ -188,49 +200,61 @@ def macro_roundup_preprocessor(input_dir: str, output_dir: str):
 
     for csv_file in csv_files:
         input_file = os.path.join(input_dir, csv_file)
-        output_pdf = os.path.join(output_dir, f"{os.path.splitext(csv_file)[0]}.pdf")
-        output_dirs.append(output_pdf)
         # Read the CSV file
         df = pd.read_csv(input_file)
 
         # Select only the specified columns
         columns_to_extract = [
-            'headline', 'ID', 'permalink', 'tweet_text', 'post_date_and_time', 'post_date', 'post_time',
-            'summary', 'publication_date', 'order_of_appearance', 'weekly_order_of_appearance',
-            'link', 'authors', 'publication', 'comments', 'featured_image_url', 'extended_excerpt',
-            'pdf_file_id', 'pdf_filename', 'pdf_file_url', 'related_articles', 'categories',
-            'primary_category_name', 'primary_category_has_parent', 'primary_category_parent_name',
-            'is_special_edition', 'special_edition_date', 'special_edition_order_of_appearance',
+            'headline', 'permalink', 'tweet_text', 'post_date_and_time',
+            'summary', 'publication_date', 'article_link', 'authors', 'publication', 
+            'comments', 'is_ai_generated_summary', 'featured_image_url', 'extended_excerpt',
+            'pdf_file_url', 'related_articles', 'categories', 'primary_category_name', 'primary_category_has_parent',
+            'primary_category_parent_name', 'importance', 'type_of_information', 'source', 'comparisons', 
+            'education', 'agreement_sentiment', 'political_perspective', 'timelessness', 'trustworthiness', 
             'seo_title', 'meta_description'
         ]
         df = df[columns_to_extract]
 
-        # Create the PDF
-        doc = BaseDocTemplate(output_pdf, pagesize=letter, topMargin=0.5 * inch, bottomMargin=0.5 * inch,
-                              leftMargin=0.5 * inch, rightMargin=0.5 * inch)
-
-        frame = Frame(0.5 * inch, 0.5 * inch, doc.width, doc.height, id='normal')
-        template = PageTemplate(id='macro_roundup', frames=frame, onPage=add_header)
-        doc.addPageTemplates([template])
-        # Create the PDF
-        # doc = SimpleDocTemplate(output_pdf, pagesize=letter, topMargin=0.5*inch, bottomMargin=0.5*inch,
-        #                         leftMargin=0.5*inch, rightMargin=0.5*inch)
-        elements = []
-
-        # Use the CSV filename (without extension) as the title
-        title = os.path.splitext(csv_file)[0]
-        elements.append(Spacer(1, 24))
-        elements.append(Paragraph(title, title_style))
-        elements.append(Spacer(1, 24))
-
         for index, row in df.iterrows():
+            
+            # Create the PDF
+            # doc = SimpleDocTemplate(output_pdf, pagesize=letter, topMargin=0.5*inch, bottomMargin=0.5*inch,
+            #                         leftMargin=0.5*inch, rightMargin=0.5*inch)
+            elements = []
+
+            # Use the CSV filename (without extension) as the title
+            file_name = row['headline']
+            # elements.append(Spacer(1, 24))
+            # elements.append(Paragraph(title, title_style))
+            # elements.append(Spacer(1, 24))
+        
+            output_pdf = os.path.join(output_dir, f"{clean_string_for_filename(file_name)}.pdf")
+            output_dirs.append(output_pdf)
+
+
+            # Create the PDF
+            doc = BaseDocTemplate(output_pdf, pagesize=letter, topMargin=0.5 * inch, bottomMargin=0.5 * inch,
+                                leftMargin=0.5 * inch, rightMargin=0.5 * inch)
+
+            frame = Frame(0.5 * inch, 0.5 * inch, doc.width, doc.height, id='normal')
+            template = PageTemplate(id='macro_roundup', frames=frame, onPage=add_header)
+            doc.addPageTemplates([template])
+
             elements.append(Spacer(1, 24))
-            elements.append(Paragraph(f"Article {index + 1}", heading_style))
+            elements.append(Paragraph(f"Macro Roundup Artcile", heading_style))
             elements.append(Spacer(1, 12))
 
             # Headline and summary
             elements.append(Paragraph(f"<font color='black'>Headline:&nbsp;&nbsp;</font> {str(row['headline'])}", subheading_style))
             elements.append(Spacer(1, 12))
+
+            
+            # Links
+            if pd.notna(row['article_link']):
+                elements.append(Paragraph(f"<b><font name='{all_subheading_style.fontName}' size='{all_subheading_style.fontSize}' color='{all_subheading_style.textColor}'>Article Link:</font></b>"
+                                      f"&nbsp;&nbsp;"
+                                      f"<u><font name='{normal_style.fontName}' size='{normal_style.fontSize}' color='{normal_style.textColor}'><a href=\"{row['article_link']}\">{row['article_link']}</a></font></u>", normal_style))
+                elements.append(Spacer(1, 12))
             
             # Publication details
             pub_details = [
@@ -309,21 +333,21 @@ def macro_roundup_preprocessor(input_dir: str, output_dir: str):
                             f"<font name='{normal_style.fontName}' size='{normal_style.fontSize}' color='{normal_style.textColor}'><a href=\"{row['featured_image_url']}\">{row['featured_image_url']}</a></font>", normal_style))
                 elements.append(Spacer(1, 12))
 
-            # SEO Information
-            elements.append(Paragraph(f"<b><font name='{all_subheading_style.fontName}' size='{all_subheading_style.fontSize}' color='{all_subheading_style.textColor}'>SEO Title:</font></b>"
-                                      f"&nbsp;&nbsp;"
-                                    f"<font name='{normal_style.fontName}' size='{normal_style.fontSize}' color='{normal_style.textColor}'>{row['seo_title']}</font>", normal_style))
-            elements.append(Spacer(1, 12))
+            # # SEO Information
+            # elements.append(Paragraph(f"<b><font name='{all_subheading_style.fontName}' size='{all_subheading_style.fontSize}' color='{all_subheading_style.textColor}'>SEO Title:</font></b>"
+            #                           f"&nbsp;&nbsp;"
+            #                         f"<font name='{normal_style.fontName}' size='{normal_style.fontSize}' color='{normal_style.textColor}'>{row['seo_title']}</font>", normal_style))
+            # elements.append(Spacer(1, 12))
 
-            elements.append(Paragraph(f"<b><font name='{all_subheading_style.fontName}' size='{all_subheading_style.fontSize}' color='{all_subheading_style.textColor}'>Meta Description:</font></b> "
-                                      f"&nbsp;&nbsp;"
-                                    f"<font name='{normal_style.fontName}' size='{normal_style.fontSize}' color='{normal_style.textColor}'>{row['meta_description']}</font>", normal_style))
-            elements.append(Spacer(1, 12))
+            # elements.append(Paragraph(f"<b><font name='{all_subheading_style.fontName}' size='{all_subheading_style.fontSize}' color='{all_subheading_style.textColor}'>Meta Description:</font></b> "
+            #                           f"&nbsp;&nbsp;"
+            #                         f"<font name='{normal_style.fontName}' size='{normal_style.fontSize}' color='{normal_style.textColor}'>{row['meta_description']}</font>", normal_style))
+            # elements.append(Spacer(1, 12))
 
-            elements.append(PageBreak())
+            # elements.append(PageBreak())
 
-        # Build the PDF
-        doc.build(elements)
+            # Build the PDF
+            doc.build(elements)
 
         print(f"PDF created successfully: {output_pdf}")
 
