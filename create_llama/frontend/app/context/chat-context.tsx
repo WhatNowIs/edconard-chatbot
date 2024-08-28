@@ -22,15 +22,12 @@ import {
   useEffect,
   useState,
 } from "react";
-import {
-  UserFormType,
-  getCookie,
-  getMacroRoundupData,
-} from "../service/user-service";
+import { UserFormType, getMacroRoundupData } from "../service/user-service";
 import {
   ResponseWorkspace,
   fetchWorkspaces,
 } from "../service/workspace-service";
+import { getAccessToken } from "../utils/shared";
 
 export enum SettingPanel {
   Profile = "Profile",
@@ -53,7 +50,7 @@ interface ChatContextType {
   nonResearchExplorationLLMMessage: string;
   setSelectedThread: Dispatch<SetStateAction<ResponseThread | null>>;
   setThreads: Dispatch<SetStateAction<ResponseThread[]>>;
-  loadThreads: () => Promise<void>;
+  loadThreads: (workspaceId: string) => Promise<void>;
   loadWorkspaces: (userId: string) => Promise<void>;
   addThread: (data: ThreadCreate) => Promise<ResponseThread | null>;
   editThread: (
@@ -103,9 +100,9 @@ export const ChatProvider: FC<ChatProviderProps> = ({ children }) => {
     setNonResearchExplorationLLMMessage,
   ] = useState<string>("");
 
-  const loadThreads = async () => {
+  const loadThreads = async (workspaceId: string) => {
     try {
-      const fetchedThreads = await fetchThreads();
+      const fetchedThreads = await fetchThreads(workspaceId);
       setThreads(fetchedThreads);
     } catch (error) {
       console.error("Failed to fetch threads:", error);
@@ -137,40 +134,45 @@ export const ChatProvider: FC<ChatProviderProps> = ({ children }) => {
     currentThread && setSelectedThread(currentThread);
     await fetchMessages(thread_id);
   };
+  const fetchUserWorkspaces = async () => {
+    try {
+      await loadThreads(currentWorkspace?.id as string);
+    } catch (error) {
+      console.error("Failed to load threads:", error);
+    }
+  };
+
+  const fetchUserThreads = async () => {
+    try {
+      const [_, savedArticle] = await Promise.all([
+        loadWorkspaces(),
+        getMacroRoundupData(),
+      ]);
+      if (savedArticle !== null) {
+        setArticle(savedArticle as Article);
+      }
+    } catch (error) {
+      console.error("Failed to load threads:", error);
+    }
+  };
 
   useEffect(() => {
-    const token =
-      localStorage.getItem("access_token") || getCookie("access_token");
-    if (token && threads.length === 0) {
-      const fetchUserThreads = async () => {
-        try {
-          const [_, savedArticle] = await Promise.all([
-            loadWorkspaces(),
-            getMacroRoundupData(),
-          ]);
-          if (savedArticle !== null) {
-            setArticle(savedArticle as Article);
-          }
-        } catch (error) {
-          console.error("Failed to load threads:", error);
-        }
-      };
-
+    const token = getAccessToken();
+    if (token && workspaces.length === 0) {
       fetchUserThreads();
     }
 
-    if (token && workspaces.length === 0) {
-      const fetchUserWorkspaces = async () => {
-        try {
-          await loadThreads();
-        } catch (error) {
-          console.error("Failed to load threads:", error);
-        }
-      };
-
+    if (token && currentWorkspace && currentWorkspace !== null) {
       fetchUserWorkspaces().catch((error) => console.log(error));
     }
   }, []);
+
+  useEffect(() => {
+    const token = getAccessToken();
+    if (token && currentWorkspace && currentWorkspace !== null) {
+      fetchUserWorkspaces().catch((error) => console.log(error));
+    }
+  }, [currentWorkspace]);
 
   useEffect(() => {
     const currentThread = threads[
