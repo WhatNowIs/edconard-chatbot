@@ -4,7 +4,6 @@ import AuthContext from "@/app/context/auth-context";
 import ChatContext from "@/app/context/chat-context";
 import { useContext, useState } from "react";
 import { ShevronDown, ShevronUp } from "./icons/main-icons";
-// import { MessageCircle } from "lucide-react";
 
 export default function Workspaces() {
   const [isShevronOpen, setShevronIsOpen] = useState<boolean>(true);
@@ -21,7 +20,7 @@ export default function Workspaces() {
       (workspace) => workspace.id === workspace_Id,
     );
     currentWS && setCurrentWorkspace(currentWS);
-    loadThreads();
+    loadThreads(currentWS?.id as string);
   };
 
   return (

@@ -64,8 +64,8 @@ export async function createThread(
   return res as ResponseThread;
 }
 
-export async function fetchThreads(): Promise<ResponseThread[]> {
-  const res = await fetchWithAuth(baseURL);
+export async function fetchThreads(workspaceId: string): Promise<ResponseThread[]> {
+  const res = await fetchWithAuth(`${baseURL}/workspace/${workspaceId}`);
   return res as ResponseThread[];
 }
 
