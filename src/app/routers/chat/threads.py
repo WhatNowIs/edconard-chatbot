@@ -92,15 +92,15 @@ async def get_thread(
 
 
 @r.get("/workspace/{workspace_id}", response_model=List[ResponseThread])
-async def get_threads_by_workspace_id(
-    thread_id: str, 
+async def get_threads_by_user_and_workspace(
+    workspace_id: str, 
     session: dict = Depends(get_session),
     thread_service: ThreadService = Depends(get_thread_service)
 ):    
     if "sub" in session:
         user_id = session["sub"]
-        messages = await thread_service.get_threads_by_workspace_id(uid=user_id, thread_id=thread_id)
-        reponse_messages = [ResponseMessage.model_validate(message) for message in messages]        
+        messages = await thread_service.get_threads_by_user_and_workspace(user_id=user_id, workspace_id=workspace_id)
+        reponse_messages = [ResponseThread(**message.to_dict()) for message in messages]        
         return reponse_messages
 
     raise HTTPException(

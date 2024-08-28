@@ -21,7 +21,7 @@ def init_topic_engine():
 
 async def get_chat_engine():
     # from src.core.dbconfig.postgres import get_db
-    top_k = int(os.getenv("TOP_K", "3"))
+    top_k = int(os.getenv("TOP_K", "6"))
     system_prompt = os.getenv("SYSTEM_PROMPT")
 
     index = get_index()
