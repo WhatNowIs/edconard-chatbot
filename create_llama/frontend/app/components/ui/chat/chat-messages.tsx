@@ -3,6 +3,7 @@
  * Removed the fixed height of the chat container.
  */
 import AuthContext from "@/app/context/auth-context";
+import { UserRole } from "@/app/utils/multi-mode-select";
 import { Loader2 } from "lucide-react";
 import { useContext, useEffect, useRef } from "react";
 import { v4 as uuidv4 } from "uuid";
@@ -43,7 +44,11 @@ export default function ChatMessages(
 
   return (
     <div className="w-full h-full rounded-xl bg-white p-4 overflow-auto">
-      {authContext && authContext.user && <ChatMode />}
+      {authContext &&
+        authContext.user &&
+        (authContext?.user?.role?.name === UserRole.EDITOR ||
+          authContext?.user?.role?.name === UserRole.SUPER_ADMIN ||
+          authContext?.user?.role?.name === UserRole.ADMIN) && <ChatMode />}
       <div
         className="flex flex-col gap-5 divide-y pb-4"
         ref={scrollableChatContainerRef}
