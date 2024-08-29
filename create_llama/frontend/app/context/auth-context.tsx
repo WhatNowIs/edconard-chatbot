@@ -192,6 +192,9 @@ export const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
         document.cookie = "access_token=; Max-Age=0; path=/;";
         document.cookie = "refresh_token=; Max-Age=0; path=/;";
         setUser(null);
+        setIsResearchExploration(true);
+        setCurrentUser(null)
+        setUsers([]);
       }
     } catch (error) {
       throw error;
