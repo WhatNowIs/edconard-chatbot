@@ -147,15 +147,15 @@ async def startup(
 
     get_logger().info("Successfully populated default email templates and types")
 
-    # delete_all_converted_csv("tmp/converted_csv")
-    # reset_index()
-    # get_logger().info("Successfully upserted data to chromadb")
+    delete_all_converted_csv("tmp/converted_csv")
+    reset_index()
+    get_logger().info("Successfully upserted data to chromadb")
     init_topic_engine()
 
 
 if __name__ == "__main__":
     app_host = os.getenv("APP_HOST", "0.0.0.0")
-    app_port = int(os.getenv("APP_PORT", "8000"))
+    app_port = int(os.getenv("APP_PORT", "8080"))
     reload = environment == "dev"
 
     uvicorn.run(app="main:app", host=app_host, port=app_port, reload=reload)
