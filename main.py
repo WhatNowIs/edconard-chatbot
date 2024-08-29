@@ -147,9 +147,9 @@ async def startup(
 
     get_logger().info("Successfully populated default email templates and types")
 
-    # delete_all_converted_csv("tmp/converted_csv")
-    # reset_index()
-    # get_logger().info("Successfully upserted data to chromadb")
+    delete_all_converted_csv("tmp/converted_csv")
+    reset_index()
+    get_logger().info("Successfully upserted data to chromadb")
     init_topic_engine()
 
 
