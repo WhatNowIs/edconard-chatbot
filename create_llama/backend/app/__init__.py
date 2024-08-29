@@ -16,6 +16,8 @@ from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.lib.colors import HexColor
 from reportlab.lib.pagesizes import letter
 
+from datetime import datetime
+
 # Define the page size and margins
 page_width, page_height = letter
 left_margin = right_margin = inch
@@ -56,6 +58,13 @@ def clean_string_for_filename(input_string: str) -> str:
     cleaned_string = cleaned_string[:max_length]
 
     return cleaned_string
+
+def convert_date_format(date_str):
+    date_obj = datetime.strptime(date_str, '%Y-%m-%d')
+    
+    formatted_date = date_obj.strftime('%B %d, %Y')
+    
+    return formatted_date
 
 def csv_to_pdf(folder_path, output_dir):
     def create_table(df):
@@ -215,18 +224,11 @@ def macro_roundup_preprocessor(input_dir: str, output_dir: str):
         ]
         df = df[columns_to_extract]
 
-        for index, row in df.iterrows():
-            
-            # Create the PDF
-            # doc = SimpleDocTemplate(output_pdf, pagesize=letter, topMargin=0.5*inch, bottomMargin=0.5*inch,
-            #                         leftMargin=0.5*inch, rightMargin=0.5*inch)
+        for index, row in df.iterrows():            
             elements = []
 
             # Use the CSV filename (without extension) as the title
             file_name = row['headline']
-            # elements.append(Spacer(1, 24))
-            # elements.append(Paragraph(title, title_style))
-            # elements.append(Spacer(1, 24))
         
             output_pdf = os.path.join(output_dir, f"{clean_string_for_filename(file_name)}.pdf")
             output_dirs.append(output_pdf)
@@ -260,7 +262,7 @@ def macro_roundup_preprocessor(input_dir: str, output_dir: str):
             pub_details = [
                 ['Author(s)', row['authors']],
                 ['Publication', row['publication']],
-                ['Publication Date', row['publication_date']],
+                ['Publication Date', convert_date_format(str(row['publication_date']).split(" ")[0])],
             ]
             pub_table = Table(pub_details, colWidths=[first_col_width, second_col_width])
             pub_table.setStyle(TableStyle([
@@ -333,19 +335,6 @@ def macro_roundup_preprocessor(input_dir: str, output_dir: str):
                             f"<font name='{normal_style.fontName}' size='{normal_style.fontSize}' color='{normal_style.textColor}'><a href=\"{row['featured_image_url']}\">{row['featured_image_url']}</a></font>", normal_style))
                 elements.append(Spacer(1, 12))
 
-            # # SEO Information
-            # elements.append(Paragraph(f"<b><font name='{all_subheading_style.fontName}' size='{all_subheading_style.fontSize}' color='{all_subheading_style.textColor}'>SEO Title:</font></b>"
-            #                           f"&nbsp;&nbsp;"
-            #                         f"<font name='{normal_style.fontName}' size='{normal_style.fontSize}' color='{normal_style.textColor}'>{row['seo_title']}</font>", normal_style))
-            # elements.append(Spacer(1, 12))
-
-            # elements.append(Paragraph(f"<b><font name='{all_subheading_style.fontName}' size='{all_subheading_style.fontSize}' color='{all_subheading_style.textColor}'>Meta Description:</font></b> "
-            #                           f"&nbsp;&nbsp;"
-            #                         f"<font name='{normal_style.fontName}' size='{normal_style.fontSize}' color='{normal_style.textColor}'>{row['meta_description']}</font>", normal_style))
-            # elements.append(Spacer(1, 12))
-
-            # elements.append(PageBreak())
-
             # Build the PDF
             doc.build(elements)
 
@@ -395,10 +384,6 @@ def process_blog_articles(input_dir: str, output_dir: str):
             'featured_image_url'
         ]
         df = df[columns_to_extract]
-
-        # Create the PDF
-        # doc = SimpleDocTemplate(output_pdf, pagesize=letter, topMargin=0.5*inch, bottomMargin=0.5*inch,
-        #                         leftMargin=0.5*inch, rightMargin=0.5*inch)
         
         doc = BaseDocTemplate(output_pdf, pagesize=letter, topMargin=0.5 * inch, bottomMargin=0.5 * inch,
                               leftMargin=0.5 * inch, rightMargin=0.5 * inch)
