@@ -22,7 +22,7 @@ export const ChatMode = () => {
     return <></>;
   }
 
-  const { isResearchExploration, updateChatModeByUser } = authContext;
+  const { isResearchExploration, updateChatModeByUser, user } = authContext;
 
   const changeChatMode = async (checked: boolean) => {
     const { status, message } = await updateChatModeByUser(checked);
@@ -68,9 +68,10 @@ export const ChatMode = () => {
             className="pr-4 text-xs text-gray-600"
             htmlFor="airplane-mode"
           >
-            {isResearchExploration ? "Research Assistant" : "Editorial Assistant"}
+            {isResearchExploration
+              ? "Research Assistant"
+              : "Editorial Assistant"}
           </SwitchLabel>
-
           <ArticleDialog
             trigger={
               <button type="button" className="hidden" ref={buttonRef}>
@@ -83,7 +84,7 @@ export const ChatMode = () => {
               className="SwitchRoot"
               id="airplane-mode"
               onCheckedChange={changeChatMode}
-              checked={isResearchExploration}
+              checked={isResearchExploration as boolean}
             >
               <SwitchThumb className="SwitchThumb" />
             </Switch>

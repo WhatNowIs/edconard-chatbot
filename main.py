@@ -155,7 +155,7 @@ async def startup(
 
 if __name__ == "__main__":
     app_host = os.getenv("APP_HOST", "0.0.0.0")
-    app_port = int(os.getenv("APP_PORT", "8000"))
+    app_port = int(os.getenv("APP_PORT", "8080"))
     reload = environment == "dev"
 
     uvicorn.run(app="main:app", host=app_host, port=app_port, reload=reload)
