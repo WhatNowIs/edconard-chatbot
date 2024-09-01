@@ -238,7 +238,7 @@ async def verify_otp_code(
             otp.status = EntityStatus.Used
             await otp_service.update(id=otp.id, obj_in=otp)
 
-            if(data.otp_type == EmailTypeEnum.ACCOUNT_VERIFICATION.value):
+            if(data.otp_type.value == EmailTypeEnum.ACCOUNT_VERIFICATION.value):
                 user.status = EntityStatus.Active
                 await user_service.update(id=user.id, obj_in=user)
 

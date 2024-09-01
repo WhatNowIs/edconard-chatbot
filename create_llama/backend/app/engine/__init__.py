@@ -1,7 +1,7 @@
 import os
 from llama_index.core.chat_engine import CondensePlusContextChatEngine
 from llama_index.core.settings import Settings
-from app.engine.index import get_index, get_topic_index
+from create_llama.backend.app.engine.index import get_index, get_topic_index
 from llama_index.core.agent import AgentRunner
 from llama_index.core.tools.query_engine import QueryEngineTool
 

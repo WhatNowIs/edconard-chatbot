@@ -1,7 +1,7 @@
 import logging
 from create_llama.backend.app.engine.loaders import get_csv_documents
 from llama_index.core.indices import VectorStoreIndex
-from app.engine.vectordb import get_vector_store
+from create_llama.backend.app.engine.vectordb import get_vector_store
 from llama_index.core.settings import Settings
 from llama_index.core import ServiceContext
 

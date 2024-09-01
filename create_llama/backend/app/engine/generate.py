@@ -12,9 +12,9 @@ from llama_index.core.ingestion import IngestionPipeline
 from llama_index.core.node_parser import SentenceSplitter
 from llama_index.core.storage.docstore import SimpleDocumentStore
 from llama_index.core.storage import StorageContext
-from app.settings import init_settings
-from app.engine.loaders import get_documents
-from app.engine.vectordb import get_vector_store
+from create_llama.backend.app.settings import init_settings
+from create_llama.backend.app.engine.loaders import get_documents
+from create_llama.backend.app.engine.vectordb import get_vector_store
 
 
 logging.basicConfig(level=logging.INFO)

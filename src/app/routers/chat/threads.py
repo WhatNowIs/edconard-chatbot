@@ -24,6 +24,7 @@ async def create_thread(
         thread = Thread(
             user_id = user_id,
             title = data.title,
+	    workspace_id = data.workspace_id
         )
         created_thread = await thread_service.create(thread)   
 
