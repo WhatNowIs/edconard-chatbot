@@ -12,4 +12,4 @@ node_modules/
 # create_llama/
 ollama/
 
-!config/*
+!config/*storage/chromadb/chroma.sqlite3
