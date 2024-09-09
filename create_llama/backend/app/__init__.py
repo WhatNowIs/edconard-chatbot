@@ -192,6 +192,44 @@ def clean_html(html_string: str) -> str:
     
     return cleaned_html
 
+def extract_related_article(summary: str):
+    if "Related:" in str(summary):
+        parts = str(summary).split("Related:")
+        modified_summary = parts[0]
+        related_article = parts[1]
+        
+        return modified_summary, related_article
+    
+    return str(summary), None
+
+from bs4 import BeautifulSoup
+
+
+def keep_only_anchor_tags(html_string: str) -> str:
+    """
+    Removes all HTML tags except <a> tags and their content from a given HTML string.
+    Also removes unsupported attributes like 'title' from <a> tags.
+
+    Args:
+    html_string (str): The HTML string to be cleaned.
+
+    Returns:
+    str: The cleaned HTML string with only <a> tags remaining and unsupported attributes removed.
+    """
+    # Parse the HTML content
+    soup = BeautifulSoup(html_string, "html.parser")
+
+    for tag in soup.find_all(True):
+        if tag.name != "a":
+            tag.unwrap()
+        else:
+            for attr in list(tag.attrs):
+                if attr not in ['href']: 
+                    del tag[attr]
+
+    cleaned_html = str(soup)
+    return cleaned_html
+
 def macro_roundup_preprocessor(input_dir: str, output_dir: str):
     if not os.path.isdir(input_dir):
         return []
@@ -224,7 +262,7 @@ def macro_roundup_preprocessor(input_dir: str, output_dir: str):
         ]
         df = df[columns_to_extract]
 
-        for index, row in df.iterrows():            
+        for _, row in df.iterrows():            
             elements = []
 
             # Use the CSV filename (without extension) as the title
@@ -243,7 +281,7 @@ def macro_roundup_preprocessor(input_dir: str, output_dir: str):
             doc.addPageTemplates([template])
 
             elements.append(Spacer(1, 24))
-            elements.append(Paragraph(f"Macro Roundup Artcile", heading_style))
+            elements.append(Paragraph(f"Macro Roundup Article", heading_style))
             elements.append(Spacer(1, 12))
 
             # Headline and summary
@@ -287,19 +325,23 @@ def macro_roundup_preprocessor(input_dir: str, output_dir: str):
             elements.append(Spacer(1, 12))
 
             # Article Summary
-            summary = clean_html(str(row['summary']))
+            extrated_summary, extracted_related_articles = extract_related_article(row['summary'])
+            summary = clean_html(str(extrated_summary))
             elements.append(Paragraph(f"<b><font name='{all_subheading_style.fontName}' size='{all_subheading_style.fontSize}' color='{all_subheading_style.textColor}'>Summary:</font></b>"
                                       f"&nbsp;&nbsp;"
                                       f"<font name='{normal_style.fontName}' size='{normal_style.fontSize}' color='{normal_style.textColor}'>{summary}</font>", normal_style))
             elements.append(Spacer(1, 12))
+
+            related_article_data = extracted_related_articles if extracted_related_articles != None else str(row['related_articles'])
             # Related Articles
-            if pd.notna(row['related_articles']):
-                related_articles = re.sub(r'\s*style="font-weight:\s*400;"\s*', '', str(row['related_articles']))
+            if pd.notna(related_article_data) and related_article_data.strip():
+                related_articles = keep_only_anchor_tags(related_article_data)
                 elements.append(Paragraph(f"<b><font name='{all_subheading_style.fontName}' size='{all_subheading_style.fontSize}' color='{all_subheading_style.textColor}'>Related Articles:</font></b>"
                                       f"&nbsp;&nbsp;"
                             f"<font name='{normal_style.fontName}' size='{normal_style.fontSize}' color='{normal_style.textColor}'>{related_articles}</font>", normal_style))
                 
                 elements.append(Spacer(1, 12))
+            
 
             # Topics
 
