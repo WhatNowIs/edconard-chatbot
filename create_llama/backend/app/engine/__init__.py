@@ -2,8 +2,8 @@ import os
 from llama_index.core.chat_engine import CondensePlusContextChatEngine
 from llama_index.core.settings import Settings
 from app.engine.index import get_index, get_topic_index
-from llama_index.core.agent import AgentRunner
-from llama_index.core.tools.query_engine import QueryEngineTool
+# from llama_index.core.agent import AgentRunner
+# from llama_index.core.tools.query_engine import QueryEngineTool
 
 from pydantic import BaseModel
 
@@ -21,7 +21,7 @@ def init_topic_engine():
 
 async def get_chat_engine():
     # from src.core.dbconfig.postgres import get_db
-    top_k = int(os.getenv("TOP_K", "6"))
+    top_k = int(os.getenv("TOP_K", "4"))
     system_prompt = os.getenv("SYSTEM_PROMPT")
 
     index = get_index()
@@ -30,7 +30,7 @@ async def get_chat_engine():
     
     # if in_research_or_exploration_modality:
     return CondensePlusContextChatEngine.from_defaults(
-        retriever=index.as_query_engine(similarity_top_k=top_k),
+        retriever=index.as_retriever(similarity_top_k=top_k),
         system_prompt=system_prompt,
         llm=Settings.llm
     )

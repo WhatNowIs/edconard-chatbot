@@ -173,13 +173,8 @@ async def chat_thread(
 
     if "sub" in session:
         user_id = session["sub"]
-        # chat_mode = await user_service.get_chat_mode(user_id, redis_client)
-        
-        # in_research_or_exploration_modality = chat_mode == True
 
         messages_tmp: List[Message] = await thread_service.get_messages_by_thread_id(thread_id=thread_id, uid=user_id)
-        # article = await user_service.get_article(user_id=user_id, redis_client=redis_client)
-        # update_chat_history_task = asyncio.create_task(user_service.update_chat_history(user_id, messages_tmp, redis_client))
             
         new_message = Message(
             thread_id=thread_id,
@@ -187,18 +182,9 @@ async def chat_thread(
             role=MessageRole.USER.value,
             content=last_message_content
         )
-
-        create_message_task = asyncio.create_task(message_service.create(new_message))
         
         # Await the tasks to ensure they complete
-        await asyncio.gather(create_message_task)
-
-        # if not in_research_or_exploration_modality:
-        #     async def content_generator():
-        #         async for chunk in cri_chatbot(input=last_message_content, article=article, messages_tmp=messages_tmp):
-        #             yield chunk
-
-        #     return VercelStreamResponse(content=content_generator())
+        await message_service.create(new_message)
 
         chat_engine = await get_chat_engine()
     
