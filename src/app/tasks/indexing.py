@@ -23,20 +23,36 @@ def reset_index():
         # Todo: Consider using other method to clear the vector store data
         chroma_path = os.getenv("CHROMA_PATH")
         collection_name = os.getenv("CHROMA_COLLECTION", "default")
+        collection_img_name = os.getenv("CHROMA_IMG_COLLECTION", "image_collection")
         chroma_client = PersistentClient(path=chroma_path)
+
         if chroma_client.get_or_create_collection(collection_name):
             logger.info(f"Removing collection {collection_name}")
             chroma_client.delete_collection(collection_name)
 
+        if chroma_client.get_or_create_collection(collection_img_name):
+            logger.info(f"Removing collection {collection_img_name}")
+            chroma_client.delete_collection(collection_img_name)
+
     def reset_index_qdrant():
         from create_llama.backend.app.engine.vectordbs.qdrant import get_vector_store
 
-        store = get_vector_store()
+        store, image_store = get_vector_store()
+        # Delete previously created store
         store.client.delete_collection(
             store.collection_name,
         )
+        image_store.client.delete_collection(
+            image_store.collection_name,
+        )
+
+        # # Recreate new stores for images and for texts
         store._create_collection(
             collection_name=store.collection_name,
+            vector_size=int(os.getenv("EMBEDDING_DIM", 1536)),
+        )
+        image_store._create_collection(
+            collection_name=image_store.collection_name,
             vector_size=int(os.getenv("EMBEDDING_DIM", 1536)),
         )
 

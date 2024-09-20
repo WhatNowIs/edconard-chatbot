@@ -2,7 +2,6 @@ import os
 import logging
 from typing import List
 from pydantic import BaseModel, validator
-from llama_index.core.indices.vector_store import VectorStoreIndex
 
 logger = logging.getLogger(__name__)
 

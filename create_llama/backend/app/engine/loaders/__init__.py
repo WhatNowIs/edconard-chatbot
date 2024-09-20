@@ -1,7 +1,7 @@
 import os
 import yaml
 import logging
-from app.engine.loaders.file import CSVLoaderConfig, FileLoaderConfig, get_file_documents
+from app.engine.loaders.file import CSVLoaderConfig, FileLoaderConfig, ImageLoaderConfig, get_file_documents
 from app.engine.loaders.web import WebLoaderConfig, get_web_documents
 from app.engine.loaders.db import DBLoaderConfig, get_db_documents
 

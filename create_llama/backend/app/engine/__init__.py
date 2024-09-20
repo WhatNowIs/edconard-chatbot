@@ -1,48 +1,60 @@
 import os
+# from typing import List
 from llama_index.core.chat_engine import CondensePlusContextChatEngine
+from llama_index.core.base.base_multi_modal_retriever import MultiModalRetriever
 from llama_index.core.settings import Settings
-from app.engine.index import get_index, get_topic_index
-# from llama_index.core.agent import AgentRunner
+from app.engine.index import get_index
+# import llama_index
+# from llama_index.postprocessor.cohere_rerank.base import CohereRerank
+from llama_index.core.agent import AgentRunner
 # from llama_index.core.tools.query_engine import QueryEngineTool
-
-from pydantic import BaseModel
-
-class FnSchema(BaseModel):
-    user_id: str
-    input: str
-
-def init_topic_engine():
-    index = get_topic_index(data_dir="tmp/csv/topics")
-
-    topic_query_engine = index.as_query_engine(similarity_top_k=3)
-    topic_retriever = index.as_retriever(top_k=3)
-    return (topic_query_engine, topic_retriever)
-
+from llama_index.core.tools.retriever_tool import RetrieverTool
 
 async def get_chat_engine():
-    # from src.core.dbconfig.postgres import get_db
     top_k = int(os.getenv("TOP_K", "4"))
-    system_prompt = os.getenv("SYSTEM_PROMPT")
+    # system_prompt = os.getenv("SYSTEM_PROMPT")
+    
 
     index = get_index()
     if index is None:
         raise RuntimeError("Index is not found")
+    # retrivever_tool = RetrieverTool.from_defaults(
+    #     retriever=index.as_retriever(similarity_top_k=top_k, image_similarity_top_k=top_k),
+    # )
+
+    # # # return index.as_retriever(similarity_top_k=top_k, image_similarity_top_k=top_k, use_async=True)
+
+    # return AgentRunner.from_llm(
+    #     llm=Settings.llm,
+    #     tools=[retrivever_tool],
+    #     system_prompt=system_prompt,
+    #     verbose=True, 
+    # )
+
+    # cohere_rerank = CohereRerank(api_key=os.getenv("COHERE_API_KEY"), top_n=4, model="rerank-multilingual-v3.0")
+
+    # Settings.llm.system_prompt = system_prompt
+
+    return index.as_retriever(similarity_top_k=top_k, image_similarity_top_k=top_k)
     
-    # if in_research_or_exploration_modality:
-    return CondensePlusContextChatEngine.from_defaults(
-        retriever=index.as_retriever(similarity_top_k=top_k),
-        system_prompt=system_prompt,
-        llm=Settings.llm
-    )
-    # else:
+    # return CondensePlusContextChatEngine.from_defaults(
+    #     retriever=index.as_retriever(similarity_top_k=top_k, image_similarity_top_k=top_k),
+    #     system_prompt=system_prompt,
+    #     llm=Settings.llm,
+    #     verbose=True
+    #     # node_postprocessors=[cohere_rerank]
+    # )
+
+    # chat_engine = OpenAIAgent.from_tools(
+    #     tools=[query_engine_tool], # type: ignore
+    #     llm=Settings.llm,
+    #     verbose=True,
+    #     system_prompt=system_prompt,
+    #     callback_manager=Settings.callback_manager,
+    #     max_function_calls=3,
+    # )
+    
+    # return chat_engine
+
+    # # else:
     #     # Add the query engine tool to the list of tools
-    #     query_engine_tool = QueryEngineTool.from_defaults(
-    #         query_engine=index.as_query_engine(similarity_top_k=top_k),
-    #     )
-    #     tools.append(query_engine_tool)
-    #     return AgentRunner.from_llm(
-    #         llm=Settings.llm,
-    #         tools=tools,
-    #         system_prompt=system_prompt,
-    #         verbose=True,  # Show agent logs to console
-    #     )

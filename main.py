@@ -1,10 +1,9 @@
 import os
 import shutil
-from create_llama.backend.app.engine import init_topic_engine
 from src.app.tasks.indexing import index_all, reset_index
-from src.core.models.base import EntityStatus, User, UserRole
+from src.core.models.base import EntityStatus, User
 from src.core.services.role import RoleService, setup_roles
-from src.core.services.user import UserService, create_default_super_admin_account
+from src.core.services.user import UserService
 from src.core.services.workspace import WorkspaceService
 import uvicorn
 from fastapi import FastAPI
@@ -30,6 +29,8 @@ load_dotenv(
     dotenv_path=ENV_FILE_PATH,
 )
 
+init_settings()
+
 app = FastAPI(
     title="Edconrad Chatboat",
     description="Edconrad Chatboat is an AI RAG chatbot.",
@@ -40,7 +41,6 @@ app = FastAPI(
     swagger_ui_parameters={"defaultModelsExpandDepth": -1},
 )
 
-init_settings()
 
 environment = os.getenv("ENVIRONMENT")
 
@@ -147,10 +147,10 @@ async def startup(
 
     get_logger().info("Successfully populated default email templates and types")
 
-    # delete_all_converted_csv("tmp/converted_csv")
-    # reset_index()
-    # get_logger().info("Successfully upserted data to chromadb")
-    init_topic_engine()
+    if os.getenv("REFRESH_EMBEDDING", "False").lower() == "true":
+        # delete_all_converted_csv("tmp/converted_csv")
+        reset_index()
+        get_logger().info("Successfully upserted data to chromadb")
 
 
 if __name__ == "__main__":

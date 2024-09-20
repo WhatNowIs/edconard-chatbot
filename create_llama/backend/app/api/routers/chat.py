@@ -1,5 +1,3 @@
-import asyncio
-from create_llama.backend.app.engine.tools.chains import cri_chatbot
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 from typing import List, Any, Optional, Dict, Tuple
@@ -186,72 +184,77 @@ async def chat_thread(
         # Await the tasks to ensure they complete
         await message_service.create(new_message)
 
-        chat_engine = await get_chat_engine()
-    
         messages = [ChatMessage(content=message.content, role=MessageRole.USER if str(message.role) == "user" else MessageRole.ASSISTANT) for message in messages_tmp]
-
-        event_handler = EventCallbackHandler()
-        chat_engine.callback_manager.handlers.append(event_handler)
-        response = await chat_engine.astream_chat(last_message_content, messages)
         
-        tmp_message_container = [""]
-        sources = []
-        events = []
+        chat_engine = await get_chat_engine()
 
-        async def content_generator():
-            # Yield the text response
-            async def _text_generator():
-                async for token in response.async_response_gen():
-                    msg = VercelStreamResponse.convert_text(token)
-                    tmp_message_container[0] += token
+        response = await chat_engine.aretrieve(last_message_content)
 
-                    yield msg
-                    # yield VercelStreamResponse.convert_text(token)
-                # the text_generator is the leading stream, once it's finished, also finish the event stream
-                event_handler.is_done = True
+        print(response)
 
-
-            # Yield the events from the event handler
-            async def _event_generator():
-                async for event in event_handler.async_event_gen():
-                    event_response = event.to_response()
-                    if event_response is not None:
-                        events.append(event_response)
-
-                        yield VercelStreamResponse.convert_data(event_response)
-
-            combine = stream.merge(_text_generator(), _event_generator())
-            async with combine.stream() as streamer:
-                async for item in streamer:
-                    if await request.is_disconnected():
-                        break
-                    yield item
-
-            source = {
-                "type": "sources",
-                "data": {
-                    "nodes": [
-                        _SourceNodes.from_source_node(node).dict()
-                        for node in response.source_nodes
-                    ]
-                },
-            }
-
-            sources.append(source)
-            # Yield the source nodes
-            yield VercelStreamResponse.convert_data(source)
+        # event_handler = EventCallbackHandler()
+        # chat_engine.callback_manager.handlers.append(event_handler)
         
-            if event_handler.is_done:
-                new_message = Message(
-                    thread_id=thread_id,
-                    user_id=user_id,
-                    role=MessageRole.ASSISTANT.value,
-                    content=tmp_message_container[0],
-                    annotations=events + sources
-                )
-                await message_service.create(new_message)
+        # response = await chat_engine.astream_chat(last_message_content, messages)
+        
+        # tmp_message_container = [""]
+        # sources = []
+        # events = []
 
-        return VercelStreamResponse(content=content_generator())
+        # async def content_generator():
+        #     # Yield the text response
+        #     async def _text_generator():
+        #         async for token in response.async_response_gen():
+        #             msg = VercelStreamResponse.convert_text(token)
+        #             tmp_message_container[0] += token
+
+        #             yield msg
+        #             # yield VercelStreamResponse.convert_text(token)
+        #         # the text_generator is the leading stream, once it's finished, also finish the event stream
+        #         event_handler.is_done = True
+
+
+        #     # Yield the events from the event handler
+        #     async def _event_generator():
+        #         async for event in event_handler.async_event_gen():
+        #             event_response = event.to_response()
+        #             if event_response is not None:
+        #                 events.append(event_response)
+
+        #                 yield VercelStreamResponse.convert_data(event_response)
+
+        #     combine = stream.merge(_text_generator(), _event_generator())
+        #     async with combine.stream() as streamer:
+        #         async for item in streamer:
+        #             if await request.is_disconnected():
+        #                 break
+        #             yield item
+
+        #     source = {
+        #         "type": "sources",
+        #         "data": {
+        #             "nodes": [
+        #                 _SourceNodes.from_source_node(node).dict()
+        #                 for node in response.source_nodes
+        #             ]
+        #         },
+        #     }
+
+        #     sources.append(source)
+        #     # Yield the source nodes
+        #     yield VercelStreamResponse.convert_data(source)
+        
+        #     if event_handler.is_done:
+        #         new_message = Message(
+        #             thread_id=thread_id,
+        #             user_id=user_id,
+        #             role=MessageRole.ASSISTANT.value,
+        #             content=tmp_message_container[0],
+        #             annotations=events + sources
+        #         )
+        #         await message_service.create(new_message)
+
+        # return VercelStreamResponse(content=content_generator())
     
     raise HTTPException(
         status_code=status.HTTP_401_UNAUTHORIZED,
