@@ -35,9 +35,10 @@ def init_ollama():
 
 
 def init_openai():
-    from llama_index.llms.openai import OpenAI
+    # from llama_index.llms.openai import OpenAI
+    from llama_index.core.constants import DEFAULT_TEMPERATURE    
+    from llama_index.multi_modal_llms.openai import OpenAIMultiModal
     from llama_index.embeddings.openai import OpenAIEmbedding
-    from llama_index.core.constants import DEFAULT_TEMPERATURE
 
     max_tokens = os.getenv("LLM_MAX_TOKENS")
     config = {
@@ -45,7 +46,10 @@ def init_openai():
         "temperature": float(os.getenv("LLM_TEMPERATURE", DEFAULT_TEMPERATURE)),
         "max_tokens": int(max_tokens) if max_tokens is not None else None,
     }
-    Settings.llm = OpenAI(**config)
+    
+    Settings.llm = OpenAIMultiModal(**config)
+
+    # Settings.llm = OpenAI(**config)
 
     dimensions = os.getenv("EMBEDDING_DIM")
     config = {

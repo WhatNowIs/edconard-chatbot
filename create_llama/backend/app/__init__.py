@@ -1,22 +1,27 @@
+from io import BytesIO
 import os
 import re
 import shutil
+from urllib.parse import urlparse
 from bs4 import BeautifulSoup
 import pandas as pd
 from reportlab.lib import colors
 from reportlab.lib.pagesizes import letter, landscape
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
-from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, PageBreak, TableStyle, BaseDocTemplate, PageTemplate, Frame, KeepTogether
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, PageBreak, TableStyle, BaseDocTemplate, PageTemplate, Frame, Image, KeepTogether
 from reportlab.lib.units import inch
 from reportlab.platypus import SimpleDocTemplate, Table
 from reportlab.pdfbase import pdfmetrics
-from html import unescape
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.lib.colors import HexColor
 from reportlab.lib.pagesizes import letter
 
+
 from datetime import datetime
+
+import requests
+from src.utils.logger import get_logger
 
 # Define the page size and margins
 page_width, page_height = letter
@@ -230,6 +235,34 @@ def keep_only_anchor_tags(html_string: str) -> str:
     cleaned_html = str(soup)
     return cleaned_html
 
+
+def create_image_folder_and_download_image(featured_image_url: str, folder_name: str):
+    
+    main_folder = "images"
+    os.makedirs(main_folder, exist_ok=True)
+    
+    # Create a subfolder with the cleaned headline name
+    sub_folder = os.path.join(main_folder, folder_name)
+    os.makedirs(sub_folder, exist_ok=True)
+    
+    parsed_url = urlparse(featured_image_url)
+    image_name = os.path.basename(parsed_url.path)
+    
+    output_image_path = os.path.join(sub_folder, image_name)
+    
+    try:
+        response = requests.get(featured_image_url, stream=True)
+        response.raise_for_status()
+        
+        with open(output_image_path, 'wb') as file:
+            for chunk in response.iter_content(1024):
+                file.write(chunk)
+                
+        print(f"Image successfully downloaded and saved to: {output_image_path}")
+    except Exception as e:
+        print(f"Error downloading image: {e}")
+
+
 def macro_roundup_preprocessor(input_dir: str, output_dir: str):
     if not os.path.isdir(input_dir):
         return []
@@ -262,9 +295,14 @@ def macro_roundup_preprocessor(input_dir: str, output_dir: str):
         ]
         df = df[columns_to_extract]
 
-        for _, row in df.iterrows():            
-            elements = []
+        # i = 0
 
+        images_data = []
+
+        for _, row in df.iterrows():     
+
+            # if i < 10:       
+            elements = []
             # Use the CSV filename (without extension) as the title
             file_name = row['headline']
         
@@ -292,8 +330,8 @@ def macro_roundup_preprocessor(input_dir: str, output_dir: str):
             # Links
             if pd.notna(row['article_link']):
                 elements.append(Paragraph(f"<b><font name='{all_subheading_style.fontName}' size='{all_subheading_style.fontSize}' color='{all_subheading_style.textColor}'>Article Link:</font></b>"
-                                      f"&nbsp;&nbsp;"
-                                      f"<u><font name='{normal_style.fontName}' size='{normal_style.fontSize}' color='{normal_style.textColor}'><a href=\"{row['article_link']}\">{row['article_link']}</a></font></u>", normal_style))
+                                    f"&nbsp;&nbsp;"
+                                    f"<u><font name='{normal_style.fontName}' size='{normal_style.fontSize}' color='{normal_style.textColor}'><a href=\"{row['article_link']}\">{row['article_link']}</a></font></u>", normal_style))
                 elements.append(Spacer(1, 12))
             
             # Publication details
@@ -328,8 +366,8 @@ def macro_roundup_preprocessor(input_dir: str, output_dir: str):
             extrated_summary, extracted_related_articles = extract_related_article(row['summary'])
             summary = clean_html(str(extrated_summary))
             elements.append(Paragraph(f"<b><font name='{all_subheading_style.fontName}' size='{all_subheading_style.fontSize}' color='{all_subheading_style.textColor}'>Summary:</font></b>"
-                                      f"&nbsp;&nbsp;"
-                                      f"<font name='{normal_style.fontName}' size='{normal_style.fontSize}' color='{normal_style.textColor}'>{summary}</font>", normal_style))
+                                    f"&nbsp;&nbsp;"
+                                    f"<font name='{normal_style.fontName}' size='{normal_style.fontSize}' color='{normal_style.textColor}'>{summary}</font>", normal_style))
             elements.append(Spacer(1, 12))
 
             related_article_data = extracted_related_articles if extracted_related_articles != None else str(row['related_articles'])
@@ -337,7 +375,7 @@ def macro_roundup_preprocessor(input_dir: str, output_dir: str):
             if pd.notna(related_article_data) and related_article_data.strip():
                 related_articles = keep_only_anchor_tags(related_article_data)
                 elements.append(Paragraph(f"<b><font name='{all_subheading_style.fontName}' size='{all_subheading_style.fontSize}' color='{all_subheading_style.textColor}'>Related Articles:</font></b>"
-                                      f"&nbsp;&nbsp;"
+                                    f"&nbsp;&nbsp;"
                             f"<font name='{normal_style.fontName}' size='{normal_style.fontSize}' color='{normal_style.textColor}'>{related_articles}</font>", normal_style))
                 
                 elements.append(Spacer(1, 12))
@@ -347,42 +385,59 @@ def macro_roundup_preprocessor(input_dir: str, output_dir: str):
 
             if pd.notna(row['primary_category_name']):
                 elements.append(Paragraph(f"<b><font name='{all_subheading_style.fontName}' size='{all_subheading_style.fontSize}' color='{all_subheading_style.textColor}'>Primary Topic:</font></b>"
-                                      f"&nbsp;&nbsp;"
+                                    f"&nbsp;&nbsp;"
                             f"<font name='{normal_style.fontName}' size='{normal_style.fontSize}' color='{normal_style.textColor}'>{row['primary_category_name']}</font>", normal_style))
                 elements.append(Spacer(1, 12))
 
             if pd.notna(row['categories']):
                 elements.append(Paragraph(f"<b><font name='{all_subheading_style.fontName}' size='{all_subheading_style.fontSize}' color='{all_subheading_style.textColor}'>Topics:</font></b>"
-                                      f"&nbsp;&nbsp;"
+                                    f"&nbsp;&nbsp;"
                                         f"<font name='{normal_style.fontName}' size='{normal_style.fontSize}' color='{normal_style.textColor}'>{row['categories']}</font>", normal_style))
                 elements.append(Spacer(1, 12))
 
             if pd.notna(row['pdf_file_url']):
                 elements.append(Paragraph(f"<b><font name='{all_subheading_style.fontName}' size='{all_subheading_style.fontSize}' color='{all_subheading_style.textColor}'>PDF File URL:</font></b>"
-                                      f"&nbsp;&nbsp;"
+                                    f"&nbsp;&nbsp;"
                                         f"<u><font name='{normal_style.fontName}' size='{normal_style.fontSize}' color='{normal_style.textColor}'><a href=\"{row['pdf_file_url']}\">'{row['pdf_file_url']}</a></font></u>", normal_style))
                 elements.append(Spacer(1, 12))
 
             # Links
             if pd.notna(row['permalink']):
                 elements.append(Paragraph(f"<b><font name='{all_subheading_style.fontName}' size='{all_subheading_style.fontSize}' color='{all_subheading_style.textColor}'>Permalink:</font></b>"
-                                      f"&nbsp;&nbsp;"
-                                      f"<u><font name='{normal_style.fontName}' size='{normal_style.fontSize}' color='{normal_style.textColor}'><a href=\"{row['permalink']}\">{row['permalink']}</a></font></u>", normal_style))
+                                    f"&nbsp;&nbsp;"
+                                    f"<u><font name='{normal_style.fontName}' size='{normal_style.fontSize}' color='{normal_style.textColor}'><a href=\"{row['permalink']}\">{row['permalink']}</a></font></u>", normal_style))
                 elements.append(Spacer(1, 12))
 
             if pd.notna(row['featured_image_url']):
-            # Featured Image
+                # Featured Image
                 elements.append(Paragraph(f"<b><font name='{all_subheading_style.fontName}' size='{all_subheading_style.fontSize}' color='{all_subheading_style.textColor}'>Featured Image Link:</font></b>"
-                                      f"&nbsp;&nbsp;"
+                                    f"&nbsp;&nbsp;"
                             f"<font name='{normal_style.fontName}' size='{normal_style.fontSize}' color='{normal_style.textColor}'><a href=\"{row['featured_image_url']}\">{row['featured_image_url']}</a></font>", normal_style))
                 elements.append(Spacer(1, 12))
 
+                try:
+                    
+                    folder_name = clean_string_for_filename(row['headline'])
+                    # Download and store featured image in the images folder
+                    create_image_folder_and_download_image(row['featured_image_url'], folder_name)
+                    
+                    images_data.append({
+                        "featured_image_url": row['featured_image_url'], 
+                        "folder_name": folder_name,
+                    })
+                
+                except Exception as e:
+                    print(f"Error downloading image: {e}")
+
+
+
             # Build the PDF
             doc.build(elements)
+            # i = i + 1
 
-        print(f"PDF created successfully: {output_pdf}")
+        get_logger().info(f"PDF created successfully: {output_pdf}")
 
-        return output_dirs
+        return output_dirs, images_data
 
 def remove_html_tags(text):
     """
