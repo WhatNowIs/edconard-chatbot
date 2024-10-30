@@ -1,0 +1,10 @@
+**Summary: Argentina's Economic Stagnation**
+
+The chart and accompanying information highlight Argentina's economic performance from 1993 to mid-2023, focusing on the stagnation observed since 2011. Key points include:
+
+1. **Stagnation Since 2011**: Real economic output has plateaued over the past decade.
+2. **Long-Term Annual Growth**: From mid-1998 to mid-2023, GDP per person grew at an average annual rate of just 0.3%.
+3. **Data Representation**: The chart shows both GDP (blue line) and GDP per capita (red line), using 2011 as the base year (2011 = 100).
+4. **Population Growth Consideration**: The minimal growth in GDP per person suggests that population increases have diluted economic gains.
+
+The sources of data are from the OECD, International Monetary Fund, and calculations by Matthew Klein.

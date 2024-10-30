@@ -1,0 +1,19 @@
+The image presents data on the big cities in the United States that have experienced the largest year-to-date declines in homicides for the years 2023-2024. Below is a summary of the information extracted:
+
+1. **Boston:** -82%
+2. **Columbus, Ohio:** -58%
+3. **San Antonio:** -50%
+4. **San Diego:** -48%
+5. **Nashville, Tenn.:** -44%
+6. **Cleveland:** -43%
+7. **Austin, Texas:** -42%
+8. **Las Vegas:** -40%
+9. **New Orleans:** -39%
+10. **Phoenix:** -38%
+11. **Jacksonville, Fla.:** -37%
+12. **Milwaukee:** -36%
+13. **Philadelphia:** -35%
+14. **Pittsburgh:** -35%
+15. **Detroit:** -32%
+
+The percentage values represent the reduction in homicides from the previous year to the current year (up to the dates ranged from March 31 to April 12, specific to each city). The sources of the data include AH Datalytics and local police departments.

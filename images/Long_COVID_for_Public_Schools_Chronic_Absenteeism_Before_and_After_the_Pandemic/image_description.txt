@@ -1,0 +1,35 @@
+The figure illustrates changes in chronic absenteeism rates across various district types from 2019 to 2022. Key points and trends observed are as follows:
+
+1. **Achievement Levels**:
+   - **Low Achievement**: Increased from 17% in 2019 to 26% in 2022.
+   - **Middle Achievement**: Increased from 10% in 2019 to 22% in 2022.
+   - **High Achievement**: Increased from 11% in 2019 to 17% in 2022.
+
+2. **Poverty Levels**:
+   - **Low Poverty**: Increased from 11% in 2019 to 15% in 2022.
+   - **Middle Poverty**: Increased from 11% in 2019 to 24% in 2022.
+   - **High Poverty**: Increased from 18% in 2019 to 29% in 2022.
+
+3. **Minority Percentage**:
+   - **Low Minority**: Increased from 12% in 2019 to 17% in 2022.
+   - **Middle Minority**: Increased from 11% in 2019 to 22% in 2022.
+   - **High Minority**: Increased from 14% in 2019 to 36% in 2022.
+
+4. **Remoteness**:
+   - **Most Remote**: Increased from 13% in 2019 to 21% in 2022.
+   - **Middle Remote**: Increased from 12% in 2019 to 25% in 2022.
+   - **Least Remote**: Increased from 11% in 2019 to 22% in 2022.
+
+5. **Single-Parent Percentage**:
+   - **Lowest**: Increased from 14% in 2019 to 22% in 2022.
+   - **Middle**: Increased from 11% in 2019 to 20% in 2022.
+   - **Highest**: Increased from 15% in 2019 to 30% in 2022.
+
+6. **District Size**:
+   - **Small Districts**: Increased from 11% in 2019 to 18% in 2022.
+   - **Midsize Districts**: Increased from 12% in 2019 to 21% in 2022.
+   - **Large Districts**: Increased from 14% in 2019 to 27% in 2022.
+
+Overall, there is a significant increase in chronic absenteeism rates from 2019 to 2022 across all district types. The highest increases are observed in high minority percentage districts (22% increase) and high poverty districts (11% increase).
+
+**Source**: American Enterprise Institute's "Return to Learn Tracker: Chronic Absenteeism: 2017-2023" report, January 2024. Data includes student-weighted rates for districts with information for both years.

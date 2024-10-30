@@ -1,0 +1,10 @@
+The image displays a line graph titled "Figure 6: New Leases Signed," which represents the total square footage of leases signed annually (6-month moving average), measured in millions, over time. The x-axis shows the execution date ranging from 2015 to 2022, while the y-axis presents the square footage, ranging from 50 to 250 million square feet.
+
+Key observations:
+1. From 2015 to around 2018, the total square footage of leases signed annually remained relatively stable, fluctuating between roughly 230 to 270 million square feet.
+2. A noticeable decline started around late 2018.
+3. The decline became more pronounced in 2020, coinciding with the onset of the COVID-19 pandemic.
+4. By 2021, the square footage of new leases signed significantly dropped, reaching a level below 50 million square feet by 2022.
+
+Summary:
+The graph shows that the total square footage of leases signed annually was consistently above 230 million square feet from 2015 to late 2018 but began to decline afterward. This decline accelerated significantly from 2020 onwards, sharply reducing the annual square footage to below 50 million by 2022. This trend indicates a considerable reduction in new lease signings over the observed period, especially during and after the initial impact of the COVID-19 pandemic.

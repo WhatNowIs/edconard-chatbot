@@ -1,0 +1,7 @@
+This chart illustrates Huawei's global smartphone market share from 2019 to a forecast for 2023. The data, sourced from Counterpoint Research and excluding the Honor brand, shows the following trend:
+
+1. In 2019, Huawei held approximately 10% of the global smartphone market share.
+2. A sharp decline occurred from 2019 to 2020, reducing Huawei's market share to nearly 2%.
+3. From 2020 onward, the market share stabilized at around 2% until a slight upward trend is projected for 2023.
+
+Overall, the chart highlights a dramatic decrease in Huawei's market share between 2019 and 2020, followed by a period of stabilization and a minor recovery forecasted in 2023.

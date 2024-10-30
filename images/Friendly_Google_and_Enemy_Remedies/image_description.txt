@@ -1,0 +1,18 @@
+This diagram illustrates the cyclical relationships between Suppliers, Google, and Users, emphasizing Google’s role as an intermediary. 
+
+1. **Suppliers**:
+   - Provide information to Google.
+   - Receive traffic directed from Google in exchange.
+
+2. **Google**:
+   - Acts as a hub for data received from suppliers.
+   - Delivers this data to users in the form of search results.
+
+3. **Users**:
+   - Interact with Google by generating clicks through search queries.
+   - Provide data back to Google through their search behaviors and selections.
+
+This creates a feedback loop where:
+- Suppliers supply data to Google, which is then used to attract user traffic.
+- Users interact with Google's search results, generating data that Google uses to refine future results.
+- This cycle leads to a continuous exchange of information, traffic, and data among the three entities.

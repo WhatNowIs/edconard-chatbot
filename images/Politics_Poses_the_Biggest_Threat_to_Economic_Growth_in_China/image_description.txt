@@ -1,0 +1,26 @@
+The line graph illustrates the share of global exports by four major economies from the year 2000 to 2023: China, the United States (US), the European Union (EU), and Japan. The percentage share of global exports for each economy is tracked over time.
+
+### Key observations:
+
+1. **China**:
+   - In 2000, China had a relatively low share of global exports, below 5%.
+   - This share increased steadily and significantly over the years, surpassing the US around 2006.
+   - China's share peaked close to 20% around 2021.
+   - Recently, the growth rate has leveled off, indicating a slowdown in the rise.
+
+2. **United States**:
+   - In 2000, the US held a share slightly above 15%.
+   - The share has generally trended downward, hitting a low point around the mid-2010s.
+   - Since then, the share has stabilized, hovering around 10% in recent years.
+
+3. **European Union (EU)**:
+   - The EU started with a share close to 20% in 2000.
+   - This percentage has seen gradual declines over time.
+   - Recently, the EU's share has decreased more sharply, settling around 12% by late 2022 and 2023.
+
+4. **Japan**:
+   - Japan had a share of approximately 10% in 2000.
+   - This share has consistently declined over time.
+   - By 2023, Japan's share of global exports is around 5%.
+
+In summary, the graph highlights the significant rise of China's share in global exports up until around 2021, after which the rapid increase has slowed. Conversely, the shares of the US, EU, and Japan have experienced either stabilization (US) or gradual decline (EU and Japan) over the same period.

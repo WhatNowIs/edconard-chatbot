@@ -1,0 +1,23 @@
+The image presents two bar graphs that illustrate the mean visits per month for new patients at Medicaid-averse and non-Medicaid-averse physicians. The two graphs are differentiated by the type of care provided: E&M Primary Care and E&M Specialist Care. The analysis spans an event time period from -12 to +12 months.
+
+### Primary Care New-Patient Visits (Top Graph):
+- **Time Axis**: Event time from -12 to +12 months.
+- **Y-Axis**: Mean visits, ranging approximately from 0 to 0.020.
+- **Medicaid-Averse (Pink Bars)**: Represents visits to providers who do not bill Medicaid.
+- **Non-Medicaid-Averse (Blue Bars)**: Represents visits to providers who see at least one new Medicaid patient in the year.
+- **Trend**: From -12 to -3 months, visits are relatively stable and low. From -2 months onward, there is a marked increase in visits to both Medicaid-averse and non-Medicaid-averse providers, peaking near the event time 0 to 1 months, with non-Medicaid-averse providers generally having higher mean visits.
+
+### Specialist New-Patient Visits (Bottom Graph):
+- **Time Axis**: Event time from -12 to +12 months.
+- **Y-Axis**: Mean visits, ranging approximately from 0 to 0.06.
+- **Medicaid-Averse (Pink Bars)**: Represents visits to providers who do not bill Medicaid.
+- **Non-Medicaid-Averse (Blue Bars)**: Represents visits to providers who see at least one new Medicaid patient in the year.
+- **Trend**: Visits remain relatively constant until closer to the event time. A clear increase is observed from -2 months to 5 months, peaking around 0 to 3 months where the visits to Medicaid-averse and non-Medicaid-averse providers are more prominent, subsequently stabilizing but at a higher level compared to pre-event time.
+
+### Note:
+- The pink portion of the bars indicates Medicaid-averse visits.
+- The blue portion indicates visits to non-Medicaid-averse providers.
+- The dashed horizontal line represents an average baseline for pre-event periods.
+
+### Summary:
+Both primary care and specialist care providers experience an increase in new-patient visits around the event time 0, with a more pronounced increase in visits to non-Medicaid-averse (blue bars) providers compared to Medicaid-averse (pink bars) providers. This trend is particularly evident in the period spanning from a few months before to several months after the event, suggesting changes in patient behavior or provider capacity around this critical time.

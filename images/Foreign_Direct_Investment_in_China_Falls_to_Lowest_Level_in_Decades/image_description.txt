@@ -1,0 +1,13 @@
+The image depicts a graph illustrating the trend in China's inbound foreign direct investment (FDI) over the past three decades. The key points are:
+
+1. **Time Span**: The data spans from approximately 1990 to 2023.
+2. **Measurement**: The FDI is measured in billions of dollars ($bn).
+3. **Trend**:
+   - There was a gradual increase in FDI from 1990 until about 2005.
+   - Between 2005 and 2015, there are noticeable fluctuations, with peaks and troughs, indicating varying levels of investment in those years.
+   - A significant increase is observed around 2015, peaking just before 2020.
+   - Post-2020, the FDI sharply declines.
+4. **2023 Data**: In 2023, the FDI level plummeted to $33 billion, marking the lowest level in 30 years.
+5. **Source**: The data is sourced from the State Administration of Foreign Exchange.
+
+**Conclusion**: The graph suggests that China's inbound foreign direct investment has significantly dropped to its lowest in three decades, implying potential economic or policy changes impacting investor confidence.

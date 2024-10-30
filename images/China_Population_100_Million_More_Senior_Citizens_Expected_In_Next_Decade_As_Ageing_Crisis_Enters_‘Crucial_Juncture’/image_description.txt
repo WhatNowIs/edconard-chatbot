@@ -1,0 +1,17 @@
+The image displays a line graph illustrating the growth of China's population aged over 65 from 1982 to 2022. The data is measured in millions.
+
+Key points of the summary:
+
+1. **Trend Overview**: There has been a consistent and significant increase in the elderly population (aged over 65) in China over the past four decades.
+   
+2. **1982**: Starting at around 60 million, the elderly population begins to grow gradually.
+
+3. **2002**: By this year, the population aged over 65 reaches approximately 100 million.
+
+4. **2022**: The elderly population continues to rise, reaching above 200 million.
+
+5. **Growth Pattern**: The increase is relatively steady in the initial years and becomes more pronounced after the mid-1990s.
+
+6. **Source**: The data is sourced from the National Bureau of Statistics and the graph is created with Datawrapper.
+
+This graph underscores the rapid aging of China's population, which has implications for social, economic, and healthcare planning in the country.

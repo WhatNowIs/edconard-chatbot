@@ -1,0 +1,11 @@
+The chart displays the relationship between the Bloomberg United States Financial Conditions Index and the Federal Funds target rate from March 2021 to April 2024. Key takeaways include:
+
+1. **Federal Funds Target Rate**: The blue line chart depicts the Federal Funds target rate, which remained relatively stable until March 2022. Since then, there has been a consistent increase, rising from near zero to approximately 5.5% by early 2024.
+   
+2. **Financial Conditions Index**: The green line representing the Bloomberg United States Financial Conditions Index shows fluctuations over the same period. The index was generally positive before March 2022 but saw significant volatility with both rising and falling points subsequent to the rate hike initiation in March 2022.
+   
+3. **Correlation Analysis**:
+   - Before the Fed started raising rates, financial conditions were relatively stable, oscillating around 0.5.
+   - After March 2022, when the Fed began tightening, financial conditions showed increased volatility but overall trended upwards. This suggests that financial conditions have eased somewhat despite the Fed's efforts to increase rates.
+
+4. **Summary**: Financial conditions have been significantly easier even as the Federal Reserve has increased interest rates since March 2022. Despite the rising rates aiming to tighten financial conditions, the financial environment has maintained an easing trend, indicating resilient or adaptable financial markets.

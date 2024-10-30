@@ -1,0 +1,19 @@
+The image presents two graphs titled "Labor Force Participation Rates." Here's the summary of the information provided:
+
+### Left Graph: Overall Labor Force Participation Rate (1940-1948)
+- This graph shows the labor force participation rate for individuals aged 14 and over, including armed forces, from 1940 to 1948.
+- The rate is shown as a percentage on the y-axis ranging from 56% to 64%.
+- A noticeable increase in the labor force participation rate is observed from 1940, peaking around 1944-1945 at approximately 64%. 
+- After 1945, the participation rate sharply declines, returning to around 59% by the end of the period.
+
+### Right Graph: Labor Force Participation Rate by Sex (Difference from 1940 Average)
+- This graph compares the differences in labor force participation rates for males and females from the 1940 average, between the years 1940 and 1948.
+- Separate lines are utilized for males (blue) and females (purple).
+- For males, a small increase is noted after 1940, reaching a peak around 1944-1945, before a sharp decline returning to below the 1940 average post-1945.
+- For females, the participation rate sees a significant increase starting in 1941, peaking sharply in mid-1944, and then declining after 1945 but still remaining above the 1940 average.
+- The vertical dashed red line indicates an important point around 1945 when both male and female participation rates experience significant changes.
+
+### Note
+- Data is based on the Census Current Population Reports and is seasonally adjusted.
+
+The graphs illustrate significant changes in labor force participation during World War II, with a marked rise in employment, particularly among women, followed by a post-war decline.

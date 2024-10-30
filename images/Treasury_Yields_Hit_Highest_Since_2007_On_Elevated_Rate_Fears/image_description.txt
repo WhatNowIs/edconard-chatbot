@@ -1,0 +1,18 @@
+This graph illustrates the multi-decade peaks in US 10-year yields, comparing the US 10-year nominal yield with the US 10-year inflation-adjusted yield over a period from 2007 to 2023. 
+
+Key points:
+
+1. **US 10-year Nominal Yield (Black Line)**:
+   - It experienced a general decline from 2007 till around 2012.
+   - From 2012 onwards, there were fluctuations with notable peaks and troughs.
+   - A significant increase is observed from 2020, reaching new heights in 2023, nearing 4-5%.
+
+2. **US 10-year Inflation-Adjusted Yield (Red Line)**:
+   - This yield also shows a downward trend from 2007 to around 2012.
+   - It has been relatively more stable compared to the nominal yield but noticeable increases are observed from 2020, especially a sharp rise around 2022-2023, reaching approximately 2%.
+
+3. **General Observation**:
+   - Both the nominal and inflation-adjusted yields reflect significant fluctuations linked to economic conditions.
+   - Recent surges in both yields from 2020 onwards could indicate rising inflation expectations and/or changes in monetary policy.
+
+The data is sourced from Bloomberg, showing a comprehensive view of yield trends over the past decade and a half.

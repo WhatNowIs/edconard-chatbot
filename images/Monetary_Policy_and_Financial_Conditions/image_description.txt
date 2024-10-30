@@ -1,0 +1,20 @@
+The image illustrates Figure 1 titled "Financial conditions indexes over time."
+
+The chart plots four financial conditions indexes:
+1. Bloomberg (blue line)
+2. Goldman Sachs (yellow line)
+3. Board FCI-G (red line)
+4. Chicago Fed (green line)
+
+The index values range from -3.5 to 1.5, covering the period from November 1, 2021, to December 31, 2023.
+
+Key observations:
+- The Bloomberg and Goldman Sachs indexes show high volatility with noticeable peaks and troughs throughout the sample period.
+- The Board FCI-G index has a more stable upward-to-downward trend.
+- The Chicago Fed index remains relatively steady and closely centered around zero for most of the period.
+
+Note details:
+- The Bloomberg and Goldman Sachs series are reported daily.
+- The Chicago Fed index is weekly, while the Board's FCI-G is monthly.
+- For comparability, the Bloomberg FCI was inverted (multiplied by -1) and 100 points were subtracted from the Goldman Sachs FCI.
+- The time frame covered by the data is November 1, 2021, to December 31, 2023.

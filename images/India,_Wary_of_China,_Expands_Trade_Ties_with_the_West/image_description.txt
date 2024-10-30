@@ -1,0 +1,19 @@
+The bar chart from the World Trade Organization illustrates the simple average of most-favored nation tariff rates for various countries in the years 2014 and 2021. Here's a summary of the key points:
+
+1. **India**: Displays an increase in tariff rates from around 13% in 2014 to about 17% in 2021, making it the country with the highest tariff rates in 2021 among the listed countries.
+
+2. **Bangladesh**: Shows high but stable tariff rates, remaining consistent at around 14% from 2014 to 2021.
+
+3. **Thailand and Pakistan**: Both maintain relatively high tariff rates close to each other, with Thailand around 10% and Pakistan a bit higher at around 11% in 2021.
+
+4. **Vietnam**: Experiences a slight increase in average tariff rates from approximately 4.5% in 2014 to 6% in 2021.
+
+5. **Indonesia**: Displays a significant increase from just under 5% in 2014 to around 8% in 2021.
+
+6. **China**: Shows a modest increase from about 9% in 2014 to just over 9% in 2021.
+
+7. **Philippines**: Maintains stable rates, marginally increasing from around 5% in 2014 to slightly above 5% in 2021.
+
+8. **Malaysia**: Shows steady and relatively low tariff rates at around 5%, with a slight decrease from 2014 to 2021.
+
+Overall, the 2021 data reveals India as the most protectionist among the listed countries with the highest tariff rates, followed closely by Bangladesh, Pakistan, and Thailand. Noteworthy increases in protectionism are observed in Indonesia and Vietnam, while Malaysia and the Philippines show stability with low tariff rates.

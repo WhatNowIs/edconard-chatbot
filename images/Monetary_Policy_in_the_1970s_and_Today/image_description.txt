@@ -1,0 +1,8 @@
+The chart compares the Real Federal Funds Rate during two distinct periods: the 1970s (June 1971 to June 1984) and the period from January 2019 to January 2024.
+
+- **Real Fed Funds Rate 1970s (represented in orange, upper x-axis):** This rate shows notable volatility. It begins slightly above 0% in 1971, peaks around 1975, plunges into negative territory multiple times, and then sees steep increases around early 1980, peaking above 10%. After this peak, the rate stabilizes somewhat but remains higher than its early 1970s levels by the mid-1980s.
+  
+- **Real Fed Funds Rate today (represented in blue, lower x-axis):** The rate starts just above 0% in January 2019 and trends downward, dipping into negative territory by January 2020. It continues to decline, reaching near -6% by January 2022. Beginning in early 2022, it starts to climb back towards 0%, and by January 2023, it rises sharply and stabilizes around 2-4%.
+
+**Summary:**
+The chart highlights the fluctuations in the Real Fed Funds Rate during two different eras. The 1970s witnessed significant volatility, with high peaks and deep troughs particularly around the early 1980s. In contrast, the recent rate from 2019 to 2024 mostly trends negatively before sharply increasing in early 2023. The data underscores both periods' economic challenges and central banks' reactive measures. The source of this data is St. Louis FRED and J. Rangvid.

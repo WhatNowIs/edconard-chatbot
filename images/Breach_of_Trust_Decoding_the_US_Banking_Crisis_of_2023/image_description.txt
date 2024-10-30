@@ -1,0 +1,34 @@
+The image presents two analyses: a bar graph showing the percentage change in market capitalization for various deciles of bank deposit growth from 2017 to 2022, and a table summarizing the overall changes for the lowest and highest growth deciles.
+
+**Key Observations from the Bar Graph:**
+1. **Bottom Decile (Lowest Growth)**
+   - % Change in Market Cap: -4.42%
+2. **2nd Decile**
+   - % Change in Market Cap: -21.98%
+3. **3rd Decile**
+   - % Change in Market Cap: -13.55%
+4. **4th Decile**
+   - % Change in Market Cap: -1.64%
+5. **5th Decile**
+   - % Change in Market Cap: -19.12%
+6. **6th Decile**
+   - % Change in Market Cap: -13.46%
+7. **7th Decile**
+   - % Change in Market Cap: -19.22%
+8. **8th Decile**
+   - % Change in Market Cap: -21.92%
+9. **9th Decile**
+   - % Change in Market Cap: -39.10%
+10. **Top Decile (Highest Growth)**
+    - % Change in Market Cap: -27.98%
+
+**Summary from the Table:**
+- **Lowest Growth Deciles (1-5)**
+  - Change in $ Market Cap: -$106,578
+  - % Change in Market Cap: -8.06%
+- **Highest Growth Deciles (6-10)**
+  - Change in $ Market Cap: -$104,100
+  - % Change in Market Cap: -28.28%
+
+**Summary:**
+The graph and table illustrate that banks with the highest deposit growth from 2017 to 2022 saw more significant declines in their market capitalization in 2023 compared to those with lower deposit growth. Specifically, the lowest growth deciles (1-5) experienced a market cap decline of 8.06%, whereas the highest growth deciles (6-10) saw a steep decline of 28.28%. The most profound drop in market cap percentage was observed in the 9th decile (-39.10%) and the top decile (-27.98%), indicating a negative correlation between deposit growth and market cap performance in 2023.

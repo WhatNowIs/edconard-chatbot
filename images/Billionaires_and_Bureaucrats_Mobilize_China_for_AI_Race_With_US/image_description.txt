@@ -1,0 +1,19 @@
+The image presents data comparing the aggregate size of AI deals between the US and China from 2020 to 2023, sourced from Preqin. Here's a summary of the key information:
+
+1. **2020:**
+   - US: $46.6 billion
+   - China: $15.8 billion
+
+2. **2021:**
+   - US: $108.2 billion
+   - China: $29.3 billion
+
+3. **2022:**
+   - US: $51.1 billion
+   - China: $14.7 billion
+
+4. **2023 (up to June 14):**
+   - US: $26.6 billion
+   - China: $4.0 billion
+
+The data indicates that while both the US and China have invested significantly in AI, the US has continuously outpaced China in terms of deal size each year from 2020 through 2023.

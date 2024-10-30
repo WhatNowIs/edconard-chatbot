@@ -1,0 +1,9 @@
+The chart illustrates the weight of the "Mag7" (presumably a collection of seven significant companies) in the S&P 500 index from January 1, 2013, to 2023. The vertical axis represents the weight percentage, ranging from 5% to 30%.
+
+Key observations:
+
+1. **Steady Increase (2013-2020)**: The Mag7's weight in the S&P 500 shows a consistent upward trend from around 8% in 2013 to approximately 25% in early 2020.
+2. **Sharp Increase (2020-2021)**: There is a steep rise during the COVID-19 pandemic, with the weight peaking at close to 30% around mid-2021.
+3. **Volatility (2021-2023)**: Post-2021, the weight fluctuates significantly but remains in the 25-30% range.
+
+In summary, the Mag7's influence within the S&P 500 has grown considerably over the last decade, particularly surging during the pandemic, indicating their increasing dominance in the market index. The source of the data is Datastream via Refinitiv and J. Rangvid.

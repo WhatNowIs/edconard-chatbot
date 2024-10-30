@@ -1,0 +1,13 @@
+The image is a line graph comparing the number of patents filed by two groups over a span of ten years, five years before and five years after a migration event. The two groups are "Migrants" and a "Matched Group Who Did Not Immigrate."
+
+Key points from the graph:
+
+1. **Time Period**: The x-axis represents the number of years relative to migration, ranging from -5 to 5.
+2. **Number of Patents**: The y-axis shows the number of patents, ranging from 1.5 to 3.5.
+3. **Group Comparisons**:
+   - **Migrants (Blue Line)**: The number of patents remains around 2 from -5 to the year of migration. Post-migration, there is a noticeable upward trend in the number of patents, peaking at around 3.1 after 2 years, and then fluctuating upwards to about 3.5 by year 5.
+   - **Matched Group Who Did Not Immigrate (Red Dashed Line)**: The number of patents for this group remains relatively stable around 2 across the entire period with minimal fluctuations.
+4. **Error Bars**: Both lines display error bars indicating the variability or standard error in the number of patents within each year.
+
+**Summary**: 
+The graph illustrates that after migration, the Migrants group experiences a significant increase in the number of patents filed, suggesting a possible boost in innovation and productivity post-migration. In contrast, the matched group who did not immigrate shows no significant change in the number of patents over the same period. This indicates that migration may have a positive impact on the innovative output of individuals.

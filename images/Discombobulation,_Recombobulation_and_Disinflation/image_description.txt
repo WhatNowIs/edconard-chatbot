@@ -1,0 +1,16 @@
+The image presents a scatterplot from the Bureau of Labor Statistics titled "The Great (and gone) Resignation." It compares the private quits rate (y-axis) to the unemployment rate (x-axis), distinguishing between pre-pandemic (blue dots) and post-pandemic (orange dots) periods.
+
+Key Points:
+1. **Pre-pandemic Data (Blue Dots):**
+   - Shows a clustering of data points mainly between an unemployment rate of 3.0 and 10.0. 
+   - The private quits rate in this period generally stays below 3.0 and gradually decreases as the unemployment rate increases.
+
+2. **Post-pandemic Data (Orange Dots):**
+   - The dots are mostly between an unemployment rate of 3.0 and 15.0, but significantly higher in terms of the private quits rate, often above 3.0.
+   - There's a noticeable shift indicating higher quit rates compared to pre-pandemic levels, even at similar unemployment rates.
+
+3. **May 2023 Annotation:**
+   - A specific data point is highlighted with an arrow pointing to approximately 3.0 on the y-axis and an unemployment rate of around 3.5-4.0 on the x-axis, marking it as a significant point in the timeline.
+
+Summary:
+The scatterplot illustrates the impact of the pandemic on voluntary job quits, showing a distinct increase in the private quits rate during the post-pandemic period compared to the pre-pandemic period across similar unemployment rates. This signifies a higher tendency of employees to resign from their jobs post-pandemic.

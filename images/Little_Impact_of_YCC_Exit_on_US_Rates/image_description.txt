@@ -1,0 +1,20 @@
+The image displays a bar graph illustrating the cumulative change in US 10-year yields from July 26th to August 28th during different trading hours. The trading hours are segmented by regions: Tokyo, London, and New York. Here are the key points from the image:
+
+1. **Tokyo Trading Hours:**
+   - The cumulative change in US 10-year yield is slightly positive, but relatively minor.
+
+2. **London Trading Hours:**
+   - The cumulative change in US 10-year yield is negative, indicating a decline during these hours.
+
+3. **New York Trading Hours:**
+   - The cumulative change in US 10-year yield is significantly positive, showing a substantial increase during these hours.
+
+This suggests that the movements in US long-term interest rates were primarily driven by activities during New York trading hours within the specified period.
+
+**Source Details:**
+- Data Source: Bloomberg, Apollo Chief Economist.
+- Trading Hours Defined:
+  - Tokyo: 9 am to 4:30 pm JST
+  - London: 8:30 am to 1 pm GMT
+  - New York: 8 am to 4:30 pm EST
+- The displayed data covers 20.5 hours in total of 10-year Treasury trading.

@@ -1,0 +1,18 @@
+The image presents two graphs that compare retrospective and prospective measures of population age structure for OECD (Organization for Economic Co-operation and Development) and non-OECD countries from 1950 to 2050. 
+
+1. **Graph (a) - Old-age Ratios:**
+   - The old-age ratios illustrate trends based on retrospective and prospective definitions.
+   - The **retrospective old-age ratio** (20-64 years) is shown for both OECD (red line) and non-OECD (green line) countries.
+   - The **prospective old-age ratio** (20-POAT, where POAT is the age at which remaining life expectancy falls below 15 years) is also depicted for both OECD (blue line) and non-OECD (orange line) countries.
+   - For OECD countries, the old-age ratios show a significant increase from the 1950s to 2050.
+   - Non-OECD countries reveal a rise in old-age ratios as well, although at a slower pace compared to OECD countries.
+
+2. **Graph (b) - Working-age Shares:**
+   - This graph shows the proportion of the population that is of working age, based on both retrospective and prospective measures.
+   - The **retrospective measure (20-64 years)** is shown for both OECD (red line) and non-OECD (green line) countries.
+   - The **prospective measure (20-POAT)** is indicated for both OECD (blue line) and non-OECD (orange line) countries.
+   - For OECD countries, the working-age share starts high but shows a decline over the period.
+   - In non-OECD countries, the trend also indicates a decline in the working-age share.
+
+**Summary:**
+The figure highlights that both OECD and non-OECD countries are experiencing an aging population, as evidenced by increasing old-age ratios. Conversely, the working-age population is on a declining trend. These trends are depicted using both retrospective (20-64 years) and prospective (20-POAT) measures, underscoring the differences in demographic shifts between OECD and non-OECD regions. The data provides insights into the challenges posed by an aging population, such as increased dependency ratios and potential impacts on the labor force.

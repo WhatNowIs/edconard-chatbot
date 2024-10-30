@@ -1,0 +1,23 @@
+The graph presents data on new business applications in the United States from 2004 to 2023. It includes three types of applications: all applications, likely employers, and likely nonemployers. Here’s a detailed summary:
+
+1. **General Trend (2004 – 2019):**
+   - **All Applications**: There is a general upward trend in the number of all business applications from around 150,000 in 2004 to approximately 250,000 in 2019.
+   - **Likely Employers (Green Line)**: The number remained relatively stable between 50,000 and 100,000.
+   - **Likely Nonemployers (Red Line)**: Also stable, and consistently higher than the applications from likely employers, fluctuating between 100,000 and 150,000.
+
+2. **Recession Impact:**
+   - **2008-2009 Recession**: Marked by a shaded area, there is no significant visible dip or spike attributable directly to the recession itself in the overall trend.
+
+3. **COVID-19 Pandemic (2020 – 2021):**
+   - There is a sharp increase in all business applications starting from early 2020, spiking to over 500,000 around mid-2020.
+   - **Likely Employers and Nonemployers**: Both categories saw significant increases during this period, with likely nonemployers seeing a more significant rise.
+
+4. **Post-Pandemic Changes (2021 – 2023):**
+   - There is a slight decline from the peak but the figures remain elevated compared to pre-pandemic years. By 2023, applications are about 400,000 for all categories.
+   - The trend for likely employers and nonemployers appears to have stabilized at higher levels than pre-2020, with nonemployers slightly higher than employers.
+
+**Data Source & Notes:**
+- The data is seasonally adjusted from the Census Bureau Business Formation Statistics.
+- The shaded areas in the graph indicate the dates of NBER-defined recessions.
+  
+Overall, the graph highlights a general increase in new business applications over the years, with a notable spike due to the COVID-19 pandemic, indicating a possible surge in entrepreneurial activity during and after the pandemic.

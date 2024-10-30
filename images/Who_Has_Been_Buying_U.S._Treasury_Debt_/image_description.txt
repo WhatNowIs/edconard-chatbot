@@ -1,0 +1,30 @@
+### Summary of U.S. Treasury Marketable Securities Issued (2018-2023Q1)
+
+The U.S. Treasury issued approximately $1 trillion in marketable securities in 2018, 2019, and during the period from the second quarter of 2022 to the first quarter of 2023. The issuance was significantly supported by strong demand from households, state and local governments, and securities dealers, offsetting sales by the Federal Reserve, money funds, and banks.
+
+#### Net Purchases and Sales by Selected Sectors (USD Trillions)
+- **Households and Nonprofits**
+  - 2018Q1-2018Q4: Moderate purchases
+  - 2019Q1-2019Q4: Decrease in net purchases
+  - 2022Q2-2023Q1: Significant increase
+- **Money Market Funds**
+  - Consistent low net purchasing activity, with slight increases in the latest period.
+- **Rest of the World**
+  - Sustained as a major purchasing sector across all periods.
+- **State and Local Governments (ex-SLGS)**
+  - Minimal activity in comparison to other sectors.
+- **Mutual Funds and ETFs**
+  - Notably rose in recent quarters (2022Q2-2023Q1).
+- **U.S.-Chartered Banks and Credit Unions**
+  - Significantly reduced holdings in the latest observed period.
+- **Security Brokers and Dealers**
+  - Little to no net purchases.
+- **Federal Reserve**
+  - Moderate selling activity observed in the most recent periods.
+
+#### Issuance Impact and Net Effects
+- **Total net issuance** is indicated by a cross symbol in each bar, showing consistent issuance across all periods.
+- **From 2018 to 2019 and in 2022-2023**, net purchases were positive with varying sector contributions.
+- **2022Q2-2023Q1** saw households and mutual funds as major buyers, contrasted by significant sales from the Federal Reserve and U.S.-chartered banks.
+
+Overall, market participant categories have shown varied buying and selling pressures across the different time periods, reflecting shifting market dynamics and economic conditions. The strong demand from key sectors has been critical in absorbing the large issuance carried out by the U.S. Treasury.

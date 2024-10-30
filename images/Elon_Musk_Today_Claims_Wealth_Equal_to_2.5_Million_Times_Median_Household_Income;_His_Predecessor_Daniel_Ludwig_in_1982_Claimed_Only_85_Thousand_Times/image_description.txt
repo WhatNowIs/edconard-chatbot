@@ -1,0 +1,20 @@
+The image is a graph titled "Figure 1: Top 0.1% wealth share (tax units)," which shows the share of wealth owned by the top 0.1% richest tax units from 1910 to 2020. There are two data series on the graph:
+
+1. **Saez and Zucman (2016, Figure 1)**: Depicted in red.
+2. **Updated series**: Depicted in blue.
+
+The y-axis represents the percentage of wealth share, ranging from 0% to 25%. The x-axis represents the years from 1910 to 2020.
+
+### Key Observations:
+- **1920s Peak**: Both series show a peak in the wealth share of the top 0.1% in the late 1920s, reaching nearly 25%.
+- **Post-Great Depression Decline**: There is a significant decline in the wealth share after the Great Depression, dropping to about 15% by the 1950s.
+- **Consistent Trends Post-1960s**: From the 1960s to the 1980s, the wealth share hovers around 10%. Both series track each other closely during this period.
+- **2008-2012 Great Recession**: In the updated series, the share shows a different trend compared to the original estimate during the Great Recession period, with less rise in inequality.
+- **Recent Increase**: Since the late 1990s, the wealth share has been increasing, with recent years showing levels close to those experienced in the 1920s.
+
+### Notes:
+- The notes at the bottom of the graph mention that the figure compares the share of wealth owned by the top 0.1% richest tax units as estimated and printed in Saez and Zucman (2016) with updated estimates presented in this paper.
+- Corrections for the 1930s were made in Piketty, Saez, and Zucman (2018) accounts, citing an error in initial estimation.
+- The updated estimates align closely with earlier estimates from the 1960s onward, with a notable adjustment during the 2008-2012 period.
+
+The graph effectively visualizes the wealth inequality dynamics over the past century, highlighting significant economic events and corrections in data estimates.

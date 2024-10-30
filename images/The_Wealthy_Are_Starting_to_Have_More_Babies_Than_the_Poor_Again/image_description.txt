@@ -1,0 +1,9 @@
+The chart, titled "Men Doing Chores = More Babies," illustrates the relationship between the share of household and childcare duties undertaken by men and the average total fertility rate in advanced economies. The data, collected from 2005 to 2015, suggests that a more equal distribution of household work is correlated with higher fertility rates.
+
+Key points from the chart:
+1. **Fertility and Chores Correlation**: Countries where men undertake a greater share of housework and childcare (around 0.25 to 0.35 share) tend to display higher fertility rates (above 1.6). Examples include France, Ireland, the US, and Scandinavian countries such as Iceland, Sweden, Norway, and Finland.
+2. **Low Fertility and Unequal Distribution**: Countries with a lower share of housework done by men (around 0.15 to 0.20) exhibit lower fertility rates (below 1.4). This group includes countries like Slovakia, Japan, Poland, Hungary, South Korea, and Czechia.
+
+The chart uses blue dots to represent countries with high fertility rates and orange dots for those with low fertility rates, visually emphasizing the correlation. The gridlines help illustrate key reference points for both fertility rates and the share of housework by men.
+
+Sources for the data include a study titled "The Economics of Fertility: A New Era" by Matthias Doepke et al., and data from the Organization for Economic Cooperation and Development and the International Social Survey Programme.

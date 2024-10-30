@@ -1,0 +1,35 @@
+The table titled "2022's Narrow GOP Majority" presents data on the size and context of GOP majorities in various election years. Here's a detailed summary of the information presented:
+
+1. **Years and Size of Majority**: The table lists data for the years 2012, 2014, 2016, 2018, 2020, and 2022. For each year, it specifies the majority size:
+   - 2012: 17 Republican seats (17R)
+   - 2014: 30 Republican seats (30R)
+   - 2016: 24 Republican seats (24R)
+   - 2018: 18 Democratic seats (18D)
+   - 2020: 5 Democratic seats (5D)
+   - 2022: 5 Republican seats (5R)
+
+2. **Combined Margin in Majority-Makers**: This column shows the combined vote margin by which the majority-making seats were won:
+   - 2012: 164,014 votes
+   - 2014: 466,881 votes
+   - 2016: 607,838 votes
+   - 2018: 105,280 votes
+   - 2020: 34,734 votes
+   - 2022: 6,670 votes
+
+3. **Total Votes Cast Nationwide**: This column provides the total number of votes cast in each of the election years:
+   - 2012: 122,291,499 votes
+   - 2014: 78,235,240 votes
+   - 2016: 128,627,010 votes
+   - 2018: 113,412,989 votes
+   - 2020: 152,576,055 votes
+   - 2022: 107,577,138 votes
+
+4. **Combined Margin/Total Votes**: The table includes a calculated column showing the combined margin as a percentage of the total votes cast:
+   - 2012: 0.134%
+   - 2014: 0.597%
+   - 2016: 0.473%
+   - 2018: 0.093%
+   - 2020: 0.023%
+   - 2022: 0.006%
+
+The summary indicates the variation in the size of the majority in the U.S. House of Representatives by the Republican Party (except for 2018 and 2020 when Democrats had the majority). It highlights that 2022 had a particularly narrow GOP majority with only a 5-seat lead and the smallest combined margin in majority-makers relative to the total votes cast, showcasing the competitiveness and closeness of the recent election. The source of this data is credited to the Cook Report with Amy Walter, MIT Election Lab.

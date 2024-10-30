@@ -1,0 +1,19 @@
+The provided chart displays the delinquency rates for credit card borrowers who are 90 days past due, segmented by age groups from December 2003 to 2021. The age groups examined are 20s, 30s, 40s, 50s, 60s, and 70s, each represented by different colored lines.
+
+Key observations:
+1. **General Trend**:
+   - There is evident fluctuation in delinquency rates across all age groups over the examined period.
+   - A prominent peak in delinquency rates is observed around 2009, corresponding with the financial crisis.
+
+2. **Age-Specific Trends**:
+   - **20s**: Represented by the light blue line, this group consistently exhibits the highest delinquency rates among all groups.
+   - **30s & 40s**: Represented by the red and yellow lines, respectively, these groups tend to have higher delinquency rates compared to those in their 50s, 60s, and 70s.
+   - **50s**: Displayed by the dark blue line, this group shows a moderate level of delinquency.
+   - **60s & 70s**: Represented by the gray and gold lines, respectively, these older groups generally have the lowest delinquency rates.
+
+3. **Impact of the Pandemic**:
+   - Post-2020, the delinquency rates surge for all age groups, indicating that the pandemic has likely exacerbated financial challenges across different demographics.
+
+Overall, the chart suggests that younger borrowers (those in their 20s and 30s) are more inclined to fall into serious delinquency compared to older borrowers, and the financial hardships introduced by the pandemic have worsened the credit situations for all age categories. 
+
+**Source**: The data is sourced from the New York Fed Consumer Credit Panel / Equifax.

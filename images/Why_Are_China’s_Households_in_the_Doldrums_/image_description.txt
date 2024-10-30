@@ -1,0 +1,15 @@
+The provided chart from the People's Bank of China via CEIC highlights trends in household borrowing and savings deposits in China from 2013 to 2023. 
+
+Key points:
+
+1. **Household Loans**: 
+   - **Past Trend**: There was a significant increase in new household loans, peaking between 2017 and 2018. 
+   - **Recent Decline**: A rapid decline in borrowing is observed post-2021, with new household loans dropping below zero by 2023.
+   - **Types of Loans**: The loans consist of mortgages, credit card debt, and other consumption-related loans. Mortgages form the largest part, followed by credit card and other consumption loans.
+
+2. **Household Deposits**:
+   - **Significant Surge**: There has been a substantial increase in household deposits, especially between 2020 and 2023.
+   - **Types of Deposits**: The deposits include demand deposits, other household deposits, and time deposits, with time deposits showing the most considerable growth.
+   - **Peak Levels**: By 2023, new household deposits approached nearly 20,000 billion RMB, considerably higher compared to previous years.
+
+The charts illustrate that households have significantly reduced borrowing while increasingly favoring savings, particularly in the recent years from 2021 onwards. This shift reflects a notable change in consumer financial behavior in China.

@@ -1,0 +1,12 @@
+The image is a line graph illustrating China's manufacturing surplus as a share of global GDP from 2001 to 2023. Key points are extracted as follows:
+
+- From 2001 to approximately 2008, the share steadily increased, with a notable peak around 2008.
+- After a slight decline post-2008, the share resumed a consistent upward trend until around 2014.
+- Between 2014 and 2019, the share showed minor fluctuations but remained relatively stable.
+- A significant increase is observed starting around 2019, spiking sharply around 2021.
+- The share reached nearly 2% in 2022-2023 before showing a slight decrease.
+
+The data source mentioned is the UN Comtrade Database.
+
+Summary:
+The graph showcases that China's manufacturing surplus as a percentage of global GDP has generally increased from 2001 to 2023, with occasional minor declines. The trend depicts substantial growth, particularly post-2019, reaching almost 2% of global GDP in recent years according to the UN Comtrade Database.

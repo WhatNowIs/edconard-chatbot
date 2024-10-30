@@ -1,0 +1,9 @@
+The image depicts a line graph titled "FX reserves" which compares the percentage of foreign exchange reserves relative to GDP in Advanced Economies (blue line) and Emerging Economies (red dashed line) from 1990 to 2020.
+
+Key points shown in the graph are:
+
+1. **Advanced Economies' FX Reserves:** The foreign exchange reserves as a percentage of GDP in advanced economies have remained relatively stable over the 30-year period, fluctuating slightly around the 5% mark.
+
+2. **Emerging Economies' FX Reserves:** For emerging economies, the foreign exchange reserves as a percentage of GDP have shown significant growth, particularly from the early 2000s, peaking around 2010 at approximately 30%. After 2010, there is a noticeable decline until around 2015, followed by a moderate increase up to 2020, settling around 25%.
+
+Overall, the graph illustrates that emerging economies have substantially higher foreign exchange reserves as a percentage of GDP compared to advanced economies, with notable variations over time.

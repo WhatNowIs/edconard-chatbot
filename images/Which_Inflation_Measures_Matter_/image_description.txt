@@ -1,0 +1,10 @@
+The graph illustrates the year-ahead inflation expectations based on data from the Atlanta Fed Business Inflation Expectations (BIE) Survey, spanning from January 2021 to April 2023. The y-axis represents the expected inflation rate in percent, while the x-axis covers the period from January 2021 to April 2023.
+
+Key points from the graph:
+1. In the beginning, around January 2021, the inflation expectation was slightly above 2.0%.
+2. Expectations increased steadily throughout 2021, reaching approximately 3.5% by the end of the year.
+3. The highest point is observed just shy of 4.0% around the first quarter of 2022.
+4. After peaking in early 2022, inflation expectations began to decline.
+5. By April 2023, the inflation expectations have dropped to around 3.0%.
+
+In summary, the year-ahead inflation expectations rose significantly in 2021, peaked in early 2022, and then gradually declined up to April 2023, suggesting a period of heightened inflation concerns followed by a gradual easing of these expectations.

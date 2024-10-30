@@ -1,0 +1,26 @@
+The image presents a detailed estimate of Chinese financial flows based on TIC (Treasury International Capital) data, as outlined by researchers Bertaut and Judson, over a period from Q1 2001 to Q4 2022, represented as trailing four-quarter sums.
+
+The graph includes several categories of financial flows:
+- US banks (gray)
+- Short-term (ST) treasuries (light gray)
+- Long-term (LT) agencies (blue)
+- Long-term (LT) corporate bonds (brown)
+- Equities (yellow)
+- Long-term (LT) Treasuries (green)
+- Belgium LT (light green)
+
+A dashed black line represents 60% of the flow, aimed to provide a trend indication.
+
+Key Observations:
+1. **Significant Increase and Decrease Periods**:
+   - Financial flows experienced substantial increases around Q1 2008, peaking near the end of 2008, largely driven by US banks, LT Treasuries, and LT agencies.
+   - A significant decline followed, noticeable mid-2009, with flows dropping substantially below zero mainly driven by decreases in ST treasuries.
+
+2. **Volatility**:
+   - Periods of high volatility are evident especially around Q2 2013 to Q4 2016, and Q2 2020 onwards. These include oscillations above and below the zero line, indicating significant inflows and outflows predominantly in LT Treasuries, US banks, and ST Treasuries.
+
+3. **Recent Trends**:
+   - Post-2016 shows a varied pattern with clustering around the zero line and moderate fluctuations.
+   - From Q1 2020 to Q4 2022, there is an evident upward movement climaxing near the end of the given period, with a notable increase in LT Treasuries.
+
+This graphical representation provides an overview of the flow dynamics of Chinese international investments, highlighting the periods of peaks and troughs and offering a method to comprehend the broader trends and volatilities in these financial flows.

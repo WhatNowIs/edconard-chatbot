@@ -1,0 +1,13 @@
+The image is a bar graph that illustrates the number of apprehensions at the southern U.S. border from 2019 to 2022. The key observations from the graph are as follows:
+
+1. **Trend Over Time**: There has been a notable increase in apprehensions at the southern U.S. border over the years. 
+   
+2. **Peaks and Variations**:
+   - **2019**: The year began with relatively low numbers, followed by a sudden spike reaching near 150,000 before decreasing again to below 50,000 by the end of the year.
+   - **2020**: This year started with low apprehensions, which remained consistently low for the majority of the year.
+   - **2021**: Numbers began rising sharply around mid-2020, continuing into 2021 with multiple peaks, each higher than the previous one, with numbers reaching approximately 210,000 at their peak.
+   - **2022**: The high trend continues with numbers fluctuating but still remaining high, approximately peaking near 200,000.
+
+3. **Overall Growth**: The data demonstrates a significant increase in border apprehensions over the four-year period, with 2021 and 2022 seeing the highest numbers.
+
+This summary reflects a clear trend of rising apprehensions at the southern U.S. border, with significant peaks observed in the latter years, highlighting a growing situation or increased enforcement activities over this period.

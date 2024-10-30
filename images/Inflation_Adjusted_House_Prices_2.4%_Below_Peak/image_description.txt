@@ -1,0 +1,16 @@
+The image is a line graph showing the Housing "Affordability Price Index" (with higher values indicating less affordability) from January 1976 to January 2024. Here's a summary of the key information:
+
+- **Time Period**: The data spans from January 1976 to January 2024.
+- **Index Reference**: The affordability price index is benchmarked to January 1976, set at 100.
+- **Recessions**: Periods of economic recessions are marked in light blue shaded areas.
+- **Trend Description**:
+  - **1976 - early 1980s**: A significant increase in the index, indicating decreasing affordability, peaking around 1981-1982.
+  - **Early 1980s - mid-1980s**: A sharp decline, followed by fluctuations.
+  - **Mid-1980s - late 1980s**: Another period of rising and then declining affordability.
+  - **1990s**: Generally lower index values, indicating better affordability.
+  - **Early to mid-2000s**: A gradual increase in the index, indicating worsening affordability, with a peak around 2006.
+  - **Late 2000s - early 2010s**: A significant decline in the index, reflecting increasing affordability following the 2008 financial crisis.
+  - **2010s**: Generally stable with minor fluctuations.
+  - **2020 onwards**: A sharp increase in the index, indicating rapidly decreasing affordability.
+
+Overall, the graph illustrates cyclical trends in housing affordability, with notable spikes corresponding to economic conditions and recessions. Since 2020, housing affordability has seen a marked decline as indicated by the sharp increase in the index.

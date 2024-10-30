@@ -1,0 +1,15 @@
+The chart titled "Figure 4: Employment Recovery Around UI Programs" displays the impact of various unemployment insurance (UI) programs on employment over time from January 2020 to January 2021. The y-axis represents the estimated coefficients (\( \beta_t \)), while the x-axis represents the timeline.
+
+Key points in the chart include:
+- The initial significant drop in employment around April 2020, coinciding with the introduction of a $600 weekly UI supplement.
+- A marked recovery period corresponds to the UI supplement programs:
+  * The period from approximately April through July 2020, during which the $600 weekly supplement was in effect. 
+  * This is followed by a period of 6 weeks in which a $300 UI supplement was provided. 
+
+The graph depicts the evolution of estimated coefficients (\( \beta_t \)) over time, with confidence intervals shaded in gray. The chart's notes specify that these coefficients represent the average low-wage business employment relative to average high-wage business employment, both compared to their pre-pandemic levels.
+
+Key points:
+- A sharp initial decline in employment around April 2020.
+- Recovery patterns correlating with the UI programs: the $600 weekly supplement and the subsequent 6 weeks of $300.
+
+The shaded area represents the 95 percent confidence interval, showcasing the variability around the estimated coefficients.

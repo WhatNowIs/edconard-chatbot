@@ -1,0 +1,15 @@
+The provided figure illustrates inflation trends across different economic groups from 1970 to 2020. It categorizes the data into three types of economies: Advanced Economies, Emerging Markets, and Low Income Economies.
+
+Key observations:
+
+1. **1970-1980 Period**: All three economic groups saw significant peaks in inflation, particularly around the mid-1970s and early 1980s. Emerging Markets and Low Income Economies experienced higher inflation rates compared to Advanced Economies during these years.
+
+2. **1980s Decline**: Post the early 1980s peak, inflation rates in Advanced Economies notably decreased and stabilized at lower levels, around 5% to 10%. Emerging Markets and Low Income Economies also witnessed a decline, though their inflation rates remained more volatile and generally higher.
+
+3. **1990s**: During the 1990s, inflation patterns diverged more distinctly. Low Income Economies faced spikes, especially around the mid-1990s, whereas Advanced Economies maintained relatively low and stable inflation. Emerging Markets showed intermediate inflation rates with moderate volatility.
+
+4. **Post-2000 Trends**: In the early 2000s, inflation rates across all groups were relatively low compared to previous decades. However, periods of increased volatility and sporadic spikes were evident, especially during the late 2000s and early 2010s following the global financial crisis.
+
+5. **2010-2020**: In this period, while Advanced Economies maintained control over inflation, Emerging Markets and Low Income Economies displayed occasional spikes, although not as severe as in earlier decades. Noticeably, there is a sharp increase in inflation towards the end of the timeline (2020), likely influenced by global economic disruptions.
+
+Thus, the figure highlights the disparity in inflation control between economic groups over five decades, with Advanced Economies consistently achieving more stable inflation rates compared to the more fluctuating patterns in Emerging Markets and Low Income Economies.

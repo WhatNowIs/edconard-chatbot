@@ -1,0 +1,10 @@
+The image presents key labor market statistics for the United States from early 2021 to late 2022, as reported by the Bureau of Labor Statistics and summarized by Bloomberg. Below are the summarized points extracted from the image:
+
+1. **Headline**: "US Hiring Beats, Unemployment Drops and Wages Ease"
+2. **Subheadline**: "Jobless rate fell to match a five-decade low"
+3. **Nonfarm Payroll Changes**: Displayed in thousands, with an estimate of 203k jobs; actual for the latest month is 223k.
+4. **Unemployment Rate**: Shown via a line graph, declining steadily over the period specified and hitting 3.5%, matching a five-decade low.
+5. **Average Hourly Earnings (MoM)**: Illustrated in percentage change with month-on-month fluctuations. The most recent increase is 0.3%.
+6. **Significant timeframes**: Data spans from early 2021 to late 2022.
+
+The chart displays robust hiring patterns, significant jobs added over several months, a consistent decline in unemployment, and a moderate easing in wage gains towards the end of the period under study.

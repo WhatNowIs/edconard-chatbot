@@ -1,0 +1,26 @@
+The graph presents the real business investment trends in OECD countries from 2000 to 2021. Here's a summary of the information:
+
+1. **Trend Lines**:
+   - **Actual** (blue line): Represents the actual business investment data.
+   - **Contribution from growth slowdown** (red line): Shows the impact of deceleration in economic output.
+   - **Pre-GFC (Global Financial Crisis) Trend** (blue dashed line): Indicates the expected linear path of business investments from 2002 to 2008, serving as a benchmark.
+
+2. **Key Observations**:
+   - **2000-2008**: There was a noticeable increase in real business investments until the pre-GFC peak.
+   - **2008-2009**: A sharp decline in investment is observed, coinciding with the Global Financial Crisis.
+   - **2009-2021**: Post-crisis, investments started to recover but remained below the Pre-GFC trend line. The gap highlighted in red shows the impact of the growth slowdown on investments.
+
+3. **Indexing**:
+   - Investments are indexed to 100 in 2008 for comparison.
+   - Investments are cumulated from 1999 and indexed again in 2008 to reflect trends accurately.
+
+4. **Predicted vs Actual**:
+   - Predicted values consider the investment-output elasticity and are compared with actual investment growth.
+   - The shaded area indicates a 90 percent confidence interval for predicted investment growth.
+
+5. **Sources**:
+   - Data and analysis have been provided by the Organisation for Economic Co-operation and Development (OECD) and IMF staff calculations.
+
+6. **Interpretation**:
+   - Despite a recovery trend post-GFC, real business investments did not return to the pre-crisis predicted growth path.
+   - The extended period of lower-than-expected investment highlights the prolonged impact of the GFC on economic activities within OECD countries.

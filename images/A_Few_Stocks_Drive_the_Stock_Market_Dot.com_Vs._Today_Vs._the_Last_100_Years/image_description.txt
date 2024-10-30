@@ -1,0 +1,9 @@
+The image depicts a line chart comparing the aggregate market value of two groups of technology companies over two different periods. The blue line represents the market values of CDILM (Cisco, Dell, Intel, Lucent, and Microsoft) during the dot-com period from 1997 to 2001 (noted on the lower x-axis). The orange line represents the market values of the Magnificent 7 (Alphabet, Amazon, Apple, Meta, Microsoft, Nvidia, and Tesla) from 2019 to August 2023 (noted on the upper x-axis). Both lines are normalized to 1 at the start.
+
+Summary:
+- The chart shows the market value progression for two cohorts of prominent tech companies over different timeframes.
+- CDILM's market value, during the dot-com era (1997-2001), saw a significant increase, peaking around 2000, followed by a sharp decline.
+- The Magnificent 7's market value, observed from 2019 to August 2023, shows a considerable rise, peaking in late 2021, with fluctuations following thereafter.
+- Both curves begin from a normalized value of 1, highlighting relative growth and volatility patterns in the tech sector across the two different periods.
+
+Source: Datastream via Refinitiv and J. Rangvid.

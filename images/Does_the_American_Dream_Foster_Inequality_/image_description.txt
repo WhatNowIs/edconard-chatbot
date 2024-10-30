@@ -1,0 +1,20 @@
+The image, a graphic from the Financial Times, illustrates the levels of support for income redistribution within six Western countries (UK, Australia, Germany, France, Switzerland, and the US) before and after individuals read about inequality in their respective countries. 
+
+Key insights from the graphic include:
+
+1. **General Trend**:
+   - On a 0-100 scale, the citizens of most surveyed countries show an increase in support for income redistribution after reading about inequality in their region.
+   
+2. **Country-Specific Observations**:
+   - **UK**: Support for redistribution increases from about 66 to around 72.
+   - **Australia**: Support grows from approximately 66 to 73.
+   - **Germany**: Support rises from about 68 to nearly 72.
+   - **France**: Support increments from close to 68 to just above 72.
+   - **Switzerland**: Support increases from around 64 to almost 68.
+
+3. **United States**:
+   - **Notable Difference**: Unlike other countries, the US shows a decrease in support for income redistribution after reading about inequality, from approximately 61 to just below 60.
+
+4. **Implication**: The graphic suggests that while most Western countries become more supportive of income redistribution after gaining awareness of inequality, the opposite is true for the US, where awareness appears to reduce support.
+
+The source of the data is a study by Culpepper et al. (2023), entitled "The Economy is Rigged: Inequality Narratives, Fairness, and Support for Redistribution in Six Countries." The graphic was created by John Burn-Murdoch, as indicated in the image.

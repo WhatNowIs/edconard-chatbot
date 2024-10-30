@@ -1,0 +1,19 @@
+The chart titled "Young Adults Are Still Pretty Mobile" illustrates the share of U.S. residents aged 30-39 who were not born in the state where they currently reside, over a span of time from 1860 to 2022.
+
+Key points from the chart:
+1. **Historical Comparison**:
+   - The share of young adults who were not born in their current state was relatively high in 1860, around 50%.
+   - It experienced slight fluctuations until the 1940s, when there was a noticeable decline.
+   - The low point appears around 1960, with the share dropping to approximately 27-28%.
+   
+2. **Modern Trends**:
+   - From the 1960s onward, there was a gradual increase in mobility.
+   - From around 1980 to 2000, the share increased gradually but steadily.
+   - By 2000, this share had risen to about 47%.
+   - The latest data available from 2022 shows little variation, maintaining levels comparable to those of 2000.
+
+3. **Summary**:
+   - Young adult mobility has seen shifts over more than 160 years, with periods of both decline and increase.
+   - The noteworthy finding is that recent trends suggest young adults in the U.S. remain relatively mobile, with nearly half of those aged 30-39 living in a state different from where they were born.
+
+**Sources**: Calculations by Scott Winship (1850-2010) and the author (2022) based on U.S. Census Bureau data accessed via IPUMS-USA.

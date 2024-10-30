@@ -1,0 +1,27 @@
+This image consists of four U.S. maps displaying the distribution of pandemic aid per capita across the 50 states. Each map corresponds to a different relief package:
+
+- **Panel A: CARES Act**
+- **Panel B: Families First Coronavirus Response Act (FFCRA)**
+- **Panel C: Recovery and Relief Act (RRA)**
+- **Panel D: American Rescue Plan Act (ARPA)**
+
+The states are color-coded into quintiles, from the 1st quintile (lightest color, representing the lowest aid per capita) to the 5th quintile (darkest color, representing the highest aid per capita).
+
+**Observations:**
+1. **CARES Act (Panel A)**:
+   - States like Alaska and New York received the highest aid per capita.
+   - States like Florida and California received lower amounts of aid per capita.
+   
+2. **FFCRA (Panel B)**:
+   - Higher aid per capita is observed in states like New York, North Dakota, and Maine.
+   - States such as California and Texas received relatively lower aid per capita.
+   
+3. **RRA (Panel C)**:
+   - High per capita aid is seen in states like New York, Alaska, and North Dakota.
+   - States such as California, Texas, and Florida received lower per capita aid.
+
+4. **ARPA (Panel D)**:
+   - States like North Dakota and Rhode Island received the highest per capita aid.
+   - Many southern states, such as Florida and Texas, received lower per capita aid.
+
+Overall, these visuals provide an easy comparison of state-wise allocation of pandemic aid across four major relief packages, with significant variations among states and packages. This figure was initially part of a study by Clemens and Veuger in 2021.

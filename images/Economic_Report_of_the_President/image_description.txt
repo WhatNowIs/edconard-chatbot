@@ -1,0 +1,17 @@
+This chart, titled "Figure 2-15. The Fiscal Impulse and Inflation, 2012–24," illustrates the percentage-point contributions to real GDP and the 4-quarter percent change in core PCE inflation from 2012 to 2024.
+
+**Key points:**
+
+1. **Components of Fiscal Impulse:**
+   - **Taxes and Benefits Programs** (orange): Contributions have mostly ranged from -1 to 1 percentage points from 2012 to 2024, with notable spikes in 2020 and 2021.
+   - **Federal Spending on Goods and Services** (blue): This has had varying contributions, with a significant increase in 2020.
+   - **State and Local Spending** (green): Contributions largely remained between -0.5 to 0.5 percentage points, with minor fluctuations.
+
+2. **Core PCE Inflation (black line, right axis):**
+   - It has generally remained around 1 to 2%, with a dramatic increase starting in 2020, peaking in 2022 at around 5%, before appearing to decline toward 2024.
+
+3. **Notable Trends and Events:**
+   - In 2020, there was a significant fiscal stimulus reflected by a sharp rise in contributions from taxes and benefits programs and federal spending on goods and services.
+   - This increase coincided with a marked spike in core PCE inflation, indicating a potential relationship between fiscal stimulus and inflation.
+
+Sources of data include the Hutchins Center at Brookings Institution and the Bureau of Economic Analysis, with all values seasonally adjusted.

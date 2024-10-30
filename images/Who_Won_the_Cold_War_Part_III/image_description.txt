@@ -1,0 +1,21 @@
+The image is a line chart titled "Figure 2: Mortality Rates at Ages 20-69 in the USA: Birth Cohorts 1930 through 1990 (Males plus Females)." It shows the mortality rates per 1000 people at various ages from 20 to 69 for different birth cohorts, spanning from 1930 to 1990. Each birth cohort is represented by a distinct colored line:
+
+- 1930 (dark blue)
+- 1940 (light blue)
+- 1950 (gray)
+- 1960 (green)
+- 1970 (yellow)
+- 1980 (red)
+- 1990 (blue)
+
+Key insights include:
+
+1. **General Trend**: Mortality rates consistently increase with age for all cohorts.
+2. **Comparative Analysis**: Earlier cohorts (1930) show higher mortality rates compared to later cohorts (1990) at almost all age intervals, reflecting improvements in healthcare and living standards over time.
+3. **Age-Specific Mortality Rates**: 
+   - Between ages 20 to 30, mortality rates are relatively low and similar among all cohorts.
+   - From age 30 onwards, there are visible differences, with older cohorts (1930, 1940) exhibiting higher mortality rates.
+   
+The source of the data is the Human Mortality Database, University of California, Berkeley, and the Max Planck Institute for Demographic Research. The chart was accessed on April 17, 2023, from [http://www.mortality.org](http://www.mortality.org/).
+
+This chart highlights the temporal improvements in mortality rates in the US and the ongoing disparities between different birth cohorts.

@@ -1,0 +1,56 @@
+### Summary of Inflation Data from the Charts:
+
+#### Left Chart: US Adjusted Durables and Service Inflation (3MMA% Annualized)
+
+- **Time Frame:**
+  - Data range from March 2013 to March 2023.
+  
+- **Services Adjusted (Red Line):**
+  - Steady trend around 2% to 3% inflation from 2013 to early 2019.
+  - Noticeable increase and fluctuations from 2020 onward, peaking around mid-2021.
+  - Gradual decline and stability around 4% towards the end of the period.
+
+- **Durables Adjusted (Yellow Line):**
+  - Fluctuations between -2% and 2% from 2013 to early 2020.
+  - Significant volatility starting in 2020, peaking around 12% in mid-2021.
+  - Dramatic decline and stabilization around -2% by March 2023.
+
+#### Right Chart: US Adjusted Core (ex. Housing and Volatile Items): 3MMA% Annualized
+
+- **Time Frame:**
+  - Data range from March 2013 to September 2023.
+  
+- **Core Adjusted (Blue Line):**
+  - Relatively stable around 2% until early 2020, with sporadic fluctuations.
+  - Sharp decline in mid-2020, followed by a steady increase peaking close to 8% around mid-2023.
+  - Returning closer to the 4% mark by September 2023.
+
+- **Average (2013-19) (Dashed Gray Line):**
+  - Maintains a steady 2% throughout the period.
+
+- **Core PCE (YoY%) (Black Line):**
+  - Similar stable trends around 2% before mid-2020.
+  - Increases steadily post mid-2020, tracking slightly below 4% by September 2023.
+
+- **SEP Median PCE (June 2023) (Diamond Markers):**
+  - Trends in line with the Core PCE, indicating similar inflation expectations.
+
+- **NY Fed MCT (Median) (Red Line):**
+  - Tracks closely with Core PCE and SEP Median PCE from mid-2020 onwards.
+  - Stabilizes around 4% towards the end of the period.
+
+### Key Takeaways:
+
+- **Inflation in Services:**
+  - More stable compared to durables but shows a steady increase in recent years.
+
+- **Inflation in Durables:**
+  - Highly volatile with significant peaks and troughs, particularly noticeable in the pandemic period.
+
+- **Core Inflation Exclusions:**
+  - Shows increased volatility post-2020 with substantial inflation rises during 2021-2023 before moderate stabilization.
+
+- **Overall Trends:**
+  - Service inflation remains consistently higher in recent years.
+  - Durables inflation underwent immense volatility post-2020, likely impacted by the pandemic and supply chain issues.
+  - Core inflation excluding housing and volatile items demonstrates significant peaks, reflecting broader economic adjustments post-pandemic.

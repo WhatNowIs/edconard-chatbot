@@ -1,0 +1,47 @@
+The table, titled "Trends in CEO and Executive Characteristics," presents average factor scores for CEO candidates across different subsamples. The data is divided into two main subsamples: early (assessments before 2009) and late (assessments in or after 2009). It also separates the factor scores based on whether candidates were hired or not.
+
+Key points:
+
+1. **Subsamples**: 
+   - Early assessments (before 2009)
+   - Late assessments (after 2009)
+
+2. **Factor Scores**:
+   - Four factors are considered.
+   - Scores are shown for all candidates, as well as for hired candidates, in each subsample.
+
+3. **Statistical Tests**:
+   - **A=0**: Tests if factor scores for all assessed candidates are zero.
+   - **E=L**: Tests if early and late subsample factor scores are equal.
+   - **H=N**: Tests if factor scores for hired and non-hired candidates are equal.
+   - **E=L among Hired**: Tests if early and late subsample factor scores are equal among hired candidates.
+
+4. **Statistical Significance**:
+   - Indicated with stars (*** for 1%, ** for 5%, * for 10% p-levels).
+   
+5. **Observations**:
+   - Total observations in each column are listed at the bottom of the table (1,299 total candidates).
+
+### Summary of Findings:
+
+1. **Factor 1**:
+   - Overall factor score is 0.09, significantly different from zero.
+   - Early: 0.18; Late: 0.00 (difference significant).
+   - Hired: 0.18 (significantly different from non-hired, which is not shown).
+
+2. **Factor 2**:
+   - Overall factor score is -0.11, significantly different from zero.
+   - Early: -0.06; Late: -0.16 (difference significant).
+   - Hired: -0.07 (marginally different from non-hired).
+
+3. **Factor 3**:
+   - Overall factor score is -0.24, significantly different from zero.
+   - Early: -0.38; Late: -0.12 (difference significant).
+   - Hired: -0.30 (significantly different from non-hired).
+
+4. **Factor 4**:
+   - Overall factor score is 0.17, significantly different from zero.
+   - Early: 0.29; Late: 0.06 (difference significant).
+   - Hired: 0.24 (significantly different from non-hired).
+
+Overall, the table indicates significant differences in factor scores based on time periods and hiring status, suggesting changing trends and criterion for CEO candidate assessments over time.

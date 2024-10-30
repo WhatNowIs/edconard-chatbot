@@ -1,0 +1,19 @@
+This scatter plot, titled "FIGURE 4," illustrates the relationship between the change in manufacturing portion of employment (on the x-axis) and the labor force participation rate (LFPR) for males aged 20-64 (on the y-axis) over the period from 2000 to 2019. 
+
+Key points to note:
+
+1. **X-Axis**: Represents the change in the manufacturing portion of employment from 2000 to 2019, ranging from -20 points to +5 points.
+2. **Y-Axis**: Represents the male labor force participation rate for ages 20-64, which ranges from 50% to 95%.
+3. **Data Points**: Each blue dot on the graph represents a data point from the U.S. Census Bureau's surveys.
+4. **Trend Line**: A regression line is plotted, showing a slight positive slope (y = 0.13x + 0.81) indicating a weak but positive correlation between the two variables.
+5. **R-Squared (R²) Value**: The R² value is 0.005, suggesting that the change in manufacturing employment explains a very small proportion of the variance in the male labor force participation rate.
+6. **Zero Change Reference**: A vertical dashed line at the 0 points mark on the x-axis highlights the reference point for no change in manufacturing employment.
+
+**Source Information**:
+The data sources include:
+- The U.S. Census Bureau's American Community Survey 2019 1-year estimates (Table S2301)
+- The 2000 Decennial Census Table P049
+- The Census Bureau’s CBSA Delineation Files
+
+**Summary**:
+The scatter plot shows a weak positive correlation between the change in the manufacturing sector's share of employment and the labor force participation rate for males aged 20-64 over the period from 2000 to 2019. The trend line indicates a slight increase in LFPR with an increase in manufacturing employment, but the low R² value of 0.005 indicates that this relationship is not strong. This suggests that changes in manufacturing employment explain only a very small part of the changes in male labor force participation during this period.

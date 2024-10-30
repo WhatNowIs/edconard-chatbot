@@ -1,0 +1,20 @@
+The image shows a line graph comparing the change in nominal consumer spending (PCE ex-imputed rent) with corporate profits and noncorporate business income (pretax) from the first quarter of 2018 to 2023. The lines on the graph depict the following trends:
+
+1. **Nominal Consumer Spending (Red Line)**
+   - Since 2018 Q1, there has been a noticeable rise in nominal consumer spending, spiking significantly after 2020 Q2.
+   - Consumer spending has increased consistently by about 2% each quarter since 2021 Q2.
+
+2. **Corporate Profits + Noncorporate Business Income (Pretax) (Blue Line)**
+   - The pretax business income has remained mostly flat, with minor fluctuations, especially when compared with the significant rise in consumer spending.
+   - A notable drop is observed around 2020, but it gets stable again afterward.
+
+**Key Points Mentioned in the Summary Above the Graph:**
+
+- Nominal consumer spending has risen consistently since 2021 Q2.
+- Nominal pretax business income has been flat during the same period.
+- Most inflation in consumer goods and services seems to have occurred after profits stopped rising, suggesting that increased consumer spending is not driven by rising business profits.
+
+**Sources:**
+- The data originates from the Bureau of Economic Analysis and Matthew Klein's calculations.
+
+In summary, while nominal consumer spending has been rising steadily, this increase does not align with a corresponding rise in pretax corporate and noncorporate business incomes, which have been relatively flat. This discrepancy indicates that inflation in consumer goods and services has been happening after profits plateaued.

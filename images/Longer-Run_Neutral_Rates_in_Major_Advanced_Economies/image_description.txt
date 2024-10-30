@@ -1,0 +1,49 @@
+The table titled "Drivers of Changes in Longer-Run Neutral Rates" provides an analysis of various factors affecting the change in longer-run neutral rates in the United States across three different time periods: 1995-2007, 2008-19, and 2020-22.
+
+Here is a summary of the key information and notable points:
+
+1. **Total Change**:
+   - 1995-2007: -2.3
+   - 2008-19: 0.2
+   - 2020-22: 0.5
+
+2. **Debt Supply**:
+   - 1995-2007: -0.4
+   - 2008-19: 1.4
+   - 2020-22: 0.4
+
+3. **Safe Asset Demand**:
+   - 1995-2007: -0.7
+   - 2008-19: -0.1
+   - 2020-22: 0.1
+
+4. **Productivity**:
+   - 1995-2007: -0.1
+   - 2008-19: 0.1
+   - 2020-22: 0.4
+
+5. **Demographics**:
+   - 1995-2007: 0.0
+   - 2008-19: -0.3
+   - 2020-22: -0.1
+
+6. **Global Spillovers**:
+   - 1995-2007: -0.6
+   - 2008-19: -0.4
+   - 2020-22: -0.2
+
+7. **Other Factors**:
+   - 1995-2007: -0.5
+   - 2008-19: -0.4
+   - 2020-22: 0.0
+
+Key Insights:
+- Across all three periods, a negative change in longer-run neutral rates was observed in 1995-2007, while there was a slight positive change in the 2008-19 and a more significant positive change in 2020-22.
+- Debt supply had a negative impact in 1995-2007, but switched to a significant positive impact in 2008-19 and continued positively in 2020-22.
+- Safe asset demand notably decreased from 1995-2007 to a negligible impact in 2008-19, turning slightly positive in 2020-22.
+- Productivity showed minimal impact in the early periods but became significantly positive in 2020-22.
+- Demographics started with little to no effect in 1995-2007, turned negative in 2008-19, and remained slightly negative in 2020-22.
+- Global spillovers consistently had a negative impact across all periods, though diminishing over time.
+- Other factors were consistently negatively impacting the longer-run neutral rates in the first two periods, stabilizing to no impact in 2020-22.
+
+This table overall reflects the evolving influences of various economic factors on the changes in longer-run neutral rates in the United States over different periods.

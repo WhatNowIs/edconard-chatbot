@@ -1,0 +1,17 @@
+The image provides a graph titled "Manufacturing Wage Premium" that displays the percent difference between average hourly wages in manufacturing and those in the private sector from March 2006 to March 2019. The data is sourced from the Bureau of Labor Statistics’ (BLS) Current Employment Statistics (CES). 
+
+### Key Observations:
+1. **Initial High Premium (2006-2008):**
+   - From March 2006 through mid-2008, there was a relatively high manufacturing wage premium, with percentages ranging around 2-4%.
+   
+2. **Gradual Decline (2008-2018):**
+   - A noticeable, steady decline in the manufacturing wage premium occurred from mid-2008 onwards, eventually dipping close to 0% by around late 2015.
+   
+3. **Negative Premium (2016-2018):**
+   - From around early 2016 through early 2019, the manufacturing wage premium fell below 0%, indicating manufacturing wages were lower on average compared to those in the private sector during this period. The lowest point approached nearly -1%.
+
+4. **Recent Uptick (2019):**
+   - In early 2019, there is a slight upward trend back toward 0%, indicating a minor recovery in the manufacturing wage premium.
+
+### Summary:
+The graph, "Manufacturing Wage Premium," illustrates the decline of the manufacturing wage premium over a span of thirteen years. Initially presenting a healthy premium from 2006 to 2008, the premium steadily declined through mid-2015 and turned negative by early 2016. This trend suggests that, over the period, manufacturing wages moved from being higher than the private sector average to being lower. There is a slight indication of recovery in early 2019. The data reflects broader economic changes and labor market dynamics influencing wage structures within different sectors.

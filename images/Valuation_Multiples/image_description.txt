@@ -1,0 +1,24 @@
+The image is a scatter plot titled "Exhibit 1: P/E and EV/EBITDA Multiples for the S&P 500, March 2024." The chart compares the Price-to-Earnings (P/E) Multiples and Enterprise Value-to-EBITDA (EV/EBITDA) Multiples of companies within the S&P 500 index.
+
+**Key Points to Note:**
+
+1. **Axes:**
+   - The x-axis represents the P/E Multiple, ranging from 0 to 45.
+   - The y-axis represents the EV/EBITDA Multiple, ranging from 0 to 30.
+
+2. **Scatter Points:**
+   - Each dot on the plot represents a company within the S&P 500.
+   - The colors and labels highlight specific companies: Walgreens, Conagra, Deere, Teledyne, Darden, Apple, Walmart, Target, Tyson, Southwest, and Amazon.
+
+3. **Trends and Observations:**
+   - There is a positive correlation between P/E Multiples and EV/EBITDA Multiples with a correlation coefficient (r) of 0.89, indicating a strong positive relationship.
+   - Companies such as Apple, Walmart, and Amazon are positioned in higher ranges, indicating higher P/E and EV/EBITDA multiples.
+   - Outliers such as Amazon show extremely high P/E Multiples compared to others.
+   - Companies like Walgreens and Conagra are on the lower end of both multiples.
+
+4. **Notes:**
+   - Data is based on FactSet consensus estimates as of March 5, 2024.
+   - The analysis excludes financials and real estate sectors.
+   - Data has been trimmed at the 1st and 99th percentiles for P/E multiples, and axes have been truncated for better visualization.
+
+This plot provides a visual representation of how different companies in the S&P 500 are valued by the market based on their earnings and EBITDA, offering insights into market sentiments and potential over/under-valuation of these companies.

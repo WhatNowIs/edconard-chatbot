@@ -1,0 +1,11 @@
+The graph presents the Consumer Price Index (CPI) inflation data for eggs in the United States, using 2008 as the base year (index = 100). The data spans from 2008 to 2024.
+
+Key observations:
+1. Generally, there is a slow increase in prices from 2008 to around 2014.
+2. A noticeable spike occurs around 2015, reaching a peak index value of approximately 135 before dropping back down.
+3. From 2016 to 2020, prices fluctuate moderately without significant spikes.
+4. After 2020, a significant upward trend begins, with a sharp increase peaking around 2022, reaching the highest value on the graph at approximately 170.
+5. Post-2022, there is a sharp decline, followed by a rebound starting in late 2023 to early 2024, bringing the index back to around 145.
+
+Summary:
+The data indicate relatively stable egg prices from 2008 to 2020, followed by considerable volatility. A sharp increase in egg prices occurs from 2020, peaking in 2022, then dropping and partially rebounding by early 2024. This suggests significant inflationary pressures on egg prices in recent years.

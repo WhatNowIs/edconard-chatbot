@@ -1,0 +1,15 @@
+The image is a line graph titled "Figure 5. Different Vintages of Federal Debt Projections, 2000-2053" which shows projections of U.S. federal debt as a percentage of GDP from 2000 to 2053. The graph includes three distinct projection lines:
+
+1. **December 2007 projection**: Represented by a blue dashed line, showing the projected federal debt as of December 2007.
+2. **January 2020 projection**: Represented by a blue dotted line, showing the projected federal debt as of January 2020.
+3. **June 2023 projection**: Represented by a solid red line, showing the actual and projected federal debt as of June 2023.
+
+Key Observations:
+- The federal debt as a percentage of GDP remains relatively stable from 2000 until around 2008.
+- During the Great Recession (2008-2009), indicated by a shaded gray vertical band, the debt percentage rises.
+- The upward trend continues steadily with a sharper increase during the COVID-19 period (around 2020-2021), also indicated by a shaded gray vertical band.
+- The projection as of June 2023 indicates a significant increase in federal debt as compared to the projections made in December 2007 and January 2020. The June 2023 projection shows the federal debt potentially reaching around 200% of GDP by 2053.
+- The January 2020 projection suggests a more moderate increase in debt percentage compared to the June 2023 projection but is higher than the December 2007 projection.
+- The December 2007 projection remains the lowest among the three, predicting a consistent but slower climb in the debt percentage over the years.
+
+This graph highlights how federal debt projections have become more pessimistic over time, especially following the economic impacts of the Great Recession and COVID-19.

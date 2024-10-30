@@ -1,0 +1,20 @@
+The chart compares the average annual wages per full-time employee in Japan and the United States from 1991 to 2020, adjusted to constant 2022 prices. Here are the key points:
+
+1. **US Wage Growth**: 
+   - From 1991 to 2020, the average annual wages for full-time employees in the US increased steadily.
+   - The wages rose from approximately $50,000 in 1991 to nearly $85,000 by around 2020.
+
+2. **Japan Wage Stagnation**:
+   - In contrast, Japan's average annual wages remained relatively flat throughout the same period.
+   - The wages oscillated around the $35,000 to $40,000 range without significant growth.
+
+3. **Comparison and Disparity**:
+   - By 2020, the average wage in the US is significantly higher than in Japan, illustrating a growing disparity in wage levels between the two countries.
+
+4. **Note on Conversion**:
+   - The figures for Japan reflect the purchasing power of Japanese wages translated into dollars, not the current exchange rate, ensuring an accurate comparison in real terms.
+
+5. **Source**:
+   - The data is sourced from the OECD, an authoritative organization that provides reliable economic statistics.
+
+In summary, the chart highlights that while the United States has seen significant wage growth over the past three decades, Japan's average wages have stagnated, leading to a widening wage gap between the two nations.

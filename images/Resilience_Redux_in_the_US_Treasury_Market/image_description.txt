@@ -1,0 +1,9 @@
+The image is a bar graph illustrating the ratio of US Treasury securities outstanding to total primary dealer assets over the period from 1998 to 2022. The data, sourced from the Federal Reserve and company filings, measure assets at the holding company level.
+
+Key observations:
+
+1. The ratio begins at a relatively high level in 1998, indicating that a significant proportion of primary dealer assets were in the form of Treasury securities.
+2. There is a notable decline in the ratio from 1998 to around 2003, followed by fluctuations until approximately 2009.
+3. From 2009 onwards, the ratio shows a general upward trend, with significant increases particularly after 2015, reaching peak levels around 2022.
+
+Overall, the graph highlights the dynamic changes in the proportion of US Treasury securities within primary dealer assets, showing a substantial shift toward higher ratios in recent years.

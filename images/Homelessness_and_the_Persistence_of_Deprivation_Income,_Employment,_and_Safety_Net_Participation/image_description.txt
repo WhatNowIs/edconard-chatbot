@@ -1,0 +1,31 @@
+The provided charts offer insights into the economic conditions of homeless, single housed poor, and overall housed populations aged 25-59 over the years 2005 to 2016.
+
+### Figure 3a: Share with Earnings, 2005-2016
+This graph illustrates the proportion of each group that has earnings:
+
+- **Overall Housed:** Consistently the highest, with a steady share maintained above 0.85 from 2005 to 2016.
+- **Single Housed Poor:** Has a downward trend, starting at about 0.6 in 2005 and declining slightly to around 0.5 by 2016.
+- **Sheltered Homeless:** Starts near 0.45 in 2005 and slowly decreases, ending below 0.4 in 2016.
+- **Unsheltered Homeless:** The lowest proportion, beginning near 0.25 in 2005 and further decreasing to approximately 0.15 by 2016.
+
+### Figure 3b: Median Earnings (Conditional on Working), 2005-2016
+This graph shows the median earnings in 2016 dollars for those who have earnings:
+
+- **Overall Housed:** The highest earnings among the groups, starting around $35,000 in 2005 and steadily rising to over $40,000 by 2016.
+- **Single Housed Poor:** Shows an increase in median earnings from approximately $15,000 in 2005 to about $20,000 in 2016.
+- **Sheltered Homeless:** Median earnings are relatively low but show a slight increase from around $6,000 in 2005 to about $7,000 in 2016.
+- **Unsheltered Homeless:** The lowest earnings among all groups, with a slight increase from around $2,000 in 2005 to about $3,000 by 2016.
+
+### Key Takeaways:
+
+1. **Share with Earnings:**
+   - The overall housed population consistently has the highest proportion of individuals with earnings.
+   - Both sheltered and unsheltered homeless populations exhibit a decline in the proportion of those with earnings over the observed period.
+   - The single housed poor also show a decreasing trend in share with earnings but remain higher than homeless groups.
+
+2. **Median Earnings:**
+   - Overall housed individuals not only have the highest proportion of earnings but also the highest median earnings, showing a steady increase over the years.
+   - Single housed poor see an increase in earnings but remain notably below the overall housed.
+   - Both sheltered and unsheltered homeless individuals have significantly lower median earnings, with the unsheltered homeless being particularly disadvantaged.
+
+These charts highlight the continuing economic disparities faced by homeless and poor populations compared to the overall housed population.

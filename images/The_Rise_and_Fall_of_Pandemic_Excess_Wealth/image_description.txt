@@ -1,0 +1,9 @@
+This chart, titled "Overall real household wealth with local projections," shows the changes in household wealth, adjusted for inflation, in trillions of 2017 U.S. dollars from 2016 to 2022. The variables depicted are real net worth (solid blue line), projected path for real net worth (dashed blue line), real financial assets (solid red line), and projected path for real financial assets (dashed red line). The shaded areas around the projected paths represent 90% confidence bands. The gray shaded vertical bar indicates a significant economic event occurring around 2020.
+
+Key observations:
+- Real net worth experienced a steady increase until approximately 2020, where a significant fluctuation is observed, then continued to rise, stabilizing slightly above its projected path.
+- Real financial assets showed a gradual increase, facing fluctuations around the same period, then aligned closely with the projected path.
+- Both real net worth and real financial assets saw volatility around 2020, likely due to the economic impact of an unforeseen event (e.g., COVID-19 pandemic).
+- The projections for both metrics offer insights into expected trends, with confidence bands suggesting potential variability.
+
+The data is sourced from the Federal Reserve Board of Governors and authors' calculations, with quarterly adjustments for inflation using the overall personal consumption expenditures price index.

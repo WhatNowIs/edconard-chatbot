@@ -1,0 +1,16 @@
+The figure illustrates the changing proportions of Asian students enrolled in Californian public schools from 1981 to 2016, segmented by school district types: central cities, suburbs, and non-metropolitan areas.
+
+Key Observations:
+
+1. **Suburbs**:
+   - The share of Asian students in suburban areas shows a continual increase from approximately 6% in 1981 to nearly 15% in 2016.
+   - This area type experiences the most significant increase in the proportion of Asian students over the observed period.
+
+2. **Central Cities**:
+   - The central city areas initially have a higher share of Asian students compared to suburbs and non-metropolitan areas.
+   - The proportion rises from around 9.5% in 1981, peaks in the late 1990s at roughly 12%, and then gradually declines, stabilizing slightly above 10% towards 2016.
+
+3. **Non-Metropolitan Areas**:
+   - The share of Asian students in non-metropolitan areas remains relatively constant and low, starting at around 1.5% in 1981 and slightly increasing to about 2.5% by 2016.
+  
+The data source for this figure is the California Department of Education, indicating a long-term demographic trend where suburban areas are experiencing a noticeable rise in the share of Asian students relative to central city and non-metropolitan areas.

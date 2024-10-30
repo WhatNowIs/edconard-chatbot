@@ -1,0 +1,14 @@
+The image presents a graph labeled "Exhibit 4: We Estimate Interest Costs as a Share of Total Spending Will Reach a New Peak by 2029." The graph measures the net interest as a share of total budget outlays over time, with the y-axis in percentage and the x-axis ranging from 1940 to 2035.
+
+Key points from the graph:
+
+1. Historic Data: The net interest costs have seen fluctuations over the decades with notable peaks around the mid-1940s, late 1980s, and early 1990s.
+
+2. Recent Trends: Since the early 2000s, the net interest as a share of total budget outlays has been relatively lower but shows a rising trend post-2015.
+
+3. Projections: Both the Congressional Budget Office (CBO) and Goldman Sachs (GS) project a significant rise in interest costs as a share of total spending. By 2029, these costs are estimated to reach a new peak, with CBO's May 2023 estimates represented by the light blue dashed line and GS estimates by the dark blue dashed line.
+
+The source of the graph is given as the Congressional Budget Office and Goldman Sachs Global Investment Research.
+
+Summary:
+The graph illustrates that net interest costs as a share of total budget outlays have fluctuated historically but show a rising trend in recent years. Projections by the CBO and Goldman Sachs suggest that these costs will reach a new peak by 2029, indicating increasing pressure on budget allocations for interest payments in the future.

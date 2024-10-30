@@ -1,0 +1,22 @@
+The chart illustrates the mean depressive affect scores among conservative and liberal 12th graders, separated by sex, from 2005 to 2018. The graph differentiates between periods of Republican (shaded in red) and Democratic (shaded in blue) presidencies, as well as election years. 
+
+Key points include:
+
+1. **Overall Trends:**
+   - Female liberals have the highest and most rapidly increasing depressive affect scores beginning around 2010, peaking in 2018.
+   - Female conservatives display a relatively stable but gradually increasing trend in depressive affect scores from 2010 onwards.
+   - Male liberals also show an increase in depressive affect scores, particularly from 2014 to 2018.
+   - Male conservatives have the lowest depressive affect scores throughout the period, with minor fluctuations.
+
+2. **Comparative Insights:**
+   - The difference between the depressive affect scores of female liberals and conservatives widens significantly after 2010.
+   - Male liberal and conservative students have more comparable scores, though male liberals still exhibit a slight increase.
+
+3. **Political Context:**
+   - During periods of Democratic presidencies (2009-2016), the depressive affect scores for both male and female liberals rise more sharply.
+   - Conversely, during Republican presidencies (2005-2008 and post-2016), depressive affect scores remain more stable or increase at a lesser rate for conservatives.
+
+4. **Sex Differences:**
+   - Female students, both liberal and conservative, exhibit higher depressive affect scores compared to their male counterparts, with female liberals significantly higher in recent years.
+
+This analysis highlights the interaction between political beliefs, gender, and mental health trends among 12th graders over a 13-year period.

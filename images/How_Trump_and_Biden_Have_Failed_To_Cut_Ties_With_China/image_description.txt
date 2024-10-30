@@ -1,0 +1,7 @@
+The image is a graph titled "Sorry, Mr President," highlighting China's share of Asian exports to the US and showing the percentage-point change from 2011 to 2022. There are two lines on the graph:
+
+1. **Reported by trading partners**: This line shows a relatively stable trend, with only slight fluctuations, suggesting that according to trading partners, China's share of Asian exports to the US has seen minor variations, remaining close to the 0% change mark.
+
+2. **Reported by US**: This line shows a significant decline, especially from around 2018 onwards, indicating a sharp decrease in the reported share of China’s exports to the US.
+
+The data is sourced from national statistics and includes information from the ten largest Asian economies. The discrepancy between the two lines suggests differing perceptions or reporting methods on China’s export share decline. This decline might reflect changing trade policies, shifts in the global supply chain, or other economic factors affecting US-China trade relations.

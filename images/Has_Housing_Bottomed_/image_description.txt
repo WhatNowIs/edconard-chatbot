@@ -1,0 +1,11 @@
+The chart depicts real house prices in the United States, adjusted using the Consumer Price Index (CPI) excluding shelter, from January 1976 to January 2024. The blue line represents the Case-Shiller National Home Price Index on a monthly, seasonally adjusted (SA) basis. Periods of recession are indicated by blue shaded regions.
+
+Key observations include:
+1. The housing market experienced three major peaks and subsequent declines over the time period.
+2. There were three notable downturns, each with the following recovery times to reach the previous peak:
+   - From about January 1979, it took 6.5 years to return to the previous peak.
+   - From approximately January 1990, it took 11 years to return to the previous peak.
+   - From around December 2006, it took 14.5 years to return to the previous peak.
+3. The most recent data point in January 2024 shows real house prices slightly declining from the latest peak.
+
+The chart reflects significant housing market cycles and prolonged recovery periods from downturns over the decades.

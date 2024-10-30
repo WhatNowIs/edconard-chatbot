@@ -1,0 +1,9 @@
+This graph, provided by the Federal Reserve Bank of St. Louis, depicts the percentage change in the Real Employment Cost Index (ECI) from a year ago for both union and nonunion workers from the first quarter of 2002 to the first quarter of 2024. The data is sourced from the Bureau of Labor Statistics. It is evident that the cost index has experienced considerable fluctuations over time.
+
+Key observations:
+1. **Historical Trends**: Both union-affiliated (red line) and nonunion-affiliated (blue line) workers have seen periods of both increase and decrease in the Real ECI, reflecting economic conditions such as inflation, recessions, and periods of economic growth.
+2. **2008 Financial Crisis**: Noticeable dips around 2008-2009 reflect the impact of the global financial crisis on employment costs.
+3. **Recent Volatility**: There is significant volatility in recent years, notably around 2020, likely attributable to the economic effects of the COVID-19 pandemic.
+4. **Comparison of Union vs. Nonunion**: Both groups generally follow similar trends, although there are periods where the changes in the index for union workers deviate notably from those of nonunion workers.
+
+The graph illustrates that while both union and nonunion workers experience similar economic pressures, their employment cost index changes can differ, suggesting varying impacts of economic policies, union negotiations, and market conditions on these groups.

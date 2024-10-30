@@ -1,0 +1,29 @@
+The image provides a detailed comparison of various measures of R* (the natural rate of interest) or long-run real interest rates from 2019 to December 2023, expressed in percentage points.
+
+**Key Findings:**
+
+1. **Increases:**
+   - **5YY TIPS:** Increased from 0.55% in 2019 to 1.75% in 2023, a difference of +1.20 percentage points.
+   - **1Y30Y TIPS:** Increased from 1.08% to 2.07%, a difference of +0.99 percentage points.
+   - **DKW 5Y5Y:** Increased from 0.39% to 1.23%, a difference of +0.84 percentage points.
+   - **ACM 5Y5Y:** Increased from 1.33% to 1.87%, a difference of +0.54 percentage points.
+   - **Lubik-Matthes:** Increased from 1.56% to 2.23%, a difference of +0.66 percentage points.
+   - **CR 5Y5Y:** Increased from 0.40% to 0.59%, a difference of +0.19 percentage points.
+   - **SPD:** Increased from 0.62% to 0.75%, a difference of +0.13 percentage points.
+   - **SMP:** Increased from 0.56% to 0.63%, a difference of +0.07 percentage points.
+   - **SSMP:** Increased from 0.44% to 0.75%, a difference of +0.31 percentage points.
+
+2. **Decreases:**
+   - **LW:** Decreased from 1.53% to 1.12%, a difference of -0.41 percentage points.
+   - **HLW:** Decreased from 1.11% to 0.73%, a difference of -0.37 percentage points.
+   - **FOMC SEP:** Decreased from 0.60% to 0.50%, a difference of -0.10 percentage points.
+
+3. **Averages:**
+   - **Simple Average:** Increased from 0.85% to 1.18%, a difference of +0.34 percentage points.
+   - **Median:** Increased from 0.61% to 0.93%, a difference of +0.32 percentage points.
+
+**Notes:**
+- Measures adjusted for inflation using the 5Y5Y TIPS breakeven.
+- Some measures assume a 2% long-run inflation rate.
+
+Overall, the data shows a general trend of increasing long-run real interest rates from 2019 to December 2023, with some exceptions.

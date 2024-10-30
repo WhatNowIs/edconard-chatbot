@@ -1,0 +1,18 @@
+The image is a chart titled "Deceleration at Last?" and examines the changes in average hourly worker pay, annualized, for different categories of workers from 2007 to 2023. The categories are:
+- Retail, leisure, and hospitality (nonsupervisory only, month/month)
+- All other nonsupervisory workers (m/m)
+- Supervisory workers (m/m)
+
+Additionally, it looks at trends on a moving average basis:
+- Retail, leisure, and hospitality (3-month moving average)
+- All other nonsupervisory workers (3-month moving average)
+- Supervisory workers (6-month moving average)
+
+Key points summarized from the chart:
+1. Wage growth fluctuates widely but has varied across different worker categories.
+2. The red line, representing all other nonsupervisory workers, indicates a recent slowdown in wage growth.
+3. In general, wage growth peaks notably around 2021 during the COVID-19 pandemic period.
+4. Despite short-term variations, long-term trends suggest potential deceleration in monthly wage growth for most Americans, which could impact consumer spending and inflation.
+5. The source of the data is the Bureau of Labor Statistics, and the calculations are by Matthew Klein.
+
+This chart contributes to understanding how wage trends are impacting the broader economy, highlighting a potential deceleration in wage growth that may ease underlying inflation pressures.

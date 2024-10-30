@@ -1,0 +1,14 @@
+The image contains a line graph titled "Actual Retirements Began to Greatly Surpass the Predicted Trend during the Pandemic." It shows the percentage of the civilian noninstitutional population (age 16 and older) that is retired from 2000 to 2023. There are two lines, one representing actual retirements (solid blue line) and the other representing predicted retirements (dotted black line).
+
+Key observations:
+- From 2000 to about 2019, the actual retirements closely followed the predicted trend.
+- Around 2020, during the COVID-19 pandemic, the actual retirements began to significantly exceed the predicted trend.
+- The gap between the actual and predicted retirements continued to widen, with actual retirements experiencing a notable increase during the pandemic period.
+
+Notes section provides information about the data sources, methodology, and adjustments:
+- Retirement shares are computed using the Current Population Survey microdata, with weights adjusted for population changes due to the 2020 census.
+- The model predicting the retirement share follows Montes, Smith, and Dajon (2022).
+- Data are seasonally adjusted using the X13-ARIMA-SEATS procedure from the Census Bureau.
+
+Summary:
+The graph from the Federal Reserve Bank of St. Louis illustrates that actual retirement rates among the civilian noninstitutional population began to significantly exceed predicted rates starting around the onset of the COVID-19 pandemic in 2020. This trend indicates a sharp increase in retirements during and possibly due to the pandemic, diverging notably from prior predictions. The data adjustments and methodologies used are based on comprehensive census procedures and current population survey microdata.

@@ -1,0 +1,29 @@
+The chart titled "Estimated Future Issuance and New Money Raised ($bln)" provides a detailed forecast of various financial instruments and their cumulative effect on new money raised from January 2024 to December 2024. Here are the key points:
+
+1. **Financial Instruments**:
+   - **Notes** (represented in blue)
+   - **Bonds** (represented in orange)
+   - **TIPS/FRN** (represented in gray)
+   - **Maturing Private Amount** (represented in yellow)
+
+2. **Monthly Issuances**:
+   - Each month, three categories of issuances (Notes, Bonds, TIPS/FRN) appear above the x-axis, indicating positive issuance volumes.
+   - The Maturing Private Amount appears below the x-axis, representing maturities of existing instruments.
+
+3. **Cumulative New Money**:
+   - A green dashed line represents the cumulative new money raised, plotted on the right-hand side vertical axis (RHS).
+   - This line shows a steady increase from January 2024 through December 2024, reaching close to 1800 billion USD by the end of the year.
+
+4. **Monthly Trends**:
+   - The issuance of Notes remains relatively stable each month, consistently the largest contributor.
+   - Bonds and TIPS/FRN show smaller, consistent issuance volumes.
+   - The Maturing Private Amount varies monthly, showing larger negative values in some months (e.g., January, April, July, October).
+
+5. **Overall Financial Implications**:
+   - Despite the varying amounts of maturing instruments, the cumulative new money raised shows a constant upward trajectory, indicating a net positive increase in new funds throughout the year.
+
+6. **Source and Basis**:
+   - The data comes from Treasury and author calculations.
+   - The forecast is based on TBAC recommendations.
+
+In summary, the chart illustrates a consistent strategy in financial issuances and maturities, leading to a steady increase in cumulative new money over the year 2024, driven primarily by the issuance of Notes.

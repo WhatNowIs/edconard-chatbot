@@ -1,0 +1,17 @@
+The image is a graph that tracks the balance of payments residual for China, measured in billion dollars (bn), over a period from 2010 to 2023. It uses a four-quarter moving average (4qma) for smoothing the data.
+
+### Key Components of the Graph:
+1. **Goods Trade Balance (Gray)**: This represents the balance of goods trade, calculated as the balance of payments (BoP)/SAFE-basis minus the customs basis.
+2. **Net Errors and Omissions (Orange)**: This component accounts for discrepancies and unaccounted transactions.
+3. **Net Other Investment (Blue)**: This indicates the net other investment activities.
+4. **Balance of Payments Residual (Black Line)**: This represents the overall balance derived from combining the above components.
+
+### Trends Observed:
+- From 2010 to 2013, the balance of payments residual fluctuates around zero, indicating relatively stable payment conditions.
+- A significant dip is observed starting in 2014, reaching lows around 2015-2016, indicating worsening payment conditions with a substantial deficit.
+- Post 2016, the residual shows high volatility with several peaks and troughs, but mostly stays below the zero mark or negative territory, implying persistent payment issues.
+- The most pronounced negative spikes occur around 2016-2017 and 2018-2019.
+- A notable peak occurs again around 2021, but the residual tends downwards towards 2022-2023, indicating continued instability.
+
+### Conclusion:
+The graph elucidates the fluctuations and volatility in China’s balance of payments residual over the given period. Key insights reveal significant deficits and discrepancies, especially during mid-2015 to 2017 and 2018-2019, with some recovery observed around 2021, but again showing a downward trend in the recent periods towards 2023. This could imply ongoing economic adjustments and corrections.

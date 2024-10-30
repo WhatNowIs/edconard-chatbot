@@ -1,0 +1,13 @@
+The chart depicts the relationship between the six-month change in rents and six-month change in home prices across various locations. Notable observations include:
+
+1. **New York City**: An outlier with a relatively modest increase in home prices but a substantial rise in rents, highlighting a significant disparity between rent and price changes.
+  
+2. **Los Angeles**: Experiences moderate changes in both rents and home prices, positioned near the origin.
+  
+3. **Austin**: Shows minimal changes in both home prices and rents, slightly below the origin of the x-axis.
+  
+4. **Irvine**: Located in the top-right area, showing higher increases in home prices and moderate rent changes.
+  
+5. **Naples**: Registers a minor reduction in rents and home prices, positioned in the bottom-left quadrant.
+
+The best-fit line suggests a general trend where slight increases in home prices are associated with slight increases in rents, yet New York City notably deviates from this trend with rents increasing disproportionately.

@@ -1,0 +1,16 @@
+The image presents a graph titled "Taking the Plunge: China's property moguls shed tens of billions of dollars in net worth." It displays the net worth (in billions of US dollars) of three notable Chinese property moguls: Hui Ka Yan, Yang Huiyan, and Wu Yajun over a period from 2019 to 2022.
+
+Key observations from the graph include:
+
+1. **Hui Ka Yan:**
+   - Hui Ka Yan's net worth experienced significant fluctuations. It initially rose, peaking around early 2020, but then underwent a dramatic decline, particularly noticeable around 2021 and 2022. By the end of the observed period, Hui Ka Yan's net worth had dropped significantly to approximately 5 billion USD.
+
+2. **Yang Huiyan:**
+   - Yang Huiyan's net worth remained relatively stable throughout 2019 and much of 2020, with minor fluctuations. However, like Hui Ka Yan, Yang experienced a notable decline in net worth starting in late 2020 and continued to fall sharply throughout 2021 and 2022, reaching its lowest point of around 15 billion USD.
+
+3. **Wu Yajun:**
+   - Wu Yajun's net worth was somewhat lower compared to the other two and showed a slightly more stable trend. There was a minor decrease in late 2021, but no major sharp declines were evident. As of the end of 2022, Wu Yajun's net worth stabilized close to 5 billion USD.
+
+This data indicates a general downward trend in the net worth of these Chinese property moguls over the observed period, highlighting the financial struggles faced by the sector in recent years.
+
+The source of the data is Bloomberg Billionaires Index, and the graph was presented by Bloomberg.

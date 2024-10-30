@@ -1,0 +1,26 @@
+This image presents a graph with the title "Easing Up? Financial Conditions are Tight, But Have Been Easing Up a Bit in Recent Months." The graph compares two indices over time:
+
+1. **Chicago Fed National Financial Conditions Index (represented by a teal line)**
+2. **Chicago Fed National Financial Conditions Index: Credit Subindex (represented by a yellow line)**
+
+### Key Insights:
+
+- **Time Frame**: The data spans from 2019 to 2023.
+- **Indices**: 
+    - Values above 0 indicate tighter financial conditions than average.
+    - Values below 0 indicate looser financial conditions than average.
+
+### Analysis:
+
+- **2019 to Early 2020**:
+  - Both indices remained fairly stable and close to or slightly below zero, indicating average or slightly loose financial conditions.
+- **Early 2020 (Pandemic Onset)**:
+  - Both indices spiked sharply. The teal line (Overall Index) increased substantially more than the yellow line (Credit Subindex).
+  - This spike represents a significant tightening of financial conditions during the onset of the COVID-19 pandemic.
+- **2020 to 2021**:
+  - Both indices began to decrease, with the peaks falling quickly, suggesting easing financial conditions post the initial crisis.
+- **2022 to 2023**:
+  - The overall index (teal line) shows some fluctuations but generally trends downward, indicating an easing of financial conditions.
+  - The credit subindex (yellow line) similarly trends downward but eventually dips more steeply, implying that credit conditions have notably loosened in recent months.
+
+The graph was created by @JosephPolitano using Federal Reserve data. It illustrates that while financial conditions remain tighter than pre-pandemic levels, there has been a notable easing trend in recent months, particularly in credit conditions.

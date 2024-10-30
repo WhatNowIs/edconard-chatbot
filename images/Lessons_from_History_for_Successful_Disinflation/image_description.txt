@@ -1,0 +1,11 @@
+The figure presents a plot titled "Figure 4: Response of GDP Price Index Inflation to a Disinflationary Shock, b. Using Scaled Dummy (evaluated at commitment levels of 1 and 5)." It shows the effect of a disinflationary shock on GDP price index inflation over 20 quarters. 
+
+Key observations:
+- The y-axis indicates the percent change in GDP price index inflation, ranging from -4% to 3%.
+- The x-axis represents time in quarters after the shock, up to 20 quarters.
+- Two scenarios are evaluated: "Scaled (evaluated at level 1)" and "Scaled (evaluated at level 5)."
+   - For level 1, the impact is minimal, hovering slightly below and around 0% after the initial shock.
+   - For level 5, the impact is more pronounced, showing a steep decline, reaching about -3% around the 6th quarter and then fluctuating but maintaining a negative trend just below -2%.
+
+Summary:
+The graph illustrates the differential impact on GDP price index inflation of a disinflationary shock under two commitment levels. At commitment level 1, the inflation rate remains relatively stable, whereas at commitment level 5, the inflation rate experiences a significant drop, highlights accentuated disinflation over time.

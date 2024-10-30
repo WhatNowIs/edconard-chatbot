@@ -1,0 +1,11 @@
+The figure titled "Non-parametric Entry Results" presents the basis points across different financial wealth segments and buy-and-hold return percentages. It is divided into four panels:
+
+- **Upper Left Panel**: Shows gross financial wealth between 50k and 600k. The basis points are plotted against seven ranges of buy-and-hold returns (in %). As buy-and-hold returns increase, there is a general upward trend in basis points, but with notable variability, as indicated by error bars.
+
+- **Upper Right Panel**: Illustrates the same as the upper left panel but for gross financial wealth between 600k and 5000k. Here, the basis points tend to be less variable and do not show a clear increasing trend with higher returns.
+
+- **Lower Left Panel**: Also shows gross financial wealth between 50k and 600k but differentiates between below and above median OBX. Red squares represent below-median OBX, showing generally lower basis points compared to the green diamonds, which represent above median OBX.
+
+- **Lower Right Panel**: Similar to the lower left panel but for gross financial wealth between 600k and 5000k. Again, the green diamonds illustrating above median OBX tend to have higher basis points compared to the red squares indicating below median OBX, particularly noticeable in the higher buy-and-hold return segments.
+
+Overall, the panels suggest that individuals with gross financial wealth between 50k and 600k tend to have more variability and a potentially stronger positive relationship between buy-and-hold returns and basis points compared to those with 600k to 5000k. Furthermore, individuals with holdings above the median OBX tend to achieve higher basis points across buy-and-hold return segments.

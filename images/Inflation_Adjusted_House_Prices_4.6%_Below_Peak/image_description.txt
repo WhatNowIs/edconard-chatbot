@@ -1,0 +1,20 @@
+The chart illustrates the trend of Real House Prices using the Case-Shiller Indexes, adjusted using CPI (less shelter), over the period from January 1976 to January 2024. Key points include:
+
+1. **Data Adjustments and Sources:**
+   - The data is sourced from the Case-Shiller National Index (monthly, seasonally adjusted) and the Case-Shiller Composite 20 Index (seasonally adjusted).
+   - The real house prices are adjusted using the CPI less shelter.
+
+2. **Recessions:**
+   - Periods of recession are marked by shaded blue areas on the graph.
+
+3. **General Trends:**
+   - From 1976 to around 2000, the house prices showed a gradual increase with minor cyclical variations.
+   - Between 2000 and 2006, there was a steep rise in real house prices, peaking close to an index value of 190.
+   - A significant decline followed, bottoming out around 2012 with index values falling to approximately 120.
+   - Post-2012, there was a steady rise in house prices, reaching another peak around 2021 at similar high levels seen in 2006.
+   - A slight decline is evident post-2021.
+
+4. **Comparative Observations:**
+   - The Case-Shiller Composite 20 Index (red line) typically aligns closely with the Case-Shiller National Index (blue line), though it slightly diverged during and immediately after significant peaks and troughs.
+
+This summary provides a clear understanding of the fluctuations in real house prices over the past several decades and highlights periods of economic recession that may correlate with these fluctuations.

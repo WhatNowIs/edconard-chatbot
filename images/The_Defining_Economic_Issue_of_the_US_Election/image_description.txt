@@ -1,0 +1,15 @@
+The graph titled "Two Faces of Inflation" presents data on the Consumer Price Index (CPI) and the CPI inflation rate from January 2021 through May 2024. 
+
+1. **CPI Index (Blue Line)**:
+   - This line represents the CPI index, which measures changes in the price level of a market basket of consumer goods and services. 
+   - The CPI index shows a steady increase from January 2021, starting around 102 and reaching approximately 120 by mid-2023. 
+   - After mid-2023, the growth becomes more moderate and maintains a gradual upward trend through to May 2024.
+
+2. **CPI Inflation Rate (Red Line, Right-Hand Side Axis)**:
+   - This line shows the year-over-year percentage change in the CPI, also known as the inflation rate.
+   - The inflation rate was low at the beginning of 2021, gradually rising and peaking at around 8% in mid-2022.
+   - From mid-2022, the inflation rate began to decline sharply, dipping below 4% by early 2023.
+   - It continues to fluctuate slightly but remains relatively stable between 3% and 4% through to May 2024.
+
+**Summary**:
+The graph illustrates inflation trends in the US over the specified period. The CPI index indicates a steady increase in consumer prices, while the inflation rate shows a significant rise through mid-2022, followed by a steep decline, stabilizing at lower levels in 2023 and early 2024. The trend suggests that despite rising prices, the rate of increase slowed down notably after mid-2022. This data provides insights into the dual aspect of inflation as observed by the US Bureau of Labor Statistics.

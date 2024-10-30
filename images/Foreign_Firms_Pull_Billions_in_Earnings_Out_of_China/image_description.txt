@@ -1,0 +1,15 @@
+The provided image contains a bar graph that illustrates the estimated net reinvested earnings of foreign companies operating in China from around 2014 to 2022. The graph highlights the trend of repatriating profits earned in China, contributing to capital outflows.
+
+Key Points:
+1. Title: "Going Home"
+2. Subtitle: "Foreign companies are repatriating profits earned in China, adding to capital outflows."
+3. The bars represent net reinvested earnings estimated in billions of dollars.
+4. The time range covered is from approximately 2014 to 2022.
+
+Observations:
+1. For most of the years from 2014 to 2019, the net reinvested earnings were positive, reaching up to $50 billion in some periods.
+2. Starting from around 2020, there is a significant shift where the net reinvested earnings become negative, indicating that foreign companies have increasingly been repatriating their profits.
+3. The negative earnings continue and deepen through to 2022, with some periods showing net reinvested earnings around -$50 billion.
+
+Summary:
+The graph shows a clear trend of foreign companies increasingly repatriating their profits earned in China, particularly starting from around 2020. This shift contributes significantly to capital outflows from the country. Earlier, from 2014 to 2019, these companies predominantly reinvested their earnings within China, resulting in positive net reinvested earnings, peaking at about $50 billion. However, this pattern reversed significantly after 2020, highlighting a notable economic shift.

@@ -1,0 +1,20 @@
+This figure showcases two scatter plots that analyze the relationship between Total Factor Productivity (TFP) growth in manufacturing industries and the TFP growth of their suppliers. Each plot uses residualized data and includes 50 bin scatter points.
+
+**Left Panel:**
+- Title: "TFP growth vs. Average Supplier TFP Growth"
+- The x-axis represents the average supplier TFP growth (residualized).
+- The y-axis shows customer TFP growth (residualized).
+- A positive correlation is observed with a slope (β) of 0.81 and a standard error (s.e.) of 0.13, indicating that an increase in average supplier TFP growth is associated with an increase in customer TFP growth.
+
+**Right Panel:**
+- Title: "TFP growth vs. Variance of Supplier TFP Growth"
+- The x-axis represents the variance of supplier TFP growth (residualized).
+- The y-axis shows customer TFP growth (residualized).
+- A negative correlation is observed with a slope (β) of -0.744 and a standard error (s.e.) of 0.121, indicating that an increase in the variance of supplier TFP growth is associated with a decrease in customer TFP growth.
+
+**Notes:**
+- The figure reports bin scatters (50 bins) for the regression model in Table 1 from Panel A, column 2, displaying the conditional relationship between manufacturing TFP growth and either the mean or variance of supplier TFP growth.
+- The left panel plots the residuals from independent regressions of the x- and y-axis variables on the supplier variance of TFP growth with time fixed effects.
+- The right panel plots the residuals from independent regressions of the x- and y-axis variables on the supplier average of TFP growth with time fixed effects.
+
+In summary, the figure illustrates that higher average supplier TFP growth is positively correlated with customer TFP growth, while higher variance in supplier TFP growth is negatively correlated with customer TFP growth.

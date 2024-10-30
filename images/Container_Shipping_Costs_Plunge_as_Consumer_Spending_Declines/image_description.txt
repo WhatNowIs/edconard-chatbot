@@ -1,0 +1,8 @@
+The image is a line graph showing the cost of taking a 40-foot container from East Asia to the US west coast (short-term rates in dollars) from 2019 to 2023. The graph highlights the sharp increase in shipping costs starting in mid-2020, peaking around mid-2021, where the cost exceeded $8,000. However, post-peak, there is a significant decline, and by 2023, the shipping costs have dropped back to pre-pandemic levels, approximately $2,000.
+
+Key Points:
+- Sharp rise in shipping costs from mid-2020.
+- Peak cost of over $8,000 around mid-2021.
+- Rapid decline post-2021, reaching pre-pandemic cost levels (~$2,000) by 2023.
+
+Source: Xeneta, © FT

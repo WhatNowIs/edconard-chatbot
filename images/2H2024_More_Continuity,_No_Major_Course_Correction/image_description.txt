@@ -1,0 +1,11 @@
+The image presents a line graph titled "Figure 3. Land Sales Revenue Decline Getting Worse", sourced from Wind and MacroPolo. The x-axis represents time periods from February 2024 to June 2024, while the y-axis depicts the percentage change in land sales revenue.
+
+Key points:
+- The graph shows a continuous decline in land sales revenue over the given period.
+- Between February 2024 and March 2024, there is a noticeable drop from approximately 0% to around -7.5%.
+- From March to April 2024, the decline moderates but still continues, reaching about -10%.
+- Between April and May 2024, the revenue decline sharpens, dropping to around -17.5%.
+- The trend continues downward through June 2024, approaching nearly -22.5%.
+
+Summary:
+The graph illustrates a worsening trend in land sales revenue from February 2024 to June 2024, showing a steep decline that begins around 0% and falls to nearly -22.5% by mid-2024. The drop accelerates particularly between April and May, indicating growing financial challenges in the land sales sector.

@@ -1,0 +1,16 @@
+The chart titled "Increasing productivity growth will make wage growth more sustainable" illustrates trends in various measures of annual wage growth from January 2002 to January 2024. Four key measures are depicted:
+
+1. **ECI total compensation growth (blue line)**: Represents the Employment Cost Index, which shows a steady increase in growth rates with some fluctuations, peaking around 2008 and again in recent years.
+
+2. **FRB-ATL wage growth (green line)**: Demonstrates the Federal Reserve Bank of Atlanta's wage growth tracking. This measure also shows growth fluctuations but generally follows a similar trend to the ECI, although it portrays more pronounced peaks.
+
+3. **CES hourly earnings growth for production and non-supervisory workers (PNS) (purple dashed line)**: This measure from the Current Employment Statistics indicates significant volatility, with sharp peaks and valleys. Major peaks were observed around 2009 and during the years around 2020-2022.
+
+4. **Sustainable wage growth (orange line)**: This hypothetical measure combines labor productivity growth plus a 2% inflation target. It demonstrates more gradual and stable growth compared to the other indicators.
+
+Key takeaways:
+- All wage growth measures exhibit notable volatility, particularly around economic downturns like the 2008 financial crisis and the COVID-19 pandemic period (2020-2022).
+- The sustainable wage growth measure is relatively stable, suggesting that increased productivity can lead to more sustainable wage increases.
+- Wage growth measures tend to converge towards similar trends over time despite their individual volatilities.
+
+Overall, the data supports the argument that improving productivity can help sustain wage growth in the long term.

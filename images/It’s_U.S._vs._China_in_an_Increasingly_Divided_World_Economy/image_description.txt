@@ -1,0 +1,11 @@
+The chart titled "Taking Off" illustrates the total trade (exports plus imports) between China and three different regions: BRICS (Brazil, Russia, India, China, and South Africa), Europe (excluding Russia), and the U.S. from January 2018 to the present, indexed to the year 2018 (with 2018 set as 100).
+
+Key takeaways from the chart include:
+
+1. **Trade Growth with BRICS**: China's trade with BRICS countries has experienced significant growth, outpacing its trade with both Europe and the U.S., particularly from 2020 onwards. The index for BRICS trade approaches 200 by the end of the period, indicating a near doubling in trade volume compared to 2018.
+
+2. **Trade with Europe**: China's trade with Europe also shows a steady increase, reaching an indexed value of approximately 125 by the end of the chart period. This indicates a 25% increase in trade volume compared to 2018.
+
+3. **Trade with the U.S.**: The trade relationship between China and the U.S., after experiencing some volatility, appears to have leveled off and slightly declined towards the end of the observed period. The index remains under 125, suggesting that while there has been growth, it is less pronounced compared to BRICS and Europe.
+
+Overall, the chart highlights that China's trade with BRICS countries is growing at a faster rate than its trade with Western regions, such as Europe and the U.S.

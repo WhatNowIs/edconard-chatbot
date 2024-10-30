@@ -1,0 +1,9 @@
+The image presents a graph titled "Venture capitalists are struggling to raise new funds," which illustrates global venture capital (VC) fundraising activity from 2015 to 2024. The y-axis represents the capital raised in billions of dollars (up to 600 billion), while the x-axis covers the years from 2015 to 2024.
+
+Key points from the graph:
+
+1. Steady Increase (2015-2018): There was a gradual rise in capital raised, progressing from 2015 through to 2018.
+2. Significant Growth (2018-2021): A marked growth in capital raised is evident, peaking dramatically in 2021.
+3. Decline (2021-2024): Following the peak in 2021, there is a sharp decline in fundraising, with a noticeable drop towards 2024.
+
+The summary suggests that while there was a robust increase in venture capital fundraising activity leading up to 2021, there has since been a significant downturn, indicating current challenges for venture capitalists in raising new funds. The data for 2024 is noted as "year to date". The source of the data is PitchBook, and the image is credited to FT (Financial Times).

@@ -1,0 +1,14 @@
+The image presents two graphs depicting the relationship between Chinese GDP, exports, and imports over time.
+
+1. On the left, the graph titled "Evolution of GDP, Exports, & Imports" shows the trends in these three metrics from 2013 to 2023. The following observations can be made:
+   - GDP (solid black line) has experienced a steady increase over the period.
+   - Exports (dashed blue line) and imports (dotted red line), while showing fluctuations, have generally followed an upward trend, with noticeable divergences at certain points.
+   - Reference point is 2019 Q4 set to 100 for comparative purposes.
+   - Exports showed a significant spike around 2021, whereas imports had a more moderated rise.
+
+2. On the right, the graph titled "Correlation of Trade Growth with GDP Growth" illustrates the correlation values for exports and imports with GDP growth from 2014 to 2023.
+   - Initially, the correlation between exports and GDP growth was positive but experienced a sharp decline around 2015, turning negative around 2016, then rebounding by 2020 and remaining positive up to 2023.
+   - The correlation between imports and GDP growth showed more stability but also decreased around 2016, then gradually increased, peaking in 2020 before declining yet staying positive by 2023.
+
+Summary:
+From 2013 to 2023, Chinese GDP has grown steadily, while exports and imports have shown more volatility but generally upward trends. The correlation between trade growth (exports and imports) and GDP growth has experienced significant fluctuations, suggesting varying levels of dependence between these economic metrics over time. The period around 2020 shows a notable shift with a peak in export correlation with GDP growth.

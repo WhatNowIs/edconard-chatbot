@@ -1,0 +1,13 @@
+The image is a bar graph illustrating Microsoft's capital expenditures from 2018 to 2024 in billions of dollars. Here is a summary of the key information:
+
+1. The title "Microsoft is spending big on AI" suggests that the expenditures are related to investments in Artificial Intelligence.
+2. The data shows a consistent increase in capital expenditures over the years.
+3. In 2018, the capital expenditures were just under $5 billion.
+4. Spending remained relatively steady between 2018 and 2021, averaging around $5-6 billion annually.
+5. There was a noticeable increase starting in 2022, with expenditures slightly exceeding $6 billion.
+6. In 2023, the capital expenditures continued to climb, further exceeding the $6 billion mark.
+7. A significant jump is evident in 2024, with expenditures skyrocketing to over $15 billion, indicating a substantial investment increase in AI technologies.
+8. The graph includes assets acquired under capital leases.
+9. The source of the data is attributed to Microsoft.
+
+The trend indicates that Microsoft is significantly ramping up its spending on AI, especially in the most recent year, highlighting the company's strategic focus on expanding its AI capabilities and infrastructure.

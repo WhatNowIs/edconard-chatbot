@@ -1,0 +1,22 @@
+The chart illustrates the Cyclically Adjusted Price-to-Earnings (CAPE) ratio required over the next ten years to achieve an excess return of 11.9%, under various assumptions for real earnings growth. Key points from the chart include:
+
+1. **Required CAPE Ratios**:
+   - For a 1% assumed real earnings growth, the CAPE must rise to 61.
+   - For a 3% assumed real earnings growth, the CAPE must rise to 55.
+   - For a 6% assumed real earnings growth, the CAPE must rise to 51.
+
+2. **Comparison Benchmarks**:
+   - The maximum CAPE during the Tech Bubble was 44.
+   - The CAPE in June 2023 was 30.
+   - The postwar average CAPE is 20.
+
+3. **Excess Returns**:
+   - To achieve a 7.1% excess return over the next ten years, the required CAPE ratios are notably lower but still consistently above historical averages and the June 2023 level.
+
+4. **Key Insight**:
+   - Even with a high 6% real earnings growth assumption, achieving an 11.9% excess return would require the CAPE to rise to 51, which is higher than historical peaks, including the Tech Bubble.
+
+5. **Source Information**:
+   - The data is sourced from AQR and Robert Shiller’s Data Library, spanning from January 1, 1950, to June 30, 2023.
+
+This analysis emphasizes the substantial increase in market valuations needed to achieve historical excess returns, even under optimistic earnings growth scenarios.

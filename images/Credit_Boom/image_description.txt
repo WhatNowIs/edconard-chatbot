@@ -1,0 +1,20 @@
+This image depicts a line graph titled "Commercial Bank Loans and Leases YTD ($trn)," illustrating the year-to-date values for commercial bank loans and leases from 2018 to 2022. The data is sourced from the Federal Reserve H8.
+
+Key points of the graph:
+
+1. **Years Represented**:
+   - 2022 (blue line)
+   - 2021 (orange line)
+   - 2019 (gray line)
+   - 2018 (yellow line)
+
+2. **Trend Overview**:
+   - The 2022 line shows the highest growth trajectory among the years shown, reaching approximately 1.2 trillion dollars by December.
+   - The 2021 and 2019 lines demonstrate slower growth trends compared to 2022, with the 2021 line slightly increasing but staying well below the 2022 line.
+   - The 2018 line shows a gradual increase and slightly converges with the 2021 line by the end of the year.
+
+3. **Comparison**:
+   - The growth seen in 2022 is substantially higher than in any of the previous years, with a marked increase beginning around February and continuing steadily through December.
+   - The data signifies a general upward trend in commercial bank loans and leases over the years, but 2022 stands out with a significant spike in growth.
+
+Summary: The graph highlights a remarkable rise in commercial bank loans and leases in 2022, surpassing the growth rates of 2021, 2019, and 2018. The trend underlines a notable increase in commercial lending activities for 2022, reflecting potential economic changes or shifts in lending policies during that year.

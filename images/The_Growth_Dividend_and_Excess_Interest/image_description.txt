@@ -1,0 +1,29 @@
+The image features two bar graphs illustrating the relationship between the deficit and the change in the debt-to-GDP ratio over select periods. Each graph compares the deficit (shown in blue) and debt ratio change (shown in red) as percentages of GDP.
+
+### Graph A: Example Years
+- **2005:** 
+  - **Deficit:** 2.5% of GDP
+  - **Debt Ratio Change:** 0.1% of GDP
+- **2024 (projected):**
+  - **Deficit:** 6.7% of GDP
+  - **Debt Ratio Change:** 1.7% of GDP
+
+### Graph B: Pre-Great-Recession Years versus the Next Decade
+- **2003-2007 (historical):**
+  - **Deficit:** 2.4% of GDP
+  - **Debt Ratio Change:** 0.5% of GDP
+- **2024-2034 (projected):**
+  - **Deficit:** 6.3% of GDP
+  - **Debt Ratio Change:** 2.3% of GDP
+
+### Key Insights:
+- In both graphs, the deficit as a percent of GDP significantly exceeds the change in the debt-to-GDP ratio.
+- The projected figures for 2024 and 2024-2034 show a notable increase in both the deficit and the debt ratio change compared to historical values.
+- The disparity between the deficit and the debt ratio change increases over time, indicating that the deficit is growing much faster than the debt-to-GDP ratio is changing.
+
+### Notes:
+- The deficit includes the primary deficit plus net interest.
+- The change in the debt-to-GDP ratio equals the difference in the debt-to-GDP ratio between the end of one year and the end of the prior year.
+- Historical data are sourced from the CBO (Congressional Budget Office) and OMB (Office of Management and Budget) tables, while next-decade projections also come from the CBO.
+
+This analysis highlights the growing fiscal imbalance, indicating that future deficits are expected to rise substantially relative to GDP, outpacing the rate of change in the debt-to-GDP ratio.

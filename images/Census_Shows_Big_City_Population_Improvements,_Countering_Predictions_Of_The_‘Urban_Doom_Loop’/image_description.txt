@@ -1,0 +1,10 @@
+This image is a bar chart from Brookings Metro, sourced from William H. Frey's analysis of annual Census Bureau estimates from July to July (2020–2023 estimates are vintage 2023 estimates). The chart illustrates the annual population growth for U.S. cities with over 250,000 residents between 2000 and 2023.
+
+Key highlights:
+
+- From 2000-01 to 2019-20, the annual population growth in these cities fluctuated but generally maintained a positive trajectory, reaching a peak of approximately 1.0% between 2010-11 and 2011-12.
+- There was a noticeable decline in population growth from 2015 onward.
+- A significant drop occurred in 2020-21, with population growth falling to -0.89%, indicating a population decline.
+- This trend continued in 2021-22 but began to recover slightly, reaching 0.14% in 2022-23.
+
+The data emphasizes a major impact from around the period of 2020-2022, likely influenced by COVID-19, with a slight recovery starting in 2022-23.

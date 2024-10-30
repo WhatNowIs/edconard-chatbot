@@ -1,0 +1,12 @@
+The image is a financial data graph from FRED that illustrates two different time series over a period from 1970 to 2022:
+
+1. **Federal Government Current Expenditures: Interest Payments (measured in billions of dollars)**
+   - Represented by the blue line on the left Y-axis.
+   - Shows a general upward trend, particularly notable since the early 1980s. While it fluctuates somewhat during the late 1990s and early 2000s, the overall trend continues to rise significantly through 2022.
+
+2. **Federal Debt: Total Public Debt as Percent of Gross Domestic Product (measured as a percentage of GDP)**
+   - Represented by the red line on the right Y-axis.
+   - Indicates a general increase from the early 1980s onward, with marked acceleration during economic recessions (noted by shaded gray areas indicating these periods). The ratio spikes notably after 2008 and again during the early 2020s, reaching levels above 120% of GDP.
+
+**Summary:**
+The graph clearly demonstrates that the federal government's interest rate expenditures have been rising in conjunction with the level of debt. Events like economic recessions contribute to significant increases in federal debt as a percentage of GDP, leading to higher interest payments. This correlation shows that as debt levels increase, so do the corresponding interest payment obligations of the federal government.

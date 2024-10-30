@@ -1,0 +1,17 @@
+The image presents a financial chart comparing two data sets over time: the price of Gold Spot $/Oz (represented by a white line) and the US Generic Government TII 5 Year yield (represented by a yellow line). The timeline on the x-axis spans from 2013 to 2023.
+
+Key Observations:
+1. **2013-2015 Period**: Both Gold Spot and US Generic Govt TII 5 Yr exhibited a downward trend.
+2. **2015-2020 Period**: 
+   - The Gold Spot price was more volatile, showing significant fluctuations.
+   - The US Generic Govt TII 5 Yr experienced peaks and troughs but generally showed a more stable pattern compared to gold.
+3. **2020-2022 Period**: 
+   - The Gold Spot price experienced a sharp increase, peaking around 2020-2021.
+   - The US Generic Govt TII 5 Yr yield also rose but started a sharp decline towards the end of the period.
+4. **Post-2022 Trend**: The Gold Spot price briefly declined but then partially recovered, while US Generic Govt TII 5 Yr remained significantly low before starting a slight upward trend.
+
+The final values at the latest point (January 9, 2023) are approximately:
+- Gold Spot: $1876.84 per ounce
+- US Generic Govt TII 5 Yr: 1.4782 
+
+It’s important to note that both data sets show a tendency to respond to significant economic events and policy changes, reflecting broader market sentiments and macroeconomic conditions.

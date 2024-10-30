@@ -1,0 +1,11 @@
+The image illustrates the average annual growth rate of GDP under two scenarios: Baseline and NZE (Net Zero Emissions). It compares these growth rates across two periods: 2019-2030 and 2030-2050.
+
+- **2019-2030 Period**:
+  - The Baseline scenario shows an average annual GDP growth rate slightly above 2%.
+  - The NZE scenario indicates a lower growth rate, estimated at around 1.8%.
+
+- **2030-2050 Period**:
+  - Under the Baseline scenario, the average annual GDP growth rate remains consistent, slightly above 2%.
+  - For the NZE scenario, the growth rate is marginally lower, close to the range of 1.8%.
+
+The source of the data is the OECD ENV-Linkages model. The graph highlights that while the economic growth under the NZE scenario is robust, it is somewhat lower than the Baseline scenario for both periods considered. The title of the figure suggests that despite this slight reduction, the global economy remains resilient in the context of ambitious net-zero emissions scenarios.

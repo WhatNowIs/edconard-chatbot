@@ -1,0 +1,11 @@
+The image provides a comparison of the predictive power of SAT/ACT-equivalent scores versus high school GPAs on student outcomes after college. It contains two pairs of graphs:
+
+1. **Attending an elite graduate school:**
+   - **SAT or ACT-equivalent score (left graph):** Shows a strong positive correlation between test scores and the likelihood of attending an elite graduate school. Higher scores are associated with a higher probability of attending such schools.
+   - **High school G.P.A. (right graph):** Suggests only a weak positive correlation between GPA and attending an elite graduate school.
+
+2. **Working at a prestigious firm:**
+   - **SAT or ACT-equivalent score (left graph):** Displays a strong positive correlation between test scores and the likelihood of working at a prestigious firm. Higher scores correlate with a higher percentage of working in such firms.
+   - **High school G.P.A. (right graph):** Shows only a weak positive correlation between GPA and working at a prestigious firm.
+
+Overall, the charts indicate that SAT or ACT-equivalent scores are stronger predictors of post-college outcomes, such as attending an elite graduate school or working at a prestigious firm, compared to high school GPAs. This conclusion is emphasized by annotations pointing out the greater predictive power of test scores over high school grades. The data used for this analysis is from students who entered college between 2010 and 2015, sourced from Opportunity Insights and the study by Chetty, Deming, and Friedman (2023). The analysis was conducted by Ashley Wu.

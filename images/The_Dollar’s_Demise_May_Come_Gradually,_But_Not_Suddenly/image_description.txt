@@ -1,0 +1,11 @@
+The graph titled "The Dominant Dollar" depicts the composition of global foreign exchange reserves from the first quarter of 1990 to the first quarter of 2022. The data sourced from the International Monetary Fund and Brad Setser highlights the dominance of the US dollar (USD) in global foreign exchange reserves over other currencies.
+
+Key points include:
+- The value of global foreign exchange reserves has grown steadily from just a few trillion dollars in 1990 to over $10 trillion in 2022.
+- The US dollar (USD) (represented in blue) remains the dominant reserve currency throughout the period, constituting a significant portion of total global reserves.
+- The euro (EUR) (in black) also constitutes a substantial part of reserves, especially post-2000 when it was introduced.
+- Other currencies such as the Japanese yen (JPY), British pound (GBP), Chinese yuan (CNY), Canadian dollar (CAD), Australian dollar (AUD), and Swiss franc (CHF) (represented by various colors but with relatively smaller shares) follow behind the USD and EUR in terms of reserve proportions. 
+- There was a notable increase in the total reserves post-2000, with a significant jump observed post-2008 financial crisis.
+- While the overall reserves have been increasing, the proportion held in USD remains notably larger than all other currencies.
+
+The graph clearly illustrates the enduring dominance of the US dollar in global financial systems, despite gradual diversification among other currencies over the years.

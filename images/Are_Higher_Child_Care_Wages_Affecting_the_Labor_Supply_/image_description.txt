@@ -1,0 +1,13 @@
+The table presents the estimated effects of child care worker wages on labor force participation (LFP) rates, segmented by family and partnership status. The columns show the causal effect of child care worker wages along with the standard error for four groups: partnered men with children, single men with children, partnered women with children, and single women with children.
+
+**Key Findings:**
+- **Partnered Men with Children:** The estimated causal effect is -0.007 with a standard error of 0.011.
+- **Single Men with Children:** The estimated causal effect is 0.051 with a standard error of 0.032.
+- **Partnered Women with Children:** The estimated causal effect is -0.030 with a standard error of 0.014. This is the only coefficient with statistical significance at the 10% level.
+- **Single Women with Children:** The estimated causal effect is -0.004 with a standard error of 0.021.
+
+**Sources and Methodology:**
+- The data is sourced from the Census Bureau and authors' computations.
+- The regressions were estimated using state population weights.
+
+The table indicates that among the groups, the labor force participation rate of partnered women with children is statistically significantly affected by child care worker wages.

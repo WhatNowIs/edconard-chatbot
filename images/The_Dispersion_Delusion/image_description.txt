@@ -1,0 +1,10 @@
+The image titled "Figure 3: Median Returns of Private Equity vs. Factor-Ranked Micro-Cap Portfolios" compares the median returns of different investment strategies. The three bars represent:
+
+1. **Private Equity Actual**: This strategy yielded a median return of 15%.
+2. **Value Micro-Cap Sim (20 Holdings)**: This simulated strategy focusing on value factors provided a higher median return of 18%.
+3. **Quality Micro-Cap Sim (20 Holdings)**: This simulated strategy focusing on quality factors achieved a median return of 14%.
+
+The source information cites data from J.P. Morgan Asset Management, Capital IQ, and Verdad analysis. The 'Value' strategy is defined by a composite of factors including EBITDA/EV, Sales/EV, Book-to-Market, and free cash flow yield. 'Quality' is defined as Gross Profit/Assets. 
+
+Summary:
+The chart indicates that the Value Micro-Cap Sim strategy, comprising 20 holdings, outperforms both the actual private equity returns and the Quality Micro-Cap Sim strategy in terms of median returns, with respective performances of 18%, 15%, and 14%. This suggests that, at least in the context of this analysis, value-oriented micro-cap investing may yield better returns compared to quality-focused micro-cap investing or actual private equity returns.

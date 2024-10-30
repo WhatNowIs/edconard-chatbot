@@ -1,0 +1,13 @@
+The image titled "An Uneven Geographic Recovery from the Pandemic Recession" depicts a map of the United States with data points color-coded to signify recovery status as of March 2024. 
+
+- **Recovered (Blue dots)**: Represents geographic areas that have recovered from the pandemic recession.
+- **Not recovered (Red dots)**: Represents areas that have not recovered.
+
+**Summary**:
+The map illustrates the varied recovery rates across different geographic regions in the United States following the pandemic recession. 
+
+- **Western US**: Predominantly shows blue dots, indicating many areas have recovered.
+- **Central US**: A more mixed picture, with both recovered (blue) and not recovered (red) areas scattered throughout.
+- **Eastern US**: Similar to the central region but with a higher concentration of both recovered (blue) and not recovered (red) areas, particularly in the northeastern region.
+
+This depiction highlights the uneven geographic recovery landscape across the country, with some areas bouncing back while others lag behind. Sources for this data are from the U.S. Bureau of Labor Statistics and Moody’s Economy.com.

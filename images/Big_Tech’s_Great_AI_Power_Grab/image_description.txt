@@ -1,0 +1,17 @@
+The image is a bar graph titled "Hungry hungry robots" illustrating the estimated global electricity demand by category in terawatt-hours (TWh) for the years 2022 and 2026. The data source is the International Energy Agency (IEA).
+
+**Key observations:**
+
+1. **2022:**
+   - The total electricity demand for data-related activities is around 400 TWh.
+   - The majority of this demand is attributed to conventional data centres (in red).
+   - Cryptocurrencies (in peach) also consume a notable portion of electricity.
+
+2. **2026 forecast:**
+   - The total electricity demand significantly increases to approximately 750 TWh.
+   - Conventional data centres still dominate the energy consumption landscape but will face competition from other emerging sectors.
+   - Cryptocurrencies' electricity demand grows.
+   - A new category, dedicated AI data centres (in blue), emerges with a considerable share of the total electricity consumption.
+
+**Summary:**
+The graph shows a significant rise in global electricity demand for data-related activities between 2022 and 2026. Conventional data centres remain the largest consumers of electricity. However, the demand from cryptocurrencies and new dedicated AI data centres increases substantially, contributing to the overall rise in energy consumption.

@@ -1,0 +1,12 @@
+The image depicts a line graph titled "Monthly Remittances Due to the Treasury: 2011 – Present." It shows the trend of monthly remittances measured in billions of dollars ($) from January 2011 to roughly mid-2022. Here's a detailed summary:
+
+- **Time Frame:** January 2011 to mid-2022.
+- **Y-Axis Range:** The graph's vertical axis measures amounts from -$50 billion to $20 billion.
+- **General Trend:**
+  - From 2011 to the beginning of 2020, the remittances due to the Treasury were consistently positive, mostly fluctuating between $0 and $15 billion per month.
+  - There was some variability, with remittances occasionally dipping slightly but staying within the positive range.
+- **Significant Change:** Around early 2022, there is a steep and dramatic decline in remittances, dipping well into the negative range, reaching close to -$40 billion.
+- **Annotation:** There is a downward arrow annotated with "ooooh teeeeeeeetzzzzz" highlighting the steep decline.
+
+**Overall Summary:**
+From the beginning of 2011 to early 2020, monthly remittances due to the Treasury showed a relatively stable and positive trend. However, starting around early 2022, there was a significant and abrupt downturn, resulting in large negative remittances, indicating possibly substantial outflows or adjustments that led to a significant financial shift.

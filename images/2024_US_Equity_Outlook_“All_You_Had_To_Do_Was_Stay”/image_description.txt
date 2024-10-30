@@ -1,0 +1,15 @@
+The image contains two bar graphs comparing the "Magnificent 7" companies to the rest of the S&P 500 in terms of sales growth and net margins.
+
+**Exhibit 28: Sales growth of Magnificent 7 vs. rest of S&P 500**
+- The graph illustrates the consensus sales growth compound annual growth rate (CAGR) of the "Magnificent 7" compared to the remainder of the S&P 500.
+- From 2013-2019, the "Magnificent 7" had a CAGR of 15% compared to 2% for the rest of the S&P 500.
+- From 2021-2022, the "Magnificent 7" had a CAGR of 18% compared to 15% for the rest of the S&P 500.
+- Projected for 2023-2025E, the "Magnificent 7" is expected to have a CAGR of 11% compared to 3% for the rest of the S&P 500.
+
+**Exhibit 29: Margins of Magnificent 7 vs. rest of S&P 500**
+- The line graph shows the last twelve months (LTM) net margins of the "Magnificent 7" compared to S&P 493.
+- Both groups show fluctuations in margins over time.
+- The "Magnificent 7" have much higher net margins, reaching a peak of 21.8% in 2021, with projections of 20.7% in 2024E and 21.4% in 2025E.
+- In contrast, the S&P 493 shows a lower and somewhat consistent margin trend, around 9.8% in 2023, with projections of 10.7% in 2024E and 10.7% in 2025E.
+
+In summary, the "Magnificent 7" companies significantly outperform the rest of the S&P 500 in terms of sales growth and net margins, with projected continued outperformance in the coming years.

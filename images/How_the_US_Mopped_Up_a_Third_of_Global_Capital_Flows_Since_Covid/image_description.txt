@@ -1,0 +1,20 @@
+The image is a Bloomberg chart comparing the US Federal Funds Target Rate (in red) and the China One-Year Deposit Rate (in black) over time, from 2001 to 2024. Key observations include:
+
+1. **US Federal Funds Target Rate:** 
+   - High levels in the early 2000s, peaking around 5%.
+   - Sharp decline during the 2008 financial crisis, dropping near 0%.
+   - Gradual increase post-crisis until 2019, reaching around 2.5%-3%.
+   - Significant dip in 2020 with rates dropping again due to the COVID-19 pandemic.
+   - Sharp increase from 2021, once again reaching historic highs around 5%.
+
+2. **China One-Year Deposit Rate:**
+   - Relatively stable compared to the US rates.
+   - Generally maintaining a level between 2% to 4% for most of the period.
+   - Slight adjustments corresponding to global economic conditions, but not as volatile.
+
+3. **Interest Rate Comparison:**
+   - Historically, the US Federal Funds Target Rate has experienced greater fluctuations compared to the relatively stable China One-Year Deposit Rate.
+   - The spread between US rates and Chinese rates has seen significant changes, with periods where US rates were either higher or lower than China's rates.
+   - Currently, the US rates are at a historic high, significantly higher than the Chinese rates.
+
+Overall, the chart highlights the differences in monetary policy and economic responses between the US and China over the past two decades. The US Federal Reserve is now considering lowering rates from these historic highs.

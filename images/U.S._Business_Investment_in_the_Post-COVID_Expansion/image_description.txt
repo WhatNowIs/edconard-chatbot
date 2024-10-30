@@ -1,0 +1,20 @@
+This image presents a graph titled "Business Fixed Investment as Share of GDP," illustrating the percentage point change since the business cycle peak over 17 quarters. The graph compares the trajectories of business fixed investment during three different periods: the Great Recession & Recovery, the COVID Recession & Recovery, and the average of other recessions and recoveries.
+
+Key observations:
+1. **Great Recession & Recovery (Orange Line)**: 
+   - Initially stable, there is a sharp decline reaching its lowest point around the 6th or 7th quarter, approximately a 2.5 percentage point decrease.
+   - Gradual recovery begins after the 8th quarter, with a notable increase towards the 17th quarter.
+
+2. **COVID Recession & Recovery (Blue Line)**:
+   - Starts similarly but experiences a sharp decline in the business fixed investment share within the first few quarters.
+   - A quick recovery begins soon after, showcasing a more volatile but continuous upward trajectory.
+   - By 2024:Q1 (17th quarter), the investment share almost levels with the initial value.
+
+3. **Average Recession & Recovery (Gray Dashed Line)**:
+   - Displays a more moderate decrease in the fixed investment share, never dropping as sharply as the Great Recession.
+   - The recovery is gradual and steady, reaching closer to the initial value by the 17th quarter but not fully regaining the initial percentage point.
+
+**Notes**:
+- Business cycle peaks are defined by the National Bureau of Economic Research.
+- "Business fixed investment" accounts for private nonresidential fixed investment.
+- The data comes from the Bureau of Economic Analysis, National Bureau of Economic Research, and U.S. Treasury calculations.

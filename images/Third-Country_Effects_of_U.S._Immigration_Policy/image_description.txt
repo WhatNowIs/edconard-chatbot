@@ -1,0 +1,13 @@
+The image is a dual-axis line graph titled "Figure 1: Increasing H-1B restrictions and skilled immigration to Canada." The graph compares the H-1B visa denial rate (plotted on the left y-axis as percentage points) with the number of skilled immigrants admitted to Canada (plotted on the right y-axis in thousands).
+
+Key details include:
+
+- The blue line represents the H-1B visa denial rate. Over the period from the first quarter of 2012 to the fourth quarter of 2018, there is a visible increase, especially noticeable after 2017, where the denial rate rises sharply.
+- The green line represents the number of skilled immigrants admitted to Canada. This line shows a general upward trend, with a significant increase after the fourth quarter of 2017.
+- The spikes in both lines are marked and easily correlated: as the H-1B visa denial rate increases, the number of skilled immigrants admitted to Canada also rises.
+
+The note below the graph details the methodological context:
+- The H-1B denial rate accounts for both new and continuing applications and adjusts for seasonality by using a four-quarter moving average.
+- The Canadian admissions data reflect the number of admissions granted under permanent residence programs for skilled workers, such as the Federal Skills Trades Program, Federal Skilled Worker (Express Entry), and Provincial Nominee Program (PNP).
+
+Overall, the graph illustrates that as the restrictions on H-1B visas in the United States have increased, there has been a corresponding rise in the number of skilled immigrants moving to Canada.

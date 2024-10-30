@@ -1,0 +1,13 @@
+The chart "U.S. real gross domestic product vs. pre-pandemic projections, 2019Q1 = 100" compares the actual performance of the U.S. real GDP against the pre-pandemic projections made in January 2020 by the CBO (Congressional Budget Office). The data span from 2019 to 2023.
+
+Here's the summary of key observations:
+1. **Pre-pandemic Projection (Red Dotted Line)**: Indicates the expected trajectory of real GDP without considering the impact of the pandemic.
+2. **Actual GDP (Blue Solid Line)**: Shows the real performance of the U.S. GDP.
+
+**Timeline and Major Points**:
+- **2019 to early 2020**: Small growth in GDP, following closely to the projected trend.
+- **2020**: A significant dip in actual GDP is observed, falling well below pre-pandemic projections. This aligns with the onset of the COVID-19 pandemic.
+- **2021**: The actual GDP shows a sharp recovery, surpassing the pre-pandemic projections around mid-2021.
+- **2022 to 2023**: The actual GDP continues to grow and remains above the pre-pandemic projections, indicating a strong recovery and growth despite disruptions like the pandemic and Russia’s war on Ukraine.
+
+The key takeaway from the graph is that, despite severe disruptions due to the pandemic and geopolitical events, American workers and businesses have managed to produce more goods and services than initially forecasted before these events, leading to actual GDP surpassing pre-pandemic projections by early 2022 and continuing this trend through 2023.

@@ -1,0 +1,18 @@
+The chart presents the NFIB (National Federation of Independent Business) Small Business Credit Conditions, specifically the availability of loans for small firms, from February 1986 to February 2023. The vertical axis is an index, and the horizontal axis represents the timeline.
+
+**Key Insights:**
+
+1. **Sharp Decline in Loan Availability (Recent Trend):**
+   - After the events involving Silicon Valley Bank (SVB), there is a notable trend where small firms are finding it harder to get financing. This is indicated by a steep decline in the index right after February 2023.
+
+2. **Historical Patterns:**
+   - The chart shows multiple periods where loan availability fluctuates. The index experiences several peaks and troughs over the years.
+   - Significant dips are observed around economic downturns, including the early 1990s, around 2008-2009 (financial crisis period), and the COVID-19 pandemic period.
+
+3. **Recent Decline (Post-SVB Context):**
+   - Since the beginning of 2023, there is a marked decline in the index, suggesting that small firms are increasingly reporting more difficulty in securing financing.
+
+4. **Source and Credibility:**
+   - Data is sourced from NFIB, Bloomberg, and Apollo Chief Economist, indicating a high level of data credibility and relevance for understanding small business financing trends.
+
+Overall, the chart clearly highlights a significant increase in difficulty for small businesses to obtain loans, exacerbated in the aftermath of the Silicon Valley Bank incident.

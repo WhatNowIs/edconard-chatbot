@@ -1,0 +1,53 @@
+This visual representation shows the distribution of factory locations for Apple's top 10 suppliers across various countries with a focus on Vietnam and India. 
+
+**Overall Information:**
+- Six of Apple's top 10 suppliers have factories in Vietnam and/or India.
+- The diamonds represent factory locations supplying Apple across different countries and years (2012, 2019, and 2022).
+- The percentages refer to each supplier's estimated share in Apple's cost of goods sold.
+- The data includes the latest available information between 2021 and 2023.
+
+**Supplier Breakdown:**
+1. **Foxconn (50% of Apple's spending):**
+   - Headquarters: Taiwan
+   - Factory locations: China, Vietnam, Brazil, US, Taiwan, India, Hong Kong
+
+2. **Pegatron (11%):**
+   - Headquarters: Taiwan
+   - Factory locations: China, Czech Republic, Japan, Singapore, S. Korea, Taiwan, US, Australia, India, Indonesia
+
+3. **Luxshare Precision (13%):**
+   - Headquarters: China
+   - Factory locations: China, Vietnam
+
+4. **Samsung Electronics (6%):**
+   - Headquarters: S. Korea
+   - Factory locations: S. Korea, China, US, Vietnam
+
+5. **LG Innotek (5%):**
+   - Headquarters: S. Korea
+   - Factory locations: S. Korea, Vietnam
+
+6. **LG Display (3%):**
+   - Headquarters: S. Korea
+   - Factory locations: China, S. Korea, Vietnam
+
+7. **Quanta Computer (8%):**
+   - Headquarters: Taiwan
+   - Factory locations: China, US, Thailand
+
+8. **Qualcomm (5%):**
+   - Headquarters: US
+   - Factory locations: Singapore, Austria, China, Germany, US, UK
+
+9. **TSMC (7%):**
+   - Headquarters: Taiwan
+   - Factory locations: Taiwan, China, US
+
+10. **Broadcom (3%):**
+    - Headquarters: US
+    - Factory locations: US, Taiwan, S. Korea, Israel, Singapore
+
+**Key Insights:**
+- Vietnam and India have emerged as prominent locations for Apple's suppliers.
+- Foxconn is the largest supplier by spending and has various factory locations globally.
+- Many suppliers have expanded their production footprints over the years to multiple countries, and six out of ten have factories specifically in Vietnam and/or India.

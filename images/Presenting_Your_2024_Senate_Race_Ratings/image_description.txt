@@ -1,0 +1,60 @@
+### Summary:
+
+**New York Times/Siena College Poll of Likely Republican Electorate (July 23-27)**
+
+This poll segment examines the views and demographics of three groups of likely Republican primary voters: the "MAGA base" (37%), "persuadable voters" (37%), and those "not open to Trump" (25%).
+
+#### Views on Trump:
+- **MAGA base**: 
+  - 94% believe the GOP needs to stand behind Trump.
+  - No support for Biden over Trump in '24.
+  - No belief that Trump committed crimes.
+  - 0% have an unfavorable view of Trump.
+- **Persuadable voters**:
+  - 80% believe the GOP needs to stand behind Trump.
+  - 1% would vote for Biden over Trump in '24.
+  - 9% think Trump committed crimes.
+  - 12% have an unfavorable view of Trump.
+- **Not open to Trump**:
+  - 32% think the GOP needs to stand behind Trump.
+  - 29% would vote for Biden over Trump in '24.
+  - 49% think Trump committed crimes.
+  - 69% have an unfavorable view of Trump.
+
+#### Views on Issues:
+- **Say America is in danger of failing**:
+  - MAGA base: 80%
+  - Persuadable voters: 61%
+  - Not open to Trump: 37%
+- **Oppose immigration reform**:
+  - MAGA base: 71%
+  - Persuadable voters: 57%
+  - Not open to Trump: 37%
+- **Oppose more aid to Ukraine**:
+  - MAGA base: 64%
+  - Persuadable voters: 58%
+  - Not open to Trump: 26%
+- **Say punish 'woke' businesses**:
+  - MAGA base: 43%
+  - Persuadable voters: 41%
+  - Not open to Trump: 28%
+
+#### Demographics:
+- **Very conservative**:
+  - MAGA base: 57%
+  - Persuadable voters: 31%
+  - Not open to Trump: 25%
+- **Earn $100k or more**:
+  - MAGA base: 30%
+  - Persuadable voters: 35%
+  - Not open to Trump: 49%
+- **Have a college degree**:
+  - MAGA base: 26%
+  - Persuadable voters: 33%
+  - Not open to Trump: 56%
+- **Moderate or liberal**:
+  - MAGA base: 14%
+  - Persuadable voters: 28%
+  - Not open to Trump: 49%
+
+This data provides a comparative snapshot of the political and demographic characteristics of these groups within the likely Republican electorate.

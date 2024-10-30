@@ -1,0 +1,21 @@
+The image provides insights into the impact of generative AI, specifically ChatGPT, on the performance of high-skilled white-collar workers. Here are the key points:
+
+### Impact of Using ChatGPT on Consulting Tasks
+- **Participants**: Study involved 758 Boston Consulting Group staff.
+- **Bottom-half skilled participants**:
+  - Score without ChatGPT: Approximately 4.
+  - Score with ChatGPT: Approximately 6.
+  - Performance increase: 43% boost.
+- **Top-half skilled participants**:
+  - Score without ChatGPT: Approximately 5.7.
+  - Score with ChatGPT: Approximately 6.7.
+  - Performance increase: 17% boost.
+
+### Impact of Encouragement to Use ChatGPT on Professional Writing Tasks
+- **Tasks**: Included writing press releases, reports, analysis plans, and delicate emails.
+- **Performance Boost**:
+  - Lowest-skilled participants show a more significant performance boost when encouraged to use ChatGPT compared to the control group.
+  - The performance boost diminishes as the skill level increases, with the highest-skilled participants benefiting less.
+
+### Conclusion
+Generative AI, especially ChatGPT, significantly levels the playing field by boosting the performance of less-skilled workers more than highly-skilled workers in high-skilled white-collar occupations. Encouraging the use of ChatGPT leads to improved performance across various professional writing tasks.

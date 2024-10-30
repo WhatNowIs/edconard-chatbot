@@ -1,0 +1,5 @@
+The chart titled "Chinese Chip Production" illustrates the indexed industrial production of semiconductors in China from 2015 to 2023. Production levels are indexed with December 2017 as the baseline (index value = 100). The data indicate a subtle but stable increase in production from 2015 until 2018, followed by a more pronounced upward trend beginning in 2019. 
+
+Notably, there is a decline in 2022, suggesting a significant drop in semiconductor production. This decline, however, is temporary, as production rebounds sharply afterward, reaching record highs in late 2022 and into 2023.
+
+The graph indicates resilience and recovery in the semiconductor industry in China, even after facing a substantial downturn in 2022. Overall, the trend is positive, showcasing robust growth and record production levels post-2022. This graph was created by @JosephPolitano using NBSS Data.

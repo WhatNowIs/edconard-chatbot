@@ -1,0 +1,14 @@
+This image presents a bar chart detailing the growing market share of Chinese-made electric vehicles (EVs) in the European Union (EU). The chart, sourced from the European Automobile Manufacturers’ Association, differentiates between "Chinese-made" EVs and EVs from "Chinese brands."
+
+Key points from the chart:
+
+1. **Trend Over Time**:
+   - There is a noticeable increase in the market share of Chinese-made EVs in the EU from 2020 to 2023.
+   - Similarly, EVs from Chinese brands also show a rising trend in market share over the same period.
+
+2. **Market Share Values**:
+   - In 2020, Chinese-made EVs had a market share of around 2.5%, while Chinese brands had under 1%.
+   - By 2022, the market share of Chinese-made EVs rose to approximately 17.5%, and Chinese brands to about 3.5%.
+   - In 2023, Chinese-made EVs achieved a market share near 20.0%, with Chinese brands following at about 8.5%.
+
+Overall, the chart highlights the significant and growing influence of Chinese-made electric vehicles and Chinese brands in the EU's electric vehicle market over the span of three years.

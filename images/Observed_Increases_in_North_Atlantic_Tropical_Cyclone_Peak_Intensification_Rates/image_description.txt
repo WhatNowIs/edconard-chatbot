@@ -1,0 +1,15 @@
+The image shows three probability density functions of tropical cyclone intensification rates in the North Atlantic, with data grouped into three different time periods: historical (1979-1998), early modern (1979-2008), and modern era (2001-2020).
+
+The three panels (A, B, and C) demonstrate distributions for different peak intensification rates measured over time windows of:
+
+- Panel A: 24 hours
+- Panel B: 24-48 hours
+- Panel C: 24-72 hours
+
+The density plots exhibit how the maximum wind speed increase (measured in knots, kts) varies for each time period. The mean for each distribution is shown by a dashed line, with shading to indicate the 90% credible interval surrounding the mean. The colors represent different time periods, and each graph provides insights into changes in the intensity rates over these windows.
+
+To summarize:
+- Tropical cyclone intensification rates are shown for historical, early modern, and modern periods.
+- Each panel indicates various time windows of peak intensification (24h, 24-48h, and 24-72h).
+- The dashed lines and shaded regions highlight the mean intensification rates and their uncertainty intervals for each period.
+- There seems to be observable shifts in probability density suggesting changes in intensification patterns across the decades examined.

@@ -1,0 +1,5 @@
+The graph charts the Treasury General Account (TGA) balance in billions of dollars from May 2022 to April 2023. The balance shows a general downward trend from approximately $900 billion in May 2022 to below $200 billion in April 2023. 
+
+A key reference point is the $600 billion target for September, marked by a red dashed line on the graph. The actual TGA balance fluctuates around this target but remains predominantly below it for the majority of the period. The statement at the bottom of the image indicates Treasury targets of $550 billion for June and $600 billion for September.
+
+The source of the data is the Daily Treasury Statement.

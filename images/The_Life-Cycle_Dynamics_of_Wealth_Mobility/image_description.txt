@@ -1,0 +1,11 @@
+The figure illustrates the life-cycle dynamics of wealth mobility, focusing on the 1960-64 birth cohort. The average wealth ranks are plotted against age for distinct wealth mobility groups. The groups are color-coded as follows:
+
+- **High-Ranked (21%)**: This group's wealth rank starts high and remains relatively stable with age.
+- **Middle-Rise (21%)**: This group's wealth rank starts around the middle but increases significantly over time.
+- **Middle-Fall (15%)**: This group starts near the middle and experiences a noticeable decline in wealth rank as they age.
+- **Low-Ranked (42%)**: This group's wealth rank starts and stays low over the duration.
+
+The shaded areas around the lines represent the interquartile range of the rank distribution for each group at each age. The data is derived through hierarchical agglomerative clustering and Ward's method using a dissimilarity measure.
+
+Summary:
+The figure demonstrates that wealth mobility follows distinct patterns for different groups within the same cohort. The majority remain low-ranked, while smaller proportions exhibit rising or falling middle ranks or high ranks throughout their life cycle.

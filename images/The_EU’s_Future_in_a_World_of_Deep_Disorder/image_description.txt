@@ -1,0 +1,10 @@
+The chart illustrates the trend of extra-EU exports as a percentage of all exports by EU countries from the year 2000 to 2022. Over this period, the data representing 27 current EU members, averaged over the previous 12 months, indicate that the EU economy has become more inward-looking in the last decade.
+
+Key points:
+1. The percentage of extra-EU exports has fluctuated over the years, showing notable peaks and troughs.
+2. Between 2000 and 2005, the percentage declined, followed by a period of stability until around 2010.
+3. A significant increase occurred around 2010, peaking around 2012.
+4. Since then, there has been a notable decline, reaching its lowest point in 2022.
+5. This suggests that the share of exports going outside the EU has decreased, indicating a trend towards more intra-EU trade.
+
+Source: IMF DOT Statistics, as featured by the Financial Times.

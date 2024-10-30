@@ -1,0 +1,36 @@
+Based on the data from the Pew Research Center survey conducted between March 27 and April 2, 2023, the following insights can be summarized about U.S. adults' views on selective colleges considering race and ethnicity in admissions decisions:
+
+1. **Overall Opinion:**
+   - **Disapprove:** 50%
+   - **Approve:** 33%
+   - **Not sure:** 16%
+
+2. **Breakdown by Race:**
+   - **Black adults:**
+     - Disapprove: 29%
+     - Approve: 47%
+     - Not sure: 24%
+   - **Hispanic adults:**
+     - Disapprove: 39%
+     - Approve: 39%
+     - Not sure: 20%
+   - **Asian adults:**
+     - Disapprove: 52%
+     - Approve: 37%
+     - Not sure: 10%
+   - **White adults:**
+     - Disapprove: 57%
+     - Approve: 29%
+     - Not sure: 14%
+
+3. **Political Affiliation:**
+   - **Republicans/Lean Republicans:**
+     - Disapprove: 74%
+     - Approve: 14%
+     - Not sure: 12%
+   - **Democrats/Lean Democrats:**
+     - Disapprove: 29%
+     - Approve: 54%
+     - Not sure: 17%
+
+In summary, half of U.S. adults disapprove of selective colleges considering race and ethnicity in admissions to promote diversity, with a significant difference in opinion based on race and political affiliation. Black adults and Democrats/Lean Democrats show more approval of this practice compared to their counterparts (White adults and Republicans/Lean Republicans, respectively).

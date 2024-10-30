@@ -1,0 +1,11 @@
+The provided image includes a graph that illustrates the changes in the economic power of the US South compared to the Northeast by plotting the national GDP share over time from 2005 to 2020. Key points include:
+
+1. **Title:** The graph is titled "US South Economic Power on the Rise."
+2. **Overall Trend:** The graph shows that six rapidly growing Southern states (Florida, Texas, Georgia, Tennessee, and the Carolinas) saw their combined share of national GDP grow above that of New York and the rest of the Northeast during the COVID-19 pandemic.
+3. **Lines Representing GDP Share:**
+   - **Black Line:** Represents the Northeast states, including Connecticut, Massachusetts, Rhode Island, New Hampshire, Vermont, Maine, D.C., Maryland, Delaware, Pennsylvania, New Jersey, and New York.
+   - **Yellow Line:** Represents the Southern states: Florida, Texas, Georgia, Tennessee, and the Carolinas.
+4. **COVID-19 Impact:** The timeframe of the COVID-19 pandemic is shaded in gray. During this period, a significant shift is observed where the Southern states' GDP share surpasses that of the Northeast.
+5. **Data Source and Notes:** The data comes from the US Bureau of Economic Analysis and is based on the GDP as a share of the US total, recorded at the end of each year.
+
+In summary, the graph indicates a notable economic shift during the COVID-19 pandemic, with key Southern states experiencing significant growth in their GDP share, surpassing the traditionally economically dominant Northeast states. This trend underscores the rising economic power of the Southern states in the US.

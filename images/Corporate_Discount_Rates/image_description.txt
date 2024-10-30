@@ -1,0 +1,9 @@
+The figure titled "The Time Series of Corporate Discount Rates" presents the raw average discount rate, the perceived cost of capital, and the perceived cost of debt for US firms from the year 2002 to 2020. The variables are expressed in percentage and are obtained through conference calls.
+
+- **Discount Rate (Blue Squares)**: There is noticeable variability in the discount rate over the studied period, starting around 15% in 2002, peaking above 20% between 2008 and 2010, and showing a declining trend afterward. The discount rate stabilizes around 15% in recent years before another drop below 15% in 2020.
+  
+- **Perceived Cost of Capital (Red Triangles)**: The perceived cost of capital remains mostly stable with minor fluctuations. It hovers around 10% through most of the period, with a slight downward trend toward 8% in the later years.
+  
+- **Perceived Cost of Debt (Green Circles)**: This variable shows a decreasing trend over time. It starts around 7% in 2002 and gradually declines to approximately 4% by 2020, with small variations throughout the period.
+
+Overall, the figure illustrates that while there are fluctuations in the corporate discount rate and the perceived cost of capital, there is a clear downward trend in the perceived cost of debt for US firms over the given timeframe.

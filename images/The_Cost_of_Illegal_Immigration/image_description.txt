@@ -1,0 +1,15 @@
+The provided image is a line graph depicting the growth in the foreign-born U.S. population, measured in millions, from March 2019 to March 2024. It differentiates between growth during the Trump Presidency (denoted in red) and the Biden Presidency (denoted in blue).
+
+Key points from the graph:
+
+1. **March 2019**: The foreign-born population was at 45.8 million at the start of the graph during the Trump administration.
+2. **Growth trend under Trump**: From March 2019 to November 2020, the foreign-born population slightly declined, dropping to around 45 million by February 2020.
+3. **Impact of COVID-19**: Right before the onset of COVID-19 (February 2020), the population was at 45 million.
+4. **Biden's Election (November 2020)**: Marked by a vertical line, the foreign-born population started rising just after the election.
+5. **After Biden's Inauguration**: The population increased steadily. By March 2021, it returned to 45 million.
+6. **Subsequent Growth**: The population continued to grow steadily, reaching 46.6 million by March 2022.
+7. **March 2023**: The population climbed to 48.8 million.
+8. **March 2024**: The most recent data point shows significant growth, with the foreign-born population reaching 51.6 million.
+
+Summary:
+From March 2019 to March 2024, the foreign-born U.S. population experienced initial fluctuations and a slight decline under the Trump administration. However, following President Biden's election, there was a notable and steady increase, culminating in the population reaching 51.6 million by March 2024. This represents significant growth, especially after the initial impacts of COVID-19, highlighting changes in immigration policies and trends under different administrations.

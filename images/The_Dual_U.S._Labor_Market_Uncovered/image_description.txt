@@ -1,0 +1,33 @@
+The table presents contributions to labor market aggregates by segment, derived from the Current Population Survey and authors' calculations. The summary of the key figures per market segment are as follows:
+
+1. **Share of Population**:
+   - Primary: 54.46%
+   - Secondary: 13.75%
+   - Tertiary: 31.79%
+   - Total: 100.00%
+
+2. **Unemployment Rate**:
+   - Primary: 1.66%
+   - Secondary: 4.09%
+   - Tertiary: 0.88%
+   - Total: 6.62%
+
+3. **Labor-force Participation Rate**:
+   - Primary: 52.91%
+   - Secondary: 10.04%
+   - Tertiary: 2.81%
+   - Total: 65.77%
+
+4. **Employment-to-Population Ratio**:
+   - Primary: 51.83%
+   - Secondary: 7.36%
+   - Tertiary: 2.24%
+   - Total: 61.42%
+
+5. **Flows per Capita** (annual flows between Employment, Unemployment, and Not in the labor force per person):
+   - Primary: 0.27
+   - Secondary: 0.44
+   - Tertiary: 0.20
+   - Total: 0.91
+
+These segments contribute differently to the overall labor market, with the primary segment being the largest in terms of population share, labor-force participation, and employment-to-population ratio, while the secondary segment has the highest unemployment rate and flows per capita.

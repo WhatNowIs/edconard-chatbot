@@ -1,0 +1,12 @@
+This graph demonstrates the response of list prices to changes in mortgage rates over a five-week period following an initial shock. The vertical axis denotes the percentage change in list prices, while the horizontal axis represents the number of weeks since the initial shock.
+
+Key observations:
+1. There is an immediate decline in list prices of about 1% in the first week following the initial shock.
+2. By the second week, the decline in list prices deepens to approximately 3%.
+3. The decline continues, reaching around 4% from the third to the fourth week.
+4. In the fifth week, the decline stabilizes around 3%.
+
+The shaded area indicates a 90% confidence interval, reflecting the range within which the true change is expected to fall with 90% confidence. The note specifies that these responses are to a one-standard-deviation contractionary shock.
+
+Summary:
+The figure illustrates that, in response to a one-standard-deviation contractionary shock in mortgage rates, list prices tend to decrease significantly over the first four weeks before stabilizing. The largest decline is observed around the third week, with a reduction of approximately 4%. The 90% confidence interval highlights the statistical reliability of these observations.

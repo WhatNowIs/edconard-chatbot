@@ -1,0 +1,12 @@
+The image provides a comparison of the estimated natural rate of interest, denoted as \(r^*\), as estimated by the Federal Reserve Bank of New York (shown in blue) and the Federal Reserve Bank of Richmond (shown in orange) over an eight-year period from March 1, 2015, to March 1, 2023.
+
+Key observations:
+- Both the New York and Richmond estimations start at around 0.5 and 0, respectively, in early 2015.
+- Between 2015 and 2018, both estimates exhibit a gradual upward trend.
+- From 2018 to early 2020, the rates continue to rise, with periodic fluctuations.
+- In early 2020, the Richmond Fed estimate shows significant volatility, including a sharp spike followed by a steep drop, whereas the New York Fed estimate remains relatively stable.
+- By mid to late 2020, the Richmond estimate recovers and surpasses the New York estimate.
+- From 2021 onwards, both estimates show an upward trend, with the Richmond Fed estimate frequently higher than the New York Fed estimate, and more volatile.
+- By March 2023, the Richmond Fed's estimate reaches approximately 2.2, while the New York Fed's estimate remains stable at around 1.
+
+The source of these estimations is credited to the Federal Reserve Bank of New York and the Federal Reserve Bank of Richmond. These estimates are significant for understanding central bank policies and economic conditions over time.

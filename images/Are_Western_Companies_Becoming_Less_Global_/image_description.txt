@@ -1,0 +1,16 @@
+The image is a bar chart that illustrates the foreign revenue distribution of listed European and American companies across different regions for the year 2022. The data is expressed as a percentage of total revenues.
+
+Key insights include:
+
+1. **European Companies:**
+   - Significant revenue share from the US.
+   - Noticeable revenue contributions from Europe and other developed markets.
+   - Lesser but still notable revenues from China.
+   - Additional income from other emerging markets.
+
+2. **American Companies:**
+   - Major revenue share from Europe.
+   - Smaller contributions from other developed markets and China.
+   - Less income from other emerging markets compared to European companies.
+
+The color coding helps visually differentiate between revenues from the US (dark blue), Europe (turquoise), other developed markets (light blue), China (red), and other emerging markets (pinkish-brown). The graphic also notes that the category 'US' includes Canada and 'other emerging' includes Eastern Europe. The source of this data is Morgan Stanley.

@@ -1,0 +1,29 @@
+The image contains a bar chart from the Financial Times, based on OECD data, comparing the shares of GDP from private savings, private investment, and private savings surplus across four countries: Japan, Germany, the US, and the UK over the period 2010-2019.
+
+Key points from the chart:
+1. **Japan**:
+   - Private savings: ~30% of GDP 
+   - Private investment: ~20% of GDP
+   - Private savings surplus: ~10% of GDP
+   - Japan exhibits a high level of private savings surplus despite significant private investment.
+
+2. **Germany**:
+   - Private savings: ~26% of GDP 
+   - Private investment: ~21% of GDP
+   - Private savings surplus: ~5% of GDP
+   - Germany shows a moderate private savings surplus.
+
+3. **US**:
+   - Private savings: ~25% of GDP 
+   - Private investment: ~23% of GDP
+   - Private savings surplus: ~2% of GDP
+   - The US has a relatively low private savings surplus compared to Japan and Germany.
+
+4. **UK**:
+   - Private savings: ~20% of GDP 
+   - Private investment: ~18% of GDP
+   - Private savings surplus: ~2% of GDP
+   - The UK shows minimal private savings surplus, similar to the US.
+
+### Summary:
+The chart indicates that Japan has an exceptionally high private savings surplus compared to Germany, the US, and the UK, despite substantial private investment. Over the 2010-2019 period, Japan's private savings constitute a significant portion of its GDP, with a considerable gap between private savings and investment, resulting in a notable private savings surplus. This trend distinguishes Japan from the other countries, where private savings and investment rates are more balanced, leading to smaller savings surpluses.

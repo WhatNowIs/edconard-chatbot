@@ -1,0 +1,20 @@
+The image is a bar graph from the FRED (Federal Reserve Economic Data) website comparing the compounded annual rate of change in two economic indicators:
+
+1. **Blue Bars**: Consumer Price Index for All Urban Consumers: All Items Less Food and Energy in U.S. City Average.
+2. **Red Bars**: Personal Consumption Expenditures Excluding Food and Energy (Chain-Type Price Index).
+
+The time period spans from July 2020 to January 2024. 
+
+### Summary:
+
+- **July 2020 to Mid-2021**: Both indices started with moderate growth, with occasional spikes in individual months. The Consumer Price Index (CPI) generally shows higher increases compared to the Personal Consumption Expenditures (PCE).
+  
+- **Mid-2021 to Early 2022**: The rates of change for both indices peaked, with CPI in particular experiencing high spikes, sometimes exceeding 10%. This period saw substantial inflationary pressures.
+
+- **Throughout 2022**: The rates fluctuated but tended to remain high, reflecting ongoing inflation. The PCE generally maintained a lower rate of change than the CPI, indicating that the changes in consumption expenditures were less volatile compared to the broader consumer price changes.
+
+- **2023**: Both CPI and PCE began showing a trend of decreasing rates of change, suggesting a possible stabilization or deceleration in inflation. CPI still showed more significant monthly variations when compared to PCE.
+
+- **Projected into 2024**: The graph indicates a continuation of this trend, with a notable decrease in fluctuations as both indices appear to stabilize.
+
+Overall, this graph highlights the significant inflationary pressures experienced from mid-2021 through 2022 and shows tentative signs of stabilization towards 2023 and projected into 2024.

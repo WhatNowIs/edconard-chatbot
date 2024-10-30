@@ -1,0 +1,14 @@
+The bar chart in Figure 3 illustrates net immigration contributions to changes in the V-U ratio from 2014 to 2022. The 'Percentage points' axis measures the contribution level, with the years listed along the horizontal axis.
+
+Key points from the chart:
+
+1. **Negative Contributions:**
+   - **2014, 2015:** Both years show slight negative contributions just below 0 percentage points.
+   - **2021:** A significant drop is observed, with net immigration contributing around -2 percentage points.
+   - **2022:** The most notable negative contribution, with net immigration influencing the V-U ratio by nearly -6 percentage points.
+
+2. **Positive Contributions:**
+   - **2017, 2018, 2019:** These three consecutive years show positive contributions, gradually increasing to just under 2 percentage points in 2017, about 2 percentage points in 2018, and slightly under 2 percentage points again in 2019.
+   - **2020:** The most significant positive spike occurs, with over 4 percentage points contributed by net immigration.
+
+Source information indicates the data is derived from the Bureau of Labor Statistics and the U.S. Census Bureau, compiled and calculated by the author. The chart reflects fluctuating net immigration contributions, with a marked positive spike in 2020 and a sharp negative impact in 2022.

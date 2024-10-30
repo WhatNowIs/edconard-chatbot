@@ -1,0 +1,22 @@
+The image presents a comparison of voter support for two candidates, Biden and Trump, between registered voters and likely voters across six states: Arizona, Georgia, Michigan, Nevada, Pennsylvania, and Wisconsin. Here's a summary of the findings:
+
+### Biden
+- **Arizona**: Support increases from 42% to 43% (+1 difference).
+- **Georgia**: Support increases from 39% to 41% (+2 difference).
+- **Michigan**: Support increases significantly from 42% to 47% (+5 difference).
+- **Nevada**: Support remains constant at 38% (+1 difference).
+- **Pennsylvania**: Support increases from 44% to 45% (+1 difference).
+- **Wisconsin**: Support decreases slightly from 47% to 46% (-1 difference).
+
+### Trump
+- **Arizona**: Support remains the same at 49% (+1 difference).
+- **Georgia**: Support increases from 49% to 50% (+2 difference).
+- **Michigan**: Support decreases from 49% to 46% (-4 difference).
+- **Nevada**: Support increases from 50% to 51% (+2 difference).
+- **Pennsylvania**: Support increases from 47% to 48% (+1 difference).
+- **Wisconsin**: Support increases from 45% to 47% (+2 difference).
+
+### Overall Insights
+- Biden shows increases in support in most states, with the largest gain in Michigan (+5).
+- Trump’s support generally remains robust, with gains or stability in most states, but a notable decrease in Michigan (-4).
+- The changes in support between registered and likely voters are relatively small, usually within a few percentage points for both candidates.

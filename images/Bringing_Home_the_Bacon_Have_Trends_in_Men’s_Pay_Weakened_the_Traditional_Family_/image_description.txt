@@ -1,0 +1,41 @@
+The image shows a line graph titled "Figure 7. Marriageability of Men Age 25–29 Using Lower Thresholds, 1962–2020." The graph tracks the percentage of marriageable men aged 25-29 over time, from 1962 to 2020, using different thresholds of earnings and compensation.
+
+Key details from the graph:
+
+- **Y-axis**: Represents the "Percentage Marriageable," ranging from 10% to 80%.
+- **X-axis**: Represents the years from 1960 to 2020.
+- **Lines**: There are four lines representing different measures of marriageability:
+  - **Dashed blue line**: Pretax Earnings 
+  - **Solid blue line**: Pretax Compensation 
+  - **Dashed gray line**: Posttax Earnings 
+  - **Solid gray line**: Posttax Compensation
+
+Observations:
+
+1. **Trend Over Time**:
+   - From 1962 to around the mid-1970s, the percentage of marriageable men increased, peaking at above 70%.
+   - After the peak, there was a gradual decline until the mid-1990s.
+   - From the mid-1990s onwards, the percentages remained relatively stable with some fluctuations.
+
+2. **Earnings vs. Compensation**:
+   - Pretax and posttax compensation lines (solid lines) generally show higher percentages of marriageable men compared to earnings (dashed lines).
+   - The difference between pretax and posttax percentages is minimal, indicating that taxation does not significantly change the marriageability threshold.
+
+3. **Methodological Note**:
+   - The marriageability threshold is set at the 25th percentile of earnings or compensation of young married fathers who were sole earners and not in school, based on 1979 levels.
+   - Specific thresholds used are adjusted for inflation to 2021 dollars.
+   - Certain groups are excluded from the sample (non-civilians, institutionalized men, men working less than year-round).
+
+4. **Marriageability Thresholds**:
+   - The thresholds listed for different years (adjusted to 2021 dollars):
+     - Line 1: $11,000 ($34,200 in 2021)
+     - Line 2: $12,200 ($38,000)
+     - Line 3: $9,700 ($30,150)
+     - Line 4: $10,800 ($33,700)
+
+5. **Data Sources**:
+   - The analysis is based on the Annual Social and Economic Supplement to the Current Population Survey.
+   - Data provided by the Unicon Research Corporation and the University of Minnesota's Integrated Public Use Microdata Series.
+
+Summary:
+The percentage of marriageable men aged 25-29, based on earnings and compensation thresholds set at the 25th percentile, has exhibited a peak in the mid-1970s followed by a decline and stabilization from the mid-1990s onwards. Pretax and posttax compensation measures show slightly higher marriageability rates than earnings measures, and fluctuations in marriageability have been minimal over recent decades.

@@ -1,0 +1,10 @@
+The image presents a line chart titled "The Shrinking Low-Wage Workforce," illustrating the estimated change in employment compared to January 2020 for both overall US employment and low-wage employment (defined as earning less than $29,000 per year).
+
+Key Points:
+1. **Data Timeline**: The chart covers the period from January 2020 to January 2022.
+2. **Total US Employment**: Represented by the black line, total US employment experienced a sharp decline in early 2020, likely due to the impact of the COVID-19 pandemic. Although there was a recovery over time, overall employment remained below the January 2020 level, stabilizing at approximately -5% to -10% below the baseline.
+3. **Low-Wage Employment**: Represented by the yellow line, low-wage employment also dropped significantly in early 2020. It experienced a more prolonged and severe reduction compared to total employment, stabilizing around -20% to -30% below the January 2020 level.
+4. **Comparison**: The difference between total US employment and low-wage employment indicates that low-wage jobs were disproportionately affected and have been slower to recover to pre-pandemic levels.
+
+Source Attribution:
+The data comes from the Opportunity Insights Economic Tracker, utilizing information from Earnin, Intuit, Kronos, and Paychex.

@@ -1,0 +1,8 @@
+The graph titled "The Rise of the Rest?" illustrates the share of US venture investment over a trailing 12-month period from 2014 to 2022. It segregates the data into three regions: San Jose-San Francisco (blue line), New York-Los Angeles-Boston (black line), and the Rest of the US (gray line).
+
+Key points:
+1. **San Jose-San Francisco**: The share of venture investment in this region has fluctuated significantly over the period. It began around 40% in 2014, rose to a peak of approximately 45% around 2019-2020, and notably declined to about 30% towards the end of 2022.
+2. **New York-Los Angeles-Boston**: This region started with about 25% share in 2014, saw slight variations, and maintained a relatively stable trend where it converged with the San Jose-San Francisco region at around 30% by the end of 2022.
+3. **Rest of the US**: Starting at around 20% in 2014, this region saw a gradual increase in its share, especially notable from 2020 onwards, reaching just over 35% by the end of 2022.
+
+Overall, there is a clear trend of increasing venture investment in regions outside the traditional tech hubs of San Jose-San Francisco, New York, Los Angeles, and Boston, with the 'Rest of the US' region gaining a larger share of venture capital over the considered period.

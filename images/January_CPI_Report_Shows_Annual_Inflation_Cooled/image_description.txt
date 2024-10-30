@@ -1,0 +1,19 @@
+The image depicts a line graph showing the change in the Consumer Price Index (CPI) from a year earlier, with data sourced from the Labor Department. The graph covers the period from 2019 to early 2023.
+
+Key observations from the graph are:
+
+1. **Overall Consumer Price Index:**
+   - Represented by the grey line.
+   - Saw a significant increase from early 2021, peaking around mid-2022.
+   - As of early 2023, it shows a year-over-year increase of +6.4%.
+  
+2. **Core Consumer Price Index (excluding food and energy):**
+   - Represented by the purple line.
+   - Follows a similar upward trend starting from early 2021.
+   - Also peaked around mid-2022 but shows a slightly less pronounced increase compared to the overall CPI.
+   - As of early 2023, it shows a year-over-year increase of +5.6%.
+
+3. **Recession Period:**
+   - Indicated by a shaded vertical strip approximately around early 2020, which aligns with the onset of the COVID-19 pandemic, causing significant economic disruptions.
+
+In summary, both the overall and core CPI experienced rapid increases starting in early 2021, peaking around mid-2022. By early 2023, the overall CPI increase stands at 6.4%, while the core CPI is at 5.6%, indicating persistent inflationary pressures in the economy.

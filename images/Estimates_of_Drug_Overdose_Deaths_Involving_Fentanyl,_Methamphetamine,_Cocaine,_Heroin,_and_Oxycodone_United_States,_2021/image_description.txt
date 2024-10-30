@@ -1,0 +1,20 @@
+The image is a line graph displaying the age-adjusted rates of drug overdose deaths in the United States from 2016 to 2021 for selected drugs: Fentanyl, Methamphetamine, Cocaine, Oxycodone, and Heroin. The sources of the data include the National Center for Health Statistics, National Vital Statistics System, and death certificate literal text data.
+
+**Summary of Key Findings:**
+
+1. **Fentanyl**: Shows a significant increase in death rates over the five-year period. In 2016, the death rate was around 6 per 100,000 standard population, and by 2021, it sharply rose to approximately 22 per 100,000.
+   
+2. **Methamphetamine**: Also sees a significant increasing trend, starting from about 2 per 100,000 in 2016 to around 7 per 100,000 in 2021.
+
+3. **Cocaine**: Displays a significant increase, albeit less steep than Fentanyl and Methamphetamine. The rate goes from around 4 per 100,000 in 2016 to about 7 per 100,000 in 2021.
+
+4. **Oxycodone**: Presents a stable trend, maintaining a rate of close to 1 per 100,000 from 2016 to 2021.
+
+5. **Heroin**: Initially, the rate is relatively higher compared to some other drugs, starting at around 5 per 100,000 in 2016. However, there is a decreasing trend noted, with the rate dropping to about 3 per 100,000 by 2021.
+
+**Notes and Methodology:**
+- The death rates were calculated using the direct method and the U.S. 2000 standard population.
+- The graph includes deaths involving multiple drugs but lists each drug individually.
+
+**Conclusion:**
+This graph highlights a significant rise in overdose death rates due to Fentanyl, Methamphetamine, and Cocaine between 2016 and 2021, while Oxycodone remains stable and Heroin shows a decreasing trend. Fentanyl, in particular, shows a dramatic increase and is a major contributor to the rising overdose deaths in the United States during this period.

@@ -1,0 +1,18 @@
+The provided graph illustrates the year-over-year changes in Consumer Price Index (CPI) measures for motor vehicle insurance compared to overall inflation from 2017 to 2024.
+
+Key observations:
+
+1. **Motor Vehicle Insurance**:
+   - Experienced moderate fluctuations until mid-2019.
+   - Saw a sharp decline in 2020, with the rate dropping below -10%.
+   - Displayed a steep recovery beginning around mid-2020, peaking above +15% in 2021.
+   - Continued to rise consistently from early 2021 onwards, reaching above +20% by 2024.
+
+2. **Overall Inflation**:
+   - Maintained a relatively steady and low variance pattern throughout the period.
+   - Experienced minor dips and rises but generally hovered close to 0%, representing a stable trend.
+   - Inflation saw some slight increases post-2021 but remained within a narrow range compared to motor vehicle insurance.
+
+The data suggest that while overall inflation remained relatively stable with minor fluctuations, motor vehicle insurance costs have been highly volatile, especially with significant spikes post-2020. The graph emphasizes the significant disparity in the rate of change between the two measures. 
+
+Sources attributed: Bureau of Labor Statistics and The New York Times.

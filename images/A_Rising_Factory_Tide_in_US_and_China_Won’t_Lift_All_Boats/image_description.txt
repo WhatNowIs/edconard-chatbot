@@ -1,0 +1,12 @@
+The image is a line graph illustrating the trend in construction spending on factory projects from 2017 to early 2023. The following key points are highlighted:
+
+1. **Title:** "Shovels in the Ground"
+2. **Summary Highlight:** Construction spending on factory projects surged in February to its highest level in data stretching back to the same month in 2002.
+3. **Data Source:** The data is sourced from the US Census Bureau.
+4. **Time Frame:** The graph spans from 2017 to early 2023.
+5. **Spending Levels:** 
+    - The spending remained relatively stable from 2017 to 2021.
+    - There was a significant increase starting in 2022, continuing into 2023.
+    - By early 2023, spending surpassed $150 billion.
+
+In summary, construction spending on factory projects has seen a dramatic rise since 2021, reaching unprecedented levels in February 2023, according to data from the US Census Bureau.

@@ -1,0 +1,22 @@
+The image provided showcases a figure titled "Impulse Responses of Investment, Sample 1950-2006." This figure contains two main columns: one illustrating the impact of a Marginal Tax Rate Cut and the other showing the effect of an ITC (Investment Tax Credit) Increase. Each column contains two graphs: one for Goods Producing and one for Private Services.
+
+### Summary of Key Points:
+
+**Graphs:**
+1. **Marginal Tax Rate Cut:**
+   - **Goods Producing:** Displays the percentage response of investment to a 1% cut in the marginal corporate income tax rate. The response initially increases, peaks around the second year, and then gradually declines.
+   - **Private Services:** Shows a similar initial increase in response, peaking around the second year, followed by a decrease.
+
+2. **ITC Increase:**
+   - **Goods Producing:** Illustrates the investment response to an ITC increase with equal liability impact. The investment response rises initially, peaks, and then tapers off towards the fourth year.
+   - **Private Services:** Follows a comparable pattern with an initial rise, peak, and subsequent decline.
+
+**Note on Data and Control Variables:**
+The shaded areas in each graph represent 90% confidence intervals. Various control variables have been included in the analysis, such as:
+  - Lags of change in average corporate income tax rates.
+  - Lags of change in average personal income tax rates.
+  - Lags of changes in log real GDP, real government spending.
+  - Lags of changes in marginal tax rates, investment tax credits.
+  - Lags of the dependent variable, real taxable income, and log real assets.
+
+In summary, this figure effectively demonstrates how corporate tax policy changes influence capital investment responses over time, for both goods-producing and private service sectors. The investments show an initial rise followed by a peak and later a decline, indicating a short-term boost from tax incentives.

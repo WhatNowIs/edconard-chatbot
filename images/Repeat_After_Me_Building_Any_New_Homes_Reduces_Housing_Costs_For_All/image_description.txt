@@ -1,0 +1,18 @@
+The visual data highlights the housing supply and rental trends in various Midwestern cities, with a particular focus on Minneapolis.
+
+1. **Housing Supply Growth (Left Chart)**:
+   - Minneapolis has consistently outperformed other Midwestern cities in approving new dwellings, significantly increasing its housing supply. By 2022, it reached around 45 new dwellings per 1,000 people.
+   - Other cities such as Omaha, Columbus, Kansas City, Cincinnati, and Indianapolis have also increased their housing supply, but not to the extent of Minneapolis.
+
+2. **Rent Trends Relative to Inflation (Middle Chart)**:
+   - Minneapolis has experienced a noticeable decrease in real-term median rents since 2018, making it an outlier where rents fell as more housing was built.
+   - In contrast, cities like Indianapolis and Cincinnati saw an increase in median rents despite also increasing housing supply.
+   - Other cities, such as Omaha, Kansas City, and Columbus, followed varied trends, but none matched Minneapolis's significant reduction in rent relative to inflation.
+
+3. **Comparison of Housing Supply vs. Rent Growth (Right Chart)**:
+   - Minneapolis stands out in the lower-right quadrant, indicating a high net increase in housing supply paired with a significant decrease in rent growth.
+   - Cities like Indianapolis, Cincinnati, and Kansas City, appearing in the upper quadrants, show a positive rent growth, with a mix of high and moderate increases in housing supply.
+   - Cleveland and St. Louis, positioned similarly to Minneapolis but to a lesser extent, also show significant increases in housing supply with either stable or declining rent trends.
+
+**Summary**: 
+Minneapolis has successfully augmented its housing supply at an accelerated rate compared to other Midwestern cities, leading to a notable reduction in real-term median rents. This pattern suggests that increasing the housing supply can help mitigate rent increases and even lead to rent decreases. Other cities have experienced varying results, but none match the combined scale of housing expansion and rent reduction seen in Minneapolis.

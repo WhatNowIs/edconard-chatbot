@@ -1,0 +1,27 @@
+These two charts illustrate the relationship between fossil fuel usage, emissions, and the growing reliance on renewable energy over the decades.
+
+**Left Chart: "Falling fossil fuel shares mask reality of rising emissions" (1965-2020)**
+
+1. **Global Fossil Fuel Share of Primary Energy (Percent)**
+   - This metric has decreased from approximately 94% in 1965 to around 82% in 2020.
+   - This indicates a reduction in the proportion of primary energy derived from fossil fuels over the years.
+
+2. **Global Emissions from Energy (Billion tonnes of CO2)**
+   - In contrast, global CO2 emissions from energy have risen steadily from around 11 billion tonnes in 1965 to about 35 billion tonnes in 2020.
+   - Despite the declining share of fossil fuels in primary energy, emissions have increased, highlighting ongoing environmental concerns.
+
+**Right Chart: "Global fossil fuel and renewable energy use" (1965-2020)**
+
+1. **Fossil Fuels, Primary Energy (Exajoules)**
+   - The consumption of fossil fuels for primary energy has increased from about 100 exajoules in 1965 to around 450 exajoules in 2020.
+
+2. **Fossil Fuels, Post Combustion Energy (Exajoules)**
+   - This represents the energy obtained after fossil fuel combustion, which has also grown, albeit at a slower rate than primary energy.
+
+3. **Renewable Energy (Exajoules)**
+   - The consumption of renewable energy remains significantly lower but shows a gradual increase, from nearly 0 exajoules in 1965 to around 50 exajoules in 2020.
+
+**Summary:**
+- Despite the decreasing share of fossil fuels in the global primary energy mix, absolute CO2 emissions have risen significantly due to increased fossil fuel consumption.
+- Renewable energy use is growing but is still a small fraction compared to fossil fuel energy usage.
+- The charts underscore a complex energy and environmental landscape where improvements in renewable energy adoption and a reduction in fossil fuel dependency are crucial to addressing rising emissions.

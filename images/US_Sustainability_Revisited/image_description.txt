@@ -1,0 +1,23 @@
+This table provides a summary of financing needs from 2024 to 2030 in USD trillions. It includes the following key details:
+
+1. **Total Deficit**: 
+   - Begins at $2.08 trillion in 2024 and generally increases over time, reaching $2.43 trillion by 2030.
+
+2. **Primary Deficit**:
+   - Starts at $1.24 trillion in 2024, showing slight fluctuations and stands at $1.09 trillion by 2030.
+
+3. **Interest**:
+   - Begins at $0.84 trillion in 2024 and rises each year, hitting $1.34 trillion by 2030.
+
+4. **Gross Financing Needs**:
+   - Starts at $12.8 trillion in 2024, dips in 2025 to $10.7 trillion, and generally increases thereafter, reaching $12.9 trillion in 2030.
+
+5. **Total Debt Stock**:
+   - Starts at $28.8 trillion in 2024 and consistently increases to $42.0 trillion by 2030.
+
+6. **Nominal GDP**:
+   - Rises each year from $28.7 trillion in 2024 to $36.3 trillion by 2030.
+
+Source: Exante Data
+
+In summary, the data indicates an increasing trend in total deficit, interest payments, gross financing needs, total debt stock, and nominal GDP over the forecast period from 2024 to 2030.

@@ -1,0 +1,10 @@
+The chart from the Financial Times illustrates monthly funds for Chinese real estate development enterprises from February 2020 to November 2022, measured in billions of Chinese yuan (Rmb bn), categorized by different sources: Bank Loans, Self-raising funds, Deposits and Advance payments, and Mortgages.
+
+Key observations:
+1. **Overall Trend**: There is a noticeable decline in total funds available for Chinese developers over the observed period.
+2. **Bank Loans (blue)**: Relatively stable with no significant peaks or troughs, remaining consistently lower compared to other funding sources.
+3. **Self-raising funds (pink)**: Also relatively stable, similar to bank loans but showing some variations.
+4. **Deposits and Advance Payments (cyan)**: More volatile with noticeable fluctuations peaking around mid-2020 and early to mid-2021.
+5. **Mortgages (green)**: The most volatile category, with the highest peaks observed around mid-2021 and multiple fluctuations thereafter, indicating significant changes in mortgage availability or uptake.
+
+The data indicates that all sources of funding for Chinese real estate developers have generally declined, suggesting tightening of financial conditions for this sector. The mortgage category has seen the most considerable variations, indicating changing dynamics in housing financing.

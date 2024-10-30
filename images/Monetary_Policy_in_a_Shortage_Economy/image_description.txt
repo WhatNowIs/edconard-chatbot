@@ -1,0 +1,17 @@
+This graph, titled "Supply and Demand Chains," highlights different reasons for plant capacity under-utilization over time, specifically from 2012 to 2022. The analysis is based on Census data and reveals firms' complaints about three primary issues:
+
+1. **Insufficient Orders (Yellow line)**:
+   - Dominated as the leading cause of under-utilization from 2012 until late 2020, maintaining a high index, generally above 60%.
+   - Experienced a sharp decline starting in 2020 and stabilized around 40% onwards, indicating a reduction in complaints about insufficient orders post-pandemic.
+
+2. **Insufficient Supply of Labor (Green line)**:
+   - Remained relatively low and stable from 2012 to 2019.
+   - Saw a significant rise starting from the pandemic period in early 2020, correlating with labor market disruptions due to COVID-19.
+   - Peaked in late 2021 and early 2022, indicating labor shortages became a prominent issue post-pandemic.
+
+3. **Insufficient Supply of Materials (Red line)**:
+   - Similar to labor, remained low from 2012 to 2019.
+   - Experienced a sharp rise beginning around early 2020, reaching its peak around the same time as labor shortages.
+   - The index began to decrease slightly by the end of 2021 but remained higher than pre-pandemic levels.
+
+In summary, before the pandemic, the primary issue was the insufficient number of orders. However, post-pandemic, firms shifted their complaints towards insufficient labor and materials.

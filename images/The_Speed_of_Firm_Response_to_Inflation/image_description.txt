@@ -1,0 +1,15 @@
+This image titled "Figure 7: Impact of CPI inflation changes on expected own-price growth (2022-2024)" provides an analysis of the effects of consumer price index (CPI) inflation changes on the anticipated growth in own prices over a year. 
+
+Key insights are:
+
+- The x-axis represents the release window, which includes time periods before and after a CPI release (labeled as t-2, t-1, t, t+1, t+2, where t is the release day).
+- The y-axis represents the coefficient, indicating the degree of expected price growth changes.
+- Data points show the estimated coefficients with 90% confidence intervals indicated by vertical lines.
+- The red dotted line at coefficient 0 is the baseline for comparison.
+
+Observations from the graph include:
+
+- Coefficients surrounding the CPI release day (t) hover around zero without significant deviation, indicating minimal impact on expected own-price growth.
+- Confidence intervals for each data point are relatively wide, suggesting a degree of uncertainty in these estimates.
+
+The notes clarify that the methodology used for the analysis is outlined in Section 3 of the document and that the omitted category is the day before the CPI release. This means comparisons are being made relative to the day before the CPI data is released.

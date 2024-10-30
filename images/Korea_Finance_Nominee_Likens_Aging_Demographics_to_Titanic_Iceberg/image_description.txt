@@ -1,0 +1,19 @@
+The provided image is a bar chart titled "No Country For Babies," which compares the expected lifetime births per woman among various OECD (Organisation for Economic Co-operation and Development) member nations. South Korea is highlighted as lagging significantly behind other member nations in terms of fertility.
+
+The chart includes the following data on expected lifetime births per woman:
+
+1. **Israel**: Highest fertility rate among the listed countries, approaching 3 births per woman.
+2. **Mexico**
+3. **France**
+4. **US**
+5. **Australia**
+6. **UK**
+7. **Germany**
+8. **Canada**
+9. **Spain**
+10. **Japan**
+11. **Korea**: Lowest fertility rate, approaching 0 births per woman.
+
+The source of the data is OECD/Statistics Korea, with Korea's number cited for the year 2022 and the other countries' data from 2020.
+
+In summary, the chart illustrates that South Korea has a remarkably low fertility rate compared to other OECD member states, which indicates a significant demographic challenge.

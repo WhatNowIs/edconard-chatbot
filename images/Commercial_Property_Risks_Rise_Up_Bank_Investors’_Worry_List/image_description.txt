@@ -1,0 +1,10 @@
+The provided chart illustrates the average spread of BBB-rated commercial mortgage-backed securities (CMBS) over US Treasuries from 2018 to 2023. 
+
+Key observations:
+1. **Baseline and Initial Years**: From 2018 to early 2020, the spread remained relatively stable, fluctuating between approximately 2.5 and 4 percentage points.
+2. **2020 Spike**: There was a significant spike in the spread around early 2020, peaking at approximately 7.5 percentage points. This sharp rise corresponds with the outbreak of the COVID-19 pandemic, reflecting increased market concerns and risk perception.
+3. **Post-peak Decline**: Following the peak, the spread gradually decreased through 2021, returning to a range close to pre-pandemic levels, between 2 and 3 percentage points.
+4. **Recent Increase**: From late 2021 to early 2023, the spread has been steadily increasing again, reaching around 6 percentage points by early 2023.
+
+Summary:
+The chart indicates rising concerns in the CMBS market, highlighted by the increasing spread over US Treasuries from late 2021 to 2023. This trend suggests growing caution or perceived risk among investors regarding BBB-rated commercial mortgage-backed securities.

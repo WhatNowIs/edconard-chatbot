@@ -1,0 +1,29 @@
+The image presents a chart titled "Big Gap" that highlights potential discrepancies in China's reported current account surplus. The key points and data extracted from the image are detailed below:
+
+**Title:** Big Gap
+
+**Subtitle:** 
+China's current account surplus may be severely underreported in the official data. Two simple adjustments imply that the real surplus is nearly three times the size as what is published. That would make the surplus as large as it has ever been relative to global GDP.
+
+**Chart Description:** 
+The chart illustrates China's current account balance in quarterly rolling sums (in USD billions) from 1999 to 2023. Three different lines are shown in the graph:
+1. **Official (Blue line):** The official reported data for China's current account balance.
+2. **With GACC goods balance (Red line):** Adjusted data including the General Administration of Customs (GACC) goods balance.
+3. **With GACC goods balance and income receipts adjustment (Green line):** Further adjusted data including both the GACC goods balance and an income receipts adjustment. 
+
+**Observation Period:**
+- The time span ranges from 1999 to 2023.
+
+**Trends:**
+- From 1999 to approximately 2004, the three lines (official, GACC goods balance, and GACC goods balance with income receipts adjustment) align closely, indicating similar current account balances.
+- From around 2005, discrepancies begin to appear, with the adjusted figures (red and green lines) diverging from the official figures (blue line).
+- The discrepancies become more marked from 2020 onwards, with the green line indicating a significantly higher current account balance than both the red and blue lines.
+
+**Footnote:**
+- Assumes that the yield on Chinese foreign assets rose in line with market interest rates since 2021Q4. A more detailed explanation is provided in the text.
+  
+**Sources:**
+- State Administration of Foreign Exchange, General Administration of Customs (China), and Matthew Klein’s calculations.
+
+### Summary:
+The chart and accompanying notes suggest that China's officially reported current account surplus might substantially understate the real figure. Adjustments for the GACC goods balance and income receipts imply that the true surplus could be nearly three times larger than the published data, reaching unprecedented levels relative to global GDP. This significant discrepancy, particularly evident post-2020, underscores potential issues with the official recording and reporting of China's foreign account transactions.

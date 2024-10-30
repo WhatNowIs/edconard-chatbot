@@ -1,0 +1,17 @@
+The image presents a bar chart illustrating the changes in the global GDP share at purchasing power parity (PPP) for China, Russia, the US, and its allies over two time periods: 2000 and 2022. The key insights from the chart are as follows:
+
+1. **China and Russia:**
+   - In 2000, China and Russia combined had a smaller share of the global GDP at PPP compared to 2022.
+   - By 2022, the share of global GDP at PPP for China and Russia increased significantly.
+
+2. **US and Allies:**
+   - In 2000, the US and its allies (EU/UK, Japan, Canada, South Korea, Australia, and New Zealand) had a dominant share of the global GDP at PPP.
+   - By 2022, while the US and its allies still maintain a larger share compared to China and Russia, their combined share has decreased.
+
+3. **Comparative Analysis:**
+   - The combined share of China and Russia has grown substantially from 2000 to 2022.
+   - Despite the growth of China's economy, the US and its allies still hold a larger proportion of the global GDP at PPP, but the gap has narrowed over the years.
+
+The data indicates a notable shift in global economic power with the rise of China, while the collective economic dominance of the US and its traditional allies remains substantial but relatively reduced. The chart uses color-coded segments to distinguish the contributions of different regions.
+
+Source: IMF via Financial Times (FT)

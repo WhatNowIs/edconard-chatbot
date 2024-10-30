@@ -1,0 +1,28 @@
+The graph from the Federal Reserve Economic Data (FRED) displays the year-over-year percent change in two economic indicators over a period from 2014 to 2024:
+
+1. **Producer Price Index (PPI) by Commodity: Final Demand (Blue Line)**
+2. **Consumer Price Index (CPI) for All Urban Consumers: All Items Less Shelter in U.S. City Average (Red Line)**
+
+### Key Observations:
+
+- **2014 to Early 2020:**
+  - Both PPI and CPI were relatively stable with only minor fluctuations.
+  - The PPI and CPI saw some divergence, with the PPI generally being slightly higher than the CPI for most of the period.
+
+- **2020 (COVID-19 Pandemic Onset):**
+  - There was a notable dip in both indices, reflecting economic contraction and reduced demand.
+  - The PPI experienced a sharper decline compared to the CPI.
+
+- **Mid-2020 to Early 2022:**
+  - Both indices saw substantial increases, indicative of inflationary pressures as the economy started to recover from the pandemic's impacts.
+  - The PPI surged more sharply than the CPI, peaking at around 12.5%.
+
+- **2022 to 2023:**
+  - Both indices began to decline, signaling a reduction in inflationary pressures or stabilization.
+  - The CPI experienced a more gradual decrease compared to the PPI.
+
+- **Late 2023 to 2024:**
+  - A slight upward trend in both indices is observed, indicating a potential rise in prices again.
+
+### Summary:
+The graph illustrates the PPI and CPI trends over the past decade, showing how they were influenced by various economic events, particularly the COVID-19 pandemic. The pandemic caused a significant dip followed by a steep increase due to economic recovery, with the PPI being more volatile than the CPI. Both indices are crucial for understanding inflation and economic health, with recent data indicating a slight resurgence in prices.

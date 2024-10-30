@@ -1,0 +1,10 @@
+The chart titled "Quarterly Change Net Interest Margins (%)" illustrates the decline in Net Interest Margins (NIMs) for a range of banks based on their recent earnings calls. 
+
+Key Points:
+- The banks shown include PNC, M&T, Fifth Third, US Bank, Truist, Key Bank, Western Alliance, Zions, and First Horizon.
+- All the banks reported reductions in their NIMs.
+- The decreases range from slightly below 0% to nearly -0.6%.
+- PNC has the smallest decline, while First Horizon experienced the largest decline.
+- The data source for this information is "Earnings Presentations."
+
+Overall, the summary indicates a common trend among these banks of narrowing NIMs in their recent financial performance.

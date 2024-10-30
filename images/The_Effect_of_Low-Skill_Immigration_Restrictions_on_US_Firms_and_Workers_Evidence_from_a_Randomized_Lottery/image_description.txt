@@ -1,0 +1,37 @@
+This image presents the heterogeneous effects of employing foreign workers on various firm outcomes, using 2021 and 2022 data. The analysis is broken down into three sections: effects on revenue (a), U.S. temporary workers employed (b), and investment (c). Each section compares these effects based on different firm and area characteristics such as the number of competitors, subjective competition levels, firm size, rural or urban location, and ZIP code population. The vertical axis shows the 2SLS coefficient for foreign workers employed (IHS).
+
+Key findings are summarized below for each section:
+
+### (a) Effect on Revenue
+- **Number of competitors**: Firms facing a high number of competitors see varied revenue effects compared to those facing fewer competitors.
+- **Subjective competition**: High competition leads to more negative effects on revenues of foreign workers employed.
+- **Firm size**: Small firms experience different impacts compared to large firms.
+- **Rural (location)**: Revenue effects differ marginally between rural and urban firms.
+- **ZIP code population**: Firms in low-population ZIP codes experience different revenue effects compared to those in high-population areas.
+
+### (b) Effect on U.S. Temporary Workers Employed
+- **Number of competitors**: A greater number of competitors correlates to varied effects for U.S. temporary workers.
+- **Subjective competition**: High competition suggests more negative impacts on the number of U.S. temporary workers.
+- **Firm size**: Small firms and large firms show different responses in the employment of U.S. temporary workers.
+- **Rural (location)**: There is a notable difference between rural and urban firms in terms of temporary worker employment.
+- **ZIP code population**: Firms in low vs. high population ZIP codes see different effects on the employment of U.S. temporary workers.
+
+### (c) Effect on Investment
+- **Number of competitors**: A higher number of competitors shows varied investment impacts from employing foreign workers.
+- **Subjective competition**: High subjective competition correlates with different levels of investment impacts.
+- **Firm size**: Investment effects vary between small and large firms.
+- **Rural (location)**: Rural versus urban settings display different levels of investment impact.
+- **ZIP code population**: Firms in low population areas experience different investment effects compared to those in high population areas.
+
+### Explanation of Figure Details:
+- **Vertical Axis**: Shows the 2SLS coefficient on foreign workers employed.
+- **Confidence Intervals**: 
+  - Thin vertical lines indicate the 95% confidence intervals.
+  - Thick lines denote the 90% confidence intervals.
+- **Classifications**:
+  - "High" and "Low" indicate metrics compared against median values for competitors and population.
+  - "Small" firms have less than median revenue.
+  - "Rural" firms are categorized by their postal codes' Census Bureau classification.
+  - "Low" and "High" in ZIP code population relate to the median population of 20,459 residents in 2010 census data.
+
+Further regression analysis details are provided in the appendix.

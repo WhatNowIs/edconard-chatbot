@@ -1,0 +1,15 @@
+The image provides an analysis of the concentration of global goods trade, highlighting the significant role of economy-specific factors. Key points include:
+
+1. **Concentration of Trade:**
+   - The x-axis of the bar graph represents the concentration metric (HHI), which ranges from 0 (least concentrated) to 10,000 (most concentrated).
+   - The y-axis shows trade value in trillions of dollars.
+
+2. **Trade Value Distribution:**
+   - A substantial portion of global goods trade (around 40% of the total trade value) is highly concentrated.
+   - Much of the trade supply comes from three or fewer economies.
+
+3. **Concentration Factors:**
+   - The graph distinguishes between global concentration (dark blue) and economy-specific concentration (light blue).
+   - The accompanying pie chart reveals that economy-specific factors account for a larger part of the concentration in trade compared to other global factors.
+
+This data highlights the fact that a significant share of global trade is controlled by a few major economies, primarily driven by specific economic factors rather than a global distribution.

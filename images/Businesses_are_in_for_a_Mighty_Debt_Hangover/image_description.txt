@@ -1,0 +1,15 @@
+The image is a bar chart titled "Something’s gotta give," which illustrates the investment and payout activities of non-financial companies in Europe and the United States from 2012 to 2022. The data is expressed as a percentage of operating cash flow and is sourced from Bloomberg and The Economist, covering companies included in the STOXX Europe 600 and the S&P 500 indices.
+
+The chart is broken down into four categories:
+- **Capital expenditure (dark blue)**
+- **Mergers and acquisitions (light blue)**
+- **Dividends (light orange)**
+- **Buy-backs (dark orange)**
+
+Key observations include:
+1. **Capital Expenditure:** This remains relatively stable over the years, accounting for a consistent proportion of operating cash flow.
+2. **Mergers and Acquisitions:** Fluctuations are observed with a noticeable peak around 2015-2017, but the investment has overall remained a smaller portion compared to capital expenditures and dividends.
+3. **Dividends:** A steady increase in the percentage of operating cash flows allocated to dividends is seen up until 2020, after which there appears to be a slight reduction.
+4. **Buy-backs:** There is substantial variability, peaking in certain years like 2018 and 2022.
+
+By 2022, there appears to be a notable shift towards more significant spending on buy-backs, marking one of the highest percentages in the ten-year period, while capital expenditure and mergers and acquisitions maintain relative stability. This trend suggests a potential reallocation of resources towards rewarding shareholders rather than reinvesting solely in business growth and acquisitions.

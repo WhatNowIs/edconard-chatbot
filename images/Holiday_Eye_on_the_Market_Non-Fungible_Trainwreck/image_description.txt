@@ -1,0 +1,17 @@
+This image is a line graph comparing the performance of two different investment baskets over time: the ARK Innovation ETF and an "Old Economy" basket. The "Old Economy" basket consists of farm equipment, industrial REITs, and office cleaning supplies/uniforms.
+
+Here’s a summary of the key points:
+
+1. **ARK Innovation ETF:**
+   - Represented by a solid brown line.
+   - Initially shows steady growth, followed by a significant and rapid rise.
+   - Peaks sharply at a high point, then sees a noticeable drop.
+   - Continues to fluctuate with some instability towards the end of the timeline.
+
+2. **Old Economy Basket:**
+   - Represented by a dashed blue line.
+   - Shows consistent, gradual growth over the entire period of the graph.
+   - Does not exhibit the same level of volatility as the ARK Innovation ETF.
+   - Ends at a higher level compared to its starting point, indicating steady performance.
+
+Overall, the ARK Innovation ETF experienced both rapid growth and sharp declines, reflecting its higher volatility and risk. In contrast, the Old Economy basket maintained a steadier and more stable growth trajectory throughout the same period.

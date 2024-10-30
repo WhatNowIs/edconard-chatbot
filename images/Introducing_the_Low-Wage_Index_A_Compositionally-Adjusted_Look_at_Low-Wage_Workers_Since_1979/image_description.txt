@@ -1,0 +1,13 @@
+The image is a graph showing the real 25th percentile weekly earnings (inflation-adjusted, using fixed 2023 composition) for low-wage workers over the past 45 years. 
+
+### Key Points:
+1. **Time Frame**: The graph covers from approximately 1978 to 2023.
+2. **Earnings**: The y-axis represents earnings in 2023 dollars, ranging from $400 to $675.
+3. **Trends**:
+   - From 1978 to around 1995, there was a general stagnation and slight decline in real earnings.
+   - Post-1995, there was a significant uptrend in earnings until around 2002.
+   - After 2002, earnings experienced intermittent stagnation and a downward trend until around 2012.
+   - Post-2012, there was a sharp increase in earnings, particularly notable in the recent years shown.
+
+### Conclusion:
+The graph illustrates that low-wage workers experienced two main periods of sustained real wage growth over the past 45 years: one starting around 1995, which lasted until early 2002, and another beginning around 2012 and continuing upwards. This highlights that significant improvements in real earnings for low-wage workers have been sparse and concentrated within specific periods.

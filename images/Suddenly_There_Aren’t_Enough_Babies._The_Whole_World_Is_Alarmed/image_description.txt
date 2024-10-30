@@ -1,0 +1,13 @@
+This image provides a comparative analysis of total fertility rates from 1980 to 2020 across seven countries: the U.S., Mexico, India, China, South Korea, Hungary, and Japan. 
+
+Here are the key points:
+
+- **U.S.**: The fertility rate remained relatively stable with slight fluctuations, generally around or slightly below 2 children per woman.
+- **Mexico**: The fertility rate has seen a sharp decline from around 5 children per woman in 1980 to around 2 children per woman by 2020.
+- **India**: There is a significant decrease in the fertility rate from about 5 children per woman in 1980 to slightly above 2 children per woman by 2020.
+- **China**: The fertility rate started at about 3 children per woman in 1980, saw a marked drop in the early 1980s, and then gradually decreased further to about 1.5 children per woman by 2020.
+- **South Korea**: The fertility rate decreased from about 2 children per woman in 1980 to below 1 children per woman by 2020, with a notable drop in the late 1980s.
+- **Hungary**: The fertility rate decreased from about 2 children per woman in 1980, reached a low in the early 2000s, and then slightly increased but still remained below 2 children per woman by 2020.
+- **Japan**: The fertility rate has been consistently low, starting at about 2 children per woman in 1980 and decreasing gradually to around 1.3 children per woman by 2020.
+
+This summary illustrates a general global trend towards lower fertility rates over the past four decades, with some countries experiencing more dramatic shifts than others.

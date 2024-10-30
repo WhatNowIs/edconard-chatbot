@@ -1,0 +1,12 @@
+The image is a scatter plot titled "Sensitivity of expected inflation to current inflation," illustrating the relationship between 1-year-ahead expected CPI inflation (on the y-axis) and 4-quarter CPI inflation (on the x-axis).
+
+The plot shows two distinct time periods:
+1. **1949:Q1 to 1998:Q4 (in blue)** - Data points for this period suggest a strong positive correlation, indicated by the steep upward blue trend line. It implies that during this period, 1-year-ahead expected inflation rose significantly with an increase in current inflation (4-quarter CPI inflation).
+2. **1999:Q1 to 2023:Q2 (in red)** - Data points for this period show a flatter red trend line, suggesting a weaker relationship between current inflation and expected inflation. This implies that after 1999, the sensitivity of expected inflation to current inflation decreased.
+
+The notes below the plot explain the data sources and methodology:
+- Before 1981:Q3, the expected inflation data comes from the Philadelphia Fed's semiannual Livingston Survey, interpolated to obtain quarterly values.
+- Starting in 1981:Q3, data is sourced from the quarterly Survey of Professional Forecasters by the Philadelphia Fed.
+- Sources include the Bureau of Labor Statistics, FRB Philadelphia, and authors' calculations.
+
+In summary, the plot demonstrates how the relationship between current inflation and expected inflation has evolved over time, with a noticeable decline in sensitivity from the earlier period (1949-1998) to the later period (1999-2023).

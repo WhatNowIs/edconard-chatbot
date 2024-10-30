@@ -1,0 +1,17 @@
+This chart depicts the trend in U.S. mining employment, seasonally adjusted, from 1990 to approximately 2021. Here's a summary of the key points visible in the image:
+
+1. **Overall Decline**: The graph shows an overall declining trend in mining employment over the period. Employment was around 260-270 thousand workers in 1990 and dropped to around 150-170 thousand workers by 2021.
+
+2. **Early Decrease**: There was a notable decline from 1990 to around 2005, where employment decreased steadily from approximately 260 thousand to about 200 thousand workers.
+
+3. **Short-Term Increases**: There are brief periods where mining employment saw increases, particularly around 2005 and then again in the early 2010s. These short-term increases, however, did not lead to sustained growth.
+
+4. **Post-2015 Plateau**: Since around 2015, the employment levels seem to have stabilized somewhat, fluctuating around the 150-170 thousand workers mark.
+
+5. **Recent Increase**: There's a slight uptick in employment observed towards the end of the graph (circa 2021), though it remains significantly below the levels seen in the 1990s.
+
+6. **Diverse Mining Sectors Included**: The employment figure includes all jobs across coal, metal ore, and nonmetallic mineral mining.
+
+7. **Source Information**: The data is sourced from the U.S. Bureau of Labor Statistics.
+
+This information provides a comprehensive overview of the changes in mining employment in the U.S. over the past three decades, highlighting a general decline with instances of short-term recovery.

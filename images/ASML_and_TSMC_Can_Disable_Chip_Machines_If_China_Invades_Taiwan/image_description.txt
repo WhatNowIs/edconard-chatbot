@@ -1,0 +1,10 @@
+The image is a bar chart titled "China Is ASML's Biggest Market Even After Export Controls," which compares ASML's sales in various markets per quarter. The data reflects sales figures for Q2 2023, Q3 2023, Q4 2023, and Q1 2024, measured in billions of euros.
+
+Key Points:
+1. **China** remains ASML's largest market with peak sales in Q3 2023 nearing 3 billion euros, followed by Q2 and Q4 2023, and a slightly lower figure projected for Q1 2024.
+2. **South Korea** experiences relatively stable sales, with slight dips in Q3 2023 and Q1 2024 compared to Q2 and Q4 2023, staying around 1 billion euros.
+3. **Taiwan** shows significant sales in Q2 2023, decreasing notably in Q3 2023 and Q1 2024, with sales peaking again in Q4 2023.
+4. **USA** maintains consistent but lower sales figures compared to other regions, oscillating between about 0.25 billion and 0.75 billion euros through the periods.
+5. **EMEA (Europe, the Middle East, and Africa)** demonstrates a prominent increase in sales in Q1 2024, reaching approximately 1 billion euros, up from lower figures in the previous quarters.
+
+Overall, the chart exhibits that despite export controls, China continues to be the most significant market for ASML, showcasing robust sales over the observed periods.

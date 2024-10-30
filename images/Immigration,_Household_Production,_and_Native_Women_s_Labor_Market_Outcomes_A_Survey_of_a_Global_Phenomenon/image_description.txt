@@ -1,0 +1,9 @@
+The chart titled "Trends in Household Services Occupations in the United States" visualizes the share of women working in household services occupations from 1960 to 2010, with data derived from US Censuses and American Community Surveys.
+
+Key trends include:
+1. **All Working Women (Blue Line)**: There is a gradual decline from 1960 to 1980, followed by significant fluctuations, peaking around 1990, and then stabilizing with a slight increase toward 2010.
+2. **Native Women (Red Line)**: There is a gradual decline from 1960, with some fluctuations from 1970 to 1990, after which it stabilizes with little change.
+3. **Foreign Women (Green Line)**: Starts high in 1960 and declines until about 1990. After 1990, there is a steep increase, continuing upward into 2010.
+4. **Share Foreign (Orange Line)**: This represents the proportion of foreign women in household services occupations. The share remains relatively low until about 1990, after which there is a sharp increase, indicating a significant rise in the participation of foreign women in this sector.
+
+Overall, the graph highlights the growing presence of foreign women in household services occupations since 1990, contrasting with a more stable or modestly changing trend for all working women and native women in the same occupations.

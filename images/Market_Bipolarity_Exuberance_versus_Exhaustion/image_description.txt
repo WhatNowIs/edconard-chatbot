@@ -1,0 +1,32 @@
+This chart titled "The S&P 500, ERP and T. Bond Rate in 2022 and 2023" provides a detailed look at the relationship between the S&P 500, the Implied Equity Risk Premium (ERP), and the Ten-year Treasury Bond (T. Bond) Rate over the years 2022 and 2023.
+
+### Key Points:
+
+1. **Definitions**:
+   - **ERP (Implied Equity Risk Premium)**: The additional return investors expect from holding the S&P 500 as opposed to risk-free Treasury bonds.
+   - **T. Bond Rate**: The Ten-year Treasury Bond rate.
+   - **Expected Return**: Calculated as T. Bond Rate + ERP.
+
+2. **Trend Overview**:
+   - The graph on the left (Y-axis) represents the T. Bond Rate, ERP, and Expected Return in percentage.
+   - The graph on the right (Y-axis) represents the levels of the S&P 500 index over time.
+
+3. **S&P 500 Movement**:
+   - The S&P 500 fluctuated between approximately 3500 and 4700 from January 1, 2022, to October 1, 2023.
+   - Notable decreases were seen mid-2022 and slight recoveries towards mid and late 2023.
+
+4. **T. Bond Rate Trend**:
+   - The T. Bond Rate increased from 1.51% at the start of 2022 to as high as 4.58% by October 1, 2023.
+
+5. **ERP Trend**:
+   - ERP started at 4.24% in January 2022.
+   - It remained relatively stable between 5.44% and 5.94% throughout 2023, ending at 4.84% in October 2023.
+
+6. **Expected Returns**:
+   - **Start of 2022**: Expected return was 5.75% (1.51% T. Bond Rate + 4.24% ERP).
+   - **Start of 2023**: Expected return was 9.82% (3.88% T. Bond Rate + 5.94% ERP).
+   - **July 1, 2023**: Expected return was 8.81% (3.81% T. Bond Rate + 5.00% ERP).
+   - **October 1, 2023**: Expected return was 9.42% (4.58% T. Bond Rate + 4.84% ERP).
+
+### Summary:
+Between January 2022 and October 2023, the S&P 500 index showed significant volatility, with notable drops and partial recoveries. During this period, the Ten-year Treasury Bond Rate steadily increased, leading to a general rise in expected returns. The Implied Equity Risk Premium (ERP) remained within a close range, indicating consistent expectations of additional returns from equities over risk-free bonds. The combined effect resulted in fluctuations but a general upward trend in expected returns from the start of 2022 to October 2023.

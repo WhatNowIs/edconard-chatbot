@@ -1,0 +1,12 @@
+The figure represents the US Small-Cap Median GP/A (Gross Profit to Assets ratio) contribution by sector from 1995 to 2023. The sectors are color-coded, and their contributions are expressed as a percentage of the total. The sectors include Information Technology (IT), Consumer Discretionary, Industrials, Consumer Staples, Communication Services, Materials, Energy, Financials, Real Estate, and Utilities.
+
+Key observations:
+- The overall GP/A percentage appears to have gradually decreased over the period.
+- IT sector (blue) maintained around 7-8% contribution early on and stabilized at 4% from around 2017.
+- Consumer Discretionary (orange) has generally remained within 5-6%, with a slight dip to 4% in the latest years.
+- Industrials sector (grey) has been consistently around 5-6%.
+- Other sectors like Materials, Energy, Financials, and Utilities have shown varied levels but tended towards 4-5% in recent years.
+- Real Estate isn't prominent until the later years.
+- Other sectors' contributions are relatively smaller or remain consistent.
+
+In summary, while individual sector contributions have varied slightly over the years, there is a noticeable gradual decline in the overall GP/A percentage of the US small-cap sectors over the years with stabilization of IT around 4% since 2017.

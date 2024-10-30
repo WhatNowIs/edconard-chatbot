@@ -1,0 +1,23 @@
+The chart shows the adjusted core goods and services Consumer Price Index (CPI) for the United States on a seasonally adjusted (SA) basis, spanning from December 2016 to December 2023. Here are the key takeaways:
+
+**1. Adjusted Goods (YoY%):**
+   - Represented by a blue line.
+   - The year-over-year percentage change has seen significant fluctuations.
+   - Notable peaks were seen around mid-2021, rising above 9%, followed by sharp declines toward the end of the observed period.
+
+**2. Adjusted Services (YoY%):**
+   - Depicted by a red line.
+   - The year-over-year changes in adjusted services have been more stable compared to goods.
+   - There was a noticeable peak around mid-2021 to early 2022, where the percentage rises to about 6% but then stabilized afterward.
+
+**3. 3M Annualized for Goods and Services:**
+   - The 3-month annualized rates are shown by dashed lines: blue for goods and red for services.
+   - These lines show shorter-term trends compared to the YoY percentages.
+   - The goods 3M annualized rates show volatile behavior, peaking sharply during mid-2020 and declining steeply in recent times.
+   - The services 3M annualized rates exhibit more consistent trends with fewer extreme peaks and troughs.
+
+**Overall Summary:**
+- Both core goods and services experienced volatility in their CPI over the analyzed period.
+- Goods CPI showed higher volatility with significant spikes and drops, especially around mid-2020 and late 2021.
+- Services CPI maintained a more stable trend but also had notable increases around mid-2021.
+- Recent trends indicate a convergence and stabilization in the rates for both goods and services, with both showing declining trends in the latest months.

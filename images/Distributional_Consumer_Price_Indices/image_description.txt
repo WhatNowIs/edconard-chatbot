@@ -1,0 +1,22 @@
+This chart shows the cumulative real income growth from 1983 to 2019 across different income quintiles and the top 5% of households. Two sets of data are presented: one accounting for inflation inequality and one using the official metric (CPI).
+
+- **Income Quintile 1 (Lowest 20%)**:
+  - While the official metric shows a real income growth of 12.5%, when accounting for inflation inequality, the growth is significantly lower at 2.1%.
+  
+- **Income Quintile 2 (Second Lowest 20%)**:
+  - Official metric indicates 19.1% growth, but accounting for inflation, growth is only 12.0%.
+  
+- **Income Quintile 3 (Middle 20%)**:
+  - Official metric shows 22.1% growth, whereas the adjusted metric shows 18.5%.
+  
+- **Income Quintile 4 (Second Highest 20%)**:
+  - Official metric reports 30.2% growth, and the adjusted metric reports 31.2%, showing negligible difference.
+  
+- **Income Quintile 5 (Highest 20%)**:
+  - Official metric indicates a growth of 62.9%, and the adjusted metric shows 63.6%.
+  
+- **Top 5%**:
+  - Both the official and adjusted metrics are almost identical, with official metric showing 92.7% and adjusted metric showing 92.0% growth.
+
+### Summary:
+The data reveals that lower and middle-income households experience significantly less real income growth when accounting for inflation inequality compared to the official metric. In contrast, higher-income households, especially the top 5%, see very similar growth rates regardless of the metric used. This suggests that inflation's impact on income growth is more pronounced among lower-income groups.

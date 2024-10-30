@@ -1,0 +1,14 @@
+This figure illustrates the projected one-year-ahead effect on core Personal Consumption Expenditures (PCE) inflation for various year-over-year growth rates of the Employment Cost Index (ECI) projected for the fourth quarter of 2023 (2023:Q4). The primary elements of the graph include:
+
+1. **Main Curve (Dark Blue Line):** This line represents the forecasted effect on core PCE inflation for different growth rates of the 2023:Q4 ECI.
+
+2. **Confidence Band (Grey Area):** The grey region reflects the forecast plus and minus two standard deviations of the forecast error, encompassing the uncertainty around the forecast.
+
+3. **Red Vertical Lines:** Denotes the lower and upper bounds (at 3.78% and 4.25%, respectively) of the year-over-year wage growth rates implied by the 2023:Q4 ECI, for which we cannot reject a zero effect on inflation.
+
+**Key Takeaways:**
+- Increased ECI growth correlates with a larger one-year-ahead effect on core PCE inflation.
+- There is a confidence interval indicating the range of likely outcomes, accounting for potential forecast errors.
+- Between the growth rates of 3.78% and 4.25%, the effect on core PCE inflation is not statistically distinguishable from zero, indicating a degree of uncertainty in this range.
+
+The data and computations stem from Haver Analytics and authors' calculations, emphasizing the forecast's potential variability and the influence of wage growth on inflation.

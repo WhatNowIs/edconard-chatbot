@@ -1,0 +1,49 @@
+The image, Exhibit 15 from a McKinsey & Company report, illustrates the potential impact of generative AI on productivity growth across various economies from 2022 to 2040. The productivity impact is measured as a compound annual growth rate (CAGR) in percentages. The data is broken down into early and late adoption scenarios, with additional productivity growth attributed to generative AI highlighted.
+
+Key points from the image are summarized below:
+
+### Global Impact:
+- Early Adoption: Generative AI can contribute an additional 0.6% to the already projected 2.6%, making it a total of 3.3%.
+- Late Adoption: Generative AI contributes an additional 0.2%, bringing the total productivity gain to 0.3%.
+
+### Developed Economies:
+1. **Japan:**
+   - Early: 3.7% without AI + 0.6% with AI = 4.2%
+   - Late: 1.4% without AI + 0.1% with AI = 1.6%
+
+2. **Germany:**
+   - Early: 3.4% without AI + 0.6% with AI = 3.9%
+   - Late: 1.1% without AI + 0.2% with AI = 1.3%
+
+3. **France:**
+   - Early: 3.0% without AI + 0.7% with AI = 3.7%
+   - Late: 0.6% without AI + 0.2% with AI = 0.8%
+
+4. **United States:**
+   - Early: 2.9% without AI + 0.7% with AI = 3.6%
+   - Late: 0.2% without AI + 0.3% with AI = 0.6%
+
+### Emerging Economies:
+1. **China:**
+   - Early: 3.2% without AI + 0.6% with AI = 3.8%
+   - Late: 0.8% without AI + 0.7% with AI = 1.5%
+
+2. **Mexico:**
+   - Early: 2.3% without AI + 0.6% with AI = 2.9%
+   - Late: 0.0% without AI
+
+3. **India:**
+   - Early: 1.8% without AI + 0.5% with AI = 2.3%
+   - Late: 0.0% without AI
+
+4. **South Africa:**
+   - Early: 1.7% without AI + 0.5% with AI = 2.3%
+   - Late: 0.0% without AI
+
+### Notes:
+- Figures may not sum due to rounding.
+- The projections assume that automated work hours are reintegrated into the workforce at today's productivity levels.
+- Previous assessments did not consider the rise of generative AI.
+- Data is based on 47 countries, representing 80% of global employment.
+
+The insights highlight that economies, both developed and emerging, stand to gain substantial productivity growth from early adoption of generative AI, potentially reshaping productivity landscapes significantly by 2040.

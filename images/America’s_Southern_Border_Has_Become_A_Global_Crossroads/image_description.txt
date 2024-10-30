@@ -1,0 +1,17 @@
+The image is a graph depicting the percentages of migrant encounters at the US southwest border by citizenship from 2020 to 2023. The data includes both migrant apprehensions and expulsions, sourced from US Customs and Border Protection.
+
+Key points from the graph:
+
+1. **El Salvador, Guatemala, Honduras, and Mexico**:
+   - In 2020, migrants from these countries comprised the majority, approaching nearly 100% of total encounters.
+   - Over time, the percentage has sharply declined and by 2023, it represents slightly below 40%.
+
+2. **Venezuela**:
+   - The encounters began to increase noticeably starting in 2021.
+   - The percentage fluctuates but consistently appears in the data after entering the graph in early 2021.
+
+3. **Other Countries**:
+   - The percentage of migrants from countries other than the ones specified increases over time.
+   - By 2023, these other countries comprise more than 60% of total encounters, showing a significant shift from the earlier period where numbers were lower.
+
+Overall, the trend indicates a declining proportion of migrants from traditional sending countries (El Salvador, Guatemala, Honduras, and Mexico) and a marked increase in migrants from other countries, particularly noticeable from 2021 onwards. This shift highlights changing migration patterns at the US southwest border.

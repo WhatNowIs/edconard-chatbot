@@ -1,0 +1,20 @@
+The image is a line graph titled "Indexes of Value Added Per Worker and TFP, Overall U.S. and Construction Sector (BEA Data)." It depicts trends from 1950 to 2019 in four different indexes:
+
+1. **Value Added per FTE GDP (Blue Line):**
+   - This index represents the value added per full-time equivalent (FTE) worker in the Gross Domestic Product (GDP).
+   - It shows a steady increase over the years, starting around 100 in 1950 and exceeding 250 by 2019.
+
+2. **TFP (Value Added) Economy (Gray Line):**
+   - This index represents the Total Factor Productivity (TFP) for the overall economy.
+   - It follows a similar upward trend to the Value Added per FTE GDP, starting at 100 in 1950 and approaching 200 by 2019.
+
+3. **Value Added per FTE Construction (Orange Line):**
+   - This index tracks the value added per FTE worker in the construction sector.
+   - Initially rising to around 150 by the late 1960s, it shows considerable fluctuations and an overall decline from the mid-1970s onwards, stabilizing at around 100 by 2019.
+
+4. **TFP (Value Added) Construction (Yellow Line):**
+   - This index measures the TFP for the construction sector specifically.
+   - It shows a similar pattern to the Value Added per FTE Construction, with initial growth followed by volatility and decline, stabilizing slightly above 100 by 2019.
+
+**Summary:**
+The graph illustrates that while the overall U.S. economy has seen significant growth in both Value Added per Worker and TFP since 1950, the construction sector has experienced volatility and a relative decline in these metrics since the mid-1970s. While the productivity and value added per worker in the broader economy have continually increased, the construction sector has faced challenges in maintaining its productivity and value added per worker in comparison.

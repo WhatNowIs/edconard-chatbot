@@ -1,0 +1,12 @@
+The graph in Figure 3 is titled "Crash Probability Spread." It illustrates the average monthly crash probability spread by calculating the difference between two key components:
+1. Survey respondents' probabilities of a market crash within the next six months on the scale of notable market crashes (October 19, 1987, and October 28, 1929).
+2. The option-implied probability of at least a 15% drop in the S&P 500 index over the next six months.
+
+Key observations:
+- The period covered in the graph spans from 1996 to 2020.
+- The crash probability spread fluctuates significantly over time, indicating varying levels of perceived market risk.
+- Notable peaks are visible, such as in the years 2011 and 2016, where the probability spread hits higher levels.
+- Generally, from 2002 onwards, there appears to be an increasing trend in the average monthly crash probability spread, with occasional significant spikes.
+- By 2020, the range drops sharply after a period of relative volatility.
+
+In summary, the graph provides an overview of how market participants' perceived crash risks have changed over the years, with fluctuating but generally increasing concerns about potential market downturns, highlighted by occasional significant increases in crash probability spread.

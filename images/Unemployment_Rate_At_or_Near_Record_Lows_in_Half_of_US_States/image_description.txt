@@ -1,0 +1,6 @@
+The image shows a map of the United States highlighting the current status of jobless rates in each state as of June 2023, based on data from the Bureau of Labor Statistics. The key points from the map are:
+
+- States marked in blue have jobless rates at record lows or within 0.1 percentage points from record lows.
+- States marked in yellow do not have jobless rates at or near record lows.
+
+Approximately half of the US states are experiencing record-low unemployment rates, as indicated by the significant presence of blue-colored states on the map. These record lows have been measured relative to data starting in 1976. Blue indicates states achieving or close to achieving their lowest recorded unemployment rates, showcasing a robust job market in these areas.

@@ -1,0 +1,16 @@
+The provided image is a chart titled "Take the Money and Run," illustrating a significant outflow of foreign currency deposits from Russian households in domestic banks, coinciding with the onset of war and likely linked to emigration prompted by antiwar protests and mobilization.
+
+Key Points:
+1. **Total Outflow**: Russians have transferred approximately $47 billion in foreign currency deposits out of domestic banks and into foreign accounts since the war began.
+2. **Timeframe**: The data spans from January 2018 through September 2023.
+3. **Data Sources**:
+    - **Blue Line**: Household financial transactions in foreign currency (FX) deposits through August.
+    - **Red Line**: Change in individuals' FX deposits at banks through September.
+4. **Trends**:
+    - Both lines indicate a sharp decline in FX deposits from April 2022 onwards.
+    - The graph shows relatively stable deposits from January 2018 until around late 2019 to early 2020, after which there is volatility and subsequent steep declines starting in early 2022.
+5. **Figures**: The cumulative change since January 2018 shows a reduction of more than $50 billion by 2023.
+
+The chart suggests a clear and significant exodus of foreign currency deposits from Russian banks, underscoring the economic impact of geopolitical events on Russians' banking behavior. 
+
+**Source**: Bank of Russia, OECD, Matthew Klein's calculations.

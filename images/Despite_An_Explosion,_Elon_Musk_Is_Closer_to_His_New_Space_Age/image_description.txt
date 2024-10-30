@@ -1,0 +1,29 @@
+This infographic, titled "It's big, but it's not yet clever," provides a detailed comparison of selected carrier rockets used for space exploration. The rockets are categorized into past, present, and future carriers, with visual representations for scale, showing their heights in meters.
+
+Key points:
+1. **Historical Context and Comparison**:
+   - The infographic places historical rockets like the Energia, Space Shuttle, and Saturn V alongside modern and future rockets for comparison.
+
+2. **Heights**:
+   - Heights of the rockets are depicted, with the tallest being the future SpaceX Starship at roughly 120 meters.
+   - Notable mentions: 
+     - New Glenn (future) stands at approximately 90 meters.
+     - SLS Block 1 (current) at about 100 meters.
+     - Saturn V (historical) at about 110 meters.
+     - The Boeing 747-400 and the Statue of Liberty are also shown for scale comparison.
+
+3. **Payload Capacity**:
+   - Rockets are also compared based on their payload capacity to low-earth orbit (in tonnes):
+     - Shepard: 2.1 tonnes
+     - Space Shuttle: 24 tonnes
+     - Falcon 9: 23 tonnes
+     - Falcon Heavy: 64 tonnes
+     - New Glenn: 45 tonnes
+     - SLS Block 1: 95 tonnes
+     - Saturn V: 140 tonnes
+     - Starship: Up to 150 tonnes
+
+4. **Significant Notes**:
+   - The infographic notes that as of April 20, 2023, the Starship had lifted off but exploded shortly into its flight.
+
+Overall, this infographic provides a clear and comparative view of various carrier rockets, emphasizing their scale and payload capacities aligned with advancements over time.

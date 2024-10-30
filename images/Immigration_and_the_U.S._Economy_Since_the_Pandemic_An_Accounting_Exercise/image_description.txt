@@ -1,0 +1,16 @@
+The chart depicts the cumulative change in the US labor force from the fourth quarter of 2019 to the fourth quarter of 2023, highlighting the impact of immigration. The data is segmented into three categories: native-born US citizens, foreign-born US citizens, and non-citizens (including legal residents, undocumented workers, etc.). The total change in the labor force is also tracked.
+
+Key observations:
+
+1. **Initial Decline (2020 - Pandemic Onset)**:
+   - At the beginning of 2020, there was a significant decrease in the labor force, primarily affecting all segments but more pronounced among non-citizens.
+   
+2. **Recovery Phase (2021 onwards)**:
+   - Post Q2 2020, the labor force began a recovery trajectory with contributions gradually increasing across all segments.
+   - By 2021 Q4, contributions from non-citizens (legal residents, undocumented workers, etc.) and foreign-born US citizens became increasingly important for the recovery.
+
+3. **Growth Phase (2022-2023)**:
+   - From 2022 onwards, there is a visible positive trend with significant contributions from all segments, particularly non-citizens and foreign-born US citizens.
+   - The combined contributions from non-citizens and foreign-born citizens resulted in a net positive total change in the labor force by the end of 2023.
+
+The chart emphasizes that without immigration, the US labor force would have faced a more substantial decline during the pandemic. The recovery and growth in the labor force owe significantly to the contributions made by immigrant populations.

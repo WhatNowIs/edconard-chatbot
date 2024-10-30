@@ -1,0 +1,10 @@
+The chart illustrates the trailing 12-month sum of US trade with China and Hong Kong, measured in USD billions, over the period from December 1992 to December 2022. The data is segmented into four categories: China exports, China imports, China + Hong Kong (HK) exports, and China + HK imports.
+
+Key Points:
+1. **China Imports**: Represented by the grey line, China imports have seen a significant and consistent upward trend from December 1992, peaking around 2018, then experiencing a decline, followed by a recent uptick nearing 600 billion USD.
+2. **China Exports**: The orange line shows US exports to China which have grown modestly compared to imports. Post-2000, there has been a steady increase reaching approximately 150 billion USD by the end of 2022.
+3. **China + HK Imports**: The dark grey line, combining imports from both China and Hong Kong, mirrors the trajectory of China imports alone, peaking around 2018, and then stabilizing close to the 600 billion USD mark.
+4. **China + HK Exports**: Depicted by the red line, exports to China and Hong Kong have grown gradually, achieving a level of about 200 billion USD by the end of 2022.
+
+Summary:
+The chart effectively demonstrates the significant growth in US imports from China and Hong Kong over the past three decades, with peaks around 2018 and subsequent fluctuations. Exports to these regions have also grown but at a slower pace and are substantially lower than the imports, highlighting a trade imbalance. This trend underscores the increasing economic interdependence between the US and China (including Hong Kong), with notable growth in both imports and exports, albeit imports growing at a much faster rate.

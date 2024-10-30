@@ -1,0 +1,9 @@
+The image presents a graph from the US Bureau of Labor Statistics that illustrates the change in US employment since February 2020, not seasonally adjusted. The graph distinguishes between native-born workers (shown as a blue line) and foreign-born workers (shown as a black line).
+
+Key points from the graph:
+1. Employment Trends for Native-Born Workers: The blue line shows that native-born workers experienced a steep decline in employment at the beginning of 2020. Employment levels for this group eventually increased, but the trend shows fluctuations and remains relatively flat, ending slightly below the 0 mark.
+
+2. Employment Trends for Foreign-Born Workers: The black line indicates that employment for foreign-born workers also experienced a sharp decline at the beginning of 2020. However, their employment levels have gradually improved and consistently increased, ending above the 0 mark and representing job growth.
+
+Summary:
+The graph depicts that since February 2020, foreign-born workers have driven all recent US job growth. While native-born workers experienced a recovery after a steep drop, their employment levels have mostly remained flat with minimal gains. Conversely, foreign-born workers have shown a steady increase in employment, significantly contributing to the overall job growth in the US.

@@ -1,0 +1,10 @@
+The image is a graph showing the trend of the working-age immigrant population from January 2010 to January 2023. Here's a summary of the key points:
+
+- The population of working-age immigrants has seen a general upward trend over the past 13 years.
+- In early 2010, the working-age immigrant population was around 30 million.
+- By January 2023, the population had increased to 39 million.
+- There is a marked acceleration in the growth of the working-age immigrant population after the pandemic, indicated by a sharp increase from around 35 million to 39 million within 2.5 years.
+- The annotation on the graph notes that immigration went up by 4 million after the pandemic.
+- The sources of the data are BLS (Bureau of Labor Statistics), Haver Analytics, and the Apollo Chief Economist.
+
+This indicates a significant boost in the working-age immigrant population in the recent past, particularly in the years following the COVID-19 pandemic.

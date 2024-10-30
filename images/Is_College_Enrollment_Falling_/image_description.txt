@@ -1,0 +1,15 @@
+The image is a line graph that depicts the changes in the college enrollment rates of recent high-school graduates aged 16-24 years from 1993 to 2022. The graph focuses on two types of institutions: 2-year colleges and 4-year colleges and universities.
+
+Key points from the graph include:
+
+- **4-Year Colleges and Universities**:
+  - The enrollment rates for 4-year institutions (orange line) have fluctuated over the years but stayed relatively steady within the 44-46% range.
+  - The highest recorded enrollment rate during this period was 46.0%.
+  - The latest data point for 2022 shows the enrollment rate at 45.1%.
+
+- **2-Year Colleges**:
+  - The enrollment rates for 2-year institutions (blue line) experienced more variability.
+  - The peak enrollment rate for 2-year colleges was recorded at 28.8%.
+  - There has been a noticeable decline in recent years, with the latest data point for 2022 showing an enrollment rate of 16.9%.
+
+Overall, the graph highlights the stability in the enrollment rates for 4-year colleges and universities, while showing a significant downward trend in the enrollment rates for 2-year colleges over the last three decades.

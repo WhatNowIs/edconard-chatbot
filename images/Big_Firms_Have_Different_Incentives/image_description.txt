@@ -1,0 +1,11 @@
+The image shows a graph titled "Figure 4: Young and Incumbent Inventor Hires," which plots the estimates of two variables (Applications and Earnings) relative to the year of hire. The X-axis represents the year relative to hire, ranging from -4 to +4 years. The Y-axis shows the estimate values, which range from -0.1 to 0.15. 
+
+Key points gathered from the graph:
+
+- **Applications** (represented by grey circles): The estimates for applications remain fairly stable and near zero both before and after the hire year (-4 to +4). There is a slight downward trend post-hire, but the drop is not significant.
+
+- **Earnings** (represented by black circles): The earnings estimates also remain stable and near zero in the years leading up to the hire. However, post-hire, there is a noticeable positive increase in earnings estimates, starting from the year of hire (year 0) and continuing to increase slightly for the next few years.
+
+- **Uncertainty**: The error bars suggest a certain level of uncertainty in both estimates, especially for earnings.
+
+In summary, the graph suggests that the hire of young and incumbent inventors is associated with a positive impact on earnings shortly after the hire, whereas the level of applications remains relatively constant with a slight downward trend post-hire. This indicates that hiring young and incumbent inventors may lead to an increase in earnings but does not significantly influence the number of applications.

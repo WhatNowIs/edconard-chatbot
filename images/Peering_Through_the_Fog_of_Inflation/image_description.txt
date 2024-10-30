@@ -1,0 +1,14 @@
+The graph illustrates the monthly inflation rates from January 2022 to November 2022. It displays two lines: a pre-revision (represented in green) and a post-revision (represented in red).
+
+Here are the key observations:
+
+- **January 2022 to July 2022 (Pre-revision)**:
+  - The inflation rates demonstrate significant fluctuations.
+  - March 2022 saw a noticeable spike, with pre-revision inflation peaking at around 15%.
+  - The rates dropped sharply around July 2022, dipping into negative territory.
+
+- **August 2022 to November 2022 (Post-revision)**:
+  - Post-revision rates show a general upward trend till around September 2022, with a peak at around 10%.
+  - Post-September, both pre-revision and post-revision rates decline towards the end of the year, slipping below 0% by November 2022.
+
+Overall, the inflation rates initially showed high volatility with significant spikes and drops, followed by a more stable yet declining trend in the latter half of 2022. The post-revision rates generally follow a similar trend to the pre-revision rates but are less extreme.

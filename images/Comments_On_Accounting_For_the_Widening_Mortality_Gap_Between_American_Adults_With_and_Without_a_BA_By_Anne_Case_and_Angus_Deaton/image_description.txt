@@ -1,0 +1,11 @@
+The image is a line chart showing the percentage of individuals who have attained a Bachelor of Arts (BA) degree six years after their high school (HS) graduation, spanning the years from 1968 to 2018.
+
+Key points:
+- **1968**: Approximately 30% of individuals had a BA six years after HS graduation.
+- **1978-1988**: There was a slight decrease followed by a steady rise in the percentage, reaching around 35% by 1988.
+- **1988-1998**: There was a significant increase in the percentage, jumping to about 45%.
+- **1998-2008**: The upward trend continued, with the percentage nearing 55% by 2008.
+- **2008-2018**: The percentage saw a slight plateau but continued to rise moderately, reaching just below 60% by 2018.
+
+**Summary**:
+Over the five-decade span from 1968 to 2018, the percentage of individuals obtaining a BA degree within six years of high school graduation has shown a significant and steady increase. Starting from around 30% in 1968, the percentage rose to nearly 60% by 2018, reflecting a growing trend in higher education attainment among high school graduates.

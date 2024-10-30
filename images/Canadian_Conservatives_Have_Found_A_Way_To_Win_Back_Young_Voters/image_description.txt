@@ -1,0 +1,14 @@
+This chart from the Financial Times illustrates the trajectory of support for the Canadian Conservative party among two different age groups: under-30s and over-65s, from 2020 to 2023. The data source is YouGov and Abacus Data surveys.
+
+Key points include:
+
+1. **2020-2021 Trend:** The Conservative party maintained a higher share of vote intention among the over-65 age group (around 40%) than among the under-30 age group (around 20-25%).
+
+2. **2021 Federal Election:** Post the 2021 federal election, there was relative stability in the voting intentions among both age groups, with minor fluctuations.
+
+3. **Post-Leadership Change:** In early to mid-2022, following a change in leadership when Poilievre became the leader, there was an uptick in support among both age groups.
+
+4. **Recent Surge Due to House-building Proposals:** Most notably, in 2023, following the introduction of ambitious house-building proposals, there was a significant rise in support from the under-30 age group, reaching nearly 40%, aligning closely with the traditionally higher support from the over-65 age group.
+
+Summary:
+The emphasis on housing proposals has driven a substantial increase in support for the Canadian Conservative party among young adults, closing the gap between under-30s and over-65s voters which had been previously more prominent.

@@ -1,0 +1,77 @@
+The table provides a summary of sales, employment, and trade flows for all US firms that manufacture in-house, broken down by firm type: Domestic (only US manufacturing plants) and Multinational Enterprises (MNEs) with variations in manufacturing locations (US only, US & foreign, foreign only).
+
+### Firms Distribution
+- **Domestic Firms:** 242,000
+- **MNE (US Only):** 350
+- **MNE (US & Foreign):** 1,200
+- **MNE (Foreign Only):** 150
+
+### Panel A: Sales (in billions of dollars)
+- **Global Sales:**
+  - Domestic: $2,629
+  - MNE (US Only): $1,695
+  - MNE (US & Foreign): $6,710
+  - MNE (Foreign Only): $345
+- **Sales by US Establishments:**
+  - Domestic: $2,629
+  - MNE (US Only): $1,446
+  - MNE (US & Foreign): $3,853
+  - MNE (Foreign Only): $173
+- **Sales by Foreign Establishments:**
+  - MNE (US Only): $249
+  - MNE (US & Foreign): $2,857
+  - MNE (Foreign Only): $172
+
+### Panel B: Employment (in thousands)
+- **Global Employment:**
+  - Domestic: 11,059
+  - MNE (US Only): 5,338
+  - MNE (US & Foreign): 11,883
+  - MNE (Foreign Only): 732
+- **Employment in US Establishments:**
+  - Domestic: 11,059
+  - MNE (US Only): 4,349
+  - MNE (US & Foreign): 6,556
+  - MNE (Foreign Only): 361
+- **Employment in Foreign Establishments:**
+  - MNE (US Only): 989
+  - MNE (US & Foreign): 5,327
+  - MNE (Foreign Only): 371
+
+### Panel C: US Trade Flows (in billions of dollars)
+- **Imports:**
+  - Domestic: $126
+  - MNE (US Only): $39
+  - MNE (US & Foreign): $410
+  - MNE (Foreign Only): $12
+  - **Arm’s-Length:**
+    - Domestic: $89
+    - MNE (US Only): $33
+    - MNE (US & Foreign): $160
+    - MNE (Foreign Only): $6
+  - **Related-Party:**
+    - Domestic: $37
+    - MNE (US Only): $7
+    - MNE (US & Foreign): $250
+    - MNE (Foreign Only): $6
+- **Exports:**
+  - Domestic: $123
+  - MNE (US Only): $22
+  - MNE (US & Foreign): $437
+  - MNE (Foreign Only): $13
+  - **Arm’s-Length:**
+    - Domestic: $104
+    - MNE (US Only): $17
+    - MNE (US & Foreign): $253
+    - MNE (Foreign Only): $12
+  - **Related-Party:**
+    - Domestic: $19
+    - MNE (US Only): $5
+    - MNE (US & Foreign): $184
+    - MNE (Foreign Only): $1
+
+### Summary
+
+- Domestic firms vastly outnumber multinational firms but are primarily US-centric in sales and employment.
+- MNEs with both US and foreign plants are notable for their substantial global sales and employment footprints compared to other firm types.
+- MNEs facilitate significant trade flows, especially with related-party transactions, highlighting their integrated global operations.

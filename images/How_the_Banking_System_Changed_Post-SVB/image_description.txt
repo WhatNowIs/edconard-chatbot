@@ -1,0 +1,13 @@
+The image provides a graphical summary of the net percentage of domestic banks tightening loan standards over time, specifically for business loans (represented by the yellow line) and household loans (represented by the green line). 
+
+### Key Points:
+- **Overall Trend**: Both business and household loans' standards show fluctuations over time, with significant peaks indicating periods of rapid tightening.
+- **Notable Peaks**: 
+  - Around 2009, corresponding likely to the global financial crisis, there was a substantial tightening in lending standards for both business and household loans.
+  - Another significant peak occurs around 2020, likely coinciding with the economic impacts of the COVID-19 pandemic. However, after this peak, the tightening slows and then again starts to increase nearing the present.
+- **Comparative Analysis**:
+  - Business loans generally have more pronounced fluctuations compared to household loans.
+  - During certain periods, such as post-2008 and post-2020, business loans experience rapid and higher relative tightening compared to household loans.
+
+### Summary:
+The graph indicates that domestic banks in the United States have periodically tightened their lending standards for both business and household loans, particularly during and after economic crises such as the 2008 financial crisis and the COVID-19 pandemic. Business loans tend to experience more significant adjustments in standards compared to household loans.

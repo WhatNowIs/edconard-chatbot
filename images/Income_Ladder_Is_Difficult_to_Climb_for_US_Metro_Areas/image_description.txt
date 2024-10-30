@@ -1,0 +1,11 @@
+This chart, sourced from the US Bureau of Economic Analysis, tracks regional per-capita income as a percentage of the US per-capita income from 1929 to 2020. It highlights several regions: Mideast, Far West, New England, Great Lakes, Rocky Mountain, Plains, Southwest, and Southeast.
+
+Key observations:
+1. From 1929 to the 1970s, there was a convergence in per-capita incomes across the regions, meaning regional incomes were becoming more equal.
+2. Since the 1970s, this convergence stalled or reversed, with disparities in regional incomes becoming more apparent once again.
+3. Specific trends include:
+   - The Mideast and Far West regions generally maintained an income level around or above the national average (100%).
+   - The Southeast and Southwest have consistently been below the national average.
+   - The Plains, Rocky Mountain, and Great Lakes regions have shown considerable fluctuation but tend to hover around the national average.
+
+Overall, the chart underscores the changing dynamics in regional incomes over time, highlighting a period of convergence until the 1970s, followed by a period of divergence or stagnation.

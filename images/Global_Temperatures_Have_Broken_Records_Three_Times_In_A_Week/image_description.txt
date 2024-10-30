@@ -1,0 +1,19 @@
+The image is a line graph depicting average global daily temperatures in degrees Celsius from the start of July to the end of August for multiple years. The title of the graph is "Smashing records," and it highlights significant years where record-breaking temperatures occurred.
+
+Key information:
+
+1. **2023 Record-Breaking Temperatures**: The year 2023 is emphasized with a series of dark red dots indicating that it has consistently broken temperature records throughout the period shown.
+   
+2. **Previous Record-Breaking Years**: After 2023, other noteworthy years include:
+   - **1998**: Marked with pink dots.
+   - **1980, 1991, 1995, 2001**: Indicated with various color dots.
+   - **2016**: Also highlighted with dark red dots, which was the previous significant record before 2023.
+
+3. **Temperature Trends**: The gray lines represent historical temperature data for other years, showing fluctuations around the mean but generally below the record-breaking years highlighted.
+
+4. **Temperature Scale**: The y-axis ranges from 15.5°C to 17.5°C, indicating the average global daily temperatures.
+
+5. **Data Source**: The data is sourced from the University of Maine, Climate Change Institute.
+
+Summary:
+The graph shows a disturbing trend in rising global temperatures, with 2023 setting new records for daily average temperatures, surpassing historical highs from other notable years such as 1980, 1991, 1995, 1998, 2001, and 2016. These record-breaking temperatures indicate a significant and escalating change in the global climate.

@@ -1,0 +1,10 @@
+The provided image is a graph plotting three lines over time:
+
+1. **S&P500 Index (Green Line)**: This line depicts the actual performance of the S&P500 index from 1982 until around 2022. The S&P500 is a widely recognized stock index that tracks the performance of 500 of the largest publicly traded companies in the U.S.
+
+2. **Rational Benchmark Index (${p_t}^*$ from Equation (3), Blue Line)**: This line represents a rational benchmark index. The equation referenced implies that this index is calculated based on some theoretical economic model.
+
+3. **Benchmark Price Index based on Earnings Expectations (${ \tilde{p_t} }$ from Equation (4), Red Line)**: This line shows a benchmark index that is based on earnings expectations, adjusted for inflation using the Consumer Price Index (CPI).
+
+### Summary
+The graph compares the actual values of the S&P500 Index against two benchmark indices over a span of about 40 years (1982-2022). The green line (S&P500 index) shows notable increases and decreases over this period, reflecting market volatility. The blue line (rational benchmark index) serves as a theoretical baseline, exhibiting a more gradual and steady increase. The red line (benchmark price index based on earnings expectations) adjusts for inflation and shows fluctuations that partially align with the S&P500 index but tends to deviate during periods of high market volatility. This graph is useful for understanding how actual market performance compares to theoretical and earnings-adjusted benchmarks over time.

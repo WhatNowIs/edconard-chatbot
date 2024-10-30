@@ -1,0 +1,11 @@
+The image is a chart titled "Core PCE Inflation - Percent Change, Annual Rate," which visualizes the changes in core PCE inflation rates from January 2021 to January 2023. 
+
+Key elements include:
+
+- **3-month Change (orange line):** This line shows the trend in the 3-month average annualized percent change in core PCE inflation. It began at around 3% in January 2021, spiked to about 6-7% in mid-2021, and saw notable fluctuations before trending downward to approximately 3-4% by January 2023.
+
+- **1-month Change (blue bars):** This bars represent the 1-month annualized percent change in core PCE inflation. They show greater volatility compared to the 3-month change, with peaks reaching as high as 8% and lows dipping below 2% throughout the observed period.
+
+Overall, the chart illustrates that while the core PCE inflation rate has experienced significant short-term volatility (as shown by the blue bars), the longer-term trend (depicted by the orange line) has shown gradual movements, peaking during mid-2021 and 2022, then declining toward the start of 2023. 
+
+The data is sourced from the Bureau of Economic Analysis via Macrobond, accompanied by the author's calculations.

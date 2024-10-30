@@ -1,0 +1,20 @@
+The graph illustrates the historical and projected deficits and surpluses as a percentage of GDP from 1943 to 2053. It distinctly separates primary deficits or surpluses (excluding interest costs) and net interest outlays, culminating in the total deficit or surplus.
+
+### Key Points:
+
+1. **Historical Trends**:
+   - Major deficits were seen during the mid-1940s (World War II era).
+   - Post-war, there were periods of fluctuating surpluses and deficits.
+   - Notable peaks in deficit relative to GDP occurred around the financial periods of the early 1980s, early 2000s, and late 2000s onwards.
+
+2. **Recent and Projected Future Trends**:
+   - As of 2023, the primary deficit (excluding interest costs) is 3.3% of GDP.
+   - A projection indicates the primary deficit will remain at 3.3% of GDP by 2053.
+   - Rising interest rates are expected to cause net outlays for interest to nearly triple relative to GDP over this period.
+
+3. **Impact of Primary Deficits**:
+   - Combined with increasing interest rates, sustained primary deficits lead to significant net interest outlays, severely influencing the total deficit.
+   - Overall, the total deficit or surplus fluctuates largely due to these factors, showing a trend towards rising deficits in the future.
+
+### Summary:
+The graph highlights the historical variability and future projections of the US budget deficits and surpluses in terms of GDP. It underscores the impact of primary deficits and rising interest rates on increasing net interest outlays. The projection for 2053 suggests continued significant deficits, necessitating keen fiscal management to address the growing financial challenges.

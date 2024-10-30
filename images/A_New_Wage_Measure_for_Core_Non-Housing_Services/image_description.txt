@@ -1,0 +1,13 @@
+The graph titled "Figure 2. NHS Wage Growth and Inflation" depicts year-on-year percentages of NHS AHE (Average Hourly Earnings) Wage Growth for production and nonsupervisory workers (NHS AHE Wage Growth*) and PCE (Personal Consumption Expenditure) Inflation for the non-housing sector (PCE NHS Inflation) from 1990 through 2022.
+
+Key observations and trends:
+
+- From 1990 to the early 2000s, both wage growth (black line) and inflation (blue line) exhibit a downward trajectory, with occasional fluctuations.
+- Starting around 2000, wage growth fluctuates around 3-4%, with spikes in the early 2000s and the mid-2000s, where it reached levels above 4%.
+- Inflation rates generally follow a similar but slightly more subdued pattern in comparison to wage growth until around 2010.
+- A notable drop in inflation is observed in 2009, coinciding with the global financial crisis, where the rate falls below 1%.
+- Post-2010, both metrics stabilize somewhat, with wage growth and inflation consistently fluctuating around the 2-3% range until approximately 2018.
+- After 2018, wage growth starts to rise, peaking dramatically around 2021-2022, reaching rates close to 8%.
+- Meanwhile, inflation experiences a somewhat delayed but sharp increase around the same period, aligning more closely with wage growth trends but at slightly lower rates.
+
+This summary indicates a correlation between wage growth and inflation rates over the period, with noteworthy increases in both metrics in the most recent years (2021-2022). The analysis source is credited to BLS, BEA, and CEA analysis.

@@ -1,0 +1,25 @@
+This image features a series of six line graphs that illustrate the effects of the Idaho Return to Work Bonus Program on various employment metrics for individuals aged 25-54. The graphs compare Idaho (solid line) against a Synthetic Control (dashed line) that aggregates data from the other 49 states and Washington, D.C. The x-axis represents the number of months relative to June 2020, when the program was introduced, with June 2020 marked as month 0. The y-axis varies by graph but appears to represent the level of different employment-related metrics.
+
+### Panels Overview:
+1. **Panel A and B: EPOP (Employment-Population Ratio)**
+   - **A (Sparse Predictors)**: Observing a sharp dip around month -2, followed by a gradual recovery post-June 2020 in Idaho, with the synthetic control showing a notable lag.
+   - **B (Rich Predictors)**: Exhibits a similar trend with sparse predictors but includes additional control variables.
+
+2. **Panels C and D: U-to-E (Unemployed to Employed Transitions)**
+   - **C (Sparse Predictors)**: Both lines show an increase leading up to month 0, peaking, and then a slight decline. Idaho outperforms the synthetic control post-June 2020.
+   - **D (Rich Predictors)**: Similar observations with slight variations, showing richer predictors.
+
+3. **Panels E and F: NILF-to-E (Not in the Labor Force to Employed Transitions)**
+   - **E (Sparse Predictors)**: The graph shows some variability around month -2, but Idaho's trend aligns close to the synthetic control post-June 2020.
+   - **F (Rich Predictors)**: Similar to Panel E but indicates some divergence between Idaho and synthetic control towards the end.
+
+### Key Insights:
+- **Sharp Recovery Post-June 2020**: Idaho sees a significant improvement in the Employment-Population Ratio (EPOP) post-June 2020, indicating the program's likely positive impact.
+- **Comparison Effectiveness**: Rich predictors (Panel B & D) provide additional clarity, reinforcing the robustness of observed effects.
+- **Transition Dynamics**: Transitions from unemployed to employed and from NILF to employed show relative consistency, with Idaho generally maintaining or improving its position against the synthetic control.
+
+### Methodological Details:
+- **Sparse vs. Rich Predictors**: Sparse predictors include basic metrics (age, education level), while richer predictors incorporate pandemic-specific variables (Covid cases, state policy stringency).
+- **Control Group Construction**: The synthetic control group is built using data from all other states plus D.C., providing a comparative baseline.
+
+In summary, these graphs collectively demonstrate that the Idaho Return to Work Bonus Program positively influenced employment metrics, with Idaho generally showing better recovery and transition rates compared to the synthetic control group, particularly evident in the EPOP metrics.

@@ -1,0 +1,19 @@
+This chart, titled "Change in non-participation in the labor force as a percent of the population age 16 and older, aggregate and by reason, relative to February 2020," tracks the percentage point changes in non-participation in the labor force (LF) from January 2020 to October 2022. 
+
+Key observations:
+
+1. **Total not in LF (black line):**
+   - There was a significant increase in non-participation around April 2020, which then declined but remained higher than pre-February 2020 levels throughout the period.
+
+2. **Main Reasons for Non-Participation:**
+   - **Retirements (blue line):** Gradually increased during the period, with a modest rise overall.
+   - **Caregiving (orange line):** Spiked early in the pandemic but has remained relatively steady and slightly increased since then.
+   - **Ill/disabled (green line):** Stayed relatively constant with minor fluctuations.
+   - **In school (red line):** Peaked around April 2020, decreased until mid-2021, and stabilized afterward.
+   - **Other reasons (purple line):** Saw an initial increase, followed by a decline, and then some fluctuations, generally trending downward but still above early 2020 levels.
+
+3. **Seasonal and Demographic Adjustments:**
+   - The data are seasonally adjusted and account for updated population controls according to the Current Population Survey.
+
+Summary:
+Since February 2020, there has been a notable increase in labor force non-participation due to various reasons. Retirements and caregiving responsibilities have maintained higher levels than pre-pandemic times. School attendance also increased initially but stabilized later. The data highlight the multifaceted impacts of the COVID-19 pandemic on labor force participation across different demographic segments.

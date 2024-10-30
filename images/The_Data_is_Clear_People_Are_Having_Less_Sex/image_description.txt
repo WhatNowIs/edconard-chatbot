@@ -1,0 +1,26 @@
+This image is a scatter plot with trend lines that show the share of people reporting having sex at least once a month over the last year, segmented by age. The data is derived from the General Social Survey conducted between the years 1989 to 1993 and 2016 to 2022.
+
+Key takeaways from the graph:
+
+1. **Age Range Analysis**:
+   - The x-axis represents age, ranging from 20 to 70 years.
+   - The y-axis shows the percentage of the population having sex at least once a month, ranging from 40% to 80%.
+
+2. **Comparisons Between Time Periods**:
+   - **1989 to 1993**: Represented by the blue line.
+     - Peaks slightly above 80% around the age of 30.
+     - The percentage declines gradually after the peak but remains higher.
+   - **2016 to 2022**: Represented by the red line.
+     - Peaks just below 80% around the age of 30, showing a slightly lower peak as compared to 1989 to 1993.
+     - The percentage declines more steeply after the peak, particularly in the 30 to 50 age range.
+
+3. **Overall Trends**:
+   - In both time periods, the frequency of having sex at least once a month increases with age, peaks around the age of 30, and then declines.
+   - There is a noticeable decrease in the percentage of individuals having sex at least once a month in the most recent period (2016 to 2022) compared to the period of 1989 to 1993.
+   - The decline with age is steeper in the 2016 to 2022 dataset.
+
+4. **Data Source and Credit**:
+   - The data is from the General Social Survey, covering years 1989 to 2022.
+   - The image is credited to Ryan Burge and indicates the data source clearly at the bottom right of the plot.
+
+In summary, the graph clearly indicates that while younger adults reported similar rates of sexual activity in both time periods, there is a significant decline in sexual activity among older adults in recent years (2016 to 2022) compared to the late 20th century (1989 to 1993).

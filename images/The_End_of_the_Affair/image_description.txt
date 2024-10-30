@@ -1,0 +1,20 @@
+This composite image presents four distinct graphs analyzing trends in the stock market with a focus on young, unprofitable companies (YUCs) and megavalued or unprofitable companies (MUCs), along with their price ratios over time. Summarized details from each graph are as follows:
+
+1. **The YUCs: Young Unprofitable Companies**
+   - This graph shows the percentage of equity market capitalization attributed to young unprofitable companies from 1990 to 2022. 
+   - Key characteristics of YUCs include negative net income in 2 of the last 3 years, less than 5 years since IPO, and annual revenues growing above 15%.
+   - Noticeable spikes occurred around the year 2000 and again leading up to 2020.
+
+2. **The MUCs: Megavalued (P/E >50x) or Unprofitable Companies**
+   - This graph highlights the percentage of total US market capitalization comprised of MUCs from 1990 to 2022. 
+   - Significant peaks are observed in the years surrounding 2000 and more recently around 2020, declining past those periods.
+
+3. **The Survivors: Some Companies Will Figure it Out**
+   - This graph uses an index to show equal-weighted large-cap tech stock returns from 2000 to 2004. The baseline index value (100) is set in January 2000.
+   - The graph differentiates between companies that were unprofitable in 2000 but turned profitable by 2004, those that were profitable in both 2000 and 2004, and those that remained unprofitable.
+  
+4. **The Price for Profitless Revenue Growth**
+   - The final graph compares the price-to-sales ratio from December 2020 to December 2022, for 36 profitless growth stocks and the Russell 1000 Growth Index. 
+   - The ratios for profitless growth stocks (both market-cap weighted and equal weighted) show a higher peak and more volatility around 2021, compared to the steadier Russell 1000 Growth Index.
+
+Sources are primarily from Factset, JPMAM, and Bloomberg, with dates indicated as recent updates from December 2022. The analyses underline the variations in stock market valuation and performance, particularly emphasizing periods of inflated market capitalization and valuation ratios tied to unprofitable or highly valued companies.

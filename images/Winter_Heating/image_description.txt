@@ -1,0 +1,11 @@
+The chart titled "US new orders less inventories predicting ISM downturn" compares two different indices over a period from approximately 1980 to early 2023. These indices are:
+
+1. **ISM Manufacturing PMI Composite Index (lhs - left-hand scale)**: This is represented by the solid blue line. The PMI (Purchasing Managers' Index) measures the economic health of the manufacturing sector, where values above 50 indicate expansion, and values below 50 indicate contraction.
+2. **ISM New Orders Less Inventories (3 month lead, rhs - right-hand scale)**: Represented by the dashed brown line, this index looks at the difference between new orders and inventories, providing a predictive measure with a three-month lead time.
+
+Key observations from the chart:
+- Historically, movements in the ISM New Orders Less Inventories index generally lead similar movements in the ISM Manufacturing PMI Composite Index by about three months.
+- The PMI index has seen significant fluctuations, peaking above 60 during periods of high economic activity and dropping below 40 during economic downturns, notably during the early 1980s, the early 1990s, early 2000s, and the 2008 financial crisis.
+- As of early 2023, there is a notable decline in both indices, which may suggest a potential downturn in the ISM Manufacturing PMI Composite.
+
+In summary, the chart highlights a correlation between new orders minus inventories and the overall manufacturing sector's health, demonstrating that changes in the new orders less inventories index can be a leading indicator for the PMI composite index over the past several decades. The current decline in both indices suggests an upcoming contraction in the manufacturing sector.

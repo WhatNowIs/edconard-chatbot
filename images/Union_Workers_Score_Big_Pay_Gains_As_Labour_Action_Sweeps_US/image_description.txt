@@ -1,0 +1,22 @@
+The chart from the Financial Times illustrates the yearly changes in wages and salaries for private industry union and non-union workers from January 2010 to October 2023. It specifically highlights the impact of recent strikes and threats to strike by various unions on wage gains.
+
+Key takeaways include:
+
+1. **Comparison of Wage Trends:**
+   - Overall union wages (blue line) generally show greater increases compared to non-union wages (green line).
+   - Both union and non-union wages demonstrate periodic fluctuations over the years, but union wages have seen sharper increases recently.
+
+2. **Impact of Union Actions in 2022 and 2023:**
+   - Significant wage increases were achieved following labor actions by various unions:
+     - Delta pilots saw the highest wage gain.
+     - Freight rail workers also secured a notable wage increase.
+     - UAW-Ford, UC teaching assistants, Kaiser Permanente workers, and Hollywood writers all experienced wage gains due to union activities.
+
+3. **General Trend:**
+   - Since 2022, there has been a visible divergence where union wages have outpaced non-union wages, correlating with recent strikes and threats to strike.
+
+4. **Contextual Information:**
+   - Data is sourced from the Employment Cost Index and covers quarterly figures which are not seasonally adjusted.
+   - Specific note that UAW-Ford and Kaiser Permanente deals were tentative as of October 26, 2023.
+
+The primary conclusion of the chart is that union efforts, particularly recent strikes, have resulted in higher wage increases compared to trends seen in non-union wages.

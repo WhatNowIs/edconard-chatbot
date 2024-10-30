@@ -1,0 +1,14 @@
+The image contains two exhibits related to temperature and heat wave trends in the United States.
+
+**Exhibit 1: Annual Mean Temperature Change from 1991-2020 to 1981-2010**
+- This exhibit shows a map depicting the annual mean temperature change across the U.S. between two periods: 1991-2020 and 1981-2010.
+- The color gradient on the map indicates temperature changes, where shades of red and orange indicate regions that experienced warming, while shades of blue indicate regions that cooled.
+- Most of the U.S. has experienced a rise in annual mean temperature, with significant warming particularly noticeable in the western and southern regions.
+
+**Exhibit 2: Average Length of Annual Heat Wave Season**
+- This bar graph illustrates the average length (in days) of the annual heat wave season for different decades, ranging from the 1960s to the 2020s.
+- The data indicates a progressive increase in the average length of heat wave seasons over time.
+- The heat wave season was the shortest in the 1960s, around 20 days, and it has increased steadily since then, reaching around 70-75 days in the 2020s.
+
+**Summary:**
+The data provided in these exhibits highlight significant climatic changes in the U.S. over recent decades. Most of the U.S. experienced warmer annual mean temperatures from 1991-2020 compared to 1981-2010, with notable warming in the western and southern regions. Furthermore, the average length of the annual heat wave season has markedly increased over the decades, nearly quadrupling from about 20 days in the 1960s to around 70-75 days in the 2020s. These trends underscore the growing intensity and frequency of heat-related events in the country.

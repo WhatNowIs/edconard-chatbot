@@ -1,0 +1,19 @@
+The table titled "Average Productivity Growth by Major Industry, 1987 to 2019" presents data on the annual rate of productivity growth in various industries over the period from 1987 to 2019. 
+
+Here are the key points:
+
+1. **Construction**: Showed a decline in productivity with an average annual rate of -0.5%.
+2. **Transportation**: Experienced a moderate increase with a growth rate of 1.2% per year.
+3. **Services**: Also saw a similar rate of increase in productivity at 1.2% annually.
+4. **Agriculture**: Had an average annual productivity growth rate of 1.5%.
+5. **Nondurable Manufacturing**: Recorded a growth rate of 1.7% per year.
+6. **Mining**: Displayed an annual growth rate of 1.8% in productivity.
+7. **Finance, Insurance, and Real Estate**: Reported a growth rate of 2.1% annually.
+8. **Utilities**: Had an average productivity growth rate of 2.2% per year.
+9. **Durable Manufacturing**: Showed a significant increase with an annual rate of 2.9%.
+10. **Trade**: Matched the durable manufacturing industry with an annual productivity growth rate of 2.9%.
+11. **Information**: Stood out as the industry with the highest productivity growth rate of 4.8% per year.
+
+The source of the data is the Bureau of Labor Statistics, Office of Productivity and Technology. 
+
+In summary, the data illustrates varying rates of productivity growth across different major industries, with construction experiencing a decline, and the information industry achieving the highest growth.

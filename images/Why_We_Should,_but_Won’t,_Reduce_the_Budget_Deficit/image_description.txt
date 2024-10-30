@@ -1,0 +1,10 @@
+The image is a pie chart displaying the distribution of federal outlays for the fiscal year 2023, as per the Congressional Budget Office. Here's a summary of the information provided:
+
+1. **Major Health Care Programs**: The largest portion of the budget, comprising 24% of the total outlays.
+2. **Social Security**: Accounts for the second-largest share at 21%.
+3. **Other Mandatory Spending**: Represents 17% of the budget.
+4. **Non-Defense Discretionary (NDD) Spending**: Constitutes 15% of the total outlays.
+5. **Defense**: Takes up 13% of the budget.
+6. **Interest Payments**: The smallest allocation, making up 10%.
+
+In essence, the primary areas of expenditure are major health care programs and social security, which together make up nearly half of the budget. Other major spending areas include mandatory spending, non-defense discretionary spending, defense, and interest payments.

@@ -1,0 +1,10 @@
+The chart presents annual average manufacturing productivity growth from 2009 to 2022 for various countries. Key observations are:
+
+1. **Taiwan** leads significantly with an average growth rate approaching 4.5%.
+2. The **United Kingdom** follows, showing a growth rate slightly above 2%.
+3. **Germany** and **South Korea** exhibit similar productivity growth rates, just under 2%.
+4. **France** and **Italy** show moderate growth, around the 1% mark.
+5. The **United States** shows minimal growth, barely exceeding 0.5%.
+6. **Japan** has the least productivity growth, almost negligible.
+
+Overall, Taiwan's manufacturing productivity growth is notably higher compared to the other countries listed. The data sources include the U.S. Labor Department, OECD, and CEIC Data.

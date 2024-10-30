@@ -1,0 +1,8 @@
+The provided image is a chart showing the year-over-year percentage point gap in population growth rates between men and women aged 25 to 44 in Canada from 1977 to 2020. The data is sourced from Statistics Canada and the Bank of Montreal. Here are the key points:
+
+- From 1977 until the early 1990s, the population growth rate for women was generally higher than for men, indicated by the negative values on the chart.
+- Around the mid-1990s, this trend reversed, with several periods where the male population growth rate exceeded that of women, shown by the positive values.
+- Between 2010 and 2020, the trend fluctuated with alternating periods of higher growth rates for men and women.
+- By 2020, the gap has significantly increased, showing a marked rise in the growth rate of the male population compared to the female population, reaching a peak of just over 1.0 percentage point.
+
+This data indicates a recent acceleration in the growth rate of the male population in Canada relative to the female population in the 25 to 44 age group, with notable fluctuations over the past four decades.

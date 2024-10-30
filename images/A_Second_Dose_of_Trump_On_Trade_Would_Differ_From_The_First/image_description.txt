@@ -1,0 +1,11 @@
+The image presents a line graph illustrating the manufacturing surplus (exports less imports) as a share of world GDP for three countries: China, Germany, and Japan, from 1962 to 2022. 
+
+Key Points:
+
+- China's manufacturing surplus has shown a steep and steady rise since around 2000, reaching a record high in 2022. It significantly outpaced both Germany and Japan, with the surplus as a share of world GDP nearing 2.0%.
+
+- Germany's manufacturing surplus experienced fluctuations but generally declined over the recent decades, hovering at or below 0.5% of world GDP.
+
+- Japan's manufacturing surplus peaked in the late 1980s but has been on a decline since then. By 2022, it remained low, also around or below 0.5% of world GDP.
+
+Overall, the graph clearly indicates that China has become a dominant player in manufacturing exports relative to its imports in the global economy, with a surplus that far exceeds those of Germany and Japan. Sources for the data are attributed to Baur & Setser, IMF, and the graph is by FT (Financial Times).

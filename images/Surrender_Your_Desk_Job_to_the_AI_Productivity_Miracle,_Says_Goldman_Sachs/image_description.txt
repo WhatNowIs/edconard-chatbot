@@ -1,0 +1,23 @@
+The chart from Goldman Sachs Global Investment Research investigates the potential boost to aggregate labor productivity growth in the US through the adoption of generative AI. This increase is quantified as potentially raising annual labor productivity growth by 1.5 percentage points over a decade, though actual impact hinges on AI’s capabilities and adoption timeline. 
+
+Key observations include:
+
+1. **Scenario Variations**:
+   - **Much Less Powerful AI**: 0.3 percentage points increase.
+   - **Slower Adoption (30 Years)**: 0.5 percentage points increase.
+   - **Slower Adoption (20 Years)**: 0.7 percentage points increase.
+   - **Slightly Less Powerful AI**: 0.8 percentage points increase.
+   - **No Labor Displacement**: 1.3 percentage points increase.
+   - **Baseline (No Change in Adoption)**: 1.5 percentage points increase.
+   - **Slightly More Powerful AI**: 2.4 percentage points increase.
+   - **More Labor Displacement**: 2.4 percentage points increase.
+   - **Much More Powerful AI**: 2.9 percentage points increase.
+
+2. **Components of Productivity Growth**:
+   - Growth includes a combination of increased productivity of non-displaced workers, labor displacement (potential job loss), and reemployment of displaced workers.
+   - Greater AI power and faster adoption rates magnify these effects.
+
+3. **Labor Displacement and Reemployment**:
+   - Scenarios with significant AI capabilities show higher productivity boosts but also depict greater labor displacement with varying degrees of reemployment contributions.
+
+The chart illustrates that while powerful AI adoption presents significant opportunities for productivity gains, it also underscores the importance of managing labor displacement and reemployment effectively.

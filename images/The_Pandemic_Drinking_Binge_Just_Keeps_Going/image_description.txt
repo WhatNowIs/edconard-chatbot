@@ -1,0 +1,24 @@
+The provided image features a stacked area chart under the title "Real Spending on Alcohol Keeps Going Up." The chart illustrates the US consumer spending on various categories of alcohol, adjusted to 2012 dollars and seasonally adjusted annual rates, from 2002 to 2022. The data visualized is sourced from the US Bureau of Economic Analysis.
+
+Here are the key points:
+
+1. **Categories Tracked**:
+   - Spirits (retail) shown in blue.
+   - Wine (retail) shown in black.
+   - Beer (retail) shown in grey.
+   - Alcohol purchased at restaurants and bars shown in red.
+
+2. **Trends Over Time**:
+   - Overall alcohol spending has been steadily increasing from 2002 to 2022.
+   - There is a notable spike in spending around 2020, which then continues to rise.
+
+3. **Spending Details**:
+   - Alcohol purchased at restaurants and bars (red) constitutes a significant portion of the spending and has increased notably over the years.
+   - Beer (grey) and wine (black) have remained relatively steady with gradual increases.
+   - Spending on spirits (blue) has also seen a gradual increase.
+
+4. **Magnitude of Spending**:
+   - The overall spending on alcohol is approaching $300 billion by 2022.
+
+Summary:
+The chart reveals a clear upward trend in U.S. consumer spending on alcohol from 2002 to 2022. Notably, alcohol purchased at restaurants and bars has seen a considerable increase, particularly around 2020. Retail spending on spirits, wine, and beer has also gradually increased, contributing to the overall growth in alcohol expenditure, which is nearing $300 billion in 2022.

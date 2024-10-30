@@ -1,0 +1,23 @@
+The image presents a chart summarizing the vote preference of registered voters based on Times/Siena surveys from 2020 to 2024. Here's a summary of the key points:
+
+1. **Trend Analysis**:
+   - From 2020 to 2024, the preference has shifted significantly.
+   - In 2020, Biden held a strong lead (D+10).
+   - By 2024, the preference among 2020 nonvoters has heavily shifted towards Trump (R+14).
+
+2. **Registered Voter Categories**:
+   - There's a distinction between "2020 voters" and "2020 nonvoters".
+   - Among 2020 voters, Biden maintains a slight lead (Biden +2) by 2024.
+   - Among 2020 nonvoters, Trump leads by a substantial margin (Trump +14) in 2024.
+
+3. **Notable Observations**:
+   - There's a clear downward trend in Biden’s support among the broader voter base over these years.
+   - An annotation on the chart indicates that nonvoters have shifted their preference from Biden to Trump.
+
+4. **Overview**:
+   - The overall data suggests a decline in Biden's lead and a substantial increase in Trump's support, especially from nonvoters.
+
+5. **Data Adjustment Note**:
+   - The survey notes that 2020 data has been adjusted to reflect the actual election results.
+
+The chart visually communicates the changing dynamics of voter preferences over time, highlighting a critical shift towards Trump, particularly among those who did not vote in the 2020 elections.

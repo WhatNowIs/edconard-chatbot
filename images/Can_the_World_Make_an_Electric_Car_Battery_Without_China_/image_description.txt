@@ -1,0 +1,21 @@
+This image outlines China's dominance in the production of key components for batteries, using data from 2021 provided by the IEA and Yano Research Institute. Here are the main points:
+
+1. **Cathodes**:
+   - China produces 77% of cathodes.
+   - Cathodes in the illustration are composed of Nickel (Ni), Manganese (Mn), and Cobalt (Co).
+
+2. **Separators**:
+   - China manufactures 74% of separators.
+   - Separators allow lithium ions (Li) to move between the cathode and anode during charging and discharging.
+
+3. **Electrolytes**:
+   - China supplies 82% of electrolytes.
+   
+4. **Anodes**:
+   - China produces 92% of anodes.
+   - Anodes are composed mainly of Carbon (C).
+
+5. **Lithium Ion Movement**:
+   - Lithium ions (Li) shuttle back and forth between the cathode and anode during battery charging and discharging processes.
+
+This visualization underscores China's critical role in the battery supply chain, particularly in the production of cathodes, anodes, separators, and electrolytes.

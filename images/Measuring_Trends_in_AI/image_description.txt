@@ -1,0 +1,18 @@
+The image is a line graph showing private investment in artificial intelligence (AI) by geographic area from 2013 to 2023, sourced from Quid (2023) as part of the 2024 AI Index report.
+
+Key points from the graph:
+1. **United States**:
+   - The U.S. leads in AI private investment, with a substantial increase over the years.
+   - Investment peaked around 2021 at nearly 80 billion U.S. dollars but dropped afterward.
+   - By 2023, investment remains high at approximately 67.22 billion U.S. dollars.
+
+2. **European Union and United Kingdom**:
+   - The EU and UK also show an increase in AI investment, with a steady rise from 2013 to around 2021.
+   - The investment around 2023 is 11 billion U.S. dollars, comparatively much lower than the U.S.
+
+3. **China**:
+   - China's investment in AI also displays growth, though not as steep as the U.S. or EU and UK.
+   - Investment peaked around 2021 but saw a decline thereafter.
+   - As of 2023, China's AI investment is 7.76 billion U.S. dollars.
+
+Overall, the graph highlights the significant lead of the United States in private AI investment compared to the European Union, United Kingdom, and China, with the U.S. peaking around 2021 before experiencing a slight decrease. The European Union, United Kingdom, and China also show gradual growth in AI investments.

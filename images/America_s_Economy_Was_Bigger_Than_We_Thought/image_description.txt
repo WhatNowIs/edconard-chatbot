@@ -1,0 +1,19 @@
+The graph titled "Revisions to US Fixed Investment" displays the changes in the understanding of real private fixed investment in the United States, using revised and old data spanning from 2017 to 2023. The Y-axis represents the investment amounts in trillions of 2017 dollars, ranging from $3.00T to $4.00T. The X-axis covers the years from 2017 through 2023.
+
+Key points from the graph summary:
+
+1. **Comparison of Investment Data**:
+   - The graph compares the new revised data (yellow line) to the old data (green line) for real private fixed investment.
+
+2. **Investment Trends**:
+   - Until 2020, both data sets show a general upward trend in investments.
+   - A noticeable drop occurs around 2020, likely due to the economic impacts of the COVID-19 pandemic.
+   - Post-2020, there is a sharp recovery in both data sets, although the revised data indicates a higher investment level compared to the old data.
+
+3. **Revised Data Implication**:
+   - The new revised data shows consistently higher numbers than the old data, especially evident from 2021 onward, highlighting a more optimistic picture of US fixed investment levels post-pandemic.
+
+4. **Data Source and Creation**:
+   - The graph was created by @JosephPolitano using data from the Bureau of Economic Analysis (BEA).
+
+The revisions in the data suggest that the economic activity, as measured by real private fixed investment, is stronger than initially recorded, leading to a revised understanding of the US economy's performance in recent years.

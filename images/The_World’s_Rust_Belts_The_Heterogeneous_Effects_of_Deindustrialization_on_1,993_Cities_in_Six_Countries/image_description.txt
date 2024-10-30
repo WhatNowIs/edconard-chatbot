@@ -1,0 +1,15 @@
+The image is a binned scatter plot titled "Initial Share of Employment in Manufacturing and Subsequent Mean Decadal Growth Rate of Total Employment." It illustrates the relationship between the initial share of employment in manufacturing (x-axis) and the subsequent mean decadal growth rate of total employment (y-axis).
+
+**Key Points:**
+
+1. The x-axis represents the city's share of employment in manufacturing at the peak year of the relevant country’s manufacturing employment. The peak year varies by country: 1970 for the United Kingdom and United States, 1980 for France and Italy, and 1990 for Germany and Japan.
+
+2. The y-axis shows the mean decadal growth rate of total employment, which is the average rate of total employment growth per decade, adjusted for deviation from the country-level mean decadal growth rate.
+
+3. The scatter plot displays a negative linear relationship, as illustrated by the solid line which represents the best linear fit based on the underlying Local Labor Market data. This suggests that a higher initial share of employment in manufacturing is associated with a lower subsequent mean decadal growth rate of total employment.
+
+4. The data points tend to cluster towards the left of the chart, but there are a few points extending towards the right, illustrating the distribution of cities with varying reliance on manufacturing employment.
+
+5. A note at the bottom explains the metrics and dataset used, emphasizing that the share of manufacturing employment is measured at the peak year for each country, and the mean decadal growth rate is calculated from that point forward.
+
+Overall, the chart indicates that cities with a higher initial share of manufacturing employment tend to experience lower total employment growth rates in the following decades.

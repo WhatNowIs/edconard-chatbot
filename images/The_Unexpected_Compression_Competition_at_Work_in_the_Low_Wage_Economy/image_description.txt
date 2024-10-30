@@ -1,0 +1,16 @@
+The graph presents a comparative analysis of wage growth between high school-educated and college-educated (BA+) workers from 2015 to 2022. It is titled "Remarkable overtaking of wage growth among High-school vs. college-educated workers, 2015-2022," suggesting a significant trend in wage patterns over this period.
+
+Key points:
+- The y-axis represents the hourly wage relative to February 2020, offering a normalized benchmark for comparison.
+- The x-axis marks time from early 2015 (2015m1) to mid-2022 (2022m7).
+- High school-educated workers' wages (represented by the red line).
+- College-educated (BA+) workers' wages (represented by the green line).
+
+Observations:
+- From 2015 to early 2020, wages for college-educated workers remained consistently higher than those for high school-educated workers.
+- Around early 2020, high school-educated workers saw a sharp spike in wages, surpassing those of BA+ workers briefly.
+- Post-2020, wages for both groups fluctuated, but the initial spike for high school workers indicates a notable period where their wage growth overtook that of college-educated workers.
+- By mid-2022, the gap between the two groups seemed to narrow, with wages for high school workers declining and those for college-educated workers stabilizing. 
+
+Summary:
+The graph highlights significant trends and fluctuations in wage growth for high school versus college-educated workers from 2015 to 2022. Notably, there was a period around early 2020 where high school workers experienced a remarkable spike and overtook the wage growth of college-educated workers, although this trend eventually settled with a narrowing wage gap by mid-2022.

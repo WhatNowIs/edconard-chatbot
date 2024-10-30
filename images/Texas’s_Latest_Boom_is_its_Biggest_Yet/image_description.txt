@@ -1,0 +1,12 @@
+The image is a line chart titled "Everything's bigger in Texas" and it shows the percentage of the United States' Gross Domestic Product (GDP) and population that Texas accounts for over time from 1970 to 2021. The chart is based on data from the US Census Bureau and the Bureau of Economic Analysis (BEA), excluding Puerto Rico.
+
+Key points from the chart:
+
+1. **Population (depicted by the dark blue line)**:
+   - The percentage of the U.S. population in Texas has been steadily increasing from around 6.5% in 1970 to approximately 9% in 2021.
+
+2. **GDP (depicted by the light blue line)**:
+   - The GDP percentage of Texas has shown more fluctuation compared to the population. 
+   - From around 6% in 1970, it increased and experienced fluctuations, reaching a high of around 8.8% from the 1980s to early 2021.
+
+Overall, the chart indicates that Texas has seen consistent growth both in terms of population and GDP compared to the entire United States over the period from 1970 to 2021, reflecting the state's increasing economic and demographic significance.

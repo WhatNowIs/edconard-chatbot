@@ -1,0 +1,19 @@
+The chart provides a visual representation of the average number of employees at the birth of establishments from June 1993 to December 2022, seasonally adjusted. Key takeaways include:
+
+1. **Overall Trend**:
+   - The average number of employees per establishment at birth has shown a downward trend over the period.
+   - Initial values were around 6,000 in the early 1990s, declining steadily to about 3,000 by the end of the study period.
+
+2. **Distinct Periods**:
+   - There are notable drops around the years 2001-2002 and 2007-2009, possibly corresponding to economic recessions (shaded areas in the chart indicate recessions as determined by the National Bureau of Economic Research).
+
+3. **Recessions Impact**:
+   - Shaded regions in the chart reflect the recessions, during which sharper declines in average employment at establishment birth are observed.
+
+4. **Recent Stability**:
+   - Post-2017, the average number of employees at establishment birth appears to stabilize somewhat, fluctuating around 3,000.
+
+5. **Source**:
+   - The data is sourced from the U.S. Bureau of Labor Statistics.
+
+In summary, the average size of new establishments—measured by employee count—has generally decreased from around 6,000 to 3,000 employees over the past three decades, with notable declines during periods of economic recession.

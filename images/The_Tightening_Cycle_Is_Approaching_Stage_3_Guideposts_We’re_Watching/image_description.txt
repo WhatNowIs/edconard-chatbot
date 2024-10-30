@@ -1,0 +1,21 @@
+The image contains two line graphs depicting the relationship between the USA Wage Growth (Y/Y) and the Job Openings Rate over time.
+
+### Left Graph (2000 - 2020):
+
+- **USA Wage Growth (Y/Y) (Blue Line)**: This metric shows the year-over-year percentage change in wages in the USA.
+- **Job Openings Rate (Red Line)**: This line represents the percentage of job openings relative to the total number of available jobs and employment demand.
+
+Key Points:
+- Both Wage Growth and the Job Openings Rate demonstrate cyclic trends over the years.
+- Generally, the Job Openings Rate (red line) appears to be a good leading indicator of Wage Growth (blue line), as highlighted in the text within the graph.
+- There's a noticeable increase in both metrics closer to the year 2020, where they peak before a noticeable drop.
+
+### Right Graph (2020 - 2023):
+
+- The graph focuses on a more recent timeframe, displaying the trends starting from 2020 up to 2023.
+- During this period, both the Job Openings Rate and Wage Growth reached high rates, especially around 2021-2022.
+- After witnessing some cooling, with declining rates, there is a recent bounce back, particularly noticeable in the Job Openings Rate which shows a slight upward trend again.
+
+### Summary:
+
+Over the long-term (2000-2020), the Job Openings Rate has proved to be a useful leading indicator for predicting USA Wage Growth. Both metrics have experienced cyclic patterns with significant peaks nearing 2020. In the more recent period (2020-2023), there was an initial sharp increase in both Wage Growth and Job Openings, followed by a cooling period. However, recent data shows a slight rebound in the Job Openings Rate, suggesting possible upcoming changes in Wage Growth. These trends underscore the interconnectedness of labor market conditions and wage dynamics in the U.S. economy.

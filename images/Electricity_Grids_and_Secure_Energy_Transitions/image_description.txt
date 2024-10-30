@@ -1,0 +1,22 @@
+The image provides a comparative analysis of projected electricity demand in advanced economies and emerging market and developing economies (EMDEs) from 2021 to 2050, based on the Announced Pledges Scenario. The data is sourced from the International Energy Agency (IEA) and is part of the World Energy Outlook 2022 report.
+
+Key points from the graphs include:
+
+1. **Growth in Demand**:
+   - Both advanced economies and EMDEs show significant growth in electricity demand over the period.
+   - The increase is more pronounced in EMDEs compared to advanced economies.
+
+2. **Sector-wise Breakdown**:
+   - **Industry**: Represents a substantial portion of electricity demand across both economies, depicted in light blue.
+   - **Hydrogen**: Light blue also indicates emerging usage trends.
+   - **Light-Duty Vehicles (LDVs)**: Demand from LDVs, marked in green, is significant and grows over time in both regions.
+   - **Cooling and Heating**: Shown in blue-green, this demand also grows steadily.
+   - **Appliances**: The yellow segment indicates growing demand for domestic and commercial appliances.
+   - **Energy Access**: Red indicates the proportion of demand attributed to enhanced energy access, notably higher in EMDEs.
+   - **Other Uses**: Represented in red, showing a consistent increase.
+
+3. **Overall Trends**:
+   - Advanced economies have a steadier, more gradual increase in demand compared to EMDEs.
+   - In EMDEs, there is a significant jump in demand, likely reflecting economic growth and rising living standards.
+
+This visual representation underscores the imperative to plan for increased electricity generation and diversified energy solutions to meet future demands, particularly in rapidly developing regions.

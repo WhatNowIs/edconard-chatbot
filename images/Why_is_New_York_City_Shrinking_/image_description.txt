@@ -1,0 +1,20 @@
+The image is a scatter plot titled "The Young, Old, Rich and Poor Go to Different Places," illustrating migration patterns in the United States over the last decade. The x-axis represents the age of emigrants, while the y-axis represents their income levels. The bubble sizes are proportional to the total number of emigrants moving to each destination.
+
+Key insights:
+
+1. **Young, Low-Income Migrants**:
+   - Many young, low-income individuals have moved to Oklahoma City.
+   
+2. **Wealthy Older Migrants**:
+   - Wealthy older New Yorkers predominantly moved to Hilton Head Island, SC.
+   
+3. **Migration Clusters**:
+   - Major cities like Houston, Dallas, Atlanta, LA, Chicago, and San Francisco show a mix of middle-aged and relatively higher-income individuals.
+   - Cities like Miami and Naples exhibit older populations, with Naples also representing a higher-income bracket.
+
+4. **Other Notable Patterns**:
+   - Jacksonville and Worcester attract higher-income groups of varying ages.
+   - Cities like San Jose, Denver, Seattle, and Boston also attract higher-income younger populations.
+   - Some older populations with lower income have moved to smaller cities like Tuscon, AZ, and Montgomery, AL.
+
+The chart illustrates diverse migration trends, indicating that economic and age factors significantly influence migration destinations in the U.S.

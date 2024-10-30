@@ -1,0 +1,26 @@
+The figure titled "Simulated Path for Natural Rate of Interest: Baseline and Scenarios" provides a comparative analysis of the natural rate of interest for several countries under baseline conditions and various alternative scenarios from 2022 to 2050.
+
+### 1. Baseline (Percent)
+The first panel displays the baseline paths for the natural rate of interest for Brazil, China, France, Germany, India, Japan, the United Kingdom, and the United States. 
+- **Brazil** (dark blue line) starts at a higher natural rate and remains relatively stable.
+- **China** (maroon line) shows a gradual decline in the natural rate.
+- **United States** (orange line), **Germany** (green line), **India** (yellow line), **France** (light blue line), and **the United Kingdom** (gray line) show stable but slightly declining rates over the forecast period.
+- **Japan** (purple line) remains consistently lower compared to other countries.
+
+### 2. Alternative Scenarios (Percentage point deviation from baseline)
+The second panel represents the deviation from the baseline paths under various alternative scenarios:
+- **AE high debt** (dark blue line): Advanced Economies (AEs) with high debt show minimal deviation.
+- **EM high debt** (yellow line): Emerging Markets (EMs) with high debt show minimal deviation.
+- **AE decline in convenience yield** (maroon line): Decline in convenience yield in advanced economies, with a slight upward trend.
+- **AE higher labor share** (green line): AEs with higher labor share exhibit a marked upward deviation, peaking around 0.7 percentage points by 2050.
+
+### Sources and Notes
+- Data and estimates are sourced from Platzer and Peruffo (2022) and IMF staff.
+- AEs refer to France, Germany, Japan, the United Kingdom, and the United States, while EMs refer to Brazil, China, and India.
+- Definitions:
+  - **AE**: Advanced Economy
+  - **EM**: Emerging Market Economy
+- The scenarios include considerations like changes in high debt levels, decline in convenience yield, and an increase in labor share within these economies.
+
+### Summary
+The provided graph forecasts the natural rate of interest for various countries, showing a general trend of stability with slight declines. Alternative scenarios like increased debt and higher labor share indicate specific deviations from these baselines, portraying how economic policy and structural changes can impact the natural rate of interest over time.

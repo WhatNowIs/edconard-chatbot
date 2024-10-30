@@ -1,0 +1,11 @@
+The scatter plot depicts the relationship between economic sentiment and economic misery, using data from 1978 to 2022, alongside data from 2023.
+
+Key points:
+- **Axes:** The x-axis represents the Misery Index, which is the sum of the unemployment rate and inflation. The y-axis shows the Sentiment Index as per the University of Michigan's measure.
+- **Data points:** There are two color-coded datasets. Beige points denote data from 1978 to 2022. Red points represent data from 2023.
+- **Observations:** 
+  - In general, higher values in the Misery Index correspond to lower values in the Sentiment Index, suggesting that when economic conditions worsen, sentiment declines.
+  - For 2023, the data points (in red) cluster around a Misery Index of 7 to 8 and a Sentiment Index of about 50 to 65. This indicates lower sentiment relative to past data points with similar Misery Index values.
+
+### Summary:
+The graph highlights the interplay between economic sentiment and the Misery Index over the years. Historically, economic adversity (higher Misery Index) negatively impacts sentiment. In 2023, sentiments are notably low (Sentiment Index around 50-65) despite misery levels being in a mid-range (Misery Index around 7 to 8), which might suggest a comparatively lower public confidence in the economic outlook for this particular year.

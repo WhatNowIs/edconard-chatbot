@@ -1,0 +1,17 @@
+The chart titled "Getting hyper" illustrates the trends in the globalisation of trade and value chains from 1990 to 2018. Two key metrics are plotted:
+
+1. **World imports relative to GDP (blue line):**
+   - This metric shows the percentage ratio of nominal imports to GDP.
+   - It generally ascended from 1990 until around 2008, with a significant decline during the global financial crisis.
+   - After the crisis, it recovered but experienced fluctuations, roughly stabilizing around the 28-30 percent range towards the end of the period.
+
+2. **Participation in global value chains (red line):**
+   - This represents the percentage ratio of GVC (Global Value Chain)-related trade (value-added that has crossed at least two national borders) to gross exports.
+   - It shows a more consistently rising trend from 1990, peaking around 2011-2012, before slightly declining and stabilizing from 2014 onwards, also hovering around the 28-30 percent range by 2018.
+
+**Key Observations:**
+- Both metrics generally show an increase in global trade integration and participation in global value chains over the roughly 28-year period.
+- There is notable volatility around the period of the global financial crisis (2008-2009), affecting both import levels relative to GDP and participation in global value chains.
+- Post-crisis years show recovery but with more fluctuations and a slight leveling-off towards the end.
+
+The data source is the European Central Bank, and the chart emphasizes the growing interconnectedness and complexity of global trade over the examined period.

@@ -1,0 +1,13 @@
+The image presents a line chart comparing the mortgage debt servicing ratios (percentages) between the USA and Canada over the period from January 2007 to January 2023. The key insights from the chart are:
+
+1. **Trends Over Time**:
+   - The USA: The mortgage debt servicing ratio has steadily decreased from around 7% in January 2007 to below 4% by January 2023.
+   - Canada: The ratio started at approximately 6% in January 2007, remained relatively stable until around January 2021, and then saw a steep increase, reaching around 7% by January 2023.
+
+2. **Recent Changes**:
+   - Canada experienced a significant rise in mortgage debt servicing ratios starting around January 2021, which has been highlighted with a red circle in the image. This denotes a sharp increase in mortgage expenses recently.
+
+3. **Observation**: 
+   - The chart and the accompanying note indicate that mortgage expenses have risen sharply in countries like Canada, where mortgages are responsive to short rates.
+
+**Source**: The data is sourced from the Federal Reserve and Statistics Canada.

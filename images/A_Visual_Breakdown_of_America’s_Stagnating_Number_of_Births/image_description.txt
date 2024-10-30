@@ -1,0 +1,23 @@
+The image is a line graph depicting U.S. birthrates by age group from the year 1990 to 2022. The rates are measured per 1,000 women within the specified age groups. The source of the data is the Centers for Disease Control and Prevention (CDC), and the 2022 data is provisional.
+
+Here is the summary by age group:
+
+1. **15-19**:  
+   - The birthrate in this age group started at a high point in 1990 and has seen a significant and continuous decline over the years, reaching its lowest point in 2022.
+
+2. **20-24**:  
+   - This group also shows a noticeable decrease in birthrates, particularly from around 2007 onwards. Before the decline, the birthrate had minor fluctuations but remained relatively stable until the mid-2000s.
+
+3. **25-29**:  
+   - This group saw some fluctuations but maintained a relatively high birthrate until around 2010. However, there was a steady decline in the birthrate after that period.
+
+4. **30-34**:  
+   - The birthrate remained relatively stable with lower variability compared to younger age groups. The rates generally fluctuated around similar levels through the years with a slight increase followed by a stabilization from around 2010 to 2022.
+
+5. **35-39**:  
+   - The birthrate in this age group showed slight growth, particularly in the late 1990s and early 2000s. After a stabilization period, slight declines were noted from 2010 onwards.
+
+6. **40-44**:  
+   - The birthrate for this age group remained low compared to the younger groups but showed a slow upward trend from the early 2000s until 2020, followed by a very slight decline.
+
+In summary, the trends indicate a significant decline in birthrates for women under 30 years old, particularly notable in the 15-19 and 20-24 age groups. In contrast, women aged 30-44 show relatively stable birthrates with some increases observed in the 35-44 age categories.

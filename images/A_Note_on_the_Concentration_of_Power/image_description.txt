@@ -1,0 +1,9 @@
+The provided chart illustrates the biweekly rolling average percentage of megacap capitalization as a fraction of total market capitalization from 1998 to 2023.
+
+**Summary:**
+1. **Initial Rise and Fall (1998-2002):** The fraction saw a significant increase to nearly 30%, followed by a steep decline by 2002, stabilizing slightly above 10%.
+2. **Fluctuations and Stabilization (2003-2012):** The percentage fluctuated between 10% and 20% before stabilizing around the lower end of this range until 2012.
+3. **Steady Increase (2012-2021):** From 2012 to 2021, there was a consistent upward trend, with notable peaks in 2020 and 2021, reaching around 35%.
+4. **Recent Decline (2021-2023):** After reaching a peak in 2021, the fraction has been decreasing, though it remains above 20%.
+
+Overall, megacap capitalization as a fraction of total market capitalization has experienced significant volatility over the years, with notable increases in recent times, despite some recent declines.

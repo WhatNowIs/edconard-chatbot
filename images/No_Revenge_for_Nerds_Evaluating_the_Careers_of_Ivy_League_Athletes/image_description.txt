@@ -1,0 +1,17 @@
+The image is a graph comparing the estimated wages (in thousands of USD) of athletes and non-athletes over 40 years since their graduation. The x-axis represents the number of years since graduation, ranging from 0 to 40, and the y-axis represents the estimated wages in thousands of USD, ranging from 70 to 130.
+
+Key findings from the graph include:
+
+1. **Initial Wages**: 
+   - At graduation (0 years since graduation), both athletes and non-athletes have starting wages close to 70-80 thousand USD.
+   
+2. **Early Career Growth**:
+   - Within the first 10-20 years, athletes (solid red line) experience a significantly steeper increase in wages compared to non-athletes (dashed blue line). Athletes' wages rise to approximately 110 thousand USD, whereas non-athletes reach about 100 thousand USD.
+
+3. **Mid to Late Career**:
+   - From around 20 to 30 years since graduation, the wages for athletes level off at approximately 120 thousand USD. Non-athletes experience slower growth, with wages peaking around 105 thousand USD.
+  
+4. **Stability**:
+   - Between 30 to 40 years since graduation, athletes' wages show slight fluctuation but remain relatively stable around 120 thousand USD. In contrast, non-athletes' wages show a slight decline, settling around 100 thousand USD.
+
+These observations indicate that athletes generally experience higher wages throughout their careers compared to non-athletes, with the most pronounced differences occurring within the first 20 years post-graduation.

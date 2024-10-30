@@ -1,0 +1,13 @@
+The image presents a line graph illustrating the premium or discount associated with buying a U.S. home compared to renting it, spanning from the third quarter of 1996 (Q3 1996) to the third quarter of 2023 (Q3 2023).
+
+Key points from the graph:
+
+1. The y-axis indicates the percentage premium or discount, ranging from -30% to 60%.
+2. The x-axis displays the timeline from Q3 1996 to Q3 2023.
+3. Around Q3 1996, the premium/discount is relatively close to 0%.
+4. A significant upward trend is observed towards a premium peak around Q3 2006, suggesting buying a home was more expensive compared to renting.
+5. Post-2006, the premium quickly declined, falling into a discount zone after the housing crisis.
+6. From approximately Q3 2012 to Q3 2020, the premium/discount remains relatively stable but starts trending upwards post-2020.
+7. A steep rise is evident from Q3 2020 to Q3 2023, showing a sharp increase in premium, reaching around 50% by Q3 2023. This suggests buying a home has become significantly more expensive compared to renting by this period.
+
+Conclusion: Over the years, the cost dynamics between buying and renting a U.S. home have fluctuated. Notably, the most recent years show a significant increase in the premium, indicating that buying has become considerably more expensive relative to renting as of Q3 2023.

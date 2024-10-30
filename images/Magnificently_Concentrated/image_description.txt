@@ -1,0 +1,10 @@
+The image is a line chart titled "EXHIBIT 2: S&P500 – TOP 10 VS. 490 EQUAL WEIGHTED." The chart plots the relative performance of the equal-weighted (EW) S&P 500 index excluding the top 10 stocks compared to the top 10 stocks from 1957 to 2023. 
+
+Key points include:
+- The chart spans from the year 1957 to 2023 showing changes in EW relative performance over time.
+- The relative performance has declined steadily from 1957 until about 2012.
+- The equal-weighted index has declined at an average annual rate of -2.4% since 1957.
+- Since 2013, the relative performance of the equal-weighted index compared to the top 10 has improved, averaging a 4.9% annual increase.
+- The data source is Compustat, Standard & Poor's.
+
+The chart depicts significant long-term trends and periodic variations in the relative performance of the top 10 stocks versus the rest of the S&P 500, highlighting the recent reversal in fortunes for the smaller constituents since 2013.

@@ -1,0 +1,9 @@
+The graph illustrates the shift in voting patterns in majority-Asian precincts in gubernatorial elections since 2006. It shows a trend from a more Democratic preference in 2006 to a noticeable shift towards the Republican side by 2022.
+
+Key observations from the graph:
+- In 2006, majority-Asian precincts had a strong Democratic preference.
+- Over time, the preference for Democratic candidates has declined significantly in these precincts.
+- By 2022, the margin shifted such that majority-Asian precincts were 23 points more favorable towards Republican candidates compared to previous years.
+- This shift contrasts with the city average, which did not exhibit as significant a change over the same period.
+
+The data source of this analysis includes the U.S. Census Bureau, New York City Board of Elections, and New York State Legislative Task Force on Demographic Research and Reapportionment, analyzed by The New York Times.

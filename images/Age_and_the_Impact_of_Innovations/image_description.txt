@@ -1,0 +1,9 @@
+The graph presents the share of the scientific labor force categorized by career stage—Early Career (under 40), Mid Career (40-55), and Late Career (55-75)—from 1993 to 2019. The data is derived from the NSF Survey of Doctorate Recipients.
+
+Key points:
+1. **Early Career (under 40)**: The share has remained relatively stable over the years, starting at around 25% in 1993, slightly increasing and fluctuating around 30% up to 2019.
+2. **Mid Career (40-55)**: This group had the highest share at the beginning of the period, around 45% in 1993, but has seen a decline, reaching approximately 30-35% by 2019.
+3. **Late Career (55-75)**: The share for late-career scientists has increased significantly from around 25% in 1993 to approximately 35% by 2019, showing an upward trend particularly from the late 1990s to around 2012, after which it stabilized.
+
+Summary:
+Over the period from 1993 to 2019, the share of early-career scientists in the scientific labor force has remained stable. In contrast, the proportion of mid-career scientists has declined, whereas the share of late-career scientists has increased significantly, indicating a trend toward an aging scientific workforce.

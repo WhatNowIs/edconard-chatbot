@@ -1,0 +1,10 @@
+The graph depicts the percentage of households with a 3-month emergency fund, segmented by household income for the years 2019, 2020, 2021, and 2022. Key observations include:
+
+1. **Trend Over Time**: There was a noticeable increase in households possessing a 3-month emergency fund between 2019 and 2021, followed by a decrease in 2022.
+2. **Income-Based Analysis**:
+   - **Lower Income Brackets (<$10k to $10k-$25k)**: The percentage of households with emergency funds is quite low across all years, peaking during the pandemic in 2020 and 2021.
+   - **Middle Income Brackets ($25k-$50k to $75k-$100k)**: A clear increase in the percentage of households with emergency funds from 2019 to 2021, followed by a slight decrease in 2022.
+   - **Higher Income Brackets ($100k-$150k and $150k+)**: A larger proportion of households have emergency funds, with substantial increases during the early pandemic years, and a noticeable pullback in 2022.
+3. **Pandemic Impact**: The financial cushions built up during the early pandemic years saw reductions in 2022.
+
+Summary: The graph highlights that during the pandemic years, there was an increase in households across all income levels establishing a 3-month emergency fund. However, in 2022, many of these financial cushions reduced, particularly among higher income brackets. This indicates some depletion of emergency savings post-pandemic.

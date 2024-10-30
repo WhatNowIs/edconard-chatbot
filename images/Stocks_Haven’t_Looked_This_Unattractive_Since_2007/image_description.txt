@@ -1,0 +1,9 @@
+The image shows a line graph of the S&P 500 equity risk premium from 2008 to 2023. The equity risk premium represents the difference between earnings yield, using trailing 12-months earnings, and the 10-year Treasury yield. The data is compiled monthly, with the latest point being as of March 31.
+
+Summary:
+- From 2008 to 2009, the equity risk premium peaked dramatically, reaching close to 8%.
+- Following this peak, the premium experienced significant volatility, with periodic rises and falls between 3% and 5% up until around 2015.
+- After 2015, the equity risk premium showed a general downward trend, although it still exhibited some volatility with occasional sharp peaks, notably around 2020.
+- The most recent data point in March 2023 indicates the equity risk premium has stabilized around 2%, marking a significant decline from its earlier highs, reflecting a lower risk premium environment compared to previous years.
+
+The graph highlights the periods of financial stress and recovery, a significant spike during the 2008 financial crisis, followed by oscillations and a general downtrend in the subsequent years.

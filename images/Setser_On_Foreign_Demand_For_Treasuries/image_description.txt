@@ -1,0 +1,15 @@
+The provided image is a bar chart depicting foreign purchases of long-term US Treasuries and Agencies from December 2012 to May 2023, reported as trailing 12-month sums in USD, according to Bertaut-Judson (Fed) data. 
+
+Key highlights include:
+
+1. **Early Period (2012-2014)**: Predominantly positive net purchases of both US Treasuries (green bars) and Agencies (blue bars), peaking around early 2013.
+   
+2. **2015-2017**: A period of negative net purchases for US Treasuries, reaching a trough around early 2016, while agency purchases were slightly negative or near neutral.
+   
+3. **2018-2019**: A recovery in net purchases, particularly for Treasuries reaching high positive values in 2018-2019, before fluctuating toward 2019.
+   
+4. **2020 Onward**: A significant decline during mid-2020, reflecting substantial net sales of US Treasuries during the early months of the COVID-19 pandemic. There is a noticeable recovery from late 2020 through 2021.
+   
+5. **Recent Trends (2022-2023)**: Mixed purchases with fluctuating net flows, showing some recovery in late 2022 and into early 2023.
+
+Overall, the chart indicates periods of substantial fluctuations in foreign investment in US long-term Treasuries and Agencies over the past decade, with pronounced impacts due to global economic conditions such as the COVID-19 pandemic.

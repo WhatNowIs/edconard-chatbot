@@ -1,0 +1,20 @@
+The image features four line graphs from the Financial Times, depicting the average annual growth rates over the previous five years in terms of Real GDP growth and Export volume growth (goods & services) for the following regions: World, US, China, and Germany. Here is a summary:
+
+1. **World**:
+   - The Real GDP growth rate has seen a general decline from around 4.5% in 2000 to around 2.5% in recent years.
+   - Export volume growth has fluctuated, peaking in the early 2000s and experiencing a marked decline around 2008. Since then, it has continued a more turbulent trajectory, converging with GDP growth rates in the last decade.
+
+2. **US**:
+   - Both Real GDP growth and Export volume growth show a high degree of variability.
+   - The Real GDP growth rate has remained relatively stable, oscillating between 2% and 4% since 1980, with notable dips during recessions.
+   - Export volume growth was much higher than Real GDP growth in the late 1980s and early 2000s, before stabilizing and converging at around 2%-3% in recent years.
+
+3. **China**:
+   - China’s Real GDP growth was exceptionally high in the early 2000s, reaching up to 12%, but has since declined to about 5%.
+   - Export volume growth followed a similar trend, very high in the early 2000s (up to 20%) but declined sharply around 2008 and converging with GDP growth in the last few years.
+
+4. **Germany**:
+   - Real GDP growth has remained relatively stable, mostly between 1% and 2%.
+   - Export volume growth has seen more fluctuations, with peaks above 8% in the early 2000s and a sharp dip around 2008. It has slower growth and convergence with GDP growth in recent years.
+
+Overall, the data indicates that over the past few decades, the growth rates of trade (measured by export volume) in these regions have increasingly converged with the growth rates of their overall economic output (Real GDP). This suggests a more synchronized relationship between trade performance and overall economic health.

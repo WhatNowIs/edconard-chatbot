@@ -1,0 +1,27 @@
+The map provides a detailed view of Lake Powell, which spans the border of Utah and Arizona. Key features and information include:
+
+1. **Lake Powell**:
+   - Significant focus is given to Lake Powell, highlighting its geography and current conditions.
+   - Two water levels are indicated: the level in the year 2000 and the current water level, showing a significant reduction over time.
+
+2. **Glen Canyon Dam**:
+   - The location of Glen Canyon Dam is marked, situated near the town of Page, Arizona.
+   - The dam plays a crucial role in water management and flow regulation in the area.
+
+3. **Geographical Landmarks**:
+   - **Navajo Mountain** is noted, located to the east of Lake Powell.
+   - Major surrounding landmarks include the Grand Staircase-Escalante National Monument to the north and Vermilion Cliffs National Monument to the southwest.
+   - The San Juan River is highlighted as a tributary flowing into Lake Powell from the northeast.
+
+4. **Boundaries and Infrastructure**:
+   - The state boundary between Utah and Arizona is depicted with a dashed line.
+   - Key roads and highways, like U.S. Route 89 and U.S. Route 98, are shown.
+   - The town of Page, Arizona, is a reference point on the map.
+
+5. **Grand Canyon National Park**:
+   - Located downstream on the Colorado River from the dam, indicating the broader regional impact of water levels on national parks and ecosystems.
+
+6. **Zoomed-Out Inset**:
+   - The inset map in the bottom right corner provides a broader geographical context, placing Lake Powell within the southwestern United States.
+
+This map underscores the significant reduction in water levels in Lake Powell from 2000 to the present, indicating potential environmental and resource management concerns, and provides geographical context for understanding the impacts on the surrounding areas and infrastructure.

@@ -1,0 +1,17 @@
+The graph titled "The Extracted Demand Factor since the Beginning of the Pandemic" tracks changes in demand effects, the Global Supply Chain Pressure Index (GSCPI), and the Net GSCPI from the end of 2019 to the beginning of 2022. 
+
+### Key Observations:
+1. **GSCPI (Blue Line)**:
+   - Sharp incline at the start of 2020, peaking in early 2021.
+   - After peaking in early 2021, the GSCPI displayed a gradual decline into 2022.
+
+2. **Net GSCPI (Red Line)**:
+   - Similar to the GSCPI, it showed some fluctuation at the start but generally increased sharply through 2020.
+   - It mirrored GSCPI trends with a peak in early to mid-2021, followed by a decline into 2022.
+
+3. **Demand Effects (Gray Bars)**:
+   - Initially negative in the early stages of the pandemic (early 2020), indicating suppressed demand.
+   - Thereafter fluctuated around zero or slightly positive through 2021 and into early 2022, suggesting varying levels of demand pressure during this period.
+
+### Summary:
+Since the onset of the pandemic, there has been substantial volatility in both supply chain pressures and demand. Both GSCPI and net GSCPI showed significant elevating trends from late 2019, peaking around early to mid-2021. Demand initially dropped sharply during the early pandemic phase but gradually stabilized, showing a mix of negative and positive shifts throughout 2021. By 2022, the indices and demand reflect a period of adjustment, indicating a response to evolving pandemic conditions and supply chain adaptations.

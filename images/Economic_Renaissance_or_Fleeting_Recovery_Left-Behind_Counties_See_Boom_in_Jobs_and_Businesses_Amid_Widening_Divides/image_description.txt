@@ -1,0 +1,17 @@
+The image is a bar chart showing the average employment growth rate, year-over-year, in "left behind" counties versus all other counties from 2010 to 2023. Key insights from the chart include:
+
+1. **Trend Comparison**:
+   - **2010**: Both groups started with negative growth (Left behind: -0.6%, All other: -0.9%).
+   - **2011-2019**: Generally, "all other" counties had consistently higher employment growth rates than "left behind" counties. Over this period, "left behind" counties averaged around 0.3%-1.3% growth, while "all other" counties ranged between 0.8%-2.3%.
+   - **2020**: Both groups experienced significant dips due to evident external factors, notably the COVID-19 pandemic (Left behind: -6.1%, All other: -6.7%).
+   - **2021-2023**: Post-pandemic recovery saw notable improvements for both groups, with "all other" counties seeing particularly strong growth in 2022 at 4.1%, compared to 2.5% for "left behind" counties.
+
+2. **Gaps in Growth Rates**:
+   - There has been a persistent gap in the employment growth rates favoring "all other" counties over "left behind" counties throughout the observed period.
+   - The gap was especially notable during years of stronger economic performance (e.g., 2014 - 2.2% vs. 0.9%, 2022 - 4.1% vs. 2.5%).
+
+3. **Recovery Post-COVID**:
+   - 2021 showed "left behind" counties rebounding to 1.8% growth, while "all other" counties rebounded more robustly to 3.2%.
+   - By 2023, both groups had returned to a closer growth pattern (Left behind: 1.2%, All other: 2.0%), narrowing the gap somewhat compared to previous years.
+
+Overall, despite variations, "left behind" counties have consistently shown weaker employment growth compared to "all other" counties. The disparity was particularly pronounced in periods of economic strength and during the recovery phase post-COVID-19.

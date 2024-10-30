@@ -1,0 +1,9 @@
+The image is a bar chart that compares the estimated energy consumption per request for various AI-powered systems to a standard Google search. The different systems listed are:
+
+1. **Google search:** Consumes the least energy per request.
+2. **ChatGPT:** Consumes significantly more energy per request than a standard Google search.
+3. **BLOOM:** Consumes slightly more energy per request than ChatGPT.
+4. **AI-powered Google search (New State Research):** Consumes considerably more energy per request than BLOOM.
+5. **AI-powered Google search (SemiAnalysis):** Consumes the most energy per request among all the listed systems.
+
+In summary, standard Google searches are the least energy-intensive, while AI-powered searches, particularly those analyzed in "New State Research" and "SemiAnalysis," are considerably more energy-consuming per request.

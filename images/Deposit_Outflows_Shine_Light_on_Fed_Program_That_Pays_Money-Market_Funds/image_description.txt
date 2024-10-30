@@ -1,0 +1,12 @@
+The image presents a line graph depicting the trend in money-market fund assets from around 2007 to early 2023, measured in trillions of dollars. Key points observed:
+
+1. **Initial Increase (2007-2008)**: A significant rise in money-market fund assets, peaking just below $3.8 trillion around late 2008.
+2. **Post-Recession Decline (2008-2010)**: A sharp drop during the recession period with assets decreasing to around $2.8 trillion by 2010.
+3. **Stabilization and Fluctuations (2010-2018)**: Fluctuations around the $2.5 to $3 trillion mark over the next decade.
+4. **Significant Rise (2018-2020)**: A sharp increase starting around 2018, culminating in a dramatic peak at close to $4.5 trillion by mid-2020.
+5. **COVID-19 Effect (2020)**: A notable spike coinciding with the onset of the COVID-19 pandemic.
+6. **Post-Pandemic Dynamics (2020-2023)**: After a brief drop, a continued upward trend, reaching above $5 trillion by March 29, 2023.
+
+**Summary**: The graph traces the trajectory of money-market fund assets from 2007 to early 2023, highlighting significant market responses to economic events such as the 2008 financial crisis and the COVID-19 pandemic. The latest data point as of March 29, 2023, shows assets exceeding $5 trillion, indicating a recent surge in money-market investments.
+
+**Source**: Investment Company Institute.

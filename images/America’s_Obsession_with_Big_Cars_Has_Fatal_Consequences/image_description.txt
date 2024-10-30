@@ -1,0 +1,25 @@
+The image presents a comparison of road death rates between the United States and other OECD countries, highlighting two different measures: deaths per million people and deaths per 100 million miles traveled.
+
+### Key Insights:
+
+1. **Consistently Higher Rates in the US:**
+   - The US has a consistently higher road death rate compared to other developed countries, regardless of the measurement used.
+
+2. **Deaths Per Million People:**
+   - In this measure, US road fatalities (depicted by the red line) remain significantly above the majority of other OECD countries, including the UK.
+   - While the deaths per million people have generally decreased from the years 1970 to 2020, the US still shows a higher rate than the OECD average.
+
+3. **Deaths Per 100 Million Miles Traveled:**
+   - This measure also shows a pronounced difference, with the US again exhibiting higher fatality rates compared to other OECD nations.
+   - Over time, the deaths per 100 million miles traveled have declined but remain elevated in the US compared to peers.
+
+4. **Regional Examples:**
+   - The chart highlights countries like Portugal, experiencing steeper declines in both metrics over time.
+   - The UK consistently shows lower rates in both categories compared to the US.
+
+5. **Data Sources:**
+   - The data is derived from the OECD and the National Highway Traffic Safety Administration (NHTSA).
+   - The graph is created by John Burn-Murdoch from the Financial Times with an analysis by FT.
+
+### Overall Summary:
+The United States has notably higher road death rates when compared to other developed countries, as illustrated by both deaths per million people and per 100 million miles traveled. Despite a general decline in fatalities over several decades, the US road safety performance remains less favorable. This persistent discrepancy underscores potential areas where policy interventions and safety improvements could be focused to align more closely with other OECD nations.

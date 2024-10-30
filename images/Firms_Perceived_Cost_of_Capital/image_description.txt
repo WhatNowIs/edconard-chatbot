@@ -1,0 +1,14 @@
+The image presents Figure 5, titled "Excess Dispersion in the Perceived Cost of Capital, Equity, and Debt." This figure illustrates the fractions of the overall variance in the perceived costs of capital, equity, and debt that constitute excess dispersion. The measure of excess dispersion in a perceived cost equals the slope coefficient in a regression of the error in the perceived cost on the perceived cost.
+
+Key points to note from the figure:
+
+1. **Perceived Cost of Capital**: The error in the perceived cost of capital is calculated using the implied cost of capital method. This is represented by the top point on the y-axis.
+   - The observed excess dispersion fraction is approximately 0.9.
+
+2. **Perceived Cost of Equity**: The error in the perceived cost of equity is calculated relative to the implied cost of equity.
+   - The observed excess dispersion fraction is around 0.65.
+
+3. **Perceived Cost of Debt**: The error in the perceived cost of debt is calculated relative to the actual cost of debt used for capital.
+   - The observed excess dispersion fraction is close to 0.05.
+
+In summary, the figure indicates that the perceived cost of capital has the highest excess dispersion, followed by the perceived cost of equity, and then the perceived cost of debt, which has the lowest excess dispersion. The errors in perceived costs are double-clustered at the firm and year level, with the bars representing 95% confidence intervals around these estimates.

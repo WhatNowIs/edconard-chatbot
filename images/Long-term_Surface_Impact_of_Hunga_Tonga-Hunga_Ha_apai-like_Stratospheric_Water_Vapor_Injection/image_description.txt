@@ -1,0 +1,15 @@
+Fig. 1 illustrates the long-term impacts of the Hunga Tonga-Hunga Ha'apai volcanic eruption on surface temperature and precipitation anomalies, driven by stratospheric water vapor clouds. The maps present anomalies over a period of 3-7 years, categorized by different seasons: DJF (December, January, February), MAM (March, April, May), JJA (June, July, August), and SON (September, October, November). 
+
+- Panels (a) to (d) show temperature anomalies (TS) in Kelvin:
+  - (a) DJF anomalies indicate cooling in some parts of the oceans and warming regions near the Arctic.
+  - (b) MAM anomalies show significant warming in the northern hemisphere, particularly in high latitudes.
+  - (c) JJA anomalies depict cooling in parts of the southern hemisphere and warming in northern regions.
+  - (d) SON anomalies display a mix of warming and cooling in different regions, particularly along the mid-latitudes.
+
+- Panels (e) to (h) show precipitation anomalies (P) in mm/day:
+  - (e) DJF anomalies reveal increased precipitation near the equatorial region and decreased precipitation in some parts of mid-latitude regions.
+  - (f) MAM anomalies depict patchy areas of increased and decreased precipitation across the globe.
+  - (g) JJA anomalies again show scattered changes with some increase in precipitation in the equatorial regions.
+  - (h) SON anomalies indicate relatively minor changes, with a slight increase in certain areas and decrease in others.
+
+The color scales next to the maps indicate the magnitude of these anomalies, with red and blue colors representing temperature changes, and orange to purple hues indicating changes in precipitation levels.

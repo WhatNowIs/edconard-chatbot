@@ -1,0 +1,9 @@
+The provided image contains Figure 4 titled "Firm variables for Affected Suppliers," which illustrates the dynamic effects of export controls on various firm variables for suppliers impacted by export restrictions. The figure includes five panels, each showcasing coefficient plots for different variables:
+
+1. **Panel A: Cash Flow** - Displays the effect of export controls on cash flow over time.
+2. **Panel B: Revenues** - Illustrates the impact on revenues over time.
+3. **Panel C: EBIT (Earnings Before Interest and Taxes)** - Shows the effect on EBIT.
+4. **Panel D: CAPEX (Capital Expenditures)** - Demonstrates the influence on CAPEX.
+5. **Panel E: Employees** - Depicts the impact on the number of employees.
+
+The methodology employed is the stacked regression approach described in Equation 1, with control variables. The results indicate the estimated dynamic coefficients (represented by blue dots) and their corresponding 95% confidence intervals (blue bars). The horizontal axis in each panel indicates the time in years relative to the implementation of export controls, while the vertical axis measures the effect size for each variable. The panels suggest the trends and variability in these firm variables following the imposition of export controls on suppliers.

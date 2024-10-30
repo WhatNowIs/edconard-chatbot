@@ -1,0 +1,24 @@
+The image is a chart showing the percent change in annual rate for Real GDP, Real GDI (Gross Domestic Income) adjusted for possible distortions, and the Average of GDP and Adjusted GDI from November 2021 to November 2023. 
+
+### Key Points:
+
+- **Real GDP (dotted dark blue line)** and **Real GDI adjusted for possible distortions (dotted light blue line)** display notable variability throughout the period.
+- The **Average of GDP and Adjusted GDI (solid dark blue line)** serves as a smoother metric indicating overall economic activity.
+
+### Observations:
+
+1. **Initial Highs and Declines:**
+   - Around Nov 2021, both GDP and Adjusted GDI started high at around 6% annual growth.
+   - By February 2022, both metrics experienced a sharp decline, with GDI dipping into negative territory.
+
+2. **Recovery and Subsequent Fluctuations:**
+   - There was a substantial recovery by August 2022, with both GDP and GDI returning to positive but lower growth rates (around 2% to 3%).
+   - Another dip followed, reaching negative values again near November 2022.
+
+3. **Stabilization and Gradual Improvement:**
+   - From February 2023 onwards, both Real GDP and Real GDI generally increased, peaking again around May 2023 with a growth rate around 3-4%.
+   - The Average of GDP and Adjusted GDI maintained a more consistent upward trend, suggesting overall moderate above potential activity growth over the last year.
+
+### Conclusion:
+
+The chart indicates that combining GDP and GDI measurements suggests that economic activity growth was modestly above potential over the last year, despite some significant fluctuations. The source of the data is the Department of Commerce and Goldman Sachs Global Investment Research, which provides an authoritative basis for the conclusions drawn.

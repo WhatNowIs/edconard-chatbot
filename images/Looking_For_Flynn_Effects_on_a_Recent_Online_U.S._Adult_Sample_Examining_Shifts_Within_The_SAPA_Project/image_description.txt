@@ -1,0 +1,16 @@
+The image is a line graph illustrating the trends of 35-Item Composite ICAR (International Cognitive Ability Resource) scores, standardized, over time from 2006 to 2018. The scores are stratified by different levels of education, with each level represented by different colors and line styles.
+
+Key Information:
+- **Y-axis (Vertical):** Represents the average standardized score, ranging from -1 to 1.
+- **X-axis (Horizontal):** Represents the year the test was taken, from 2006 to 2018.
+- **Legend:** Indicates the different educational levels:
+  - Grad/prof grad (Dark Red, Solid Line)
+  - In grad/prof (Red, Solid Line)
+  - College grad (Orange, Dotted Line)
+  - Some college (Purple, Dotted Line)
+  - In college (Blue, Dashed Line)
+  - HS (High School, Dark Blue, Solid Line)
+  - < 12 years (Less than 12 years of education, Black, Solid Line)
+
+Summary:
+From 2006 to 2018, the average standardized ICAR scores display a consistent hierarchy based on educational attainment. Individuals with higher education levels (e.g., graduate/professional degrees) consistently have higher average scores compared to those with lower education levels. Over the years, those scores have shown some fluctuations but retain a general trend without notable increases or decreases for most educational groups. Overall, the data indicate a positive correlation between educational attainment and cognitive ability scores, with the highest scores observed in Grad/prof grad and the lowest in individuals with less than 12 years of education.

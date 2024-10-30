@@ -1,0 +1,12 @@
+The image is a scatter plot titled "A history of US tax increases by year of legislation," showing additional taxes raised as a percentage of GDP per annum, plotted against federal receipts as a percentage of GDP before the passage of each bill. Key insights from the plot include:
+
+- Historical data points for tax increases range from 1950 to 2012, highlighting various years such as 1950, 1951, 1968, 1980, 1982, 1987, and 1990.
+- The highest tax increase occurred in 1950, raising additional taxes by around 2.2% of GDP.
+- Two recent notable tax proposals are highlighted:
+  - Sanders HNW (High Net Worth) tax proposal.
+  - Warren wealth tax proposal.
+- There's a red mark indicating the "Required increase to restore 2.2x ratio" at the 2.5% GDP increase level.
+- Generally, past tax increases raised less than 1.5% of GDP, with a few notable exceptions.
+- The federal receipts before the passage of each bill vary between approximately 14% to 19% of GDP.
+
+Sources for this data are the US Treasury, Tax Policy Center, and JPMAM, cited as of May 2022.

@@ -1,0 +1,22 @@
+The chart shows the Employment Cost Index (ECI) for Wages and Salaries of Private Industry Workers, highlighting the year-over-year percent change from 2010 to 2024. 
+
+Key points:
+
+1. **Overall Trend (2010-2024)**:
+   - From 2010 to around 2014, the index displayed relatively low and stable growth, fluctuating between approximately 1.5% to 2%.
+   - From 2014 to 2020, there was a gradual increase in the percent change, reaching around 3%.
+   - From 2020 onwards, a significant rise is observed, peaking at around 5% in 2022 before seeing a slight decline.
+
+2. **Specific Observations**:
+   - The lowest point was in the early 2010s, when the percent change decreased to about 1.5%.
+   - The highest point was in 2022, with the percent change reaching close to 5.5%.
+
+3. **Post-2020 Period**:
+   - A sharp rise in the Employment Cost Index is noted after the onset of the COVID-19 pandemic, indicating increased wage and salary growth.
+
+4. **Recent Trends**:
+   - After peaking in 2022, the growth rate of wages and salaries began to decline but still remains higher than pre-2020 levels.
+
+**Source**: The data is provided by the U.S. Bureau of Labor Statistics.
+
+This summary indicates that while there was a period of steady growth in wages and salaries for private industry workers, recent years have seen more volatility and a notable increase.

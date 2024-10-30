@@ -1,0 +1,12 @@
+The image is a graph depicting the year-over-year change in the median existing-home price in the United States from 2010 to July 2023. The data source is the National Association of Realtors, and it notes that the July 2023 data is preliminary.
+
+Key points to summarize:
+
+- **Time Frame**: The graph covers from 2010 until July 2023.
+- **Fluctuations**: The change in home prices has varied significantly over this period, showing multiple peaks and troughs.
+- **Recent Data**: As of July 2023, there was a positive change of 1.9% in the median existing-home price compared to the previous year.
+- **Trends**: Significant spikes in the percentage change can be seen during certain periods, particularly around 2020-2021, with a notable increase reaching over 20%. However, there was also a sharp decline following that peak.
+- **Stability**: For much of the period from 2010 to 2020, the year-over-year change in home prices generally remained below 10%, with occasional increases and decreases.
+- **Recovery**: Toward the end of the graph, it depicts a slight recovery in the change rate after a recent decline. 
+
+Overall, the graph highlights the dynamic nature of the U.S. housing market over the past decade, with periods of both rapid growth and decline in home prices.

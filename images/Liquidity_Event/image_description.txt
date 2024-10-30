@@ -1,0 +1,9 @@
+The chart displays the relationship between Treasuries Outstanding and Daily Volumes (in trillions of dollars) from 2002 to 2023 (Year-To-Date). Here are the key points:
+
+- **Outstanding Treasuries (Green Solid Line)**: This represents the total amount of Treasuries outstanding. The chart shows a steady increase in the total outstanding Treasuries, which has escalated significantly from around $5 trillion in 2008 to approximately $26 trillion by 2023.
+  
+- **Average Daily Volume (Green Dotted Line)**: This indicates the average daily trading volume in Treasuries, which has seen a moderate increase over the same period, peaking at around $0.12 trillion by 2023.
+
+- **Volume as a Percentage of Outstanding (Black Dotted Line)**: This shows the average daily trading volume as a percentage of the total outstanding Treasuries. It significantly decreased from around 0.12 in 2008 to less than 0.04 in 2023.
+
+The chart suggests that although average daily trading volumes have increased slightly, the overall volume as a percentage of outstanding Treasuries has drastically decreased, highlighting that the growth in the total stock of Treasuries far outpaces the growth in daily trading volumes. This trend indicates a substantial rise in the federal debt outstanding relative to the trading volume.

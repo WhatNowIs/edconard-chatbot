@@ -1,0 +1,13 @@
+The graph represents the U.S. Federal government's current expenditures on interest payments as a percentage of Gross Domestic Product (GDP) from the third quarter of 2018 (Q3 2018) to the third quarter of 2023 (Q3 2023). 
+
+Key observations:
+- The expenditure percentage started at around 2.6% in Q3 2018.
+- There was a moderate increase in expenditures reaching a peak near 2.8% in Q1 2019, followed by fluctuations with minor peaks and troughs.
+- A notable decline is observed in Q3 2020.
+- A steady level of around 2.5% persisted through late 2020 and the year 2021.
+- An upward trend began in Q1 2022, sharply accelerating throughout 2022.
+- The most significant rise occurs from Q3 2022, peaking at approximately 3.7% by Q3 2023.
+
+The rapid increase in federal government interest payments relative to GDP from early 2022 onwards is a critical highlight.
+
+Source: U.S. Bureau of Economic Analysis, accessed via the Federal Reserve Bank of St. Louis (fred.stlouisfed.org).

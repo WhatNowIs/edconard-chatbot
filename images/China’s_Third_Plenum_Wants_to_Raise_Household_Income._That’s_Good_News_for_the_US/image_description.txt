@@ -1,0 +1,19 @@
+The chart tracks China's Household Income and Consumption as a Percentage of GDP from 1980 to 2020. Key observations from the chart include:
+
+1. **Household Disposable Income**:
+   - In 1980, it started at about 60% of GDP.
+   - It declined steadily through the 1980s, 1990s, and early 2000s.
+   - Around 2000, it stabilized at approximately 40% of GDP.
+   - After 2010, there was a slight upward trend, fluctuating but generally stabilizing slightly above 40% by 2020.
+
+2. **Household Consumption**:
+   - It started at just over 50% of GDP in 1980.
+   - Saw a decrease through the 1980s and 1990s.
+   - By the early 2000s, it dropped to about 35%.
+   - From 2010 onwards, it showed a slight increase, ending around 39% of GDP by 2020.
+
+3. **General Trends**:
+   - Both household disposable income and consumption as a percentage of GDP declined overall from 1980 to around 2000.
+   - Post-2000, these metrics have remained lower but relatively stable with slight increases observed after 2010.
+
+In summary, the chart shows a significant decline in both household disposable income and consumption as a percentage of GDP in China from 1980 to 2000, with a relative stabilization and slight increase post-2010.

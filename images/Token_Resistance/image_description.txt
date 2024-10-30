@@ -1,0 +1,9 @@
+The image is a line chart depicting the performance of the US 10-year and 2-year Treasury yields (USGG10YR Index and USGG2YR Index) over a period from July 2023 to January 2024. The chart shows the following details:
+
+- The USGG10YR Index (blue line) started at around 4.1% in July 2023, increasing to a peak near the end of October and beginning of November 2023, before declining gradually till early January 2024. Recently in January 2024, there was a slight recovery.
+- The USGG2YR Index (white fill) started at around 4.35% in July 2023, followed by a sharp rise, peaking around the end of November 2023. It then experienced a significant decrease till early January 2024, followed by a slight bounce back in mid-January 2024.
+- The chart specifically highlights the period from late December 2023 to mid-January 2024 with a red circle, indicating significant volatility and movements for both indices during this period.
+- As of the last recorded data, the USGG10YR Index stands at 4.1226%, while the USGG2YR Index is higher at 4.3845%.
+
+Summary:
+The chart illustrates significant fluctuations in the 10-year and 2-year US Treasury yields over the past six months. Both yields saw a peak towards the end of 2023, followed by a decline and a slight recovery in early January 2024. The data suggests increased market volatility, particularly noted in the highlighted period between late December 2023 and mid-January 2024.

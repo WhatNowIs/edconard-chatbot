@@ -1,0 +1,48 @@
+The chart titled "Cumulative Change in Employment-Population Ratios, February-August 2022 and February 2022-February 2023" contrasts changes in employment rates over two different time periods. Here is the summary:
+
+1. **All Adults**:
+   - February-August 2022: 0.7 percentage point increase
+   - February 2022-February 2023: 0.4 percentage point increase
+
+2. **Asian Women**:
+   - February-August 2022: -0.1 percentage point change
+   - February 2022-February 2023: 0.6 percentage point increase
+
+3. **Latino Men**:
+   - February-August 2022: -0.5 percentage point change
+   - February 2022-February 2023: -1.2 percentage point change
+
+4. **Native Americans**:
+   - February-August 2022: -1.2 percentage point change
+   - February 2022-February 2023: 3.7 percentage point increase
+
+5. **Out-of-School Young Adults**:
+   - February-August 2022: -1.8 percentage point change
+   - February 2022-February 2023: 1.2 percentage point increase
+
+6. **Out-of-School Young Adults in Core Urban Areas**:
+   - February-August 2022: -5.4 percentage point change
+   - February 2022-February 2023: 0.5 percentage point increase
+
+7. **Out-of-School Young Adults in Rural Areas**:
+   - February-August 2022: -0.7 percentage point change
+   - February 2022-February 2023: 0.3 percentage point increase
+
+8. **Out-of-School Young Adults in Suburban Areas**:
+   - February-August 2022: -2.2 percentage point change
+   - February 2022-February 2023: 1.2 percentage point increase
+
+9. **Out-of-School Young Black Adults**:
+   - February-August 2022: -6.4 percentage point change
+   - February 2022-February 2023: -0.5 percentage point change
+
+10. **Out-of-School Young Latino Adults**:
+   - February-August 2022: -5.3 percentage point change
+   - February 2022-February 2023: -1.5 percentage point change
+
+**Key Observations**:
+- Most significant drop: Out-of-School Young Black Adults experienced the largest decrease in employment-population ratio from February-August 2022 (-6.4 percentage points).
+- Largest improvement: Native Americans saw the most considerable increase from February 2022-February 2023, with a 3.7 percentage point rise.
+- In general, the employment-population ratios showed more negative changes during the February-August 2022 period compared to recovery and growth in the February 2022-February 2023 period for most categories.
+  
+**Source**: Data is drawn from the Current Population Survey and calculations by the Federal Reserve Bank of St. Louis.

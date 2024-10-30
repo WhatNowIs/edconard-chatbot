@@ -1,0 +1,15 @@
+The chart, titled "US Import Share from China," presents the percentages of US imports from China categorized into "Non-critical" and "Critical" goods from 2002 to 2023. It outlines three distinct periods marked by the presidencies of Trump and Biden, as well as the onset of the COVID-19 pandemic.
+
+Key observations:
+1. **Non-Critical Goods (Blue Line)**:
+   - There was a significant increase from approximately 20% in 2002 to a peak of around 34% in 2010.
+   - Following a brief dip in 2008 during the global financial crisis, growth resumed, peaking again before 2017.
+   - Post-2017, during Trump's presidency, there was a decline, followed by a sharper drop starting around 2020 due to the COVID-19 pandemic.
+   - The decline continues into the Biden presidency, reducing to about 24% by 2023.
+
+2. **Critical Goods (Orange Line)**:
+   - An upward trend from about 6% in 2002, peaking around 16% by 2015.
+   - After 2015, there is a gradual decline through Trump's presidency.
+   - A notable downward trend is observed post-COVID-19 and continuing into Biden's presidency, reaching approximately 12% by 2023.
+
+Overall, the chart highlights how US import patterns have shifted, particularly influenced by policy changes and global events like the COVID-19 pandemic. The trend indicates a decrease in reliance on China for both non-critical and critical goods in recent years.

@@ -1,0 +1,11 @@
+The chart titled "Saving More, Investing Less: How Chinese people plan to spend their money" contains data from the People's Bank of China spanning from 2013 to early 2023. It tracks three spending behaviors: consumption, saving, and investment.
+
+Key points:
+1. **Saving**: The blue line represents saving, which has shown a significant and consistent upward trend, especially notable since 2020, peaking at around 60% by 2023.
+   
+2. **Investment**: The red line represents investment, which has seen a general decline over the period, starting above 20% in 2013 and falling below 10% by 2023.
+
+3. **Consumption**: The green line represents consumption, which has remained relatively stable throughout the period with minor fluctuations, hovering around 25% or lower and ending slightly above 20% by 2023.
+
+Summary:
+Over the past decade, Chinese people's financial behavior has shifted notably towards saving more and investing less. Savings rates have increased to approximately 60%, indicating a more conservative approach to financial planning. In contrast, investment rates have dropped below 10%, while consumption has remained stable but low, staying mostly consistent at around 20% to 25%.

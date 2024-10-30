@@ -1,0 +1,19 @@
+The image is a line graph titled "Figure 2: Median Wealth per Adult, 2000 – 2021, US and Western Europe (current USD) Credit Suisse 2022 Global Wealth Databook." The graph tracks the median wealth per adult in various countries from 2000 to 2021. The countries included are Iceland, Luxembourg, Belgium, Denmark, Netherlands, United Kingdom, France, Norway, Italy, Spain, United States, Germany, Greece, and Portugal.
+
+Key points extracted from the graph are:
+
+1. **Luxembourg** (gray line) consistently shows the highest median wealth per adult throughout the period, climbing sharply around 2006 and maintaining high levels thereafter.
+
+2. **United States** (blue line) features prominently, with its median wealth showing an upward trend, with fluctuations especially notable around the 2008 financial crisis.
+
+3. **Belgium** (red line) and **Iceland** (light gray line) also show significant median wealth per adult, though both experience substantial volatility.
+
+4. Several countries, including **Germany** (black line), **France** (dotted blue line), **Italy** (yellow line), and **Spain** (solid black line), have more stable but generally lower median wealth per adult compared to the leading countries.
+
+5. Countries like **Greece** (black dashed line) and **Portugal** (green triangle line) tend to have the lowest levels of median wealth per adult across the timeframe.
+
+6. There are notable peaks and troughs around the 2008-2009 financial crisis, impacting all countries to varying extents.
+
+7. Overall, the median wealth per adult has been increasing for most countries, although at different rates and with varying degrees of volatility.
+
+The data source is the Credit Suisse Global Wealth Databook 2022, and further details can be accessed through a provided URL. The graph provides a clear visual representation of the disparities in median wealth across different Western countries over the given period, highlighting economic trends and the impact of global financial events.

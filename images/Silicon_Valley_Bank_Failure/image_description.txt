@@ -1,0 +1,15 @@
+The image presents a graph that depicts the impact of unrealized securities losses on the capital ratios of various financial institutions. The vertical axis represents the percentage of the Common Equity Tier 1 (CET1) Capital Ratio, which is a key measure of a bank's financial strength. The horizontal axis lists different financial institutions, identified by their abbreviations.
+
+The graph shows two data points for each financial institution:
+
+1. **CET1 Capital Ratio** (blue dots)
+2. **CET1 Capital Ratio adjusted for unrealized losses on securities** (brown dots)
+
+Key observations from the graph:
+
+- **JPM (JPMorgan)** and **COF (Capital One Financial)** have the highest CET1 Capital Ratios both before and after adjustments.
+- **SVB (Silicon Valley Bank)** shows the lowest CET1 Capital Ratio adjusted for unrealized losses, indicating significant impact.
+- Most financial institutions show a reduction in their CET1 ratios when adjusted for unrealized losses, indicating that these losses can significantly affect their capital strength.
+- **USB (U.S. Bancorp)** and **PACW (PacWest Bancorp)** also exhibit considerable reductions in their capital ratios when accounting for unrealized losses.
+
+Overall, the impact of unrealized securities losses can significantly reduce the capital ratios of these financial institutions, thereby affecting their financial stability. The data emphasizes the importance of accounting for these potential losses in evaluations of bank capital health.

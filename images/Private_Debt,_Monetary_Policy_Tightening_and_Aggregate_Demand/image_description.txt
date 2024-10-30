@@ -1,0 +1,25 @@
+The image consists of three main parts (A, B, C) analyzing private debt trends and their implications on servicing costs as economic policies tighten:
+
+### A. Private Debt Trends Since the GFC
+- **Graph A** displays the evolution of private debt (% of GDP) from 1980 to 2022.
+- **Key Observations:**
+  - Private debt has remained relatively stable since the Global Financial Crisis (GFC).
+  - The weighted average (solid black line) and median (dotted black line) are surrounded by an interdecile range (green shading), indicating variability among different countries.
+
+### B. Cross-Country Differences
+- **Graph B** highlights significant variations in private debt across different countries or economic regions (Q2 2022).
+  - **Advanced Economies (AEs)**: Sweden (SE), Japan (JP), Canada (CA), etc.
+  - **Emerging Market Economies (EMEs)**: China (CN), Brazil (BR), Turkey (TR), etc.
+- **Key Observations:**
+  - Advanced economies typically have higher private debt levels compared to emerging market economies.
+  - The red bars represent the range of minimum to maximum values from Q4 1999 to Q2 2022.
+
+### C. Impact of Policy Tightening on Servicing Costs and Debt Ratios
+- **Graph C** examines how policy tightening historically influences servicing costs and private debt ratios.
+- **Key Observations:**
+  - Both private debt service ratio (DSR) and private debt to GDP increase during policy tightening phases.
+  - Data is color-coded to represent changes: Red for change during tightening, Blue dots for current levels, and Red dots for levels at the onset of past tightening cycles.
+  - The changes are more pronounced in advanced economies compared to emerging market economies.
+
+### General Summary
+The analysis indicates that private debt has remained high since the GFC, with advanced economies generally carrying more debt than emerging economies. Historical data shows that policy tightening typically leads to higher servicing costs and increased debt ratios. This information is crucial for understanding the financial vulnerabilities and potential challenges during economic policy shifts.

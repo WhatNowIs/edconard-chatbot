@@ -1,0 +1,16 @@
+The image provides a comparative analysis of falling water levels and declining corn yields from 1960 to 2020 in Wichita County and other counties in Groundwater Management District 1. The main points extracted include:
+
+1. **Falling Water Levels:**
+   - Groundwater levels have been consistently declining since 1960.
+   - The decline is presented in feet below the land surface, with observations starting around -80 feet in 1960.
+   - By 2020, water levels have declined to approximately -170 feet.
+   - The chart indicates an overall downward trend, showing a significant reduction in groundwater availability over the 60-year period.
+
+2. **Declining Corn Yields:**
+   - Corn yields initially increased from 1960, reaching a peak between 1980 and 2000.
+   - The yields are measured in bushels per acre, starting around 50 bushels per acre in the 1960s and peaking at about 150 bushels per acre.
+   - After the peak period, corn yields have shown a gradual decline, dropping to around 100 bushels per acre by 2020.
+   - This trend indicates that despite initial improvements, corn yields have been negatively impacted in conjunction with declining water levels.
+
+**Summary:**
+Over the last six decades, both groundwater levels and corn yields in Wichita County and surrounding areas have exhibited concerning trends. Groundwater levels have steadily fallen, dropping from approximately -80 feet below the land surface in 1960 to nearly -170 feet by 2020. Correspondingly, while corn yields initially increased, they have followed a declining trajectory since peaking between 1980 and 2000, reducing from around 150 bushels per acre to roughly 100 bushels per acre by 2020. This data suggests a possible correlation between water scarcity and reduced agricultural productivity. The information underscores the challenges faced by agricultural regions reliant on groundwater resources.

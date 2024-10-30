@@ -1,0 +1,19 @@
+The image is a graph depicting the trend of homicide rates in the United States per 100,000 population from 1960 to 2022. Significant points and summaries are as follows:
+
+1. **Title**: "The Pandemic Murder Wave Has Crested" suggests that the recent spike in homicides has reached its peak.
+2. **Y-Axis**: Represents the number of homicides per 100,000 population ranging from 0 to 10.
+3. **X-Axis**: Timeline spanning from 1960 to 2022.
+4. **Data Sources**:
+   - Federal Bureau of Investigation (FBI) for the years 1960-2020,
+   - AH Datalytics for the years 2021-2022.
+
+**Trend Analysis**:
+- **1960s-1980s**: There was a steady rise in the homicide rate, peaking around 1980.
+- **1980s-1990s**: The rates fluctuated but remained relatively high, with another peak observed in the early 1990s.
+- **1990s-2010s**: A significant decline in the homicide rate is evident, with some fluctuations but overall a general downward trend.
+- **2010s-2020s**: The homicide rate remained relatively low until a noticeable increase during the pandemic years, with a peak around 2021-2022.
+
+**Current Observation**:
+- The graph indicates that the homicide rate has recently peaked and may be starting to decline, indicating that the "pandemic murder wave has crested."
+
+In summary, U.S. homicide rates have experienced significant fluctuations over the past six decades, peaking around 1980 and the early 1990s, declining notably by the 2010s, and then witnessing a surge during the pandemic years. The recent data suggests a potential leveling off or decline in the rate, post-pandemic.

@@ -1,0 +1,19 @@
+The graph provides an overview of the changes in U.S. nonmortgage household debt since January 2017, specifically focusing on three credit types: revolving credit, non-revolving educational credit, and other non-revolving credit (mainly auto loans). The data compares actual credit levels with pre-pandemic trends.
+
+Key takeaways include:
+
+1. **Total Nonmortgage Debt**: Currently slightly below what would have been expected based on pre-pandemic trends.
+
+2. **Revolving Credit**:
+   - **Actual**: Sharp dip starting in 2020, followed by a gradual recovery.
+   - **Pre-pandemic trend**: Continued upward trend without the dip.
+
+3. **Non-revolving Educational Credit**:
+   - **Actual**: Consistent increase, but below the pre-pandemic expected trend.
+   - **Pre-pandemic trend**: Higher than the actual values, indicating a $204 billion gap due to the pandemic.
+
+4. **Non-revolving Other Credit (mainly auto loans)**:
+   - **Actual**: Steady increase, surpassing the pre-pandemic trend.
+   - **Pre-pandemic trend**: Lower than actual values, indicating an excess of about $155 billion in this category compared to pre-pandemic expectations.
+
+Overall, while non-revolving other credit has grown beyond expectations, revolving and educational credits remain below the anticipated levels based on trends before the COVID-19 pandemic.

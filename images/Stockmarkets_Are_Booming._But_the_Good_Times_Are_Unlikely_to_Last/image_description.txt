@@ -1,0 +1,24 @@
+The image contains two charts representing financial data. The chart at the top is titled “S&P 500, cyclically adjusted price-earnings ratio” and the chart at the bottom is titled “OECD countries, non-financial corporations’ earnings as % of GDP, 1995=100.”
+
+### Summary:
+
+1. **S&P 500, Cyclically Adjusted Price-Earnings Ratio (CAPE):**
+   - Time Span: 1871 to 2024 (projected)
+   - The ratio shows significant peaks around the years:
+     - Early 1900s
+     - 1929 (Great Depression)
+     - 2000 (Dot-com bubble)
+     - Post-2008 financial crisis period
+   - The recent data indicates another rise nearing levels seen during the past significant peaks, approaching a ratio of 35-40.
+
+2. **OECD Countries, Non-Financial Corporations’ Earnings as % of GDP (1995=100):**
+   - Time Span: 1995 to 2023
+   - The data displays two metrics: Net income and Operating income.
+   - **Net Income:**
+     - Shows an overall increasing trend
+     - Experienced fluctuations but has risen significantly since 2015, peaking around 175% of the 1995 level.
+   - **Operating Income:**
+     - Displayed a steadier trend with more modest growth compared to net income.
+     - Had minor fluctuations but has roughly remained around 125% of the 1995 level by 2023.
+
+The data reflects the increasing valuation of the stock market as represented by the S&P 500's price-earnings ratio, while non-financial corporations in OECD countries have shown considerable growth in net income, outpacing operating income significantly in recent years.

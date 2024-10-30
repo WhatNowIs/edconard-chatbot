@@ -1,0 +1,14 @@
+The image is a graph labeled Figure 4, illustrating "Headline inflation contributions and the federal funds rate." It combines three key variables over time from 2019 to 2024:
+
+1. **Least responsive contributions to headline inflation** in red (measured on the left axis in percentage points).
+2. **Most responsive contributions to headline inflation** in blue (measured on the left axis in percentage points).
+3. **Federal funds rate** in yellow (measured on the right axis in percentage points).
+
+### Summary:
+- **2019 to early 2020**: The contributions to inflation from both least and most responsive components remained relatively steady, with minor fluctuations. The Federal funds rate started slightly above 2% and gradually declined to about 1.5%.
+- **Around mid-2020**: The Federal funds rate dropped sharply to near zero, and a dip in most responsive contributions to inflation was observed right after.
+- **Late 2020 to 2022**: Most responsive contributions to inflation increased significantly, peaking at around 6 percentage points while least responsive contributions also grew, although slower and peaking under 2 percentage points.
+- **From 2022 to 2023**: The Federal funds rate increased sharply from near zero to around 5%, while contributions to inflation from both most and least responsive components began to taper off.
+- **2023 onwards**: The Federal funds rate stabilized around 5-6% and contributions from both components began decreasing, indicating a potential reduction in overall inflation.
+
+This graph connects the federal funds rate with inflation components, showing that changes in the rate may be a response to or influence on inflationary pressures.

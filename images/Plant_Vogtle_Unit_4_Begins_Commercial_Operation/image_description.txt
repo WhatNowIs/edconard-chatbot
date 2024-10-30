@@ -1,0 +1,11 @@
+The image is a bar graph that displays the annual U.S. nuclear power capacity additions (measured in gigawatts) from 1960 to 2024, based on the year of initial operation. Here are the key points extracted:
+
+- The graph shows nuclear power capacity additions in the U.S., measured by the year each addition began operation.
+- Significant growth in nuclear power capacity occurred from the late 1960s to the early 1990s.
+- The peak addition of nearly 10 gigawatts occurred in the late 1970s.
+- After the early 1990s, new nuclear power capacity additions sharply declined, with almost no new additions until the mid-2010s.
+- A notable addition in recent years is Watts Bar Unit 2, which came into operation in 2016.
+- Planned additions include Vogtle Unit 3 in 2023 and Vogtle Unit 4 by 2024.
+- Data is sourced from the U.S. Energy Information Administration’s (EIA) Annual Electric Generator Report.
+
+This summary reflects the historical trend of nuclear power capacity additions in the U.S., highlighting a peak period in the 1980s and a resurgence of activity in the 2010s and early 2020s.

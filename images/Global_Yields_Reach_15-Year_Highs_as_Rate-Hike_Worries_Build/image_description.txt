@@ -1,0 +1,13 @@
+The image is a chart from Bloomberg detailing the performance of the Bloomberg Global Aggregate Treasuries Total Return Index Value (Unhedged USD) from 2009 to 2023. The key points derived from the image are:
+
+1. **Headline**: "Global Yields Hit 15-Year High to Defy Bond Bulls."
+2. **Subhead**: "Debt sell-off extends despite hopes for central bank pivots."
+3. **Time Frame**: The chart covers the period from 2009 to 2023.
+4. **Performance Metric**: The y-axis represents the Index Yield to Worst, measured in percent.
+5. **Trend**:
+   - From 2009 to around 2020, the yield shows a gradual downward trend, with occasional fluctuations.
+   - In early 2020, the yield begins to rise sharply, reaching a peak around 2023.
+6. **Current State**: As of 2023, the yields have hit a 15-year high, approaching 3.50%.
+
+### Summary
+Global yields have reached their highest level in 15 years, defying expectations of bond market optimists. Despite anticipations of potential central bank policy adjustments, the sell-off in debt continues. The Bloomberg Global Aggregate Treasuries Total Return Index showed a significant upward trend starting in early 2020, peaking close to 3.50% by 2023. This marks a significant increase from the relatively low and stable yields observed over the previous decade.

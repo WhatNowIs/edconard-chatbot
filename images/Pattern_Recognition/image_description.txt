@@ -1,0 +1,25 @@
+This exhibit, drawn from James Shanteau's research, delineates the contrasting characteristics that influence good and poor expert performance across various tasks. The key points are:
+
+**Good Expert Performance:**
+- **Stimulus Stability:** Static
+- **Type of Decision:** Physical system
+- **Expert Agreement on Cues:** Yes
+- **Domain Context:** Predictable
+- **Errors in Decision Making:** Tolerated
+- **Repetitive Tasks:** Yes
+- **Outcome Feedback:** Available
+- **Problem Decomposition:** Yes
+- **Use of Decision Aids:** Routine
+
+**Poor Expert Performance:**
+- **Stimulus Stability:** Dynamic
+- **Type of Decision:** Behavioral system
+- **Expert Agreement on Cues:** No
+- **Domain Context:** Unpredictable
+- **Errors in Decision Making:** Not tolerated
+- **Repetitive Tasks:** No
+- **Outcome Feedback:** Unavailable
+- **Problem Decomposition:** No
+- **Use of Decision Aids:** Not routine
+
+The exhibit suggests that good expert performance is associated with stable, predictable conditions where decision-making is systematic, feedback is available, and the use of decision aids is routine. Conversely, poor expert performance is linked with dynamic, unpredictable conditions where there is disagreement among experts, errors are not tolerated, and feedback is unavailable.

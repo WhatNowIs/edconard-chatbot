@@ -1,0 +1,28 @@
+This image contains a series of line graphs depicting the average underpayment ($) by demographic group across minimum wage policy categories from 2011 to 2019. The data is broken down by different age and racial groups and categorized into three minimum wage policy groups: 
+
+1. No Change (dark blue circles)
+2. Indexers (light blue circles)
+3. Increasers (dark blue diamonds)
+
+Each panel represents a specific demographic group:
+- Panel A: African Americans (Ages 16-21)
+- Panel B: African Americans (Ages 16-65)
+- Panel C: Hispanics (Ages 16-21)
+- Panel D: Hispanics (Ages 16-65)
+- Panel E: Whites (Ages 16-21)
+- Panel F: Whites (Ages 16-65)
+
+Key observations:
+- Underpayment generally fluctuates over time across all panels.
+- In most groups, the Increasers group shows more significant spikes in underpayment compared to No Change or Indexers groups, especially around the years 2018 and 2019.
+- The 16-21 age groups (Panels A, C, E) tend to have higher levels of underpayment compared to the broader 16-65 age groups (Panels B, D, F).
+- Whites (Ages 16-21) in Panel E and Hispanics (Ages 16-21) in Panel C show noticeable spikes in underpayment around 2018.
+- African Americans (Ages 16-21) in Panel A also show recurring spikes and peaks around 2016-2017 and 2019.
+
+Context provided by the image’s caption:
+The data originates from the Current Population Survey Merged Outgoing Rotation Groups (CPS MORG) and includes individuals who are employed, paid by the hour, do not receive overtime, tips, or commissions, and do not have imputed wage rates. The categorizations of the states are:
+- **No Change:** States that did not see statutory changes in minimum wage.
+- **Indexers:** States that index minimum wage to inflation.
+- **Increasers:** States that had at least one statutory minimum wage increase between January 2013 and January 2015.
+
+The charts indicate how underpayment trends differ according to minimum wage policy changes, with averages weighted by state population.

@@ -1,0 +1,32 @@
+The image presents four graphs titled "Figure 10: Impacts on Earnings Trajectories". The graphs investigate the impact of an intervention on various earnings metrics over different years since application. Each graph shows the estimated outcomes for two groups: those who fall just below the admission cutoff, termed untreated (gray dots), and those who fall just above the cutoff, termed treated or compliers (black dots). The comparison aims to estimate the Local Average Treatment Effect (LATE) and the Complier Expected Earnings (Compiler E[Y(1)] which includes the LATE effect):
+
+1. **Appear in Texas Earnings Data**:
+    - Displays the proportion of individuals appearing in the state earnings records.
+    - Over 14 years, both treated and untreated groups show similar trends.
+    - LATE (years 8-14): 0.01 (0.02).
+    - Compiler E[Y(1)]: 0.87.
+
+2. **Annual Texas Earnings**:
+    - Shows the annual earnings recorded in Texas.
+    - Both groups’ earnings rise steadily over the years, with treated having slightly higher earnings, especially noticeable after year 7.
+    - LATE (years 8-14): 2,839 (1,313).
+    - Compiler E[Y(1)]: 28,802.
+
+3. **Annualized Positive Earnings**:
+    - Represents earnings excluding quarters without recorded Texas earnings.
+    - Earnings rise consistently over time for both groups, with the treated group maintaining an edge.
+    - LATE (years 8-14): 2,060 (1,298).
+    - Compiler E[Y(1)]: 38,524.
+
+4. **Earnings Rank within High School Cohort**:
+    - Displays each individual’s percentile rank based on positive earnings within their high school graduating cohort on a national scale.
+    - The ranks improve over time for both groups, with the treated group generally ranking higher.
+    - LATE (years 8-14): 2.5 (1.5).
+    - Compiler E[Y(1)]: 54.3.
+
+**Notes**: 
+- The data considers absolute and annual earnings, employing averages for missing earnings quarters.
+- LATE estimates are derived from a fuzzy regression discontinuity specification, separating outcomes for treated and untreated groups.
+- Earnings data are adjusted for inflation to 2015 dollars and winsorized at the 99th percentile to mitigate outliers' effects. 
+
+This figure indicates that people who just meet an admission cutoff exhibit slightly higher annual earnings, annualized positive earnings, and earnings rank within their high school cohort over time, compared to those just below the cutoff. This suggests a positive but modest impact of the intervention on long-term earnings trajectories.

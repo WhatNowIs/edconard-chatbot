@@ -1,0 +1,16 @@
+The image is a graph titled "Bird Flu Outbreaks," which visualizes reported outbreaks of various subtypes of bird flu from 2004 to 2022. Different colors represent different subtypes: H5N1 (orange), H5N2 (red), H5N6 (light purple), H5N8 (dark blue), and unspecified H5 (grey).
+
+### Key Points:
+
+1. **2004-2005**: A significant peak in bird flu outbreaks occurred, primarily due to an H5N1 epidemic in Asia, with reported outbreaks reaching close to 1,500 per month at its peak.
+  
+2. **2006**: H5N1 spread across Asia and extended into North Africa and Europe, maintaining relatively high outbreak frequencies.
+
+3. **2014-2015**: Another peak period, during which H5N6 and H5N8 spread among wild birds.
+
+4. **2016-2017**: A resurgence of H5N1 in Asia spread to Europe, while new H5N8 lineages emerged in poultry in Africa.
+
+5. **2020-2022**: H5N1 reemerged in Europe and began to spread worldwide. The graph shows frequent outbreaks from this year, indicating a notable rise in cases.
+
+### Overall:
+The graph illustrates the cyclical nature of bird flu outbreaks, highlighting significant events and the spread of various subtypes over nearly two decades. There appear to be particularly notable spikes in the early 2000s, mid-2010s, and early 2020s.

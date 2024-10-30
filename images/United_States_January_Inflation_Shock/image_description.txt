@@ -1,0 +1,11 @@
+This chart illustrates the year-over-year percentage change in three components of the Core Consumer Price Index (CPI) from December 2019 to December 2022:
+
+1. **Services excluding OER, rent, medical services, and hotels, and airfares** (blue line) have shown notable acceleration, particularly from mid-2021 onward.
+2. **Rent of Primary Residence** (red line) and **OER: Primary Residence** (gray line) have also demonstrated steady growth through the period, with a significant upward trend starting in early 2021.
+
+The weights attributed to each component are:
+- **Services excluding OER, rent, medical services, and hotels, and airfares:** 30%
+- **Rent of Primary Residence:** 9%
+- **OER: Primary Residence:** 28%
+
+By the end of 2022, all three components exhibit strong upward momentum, indicating that two-thirds of the Core CPI components are still accelerating year-over-year. This data derives from the Bureau of Labor Statistics (BLS) and Exante Data.

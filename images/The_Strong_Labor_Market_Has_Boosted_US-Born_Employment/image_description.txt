@@ -1,0 +1,26 @@
+The image is a graph illustrating the foreign-born share of the population in the United States from January 2010 to January 2024. The x-axis represents the years, while the y-axis represents the share of the population, ranging from 14.0% to 18.5%.
+
+Key points from the graph:
+
+1. There are two lines shown on the graph:
+   - **Published estimates** (black line)
+   - **Authors' estimates** (green line)
+
+2. Both estimates show a general upward trend in the foreign-born share of the population during this period.
+
+3. Initially, from 2010 to 2011, both estimates are similar, starting at just above 15.0%.
+
+4. From 2011 to 2019, the foreign-born share steadily increases, with slight fluctuations.
+
+5. Both estimates dip slightly in 2020 but then rise sharply again post-2020, with a notable increase predicted for 2023 and 2024.
+
+6. By January 2024, the authors' estimates suggest the foreign-born share could surpass 18.0% of the population, while the published estimates also indicate a significant increase, reaching around 18.0%.
+
+Sources:
+- U.S. Bureau of Labor Statistics, American Community Survey, Centers for Disease Control, and Current Population Survey from 2010 to 2024
+- Estimates and calculations by the authors, who have plotted data for each January within this period.
+
+Context:
+- The data reflects the share of foreign-born individuals within the civilian non-institutionalized population aged 16 and older (CNIP).
+
+The chart is provided by The Hamilton Project and Brookings.

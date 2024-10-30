@@ -1,0 +1,27 @@
+The chart named "Exhibit 5" from Goldman Sachs Global Investment Research depicts the trend of global market implied Equity Risk Premia (ERP) across different regions from around 2001 to 2023. The ERP is expressed as a percentage and represents the extra return that investing in the stock market provides over a risk-free rate.
+
+Key points:
+
+1. **Regions Analyzed:**
+   - Asia Pacific ex Japan (shown in grey)
+   - Europe (shown in dark blue)
+   - Japan (shown in light blue)
+   - US (shown in green)
+   - World* (an aggregate metric, shown in red)
+   
+2. **Trends from 2001–2023:**
+   - The ERP across all regions has experienced significant fluctuations over the years.
+   - Peaks in ERP often coincide with periods of economic and financial uncertainty.
+   - There has been a general downward trend in ERP from around 2008-09 across most regions since the aftermath of the financial crisis, with occasional spikes.
+
+3. **Current ERP Values:**
+   - As of 2023, the latest ERPs are:
+     - Asia Pacific ex Japan: 6.9%
+     - Europe: 4.3%
+     - Japan: 4.2%
+     - US: 2.9%
+     - World: 4.3%
+
+The chart highlights that the equity risk premiums have fallen considerably across most regions recently, indicating potentially lower expected returns from equity investments compared to historical averages. This could imply diminished perceived risk or increased investor confidence, although it can vary based on regional economic conditions and investor sentiment. 
+
+This data is crucial for investors as it helps gauge the extra return demanded for taking on the risk of investing in equities over safer investments like government bonds, guiding their investment decisions.

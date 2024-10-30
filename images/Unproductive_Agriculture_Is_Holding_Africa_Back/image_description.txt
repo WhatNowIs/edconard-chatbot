@@ -1,0 +1,27 @@
+The provided image is a line graph titled "Change since 1961 in agricultural productivity, accounting for all inputs including land and labor." The baseline level of productivity in 1961 is set at 100.
+
+### Key Information:
+
+1. **Time Frame**: The graph covers the period from 1961 to around 2020.
+2. **Geographical Focus**: 
+   - World (represented by a dark line)
+   - Sub-Saharan Africa (represented by a light line)
+3. **Source**: U.S. Department of Agriculture
+4. **Presentation**: Presented by The New York Times
+
+### Summary:
+
+The graph illustrates the change in agricultural productivity globally and in Sub-Saharan Africa since 1961. Both trends start at a productivity level of 100 in 1961.
+
+- **World**: 
+  - There has been a consistent and significant increase in global agricultural productivity from 1961 to 2020. 
+  - By 2020, global productivity has increased to around 180, indicating a robust and continual upward trend.
+
+- **Sub-Saharan Africa**: 
+  - Productivity has shown a much slower increase compared to the global trend.
+  - There are fluctuations over the years, but overall, the increase is modest.
+  - By 2020, productivity in Sub-Saharan Africa is slightly above 120, suggesting it has lagged considerably behind the global productivity growth.
+
+### Conclusion:
+
+While global agricultural productivity has seen substantial improvements since 1961, the productivity increase in Sub-Saharan Africa has been much slower and less consistent. This highlights a significant disparity in agricultural advancements between the global average and the Sub-Saharan African region.

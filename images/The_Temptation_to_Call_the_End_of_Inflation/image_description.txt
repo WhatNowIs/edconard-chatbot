@@ -1,0 +1,14 @@
+The image presents a graphical representation of the Monthly Global Liquidity Cycle and the monetary base changes in major regions, contrasted in local currency terms and USD terms. 
+
+Key elements in the graph include:
+
+1. **Monthly Global Liquidity Cycle (Red Line - LHS)**: This index fluctuates significantly from 2011 to 2022. It peaks sharply around 2013 and 2020, and dips to lower levels around 2014 and 2018, and again declines steeply after 2021.
+
+2. **Major Regions: Weekly Series, Monetary Base in Local Currency Terms (Orange Line - RHS)**: This line depicts the 3-month annual percentage change in the monetary base of major regions in their local currency. It shows considerable volatility with notable peaks around 2013, 2018, and an exceptionally high peak in 2020, then declines sharply post-2020.
+
+3. **Major Regions: Weekly Series, Monetary Base in USD Terms (Gray Line - RHS)**: This line represents the 3-month annual percentage change in the monetary base of major regions in USD. Its path mirrors the local currency terms, showing peaks around the same periods but with its variations in magnitude, especially a highly pronounced peak in 2020.
+
+The data suggest that asset market booms continue 1-2 years after a peak in the liquidity cycle and that banking crises typically occur within 1-2 years of a liquidity cycle trough as highlighted in the note below the graph.
+
+**Summary**:
+The graph tracks the global and regional monetary liquidity conditions from 2011 to 2022. Peaks in liquidity are followed by asset market booms while troughs often predict banking crises. This cyclical pattern is insightful for understanding the influence of global and regional liquidity on financial market stability.

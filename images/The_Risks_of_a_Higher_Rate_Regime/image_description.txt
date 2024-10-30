@@ -1,0 +1,13 @@
+The graph in the image, titled "Exhibit 6: A Further Repricing of Risk Assets in Response to Higher Interest Rates Could Add Substantially to the Drag on GDP Growth from the Tightening in Financial Conditions Seen So Far," presents data on the potential impact on GDP growth due to further repricing of risk assets amid higher interest rates.
+
+The x-axis shows the scenarios with different changes in equity prices, including:
+- Today's scenario (0% change in S&P 500)
+- 2006-2007 average (-18%)
+- Historical 50th percentile (-23%)
+
+The y-axis indicates the GDP growth hit over one year in percentage points. The graph highlights the following:
+- In today's scenario (0% change in S&P 500), there is no additional drag on GDP growth.
+- In the 2006-2007 average scenario (-18% change in S&P 500), the GDP growth hit is around -0.8 percentage points.
+- In the historical 50th percentile scenario (-23% change in S&P 500), the GDP growth hit is around -1.1 percentage points.
+
+These data points suggest that significant repricing in equity markets, potentially triggered by higher interest rates, could have a notable negative impact on GDP growth. The source of this analysis is Goldman Sachs Global Investment Research.

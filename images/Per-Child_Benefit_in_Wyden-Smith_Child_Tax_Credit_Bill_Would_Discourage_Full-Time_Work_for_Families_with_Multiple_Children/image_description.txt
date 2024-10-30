@@ -1,0 +1,9 @@
+The figure illustrates post-tax, post-transfer income for a single parent with three children in 2023, based on varying levels of tax unit earnings. It highlights the combined contributions of the Child Tax Credit (CTC), Earned Income Tax Credit (EITC), and Supplemental Nutrition Assistance Program (SNAP).
+
+- The grey area at the bottom represents earnings after federal income tax and employee-paid payroll tax.
+- The light green area shows the impact of SNAP benefits.
+- The pink area demonstrates the contribution of the EITC.
+- The light blue area represents the CTC under existing law.
+- The dark blue area at the top indicates the additional post-tax, post-transfer income with the proposed per-child refundable CTC.
+
+The accompanying text explains that the figure takes into account the federal income tax, payroll taxes, and shelter costs of $1,500 per month, but does not include other deductions. It applies current 2023 tax law and incorporates proposed changes to the CTC, assuming a maximum refundable amount of $1,800 per child, with 45% of earned income above $2,500 before phase-out. The SNAP benefits follow parameters effective from October 1, 2023.

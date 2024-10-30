@@ -1,0 +1,13 @@
+This image is a graph illustrating the average annual percentage increase in "deaths of despair" (fatal drug overdoses, alcohol-related deaths, and suicides) in the United States by county. The data is divided into two time periods: 2000-2010 and 2011-2022.
+
+Key points from the graph:
+
+1. **Time Periods**: The data tracks changes over two distinct periods, 2000-10 and 2011-22.
+2. **Demographics**: The counties are categorized by the share of working-class whites, from lowest to highest.
+3. **Trends over Time**:
+   - For 2000-10, there is a noticeable increase in deaths of despair as the share of working-class whites increases.
+   - For 2011-22, the average annual percentage increase in deaths of despair is higher across all categories compared to 2000-10, though the trend decreases slightly in counties with the highest share of working-class whites.
+4. **Magnitude**: The graph demonstrates that deaths of despair are rising more steeply in counties with a higher share of working-class whites in the 2011-22 time period compared to 2000-10.
+5. **Sources**: The data sources include the CDC, Census Bureau, and The Economist.
+
+Overall, the chart highlights a concerning trend: deaths of despair are increasing among working-class whites, with a steeper increase observed in the more recent decade.

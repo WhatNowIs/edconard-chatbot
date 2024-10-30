@@ -1,0 +1,8 @@
+The image is a line graph titled "Pedal to the Metal," depicting Chinese auto exports from 2017 to 2023. The y-axis shows the number of auto exports in thousands (ranging from 0 to 400K), and the x-axis represents the years from 2017 to 2023.
+
+Key observations:
+- From 2017 to 2020: Chinese auto exports remained relatively stable, with minor fluctuations, staying below 100K units.
+- From 2021 onwards: There was a significant upward trend in Chinese auto exports, with substantial growth marking a sharp rise.
+- As of late 2022 and early 2023: Exports hit a peak nearing the 400K mark, demonstrating a continued upward trend and reaching the highest recorded level in the provided timeline.
+
+In summary, Chinese auto exports have experienced dramatic growth, particularly from 2021 to 2023, indicating a robust increase in the automobile export sector.

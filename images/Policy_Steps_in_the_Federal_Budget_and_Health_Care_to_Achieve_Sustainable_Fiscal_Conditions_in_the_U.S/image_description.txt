@@ -1,0 +1,31 @@
+The table titled "Comparison of Projections for Select Years (% of GDP)" provides projections for various fiscal metrics across several years: 2027, 2030, 2032, 2052, 2072, and 2095. These projections cover healthcare spending, budget metrics, and program spending.
+
+### Health Care Spending
+- **CMS (2022)** provides projections starting in 2030, with healthcare spending increasing from 19.6% to 32.4% of GDP by 2095.
+- **MPW** forecasts a rise in healthcare expenditure from 17.8% in 2027 to 38.9% by 2095.
+
+### Budget
+#### CBO (2024)
+- **Debt as a percentage of GDP** increases from 105% in 2027 to 160% by 2052.
+- **Deficit** rises from 5.2% to 8.3% over the same period.
+- **Interest Spending** climbs from 3.3% to 6.0%.
+
+#### MPW
+- **Debt** is forecasted to increase from 103% in 2027 to 675% by 2095.
+- **Deficit** rises from 4.7% to 27.3%.
+- **Interest Spending** increases substantially from 2.3% to 14.7%.
+
+### Program Spending
+#### Social Security
+- **Trustees (2024)** project an increase from 5.6% of GDP in 2027 to 6.0% by 2095.
+- **MPW** shows a rise from 5.3% in 2027 to 7.4% by 2095.
+
+#### Medicare
+- **Trustees (alternative)** project an increase in Medicare spending from 4.4% to 8.2% between 2027 and 2095.
+- **MPW** forecasts an increase from 4.0% to 10.8%.
+
+#### Medicaid
+- **MPW** indicates a gradual increase in Medicaid spending from 3.0% to 6.0% from 2027 to 2095.
+
+### Summary
+The projections indicate a substantial rise in healthcare spending, public debt, deficits, and interest payments as a share of GDP over the coming decades. Notably, healthcare spending (both under CMS and MPW) and debt levels (particularly under MPW) are projected to escalate significantly. Program spending for Social Security, Medicare, and Medicaid is also expected to increase, with Medicare showing the most significant rise. These forecasts underscore potential fiscal challenges related to healthcare and social safety net programs over the long term.

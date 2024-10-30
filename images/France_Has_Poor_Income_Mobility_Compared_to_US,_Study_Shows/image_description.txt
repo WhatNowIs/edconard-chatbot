@@ -1,0 +1,15 @@
+The chart from Insee illustrates the difficulty of moving out of one's income bracket in France over a span of 16 years, using data from 2003 to 2019. The findings show that a significant proportion of individuals remained in their original income quintile.
+
+Key points:
+- Almost two-thirds of individuals in the top and bottom income quintiles in 2003 were still in the same quintile 16 years later.
+- The first (lowest) income quintile in 2019 is predominantly composed of individuals who were also in the lowest income quintile in 2003.
+- The fifth (highest) income quintile in 2019 majorly consists of individuals who were in the highest income quintile in 2003.
+
+Percentage distribution for the income quintiles over the 16-year period is as follows:
+- First (lowest) in 2019 -> Major portion remains red, with noticeable portions extending to second, third, fourth, and fifth quintiles.
+- Second in 2019 -> Blue portion is predominant, with some shifts to third, fourth, and fifth quintiles.
+- Third in 2019 -> Yellow is predominant with notable shifts from first, second, and into fourth, fifth quintiles.
+- Fourth in 2019 -> Yellow majorly with significant segments from third and shifts extending into first, second, and some fifth quintiles.
+- Fifth (highest) in 2019 -> Green and consistent with substantial stabilization from the highest quintile with some shifts from lower quintiles but relatively stable.
+
+These patterns suggest low mobility across income quintiles, indicating a lack of substantial changes in economic status over time for most individuals.

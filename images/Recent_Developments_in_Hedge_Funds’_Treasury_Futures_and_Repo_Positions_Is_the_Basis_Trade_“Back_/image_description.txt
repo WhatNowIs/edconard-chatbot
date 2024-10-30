@@ -1,0 +1,34 @@
+The provided image displays a line graph titled "Figure 3. Leveraged Fund Short Treasury Futures," which illustrates the short positions of leveraged funds on treasury futures, segmented by different maturities. The graph spans from 2006 to early 2023, sourced from CFTC Traders in Financial Futures data.
+
+### Key Insights:
+
+1. **Time Period**:
+   - The data covers a period from early 2006 until early 2023.
+
+2. **Short Position Categories**:
+   - The graph differentiates between two categories:
+     - **2/5/10 Year Treasuries** marked by a solid blue line.
+     - **10-Year Ultra/Bond/Ultra-Bond Treasuries** marked by a dashed red line.
+
+3. **$ Billions in Short Positions**:
+   - The y-axis represents the total dollar amount in billions of short positions held.
+
+### Observations:
+
+1. **Overall Increase in Short Positions for 2/5/10 Year Treasuries**:
+   - There has been a significant and increasing trend in short positions for 2/5/10 Year Treasuries, particularly notable after 2016.
+   - The short positions reached their peak right before 2020, followed by a decline and a subsequent sharp increase towards early 2023.
+
+2. **Relative Stability in 10-Year Ultra/Bond/Ultra-Bond Treasuries**:
+   - The short positions for 10-Year Ultra/Bond/Ultra-Bond Treasuries showed a relatively stable increase over the same period.
+   - The growth in this segment is gradual and much less volatile compared to the 2/5/10 Year Treasuries.
+
+3. **Disparity in Volatility**:
+   - The volatility and peaks are more prominent in the blue line (2/5/10 Year Treasuries) than in the red line (10-Year Ultra/Bond/Ultra-Bond Treasuries), signifying that shorter-to-intermediate maturity treasuries are more actively shorted by leveraged funds.
+
+4. **Recent Trends**:
+   - The sharp increase in short positions in the 2/5/10 Year Treasuries category in early 2023 is particularly noteworthy, highlighting a possible trend or response to recent economic or market conditions.
+
+### Conclusion:
+
+The graph reveals a pronounced and volatile growth in leveraged fund short positions on 2/5/10 Year Treasury Futures over the past decade, with a noticeable peak around 2019 and another steep rise in early 2023. In contrast, the short positions on longer-term 10-Year Ultra/Bond/Ultra-Bond Treasuries have grown more steadily and with less volatility over the same period. This suggests that leveraged funds are more active and responsive to market conditions in shorting shorter-to-intermediate maturity treasuries compared to longer-term bonds.

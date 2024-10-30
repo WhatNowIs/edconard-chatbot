@@ -1,0 +1,14 @@
+The graph from the Federal Reserve Economic Data (FRED) presents two key economic indicators from 2006 to 2022:
+
+1. **Consumer Price Index (CPI) for All Urban Consumers: All Items in the U.S. City Average (Year-Over-Year Percent Change)** - This is indicated by the blue line. The CPI represents changes in the price level of a basket of consumer goods and services purchased by households, providing a measure of inflation.
+
+2. **Federal Funds Effective Rate** - This is indicated by the red line. The Federal Funds Rate is the interest rate at which depository institutions trade federal funds (balances held at Federal Reserve Banks) with each other overnight. It influences short-term interest rates and is a key tool used by the Federal Reserve to control monetary policy.
+
+Key Observations:
+- **2008-2009 Financial Crisis:** Both CPI and the Federal Funds Rate show significant volatility. During the recession in 2008-2009, indicated by the shaded area, the CPI saw a substantial drop, and subsequently, the Federal Reserve cut the Federal Funds Rate to near-zero levels to stimulate the economy.
+- **Post-Recession Recovery:** From 2010 to 2016, the Federal Funds Rate remained low to promote economic recovery. The CPI saw moderate fluctuations but remained relatively stable.
+- **Gradual Rate Increase:** Starting around 2016, the Federal Reserve gradually increased the Federal Funds Rate in response to a strengthening economy, reaching approximately 2.5% by late 2018. CPI saw moderate increases during this period.
+- **COVID-19 Pandemic Impact:** The onset of the pandemic in 2020 led to a brief but sharp drop in CPI. The Federal Reserve again significantly reduced the Federal Funds Rate to near-zero to mitigate economic impacts.
+- **Recent Trends (2021-2022):** There has been a sharp increase in CPI, indicating rising inflation. Correspondingly, the Federal Reserve has begun to raise the Federal Funds Rate to combat inflation, evident towards the end of the graph.
+
+In summary, the chart highlights the interplay between inflation (CPI) and the Federal Funds Rate over the past 16 years, showcasing how economic crises and recoveries influenced monetary policy decisions.

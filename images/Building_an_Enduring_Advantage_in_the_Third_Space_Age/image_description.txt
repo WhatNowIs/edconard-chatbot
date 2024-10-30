@@ -1,0 +1,15 @@
+The chart titled "Figure 3. Effective Launch Capacity, by Country Group" illustrates the equivalent metric tons to Low Earth Orbit (LEO) for different country groups from 2000 to 2023. The data is segmented by the following groups: United States, Soviet Union/Russia, Other, NATO Ally, Major Non-NATO Ally, and China.
+
+Key insights from the chart:
+
+1. **United States**: The US consistently leads in launch capacity, with notable growth beginning around 2016. By 2023, the capacity saw a significant increase, exceeding 2,500 metric tons to LEO.
+
+2. **China**: China's launch capacity has shown a steep upward trend starting around 2015, and by 2023, it holds the second-largest capacity, following the US.
+
+3. **Soviet Union/Russia**: Russia's contribution appears dominant in the early 2000s but stabilizes around 500 metric tons annually in recent years.
+
+4. **NATO Allies & Major Non-NATO Allies**: These groups maintain a relatively small but steady contribution to the overall capacity.
+
+5. **Other Countries**: Contributions from other countries appear minimal compared to major space-faring nations but have grown slightly over the years.
+
+Overall, the chart depicts a significant increase in launch capacity over the last two decades, dominated by the United States and China, particularly from 2020 onwards.

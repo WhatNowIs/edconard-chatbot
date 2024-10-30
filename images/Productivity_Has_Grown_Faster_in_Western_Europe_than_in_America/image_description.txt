@@ -1,0 +1,35 @@
+This image presents a comparative analysis of GDP for selected countries using three different measures: GDP per person, GDP at purchasing-power parity (PPP) per person, and GDP at PPP per hour worked for the year 2022. Here is a summary:
+
+### Key Insights:
+
+1. **GDP per Person (Current Prices, $):**
+   - Norway, Luxembourg, and Denmark rank highest.
+   - The United States, Germany, and Sweden are also among the top tier.
+   - South Korea and Greece rank lower.
+
+2. **GDP at PPP Per Person:**
+   - Luxembourg, Norway, and Ireland top the list.
+   - The rankings for several countries such as Ireland and Switzerland improve significantly when using PPP adjustments.
+   - Greece, South Korea, and Croatia remain lower down the ranking.
+
+3. **GDP at PPP Per Hour Worked:**
+   - Norway again leads with the highest GDP per hour worked.
+   - The United States and Germany also perform well, indicating high productivity.
+   - South Korea and Greece have particularly low GDP per hour worked, with South Korean workers enduring particularly long working hours.
+   
+### Specific Values:
+- **Top Performers:**
+  - **Norway:** $150 per hour worked.
+  - **Luxembourg:** $125 per hour worked.
+  - **Denmark:** $101 per hour worked.
+
+- **Middle Performers:**
+  - **United States:** $90 per hour worked.
+  - **Germany and Iceland:** $87 per hour worked.
+  - **France:** $84 per hour worked.
+
+- **Lower Performers:**
+  - **South Korea:** $49 per hour worked.
+  - **Greece:** $41 per hour worked.
+
+This comparison highlights the disparities in productivity and economic performance based on different GDP measurement approaches. It reflects how cost differences, labor efficiency, and working hours impact the economic standing of each country when viewed through different financial lenses.

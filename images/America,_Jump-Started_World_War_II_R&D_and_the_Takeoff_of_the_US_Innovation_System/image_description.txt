@@ -1,0 +1,9 @@
+The image titled "Figure 1: Government-funded share of U.S. patents, 1920 to 2000" shows a bar graph that plots the share of U.S. patents funded by the government annually, from the year 1920 to 2000. The vertical axis represents the government-funded share of patents, ranging from 0.00 to 0.12. The horizontal axis represents the filing years from 1920 to 2000.
+
+Key insights from the graph include:
+
+- There is a notable increase in government-funded patents starting around 1940, reaching a peak intensity during World War II.
+- Post World War II, the share of government-funded patents starts to decline but remains relatively high until around 1970.
+- After the 1970s, there is a noticeable and steady decline in the share of government-funded patents, continuing through to 2000.
+
+The notes below the graph indicate that this data is derived from administrative records and highlight World War II as the period with the peak intensity of government-funded inventions in U.S. history. Further details about the data can be found in the appendix.

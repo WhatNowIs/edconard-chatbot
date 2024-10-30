@@ -1,0 +1,19 @@
+The chart provided shows the US Personal Consumption Expenditures (PCE) Inflation, highlighting both Headline and Core inflation rates from 2019 to 2025. 
+
+Key points of the chart:
+1. **Historical Trend (2019-2023)**:
+   - From 2019 to early 2021, both Headline and Core inflation remained relatively stable, close to the 2% target.
+   - There was a significant rise in inflation starting in mid-2021, peaking in 2022.
+   - Post-peak, the inflation rates began to decline through 2023.
+
+2. **Forecast (2024-2025)**:
+   - The projection indicates a continued decline in both Headline and Core inflation.
+   - Both are expected to stabilize around the 2% target in 2025.
+
+3. **Implication**:
+   - The chart emphasizes "Benign Inflation in May Strengthens Our Confidence in a Return to 2% in 2025". This suggests that the current inflation trends and forecasts support the expectation that inflation will moderate to the targeted 2% level by 2025.
+
+4. **Source**:
+   - The data and forecasts are provided by Haver Analytics and Goldman Sachs Global Investment Research.
+
+This chart essentially communicates optimism regarding the inflation trajectory, reinforcing confidence that inflation will return to more manageable levels by 2025, after a period of elevated rates.

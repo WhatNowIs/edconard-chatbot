@@ -1,0 +1,25 @@
+The image contains two bar charts illustrating the share of global GDP from different economic blocs from the year 2000 to 2023. It particularly examines the performance of the G7 economies compared to other regions. Here are key points from the image:
+
+1. **Economic Blocks**:
+   - G7
+   - Other advanced economies
+   - China
+   - India
+   - Russia
+   - Other countries
+
+2. **Left Chart: Share (%) of Global GDP at PPP (Purchasing Power Parity)**:
+   - Displays a decline in the G7's share of global GDP from around 45% in 2000 to approximately 30% in 2023.
+   - China's share has significantly increased, rising from about 7% in 2000 to nearly 20% in 2023.
+   - India's share has also risen, though more modestly, from approximately 3% in 2000 to about 7% in 2023.
+   - The share of other advanced economies and Russia has remained relatively stable.
+   - The share of other countries shows a moderate increase over the given period.
+
+3. **Right Chart: Share (%) of Global GDP at Market Prices**:
+   - The G7 economies start with around 65% share in 2000, declining to approximately 45% by 2023.
+   - China's share shows a significant increase from about 3% in 2000 to around 18% in 2023.
+   - India’s share has grown slightly from approximately 1.5% in 2000 to around 3% in 2023.
+   - Shares of other advanced economies, Russia, and other countries show fluctuations but remain less pronounced compared to the changes in the G7 and China.
+
+**Summary**:
+While the G7 economies remain substantial players in the global economic landscape, their dominance has been waning since 2000. This decline is primarily due to the rapid economic growth of China and, to a lesser extent, India. China's robust increase in its share of global GDP is particularly significant when measured both in PPP and market prices. Economic contributions from other advanced economies, Russia, and other regions show less dramatic changes but indicate some level of growth over the years.

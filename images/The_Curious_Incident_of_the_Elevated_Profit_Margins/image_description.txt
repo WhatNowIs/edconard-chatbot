@@ -1,0 +1,17 @@
+The image shows a chart titled "Exhibit 3: The Macro Drivers of U.S. Profit Margins (% of GNP)" spanning from Q1 1950 to Q1 2022. The data, sourced from the BEA as of April 2023, is broken down into several components:
+
+1. **Foreign (Light Brown)**
+2. **Government (Dark Red)**
+3. **Household (Light Blue)**
+4. **Investment (Dark Blue)**
+5. **Dividends (Purple)**
+6. **Profits (Green)**
+
+Key observations are as follows:
+
+- The chart plots these components as a percentage of Gross National Product (GNP) over the indicated years.
+- Generally, all categories appear relatively stable with household and investment categories maintaining a range around or below the 0% line.
+- A significant variation occurs around Q1 2020, where foreign contribution swings deeply negative, while profits experience a stark increase.
+- The stability ends sharply in recent data around Q1 2022, showing a large negative spike in government's contribution while other categories also show increased volatility.
+
+Overall, the chart provides a long-term visualization of how different macroeconomic factors have influenced U.S. profit margins as a percentage of GNP, highlighting increased volatility in recent years.

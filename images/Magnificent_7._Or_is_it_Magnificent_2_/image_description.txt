@@ -1,0 +1,17 @@
+The image is a line chart displaying the weight trends of two groups of companies in the S&P 500 index from January 1, 2021, to March 21, 2024. The first group, labeled as "5NSMA" (consisting of Alphabet, Amazon, Apple, Meta, and Tesla), is represented by an orange line on the left-hand scale (LHS). The second group, identified as "Mag2" (consisting of Microsoft and Nvidia), is represented by a blue line on the right-hand scale (RHS).
+
+Key observations from the chart:
+
+1. **5NSMA (Orange Line, LHS Scale):**
+   - Started at approximately 18.5% at the beginning of 2021.
+   - Experienced fluctuations, generally trending downward and dipping around early 2023.
+   - Showed a slight decrease recently, stabilizing at around 17% by March 2024.
+
+2. **Mag2 (Blue Line, RHS Scale):**
+   - Began at around 10.5% in early 2021.
+   - Exhibited an overall upward trend with some volatility.
+   - Demonstrated a notable increase in weight, reaching up to approximately 12.5% by March 2024.
+
+The data indicates that while the weight of the 5NSMA stocks has generally decreased over the period observed, the combined weight of Microsoft and Nvidia (Mag2) has increased, especially in the latter part of the period. This suggests a shift in market capitalization or investment focus within these tech giants in the observed timeframe.
+
+Source: Datastream via Refinitiv and J. Rangvid.

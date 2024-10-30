@@ -1,0 +1,13 @@
+The image includes two primary visual representations analyzing labor force participation rates (LFPR) from January 2021 through June 2024, particularly highlighting the role of immigration.
+
+1. **Line Chart:**
+   - The line chart on the left plots the LFPR indexed to 100 in January 2021.
+   - Three lines represent the overall participation rate (Total), native-born, and foreign-born individuals.
+   - Notably, the LFPR for foreign-born individuals (green line) shows considerable fluctuations but indicates an overall increase compared to native-born (orange line), whose rate remains relatively steady with minor increases.
+
+2. **Bar Chart:**
+   - The bar chart on the right depicts the LFPR in January 2021 and two projections for June 2024: one that includes the contribution of foreign-born individuals and another that excludes it.
+   - By June 2024, the LFPR is projected to increase, with the highest rates observed when accounting for the foreign-born population. Without the foreign-born contribution, the rate is notably lower.
+
+**Summary:**
+The data demonstrates that from January 2021 to June 2024, the inclusion of foreign-born individuals significantly elevates the labor force participation rate in the United States. While the native-born LFPR shows stability with modest growth, the foreign-born LFPR exhibits considerable increases which contribute substantially to the overall LFPR rise. The image underscores the vital role of immigration in bolstering the labor market.

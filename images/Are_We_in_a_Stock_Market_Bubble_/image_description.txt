@@ -1,0 +1,18 @@
+The image presents three charts titled "Bubble Gauge (Percentile)" and compares stock market bubbles from different eras. Below is a summary of the charts:
+
+1. **1920s Bubble**:
+   - Timeframe: 1922-1932.
+   - The bubble peaks close to 100% around 1928-1929.
+   - There is a sharp decline following the peak, indicating the crash leading into the Great Depression.
+
+2. **1990s Bubble**:
+   - Timeframe: 1992-2002.
+   - The bubble peaks again near 100% around 1998-2000.
+   - The gauge shows a significant drop after 2000, illustrating the burst of the Dot-com Bubble.
+
+3. **Today**:
+   - Timeframe: 2014-2024.
+   - Displays a peak around 2021, labeled as a bubble but does not reach as high as previous bubbles, peaking around 60%.
+   - The gauge shows a decrease after the peak, with current levels stating "Not particularly bubbly today".
+
+Overall, the charts illustrate historic and recent stock market bubbles, showing high percentile peaks during the 1920s and 1990s, followed by significant declines. The current market reflects a more moderate bubble with less extreme highs and no drastic drop-off recently, suggesting the market is less "bubbly" today compared to past crises.

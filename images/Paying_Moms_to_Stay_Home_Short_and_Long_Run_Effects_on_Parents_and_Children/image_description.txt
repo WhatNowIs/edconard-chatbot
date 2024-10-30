@@ -1,0 +1,17 @@
+The graph titled "The effect on failing rate of two cognitive test measures" presents the Dynamic Difference-in-Differences (DiD) analysis examining the impact of a supplement policy change on the failing rates of cognitive tests at ages 5/4 and any test failure at ages 4 through 6. 
+
+### Key Elements:
+1. **X-Axis:** Represents the timeline in years from the change in supplement policy (marked by the red dashed line at year 0).
+2. **Y-Axis:** Depicts the effect of the supplement on the outcome, measured in terms of the failing rate of cognitive tests, ranging from -0.03 to 0.03.
+
+### Legend:
+- **Blue dashed line with diamond markers:** Represents the cognitive test failure rate at age 5/4.
+- **Gray dashed line with triangle markers:** Represents the cognitive test failure rates for early tests, from broad measures.
+- Both lines are accompanied by 95% confidence intervals.
+
+### Observations:
+1. **Pre-Change Period (Years -3 to -1):** Both cognitive test measures show slight variations around the effect size of zero, with relatively stable confidence intervals.
+2. **Post-Change Period (Years 0 to 3):** After the policy change, both cognitive test measures show some fluctuations. Initially, there is an increase in the broad early tests measure (gray line) and a relatively more stable pattern in the age 5/4 measure (blue line), which tends to decline slightly after year 1.
+
+### Summary:
+The graph illustrates the temporal impact of a supplement policy change on the failing rates of cognitive tests at different early ages. Prior to the policy implementation, the failing rates are stable around zero effect size. After the policy change, there are slight increases in failure rates immediately following the policy change, particularly for the broad early cognitive tests, but these rates begin to level off and slightly decline in the following years. The confidence intervals, however, indicate a range of uncertainty around these estimates.

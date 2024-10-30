@@ -1,0 +1,10 @@
+The image is a line graph titled "From great heights," depicting the United States' military spending as a percentage of GDP from 1949 to 2022. 
+
+Key insights include:
+1. **Post-World War II Peak**: Military spending was very high at the beginning of the period, around 1949.
+2. **Vietnam War**: There is a noticeable peak in the 1960s during the Vietnam War, where spending was significantly high.
+3. **Decline and Oscillation**: After the Vietnam War, military spending as a percentage of GDP generally trended downward, with some oscillations.
+4. **Post-9/11 Increase**: There are additional peaks during the Afghanistan and Iraq wars in the early 2000s.
+5. **Recent Years**: In the last few years up to 2022, military spending has stabilized but remains relatively low compared to the earlier peaks of the 1960s.
+
+The graph, sourced from SIPRI, highlights the fluctuating nature of U.S. military expenditures related predominantly to major conflicts and wars.

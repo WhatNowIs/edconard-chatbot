@@ -1,0 +1,18 @@
+The figure illustrates the gap between Economic News Sentiment and the predicted economic data based on an average out-of-sample forecast error by three-year periods from 1982 to 2023. Here are the key findings:
+
+1. **Positive Sentiment Gaps**:
+   - Periods such as 1991-1993, 1994-1996, and 2003-2005 have shown significant positive forecast errors, with the highest being 0.26 from 2003 to 2005.
+   - Other notable positive gaps include 1991-1993 (0.21) and 1994-1996 (0.15).
+
+2. **Negative Sentiment Gaps**:
+   - More recent periods such as 2018-2020 and 2021-2023 have larger negative forecast errors, specifically -0.25 and -0.33, respectively.
+   - The period 1985-1987 and 2006-2008 also show notable negative gaps with -0.14 and -0.11, respectively.
+
+3. **Smaller or Neutral Gaps**:
+   - Certain periods like 1982-1984 (0.01), 1988-1990 (-0.07), 2000-2002 (0.04), and 2012-2014 (0.04) present smaller gaps, indicating that the sentiment closely matched the economic predictions.
+
+4. **Trend Analysis**:
+   - There seems to be a trend of increasing forecast errors in both the positive and negative directions over the years, with more significant positive errors in the earlier decades and more significant negative errors in the recent decades.
+
+**Conclusion**:
+The data reflects how economic news sentiment compared to predicted economic data varied significantly over the years, with recent years showing a more substantial deviation and generally more negative sentiment gaps, potentially indicating growing pessimism or a mismatch in economic expectations and actual data.

@@ -1,0 +1,10 @@
+The image is a chart showcasing the cumulative return (percentage change in total market value) of all companies in the S&P 500 throughout 2023. The performance is split into two groups: 493 stocks (depicted in blue) and 7 stocks, referred to as the Mag7 (depicted in orange). 
+
+The chart reveals that:
+
+1. The cumulative returns of the Mag7 stocks have significantly contributed to the overall S&P 500 performance, as indicated by the large orange area.
+2. The return of the remaining 493 stocks has been relatively smaller and more stable, as shown by the blue area.
+3. Throughout 2023, the Mag7 stocks have experienced greater fluctuations but also higher peaks in returns compared to the 493 stocks.
+4. The overall trend indicates that the Mag7 stocks have driven much of the market gains in 2023, with their influence becoming more pronounced towards the end of the year.
+
+This chart highlights the disproportionate impact a small subset of stocks (the Mag7) can have on the overall market performance of the S&P 500.

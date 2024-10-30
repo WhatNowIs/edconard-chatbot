@@ -1,0 +1,24 @@
+This image depicts a line graph titled "Figure 2. Harmonized Core HICP Inflation in the G7." The graph illustrates year-on-year percent changes in Harmonized Index of Consumer Prices (HICP), excluding energy and unprocessed food for G7 countries, from January 2021 to October 2023.
+
+Key insights and summary:
+
+1. **Countries Tracked**: The graph includes inflation data for Germany, the United Kingdom (UK), Euro Area, Italy, France, Japan, Canada, and the United States (US).
+
+2. **Time Frame**: The data spans from January 2021 to October 2023.
+
+3. **Inflation Trends**:
+   - **Initial Phase (Early 2021)**: Most countries displayed low inflation rates at the start of 2021, with all values being close to or below 2%.
+   - **Mid-2021 to Early 2022**: There was a noticeable upward trend in inflation rates across nearly all countries, with significant spikes observed around early 2022.
+   - **Peak (Mid-2022)**: The inflation rates peaked around mid-2022, with Germany, the UK, and the Euro Area exhibiting the highest values, reaching around 8-9%.
+   - **Comparison**: By mid-2023, the UK's inflation rate is among the highest, nearing 8%, while Japan and France exhibited more moderate rates around 3-5%. The US displayed a relatively lower rate throughout, ultimately decreasing below 4%.
+
+4. **Noteworthy Observations**:
+   - The inflation rate for Canada showed a distinctive surge in mid-2022 but significantly dropped thereafter.
+   - The Euro Area, Germany, and the UK depict relatively high inflation compared to other G7 countries toward the end of the period, staying above the 6% mark.
+   - Japan's inflation rate remained relatively stable and low until mid-2022 before seeing a gradual increase. 
+
+5. **Data Sources**: The information comes from various sources including Eurostat, ONS, BLS, Statistics Canada, MEI, and CEA analysis. Specific notes mention different indices used by regions, such as HICP for the Euro Area and CPI excluding energy and unprocessed food for Canada and the UK.
+
+6. **Date of Last Update**: The graph is accurate as of June 20, 2023, at 6:00 PM.
+
+Overall, the graph effectively illustrates the trends and volatility in core inflation rates across G7 countries over the specified period.

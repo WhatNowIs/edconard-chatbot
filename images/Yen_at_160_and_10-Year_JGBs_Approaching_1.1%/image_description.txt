@@ -1,0 +1,21 @@
+The image depicts a line graph that shows the net purchases or sales of US bonds and notes by Japanese investors from November 2010 to March 2024. The data is presented in billions of dollars on a three-month moving average basis.
+
+Key points extracted from the graph:
+
+1. **Overall Trends**: 
+   - Japanese investors have exhibited fluctuating behavior regarding US bonds and notes, alternately buying and selling over the years.
+   
+2. **Major Events**: 
+   - There are several noticeable periods where Japanese investors significantly bought foreign bonds, indicated by peaks in the graph.
+   - Conversely, there are also periods of significant selling, indicated by troughs in the graph.
+
+3. **Selling Trend**: 
+   - From mid-2022 to March 2024, there appears to be a general trend toward selling foreign bonds, especially notable in the decline observed during this period.
+   
+4. **Buying Trend**: 
+   - Conversely, high points such as in 2016-2017 and 2020-2021 suggest periods of increased purchases of US bonds and notes.
+
+5. **Recent Activity**: 
+   - The period from late 2021 through 2023 shows significant fluctuations but a general overarching trend of decreasing net purchases, indicating a move towards net selling of US bonds and notes.
+
+The graph underscores the dynamic nature of Japanese investors' engagement with US Treasuries, marked by significant oscillations in their buying and selling activities over the past decade and more recent years indicating a propensity towards selling.

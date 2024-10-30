@@ -1,0 +1,19 @@
+This chart depicts the estimated drug overdose deaths in the U.S. over the preceding 12 months from 2015 to 2023. The data is sourced from the NVSS/CDC and is presented by Financial Times. 
+
+Here are key insights from the chart:
+
+1. **Overall Trend**: There is a significant upward trend in total drug overdose deaths from 2015 through 2022, peaking in 2022 before slightly declining in 2023.
+
+2. **Deaths by Opioid Type**: 
+   - **Total**: The total number of drug overdose deaths has seen a marked increase, reaching over 100,000 at its peak.
+   - **All opioids** (including synthetic opioids like fentanyl): Deaths involving all opioids are a major component of the total overdose deaths.
+   - **Specific trend for Synthetic opioids** (such as fentanyl): There is a notable rise in deaths related to synthetic opioids, indicating their growing impact over time.
+
+3. **Annual Comparisons**: 
+   - From 2015 to 2017, the growth in overdose deaths was moderate.
+   - Between 2017 and 2019, there was a sharper increase.
+   - The most significant rise occurs post-2019, reaching its peak in 2022.
+   
+4. **Recent Decline**: The chart indicates a slight decline in overdose deaths from the peak in 2022 to early 2023, though the numbers remain high relative to earlier years.
+
+Overall, the chart highlights the escalating crisis of drug overdoses in the U.S., particularly driven by synthetic opioids like fentanyl.

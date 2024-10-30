@@ -1,0 +1,15 @@
+The image is a graph titled "Figure 2: Technology exposure by occupation skill (wage)" which visualizes the relationship between occupational wage percentiles and technology exposure, separated into two categories:
+
+1. **Labor-saving (routine) exposure**: Represented by the red curve, it peaks around the 30th percentile of occupational wages and then declines as wages increase.
+2. **Labor-augmenting (non-routine) exposure**: Represented by the blue curve, it starts low and increases steadily with wage percentiles, becoming most significant at higher wage percentiles.
+
+### Key Observations:
+- Routine technological exposure (labor-saving) is highest for middle-income occupations and decreases for higher-wage occupations.
+- Non-routine technological exposure (labor-augmenting) is positively correlated with wage percentiles, being minimal in low-wage occupations and increasing significantly with higher wages.
+
+### Note:
+- The graph utilizes averages of technological exposure in employment-weighted standard deviation units and ranks occupations by average wages for a given year.
+- The figure is generated using a measure based on patent-to-industry probabilistic links and Decennial Census data for the years 1980, 1990, and 2000.
+- Further details and computations are referenced from Goldschlag, Lybbert, and Zolas (2016).
+
+This depiction underscores the varying impact of technology across different levels of occupational wages, highlighting greater labor-saving technology exposure in lower-wage jobs and greater labor-augmenting technology exposure in higher-wage jobs.

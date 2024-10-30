@@ -1,0 +1,14 @@
+The image presents a graph titled "Gross cross-border financial transactions, 4q rolling sums (USD trillions)" which spans from the year 2000 to 2022. The graph illustrates the volume of inbound and outbound financial transactions for the U.S., Euro area, and China. Each region is represented by different shades of blue, with the darkest for the U.S., medium for the Euro area, and lightest for China.
+
+Key observations from the graph include:
+
+1. **Rise and Fall Trends (2000-2008)**: Initially, all regions show a steady increase in cross-border financial transactions beginning around 2003-2004, peaking close to 2007-2008 before the steep decline during the financial crisis. 
+
+2. **Post-Crisis Fluctuations (2008-2018)**: Following the 2008 financial crisis, transactions experienced periods of recovery and decline, most notably with peaks around 2010-2011 and again around 2014-2015. The financial activities did not reach the pre-crisis high.
+
+3. **Recent Dynamics (2018-Present)**: The most recent years highlighted (2018-2022) show another peak and a subsequent decline, reflecting increased activity post-COVID-19 pandemic and then a reduction.
+
+4. **Relative Income Decline**: The text indicates that the total inbound and outbound financial flows are now lower relative to income than at any time since the financial crisis, highlighting a significant reduction in international financial transactions relative to income following a short-term increase post-pandemic.
+
+### Summary
+The graph depicts the time-varying volume of cross-border financial transactions for the U.S., Euro area, and China, evidencing major peaks around the periods of economic expansion and notable declines during crises, especially the 2008 financial meltdown and recent reductions post-COVID-19. The recent years saw an increase and subsequent decline, with financial flows now being lower relative to income, marking a significant shift in international financial activities.

@@ -1,0 +1,16 @@
+The chart titled "Chinese Real Income Growth Has Been Slowing" depicts the per capita income growth in China as a rolling five-year average, from 1980 to around 2022. The data is showcased via two lines:
+
+1. **Official data** (blue line): This data shows a significant decline over time. In the early 1980s, the growth was around 6%. It peaked at about 11% in the early 1990s, dropped sharply in the late 1990s, and rose again to around 10% in the mid-2000s. Since then, it has gradually fallen, reaching approximately 5.1% in recent years.
+
+2. **Penn Table data** (red line): This dataset also displays a notable slowdown. Beginning at around 6% in the early 1980s, it fluctuated, lowering to about 2% in the early 1990s, rose back to over 7% in the mid-1990s, and since then, it has seen several fluctuations. The most recent data indicate a drop to around 3.2%.
+
+Overall, both sets of data indicate that Chinese per capita income growth has been declining sharply over the past few decades, with the official data showing a slightly higher growth rate in recent years compared to the Penn Table data.
+
+**Sources:**
+- China National Bureau of Statistics
+- Penn World Table, version 10.01
+- Total Economy Database (Conference Board)
+
+**Notes:**
+- Per capita income growth is GDP growth minus population growth.
+- Growth data for 2020 through 2022 (as part of five-year averages) are from the Total Economy Database.

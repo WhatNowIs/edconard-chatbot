@@ -1,0 +1,17 @@
+The image is a scatter plot titled "Figure 1: Change in Headline CPI Inflation Rate versus Government Spending." The x-axis represents "Excess govt spending/(gross public debt)*duration," and the y-axis represents "Change in headline inflation, 2020-22 vs. 2010-19."
+
+Key observations:
+1. **Correlation Between Variables**: There is a positive correlation between excess government spending and the increase in the headline CPI (Consumer Price Index) inflation rate.
+2. **Data Points**: Each data point represents a country, showing varying degrees of change in inflation rate and government spending.
+3. **Outliers**:
+   - **CZE (Czech Republic)**: Shows the highest increase in headline CPI inflation rate (~0.06) and significant excess government spending (~0.07).
+   - **POL (Poland)**: Also indicates a high inflation increase (~0.045) with notable government spending (~0.07).
+   - **NOR (Norway)**: Shows a slight decrease in both inflation (-0.01) and government spending (~-0.06).
+
+4. **Concentration**: The majority of the countries are clustered around smaller increases in inflation (0 to 0.02) with varying government spending.
+   - For instance, countries like USA, GBR (United Kingdom), and CAN (Canada) show moderate changes in both variables.
+
+5. **Trend Line**: A trend line indicates a general upward trend, suggesting that higher excess government spending is associated with higher increases in headline CPI inflation rate for the period 2020-22 compared to 2010-19.
+
+Summary:
+The scatter plot illustrates a positive correlation between excess government spending and the increase in headline CPI inflation rate across various countries from 2020-22 compared to 2010-19. Countries like the Czech Republic and Poland exhibit significant increases in both government spending and inflation rates, while others, such as Norway, show reductions in both. The trend line in the plot indicates that greater excess spending generally leads to higher inflation rate increases.

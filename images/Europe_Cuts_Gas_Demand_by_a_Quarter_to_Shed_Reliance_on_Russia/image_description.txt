@@ -1,0 +1,26 @@
+The graph illustrates the reduction in energy consumption for the EU and six individual countries (Germany, Netherlands, Italy, Spain, and France) from January to November, comparing each month's consumption to the five-year average.
+
+Key points of the summary:
+1. **Overall Trend**:
+   - A consistent reduction in energy consumption is observed across the board in the EU and all selected countries throughout the year.
+   - The reduction deepens over the months, notably after mid-year.
+
+2. **EU (light blue)**:
+   - Shows a significant and consistent reduction, reaching around 30% below the five-year average by November.
+
+3. **Germany (pink)**:
+   - Fluctuates initially but shows a gradual decrease, reaching close to 20% reduction by November.
+
+4. **Netherlands (green)**:
+   - Significant initial reduction in early months, levels off mid-year, and decreases again towards the end of the year, approaching a 15-20% reduction.
+
+5. **Italy (blue)**:
+   - Gradual reduction with notable dips and rises, ending the year at approximately 20% below the five-year average.
+
+6. **Spain (dark blue)**:
+   - Displays a steady decline with several fluctuations, ultimately reaching about a 15-20% reduction by November.
+
+7. **France (red)**:
+   - Initially mirrors the EU trend closely but starts diverging around mid-year, ending up with a reduction of around 15% by the end of the year.
+
+The data indicates a broad and consistent effort across these countries and the EU to reduce energy consumption significantly below the five-year average throughout the year.

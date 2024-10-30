@@ -1,0 +1,35 @@
+The chart titled "Share of Foreign Born in U.S. States and Washington, D.C., 2022" represents the proportion of foreign-born individuals residing in each of the U.S. states and Washington, D.C., measured as a percentage of the total state population. 
+
+Key Points Summary:
+
+1. **Highest Proportion:**
+   - **California** has the highest share of foreign-born residents, with around 26%.
+
+2. **States with High Foreign-Born Populations (greater than 15%):**
+   - New Jersey
+   - New York
+   - Florida
+   - Nevada
+   - Hawaii
+   - Massachusetts
+   - Texas
+
+3. **States with Moderate Foreign-Born Populations (between 10% and 15%):**
+   - Maryland
+   - Washington
+   - Connecticut
+   - Washington, D.C.
+   - Rhode Island
+   - Illinois
+   - U.S. average (shown in red for comparison)
+
+4. **States with Lower Foreign-Born Populations (less than 10%):**
+   - The remaining states, with the lowest shares noted in **West Virginia, Mississippi, Montana**, and **South Dakota**, each below approximately 2%.
+
+5. **Source of Data:**
+   - The information is compiled and calculated by the Federal Reserve Bank of St. Louis, using the American Community Survey and authors' calculations.
+
+6. **Comparative Insight:**
+   - This chart visually emphasizes the variation in foreign-born population distribution across different states, highlighting regions with significant immigrant communities versus those with fewer foreign-born residents.
+
+The summarized insights indicate regions with high immigrant integration compared to those with smaller immigrant populations, providing a comprehensive understanding of immigration distribution in the U.S. for 2022.

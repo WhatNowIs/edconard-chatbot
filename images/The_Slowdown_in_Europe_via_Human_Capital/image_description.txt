@@ -1,0 +1,24 @@
+The image is a line graph showing the ratio of employees to the working-age population for eight countries (DEU: Germany, ESP: Spain, FRA: France, GBR: United Kingdom, ITA: Italy, NLD: Netherlands, USA: United States) over the span of 1950 to 2010. 
+
+### Key Insights:
+
+1. **General Trends:**
+   - The curves for most countries move relatively closely together within the range of 0.6 to 0.8 employee share, with fluctuations over the decades.
+   - There is a notable dip for most countries around the 1980s and early 1990s, followed by a gradual rise or stabilization.
+
+2. **Country-Specific Trends:**
+   - **Germany (DEU):** Started near 0.8, showed a dip around the 1990s, and then rose back closer to 0.8 in recent years.
+   - **Spain (ESP):** Exhibits more volatility and lower levels compared to other countries, particularly a significant decline in the 1980s reading around 0.6.
+   - **France (FRA):** Maintains a relatively steady trend, fluctuating around 0.7 with minor deviations.
+   - **United Kingdom (GBR):** Similar to France, maintains stability around 0.7-0.75.
+   - **Italy (ITA):** Shows a dip in the late 1970s through 1980s, reaching below 0.7, but gradually increasing closer to others towards recent years.
+   - **Netherlands (NLD):** The trend is relatively stable around 0.7, similar to other countries.
+   - **United States (USA):** Exhibits consistent performance around 0.7, with minor fluctuations.
+
+3. **Comparison:**
+   - Germany appears to have the highest consistent ratio among the countries.
+   - Spain has the most noticeable decline during the 1980s but shows improvement later.
+   - Other countries exhibit a relatively stable pattern throughout the observed period.
+
+### Summary:
+The graph highlights the fluctuating yet overall stable nature of the employee share of the working-age population from 1950 to 2010 among the observed countries. Germany consistently leads, while Spain experiences more significant volatility. The period of the 1980s and early 1990s marked noticeable declines across several nations, with an uptrend observed in subsequent years. Over time, there is a convergence around similar employee share ratios across these countries.

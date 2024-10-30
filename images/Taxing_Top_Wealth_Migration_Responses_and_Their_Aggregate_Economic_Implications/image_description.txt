@@ -1,0 +1,15 @@
+The image presents four graphs titled "Figure 7: Effects of Wealthy Out-Migration on Closely-Held Businesses Outcomes, Top 2%". Each graph illustrates the impact of an owner's out-migration on different business performance metrics overtime, relative to the year of out-migration (year 0).
+
+**A. Probability That Firm Is Alive:**
+- The probability of a firm being alive decreases significantly after the owner's out-migration, with a drop of 27.41 percentage points (2.91 standard deviations).
+
+**B. Number of Employees:**
+- The average number of employees falls notably post-migration. The average number before out-migration was 8.93 employees, and the number decreases by 33.26% (7.72 standard deviations) following the owner's out-migration.
+
+**C. Value Added:**
+- The economic value added by the firm also shows a sharp decline after the owner's departure. Before out-migration, the average value added was SEK 8,198,860. The reduction in value added is 34.22% (7.91 standard deviations).
+
+**D. Net Turnover:**
+- Net turnover experiences a significant drop as well. The average turnover in the year before out-migration was SEK 21,474,527. Post-out-migration, net turnover decreases by 31.71% (7.19 standard deviations).
+
+Overall, the data clearly indicate that wealthy out-migration has substantial negative impacts on the survival probability of firms, their employment levels, value added, and net turnover.

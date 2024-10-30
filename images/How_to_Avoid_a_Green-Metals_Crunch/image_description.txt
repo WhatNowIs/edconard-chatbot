@@ -1,0 +1,15 @@
+The image provides a forecast of the cumulative demand for various materials needed for global decarbonization by 2050, measured in millions of tonnes. Here is a detailed summary:
+
+1. **Steel**: The demand is the highest, projected at 4,996 million tonnes.
+2. **Aluminium**: The second-highest with a projected demand of 962 million tonnes.
+3. **Copper**: Projected demand is 631 million tonnes.
+4. **Graphite**: Expected demand is 168 million tonnes.
+5. **Nickel**: Projected at 99 million tonnes.
+6. **Silicon**: Forecasted demand is 65 million tonnes.
+7. **Lithium**: Projected at 19 million tonnes.
+8. **Cobalt**: Forecasted demand is 6 million tonnes.
+9. **Neodymium**: Projected demand is 2.7 million tonnes.
+10. **Uranium**: Expected to have a demand of 2.3 million tonnes.
+11. **Silver, Palladium, Platinum**: Combined demand is 0.4 million tonnes.
+
+This data has been sourced from BP and the Energy Transitions Commission. The graph highlights the significant increase in demand for key materials required to achieve decarbonization goals by the year 2050, emphasizing the need for sustainable resource planning and management.

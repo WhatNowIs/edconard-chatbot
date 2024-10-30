@@ -1,0 +1,8 @@
+The image presents a line graph tracking the cumulative kilometers of subsea cables laid from 1990 to 2025 by companies based in France, the US, Japan, and China. Key observations and summary points are as follows:
+
+- **France**: Has the highest cumulative total of subsea cables laid, surpassing 500,000 km by 2025, well beyond the distance from Earth to Moon (384,400 km).
+- **US**: The second-highest, with cumulative subsea cables reaching over 400,000 km by 2025.
+- **Japan**: Reaches just over 200,000 km, showing considerably lower deployment compared to France and the US.
+- **China**: Trails behind, with its cumulative total slightly above 150,000 km by 2025.
+
+The graph also includes the circumference of the Earth (approx. 40,000 km) and the distance from the Earth to the Moon as reference points. It mentions that projects involving multiple suppliers amount to a total of 279,000 km but are not included in the respective national counts.

@@ -1,0 +1,15 @@
+The image is a line graph depicting the percentage of office space that is vacant in three major cities: Chicago, Los Angeles, and New York City, from around 2000 to Q1 2023. 
+
+Key Points:
+1. **Time Frame**: The data spans nearly 23 years, from 2000 to Q1 2023.
+2. **Cities Compared**:
+   - **Chicago**: Starting at around 12% vacancy in 2000, it generally fluctuates between 10% and 20%. After the start of the pandemic, vacancy rates sharply increase, reaching nearly 20% by Q1 2023.
+   - **Los Angeles**: Beginning just below 10% vacancy in 2000, it sees fluctuations with peaks around 15%. After the pandemic, vacancy rates climb steeply, reaching roughly 18% by Q1 2023.
+   - **New York City**: Starting initially below 5% in 2000, it remains relatively low compared to the other cities until around 2020. Post pandemic, there's a sharp increase, with vacancies nearing 17% by Q1 2023.
+3. **Impact of Pandemic**: A clear sharp rise in office vacancies is observed across all three cities starting around the beginning of the pandemic, illustrating a significant increase in vacant office spaces.
+4. **Consistent Trends**: 
+   - Pre-pandemic, New York City generally maintains the lowest vacancy rates.
+   - Post-pandemic, all three cities see dramatic increases in vacancy rates, but New York City sees the highest percentage increase relative to its pre-pandemic levels.
+
+Summary:
+Since 2000, office vacancies in Chicago, Los Angeles, and New York City have seen various fluctuations, with each city experiencing different peaks and troughs. Notably, since the onset of the pandemic, all three cities experienced steep increases in office vacancy rates. By Q1 2023, Chicago, Los Angeles, and New York City exhibit high vacancy rates approaching or exceeding 17%, pointing to a significant shift in office space utilization likely influenced by changes in work habits and economic factors associated with the pandemic.

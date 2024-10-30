@@ -1,0 +1,12 @@
+The image comprises two line graphs that illustrate the trends in internal migration rates over the period from 1990 to 2015. These graphs are titled "Figure 1: Internal Migration Rates."
+
+1. **Left Panel (Cross-State (CPS)):**
+   - This graph shows annual internal cross-state migration rates using CPS (Current Population Survey) data with two lines.
+   - **Unconditional Rates (Blue Dots):** This data indicates a decline from around 3% in 1990 to approximately 1.5% in 2015.
+   - **Conditional on Demographics (Red Triangles):** Controlling for factors such as home ownership, age, education, sex, race/ethnicity, marital status, employment status, and immigrant status, the migration rate also shows a steady decrease from about 1% in 1990 to nearly 0% in 2015.
+   
+2. **Right Panel (Cross-CZ (IRS)):**
+   - This plot depicts annual internal cross-commuting-zone (CZ) migration rates utilizing IRS (Internal Revenue Service) data.
+   - The graph indicates a gradual decline, with unconditional migration rates decreasing from approximately 2.4% in 1990 to about 2.0% in 2015.
+   
+Both graphs include linear trend lines with 95% confidence intervals (dashed lines), indicating the overall downward trend in internal migration rates across the United States over the 25-year period. The downward trends are observed in both the unconditional migration rates and the rates conditional on various demographic factors.

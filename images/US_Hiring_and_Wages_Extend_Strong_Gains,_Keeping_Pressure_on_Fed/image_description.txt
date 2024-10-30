@@ -1,0 +1,24 @@
+The image is a graphic representation of employment and wage growth in the U.S., as reported by Bloomberg using data from the Bureau of Labor Statistics. Here's a detailed summary:
+
+- **Title**: Employment & Wage Growth Exceed Forecasts
+- **Main Insight**: U.S. job gains remained firm in November, and hourly pay accelerated the most since January.
+
+### Job Growth:
+- The bar graph represents the change in nonfarm payrolls (in thousands) from June 2021 to November 2022.
+- Despite fluctuations, job growth shows an overall upward trend, remaining strong through the period.
+- November saw a significant gain (not specified in thousands, but the bar is one of the taller ones in recent months).
+
+### Wage Growth:
+- The line graph depicts the change in average hourly earnings (month-on-month percentage) from June 2021 to November 2022.
+- For November, the estimated change is 0.6% (highlighted in the graph), indicating a significant acceleration, the largest since January.
+- The estimated wage growth was 0.3%, which means the actual wage growth doubled the forecast.
+
+### Insights:
+- **Labor market strength**: Despite ongoing economic uncertainties, the U.S. labor market has shown resilience with steady job gains.
+- **Wage growth acceleration**: There's a notable increase in average hourly earnings in recent months, with a particularly sharp rise in November, reflecting increased earnings faster than anticipated.
+
+### Source Attribution:
+- Data Source: Bureau of Labor Statistics
+- Graph made by: Bloomberg
+
+Overall, the graphic underscores that both employment and wage growth have exceeded forecasts, demonstrating the robustness of the U.S. labor market toward the end of 2022.

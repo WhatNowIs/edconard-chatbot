@@ -1,0 +1,10 @@
+The graph illustrates the Employment Cost Index (ECI) for wages and salaries of private industry workers, tracking its compounded annual rate of change from Q4 2021 to Q3 2022. 
+
+- **Q4 2021:** The ECI rate started high at approximately 6.5%.
+- **Q1 2022:** There was a significant decline, with the rate dropping to around 4.5%.
+- **Q2 2022:** The rate rose sharply, increasing to about 6.2%.
+- **Q3 2022:** The rate then declined again to approximately 5.0%.
+
+Overall, the index displayed notable fluctuations over the period, with a peak in Q4 2021 and a subsequent peak in Q2 2022, followed by declines in the adjacent quarters. 
+
+The data source is the U.S. Bureau of Labor Statistics, and the information is provided via the Federal Reserve Bank of St. Louis (FRED).

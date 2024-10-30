@@ -1,0 +1,13 @@
+The image illustrates the trajectory of U.S. public debt held as a percentage of GDP from 1790 to 2030. Key information is summarized as follows:
+
+1. **Current Situation**: Debt levels are near historic highs, approaching and exceeding 100% of GDP.
+2. **Historical Context**: 
+   - The 50-year historic average of public debt is 47% of GDP.
+   - The previous record for public debt was 106% of GDP, set around the end of World War II.
+3. **Future Projections**: 
+   - The debt level is projected to break the previous record of 106% in 2029.
+   - By 2030, the debt is expected to reach approximately 115% of GDP.
+4. **Visual Trends**:
+   - The chart shows significant peaks during the Civil War, World War I, the Great Depression, World War II, and the recent financial crises.
+  
+Sources: The data is attributed to the Committee for a Responsible Federal Budget and the Congressional Budget Office.

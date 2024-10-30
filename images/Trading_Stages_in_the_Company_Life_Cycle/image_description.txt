@@ -1,0 +1,22 @@
+The image is a line graph titled “Exhibit 2: Median ROIC – WACC Spread for Companies from IPO to Year 15, 1990 to 2022.” 
+
+Key observations and summary from the graph are:
+
+- **Y-Axis (Vertical):** Represents the Median Adjusted ROIC-WACC (Percent).
+- **X-Axis (Horizontal):** Represents the number of years after the Initial Public Offering (IPO), ranging from 0 to 15 years.
+
+**Trends Observed:**
+1. The median adjusted ROIC-WACC spread starts at around 5% in the year of IPO.
+2. There is a sharp decline in the spread over the first 2 years, reaching around 2%.
+3. The spread stabilizes from years 3 to about year 9, remaining relatively flat around 1.5% to 2%.
+4. There are modest increases observed around years 10 to 12, peaking around 3%.
+5. After year 12, the spread declines slightly and stabilizes around 2% by year 15.
+
+**Source:**
+- FactSet and Counterpoint Global
+
+**Note:**
+- ROIC is adjusted for intangible investment.
+- Data pertains to the Russell 3000, excluding financial and real estate sectors.
+
+The graph indicates that newly public companies experience diminishing returns relative to their cost of capital shortly after IPO, with some recovery in performance around years 10-12 before stabilizing again.

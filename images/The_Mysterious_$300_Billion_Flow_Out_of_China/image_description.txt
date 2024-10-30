@@ -1,0 +1,24 @@
+The image presents a detailed examination of unexplained net financial outflows in China, comparing official data with data that includes discrepancies between the General Administration of Customs (GACC) and balance of payments (BOP) goods surplus.
+
+Key Points:
+
+1. **Title and Context**: 
+   - The title is "Sneaking Out?" suggesting that the focus is on unrecorded or unexplained financial outflows from China.
+   - The text indicates that these "net errors & omissions" in China's balance of payments are approximately $150 billion per year, equating to around 1% of China's GDP.
+
+2. **Graph Details**:
+   - The graph tracks unexplained net financial outflows from 1999 to 2021, measured in USD billions over four-quarter sums.
+   - Two lines are represented:
+     - The blue line ("Official") showing the official figures.
+     - The red line ("Including discrepancy between GACC and BOP goods surplus") that accounts for additional data discrepancies.
+
+3. **Trends Noted**:
+   - Both lines stay close to zero from 1999 to around 2008, showing minimal unexplained outflows.
+   - Post-2008: Both lines increase, with the red line (including discrepancies) diverging significantly from the official data around 2015.
+   - The most substantial unexplained outflows occur after 2015, with both lines showing considerable positive values, but the red line reaching significantly higher peaks, suggesting greater unrecorded outflows when discrepancies are factored in.
+
+4. **Sources**:
+   - The data sources include the State Administration of Foreign Exchange, General Administration of Customs (China), and Matthew Klein's calculations.
+
+Summary:
+The graph highlights a significant rise in unexplained financial outflows from China starting around 2008, peaking notably after 2015. The discrepancy becomes more pronounced when comparing official figures to those adjusted for potential discrepancies between customs and BOP data, suggesting that actual outflows might be underestimated. This analysis can help understand the scale of unrecorded capital leaving China and the potential gaps in official economic data reporting.

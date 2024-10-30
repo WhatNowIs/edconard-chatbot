@@ -1,0 +1,16 @@
+The image is a graph depicting the relative labor force participation rates (LFPRs) of prime-age males and females in the United States from 2013 to 2023, with 2019 serving as the baseline (indexed at 100). 
+
+Key takeaways from the graph:
+
+1. **Periods Covered**: The graph spans from early 2013 to mid-2023.
+2. **Two Data Series**:
+   - **Males (Blue Line)**: Represents the activity rate for males aged 25-54.
+   - **Females (Red Line)**: Represents the activity rate for females aged 25-54.
+3. **2019 Baseline**: Both male and female activity rates are indexed to 100 for the year 2019.
+4. **Trends**:
+   - From 2013 to 2019, the relative LFPR for males showed minor fluctuations but remained relatively stable around the baseline.
+   - For the same period, the female LFPR experienced small declines but remained close to the baseline.
+   - Post-2019, both male and female LFPRs show more significant movements. There is a noticeable dip for both genders around 2020, likely corresponding to the COVID-19 pandemic.
+   - Post-pandemic, the female LFPR picked up sharply, surpassing the baseline significantly, while the male LFPR also increased but remained relatively closer to the baseline.
+
+The graph highlights that over the past decade, while male LFPR has experienced some fluctuations, the female LFPR has shown significant growth since the pandemic, indicating a rising involvement of prime-age women in the labor force in recent years.

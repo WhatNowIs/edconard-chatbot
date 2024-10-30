@@ -1,0 +1,18 @@
+The image provides a graphical representation of various US Dollar indices from 1973 to 2023, benchmarked against an average value of 100. The indices depicted in the graph are the Real Effective Exchange Rate (REER), the Dollar Index (DXY), and the Nominal Effective Exchange Rate (NEER). Each index's current percentile rank as of the date the chart was produced is also given:
+
+1. **REER (Real Effective Exchange Rate)**
+   - Marked with a blue line.
+   - Current percentile: 90th.
+   - REER stands relatively stable around the average of 100 for most of the time but shows peaks and troughs, indicating periods of higher and lower competitiveness of the USD.
+
+2. **Dollar Index (DXY)**
+   - Marked with a grey line.
+   - Current percentile: 77th.
+   - The DXY shows significant fluctuations, with a notable spike around the mid-1980s reaching above 140, suggesting a stronger USD during that period, followed by a steep decline and then several cyclical fluctuations.
+
+3. **NEER (Nominal Effective Exchange Rate)**
+   - Marked with an orange line.
+   - Current percentile: 98th.
+   - The NEER demonstrates a more pronounced increase from the early 1980s, peaking during the mid-1980s. Post the peak, it shows a general upward trend with cyclical variations, indicating periods of stronger and weaker nominal value of the USD.
+
+The graph shows that all three indices measure the value of the USD against a basket of foreign currencies, but they focus on different aspects (real vs. nominal values and specific constructs like the Dollar Index). The general trend over the long term indicates periods of both strength and weakness for the USD. As of the latest data, all three indices are above the average, with NEER showing the highest percentile rank among them.

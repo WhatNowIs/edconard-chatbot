@@ -1,0 +1,30 @@
+**Summary of Chart 2: Recent Population Surge Leads to Notable Boost to GDP Growth**
+
+The chart from the Federal Reserve Bank of Dallas illustrates the macroeconomic effects of two types of economic shocks: a population-growth shock due to immigration (represented by solid blue lines) and an increase in labor supply due to shifting preferences for increasing hours worked (represented by solid orange lines). The analysis focuses on GDP growth, output per capita, consumption per capita, and investment per capita from 2024 to 2030.
+
+**Key Observations:**
+
+1. **GDP Growth**:
+   - **Immigration Shock**: Sharp initial rise in GDP growth peaking around 0.6% in 2024, followed by a gradual decline but remaining positive through to 2030.
+   - **Labor-Supply Shock**: Minor positive initial impact, stabilizing close to zero over time.
+
+2. **Output per Capita**:
+   - **Immigration Shock**: Initial negative impact, gradually reducing over time but remaining negative through 2030.
+   - **Labor-Supply Shock**: Initial minor positive impact, slightly increasing over time.
+
+3. **Consumption per Capita**:
+   - **Immigration Shock**: Initial decline around -1%, followed by a gradual increase over time.
+   - **Labor-Supply Shock**: Initial small positive impact, steadily rising slowly over time.
+
+4. **Investment per Capita**:
+   - **Immigration Shock**: Sharp initial rise in investment per capita peaking near 2, then gradually declines towards zero over time.
+   - **Labor-Supply Shock**: Minor and stable positive impact throughout the period.
+
+**Notes**:
+- The population-growth shock assumes annualized population growth reaching 1.2% and then converging back to 0.5%.
+- Responses of GDP growth are measured as annualized deviations from the steady state.
+- Per capita variable responses are presented as percentage deviations from the steady state.
+
+Overall, the study indicates that an immigration-induced population surge can provide a notable boost to GDP growth and investments in the short term, although it might unfavorably affect output per capita initially. In contrast, increased labor supply does not significantly alter these variables in the short run but shows slightly positive trends over a longer period.
+
+**Source**: Authors' calculations, Federal Reserve Bank of Dallas.

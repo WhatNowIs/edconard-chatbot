@@ -1,0 +1,10 @@
+The image is a bar chart illustrating the change in nonfinancial corporate debt as a share of GDP from the first quarter of 2007 to the first quarter of 2022 across several regions and countries. The source of the data is the Bank for International Settlements. Here are the key details:
+
+- **UK:** Nonfinancial corporate debt as a share of GDP has decreased by approximately 6 percentage points.
+- **US:** A moderate increase of around 7 percentage points.
+- **Japan:** An increase of approximately 10 percentage points.
+- **Euro area:** An increase of around 14 percentage points.
+- **South Korea:** A significant increase by about 25 percentage points.
+- **Canada:** The highest increase among the areas listed, with an increase of approximately 37 percentage points.
+
+This indicates that over the period from Q1 2007 to Q1 2022, Canada and South Korea have seen the most significant increases in nonfinancial corporate debt relative to their GDP, while the UK experienced a slight decrease. The US, Japan, and the Euro area witnessed moderate increases.

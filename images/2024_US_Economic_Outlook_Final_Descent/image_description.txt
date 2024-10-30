@@ -1,0 +1,24 @@
+The provided image contains two line charts illustrating different scenarios of Fed Funds Rate projections over the next two years, prepared by Goldman Sachs Global Investment Research.
+
+### Key Information:
+
+1. **Title:**
+   - The title states that the first rate cut is expected in Q4 2024. There is some risk associated with insurance cuts, and market pricing is currently more dovish than Goldman Sachs' views, though this gap has narrowed since earlier this year.
+
+2. **Left Chart:**
+   - **Scenarios Analyzed:**
+     - **Higher for Longer / No Cuts (20%)**: Continues steady at around 6%.
+     - **GS Baseline / Gradual Cuts (35%)**: Peaks at around 5.5% and gradually declines to about 5%.
+     - **Growth Scare / Insurance Cuts (20%)**: Peaks slightly lower at around 5.5%, then declines sharply to about 4.8% by late 2025.
+     - **Recession / Faster Cuts (25%)**: Peaks just below 5%, then declines substantially to about 3% by late 2024.
+   - The '*' note indicates that there is a 25% probability of a recession at any point over the next two years.
+
+3. **Right Chart:**
+   - The right chart illustrates:
+     - **GS Baseline Path**: Starts at approximately 0.25% in March 2022, peaks around 5.5%, then gradually declines to around 5% by March 2025.
+     - **GS Probability-Weighted Average Path**: Close to the baseline path initially but declines more rapidly after its peak.
+     - **Market Pricing**: Starts similarly, peaks around 5.5%, but declines faster and further to below 4.5% by March 2025.
+   - The note at the bottom highlights a 12-month recession probability of 15%.
+
+### Summary:
+Goldman Sachs projects various scenarios for Fed Funds Rate over the next two years, with the main expectation being a rate cut in Q4 2024. The range of scenarios includes potential gradual or fast rate cuts, or even no cuts, influenced by factors like growth scares and recession risks. The baseline and probability-weighted paths align closely with market pricing initially, but market expectations indicate a more rapid decline in rates post-peak. The probability of recession within the next twelve months is estimated at 15%.

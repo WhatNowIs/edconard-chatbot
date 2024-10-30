@@ -1,0 +1,12 @@
+This image represents a line graph depicting the decline in startup rates within the High Tech sector versus the rest of the economy from 1979 to 2020. It illustrates the following points:
+
+1. The graph has two lines: one representing the High Tech sector and the other representing non-High Tech sectors.
+2. Both lines generally show a downward trend in firm entry rates over the period considered.
+3. The High Tech sector line starts at a higher rate (around 13-14%) in the early 1980s and peaks around 1985 before declining steeply.
+4. The non-High Tech line starts at around 11-12% in the early 1980s and consistently declines over time.
+5. By 2020, both sectors exhibit firm entry rates at around 6-8%, indicating a convergence and general decline in new firm formations in the economy.
+  
+Source: The data is sourced from an analysis by the Economic Innovation Group (EIG) based on data from the U.S. Census Bureau.
+  
+Summary:
+The startup rate in both the High Tech and non-High Tech sectors in the U.S. has been declining from 1979 to 2020. Although the High Tech sector initially had higher firm entry rates, both sectors exhibited a noticeable decline over time, converging at lower rates by 2020. This trend points to a significant decrease in new firm formations within the entire economy, with the High Tech sector experiencing a sharper initial decline.

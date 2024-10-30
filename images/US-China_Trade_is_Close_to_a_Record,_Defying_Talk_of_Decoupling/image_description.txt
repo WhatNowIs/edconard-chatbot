@@ -1,0 +1,10 @@
+The image contains a bar chart that illustrates the trade between the United States and China from 1985 to 2022. The data is divided into two categories: imports (shown in orange) and exports (shown in gray).
+
+Key points from the chart:
+1. U.S.-China trade has consistently increased over the years, with significant growth starting around the mid-1990s.
+2. Both imports and exports have shown an upward trend without signs of slowing down.
+3. As of 2022, the trade values are at record highs, with imports significantly surpassing exports.
+4. Despite any political tensions or heated rhetoric, the economic trade relations between the U.S. and China have continued to expand.
+5. The source of the data is the US Census Bureau, with December 2022 figures based on an average of the past five years.
+
+Overall, the chart suggests robust and continuously growing trade activities between the U.S. and China over the past few decades.

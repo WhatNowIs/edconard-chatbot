@@ -1,0 +1,17 @@
+The provided chart, titled "Convexity Premium Harvesters?," depicts the cumulative purchases of U.S. government-backed fixed income securities by residents of Belgium, Hong Kong, and China, measured in USD billions. The chart spans from 2020 to 2023 and differentiates between U.S. Treasury debt (dark blue bars) and Agency debt (light blue bars).
+
+Key observations include:
+
+1. **Timeframe and Initial Purchases**: From mid-2020 onward, there were significant purchases of U.S. Treasury debt, but the combined holdings began to decline towards mid-2020.
+  
+2. **Shift in Investment**: There is a noticeable rotation from U.S. Treasury debt (dark blue) to Agency debt (light blue) over the period. Initially, U.S. Treasury debt dominates, but as time progresses, Agency debt becomes more prominent.
+  
+3. **Trend Reversals**:
+   - The significant decline in holdings continued through to mid-2021.
+   - Post mid-2021, there is an evident increase in Agency debt purchases while Treasury debt continued to move up and down but overall trends downward.
+  
+4. **Drastic Movements**: The holdings in U.S. Treasury debt exhibit more volatility compared to Agency debt, with substantial drops particularly noticeable in 2021.
+  
+5. **Late 2022 Recovery**: Towards the end of 2022 and into 2023, there's a general upward trend in overall holdings, driven prominently by increased Agency debt purchases.
+
+In summary, the chart illustrates that while it is challenging to pinpoint the exact assets being bought, there was a significant shift from U.S. Treasury securities to Agency debt among residents of Belgium, Hong Kong, and China between mid-2020 and mid-2022, followed by more mixed movements in investments into 2023.

@@ -1,0 +1,49 @@
+The image is a treemap visualization showing the distribution of wealth held by different generational cohorts in the United States, totaling $140 trillion. The wealth is divided among four generations: Baby Boomers, Generation X, the Silent Generation, and Millennials. Here is a detailed summary of the wealth distribution:
+
+### Baby Boomers (Born 1946-64)
+- **Total Wealth:** $78.3 trillion
+- **Breakdown:**
+  - Equities: $19.1 trillion
+  - Real Estate: $18.9 trillion
+  - Pensions: $16.1 trillion
+  - Other Assets: $13.9 trillion
+  - Private Businesses: $7.4 trillion
+  - Durable Assets: $3.0 trillion
+
+### Generation X (Born 1965-80)
+- **Total Wealth:** $47.8 trillion
+- **Breakdown:**
+  - Pensions: $9.4 trillion
+  - Real Estate: $14.4 trillion
+  - Equities: $8.8 trillion
+  - Private Businesses: $6.8 trillion
+  - Other Assets: $5.9 trillion
+  - Durable Assets: $2.4 trillion
+
+### Silent Generation (Born before 1946)
+- **Total Wealth:** $18.1 trillion
+- **Breakdown:**
+  - Equities: $5.3 trillion
+  - Real Estate: $4.7 trillion
+  - Other Assets: $4.1 trillion
+  - Pensions: $2.0 trillion
+  - Private Businesses: $1.4 trillion
+  - Durable Assets: $0.7 trillion
+
+### Millennials (Born after 1980)
+- **Total Wealth:** $14.2 trillion
+- **Breakdown:**
+  - Real Estate: $5.5 trillion
+  - Pensions: $2.5 trillion
+  - Other Assets: $2.2 trillion
+  - Private Businesses: $1.6 trillion
+  - Durable Assets: $1.6 trillion
+  - Equities: $0.8 trillion
+
+### Notes:
+- The total amount of $140 trillion accounts for liabilities.
+- The total assets without accounting for liabilities amount to $158 trillion.
+- Pensions include the present value of future benefits as well as the value of annuities sold by life insurance companies.
+- Data Source: Federal Reserve as of the fourth quarter of 2022.
+
+This visual and data breakdown show that Baby Boomers hold the largest share of the nation's wealth, more than half of the total, followed by Generation X, the Silent Generation, and Millennials.

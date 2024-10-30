@@ -1,0 +1,23 @@
+This image presents data on global deal activity in aerospace and defense companies, highlighting trends in private equity (PE) and venture capital (VC) deal flows from 2012 to 2022. The data and visualizations are split into two main sections:
+
+### Global PE Deal Flow (Left Chart)
+- **Deal Value (in $ billion):** 
+  - The chart shows varying deal values in PE from 2012 to 2022. There are notable peaks in 2018 and 2020, indicating high deal value activity in these years.
+  - The highest deal values are observed around 2020, exceeding $15 billion.
+- **Number of Deals:**
+  - The blue line indicates the number of deals over the years.
+  - There was a steady number of deals from 2012 to 2017, hovering below 150 deals annually.
+  - After 2018, the number of deals slightly declines, even as deal values remain high for certain years.
+
+### Global VC Deal Flow (Right Chart)
+- **Deal Value (in $ billion):**
+  - The VC deal flow chart shows a significant increase in deal values starting around 2018, with a steep rise leading up to 2022, peaking at around $15 billion in the recent years.
+- **Number of Deals:**
+  - The number of deals has shown a significant upward trend over the years.
+  - Starting at a very low base in 2012, the number of deals experiences a marked increase, particularly from 2017 onwards, reaching over 400 deals by 2022.
+
+### Summary
+- **Overall Trend:**
+  - Both PE and VC deal activities in the aerospace and defense sector have seen notable changes over the past decade.
+  - Significant peaks in both deal values and number of deals are noted between 2018 and 2022, with an overall upward trend in VC deals.
+  - The increase in deal activity is likely influenced by geopolitical events such as the ongoing war in Ukraine, which is driving higher investment in the aerospace and defense sector.

@@ -1,0 +1,9 @@
+The bar chart compares the imports of ASML's lithography gear into China for the latter half of 2022 (second half of the year 2022, represented in black) and 2023 (represented in blue) from July to November.
+
+Key points from the data:
+- In 2023, there is a significant increase in the value of imports compared to the same months in 2022.
+- The largest surge is seen in September 2023, where imports nearly hit $1.5 billion, compared to almost zero in September 2022.
+- Other months in 2023 also saw higher import values compared to 2022, but the increases are less dramatic than in September.
+- The data pattern suggests that there was a considerable rise in importing activity in the latter part of 2023, potentially as a result of impending curbs announced by Dutch authorities in June 2023, which will take effect in 2024.
+
+The implications are clear: the anticipation of new curbs pushed China to import more lithography gear in the latter half of 2023, especially noticeable in September.

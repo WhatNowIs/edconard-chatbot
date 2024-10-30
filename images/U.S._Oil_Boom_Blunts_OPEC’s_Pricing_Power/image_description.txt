@@ -1,0 +1,13 @@
+The image is a bar chart depicting the annual U.S. crude oil production from 2010 through 2024, with numbers for 2023 and 2024 being forecasts. The production values are measured in millions of barrels per day. 
+
+Key points from the chart:
+- The overall trend in U.S. crude oil production is upward from 2010 to 2024.
+- In 2010, the production was below 6 million barrels per day.
+- There was a steady increase from 2010 to around 2015, reaching close to 9 million barrels per day.
+- Production peaked at about 12 million barrels per day by the early 2020s.
+- A slight fluctuation in production can be observed around the 2020–2021 period.
+- The forecast for 2023 and 2024 suggests a continued high level of production close to 12 million barrels per day.
+
+Notes present in the image:
+- 2023 and 2024 numbers are forecasts.
+- Data source is the Energy Information Administration.

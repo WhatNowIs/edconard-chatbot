@@ -1,0 +1,16 @@
+The figure, titled "Under-reporting and Dynamics of the Top 1% Share of Pre-Tax National Income: Comparison of Alternative Methods," displays a comparison of three methods for measuring the top 1% share of pre-tax national income over time, from 1960 to 2020. 
+
+The graph features three lines:
+1. **PSZ Macro** (black line)
+2. **PSZ Micro** (orange line)
+3. **AS Macro** (blue line)
+
+Here's a summary of the trends observed:
+
+- **PSZ Macro (black line)**: This method shows a relatively stable trend from 1960 to 1980, after which there is a gradual increase in the top 1% share of pre-tax national income. The increase continues with some fluctuations until it reaches a peak around 2000, followed by a slight decline towards 2020.
+
+- **PSZ Micro (orange line)**: This method indicates an overall higher estimation compared to PSZ Macro. It shows a slight upward trend until around 1980, followed by more pronounced fluctuations and an overall increase until about 2010. Post-2010, there is a visible decline.
+
+- **AS Macro (blue line)**: This method reports much lower values compared to the other two methods. It remains relatively stable with a negligible increase initially, followed by a slight downward trend starting from around 1980 and continuing to decline towards 2020.
+
+In summary, the three methods offer different perspectives on the share of pre-tax national income attributed to the top 1%. While PSZ Micro indicates higher values and greater fluctuations, PSZ Macro provides a more moderate trend. AS Macro consistently reports the lowest values, showing a downward trend over the long term.

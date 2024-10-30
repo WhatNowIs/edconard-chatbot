@@ -1,0 +1,15 @@
+The image titled "A Scale of Life" illustrates the Estimated Assembly Index (AI) of various substances, categorizing them into non-biological and biological groups. The AI was determined by researchers through repeated measurements of the substances' molecular structures. Only biologically produced molecules displayed an AI above a certain threshold.
+
+**Non-Biological Substances:**
+- **Coal:** AI ranges from 10 to 12.
+- **Quartz:** AI ranges from 11 to 12.
+- **Granite:** AI ranges from 10 to 15.
+
+**Biological Substances:**
+- **Yeast:** AI ranges from 10 to 24.
+- **Urine:** AI ranges from 9 to 27.
+- **Seawater:** AI ranges from 9 to 28.
+- **E. coli:** AI ranges from 15 to 31.
+- **Beer:** AI ranges from 10 to 34.
+
+The chart reveals that non-biological substances generally have lower AI values, while biological substances exhibit higher AI values, indicating the complexity of their molecular structures.

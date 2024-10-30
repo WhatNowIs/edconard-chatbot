@@ -1,0 +1,12 @@
+The image is a line chart titled "Magnificent 7 earnings," showing the annual earnings per share (EPS) from 2018 to 2024 for seven prominent companies: Meta, NVIDIA, Microsoft, Apple, Google, Amazon, and Tesla.
+
+Here is a summary of the key points:
+1. **Meta**: Exhibits a saw-tooth pattern with significant fluctuation. Despite a dip in 2022, its EPS strongly increases, peaking around $17 in 2023 and possibly surpassing $19 by 2024.
+2. **NVIDIA**: Shows consistent growth with EPS from $4 in 2022, anticipating an increase to nearly $12 in 2024.
+3. **Microsoft**: Displays steady growth, peaking in 2022 at around $11 per share, with a slight dip in 2023, but climbing back toward $13 by 2024.
+4. **Apple**: Slow and steady growth. By 2024, EPS is expected to exceed $7.
+5. **Google**: Stable performance with a consistent rise in EPS, reaching around $5 by 2022 and continuing to rise to over $6 by 2024.
+6. **Amazon**: Shows notable growth reaching a peak under $3 in 2022, with minor fluctuations and recovering to equally the same level by 2024.
+7. **Tesla**: Highly volatile EPS, with significant negative and positive swings. After touching negative figures in 2022, it's projected to stabilize at $4 by 2024.
+
+**Source Confirmation**: Data is sourced from BBG, JPMAM, as of February 6, 2024, excluding Tesla's tax valuation allowance.

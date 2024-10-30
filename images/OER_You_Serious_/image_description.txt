@@ -1,0 +1,16 @@
+The image is a chart titled "Exhibit 11: Trimmed Inflation Trend Remains Rangebound, Despite the Boost from the January Effect" sourced from the Bureau of Economic Analysis and Goldman Sachs Global Investment Research.
+
+The chart displays the trends in Trimmed Core PCE (Personal Consumption Expenditures) Inflation, annualized in percent, over a period from January 2019 to January 2024. Three different time horizons are shown using different markers:
+- A 1-Month trend is indicated using red diamond markers.
+- A 3-Month trend is indicated using a dark blue line.
+- A 6-Month trend is indicated using a light blue line.
+
+Main observations:
+1. There is a noticeable rise in inflation starting from early 2021 through mid-2022, peaking at approximately 5-6% annualized.
+2. Following the peak, the inflation trends display significant downward movement from mid-2022 onward.
+3. As of January 2024, the data shows:
+   - The 1-Month trimmed inflation rate is around 2.2%.
+   - The 3-Month trend nears 2.3%.
+   - The 6-Month trend is around 2.8%.
+
+Despite some increases early in the observed period, the trimmed inflation trend remains overall rangebound, reflecting periodic boosts — specifically noted as the "January Effect."

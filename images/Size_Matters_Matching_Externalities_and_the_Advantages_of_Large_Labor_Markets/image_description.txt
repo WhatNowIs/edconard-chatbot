@@ -1,0 +1,24 @@
+This figure illustrates the predicted probability of reemployment within 12 months, plotted against market size, which is measured by the number of workers. The plot compares two education levels: High School (blue line) and College (red line).
+
+Key points are:
+
+1. **Higher Education Increases Reemployment Probability**:
+   - The probability of finding a job within 12 months is consistently higher for college graduates compared to high school graduates across all market sizes.
+
+2. **Market Size Influence**:
+   - For both education levels, as the market size increases, the probability of reemployment also increases but at different rates.
+   - College workers start with a higher probability of reemployment and the gap between the two education levels widens as market size increases.
+
+3. **Percentiles**:
+   - The three vertical dashed lines represent the 25th, 50th, and 75th percentiles of the market size distribution.
+   - At the 25th percentile (≈ 20,510 workers), both education levels show a considerable rise in reemployment probability from smaller market sizes.
+
+4. **Maximum and Minimum Probabilities**:
+   - The probability for high school workers ranges from about 0.74 to just above 0.8.
+   - For college workers, it starts just below 0.8 and progresses towards 0.87-0.88 as market size increases.
+
+5. **Prediction Calculation**:
+   - The predicted values are derived using coefficients from a preferred specification outlined in Table 2, columns 5 and 6 of the referenced analysis.
+   - The Y-axis has been rescaled to align the probabilities for an average-sized market (≈ 20,510 workers) with the unconditional reemployment probabilities observed in the data.
+
+In summary, the graph indicates that an individual's education level and the size of the labor market are significant factors in determining the likelihood of reemployment within a year, with college education providing a distinct advantage.

@@ -1,0 +1,16 @@
+The image presents two graphs comparing the cumulative yield changes of 10-year Treasury yields in two different time frames.
+
+**Graph (A): 3-day window around FOMC meetings**
+- Time period: 1990 to 2020.
+- The cumulative yield change is observed in a 3-day window surrounding FOMC (Federal Open Market Committee) meetings.
+- The black line represents the 10-year Treasury yield, and the red line highlights the yield change specifically around the FOMC meetings.
+- It shows a consistent decrease in cumulative yield change, with a significant decline observed over the years.
+
+**Graph (B): Days outside of 3-day FOMC window**
+- Time period: 1990 to 2020.
+- The cumulative yield change is observed on days outside the 3-day window around the FOMC meetings.
+- The black line represents the general 10-year Treasury yield, while the gray line represents the yield change outside the FOMC window.
+- Here, the decline in cumulative yield change is less pronounced compared to around FOMC meetings, indicating a more stable trend outside the FOMC windows.
+
+**Summary:**
+The cumulative yield changes of 10-year Treasury yields exhibit differing patterns when observed around FOMC meeting windows versus days outside those windows. In the 3-day window around FOMC meetings, the yields show a sharper and more consistent decline (red line in Graph A) compared to the less pronounced and more stable changes noticed outside of this 3-day window (gray line in Graph B). This suggests that FOMC meetings have a significant impact on the yield changes of 10-year Treasury bonds.

@@ -1,0 +1,16 @@
+The image showcases a map of the United States illustrating the real GDP growth rates by state since the third quarter of 2019. The GDP growth rates are categorized by color:
+
+- Red (<0%): Indicates negative growth. States such as North Dakota (-1.9%), Louisiana (-2.8%), and Hawaii (-2.3%) have experienced a decline in GDP.
+- Orange (0-4%): Shows minimal growth. States like Wyoming (1.9%), Alaska (0.7%), and New York (3.8%) fall in this range.
+- Yellow (4-8%): Represents moderate growth. Examples include New Mexico (4.2%), Maryland (4.5%), and Montana (9.3%).
+- Light Green (8-12%): Signifies significant growth. States such as California (9.0%), Texas (12.7%), and Florida (18.7%) are in this range.
+- Dark Green (12-16%): Indicates high growth. Examples include Nebraska (13.9%), Utah (13.3%), and Idaho (16.3%).
+- Blue (16%+): Shows exceptional growth, with Florida leading at 18.7%.
+
+Key Points:
+- Overall US GDP growth stands at 8% since Q3 2019.
+- Florida has experienced the highest growth rate at 18.7%.
+- States like Hawaii and Louisiana have seen a decline in GDP.
+- Western states like Idaho, Washington, and Arizona show robust growth exceeding 14%.
+
+This comprehensive map provides a clear, visual representation of economic performance across different regions in the country since Q3 2019.

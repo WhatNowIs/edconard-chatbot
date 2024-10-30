@@ -1,0 +1,12 @@
+The graph depicts the net profit margins of global large-cap companies from 2013 to the present, measured in percentages. 
+
+**Key points:**
+
+- From 2013 to 2015, profit margins were relatively stable, around 15%.
+- There was a notable increase in 2016, reaching a peak of approximately 17%.
+- A significant decline occurred in 2017, with margins dropping to around 5%.
+- Margins recovered in 2018 and remained relatively stable through 2019 and 2020 at about 10-11%.
+- Another increase is visible in 2021, peaking at around 15%.
+- As of the most recent data, there has been a slight decrease, bringing the margins to around 14%.
+
+Overall, the data reflects periods of both sharp increases and decreases, with a significant dip in 2017 but a general recovery trend since then.

@@ -1,0 +1,23 @@
+This image provides a graph showing the causes of death among Americans aged 1 to 19 per 100,000 from 2000 to 2020. The graph analyzes and plots five different causes of death: Transportation, Homicide, Suicide, Poisoning, and Covid-19.
+
+Key observations from the graph:
+
+1. **Transportation-related deaths**:
+    - Significantly decreased from around 10 deaths per 100,000 in 2000 to about 3 per 100,000 around 2015.
+    - After 2015, there's a slight fluctuation but continues to remain significantly lower than in the early 2000s.
+  
+2. **Homicide**:
+    - Remained relatively stable around 3-4 deaths per 100,000, with some fluctuations over the years.
+    - There is a notable increase again around 2020, reaching above 4 deaths per 100,000.
+
+3. **Suicide**:
+    - Showed a gradual increase from around 2 deaths per 100,000 in 2000 to about 3-4 per 100,000 close to 2020.
+  
+4. **Poisoning**:
+    - Overall, remained low until around 2015 after which it started increasing steadily.
+    - By 2020, it reached nearly 2 deaths per 100,000.
+
+5. **Covid-19**:
+    - Appear in 2020 with a noticeable rise but starting from a zero baseline before 2020.
+
+This summary reflects the general trends and significant changes in the rates of different causes of death among American youth over the specified period. The decline in transportation-related deaths and the rise in deaths from homicide, suicide, poisoning, and the emergence of Covid-19 as a cause of death in 2020 are the key takeaways.

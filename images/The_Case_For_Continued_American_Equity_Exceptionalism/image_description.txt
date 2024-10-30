@@ -1,0 +1,13 @@
+The image is a bar chart from Financial Times with the title "US stocks look set to outperform the rest of the world again." It compares the annual performance of MSCI US and MSCI World ex US indices from 2010 up to August 2023.
+
+Key points:
+1. The chart uses two colors: light blue for MSCI US and dark blue for MSCI World ex US.
+2. Over the span of time from 2010 to 2023, US stocks (MSCI US) have generally outperformed the rest of the world (MSCI World ex US) in most years.
+3. Notable years where MSCI US significantly outperformed include 2013, 2014, 2015, 2019, and 2021.
+4. In certain years like 2012 and 2017, the difference in performance between the two indices is less pronounced.
+5. The years 2010, 2016, and 2022 saw higher performance for MSCI World ex US compared to the MSCI US.
+6. By August 2023, MSCI US is showing higher performance compared to MSCI World ex US, indicating a potential trend of US stocks outpacing global counterparts once again.
+7. Data for 2023 is only available up to August.
+
+Summary:
+The bar chart highlights the trend that US stocks, represented by the MSCI US index, have frequently outperformed international stocks, represented by the MSCI World ex US index, from 2010 to August 2023. The chart underscores a recurring theme that US stocks often yield higher returns compared to their global counterparts, with 2023 looking to continue this trend based on partial-year data.

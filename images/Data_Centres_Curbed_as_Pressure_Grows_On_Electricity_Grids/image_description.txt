@@ -1,0 +1,16 @@
+The image provides a visual representation of the projected increase in electricity consumption by data centers in three key regions (US, EU, and China) from 2022 to 2026, measured in terawatt-hours (TWh). Here are the key observations:
+
+1. **United States (US)**
+   - 2022: Approximately 160 TWh
+   - 2026: Projected to rise to around 260 TWh
+
+2. **European Union (EU)**
+   - 2022: Approximately 70 TWh
+   - 2026: Projected to increase to around 90 TWh
+
+3. **China**
+   - 2022: Approximately 215 TWh
+   - 2026: Projected to rise sharply to around 300 TWh
+
+### Summary
+The chart from the International Energy Agency, as reported by FT, highlights a significant anticipated increase in electricity consumption by data centers in the US, EU, and China between 2022 and 2026. The United States and China are expected to see the most substantial increases, with China projected to have the highest consumption by 2026 at approximately 300 TWh. The US follows with about 260 TWh, while the EU has a relatively smaller increase, rising to 90 TWh by 2026. This indicates a growing energy demand from data centers, particularly in the US and China, reflecting the increasing reliance on data-heavy technologies and services.

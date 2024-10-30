@@ -1,0 +1,16 @@
+The chart titled "Asymmetric Integration" analyzes the import dependence as a share of total demand for both OECD countries (rich democracies) and China from 1995 to 2017. 
+
+Key points extracted from the chart:
+
+- Chinese producers have increasingly reduced their reliance on imported parts, components, and finished goods from rich democracies.
+- Conversely, rich democracies have become more reliant on Chinese exports.
+
+The red line represents the dependence of Chinese producers on OECD value-added, starting at around 20% in 1995, peaking in the mid-2000s, and ultimately declining to about 15% by 2017.
+
+The blue line represents the reliance of OECD countries on Chinese value-added, which starts near 0% in 1995 and steadily rises over the years, crossing the 5% mark by 2017.
+
+This trend indicates a growing asymmetry where China's self-sufficiency in advanced manufacturing contrasts with increased dependency by the OECD on Chinese exports. 
+
+The chart's data covers various manufacturing industries: chemicals, pharmaceuticals, basic metals, fabricated metal products, computers, electronics, optical and electrical equipment, transportation equipment, other machinery, and other miscellaneous manufacturing industries.
+
+Source of data: OECD, Matthew Klein’s calculations.

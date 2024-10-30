@@ -1,0 +1,26 @@
+This image illustrates the contributions to inflation through a stacked area chart measuring percentage-point contributions to the 12-month percentage changes in the consumer-price index (CPI). Key details include:
+
+1. **Components**: Categories contributing to inflation are:
+   - Other core (gray)
+   - Core services less energy services and shelter (maroon)
+   - Energy (yellow)
+   - Food (light brown)
+   
+2. **Timeframe**: The data spans from 2020 to 2023.
+
+3. **Trends**:
+   - In 2020, inflation contributions were relatively low, with a notable dip into negative contributions.
+   - Contributions to inflation began to rise significantly through 2021, with a peak in late 2022.
+   - By 2023, the total contribution from these categories has led to a 12-month percentage change of +6% in CPI.
+
+4. **Category Contributions**:
+   - "Other core" and "Core services less energy services and shelter" have consistently been the largest contributors.
+   - "Energy" experienced fluctuations with sharp increases during certain periods.
+   - "Food" remained a smaller but consistent contributor.
+
+5. **Source and Notes**:
+   - The data is sourced from the U.S. Labor Department.
+   - Percentage-point contributions are analyzed monthly.
+   - The chart is prepared by Andrew Barnett for The Wall Street Journal.
+
+Overall, the chart effectively shows the rising trend of inflation since 2020, highlighting the contributions of different categories to the overall inflation rate, leading to a significant 6% change in the consumer-price index over the most recent 12 months.

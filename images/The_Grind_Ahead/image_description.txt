@@ -1,0 +1,15 @@
+The image presents a line graph that compares two economic indicators in the United States from 1970 to the present: US Real Growth vs Potential (represented by the blue line) and US Private Borrowing (Y/Y) (represented by the red line). 
+
+The title of the graph, "The Tightening Has Hit Credit Hard but the Economy Has Remained Resilient," suggests that despite credit tightening measures, the overall economy has demonstrated resilience.
+
+Key points from the graph:
+
+1. **Fluctuation Patterns**: Both US Real Growth vs Potential and US Private Borrowing display cyclical fluctuations over the years. The peaks and troughs often correspond to various economic events and cycles.
+   
+2. **Correlation between Lines**: The graph shows periods where changes in private borrowing appear to be closely followed by changes in real growth vs potential, indicating a correlation between borrowing and economic growth.
+
+3. **Recent Trends (Post-2020)**: There are significant volatile movements in both indicators around 2020, likely reflecting the economic impact of the COVID-19 pandemic and subsequent recovery phases.
+
+4. **General Observation**: Although there are periods of negative growth and reduced borrowing, the economy has periods of positive growth indicating resilience over the long term despite credit tightening.
+
+This summary underscores the historical trends and interrelation of economic growth and borrowing within the context of US economic policies and external events over the last five decades.

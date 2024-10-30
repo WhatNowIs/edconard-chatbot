@@ -1,0 +1,18 @@
+The chart "Paid back with interest" from The Economist depicts the percentage of global interest costs as a share of GDP from 2016, with forecasts up to 2027. Key takeaways include:
+
+1. **Interest Rate Projections**:
+    - The chart tracks a baseline or "current rate path" and an alternative scenario with an additional 1 percentage point increase in interest rates in 2023.
+    - The "current rate path" shows gradual increases in interest costs.
+    - The alternative scenario shows a steep rise in interest costs, peaking significantly higher than the baseline.
+
+2. **Data Coverage**:
+    - The analysis covers 58 economies, accounting for 90% of the world's GDP.
+    - It assumes constant debt-to-income ratios with private debt rolling over in two years and public debt in five years.
+
+3. **Forecast Period**:
+    - The forecast period begins in 2023 and extends to 2027.
+
+4. **Key Sources**:
+    - Data and estimates are sourced from Bloomberg, the International Institute of Finance (IIF), the International Monetary Fund (IMF), the Organisation for Economic Co-operation and Development (OECD), the United Nations (UN), and The Economist itself.
+
+This summary provides an understanding of potential future scenarios in global interest costs as a percentage of GDP, factoring in changes in interest rates.

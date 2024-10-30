@@ -1,0 +1,25 @@
+The image provides a detailed analysis of wage growth trends for American workers, categorized into supervisory and nonsupervisory roles across different sectors such as retail, leisure, and hospitality.
+
+Key points from the data include:
+
+1. **Wage Growth Trend**: 
+   - Wage growth for most Americans, represented by the red line (nonsupervisory), has significantly decreased in 2024 to around the pre-pandemic level, settling at approximately 3% annualized. This is a noticeable drop from the roughly 5% increase observed from the second half of 2022 to 2023.
+
+2. **Monthly Changes Data**:
+   - The data tracks monthly changes (m/m) and multi-month moving averages (3mma, 6mma) in average hourly worker pay.
+   - Different lines represent various segments:
+     - **Blue**: Retail, leisure, and hospitality (3-month moving average)
+     - **Red**: All other nonsupervisory (3-month moving average)
+     - **Green**: Supervisory (6-month moving average)
+
+3. **Historical Context**:
+   - The chart spans from 2007 to 2024, showing the fluctuations in wage growth through periods of economic changes, including the financial crisis of 2008, economic recovery periods, and the recent impact of the COVID-19 pandemic.
+
+4. **Sector-Specific Trends**:
+   - Generally, retail, leisure, and hospitality sectors (blue line) have shown more volatility compared to other supervisory and nonsupervisory segments.
+   - The supervisory wage growth (green line) tends to fluctuate less dramatically compared to nonsupervisory wages.
+
+5. **Source**:
+   - The data and analysis are attributed to the Bureau of Labor Statistics and Matthew Klein’s calculations.
+
+This summary illustrates a significant shift in wage growth trends, emphasizing a return to pre-pandemic wage growth rates after a period of heightened increases. The data also underscores the variances in wage growth trends across different employment sectors and types of positions.

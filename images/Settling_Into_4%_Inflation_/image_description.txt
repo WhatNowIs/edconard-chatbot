@@ -1,0 +1,22 @@
+The graph titled "Persistent Acceleration" illustrates the monthly changes in average hourly pay, annualized, for different worker categories from 2007 to 2023. It aims to highlight how wages, a key element of consumer spending, contribute to underlying inflation, especially when they increase rapidly.
+
+### Key Observations:
+1. **Categories of Workers**:
+   - **Retail, Leisure, Hospitality (Nonsupervisory)**: Displayed by blue lines (dotted for m/m, solid for 3-month moving average).
+   - **All Other Nonsupervisory Workers**: Represented by red lines (dotted for m/m, solid for 3-month moving average).
+   - **Supervisory Workers**: Indicated by green lines (dotted for m/m, solid for 6-month moving average).
+
+2. **General Trends**:
+   - **Pre-Pandemic (2007-2019)**: Wages across all categories showed relatively modest fluctuations, mostly below 5%.
+   - **Pandemic Era (2020-2021)**: There was a significant spike in wages for retail, leisure, and hospitality workers. Average hourly pay increases for these sectors reached peaks above 15% during this period.
+   - **Post-Pandemic (2021-2023)**: While fluctuations continued, they began to stabilize, but wages for most Americans (red line, nonsupervisory workers) remained approximately 2 percentage points higher than pre-pandemic levels.
+
+3. **Inflation Implications**:
+   - Wages, particularly in the nonsupervisory sectors, have a direct impact on consumer spending and can drive inflation.
+   - Rapid pay increases can sustain inflationary pressures as evidenced by the wage trends shown.
+
+4. **Data Source**:
+   - The data is sourced from the Bureau of Labor Statistics and calculations by Matthew Klein.
+
+### Summary:
+The graph depicts a clear rise in average hourly pay starting around the pandemic, with a particularly sharp increase for retail, leisure, and hospitality workers. Despite the stabilization of these gains post-pandemic, wages for most Americans continue to trend above pre-pandemic norms, suggesting persistent inflationary pressure driven by prolonged periods of rapid wage increases. This underscores the critical role of wages in consumer spending and inflation dynamics.

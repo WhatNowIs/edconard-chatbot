@@ -1,0 +1,12 @@
+The image is a line chart titled "Going, going..." from The Economist, depicting the annual percentage change in non-residential fixed investment in the United States from 1991 to 2023. The chart visualizes two lines:
+
+1. **Capex tracker:** A high-frequency measure of capital investment, shown in light blue.
+2. **Non-residential fixed investment:** Shown in dark blue, indicating the broader trend.
+
+Key observations:
+- Both metrics show considerable volatility over the period.
+- The Capex tracker (light blue) seems to react more quickly and with greater volatility compared to non-residential fixed investment (dark blue).
+- Notable dips are observed around the early 2000s, the 2008 financial crisis, and the COVID-19 pandemic in 2020.
+- Peaks generally precede each dip, indicating a cyclical nature of investment activity.
+
+The data sources for this chart include the Bureau of Economic Analysis and Goldman Sachs. The volatility highlighted in this chart emphasizes the cyclical and fluctuating nature of non-residential fixed investments in the US over the last three decades.

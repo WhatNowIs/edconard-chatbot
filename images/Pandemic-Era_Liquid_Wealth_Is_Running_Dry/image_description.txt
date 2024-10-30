@@ -1,0 +1,17 @@
+The image is a graph titled "Credit card delinquencies and pandemic-era liquid assets," depicting the trends in these variables for bottom households by income over time from 2019:Q4 to 2023:Q4.
+
+**Key Points:**
+1. **Axes and Scales:**
+   - *Left Vertical Axis (blue)*: Represents the percentage point change in liquid wealth.
+   - *Right Vertical Axis (green)*: Represents the percentage point change in credit card delinquency.
+   - The horizontal axis denotes quarterly periods from Q4 2019 to Q4 2023.
+
+2. **Trends:**
+   - *Liquid Wealth (blue line, left scale)*: Initially increased to a peak around Q1 2020 but started declining sharply after Q1 2021, reaching negative percentage points by Q4 2021 and continuing to decline towards Q4 2023.
+   - *Credit Card Delinquency (green line, right scale)*: Initially at a low level but started increasing significantly after Q1 2021, surpassing pre-pandemic levels by Q4 2021, and continued to rise sharply into 2023.
+
+3. **Annotations within the graph:**
+   - By Q4 2021, extra wealth accumulated during the pandemic had depleted.
+   - Delinquencies exceeded pre-pandemic levels by Q4 2021.
+  
+The graph indicates a correlation between the depletion of pandemic-era liquid assets and the subsequent rise in credit card delinquencies among lower-income households. As liquid wealth decreased, delinquencies on credit cards increased, suggesting increasing financial strain in these households.

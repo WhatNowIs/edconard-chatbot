@@ -1,0 +1,21 @@
+The figure titled "Share of US Multinational Income and Employment in Low-Tax Jurisdictions, 2020" displays data on the proportion of foreign profits and foreign employment of US multinational corporations in low-tax jurisdictions for the year 2020. The data originates from the Bureau of Economic Analysis (BEA) for profit type returns and direct investment income, and the Internal Revenue Service (IRS) for country-by-country reporting (CBCR).
+
+Key points from the chart:
+
+1. **BEA 7, profit type return**:
+   - **Share of foreign profits**: Approximately 45%
+   - **Share of foreign employment**: Around 3%
+   
+2. **BEA 7, direct investment income**:
+   - **Share of foreign profits**: Close to 60%
+   - **Share of foreign employment**: Roughly 3%
+   
+3. **CBCR 7**:
+   - **Share of foreign profits**: About 50%
+   - **Share of foreign employment**: Roughly 3%
+   
+4. **CBCR all low**:
+   - **Share of foreign profits**: Approximately 60%
+   - **Share of foreign employment**: Around 5%
+   
+The note clarifies that data from the BEA and IRS include seven traditional low-tax jurisdictions, such as Bermuda, Ireland, and Singapore. Despite mechanical differences in the data series—such as the BEA data being after-tax—the overall trend shows a disproportionate amount of US multinational profits in low-tax jurisdictions relative to their employment, indicating tax strategies that favor profit shifting to these jurisdictions. There is also a mention of potential double-counting of data, although the impact is unclear.

@@ -1,0 +1,11 @@
+This graph, provided by the Federal Reserve Bank of St. Louis (FRED), depicts the Consumer Price Index (CPI) for all urban consumers in the United States, tracking the average cost of all items in U.S. cities. 
+
+The timeline on the x-axis spans from 2010 to 2022, while the y-axis represents the CPI index with the base period of 1982-1984 set at 100. Several key observations can be noted from this graph:
+
+1. **Overall Trend**: The CPI has generally been increasing, indicating that prices for a basket of goods and services have been rising systematically over the 12-year period.
+  
+2. **Periods of Recession**: The graph highlights two recessions with shaded regions—one at the beginning in 2010 and another in early 2020, corresponding to the onset of the COVID-19 pandemic.
+
+3. **Recent Spike**: Post-2020, there is a noticeable and steep increase in the CPI, suggesting a rapid rise in prices, reflective of inflationary pressures in the economy during that period.
+
+This CPI information, sourced from the U.S. Bureau of Labor Statistics, provides crucial insights into price level changes over time, helping to understand inflation trends and the economic health of urban public domains in the U.S.

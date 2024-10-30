@@ -1,0 +1,13 @@
+The image is a graph showing the trends in China's selling of U.S. Treasury and U.S. Agency debt. The time range on the X-axis spans from 2000 to 2024, while the Y-axis measures the amount in billions of dollars up to $80 billion. The graph differentiates between total debt (black line), U.S. Treasuries (pink bars), and U.S. Agency debt (yellow bars).
+
+Key points:
+
+1. China's selling activity has seen significant fluctuations over the years.
+2. Between 2000 and 2010, there were several peaks and troughs, with both Treasuries and Agencies seeing periods of both selling and purchasing.
+3. From around 2010, there is greater volatility, with substantial selling after 2015.
+4. Recently, the selling of Treasuries and Agency debt has significantly increased, reaching new record levels around 2024.
+5. The total debt (black line) has shown a downward trend, indicating increased selling particularly evident in the last few years.
+
+Sources: Bloomberg, the US Department of the Treasury.
+
+This trend shows a significant shift in China’s financial strategy concerning holding U.S. debt, with a marked increase in selling activities of late.

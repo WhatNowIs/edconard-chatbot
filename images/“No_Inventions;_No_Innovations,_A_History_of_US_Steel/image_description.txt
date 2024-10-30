@@ -1,0 +1,10 @@
+The graph illustrates the trend in the quantity of steel shipped by US Steel from 1900 to 2000, measured in millions of tons. Key points include:
+
+- **Early 1900s**: Steel shipments began slightly above 10 million tons.
+- **1920s to Early 1930s**: The shipments exhibited fluctuations but remained between 10 and 25 million tons.
+- **1933**: A significant dip occurred, marking the lowest shipment level, under 10 million tons, likely due to the Great Depression.
+- **1940s to 1950s**: Shipments sharply increased, peaking multiple times at over 35 million tons.
+- **1960s to 1970s**: While still high, the shipments fluctuated between 25 and 35 million tons.
+- **1980s onwards**: There was a sharp decline, with shipments dropping steadily and settling around or slightly above 10 million tons in the late 20th century.
+
+This overview indicates that the highest shipments occurred in the mid-20th century, followed by a significant decline towards the end of the 20th century.

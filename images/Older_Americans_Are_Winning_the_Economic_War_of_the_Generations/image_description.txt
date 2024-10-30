@@ -1,0 +1,22 @@
+The image is a chart titled "Consumption by Age in 2021," showing the consumption patterns of individuals at different ages as a fraction of the average labor income for people aged 30 to 49 years in 2021. The data is sourced from the National Transfer Accounts Project and is presented by The New York Times.
+
+Key Points:
+1. **Peak Consumption:** In 2021, consumption peaked when individuals were in their 80s or older.
+2. **Consumption Categories:** The chart breaks down consumption into several categories:
+    - **Public Other (light blue):** Defense, highways, etc.
+    - **Private Other (purple):** Food, clothing, etc.
+    - **Owned Housing (dark blue)**
+    - **Public Education (orange)**
+    - **Private Education (brown)**
+    - **Private Health (yellow)**
+    - **Public Health (red)**
+
+3. **Age-specific Trends:**
+    - **Ages 0-20:** A significant portion of consumption is attributed to public education, with peaks seen in private education expenses.
+    - **Ages 20-50:** Consumption is relatively stable, with private other (food, clothing, etc.) and owned housing being major components.
+    - **Ages 50-80:** There is a gradual increase in consumption, particularly in private health and public health categories.
+    - **Ages 80+:** A marked increase in consumption is observed, largely driven by public health expenses.
+
+4. **Overall Pattern:** Overall consumption steadily increases with age, with notable consumption in public and private health services for older age groups.
+
+The chart effectively illustrates how consumption needs and the composition of expenses evolve over a person's lifetime, emphasizing the increased demand for healthcare services in later years.

@@ -1,0 +1,41 @@
+The image is a line graph titled "Trend in NAEP long-term trend mathematics scores at five selected percentiles for 13-year-old students." It displays the mathematics scores at five selected percentiles (90th, 75th, 50th, 25th, 10th) over various assessment years.
+
+**Key elements and data points extracted:**
+
+1. **Legend:**
+   - Symbols denote different percentiles:
+     - Circle: 10th Percentile
+     - Plus: 25th Percentile
+     - Diamond: 50th Percentile
+     - Square: 75th Percentile
+     - Pentagon: 90th Percentile
+   - Line types:
+     - Dashed line: Original assessment format
+     - Solid line: Revised assessment format
+   - Asterisk (*): Indicates a statistically significant difference (p < 0.05) from 2023.
+
+2. **Scale Score:**
+   - The vertical axis ranges from 190 to 330.
+   - The horizontal axis represents the assessment years from 1978 to 2023.
+
+3. **Scores in 2023:**
+   - 90th Percentile: 322
+   - 75th Percentile: 301
+   - 50th Percentile: 274
+   - 25th Percentile: 244
+   - 10th Percentile: 213
+
+4. **Comparison Over Time:**
+   - 90th Percentile shows a rise from 313 in 1978 to 329 in recent years but slightly dropped to 322 in 2023.
+   - 75th Percentile increased from 291 in 1978 to 309 and then slightly decreased to 301 in 2023.
+   - 50th Percentile, 25th Percentile, and 10th Percentile show a general uptrend, peaking recently before dropping slightly in 2023.
+
+5. **Significant Changes:**
+   - All percentiles except for the 10th percentile registered a significant decrease from the previous assessment year to the year 2023, as denoted by the asterisks.
+
+6. **Interpretation Note:**
+   - The NAEP LTT assessment results reflect the scores in the year the school year ends.
+   - The 2023 LTT was administered in fall 2022, reported as 2023 results.
+
+**Summary:**
+The graph reveals trends in math scores for 13-year-olds at five key percentiles over time, highlighting an overall improvement in scores over several decades with a recent decline across most percentiles in 2023. The data suggests significant changes in various scores, indicating a potential area of concern for education specialists to further investigate and address.

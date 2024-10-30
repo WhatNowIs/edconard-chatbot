@@ -1,0 +1,15 @@
+The image showcases two line graphs titled "Nonparticipation rates for prime-age men, by generation, age, educational attainment."
+
+**Graph A: Education level of high school or less**
+- Millennial men show the highest nonparticipation rates starting at above 14% at age 25, remaining relatively stable with slight fluctuations until age 45, after which the rate increases gradually with a jump nearing 25% around age 55.
+- Gen X men begin with rates around 10%, showing a steady increase from age 30, peaking around 15% by age 55, with a noticeable sharp rise after age 50.
+- Baby Boomers start around 7%, showing a gradual increase with rates nearing 20% at age 55.
+- The Silent Generation starts from the lowest rates below 4%, increasing significantly after age 45 and reaching above 15% by age 55.
+
+**Graph B: Education level of college or more**
+- Millennial men show a starting nonparticipation rate of about 9% at age 25 and a declining trend to around 4% at age 30, staying relatively constant until age 45 and increasing after age 50 to closer to 6% at age 55.
+- Gen X men start around 7%, showing a steady decline to about 4% at age 30, maintaining a stable rate with a slight increase after age 50 to around 6% at age 55.
+- Baby Boomers begin with rates around 7%, showing a decline to about 4% at age 30 and increase moderately to 7% by age 55.
+- The Silent Generation starts around 5%, showing a gradual increase after age 50 to around 8% by age 55.
+
+Overall, the graphs reveal that nonparticipation rates of prime-age men differ significantly based on educational attainment and generation, with higher education levels generally correlating with lower nonparticipation rates across all age groups and generations.

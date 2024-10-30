@@ -1,0 +1,30 @@
+The table "Returns on Consolidated Balance Sheet" outlines the returns on liabilities and assets for both the government and consolidated entities from 1997 to 2022, broken down into three periods: 1997-2022, 2000-2009, 2010-2019, and 2020-2022. Below is a summary of the key figures:
+
+### Liabilities
+1. **Government:**
+   - 1997-2022: 1.32% 
+   - 2000-2009: 1.67%
+   - 2010-2019: 1.69%
+   - 2020-2022: -1.93%
+
+2. **Consolidated:**
+   - 1997-2022: 0.74%
+   - 2000-2009: 0.88%
+   - 2010-2019: 1.08%
+   - 2020-2022: -0.91%
+
+### Assets (Consolidated)
+1. **Returns:**
+   - 1997-2022: 2.87%
+   - 2000-2009: 1.41%
+   - 2010-2019: 4.74%
+   - 2020-2022: 1.07%
+
+### Difference between Assets and Consolidated Liabilities
+1. **Difference:**
+   - 1997-2022: 2.13%
+   - 2000-2009: 0.53%
+   - 2010-2019: 3.66%
+   - 2020-2022: 1.97%
+
+Overall, the data reveal varying trends in both liabilities and asset returns over different periods. The 2010-2019 period shows the highest return on consolidated assets (4.74%) with a significant positive difference (3.66%) between assets and liabilities. In contrast, during 2020-2022, both government and consolidated liabilities experienced negative returns, though the overall difference between assets and consolidated liabilities was still positive at 1.97%.

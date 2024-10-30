@@ -285,13 +285,11 @@ def macro_roundup_preprocessor(input_dir: str, output_dir: str):
 
         # Select only the specified columns
         columns_to_extract = [
-            'headline', 'permalink', 'tweet_text', 'post_date_and_time',
-            'summary', 'publication_date', 'article_link', 'authors', 'publication', 
-            'comments', 'is_ai_generated_summary', 'featured_image_url', 'extended_excerpt',
-            'pdf_file_url', 'related_articles', 'categories', 'primary_category_name', 'primary_category_has_parent',
-            'primary_category_parent_name', 'importance', 'type_of_information', 'source', 'comparisons', 
-            'education', 'agreement_sentiment', 'political_perspective', 'timelessness', 'trustworthiness', 
-            'seo_title', 'meta_description'
+            'headline', 'permalink', 'tweet', 'article_link', 'authors', 'featured_image_url', 
+            'publication', 'publication_date', 'summary', 'related_articles', 'primary_category_name', 
+            'categories', 'importance', 'type_of_information', 'source', 'comparisons', 'seo_title', 'meta_description',
+            'pdf_file_url', 'is_ai_generated_summary', 'comments', 'extended_excerpt',
+            'education', 'agreement_sentiment', 'political_perspective', 'timelessness', 'trustworthiness'
         ]
         df = df[columns_to_extract]
 
@@ -356,7 +354,7 @@ def macro_roundup_preprocessor(input_dir: str, output_dir: str):
 
             elements.append(pub_details_block)
             #  Tweet text injection
-            tweet_texts = str(row['tweet_text'])
+            tweet_texts = str(row['tweet'])
             elements.append(Paragraph(f"<b><font name='{all_subheading_style.fontName}' size='{all_subheading_style.fontSize}' color='{all_subheading_style.textColor}'>Tweet:</font></b>" 
                                     f"&nbsp;&nbsp;"
                                     f"<font name='{tweet_style.fontName}' size='{tweet_style.fontSize}' color='{tweet_style.textColor}'>{tweet_texts}</font>", tweet_style))
@@ -419,7 +417,7 @@ def macro_roundup_preprocessor(input_dir: str, output_dir: str):
                     
                     folder_name = clean_string_for_filename(row['headline'])
                     # Download and store featured image in the images folder
-                    create_image_folder_and_download_image(row['featured_image_url'], folder_name)
+                    # create_image_folder_and_download_image(row['featured_image_url'], folder_name)
                     
                     images_data.append({
                         "featured_image_url": row['featured_image_url'], 

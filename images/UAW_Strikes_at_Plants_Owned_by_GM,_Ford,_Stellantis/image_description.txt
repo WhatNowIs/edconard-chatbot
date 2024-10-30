@@ -1,0 +1,21 @@
+The image is a bar graph titled "Inventory Crunch," illustrating the days of available vehicle stock if a strike were to halt factory production. The data compares August and July for Stellantis, Ford Motor, General Motors, and the industry total.
+
+Key Points:
+1. **Stellantis**: 
+   - August: ~75 days of available stock.
+   - July: ~55 days of available stock.
+   
+2. **Ford Motor**: 
+   - August: ~60 days of available stock.
+   - July: ~50 days of available stock.
+   
+3. **General Motors**: 
+   - August: ~50 days of available stock.
+   - July: ~45 days of available stock.
+   
+4. **Industry Total**: 
+   - August: ~48 days of available stock.
+   - July: ~43 days of available stock.
+
+Summary:
+The data from Motor Intelligence shows that major automakers (Stellantis, Ford, General Motors) and the industry in general had more days of vehicle stock available in August compared to July. Stellantis had the highest inventory available in August at about 75 days, followed by Ford Motor (60 days), General Motors (50 days), and the industry total (48 days). This implies an overall increase in available stock from July to August, possibly cushioning the impact if a production-halting strike were to occur.

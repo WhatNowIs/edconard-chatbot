@@ -1,0 +1,11 @@
+The image presents a scatter plot titled "Pay increases are more correlated with productivity increases for top earners." The plot shows the relationship between earnings in the previous year and the coefficient from regressing pay growth on productivity growth.
+
+Key observations from the plot:
+
+1. **X-axis (Earnings in Previous Year)**: Ranges from 0 to over 500,000 units of currency. 
+2. **Y-axis (Coefficient from Regressing Pay Growth on Productivity Growth)**: Ranges from 0.010 to 0.030.
+3. **Trend**: As earnings in the previous year increase, the coefficient from regressing pay growth on productivity growth also increases. This suggests that for higher earners, there is a stronger correlation between pay growth and productivity growth.
+4. **Data Points**: The scatter points with error bars show increasing coefficients along with increasing earnings, and the most significant increase and highest correlation are observed for the top earners (500,000 and above).
+
+Summary: 
+The plot illustrates that pay increases are more strongly correlated with productivity increases among high earners. This implies that top earners see a greater alignment between their pay growth and productivity growth compared to lower earners. The relationship appears to strengthen as the previous year's earnings increase, depicted by rising coefficients along with higher earnings brackets.

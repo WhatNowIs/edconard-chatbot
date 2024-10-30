@@ -1,0 +1,16 @@
+The image is a line chart depicting two different trends over the years from 2008 to 2022. 
+
+1. **Participation Rate (%):**
+   - Represented by the red line on the left axis.
+   - In 2008, the participation rate started at approximately 66%.
+   - There is a general decline in participation rate over the years, hitting a low point around 2020.
+   - A sharp drop was observed around 2020, indicating a significant event impacting participation.
+   - After the sharp decline, there was a gradual recovery, slightly increasing again towards 2022.
+
+2. **Contribution of Aging (percentage points):**
+   - Represented by the yellow line on the right axis.
+   - In 2008, the contribution of aging started slightly below 0 percentage points.
+   - This contribution experienced a steady decline over the years, reaching close to -4 percentage points by 2022.
+
+**Summary:**
+The chart illustrates a declining trend in the participation rate from around 66% in 2008 to about 62% by 2022, with a dramatic drop around 2020 followed by a slight recovery. Concurrently, the contribution of aging consistently decreased from near 0 percentage points in 2008 to around -4 points by 2022, indicating aging has increasingly contributed negatively to participation rates over the observed period.

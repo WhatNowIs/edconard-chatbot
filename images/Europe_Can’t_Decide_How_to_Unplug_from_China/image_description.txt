@@ -1,0 +1,12 @@
+The image is an infographic titled "Money at Risk" from The Economist, detailing the exposure to China as a percentage of GDP for various Western economies in 2020. The exposure includes total exports and revenues from western-owned subsidiaries in China.
+
+Key points from the infographic:
+
+- **Germany** has the highest exposure to China, with close to 10% of its GDP tied to total exports and subsidiaries' revenues in China.
+- **Netherlands** follows, showing significant exposure mainly through goods exports.
+- The category "Europe big 6" (Britain, France, Germany, Italy, Netherlands, and Spain) shows a combined exposure that heavily leans on affiliates' revenues in China.
+- **France** and the **United States** have similar levels of exposure, with a notable portion coming from affiliates' revenues.
+- **Britain** and **Italy** have moderate exposure primarily from affiliates' revenues.
+- **Spain** has the least exposure among the listed countries, with a small fraction of its GDP tied to China through goods exports.
+
+The data sources for this infographic include the OECD, Bloomberg, IMF, Eurostat, and The Economist. It distinguishes between goods exports (mainland China only), services exports (including Hong Kong), and affiliates' revenues in China (including Hong Kong).

@@ -1,0 +1,27 @@
+The image is a bar chart titled "America Is a Global Leader in Educational Testing Results: 2022 PISA Performance With America Split by Race." It ranks various countries and racial/ethnic groups in the United States by their PISA (Program for International Student Assessment) mathematics scores. 
+
+Key insights:
+
+1. **Top Performers**: 
+    - **Singapore** leads the chart, followed by **Macau** and **China**.
+    - Within the United States, **U.S. Asians** outperform other racial/ethnic groups and many other countries.
+  
+2. **U.S. Performance**:
+    - **U.S. Whites** and **U.S. Asians** rank higher than many other countries.
+    - **U.S. Hispanics** and **U.S. Blacks** are located lower on the chart, indicating lower performance compared to U.S. Whites and U.S. Asians.
+
+3. **Continents**:
+    - The chart categorizes entries by continent with color codes: 
+        - **Americas** in yellow
+        - **Asia** in blue
+        - **Europe** in teal
+        - **MENA (Middle East and North Africa)** in green
+        - **USA** racial/ethnic groups in different colors:
+            - Red for U.S. overall
+            - Each specific racial/ethnic group in pink shades
+
+4. **Mid to Lower Performers**:
+    - Countries like **Malaysia, Colombia, Brazil, Peru**, and **Argentina** are mid-tier.
+    - **Nigeria, Jordan, Morocco**, and **Cambodia** are on the lower end of the spectrum.
+
+This bar chart effectively highlights the disparity in PISA mathematics performance between different countries and U.S. racial/ethnic groups. It showcases how certain groups within the U.S. perform on par with or surpass other countries, while other groups lag behind.

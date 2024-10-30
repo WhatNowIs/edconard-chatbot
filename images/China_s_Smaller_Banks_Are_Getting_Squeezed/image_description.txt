@@ -1,0 +1,18 @@
+The chart titled "The Small Get Squeezed?" examines borrowing trends among Chinese state-owned banks, distinguishing between the top 7 largest banks (referred to as the "Big 7") and all other state-owned commercial banks. The analysis covers the period from 2017 to 2023 and tracks borrowing from the People's Bank of China (PBOC) and net repo (repurchase) borrowing, quantified in CNY trillions.
+
+Key points from the data:
+
+1. **Borrowing Trends:**
+   - **Big 7 Banks (Blue Line):**
+     These banks have shown relatively lower and more volatile borrowing levels from the PBOC and net repos over the years, remaining mostly below ¥4 trillion throughout the period.
+     - There's a noticeable dip around 2019-2020 but showing modest rising fluctuations towards 2023.
+
+   - **All Other State-Owned Commercial Banks (Red Line):**
+     These smaller banks have shown a steady increase in borrowing, starting from slightly above ¥4 trillion in 2017 and upward trending, surpassing ¥8 trillion by 2023.
+     - The borrowing trend for smaller banks has been more consistent and has shown a steep rise particularly after mid-2022.
+
+2. **Implications:**
+   - The significant rise in borrowing among smaller state-owned banks since mid-2022 suggests that these banks are increasingly relying on PBOC loans and net repo borrowing to finance their balance sheet growth.
+   - In contrast, the top 7 state-owned banks have not shown the same level of reliance, indicating either better access to other financing sources or less aggressive balance sheet expansion.
+
+Overall, the data suggests a growing disparity in how Chinese state-owned banks are financed, with smaller banks becoming more dependent on central bank support than their larger counterparts. This could point to potential vulnerabilities or differing strategic financial management practices within the banking sector.

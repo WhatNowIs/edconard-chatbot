@@ -1,0 +1,15 @@
+The chart titled "Change in Average Hourly Earnings, All Private Industries" displays the percent change on an annual rate basis from January 2021 to January 2023. Two metrics are tracked: the 3-month change (represented by an orange line) and the 1-month change (represented by blue bars).
+
+Key observations:
+1. **Overall Trends**: 
+   - Both the 1-month and 3-month change metrics show fluctuations in average hourly earnings over the two-year period.
+2. **1-month Change**:
+   - There is a notable spike in one-month earnings changes in mid-2021, reaching over 8%. 
+   - After this peak, the 1-month change fluctuates, showing several smaller peaks and troughs.
+3. **3-month Change**:
+   - The 3-month change also saw a rise in early 2021, peaking around mid-2021 before experiencing a downward trend.
+   - This metric indicates a slower but steadier increase in earnings up to mid-2022, followed by a general decline.
+4. **Recent Trends**:
+   - Both the 1-month and 3-month changes show a decreasing trend nearing January 2023, indicating a slowdown in the growth rate of average hourly earnings for all private industries.
+
+The data source for this chart is the Bureau of Labor Statistics via Macrobond, with additional calculations by the author. This analysis can be informative for understanding wage growth trends in the private sector over the specified period.

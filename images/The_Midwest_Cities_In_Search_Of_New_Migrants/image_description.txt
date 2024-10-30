@@ -1,0 +1,15 @@
+The image, produced by the Financial Times with data from the Brookings Institution and the US Census Bureau, illustrates changes in population for select racial and ethnic groups in the United States from 2010 to 2020. 
+
+Key points:
+
+1. **Latino or Hispanic Population**: Increased significantly by 11.6 million.
+2. **Two or More Races**: Experienced substantial growth of 7.9 million.
+3. **Asian American Population**: Grew by 5.2 million.
+4. **Black Population**: Increased by 2.3 million.
+5. **Other Races**: Rose by 1.2 million.
+
+Conversely,
+
+6. **White Population**: Declined by 5.1 million.
+
+Overall, the data underscores that population growth in the US during this period has largely been driven by non-white groups.

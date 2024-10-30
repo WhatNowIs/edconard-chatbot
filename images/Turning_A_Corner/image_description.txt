@@ -1,0 +1,19 @@
+The provided images present data related to the U.S. debt market and middle-market leveraged buyout (LBO) loan issuance.
+
+### Left Chart: "Volume of U.S. Debt Outstandings"
+- **Time Period**: 2009 to 2023
+- **Types of Debt**:
+  - **Leveraged Loans** (blue solid line): Steadily increased since around 2013, with significant growth peaking near 2021 and a slight decrease thereafter.
+  - **High-Yield Bonds** (red dashed line): Show a steady rise until around 2016, followed by gradual leveling off and slight decline.
+  - **Direct Lending AUM** (green dotted line): Exhibits a steady and gradual increase, especially notable after 2017.
+- **Trend Highlight**: Leveraged Loans saw a notable increase around 2019-2021, with Direct Lending AUM (highlighted in yellow) consistently growing over the displayed period.
+
+### Right Chart: "Share of Middle-market LBO Loan Issuance"
+- **Time Period**: 2014 to 2022
+- **Loan Types**:
+  - **Direct Lending**: Represented by darker blue bars, which show a stable and substantial portion of the middle-market LBO loan issuance, with notable increases around 2016 and 2020.
+  - **Syndicated Debt**: Represented by lighter blue bars, which also constitute a significant portion but show some fluctuations over the given period.
+- **Trend Observation**: Direct Lending has gained prominence over Syndicated Debt in recent years, especially after 2020.
+
+### Summary
+The left chart indicates that the volume of leveraged loans and direct lending assets under management (AUM) has generally increased over the period from 2009 to 2023, with leveraged loans peaking around 2021. On the other hand, high-yield bonds have shown moderate growth with slight declines in recent years. The right chart illustrates that in the middle-market LBO loan issuance, Direct Lending has steadily become a more significant component over time, particularly from 2020 onwards, often taking up a larger share compared to Syndicated Debt.

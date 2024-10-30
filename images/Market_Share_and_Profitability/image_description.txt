@@ -1,0 +1,13 @@
+The chart "Figure 4. Market Share vs. Return on Equity" presents a scatter plot examining the relationship between market share (horizontal axis) and return on equity (vertical axis) for various companies.
+
+Notable points on the graph:
+- Companies like "Specialty Chem, Sherwin Williams" have high return on equity (around 80%) but relatively low market share (less than 20%).
+- "Food Distributors, Sysco" appears at a moderate return on equity (around 50%) and moderate market share (approximately 35%).
+- "Computer and Electronics Retail, Best Buy" shows a mid-level return on equity (around 25%) and a higher market share (around 80%).
+- "Drug Retail, Walgreens" has a low return on equity (less than 10%) but a high market share (around 90%).
+
+The trend line equation is given as \( y = -0.0065x + 0.2073 \) with an \( R^2 = 5E-05 \), suggesting that there is a very weak negative correlation between market share and return on equity. The low \( R^2 \) value indicates that market share does not strongly explain the variability in return on equity.
+
+Source Information:
+- Data Source: Capital IQ
+- Analysis by: Verdad

@@ -1,0 +1,17 @@
+The image, titled "Figure 3: Individualism and WFH," consists of two scatter plots: Panel A (All respondents) and Panel B (College graduates). Both panels plot the relationship between Hofstede's Individualism index (x-axis) and Average Full Paid Days Working From Home (WFH) (y-axis).
+
+### Panel A: All respondents
+- This scatter plot shows data points for various countries.
+- Countries with higher individualism tend to have a higher average of full paid days WFH.
+- The graph suggests a general trend where more individualistic cultures offer more WFH days.
+- Countries like Canada, the UK, USA, and Australia have higher individualism scores and more WFH days.
+- South Korea and Greece, with lower individualism scores, show fewer WFH days.
+
+### Panel B: College graduates
+- This plot focuses on college graduates specifically and provides a more nuanced view.
+- There is a clearer positive correlation between individualism and WFH days.
+- Countries such as Canada, the UK, USA, and Australia again appear on the higher end for both individualism and WFH days.
+- Countries with lower individualism like South Korea and Taiwan show a low number of WFH days even among college graduates.
+
+### Summary
+The figure highlights the relationship between cultural individualism and the average number of full paid WFH days. Both panels depict a positive correlation, indicating that more individualistic societies tend to support more days of WFH. This trend is evident both among the general respondents and is more pronounced among college graduates. Countries like Canada, the UK, USA, and Australia, with high individualism, also have a higher average of WFH days, while countries with lower individualism scores, such as South Korea and Greece, offer fewer WFH days.

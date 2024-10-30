@@ -1,0 +1,5 @@
+This chart illustrates the share of foreign firms in China's exports from 2000 to around 2023, based on a rolling 12-month average, sourced from Wind.
+
+In 2000, foreign firms accounted for approximately 40% of China's exports. The share gradually increased, peaking around 2005 at just over 55%. Post-2005, there is a noticeable decline. By 2010, the share had dropped to around 45%. The trend continues downwards, with a more pronounced decrease observed post-2015. By 2023, the share of foreign firms in China’s exports has further decreased to nearly 20%.
+
+This trend indicates a significant reduction in the contribution of foreign firms to China's exports over the past two decades.

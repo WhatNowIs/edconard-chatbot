@@ -1,0 +1,11 @@
+In 2023, China made significant investments in chip-manufacturing tools, accounting for roughly one-third of global sales in this sector. The chart displays chip-tool purchases by various regions in both 2022 and 2023. The key points are:
+
+1. **China**: In 2023, China led the purchases with an amount exceeding $30 billion, showing a substantial increase from 2022.
+2. **South Korea**: Purchases remained consistent between 2022 and 2023, slightly below but near the $10 billion mark.
+3. **Taiwan**: Maintained similar levels of purchases in both years, with expenditures around $10 billion.
+4. **North America**: Notable increase, with purchases rising slightly above the 2022 level.
+5. **Japan**: A small and consistent investment in both years, remaining under $10 billion.
+6. **Europe**: Consistent purchases across the two years, also under $10 billion.
+7. **Rest of the World**: Lower chip-tool purchases were observed both years, remaining significantly below the $10 billion benchmarks.
+
+This data, sourced from SEIPI, highlights China's dominant position in the chip-manufacturing tool market for 2023.

@@ -1,0 +1,25 @@
+The chart demonstrates the percentage point changes in the 10-year Treasury yield over various time periods spanning from December 1965 to December 2022. The data is displayed using two metrics:
+
+1. **Total Change (left scale, blue bars):** Represents the cumulative change in the Treasury yield over the specified period.
+2. **Average Monthly Change (right scale, green bars):** Represents the monthly average change within the same periods.
+
+### Key Observations:
+
+1. **Significant Changes:**
+   - The most notable total change occurred in April 1980 - April 1981, where the blue bar shows a dramatic increase exceeding 3 percentage points.
+   - Other periods with substantial increases in total change include December 1980 - August 1981, and August 1977 - April 1980.
+   
+2. **Median Total Change:**
+   - The median total change across the periods is 0.48 percentage points, marked on the chart with a reference line and an arrow.
+   
+3. **Recent Changes:**
+   - In the latest period shown, January 2022 - December 2022, there was a significant total change comparable to some of the historically large changes observed in earlier periods.
+
+4. **Consistent Periods:**
+   - Several periods show modest total changes, typically below 0.5 percentage points, and correspondingly low average monthly changes. The periods May 2004-July 2006 and February 2016-December 2019 are examples of such intervals.
+
+5. **Comparative Insights:**
+   - The average monthly changes mostly track the total changes but occasionally exhibit disproportionally higher values, particularly when total changes are relatively small.
+   - Periods with high total changes often align with significant economic events, reflecting shifts in monetary policy, inflation rates, and market adjustments.
+
+This overview of the 10-year Treasury yield changes highlights the volatility and shifts in the economic landscape over several decades, aiding in understanding the historical context of interest rate movements.

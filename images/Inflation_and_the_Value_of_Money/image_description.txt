@@ -1,0 +1,17 @@
+The graph titled "Official and Estimated CPI using pre-1983 housing methods, 1974-2023" illustrates the year-over-year change in the Consumer Price Index (CPI) from April 1974 to November 2023. Two lines are plotted: 
+
+1. **Official CPI** (blue line): This shows the actual CPI using the current housing calculation method employed since 1983.
+2. **Estimated CPI using pre-1983 Housing Concepts** (gold line): This approximate CPI calculation uses housing methods from before 1983.
+
+Key observations:
+- Both CPI estimates show considerable fluctuations over the past decades.
+- During the late 1970s and early 1980s, inflation rates were quite high, peaking around 14% to 16%.
+- Post-1980s, both measures generally indicated lower and more stable inflation rates, with periodic spikes.
+- The estimated pre-1983 CPI tends to display slightly more volatility compared to the official CPI.
+- By November 2023, there is a notable divergence between the two measures, with the pre-1983 CPI estimate being higher than the official CPI.
+
+Additional notes:
+- The transition period of 1983 is excluded from the graph.
+- Source of the data: Bureau of Labor Statistics and authors' calculations.
+
+This graph highlights how different methodologies in CPI calculation can impact perceived inflation trends, especially notable in recent years.

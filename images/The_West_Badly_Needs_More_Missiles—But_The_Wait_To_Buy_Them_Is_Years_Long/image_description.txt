@@ -1,0 +1,15 @@
+The bar chart displays the size of order books for major defense companies in three different years: 2017, 2021, and 2023. The data is specifically for defense-only orders, up to the third quarter of 2023 for most companies, with BAE Systems and Thales' data up to the first half of 2023.
+
+Key points:
+1. **Lockheed Martin** consistently ranks highest in order size across all years, reaching almost $140 billion in 2023.
+2. **Northrop Grumman** has seen a significant increase, with a pronounced rise from roughly $50 billion in 2017 to around $80 billion in 2023.
+3. **BAE Systems (U.K.)** shows a steady increase in its order book size, moving from about $40 billion in 2017 to roughly $60 billion in 2023.
+4. **General Dynamics** displayed growth, with its orders increasing from around $50 billion in 2017 to nearly $70 billion in 2023.
+5. **RTX**, formerly known as Raytheon Technologies, grew its order size from 2017 to 2023, reaching around $60 billion in 2023.
+6. **Boeing** experienced fluctuations but saw significant growth by 2023, with orders around $60 billion.
+7. **HII, Leonardo (Italy), Rheinmetall (Germany), and Thales (France)** show modest increases over the years. Leonardo and Rheinmetall, in particular, show notable jumps between 2021 and 2023.
+8. **HII** experienced consistent growth across the years, reaching about $40 billion by 2023.
+9. **Leonardo (Italy)** rose from below $20 billion in 2017 to over $30 billion in 2023.
+10. **Rheinmetall (Germany)** and **Thales (France)** also saw consistent increases, with Rheinmetall reaching around $20 billion and Thales nearing $15 billion by 2023.
+
+Overall, the data indicates a general trend of growth in defense order books among these major companies over the observed period.

@@ -1,7 +1,7 @@
 import logging
-from llama_index.core.settings import Settings
+# from llama_index.core.settings import Settings
 from app.engine.vectordb import get_vector_store
-from llama_index.core.indices import MultiModalVectorStoreIndex
+from llama_index.core.indices import VectorStoreIndex
 
 
 logger = logging.getLogger("uvicorn")
@@ -12,7 +12,7 @@ def get_index():
     store, image_store = get_vector_store()
     # Load the index from the vector store
     # you must load the index from both the vector store and the document store
-    index = MultiModalVectorStoreIndex.from_vector_store(
+    index = VectorStoreIndex.from_vector_store(
         vector_store=store, 
         image_vector_store=image_store, 
         # embed_model=Settings.embed_model

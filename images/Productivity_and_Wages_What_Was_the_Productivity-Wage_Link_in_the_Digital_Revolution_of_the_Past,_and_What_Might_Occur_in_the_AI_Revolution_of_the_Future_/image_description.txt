@@ -1,0 +1,13 @@
+The image contains a bar graph titled "Changes in Productivity and Wages 1989-2017," which is Figure 9 from a source examining productivity and wage changes for two education groups (HS or less, College).
+
+The graph compares changes for two groups: Low education (HS or less) and High education (College).
+
+1. **Change in Log of Productivity (Real) 1989-2017**:
+   - Individuals with Low education in 1989 experienced a smaller increase in productivity.
+   - Individuals with High education in 1989 experienced a notably larger increase in productivity.
+
+2. **Change in Log of Wages (Real) 1989-2017**:
+   - Individuals with Low education in 1989 saw a moderate increase in wages.
+   - Individuals with High education in 1989 also experienced an increase in wages, similar to that of their productivity change but slightly less than their productivity gain.
+
+Overall, the data suggests that those with higher education saw greater gains in both productivity and wages over the time period from 1989 to 2017.

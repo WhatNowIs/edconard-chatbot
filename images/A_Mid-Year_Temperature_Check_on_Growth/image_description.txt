@@ -1,0 +1,17 @@
+The exhibit from Goldman Sachs Global Investment Research projects that investment growth in the U.S. is expected to slow in the second half of 2024. This deceleration is attributed to the peak of factory-building activities. However, it is forecasted that investments in equipment for these factories, and in artificial intelligence (AI), will eventually compensate and take their place.
+
+Key highlights from the chart include:
+
+- Investment in real nonresidential fixed investment growth categories:
+  1. **Intellectual Property Products (IPP)**
+  2. **Structures (IRA/CHIPS and Other)**
+  3. **Equipment (IRA/CHIPS and Other)**
+  4. **Artificial Intelligence**
+
+- Noticeable variations in these categories' percentage growth rates over each quarter from Q3 2022 to Q4 2025.
+- Projection indicates:
+  - A spike in overall investment led by structures (IRA/CHIPS) in the first half of 2023.
+  - A subsequent decline in total investment growth through 2024.
+  - Stabilizing and modest growth in subsequent quarters, led mainly by equipment investments (both IRA/CHIPS and other) and AI.
+
+This suggests a pivot from a heavy focus on constructing factories to equipping them and developing AI technologies, indicating a diversified shift in investment strategies in the near future.

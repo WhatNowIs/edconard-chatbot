@@ -1,0 +1,8 @@
+The image is a bar chart that compares the sizes of public and private markets as of 2022 and 2023 Q3 (BIS data). It specifically presents four categories:
+
+1. **Global Fixed Income Outstanding:** $103 trillion
+2. **Global Equity Market Cap:** $101 trillion
+3. **Global Size of Banking Sector Balance Sheets:** $98 trillion
+4. **Global Private Capital AUM (Assets Under Management):** $13 trillion
+
+The data indicates that the global fixed income market is the largest category at $103 trillion, followed closely by the global equity market and the banking sector with $101 trillion and $98 trillion, respectively. The global private capital AUM is considerably smaller by comparison, at $13 trillion. This information highlights the relative scale of different segments within the financial markets.

@@ -1,0 +1,10 @@
+The provided image is a Bloomberg Opinion chart showing the TED Spread over time from 2007 to 2023. The TED Spread measures the difference between the interest rates on interbank loans and short-term U.S. government debt, indicating the perceived credit risk in the banking sector.
+
+Key observations from the chart:
+
+1. **Sharp Peaks**: There were significant spikes in the TED Spread around the 2007-2009 financial crisis, indicating high stress and perceived risk in the banking sector during this period.
+2. **Reduction Post-Crisis**: After 2009, the TED Spread dramatically drops and stabilizes at much lower levels, suggesting reduced stress and improved confidence among banks.
+3. **Minor Fluctuations**: There have been minor increases in the TED Spread post-2010, notably in years close to 2020, but these are relatively small compared to the 2007-2009 period.
+4. **Current State**: As of 2023, the TED Spread remains low, indicating that, as yet, there is little stress perceived in the U.S. banking sector.
+
+The overall summary indicates that, despite some fluctuations, there are no significant signs of distress in interbank lending currently.

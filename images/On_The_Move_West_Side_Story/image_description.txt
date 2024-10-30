@@ -1,0 +1,14 @@
+The provided visual exhibits highlight trends in domestic migration in relation to housing affordability and income levels in the United States, based on Bank of America's internal data.
+
+**Exhibit 7** reveals that relative housing affordability is a key driver of domestic migration flows:
+- The X-axis represents the net population change in major Metropolitan Statistical Areas (MSAs) for Q4 2023 year-over-year.
+- The Y-axis shows the median mortgage payment in the MSA relative to the US median as of December 2023.
+- Red squares indicate MSAs in the Pacific division, and yellow squares represent MSAs in the Mountain division. Black squares denote other MSAs.
+- The scatter points suggest a positive correlation: MSAs with lower median mortgage payments relative to the US median see more positive net population growth, while those with higher mortgage payments have negative or lower population growth.
+
+**Exhibit 8** demonstrates that higher-income households constitute a significant portion of the migration from the West to the South:
+- The bar chart compares the share of higher-income households in the overall outward migration from Western MSAs to Southern MSAs in 2023.
+- Approximately 40% of the migrating households have an income above $125K.
+- Around 10% of these households have an income above $250K.
+
+In summary, migration trends are strongly influenced by housing affordability, with more affordable areas experiencing population gains. Additionally, higher-income households are notably contributing to the migration from Western regions to the South, highlighting the economic dynamics at play in these relocation patterns.

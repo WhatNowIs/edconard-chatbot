@@ -1,0 +1,11 @@
+The image is a line graph titled "Steel and iron from China have flooded into Brazil," illustrating the trend of steel and iron imports from China to Brazil from 2015 to 2023. The y-axis represents imports valued in millions of USD ($mn), while the x-axis represents the years from 2015 to 2023.
+
+Key points from the graph:
+- The imports had a notable decrease from 2015 to 2016.
+- From 2017 to 2019, imports saw a gradual increase with a slight dip in 2018.
+- A significant surge in imports started in 2020, continuing sharply upwards through 2021 and 2022.
+- By 2023, the import value has risen to around 2500 million USD.
+
+The data source is Brazil's Ministry of Development, Industry and Foreign Trade, and it is presented by the Financial Times (FT).
+
+In summary, steel and iron imports from China to Brazil have substantially increased over the past few years, especially from 2020 onwards, reaching a peak in 2023.

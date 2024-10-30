@@ -1,0 +1,23 @@
+The image contains three line graphs titled "Trends in the employment rate of low-educated men in the treated and synthetic regions."
+
+1. **Graph A: All men (French and non-French)**
+   - The employment-to-population rate is shown on the y-axis, ranging from 0.70 to 0.90.
+   - The x-axis represents the years from 1978 to 1987.
+   - There are two lines: a black line representing the Paris region and a gray line representing the synthetic control.
+   - There's a vertical dashed line indicating the year 1981.
+   - From 1978 up to around 1981, both regions exhibit a similar employment rate.
+   - Post-1981, the Paris region tends to show a higher employment rate compared to the synthetic control.
+
+2. **Graph B: French men**
+   - Similar to Graph A, it shows the employment-to-population rate on the y-axis and years on the x-axis.
+   - The black line represents the Paris region, and the gray line represents the synthetic control.
+   - The trend before 1981 shows both regions having similar employment rates.
+   - After 1981, the Paris region demonstrates a somewhat higher employment rate than the synthetic control.
+
+3. **Graph C: Non-French men**
+   - The graph follows the same structure with the employment rate on the y-axis and years on the x-axis. The black and gray lines represent the Paris region and synthetic control, respectively.
+   - Before 1981, the employment rates are similar between both regions.
+   - After 1981, the employment rate in the Paris region starts to diverge positively from the synthetic control, steadily maintaining a higher rate compared to the synthetic control.
+
+**Summary:**
+The three graphs depict the employment trends for low-educated men in the Paris region compared to synthetic control regions from 1978 to 1987, with a focus on a pivotal year, 1981. Overall, both French and non-French men in the Paris region show a higher employment rate post-1981 compared to their counterparts in the synthetic control regions. While initially, the employment rates were similar across regions, a divergence begins around 1981, where the Paris region trends slightly better, signifying potentially more favorable employment conditions or policies impacting the Paris region positively during this period.

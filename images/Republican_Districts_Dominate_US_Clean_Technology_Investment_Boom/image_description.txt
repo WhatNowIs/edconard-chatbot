@@ -1,0 +1,17 @@
+This image is a map illustrating planned manufacturing projects in the United States, each with a budget of at least $100 million. The size and location of these announced projects are indicated by circles with varying diameters, with larger circles representing larger investments (up to $10 billion).
+
+Key observations:
+1. **Geographic Distribution**: 
+   - There is a noticeable concentration of projects in the southeastern states, especially around Georgia, Tennessee, and North Carolina.
+   - The northeastern region also features several significant projects, primarily in states like New York and Pennsylvania.
+   - The western states, particularly California, Texas, and Arizona, have a few larger projects in their metropolitan areas.
+   - The Midwest, including states like Ohio, Indiana, Illinois, and Michigan, also shows a considerable number of projects.
+
+2. **Project Size**:
+   - The largest projects, indicated by the biggest circles, are predominantly found in states like Texas and Arizona in the west, and New York and Pennsylvania in the northeast.
+   - Southern states such as Georgia and North Carolina also host some of the larger projects.
+
+3. **Data Sources**:
+   - The information is derived from FT analysis of company and state press releases, as well as data from several sources including fDi Markets, Rystad Energy, Semiconductor Industry Association, S&P Global Market Intelligence, Wood Mackenzie, US Census Bureau, and summitpost.org.
+
+This map highlights the significant investment in manufacturing across diverse regions in the US, with a notable emphasis on certain key states.

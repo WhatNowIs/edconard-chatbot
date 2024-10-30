@@ -1,0 +1,19 @@
+The image presents data from the Census Bureau regarding the population in different areas of the United States in 2022 and the respective changes from the prior year, 2021. Here's a summary of the relevant information:
+
+1. **Central Counties of Large Metros:**
+   - Population in 2022: 100.2 million
+   - Change from 2021: 0% (Stabilized after a decline of 0.8% in 2021)
+
+2. **Suburbs of Large Metros:**
+   - Population in 2022: 84.9 million
+   - Change from 2021: +0.8%
+
+3. **Medium and Small Metros:**
+   - Population in 2022: 98.7 million
+   - Change from 2021: +0.7%
+
+4. **Rural Areas and Small Towns:**
+   - Population in 2022: 45.9 million
+   - Change from 2021: +0.1%
+
+In summary, the population in central counties of large metros stabilized in 2022 following a decrease in the prior year, while suburbs of large metros, medium and small metros, and rural areas/small towns all experienced modest population growth. The most significant growth was in the suburbs of large metros.

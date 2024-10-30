@@ -1,0 +1,31 @@
+The graph presents the 10-Year Yield trends for US Treasury bonds from approximately 1930 to 2030, differentiating between nominal yields (blue line) and real yields (red line). Here's a detailed summary of the key information and trends depicted:
+
+1. **1930s-1940s (Great Depression and WWII):**
+   - Both nominal and real yields were low.
+   - Policies were implemented to maintain a spread to cash and finance the war effort, further suppressing yields.
+
+2. **1950s-1960s:**
+   - Yields remained relatively stable post-WWII.
+   - There were no significant fluctuations during this period.
+
+3. **1970s (Stagflation period):**
+   - Bond yields began to rise sharply as inflation increased.
+   - Nominal yields notably failed to keep pace with inflation, resulting in lower real yields during high inflation periods.
+
+4. **1980s-1990s (Volcker's Era and subsequent stability):**
+   - Nominal yields reached their peak in the early 1980s, with the Federal Reserve's measures to combat inflation under Chairman Paul Volcker.
+   - Post the peak, both nominal and real yields started a declining trend as inflation was brought under control.
+
+5. **2000s (Dot-com bubble and Financial Crisis):**
+   - Real yields were relatively stable, but nominal yields began to fall with decreasing inflation rates.
+   - Yields were pushed down by the Federal Reserve's reserve purchases.
+
+6. **2010s (Post-Financial Crisis and Quantitative Easing):**
+   - Exceptionally low yields during this period, amid private sector deleveraging and Quantitative Easing (QE) policies by the Federal Reserve.
+   - Both nominal and real yields remained near historical lows.
+
+7. **2020s (Post-COVID-19 Pandemic):**
+   - Yields began to rise again, moving towards more normal levels as economic conditions started to stabilize.
+   - The upward trend in yields indicates a reversal of the prolonged period of low yields.
+
+In summary, the graph depicts the significant fluctuations and influencing factors on US 10-Year Treasury yields over the last century, highlighting periods of war, economic stability, inflation, central bank policies, and recent efforts to normalize rates after historically low levels.

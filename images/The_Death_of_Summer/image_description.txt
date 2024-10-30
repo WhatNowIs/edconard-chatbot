@@ -1,0 +1,12 @@
+This graph, titled "Beach Bummer," illustrates the temperature anomaly relative to the 1991-2020 average for Cote d'Azur and Southampton/Martha's Vineyard. The data is provided by the National Oceanic and Atmospheric Administration. 
+
+The graph covers the period from around 1850 to 2023. The temperature anomalies (in °C) are shown on the vertical axis, ranging from -4°C to +4°C, while the years are marked on the horizontal axis. 
+
+The blue line represents Cote d'Azur, and the black line represents Southampton/Martha's Vineyard. 
+
+Key observations from the graph include:
+- Both locations experienced significant temperature fluctuations throughout the period.
+- There are marked periods of both positive and negative anomalies.
+- In recent decades, especially closer to 2023, both locations show a trend towards increased positive temperature anomalies, indicating warming relative to the 1991-2020 average.
+
+In summary, the graph highlights warming trends in beach areas of Cote d'Azur and Southampton/Martha's Vineyard over the long-term period, with pronounced temperature increases observed in recent years.

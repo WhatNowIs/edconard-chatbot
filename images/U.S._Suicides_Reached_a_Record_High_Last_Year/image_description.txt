@@ -1,0 +1,15 @@
+The graph displays U.S. suicide rates per 100,000 people from approximately 1950 to 2022, separated by gender (Male, Female) and the total population. Key observations include:
+
+1. **Male Suicide Rates**: 
+   - Generally higher than the rates for both females and the total population across the time span.
+   - Started around 20 per 100,000 in 1950, experienced fluctuations, and showed an upward trend after 2000, peaking close to 25 per 100,000 in 2022.
+
+2. **Female Suicide Rates**: 
+   - Consistently lower than those of males.
+   - Initially around 5 per 100,000 in 1950, the rate decreased, then showed a rising trend after 2000, nearing 7 per 100,000 by 2022.
+
+3. **Total Suicide Rates**: 
+   - Reflect the combined trends of both genders.
+   - Initially about 13 per 100,000 in 1950, fluctuated down and up, and has been increasing again since around 2000, reaching around 15 per 100,000 by 2022.
+
+Overall, while there have been periods of decline and increase, the trends indicate a noticeable rise in suicide rates for all groups in the recent years leading up to 2022. The information is provisional for 2022 and sourced from the National Center for Health Statistics.

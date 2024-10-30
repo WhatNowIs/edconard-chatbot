@@ -1,0 +1,13 @@
+The image illustrates projected changes in the spatial distribution of U.S. economic activity from 2020 to 2050, based on a basic third-order PDL model and the RCP 4.5 scenario, attributing variations to climate change. Four key economic metrics are displayed on maps:
+
+1. **Population (a)**: Projected changes in the population show noticeable increases in the northern states and significant declines in the southern regions. Northern states such as those in the Midwest and Northeast are expected to see growth, indicated by the green areas, while southern states, particularly in the Southwest, show a decrease in population, marked in red.
+
+2. **Employment (b)**: Employment trends mirror population changes, with increases in the northern states and declines in the south. Northern states exhibit potential growth in job opportunities, while southern states, especially the Southwest, face potential reductions.
+
+3. **House Prices (c)**: House prices are projected to increase in the northern states, particularly in the West and parts of the Midwest, indicated by green shades. Conversely, significant declines are projected in the southern and eastern regions, especially in the Southeast, shown in red.
+
+4. **Wages (d)**: Wages are predicted to increase in the northern part of the U.S., particularly in the Northwest and certain parts of the Midwest. Southern regions, particularly in the Southwest, are expected to see a reduction in wage levels.
+
+**Notes**: Each map reflects the projected logarithmic change in the respective outcome between 2020 and 2050 due to climate change. Units are expressed in log changes, where 1.0 denotes a doubling, and -1.0 denotes a halving of the outcome level.
+
+Summary: The maps collectively suggest a shift in economic activity northward due to climate change, with the northern U.S. expected to experience growth in population, employment, house prices, and wages, while the southern regions, especially the Southwest, may face declines in these metrics up to the year 2050.

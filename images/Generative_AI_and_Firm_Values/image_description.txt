@@ -1,0 +1,10 @@
+The provided image is a chart titled "Generative AI Exposure Quintile Portfolios: Cumulative Excess Returns, Market-factor adjusted, Nov. 15th 2022 - March 31st 2023." The x-axis represents the time period from November 15, 2022, to March 31, 2023, and the y-axis represents the cumulative excess returns, indexed to November 29, 2022.
+
+Three different portfolios are plotted:
+1. **Q1 Generative AI Exposure (Green Dashed Line)**: This portfolio appears to have lower performance compared to the other portfolios over the time period, remaining relatively flat and slightly below the baseline level of 1.
+2. **Q5 Generative AI Exposure (Red Dashed Line)**: This portfolio shows slightly better performance, with an increase in cumulative excess returns that remains modest compared to the AMH Generative AI Exposure portfolio.
+3. **AMH Generative AI Exposure (Blue Solid Line)**: This portfolio exhibits the highest performance among the three, showing a significant increase in cumulative excess returns, particularly from late February through March 2023.
+
+An important milestone marked by a dashed red vertical line annotated with "ChatGPT released" is indicated around November 30, 2022. Following this release, there is a notable divergence in the performance of the portfolios, with the AMH Generative AI Exposure portfolio showing pronounced gains.
+
+**Summary**: The chart illustrates the cumulative excess returns for three generative AI exposure portfolios from mid-November 2022 to the end of March 2023. The AMH Generative AI Exposure portfolio significantly outperforms the Q1 and Q5 portfolios, especially following the release of ChatGPT at the end of November 2022. This suggests a strong market response and potential growth in returns associated with AI advancements and exposure following this event.

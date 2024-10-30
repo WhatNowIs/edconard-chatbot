@@ -1,0 +1,8 @@
+The graph illustrates the change in deposits, measured in billions of U.S. dollars, for different categories of banks: Small banks, Regional banks, Super-regional banks, and Large banks. The values depict a decline or increase in deposits as follows:
+
+- **Small banks**: A minimal decrease slightly below zero.
+- **Regional banks**: A slight decrease, greater than that of small banks but less than other categories.
+- **Super-regional banks**: The largest decrease in deposits, approximately $550 billion.
+- **Large banks**: A significant decrease, slightly below $200 billion.
+
+The overall trend shows that all categories of banks experienced a decline in deposits, with super-regional banks facing the most substantial reduction.

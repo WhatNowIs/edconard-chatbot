@@ -1,0 +1,15 @@
+The image presents a line graph illustrating the trends in US petroleum products (in million barrels per day) related to consumption, production, and net imports from 1949 to 2020. The key observations from the graph are:
+
+1. **Consumption (Blue Line):**
+   - There has been a steady increase in petroleum consumption over the decades.
+   - Consumption peaked around the early 2000s and has remained relatively stable at around 20 million barrels per day.
+
+2. **Production (Red Line):**
+   - After a period of relatively stable production, there has been a significant surge in US oil production from around 2008 onward.
+   - By 2020, production reached approximately 18 million barrels per day.
+
+3. **Net Imports (Light Blue Line):**
+   - Net imports increased substantially from around 1980, peaking in the mid-2000s at approximately 12 million barrels per day.
+   - Since the mid-2000s, net imports have sharply declined, reaching near zero by 2020, indicating a significant reduction in US dependence on foreign oil.
+
+The overarching trend showcased by this graph is the significant rise in US oil production over recent years, which has led to a dramatic decrease in the country's reliance on oil imports. This shift marks a significant change in the energy independence and economic strategy of the United States.

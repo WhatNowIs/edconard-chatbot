@@ -1,0 +1,14 @@
+The image is a graph titled "Home Equity Extraction during Pandemic Refi Boom: Aggregate equity extraction." It measures the amount of equity extracted from refinances in billions of U.S. dollars and as a percent of disposable personal income (dpi) from March 2000 to 2023.
+
+Key points from the graph include:
+
+- The data covers from March 2000 to early 2023.
+- Equity extraction from refinances (in billions of U.S. dollars) is indicated by the blue line, with the scale on the left axis.
+- Equity extraction as a percent of dpi is represented by the red line, with the scale on the right axis.
+
+Observations:
+- There was a substantial rise in both the amount of equity extracted and its percent of dpi during the early 2000s, peaking around 2005-2006.
+- Both measures declined significantly following the 2008 financial crisis, reaching a low around 2011-2012.
+- A gradual recovery is seen starting around 2012, with notable spikes beginning in 2020 and peaking around 2021-2022 before declining again in 2023.
+  
+Source: New York Fed Consumer Credit Panel and Bureau of Economic Analysis.

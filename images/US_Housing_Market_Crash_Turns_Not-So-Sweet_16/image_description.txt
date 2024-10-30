@@ -1,0 +1,23 @@
+### Summary of the Visual Data on Housing Market and Mortgage Refinancing
+
+#### Exhibit 13: Home Prices vs. Affordability
+- **Title**: Home prices are materially disconnected to affordability due to high rates.
+- **Content**: The line graph compares median existing home sale prices (in thousands) against a simplified 'affordable' home price from 1999 to 2023.
+- **Key Observations**:
+  - From 1999 to the early 2000s, the median sale prices were relatively close to the affordable prices.
+  - During the housing bubble period (2004-2008), the median sale prices significantly exceeded affordable prices.
+  - Post-housing bubble, between 2008 and 2012, median sale prices realigned closely with affordable prices.
+  - Since 2012, there has been a growing divergence, with median sale prices consistently surpassing affordable prices.
+  - Current data shows a significant gap between median sale prices and affordable prices, indicating affordability challenges exacerbated by high rates.
+
+#### Exhibit 14: Incentive to Refinance 30-Year Mortgages
+- **Title**: Percentage of outstanding 30-year conventional mortgages with at least a 50bp incentive to refinance.
+- **Content**: The line graph illustrates the percentage of borrowers with a 50+ basis points (bp) incentive to refinance from 2012 to 2023.
+- **Key Observations**:
+  - The percentage was notably high (above 80%) around 2012 and part of 2013 but declined sharply afterward.
+  - There were periodic increases in refinancing incentives, notably around 2016 and 2020-2021, where it peaked at closer to 80%.
+  - The percentage has seen significant fluctuations, but there has been a sharp decline since late 2022, reaching nearly 0% in 2023.
+  - Current data indicates a very low incentive for refinancing, aligning with higher interest rates and economic conditions.
+
+### Conclusion
+The data reveals a current housing market characterized by a significant disconnect between home prices and affordability due to high rates. Concurrently, there is minimal incentive to refinance outstanding 30-year conventional mortgages, reflecting the economic environment with elevated interest rates and potential refinancing disincentives.

@@ -1,0 +1,18 @@
+The chart titled "The Divergence" from Bloomberg presents a comparative analysis of the performance between the Energy Select Sector SPDR Fund (white line) and the Generic 1st 'CL' Future (crude oil price, depicted by the blue line), both normalized to their values as of December 31, 2021.
+
+**Key Points Derived from the Chart:**
+
+1. **Divergence in Performance:**
+   - Initially, both the energy sector stocks and oil prices seemed to move closely together with some fluctuations.
+   - Starting around mid-June 2022, a noticeable divergence occurs where energy stocks continue to perform well and trend upward, while crude oil prices start to decline.
+
+2. **Current Values:**
+   - By November 2022, the Energy Select Sector SPDR Fund is noted to be significantly higher at around 160.991.
+   - Conversely, the Generic 1st 'CL' Future (crude oil price) has decreased to approximately 104.73.
+
+3. **Overall Trend:**
+   - Despite the falling oil prices in the latter part of the year, energy sector stocks have not followed the same downward trajectory, showing resilience and even achieving substantial gains.
+
+**Summary:**
+
+Energy stocks have demonstrated strong performance and have largely shrugged off the decline in crude oil prices since mid-2022. This divergence suggests that factors other than just the price of crude oil are supporting the energy sector, potentially including company-specific fundamentals, investor sentiment, and other macroeconomic factors. By November 2022, the energy stocks have achieved a normalized value of approximately 161, contrasting starkly with crude oil prices which have fallen to around 105 during the same period.

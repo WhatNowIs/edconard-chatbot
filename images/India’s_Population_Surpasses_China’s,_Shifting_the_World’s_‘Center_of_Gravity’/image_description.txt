@@ -1,0 +1,9 @@
+The graph presents population estimates and projections for India and China from 1950 to 2100. Key observations are:
+
+- By 2023, India's population is projected to surpass China's.
+- Up to around 2023, both countries have experienced population growth, with China maintaining a higher population until that year.
+- Post-2023, India’s population continues to grow and peaks before gradually declining after 2060.
+- China’s population, on the other hand, starts to decline around 2030 and continues this trend throughout the century.
+- Projections indicate that by 2100, India's population remains higher than China's, with both countries experiencing overall population declines after their respective peaks.
+
+The data is sourced from the United Nations, and the graph is credited to Andrew Barnett from The Wall Street Journal.

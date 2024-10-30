@@ -1,0 +1,16 @@
+The chart presents data on the estimated share of national income going to the top 1% of earners in the United States from 1960 to 2015. It includes four different data series:
+
+1. PSZ pre-tax income (dotted blue line)
+2. AS pre-tax income (dotted orange line)
+3. PSZ after-tax income (solid blue line)
+4. AS after-tax income (solid orange line)
+
+Key Insights:
+
+- The share of pre-tax income for the top 1%, represented by both PSZ (Piketty, Saez, and Zucman) and AS (Auten and Splinter) data, shows a general increase from the late 1970s onwards, with PSZ consistently higher than AS.
+- Both PSZ and AS pre-tax and after-tax income series highlight a peak in the income share of the top 1% around the late 1990s and early 2000s.
+- The after-tax income shares show a similar trend to pre-tax income shares but are generally lower, indicating the impact of taxation in reducing income inequality.
+- Notably, the PSZ series tends to attribute a higher share of income to the top 1% compared to the AS series. 
+- The note clarifies that the series exclude capital gains and indicates that the Piketty-Saez series with capital gains shows a higher share of income accruing to the top 1%. 
+
+This data suggests growing income inequality over the latter half of the 20th century into the early 21st century, with the top 1% of earners capturing a larger share of national income, particularly before taxes.

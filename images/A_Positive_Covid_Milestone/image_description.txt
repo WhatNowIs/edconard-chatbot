@@ -1,0 +1,9 @@
+The image presents a graph titled "Estimates of weekly deaths above normal in the U.S." covering the years from 2020 to mid-2023. This data, sourced from the C.D.C. and processed by The New York Times, showcases the percentage of weekly deaths that exceeded normal levels.
+
+Key points from the graph include:
+1. **2020 Spikes**: There were significant peaks in excess deaths during 2020, likely corresponding to the initial waves of the COVID-19 pandemic, reaching nearly 50% above normal weekly deaths.
+2. **2021 Trends**: After an initial drop, there was another notable rise in excess deaths in early 2021, followed by fluctuations throughout the year.
+3. **2022 Highs**: Another substantial peak was observed in early 2022, matching previous high points at around 50% above normal weekly deaths, followed by a sharp decline.
+4. **2023 Reduction**: The graph displays a significant decrease in excess deaths in 2023, showing levels approaching pre-pandemic norms by mid-year.
+
+The data indicates that the high fluctuations in weekly deaths above normal observed during the peak periods of the COVID-19 pandemic have gradually declined, almost returning to normal levels in 2023.

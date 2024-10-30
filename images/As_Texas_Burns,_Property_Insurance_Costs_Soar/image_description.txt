@@ -1,0 +1,9 @@
+The image shows a map of the United States highlighting the annual property insurance cost by state in 2022. The key points are:
+
+- The text indicates that in 1 out of 5 states, the annual home insurance cost tops $1,500.
+- The map uses a color gradient to represent the costs:
+  - Light blue represents states with lower annual property insurance costs (close to $775).
+  - Darker blue represents states with higher annual property insurance costs.
+  - States with the highest costs, exceeding $1,500 annually, are highlighted in the darkest blue. These states include Florida (FL), Louisiana (LA), Texas (TX), Oklahoma (OK), Kansas (KS), Minnesota (MN), and Colorado (CO).
+- Data sources are credited to the Census Bureau via IPUMS.
+- The map is created by Aziz Sunderji for Home-Economics.us.

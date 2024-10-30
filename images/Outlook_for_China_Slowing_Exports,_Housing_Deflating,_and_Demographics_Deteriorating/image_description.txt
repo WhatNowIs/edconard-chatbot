@@ -1,0 +1,20 @@
+The image showcases a graph illustrating the trend of the number of workers per retiree in China from 1950 to a projected 2050. Here are the key points:
+
+1. **Historical Data (1950-2022):**
+   - In 1950, there were about 12 workers per retiree.
+   - The number peaked at 13 workers per retiree around 1978.
+   - By the year 2000, the ratio had decreased to 10 workers per retiree.
+   - As of the present day (assuming 2022), the number has further declined to 5 workers per retiree.
+
+2. **Projected Data (2023-2050):**
+   - The downward trend is expected to continue, with projections indicating:
+     - Roughly 3 workers per retiree by 2035.
+     - The trend continues to decline towards 2050, though the precise estimate for 2050 isn't specified, it suggests a ratio below 3 workers per retiree.
+
+3. **Overall Trend:**
+   - There is a significant decrease in the worker-to-retiree ratio, highlighting an increasing burden on the working population to support retirees over the decades.
+
+4. **Source Information:**
+   - The data is sourced from the United Nations, Haver, and the Apollo Chief Economist.
+
+This clearly indicates a demographic shift in China with an aging population and a shrinking workforce supporting the retirees.

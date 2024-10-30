@@ -1,0 +1,18 @@
+The image contains two line charts illustrating trends in financial markets over the period from 2010 to 2023.
+
+**Figure 1: High-Yield Market Value**
+- This chart shows the value of the high-yield market.
+- The market value started at just under $1,000 billion in 2010.
+- It experienced a steady increase until around 2014, then fluctuated slightly but overall remained stable around $1,200 to $1,400 billion up until 2020.
+- In 2021, there was a significant rise, peaking slightly above $1,600 billion.
+- However, from 2022 to 2023, the market value dropped to approximately $1,200 billion.
+
+**Figure 2: Direct Lending Invested Capital**
+- This chart depicts the amount of invested capital in direct lending.
+- Starting at about $50 billion in 2010, the invested capital has shown a consistent upward trend.
+- The growth in invested capital was relatively moderate from 2010 to 2014, reaching around $100 billion.
+- From 2015 onwards, the increase accelerated, particularly from 2016 to 2019, with the capital rising beyond $200 billion.
+- The most significant growth occurred from 2019 to 2023, with the invested capital surging to about $650 billion.
+
+**Summary**
+In summary, the high-yield market value experienced growth until 2021 but saw a decline in 2022-2023. On the other hand, the direct lending invested capital has consistently increased, showing substantial growth particularly from 2019 onwards to reach approximately $650 billion in 2023. This indicates a robust and growing interest in direct lending, even as the high-yield market faced fluctuations.

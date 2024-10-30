@@ -1,0 +1,9 @@
+The image displays a graph that illustrates the differences between the real federal-funds rate and the neutral rate of interest from 1987 to 2022. It compares two models: the Laubach-Williams model (depicted in light blue) and the Lubik-Matthes model (depicted in dark blue).
+
+Key observations include:
+- Both models show fluctuations over time, with both positive and negative differences, indicating periods when the real federal-funds rate was above or below the neutral rate.
+- Major lows in the 1990s, early 2000s, around the 2008 financial crisis, and during the COVID-19 pandemic, where the difference reached approximately -5%.
+- Periods where the real federal-funds rate was above the neutral rate include peaks in the late 1980s, early 2000s, and mid-2000s with differences reaching up to about 2%.
+- Recent data (around 2022) show a rise, nearing the zero difference line, indicating a potential alignment of the real federal-funds rate with the neutral rate.
+
+The graph further notes that real rates are calculated using one-year-ahead inflation expectations from the Survey of Professional Forecasters. The data sources include the Federal Reserve Banks of New York, Richmond, and Philadelphia.

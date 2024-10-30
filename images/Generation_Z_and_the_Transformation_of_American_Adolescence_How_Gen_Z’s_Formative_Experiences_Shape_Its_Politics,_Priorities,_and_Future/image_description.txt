@@ -1,0 +1,38 @@
+The image presents survey results depicting unique teen experiences across four generations: Generation Z, Millennials, Generation X, and Baby Boomers. The experiences are categorized into five distinct activities or feelings: regular religious attendance, having a part-time job, having a boyfriend or girlfriend, occasional substance use, and feelings of loneliness or isolation. Here is a summary of the key findings:
+
+1. **Regularly Attended Religious Services**:
+   - Generation Z: 52%
+   - Millennials: 58%
+   - Generation X: 64%
+   - Baby Boomers: 71%
+   Teen participation in religious services has declined with each successive generation, from Baby Boomers to Generation Z.
+
+2. **Had a Part-Time Job**:
+   - Generation Z: 58%
+   - Millennials: 70%
+   - Generation X: 79%
+   - Baby Boomers: 82%
+   The percentage of teens with part-time jobs decreases steadily from Baby Boomers to Generation Z.
+
+3. **Had a Boyfriend or Girlfriend**:
+   - Generation Z: 56%
+   - Millennials: 69%
+   - Generation X: 76%
+   - Baby Boomers: 78%
+   Similar to trends in part-time jobs, fewer teens report having a romantic relationship in successive generations.
+
+4. **Drank Alcohol or Smoked Pot or Cigarettes Occasionally**:
+   - Generation Z: 32%
+   - Millennials: 43%
+   - Generation X: 52%
+   - Baby Boomers: 54%
+   There is a noticeable decline in the number of teens who occasionally engaged in substance use from Baby Boomers to Generation Z.
+
+5. **Felt Lonely or Isolated Often**:
+   - Generation Z: 61%
+   - Millennials: 57%
+   - Generation X: 44%
+   - Baby Boomers: 36%
+   Feelings of loneliness and isolation appear to have increased progressively, with Generation Z reporting the highest percentages.
+
+In summary, the data suggests a significant generational shift in teen experiences, with Generation Z teens less likely to participate in religious services, hold part-time jobs, or have romantic relationships compared to previous generations. Conversely, feelings of loneliness or isolation are highest among Generation Z teens. Additionally, there has been a downward trend in occasional substance use among teens in more recent generations.

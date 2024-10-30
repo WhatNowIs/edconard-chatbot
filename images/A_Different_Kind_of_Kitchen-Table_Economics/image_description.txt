@@ -1,0 +1,16 @@
+The graph displays annualized 3-month shelter inflation data comparing Zillow's metrics (in blue) and official rent data from the Bureau of Labor Statistics (in orange) from January 2018 to October 2022. Key points include:
+
+1. **Overall Trend**: 
+   - Both Zillow and official rent data generally show an upward trend over the period, indicating rising shelter inflation.
+  
+2. **Zillow Data**:
+   - Zillow's shelter inflation shows significant fluctuations, with prominent peaks in mid-2018, mid-2019, early 2021, and mid-2021. 
+   - The most notable peak occurred around July 2021, where Zillow's data spiked dramatically before declining towards the end of 2021 and into 2022.
+
+3. **Official Rent Data**:
+   - The official rent data demonstrates a more consistent and gradual increase over time, with less pronounced fluctuations compared to Zillow's data.
+  
+4. **Recent Trends**:
+   - As of October 2022, Zillow shelter inflation shows a sharp decline, while official rent data remains stable at a moderate increase.
+   
+The graph suggests differences in how Zillow and the Bureau of Labor Statistics capture shelter inflation, with Zillow's data indicating higher volatility. However, both data sets confirm the overall trend of rising shelter costs over the extended period.

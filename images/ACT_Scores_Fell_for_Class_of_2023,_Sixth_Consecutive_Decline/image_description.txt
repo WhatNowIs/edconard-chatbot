@@ -1,0 +1,10 @@
+The provided image is a graph displaying the average ACT scores from 2014 to 2023 across different subjects and overall. The graph highlights a general downward trend in scores over the years.
+
+Key points:
+- **Overall ACT Score:** The average overall score has decreased by 1.5 points, reaching 19.5.
+- **Reading:** The average reading score dropped by 1.2 points, reaching 20.1.
+- **Science:** The average science score decreased by 1.2 points, now standing at 19.6.
+- **Math:** The average math score saw a decrease of 1.9 points, resulting in an average score of 19.0.
+- **English:** The most significant drop is observed in English, where the score fell by 1.7 points, averaging 18.6.
+
+The data shows consistent declines across all subjects on the ACT over the observed period, indicating a concerning trend in academic performance.

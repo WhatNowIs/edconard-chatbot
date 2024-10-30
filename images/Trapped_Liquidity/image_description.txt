@@ -1,0 +1,12 @@
+The image is a bar chart titled "2022Q3 Select Household Transaction Flows ($bln)" with seasonally adjusted annual rates. It shows the flow of household transactions across different asset types in the third quarter of 2022. The data source is the Federal Reserve Z1.
+
+Here is the summary of the findings:
+
+1. **Treasuries**: Households had a positive transaction flow of approximately $1,500 billion, indicating a significant investment in Treasuries.
+2. **Agencies**: There was an upward flow of about $900 billion in this category, showcasing another area of strong investment.
+3. **MMF Shares (Money Market Fund Shares)**: This category saw a minimal positive investment flow, close to zero, suggesting little change.
+4. **Time and Savings Deposits**: This categorized saw a highly negative flow around -$600 billion, showing a significant withdrawal or reduction in savings deposits.
+5. **Corporate and Foreign Bonds**: This category experienced a negative flow of approximately -$400 billion.
+6. **Equities and Mutual Fund Shares**: The flow was notably negative at around -$800 billion, indicating a major withdrawal from equities and mutual fund shares.
+
+Overall, households in Q3 2022 largely invested in Treasuries and Agencies while reducing their investments in Time and Savings Deposits, Corporate and Foreign Bonds, and Equities and Mutual Fund Shares.

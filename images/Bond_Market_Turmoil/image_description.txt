@@ -1,0 +1,17 @@
+The chart titled "US 10y Treasury Volatility" presents the volatility of the US 10-year Treasury bond over the period from 1990 to 2022. The vertical axis represents the Z-Score, a statistical measure that indicates how far away the standard deviation is from the mean. The horizontal axis represents the years from 1990 to 2022.
+
+Key observations from the chart:
+
+1. **Overall Trends:**
+   - There are notable periods of higher volatility, especially around major economic events.
+
+2. **Significant Peaks:**
+   - **Early 1990s:** Sharp volatility spike.
+   - **2008-2009 Financial Crisis:** Significant volatility observed.
+   - **2020 COVID-19 Pandemic:** Another notable spike in volatility.
+   - **2022:** The volatility is marked at a Z-Score of 3.9, indicating another period of increased volatility.
+
+3. **Volatility Patterns:**
+   - Periodic spikes throughout the dataset suggest that volatility increases significantly during economic or financial stress periods.
+
+The data source for this chart is specified as "FRED" (Federal Reserve Economic Data). The information presented suggests increased market sensitivity and reaction during crises, highlighting significant turning points in financial market stability.

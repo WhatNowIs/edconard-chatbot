@@ -1,0 +1,16 @@
+The image is a line chart titled "Figure 2: Value of $100 Invested in Nasdaq and Europe Market (Jan 2022 – Mar 2023)." It tracks the hypothetical value of $100 invested in the Nasdaq and European markets over a 15-month period from December 2021 to March 2023.
+
+Key Points:
+
+1. **Starting Point (Dec-2021):** Both investments start at $100.
+2. **Performance Trends:**
+   - The Nasdaq investment (gray line) generally trends downward throughout 2022, dropping considerably in the middle of the year. 
+   - The European market investment (blue line) exhibits a similar downward trend initially but starts showing signs of recovery from mid-2022 onwards.
+3. **Recovery Phase:**
+   - From around October 2022, the European market investment begins to outperform the Nasdaq investment consistently.
+4. **End Value (Mar-2023):**
+   - The European market investment ends at approximately $92.71, showing a partial recovery.
+   - The Nasdaq market investment concludes at a lower value of approximately $79.62.
+
+**Summary:**
+Between January 2022 and March 2023, a hypothetical investment of $100 in the Nasdaq marked a notable decrease, ending at approximately $79.62. In contrast, a similar investment in the European market, while also initially declining, demonstrated a stronger recovery, concluding the period at approximately $92.71. Overall, the European market investment outperformed the Nasdaq investment by the end of the 15-month span.

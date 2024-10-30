@@ -1,0 +1,15 @@
+The chart titled "Public-Private Partnership" illustrates the historical changes in foreign asset holdings managed by the People's Bank of China (PBOC) alongside those of other state-run banks from January 2004 to the present. It shows cumulative flows of foreign assets in USD trillions, with dark blue representing PBOC foreign assets and lighter blue indicating net foreign assets of other depository corporations.
+
+Key points include:
+1. **PBOC Foreign Assets (Dark Blue)**:
+   - There's a significant increase in PBOC’s foreign assets from 2004 to around 2014, peaking at approximately $3.5 trillion.
+   - After 2014, there is a noticeable decline and subsequent leveling off.
+
+2. **Net Foreign Assets of Other Banks (Light Blue)**:
+   - In contrast, net foreign assets of state-run banks have continuously grown, especially marked from around 2017 onwards, increasing by about $400 billion.
+
+3. **Combined Assets Trends**:
+   - From 2004 to about 2014, the primary driver of foreign reserve accumulation was the PBOC.
+   - Post-2014, the trend shifts; banks increasingly build foreign assets, while PBOC holdings decrease and stabilize.
+
+This shift highlights a transition in China's strategy for managing its exchange rate and foreign reserves, moving from heavy reliance on direct intervention by the central bank to a more significant role for state-run banks.

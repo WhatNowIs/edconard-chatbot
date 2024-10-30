@@ -1,0 +1,16 @@
+Figure 8 illustrates the effects of automation on wage changes between different educational groups from 1980 to 2016. It consists of five panels:
+
+1. **A. Productivity effect**,
+2. **B. Adds sectoral shifts**,
+3. **C. Adds task displacement**,
+4. **D. Adds ripples**, and
+5. **E. Adds rent dissipation**.
+
+Each panel plots the change in hourly wages against the hourly wage in 1980, indicating the impact of various factors due to automation on different educational groups, labeled as:
+- Postgraduate
+- College
+- Some college
+- Highschool
+- Highschool dropout.
+
+The horizontal axis in each panel represents the group's hourly wage in 1980, while the vertical axis represents the change in hourly wages from 1980 to 2016. The color-coding differentiates the educational groups, allowing a visual comparison of the wage effects across different levels of education.

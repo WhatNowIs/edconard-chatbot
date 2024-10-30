@@ -1,0 +1,25 @@
+This chart from The Hamilton Project illustrates the annualized percent change in various economic indicators from Q4 2019 to Q1 2024. The indicators include Average Hourly Earnings, the Employment Cost Index (ECI), Median Weekly Earnings, and Total Compensation. The changes are compared using two metrics: CPI (dark green) and PCE (light green).
+
+### Summary:
+
+1. **Average Hourly Earnings**:
+   - Slight increase in both CPI and PCE measures, with a higher increase observed in PCE.
+
+2. **Employment Cost Index (ECI)**:
+   - A minor decrease is observed in CPI, while PCE shows a slight upward trend.
+
+3. **Median Weekly Earnings**:
+   - Small increases in both CPI and PCE measures, with PCE experiencing a marginally higher rise.
+
+4. **Total Compensation**:
+   - Significant growth in both CPI and PCE, with PCE again showing a higher growth rate.
+
+### Key Points:
+- Data illustrates the annual growth rates adjusted for each quarter between Q4 2019 and Q1 2024.
+- The PCE measure indicates faster growth compared to CPI across all indicators.
+  
+### Context:
+- Data sources include the Bureau of Labor Statistics (BLS) and the Bureau of Economic Analysis (BEA).
+- Calculations are seasonally adjusted, reflecting annual growth rates.
+
+Overall, Total Compensation experienced the highest annualized percent change, particularly when measured by PCE.

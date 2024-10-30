@@ -1,0 +1,23 @@
+The image is a line graph titled "Changes in the real (nominal rate minus inflation) fed funds rate during tightening episodes." It presents a comparison of cumulative increases in the real federal funds rate over time for various tightening periods from different years.
+
+Key points from the graph:
+- The x-axis represents "Weeks since Liftoff", indicating the number of weeks from the beginning of each tightening episode.
+- The y-axis shows the "Cumulative Increase in Percentage Points" in the real fed funds rate.
+- Several tightening episodes are represented by different colored lines, specifically for the years: 
+  - 1983-84 (blue line)
+  - 1988-89 (brown line)
+  - 1994-95 (gray line)
+  - 1999-2000 (yellow line)
+  - 2004-06 (black line)
+  - 2015-18 (maroon line)
+  - 2022-23 (green dashed line)
+
+Observations:
+- The period 1983-84 shows a moderate increase in the real fed funds rate early on and then stabilizes.
+- The period 1988-89 starts from a negative value, steadily increasing to positive values.
+- The period 1994-95 and 1999-2000 show relatively moderate and consistent increases over time.
+- The period 2004-06 displays a steady and plateaued increase.
+- The period 2015-18 starts from slightly below zero and shows a very moderate increase over a more extended period.
+- The period 2022-23 exhibits a substantial and steep cumulative increase, reaching around 8 percentage points within 75 weeks, the highest among the depicted periods.
+
+In summary, the graph illustrates that the 2022-23 tightening episode has seen the most substantial increase in the real federal funds rate compared to previous episodes, reflecting a more aggressive tightening approach.

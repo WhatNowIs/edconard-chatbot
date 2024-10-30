@@ -1,0 +1,10 @@
+The image is a line graph showing the trend of average multifamily insurance costs per unit from 2003 to 2021, based on data from Moody's Analytics.
+
+Key points from the graph:
+- In 2003, the average insurance cost per unit was approximately $260.
+- The costs showed minor fluctuations between $250 and $300 from 2003 to around 2013.
+- Post-2013, there was a noticeable upward trend in the costs.
+- By 2021, the average insurance cost per unit had surged to approximately $535.
+
+Summary:
+The average multifamily insurance cost per unit has seen a significant rise from 2003 to 2021. While costs oscillated between $250 and $300 for the first decade, a steep increase began around 2013, reaching an average of $535 by 2021, indicating a substantial rise in insurance expenses for multifamily units over the last few years.

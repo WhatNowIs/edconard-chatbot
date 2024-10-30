@@ -1,0 +1,30 @@
+The image depicts a line graph comparing the USA Sovereign Short Rate (3-month, shown in blue) and USA Nominal Yields (10-year, shown in red) over the period from January 2022 to October 2023.
+
+Key points of the graph include:
+
+1. **Time Axis:**
+   - The horizontal axis spans from January 2022 to October 2023.
+
+2. **Rate Axis:**
+   - The vertical axis shows the rates, ranging from 0% to 6%.
+
+3. **Trends:**
+   - **January 2022 to September 2022:**
+     - The USA Sovereign Short Rate (blue) rises steadily, indicating tightening primarily led by short-term rates.
+     - The USA Nominal Yields (red) also increase during this period.
+   
+   - **September 2022 to September 2023:**
+     - The short rates (blue) continue to rise but at a slower pace.
+     - The long-term yields (red) experience fluctuations but remain relatively stable, denoted as a "reprieve" period.
+   
+   - **September 2023 to October 2023:**
+     - The long-term yields (red) begin to rise more significantly, signaling tightening led by long-term rates.
+     - The short-term rates (blue) also maintain an upward trajectory.
+
+4. **Labels:**
+   - "Tightening led by short rates" is labeled for the period early in the graph.
+   - "Reprieve" is marked for a more stable period in the middle of the graph.
+   - "Tightening led by long rates" is indicated for the phase towards the end of the observed period.
+
+Summary:
+The graph illustrates the dynamics between short-term and long-term interest rates in the US from January 2022 to October 2023. Initially, the tightening of financial conditions was driven by rising short-term rates. After a period of relative stability in long-term yields around mid-2022 to mid-2023, the trend shifts, and towards late 2023, an increase in long-term yields signifies a tightening of financial conditions driven by long-term rates.

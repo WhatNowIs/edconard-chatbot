@@ -1,0 +1,17 @@
+The image is a bar chart illustrating the projected demand for lithium in metric tons needed for car batteries from 2018 to 2025. Here's a summary of the relevant information:
+
+- **2018 to 2021**: The demand for lithium increased steadily each year. The values in metric tons are as follows:
+  - 2018: Low, below 100k metric tons.
+  - 2019: Slight increase, just above 100k metric tons.
+  - 2020: Slight increase.
+  - 2021: Significant increase, approaching 200k metric tons.
+
+- **2022 to 2025 (Projected)**: The demand is expected to rise sharply:
+  - 2022: Projected to reach around 300k metric tons.
+  - 2023: Further projected increase to about 450k metric tons.
+  - 2024: Projected to reach approximately 600k metric tons.
+  - 2025: Projected to exceed 800k metric tons.
+
+Source: BloombergNEF
+
+The data indicates an accelerating demand for lithium, highlighting the growing importance of lithium for car batteries, particularly for electric vehicles (EVs) over time.

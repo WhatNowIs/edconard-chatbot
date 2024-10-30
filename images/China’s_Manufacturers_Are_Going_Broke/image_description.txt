@@ -1,0 +1,16 @@
+The chart illustrates the percentage and number of loss-making industrial enterprises in China from 1998 to 2024.
+
+1. **Percentage of Total**: 
+   - In 1998, around 25% of the total industrial enterprises in China were loss-making.
+   - This percentage showed a significant decline, reaching around 5% in the early 2000s.
+   - From approximately 2005 onward, the percentage maintained a relatively stable level, fluctuating between 8% to 12%.
+   - However, by 2024, there is a noticeable spike, with the percentage rising again to around 25%.
+
+2. **Number of Loss-Making Enterprises ('000)**:
+   - In 1998, the number of loss-making enterprises was roughly 30,000.
+   - There was no significant change until the early 2000s when data appears to be missing for a few years.
+   - In the mid-2010s, the number began to increase steadily, reaching about 90,000 by around 2020.
+   - By June 2024, there is a sharp increase, with the number of loss-making enterprises peaking at approximately 150,000.
+
+**Summary**:
+The data indicates that while the percentage of loss-making industrial enterprises in China saw a decline from around 25% in 1998 to about 5% in the early 2000s, there has been a steady increase since the mid-2010s. Correspondingly, the number of loss-making enterprises has surged dramatically, reaching 150,000 by June 2024, suggesting increased financial strain on China's industrial sector over the last few years.

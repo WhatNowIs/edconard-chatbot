@@ -1,0 +1,8 @@
+The graph depicts the monthly issuance of US immigrant visas from January 2017 to July 2024. Key observations include:
+
+1. **General Trend**: The number of immigrant visas issued has been generally increasing over time.
+2. **Pre-Pandemic Period (Jan 2017 - Jan 2020)**: The graph shows fluctuating trends, with the number of visas typically ranging between 30,000 and 60,000.
+3. **Pandemic Impact (Mar 2020 - Jan 2021)**: A significant drop in visas issued occurs around March 2020, during the early months of the COVID-19 pandemic, reaching a low point in April 2020.
+4. **Post-Pandemic Recovery (Jan 2021 - Apr 2024)**: After the initial drop in 2020, there is a steady recovery and increase in the number of visas issued, exceeding pre-pandemic levels by the end of the observed period, peaking close to 60,000 again.
+
+Overall, despite fluctuations and a significant pandemic-related dip, the issuance of immigrant visas is on the rise and shows a strong recovery and upward trend.

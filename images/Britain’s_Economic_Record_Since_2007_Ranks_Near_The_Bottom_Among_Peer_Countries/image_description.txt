@@ -1,0 +1,19 @@
+The image provides a comparative analysis of GDP per capita at purchasing power parity (PPP) and productivity, measured as GDP per hour worked, for several countries between the years 2007 and 2022.
+
+**1. GDP per person, $000 at PPP:**
+- The United States saw a 15% increase, reaching approximately $65,000 in 2022, up from around $58,000 in 2007.
+- Germany experienced a 13% increase, reaching roughly $58,000 in 2022.
+- Australia witnessed a 16% increase, hitting around $55,000 in 2022.
+- Canada had a 6% increase, reaching around $50,000.
+- France saw a 6% increase, similar to Canada, reaching around $50,000.
+- Britain experienced a 7% increase, reaching approximately $45,000 in 2022.
+
+**2. Productivity, GDP per hour worked, $:**
+- The United States again leads with an 18% increase, reaching approximately $75 per hour in 2022.
+- Germany saw an 11% increase, reaching about $70 per hour.
+- France had a 6% increase, reaching around $65 per hour.
+- Australia experienced a significant 18% increase, reaching approximately $55 per hour.
+- Britain showed a 4% increase, reaching around $50 per hour.
+- Canada witnessed a 12% increase, hitting approximately $50 per hour.
+
+In summary, the United States remains at the top in terms of both GDP per capita and productivity, with significant growth in both areas. Germany, Australia, and Canada also showed notable improvements. Britain, while showing increases, remains lower in comparison to the other countries listed in both GDP per capita and productivity.

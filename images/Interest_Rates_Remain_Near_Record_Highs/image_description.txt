@@ -1,0 +1,17 @@
+The chart, titled "Interest Costs Are Exploding," presents a projection of spending under the Congressional Budget Office's (CBO) baseline from 2019 to 2033 in billions of dollars. The chart includes spending on Medicare, Defense, and Net Interest.
+
+Key points from the chart:
+
+- **Net Interest Costs:**
+  - Net interest costs have been rising significantly and are projected to continue this steep upward trajectory.
+  - By around 2025-2026, net interest costs are expected to surpass both Medicare and Defense spending.
+  - A dashed line labeled "Net Interest (100bp above CBO)" suggests that if interest rates were 100 basis points higher than CBO's projections, the costs would increase even more steeply.
+  - Net interest costs will hit a new record as a share of GDP within the projection period.
+
+- **Medicare Spending:**
+  - Medicare spending is projected to increase steadily from about $700 billion in 2019 to approximately $1,200 billion by 2033, maintaining a relatively linear growth.
+
+- **Defense Spending:**
+  - Defense spending is also increasing but at a slower rate compared to net interest and Medicare. It starts at around $600 billion in 2019 and goes up to around $900 billion by 2033.
+
+The chart's data sources include the Congressional Budget Office and the Committee for a Responsible Federal Budget, emphasizing the rising financial pressures from interest costs on the federal budget.

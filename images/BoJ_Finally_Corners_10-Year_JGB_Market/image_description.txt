@@ -1,0 +1,19 @@
+The image is a bar chart titled "BoJ's holdings of 10-yr JGBs, % of total issued" and displays data as of February 20, 2023. The y-axis represents the percentage of total issued 10-year Japanese Government Bonds (JGBs) held by the Bank of Japan (BoJ), ranging from 0% to 140%. The x-axis lists six different bonds, identified by their issuance numbers and quarters of issuance:
+
+1. 364th bond (10yr, issued in 21Q4)
+2. 365th bond (10yr, issued in 22Q1)
+3. 366th bond (10yr, issued in 22Q2)
+4. 367th bond (10yr, issued in 22Q3)
+5. 368th bond (10yr, issued in 22Q4)
+6. 369th bond (10yr, issued in 23Q1)
+
+The chart shows that:
+
+- The BoJ's holdings of the 364th bond are just below 80%.
+- The BoJ's holdings of the 365th bond are slightly above 80%.
+- The BoJ's holdings of the 366th bond are around 100%.
+- The BoJ's holdings of the 367th bond are a little above 100%.
+- The BoJ's holdings of the 368th bond are slightly above 100%.
+- The BoJ's holdings of the 369th bond are close to 130%.
+
+In summary, the Bank of Japan's holdings of 10-year Japanese Government Bonds have generally increased over time, with the 369th bond issued in 23Q1 being held at nearly 130% of the total amount issued, indicating substantial ownership by the BoJ.

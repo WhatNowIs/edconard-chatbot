@@ -1,0 +1,19 @@
+This graph from the Federal Reserve Bank of St. Louis presents data on job quits and high-propensity business applications in the United States from January 2005 to May 2024. Key points include:
+
+1. **Job Quits Rate** (left axis, blue line):
+    - The job quits rate remained relatively stable around 2% from 2005 until the 2008 financial crisis, during which it decreased sharply.
+    - It started to recover slowly post-2010, peaking in early 2020, then plummeting due to the COVID-19 pandemic.
+    - Following the pandemic, there was a significant increase peaking around 3%, and then a slight decline towards 2.5%.
+
+2. **High-Propensity Business Applications Per Capita** (right axis, orange line):
+    - From January 2005 to around 2014, the rate fluctuated around 0.2.
+    - A gradual increase occurred post-2014, with some peaks and troughs, significantly rising around 2020 and peaking slightly above 0.6 in mid-2021.
+    - Post-peak, there's a gradual decline, hovering around 0.4 by May 2024.
+
+3. **Economic Recessions** (shaded areas):
+    - The graph includes shaded areas representing recessions, particularly highlighting the 2008 financial crisis and the economic downturn during the COVID-19 pandemic. Both periods show notable impacts on the job quits rate and business applications.
+
+4. **Data Sources and Adjustments**:
+    - The data is collected from the U.S. Census Bureau and the U.S. Bureau of Labor Statistics, and it is seasonally adjusted.
+
+In summary, the job quits rate and high-propensity business applications show significant fluctuations in response to economic conditions, with notable impacts during recessions and recovery phases. The recent trends post-pandemic indicate a strong rebound in both metrics, followed by a slight decline moving towards stabilization.

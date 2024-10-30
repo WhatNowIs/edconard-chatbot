@@ -1,0 +1,9 @@
+The chart titled "U.S. Production Concentration Has Risen, but Overall Market Concentration Has Remained Flat" displays data on the top-20 market share for production concentration and market concentration in the U.S. from 1992 to 2012.
+
+Key points include:
+1. **Production Concentration**: Represented by the blue line, this has been steadily increasing from slightly above 0.6 in 1992 to nearly 0.67 by 2012.
+2. **Market Concentration**: Represented by the red line, this remains relatively stable, hovering around 0.54 throughout the same period.
+
+**Sources**: The data is sourced from the U.S. Census Bureau and the study by Amiti and Heise titled "U.S. Market Concentration and Import Competition," published in the Review of Economic Studies in April 2024.
+
+**Note**: The concentration measures are simple averages across 169 industries at the five-digit North American Industry Classification (NAICS) level.

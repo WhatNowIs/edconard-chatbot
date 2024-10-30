@@ -1,0 +1,15 @@
+The image portrays a graph that compares past population projections with the current projection. Data is sourced from the Census Bureau.
+
+Key points include:
+1. **Past Projections**: 
+   - The population was projected to grow significantly in the years 2015 and 2018, with these projections shown in red and purple lines, respectively.
+   - Both projections indicate steady population growth, reaching close to or slightly above 400 million by 2080.
+
+2. **Current Projection (2023)**: 
+   - The current projection, represented by a blue line, suggests a slower growth rate than past projections.
+   - According to the 2023 projection, the population will peak at around 370 million in 2080 and remain stable or slightly decrease afterward.
+
+3. **Peak Population**: 
+   - All projections indicate a peak population in 2080, after which the population stabilizes or declines.
+
+This graph illustrates how population growth expectations have been adjusted over time, with recent data suggesting a less dramatic increase than previously forecasted.

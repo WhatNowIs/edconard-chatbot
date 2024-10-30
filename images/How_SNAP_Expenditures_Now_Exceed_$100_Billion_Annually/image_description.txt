@@ -1,0 +1,19 @@
+The image depicts a line graph titled "Figure 1: SNAP Annual Participation and Costs (2021$): 2000-2021," along with projections up to 2032. The graph details the average monthly participation in the Supplemental Nutrition Assistance Program (SNAP) and its annual costs, both adjusted to 2021 dollars.
+
+Key Points:
+1. **Axes**:
+   - The left vertical axis indicates the average monthly SNAP participants in millions of people.
+   - The right vertical axis indicates the annual costs in billions of 2021 dollars.
+   - The horizontal axis spans the years from 2000 to 2032.
+
+2. **Trends**:
+   - **Average Monthly SNAP Persons**: The number of participants rose steadily from about 17 million in 2000 to a peak of about 48 million in 2013. It then declined to approximately 35 million in 2020 before rising again in 2021.
+   - **Annual Cost**: The annual costs followed a similar trend, increasing sharply from approximately $35 billion in 2000 to a peak of around $120 billion in 2021.
+
+3. **Projections**:
+   - The Congressional Budget Office (CBO) projections suggest the annual cost will decrease sharply after 2021, stabilizing around $100 billion by 2026, and then slightly increasing again up to 2032.
+   - The number of participants is projected to decline and stabilize around 35 to 40 million from 2022 onwards.
+
+4. **Sources**: The data is sourced from USDA FNS Snap Participation and Costs and CBO May 2022 Baseline Projections.
+
+In summary, the graph illustrates a steady rise in both the number of SNAP participants and program costs from 2000 to 2013, followed by a decline before a sharp rise again in 2021. Future projections by the CBO indicate a potential decrease and stabilization in both participation and costs.

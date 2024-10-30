@@ -1,0 +1,22 @@
+The chart titled "Exhibit 10: We Expect Capex to Grow 1.5% in 2023 and 3.2% in 2024 (Q4/Q4)" presents an analysis and forecast of the annual rate of percent change in Real Nonresidential Fixed Investment Growth. The data is sourced from the Department of Commerce and Goldman Sachs Global Investment Research.
+
+Key points include:
+
+1. **Historical Performance (2021-2023)**:
+   - In 2021, there were significant fluctuations with peaks in Q2 and Q3 where the percent change exceeded 9%.
+   - The overall trend in 2022 showed a sharp decline in Q1, followed by an increase in Q2 and Q3, dropping again in Q4.
+   - In the first half of 2023, the performance improved slightly, maintaining a moderate upward trend.
+
+2. **Growth Contributions**:
+   - The contributions to the total growth are categorized into IPP (Intellectual Property Products), Equipment, and Structures.
+   - The chart segments these categories, showing how each contributed to the overall growth rate on a quarterly basis.
+
+3. **Forecast (H2 2023 - 2024)**:
+   - The forecast predicts a stable growth pattern through the end of 2023, with the rate at around 1.5%.
+   - For 2024, the growth is expected to be more robust, reaching approximately 3.2% by Q4.
+
+4. **Visual Representation**:
+   - A grey line represents the total growth rate trend.
+   - Different shades of bars illustrate the contributions from IPP, Equipment, and Structures, with darker shades representing higher contributions.
+
+The forecast by Goldman Sachs suggests a positive overall trend for capital expenditures (Capex) growing modestly by 1.5% in 2023 and accelerating to 3.2% in 2024, indicating a more favorable investment environment anticipated in the next two years.

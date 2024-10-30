@@ -1,0 +1,11 @@
+The graph titled "Excess Retirees" displays the share of excess retirees in the United States from the year 2000 to 2023. It compares actual retirement data (represented by a black line) with predicted retirement figures (represented by a yellow line). The chart indicates a significant increase in the number of retirees, surpassing predictions especially from around 2019 onwards. In 2023, the actual retirements surge close to 20%, while the predicted retirements are lower, hovering around 18%.
+
+Key points:
+1. **Time Frame:** 2000 to 2023.
+2. **Trend:** Both actual and predicted retirements were stable until about 2010, after which there is a notable increase.
+3. **Discrepancy:** The gap between actual and predicted retirements widens significantly from 2019 onwards.
+4. **Current Status (2023):** Actual retirements are near 20% while the predicted rate is close to 18%.
+
+Additional information:
+- The data source is the St. Louis Federal Reserve.
+- The denominator includes the civilian noninstitutional population over the age of 16, excluding those in institutions and active duty military personnel.

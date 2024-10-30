@@ -1,0 +1,16 @@
+The image provides information about the US trade deficits with China and Mexico, with data spanning from 2005 to 2023. Here are the key points:
+
+- **US Trade Deficit with China:**
+  - The US goods trade deficit with China, represented by the red line, has significantly decreased to its lowest level since 2010. 
+  - In 2023, the trade deficit with China stood at $279.424 billion.
+  - The image highlights that there has been the biggest narrowing of the deficit in data going back to 2002.
+
+- **US Trade Deficit with Mexico:**
+  - The US goods trade deficit with Mexico, displayed by the black bars, has reached a record high in 2023.
+  - The deficit with Mexico increased to $152.379 billion in 2023.
+
+- **Overall Trends:**
+  - The trade deficit with China has been generally decreasing since peaking around 2018.
+  - Conversely, the trade deficit with Mexico has been increasing over the same period.
+
+The image presents data sourced from the US Commerce Department and is published by Bloomberg. The charts clearly illustrate the contrasting trends in trade balances with China and Mexico, with a notable reduction in the deficit with China and an increasing deficit with Mexico.

@@ -1,0 +1,23 @@
+The provided image is a graph titled "Global Data Center Power Usage per Year (TWh)," showcasing various projections of data center power consumption from 2010 to 2030. Here’s a detailed summary:
+
+1. **Data Series Representations:**
+   - **Red Line:** Represents the percentage of global power generation in the base case scenario (measured on the left axis).
+   - **Gray Dotted Line:** Represents data center power usage with limited AI impact.
+   - **Blue Dotted Line:** Represents data center power usage in the base case scenario.
+   - **Yellow Dotted Line:** Represents data center power usage in an accelerated case scenario.
+
+2. **Trends (2010-2030):**
+   - **2010-2020:** Consistent growth in data center power usage across all cases, with slight increases in the percentage of global power generation attributed to data centers.
+   - **2020-2025:** Steeper increase begins, especially in the accelerated case.
+   - **2025-2030:** Significant divergence between the scenarios; the accelerated case scenario (yellow dots) shows the highest power usage, followed by the base case (blue dots), and the limited AI impact scenario (gray dots) shows the least usage. The percentage of global power generation attributed to data centers also climbs more sharply.
+
+3. **Quantitative Estimates:**
+   - By 2030, in the base case scenario, data center power usage could exceed 1,500 TWh.
+   - In the accelerated AI adoption case, it could potentially reach or exceed 2,000 TWh.
+   - With limited AI impact, the projected usage remains below 1,000 TWh.
+   - The percentage of global power generation devoted to data centers surpasses 3.5% in the base case and approaches 5% in the accelerated scenario by 2030.
+
+4. **Sources:**
+   - The graph and data visualization are credited to SemiAnalysis, as indicated by the logo and name in the image.
+
+Overall, the graph illustrates that data center power consumption is rapidly increasing, driven by factors like AI adoption, with various scenarios showing different scales of future power usage. The impact on global power generation is also expected to rise significantly.

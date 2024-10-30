@@ -1,0 +1,25 @@
+The provided image contains two exhibits that detail economic growth data of US states with an emphasis on southern states.
+
+### Exhibit 4: GDP Growth 2017-2022 (%)
+- This bar chart shows the GDP growth rates of various US states from 2017 to 2022. 
+- The United States as a whole had a certain GDP growth rate, represented by a red bar.
+- Seven southern states experienced faster GDP growth than the national average:
+  - Arkansas
+  - North Carolina
+  - South Carolina
+  - Virginia
+  - Georgia
+  - Texas
+  - Tennessee
+  - Florida 
+
+### Exhibit 5: YoY and 3-Month Growth Rates in the Philadelphia Fed's State Coincident Indices
+- This scatter plot examines the Year-over-Year (YoY) growth rate and 3-month growth rate in October 2023.
+- Five southern states are highlighted with yellow diamonds.
+- The general trend shows that most southern states have increased economic activity in the third quarter.
+- The chart presents data points where:
+  - The x-axis shows the 3-month growth rate (%) for October 2023.
+  - The y-axis shows the YoY growth rate (%) for October 2023.
+
+### Summary
+Between 2017 and 2022, seven southern states (Arkansas, North Carolina, South Carolina, Virginia, Georgia, Texas, and Tennessee) saw GDP growth rates higher than the national average. In October 2023, data from the Philadelphia Fed's state coincident indices indicate that nearly all southern states observed increased economic activity in the third quarter, as evidenced by their positive 3-month and YoY growth rates.

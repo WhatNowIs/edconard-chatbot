@@ -1,0 +1,18 @@
+The image presents a line graph titled "Federal Reserve Transfers to the U.S. Treasury," illustrating two key metrics over time, from 1947 to 2022:
+
+1. **Remittances as a Percentage of GDP** (depicted by the blue line, left axis)
+2. **Remittances as a Percentage of Total Government Receipts** (depicted by the orange line, right axis)
+
+Key Insights:
+- Both metrics show a general increasing trend from 1947 until the early 1980s, peaking around 1982.
+- Post-1982, there is a noticeable decline followed by fluctuations in both metrics until 2008.
+- From 2008 onwards, both metrics exhibit significant volatility with sharp peaks and troughs.
+- The highest peaks appear around 2011 and 2015, where remittances as a percentage of total government receipts surpassed 3.5% and as a percentage of GDP neared 0.6%.
+- The latest data point for 2022 shows a decline in both metrics: remittances as a percentage of GDP are around 0.15%, and as a percentage of total government receipts are around 1.8%.
+
+Data Sources include:
+- Federal Reserve Board of Governors press releases (for remittances after 2014).
+- Bureau of Economic Analysis (for remittances before 2014, GDP, and federal receipts).
+- Calculations by authors utilizing data from the Federal Reserve Economic Data (FRED).
+
+Overall, the graph emphasizes the fluctuating nature and the long-term trends of Federal Reserve remittances to the U.S. Treasury in relation to GDP and total government receipts over the past seven decades.

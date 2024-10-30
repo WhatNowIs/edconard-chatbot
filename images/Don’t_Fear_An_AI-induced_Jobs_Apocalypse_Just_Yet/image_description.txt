@@ -1,0 +1,10 @@
+The image is a bar chart titled "Per 10,000 manufacturing workers, 2021," sourced from the International Federation of Robotics. It compares the number of robots per 10,000 manufacturing workers across several regions/countries:
+
+- **South Korea**: Approximately 1,000 robots per 10,000 workers.
+- **Japan**: Around 600 robots per 10,000 workers.
+- **China**: Roughly 350 robots per 10,000 workers.
+- **United States**: About 250 robots per 10,000 workers.
+- **Western Europe**: Approximately 200 robots per 10,000 workers.
+
+### Summary:
+The chart from The Economist, based on data from the International Federation of Robotics, highlights the density of robots in manufacturing sectors across different regions in 2021. South Korea leads with a significant margin, deploying about 1,000 robots per 10,000 workers. Japan follows with around 600 robots. China has approximately 350 robots per 10,000 workers, while the United States has about 250. Western Europe has the lowest density among the listed regions, with roughly 200 robots per 10,000 manufacturing workers.

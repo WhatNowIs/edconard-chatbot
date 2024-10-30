@@ -1,0 +1,14 @@
+The chart titled "A thaw point" shows Antarctic sea-ice extent anomalies, depicting their variation from a 1981-2010 baseline in million square kilometers over the course of a year. The graph contrasts the 2023 data (red line) with data from the past two decades (2001-2022, represented by blue lines).
+
+### Summary:
+- **Anomalies**: The data illustrates how the sea-ice extent in the Antarctic region deviates from the 1981-2010 average.
+- **Timeframe**: The horizontal axis represents months from January (J) to December (D).
+- **Data Comparison**:
+  - **2023 Data (Red Line)**: Shows a significant decrease in sea-ice extent, reaching much lower levels than any other year within the 2001-2022 range.
+  - **2001-2022 Data (Blue Lines)**: Demonstrates typical fluctuations around the baseline, maintaining relatively consistent variations year over year.
+- **Notable Points**:
+  - By mid-year (June to September), the 2023 sea-ice extent anomaly has dipped considerably lower compared to previous years.
+  - Other years show cyclical variations but remain within a narrower band around the baseline, unlike 2023's pronounced decline.
+- **Source**: The data is sourced from the National Snow and Ice Data Centre.
+
+This chart effectively illustrates the unusual and alarming reduction in Antarctic sea ice extent in 2023 compared to the past two decades, signaling potential climate anomalies or changes.

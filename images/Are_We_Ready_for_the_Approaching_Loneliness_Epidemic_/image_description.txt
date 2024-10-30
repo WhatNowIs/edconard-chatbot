@@ -1,0 +1,15 @@
+The image presents data from the Financial Times analysis of the American Time Use Survey, comparing the amount of time per day men and women spend alone. The comparison is made between years 2011 and 2021 across different age groups. The key observations are:
+
+1. **Increase in Time Spent Alone Among Young Adults:**
+   - Young adults (ages 15-30) in 2021 spend approximately an hour more alone per day compared to 2011.
+
+2. **Age Groups and Time Trends:**
+   - Both men and women in the 15-20 age group show a similar pattern, with negligible differences between 2011 and 2021.
+   - For the 26-30 age group in 2021, both men and women spend less time alone compared to older and younger age groups.
+   - There is a general increase in time spent alone as age increases, particularly noticeable in the 66+ age group for both years.
+
+3. **Gender Differences:**
+   - In 2011, time spent alone is relatively similar between men and women across all age groups.
+   - In 2021, a noticeable divergence occurs in the 26-30 age group with men spending more time alone compared to women, but this trend reverses for older age groups where women spend more time alone.
+
+Overall, the graph highlights an increase in solitary time across almost all age groups over the decade, with notable differences in the trends between men and women in both years.

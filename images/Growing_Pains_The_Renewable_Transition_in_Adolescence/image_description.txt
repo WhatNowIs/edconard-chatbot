@@ -1,0 +1,17 @@
+The chart presents information about California's Effective Load Carrying Capability (ELCC) for renewable energy, specifically wind, solar, and storage solutions. Here is a summary based on the data provided:
+
+1. **Total Renewable Capacity**: California has a significant renewable capacity of 245 GW derived from wind, solar, and storage.
+   
+2. **Composition of Renewable Capacity**:
+   - Solar contributes roughly 152 GW.
+   - Wind accounts for about 21 GW.
+   - 6-hour storage provides around 49 GW.
+   - Additional diversity benefits add up to the total renewable capacity.
+
+3. **Effective Load Carrying Capacity (ELCC)**: Despite the high total renewable capacity, these resources only yield 50 GW of effective load carrying capacity.
+   
+4. **Breakdown of ELCC**:
+   - ELCC highlights the actual dependable load carrying capability contributed by the combined renewable sources.
+   - The components (Solar, Wind, 6-hr storage, and Diversity benefit) contribute to this capacity, but even combined, they capture significantly less than their total installed capacity. 
+
+This chart emphasizes the difference between installed renewable capacity and the effective load carrying capacity, showcasing the challenges in relying on renewable energy sources solely for peak load capacity.

@@ -1,0 +1,45 @@
+The chart, titled "Exhibit 25: We believe that the consensus forecasts for consumer spending are too low," displays consensus forecasts for consumer spending and GDP growth from Q3 2023 to Q4 2025. 
+
+Key points from the chart:
+
+1. **Q3 2023**: 
+   - Real GDP (YOY%): 2.9%
+   - Consumer Spending: 3.1%
+   
+2. **Q4 2023**: 
+   - Real GDP (YOY%): 3.1%
+   - Consumer Spending: 3.3%
+
+3. **Q1 2024**: 
+   - Real GDP (YOY%): 2.9%
+   - Consumer Spending: 2.0%
+   
+4. **Q2 2024**:
+   - Real GDP (YOY%): 3.0%
+   - Consumer Spending: 2.2%
+   
+5. **Q3 2024**:
+   - Real GDP (YOY%): 2.1%
+   - Consumer Spending: 1.6%
+   
+6. **Q4 2024**:
+   - Real GDP (YOY%): 1.7%
+   - Consumer Spending: 1.6%
+   
+7. **Q1 2025**:
+   - Real GDP (YOY%): 1.7%
+   - Consumer Spending: 1.7%
+   
+8. **Q2 2025**:
+   - Real GDP (YOY%): 1.7%
+   - Consumer Spending: 1.9%
+   
+9. **Q3 2025**:
+   - Real GDP (YOY%): 1.8%
+   - Consumer Spending: 1.9%
+   
+10. **Q4 2025**:
+    - Real GDP (YOY%): 1.9%
+    - Consumer Spending: 2.0%
+    
+The data suggests that the forecasts for consumer spending and GDP show a decline after the peak in Q4 2023. However, consumer spending tends to stabilize and slightly increase towards the end of the forecast period in 2025. The chart concludes that there is a belief that the consensus forecasts for consumer spending could be underestimated.

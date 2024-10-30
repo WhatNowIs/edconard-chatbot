@@ -1,0 +1,27 @@
+The chart presents the four-year change in inflation-adjusted average wages from 1968 to 2023, using both the Personal Consumption Expenditures (PCE) and the Consumer Price Index (CPI) for adjustment. 
+
+### Key Points:
+
+1. **General Trends**:
+   - There are several cycles reflected in this data where wages adjusted for inflation either rise or fall significantly.
+   - The trends for both PCE and CPI-adjusted wages generally follow a similar pattern, although the exact magnitudes differ.
+
+2. **1968-1981 Period**:
+   - In the late 1960s to early 1970s, both PCE and CPI-adjusted wages saw periods of substantial growth, peaking around 1973.
+   - A steep decline is observed from the mid-1970s into the early 1980s, hitting negative growth rates.
+
+3. **1981-2000 Period**:
+   - Early 1980s show a discrepancy between PCE and CPI adjustments where PCE-adjusted wages experienced a sharp drop but rebounded, whereas CPI-adjusted wages fell more and later had a significant recovery by the late 1990s.
+   - A peak around the turn of the millennium (1999-2000) is noted with significant wage growth.
+
+4. **2000-2023 Period**:
+   - The early 2000s display another drop into the negative for both adjustments.
+   - Post-2009, there is a recovery, marked by noticeable peaks around 2015 and 2021.
+   - Most recently, post-2020 period reveals fluctuations with a downward trend towards 2023.
+
+5. **Comparison Between PCE and CPI**:
+   - PCE-adjusted wages generally show higher peaks and sharper drops compared to CPI-adjusted wages.
+   - The patterns align closely, but the extent of changes identified through PCE adjustments is more pronounced.
+
+### Summary:
+The period between 1968 to 2023 exhibits fluctuations in the growth of inflation-adjusted average wages with discernable economic cycles. Both PCE and CPI adjustments reflect these cycles, though PCE adjustments tend to show sharper variations. The past five decades have been characterized by periods of wage growth and decline, influenced by various economic conditions. The overall trend highlights the real impact of inflation on wages and the importance of using different measures (PCE vs. CPI) to understand the full picture of wage adjustments over time.

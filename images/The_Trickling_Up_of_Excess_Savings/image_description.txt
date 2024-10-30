@@ -1,0 +1,12 @@
+The provided graph demonstrates the estimated stock of excess savings in billions of USD from January 2020 to January 2022. Here's a brief summary:
+
+1. **Initial Increase (Jan 2020 - Jan 2021)**:
+   - From January 2020, there was a rapid increase in excess savings, climbing from $0 billion to over $2,000 billion by January 2021. 
+
+2. **Peak and Stabilization (Jan 2021 - Jul 2021)**:
+   - The savings peaked at over $2,200 billion and remained relatively stable through the first half of 2021.
+
+3. **Decline (Jul 2021 - Jan 2022)**:
+   - After July 2021, the excess savings began to decline, dropping back towards $1,500 billion by January 2022.
+
+In summary, the graph shows a significant accumulation of excess savings from early 2020 to early 2021, primarily due to economic conditions and possibly government interventions during the COVID-19 pandemic, peaking mid-2021, followed by a gradual reduction towards early 2022.

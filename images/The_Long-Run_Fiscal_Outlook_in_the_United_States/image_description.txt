@@ -1,0 +1,9 @@
+The image displays a line graph from the Congressional Budget Office (2023) depicting projections of the U.S. primary deficit as a percentage of GDP from 2023 through 2053. The graph includes three scenarios:
+
+1. **Primary Deficit (blue line)**: This line shows the general projection of the U.S. primary deficit over the next three decades, remaining relatively stable around 1% of GDP.
+   
+2. **Primary Deficit holding health-care spending as % of GDP constant at 2023 level (red line)**: This scenario assumes that healthcare spending remains a constant percentage of GDP at its 2023 level. Under this assumption, the primary deficit decreases gradually over time, projecting a primary surplus by around 2053.
+
+3. **Primary Deficit holding health-care & Social Security spending as % of GDP constant at 2023 level (green line)**: This scenario assumes that both healthcare and Social Security spending remain constant percentages of GDP at their 2023 levels. This scenario shows the most dramatic improvement, with the deficit decreasing into a significant primary surplus, reaching around 2% of GDP surplus by 2053.
+
+The overall takeaway from the graph is that while the primary deficit is projected to remain around 1% of GDP under normal conditions, capping healthcare and Social Security spending as a percentage of GDP at current levels would result in substantial reductions in the primary deficit over the coming decades.

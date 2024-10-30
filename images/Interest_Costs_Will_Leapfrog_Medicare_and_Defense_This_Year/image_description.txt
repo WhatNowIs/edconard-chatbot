@@ -1,0 +1,19 @@
+The image is a graph showing the comparison of U.S. federal spending on net interest, defense, Medicare, and Medicaid from 2015 to 2034. The lines representing these categories include:
+
+- Net Interest (in red)
+- Defense (in orange)
+- Medicare (in green)
+- Medicaid (in blue)
+
+Key points highlighted on the graph are:
+
+1. By 2023, spending on net interest is projected to exceed spending on Medicaid.
+2. By 2024, spending on net interest is projected to surpass both defense and Medicare costs.
+
+The graph is based on data from the Congressional Budget Office and the Office of Management and Budget, with the following trends:
+- Net interest costs see a steep increase from 2022 onwards.
+- Defense spending remains relatively stable over the years.
+- Medicare and Medicaid both show a steady upward trend.
+- Medicare costs notably increase sharply, whereas Medicaid costs increase at a more moderate pace.
+
+By 2034, net interest costs are anticipated to be significantly higher than defense and even higher than Medicare and Medicaid expenditures.

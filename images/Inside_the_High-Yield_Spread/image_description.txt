@@ -1,0 +1,18 @@
+The chart titled "Figure 1: The High-Yield Spread Over Time" documents the fluctuations in high-yield spread from 1964 to 2020. Key points of interest:
+
+1. **Trends and Fluctuations**:
+   - The high-yield spread, which represents the difference in yield between high-risk bonds and safer government bonds, has varied significantly over time.
+   - Periods of elevated spreads are often followed by declines, reflecting economic cycles.
+
+2. **Recessions**:
+   - The gray bars indicate periods of economic recessions, as dated by the National Bureau of Economic Research (NBER).
+   - Spikes in the high-yield spread often correspond with these recessions, suggesting that economic downturns increase risk premiums.
+
+3. **Recent Data**:
+   - The dotted line marks the current level of spreads at the time of the chart's publication.
+   - High-yield spreads have occasionally spiked dramatically, such as during the early 1980s, early 2000s, and the financial crisis of 2008-2009.
+
+4. **Data Sources**:
+   - Data from multiple sources were used: Fred BofA High Yield Spread since 1997, Bloomberg Barclays index from 1987 to 1997, and Verdad estimates from FRED data prior to 1987.
+
+This chart is useful for analyzing the relationship between economic conditions and the risk premiums reflected in high-yield spreads, demonstrating that these spreads often widen significantly during economic downturns.

@@ -1,0 +1,30 @@
+The image is a bar chart titled "Figure 3. Evolution of Trade Partners," which depicts the market share of USA's top 15 trade partners for imports from 2012 to 2023. The source of the data is UNComtrade, focusing on the top trade partners in 2017 and downloaded in April 2023.
+
+**Key points from the chart:**
+
+1. **China (CHN)**:
+   - China's market share notably increased until around 2018, reaching over 20%.
+   - After 2018, China's share began to decrease but remained one of the highest among the top trade partners.
+
+2. **Mexico (MEX)**:
+   - Mexico's market share experienced a steady increase over the years, overtaking China's share in more recent years, reaching close to 15%.
+
+3. **Canada (CAN)**:
+   - Canada's market share remained relatively stable, fluctuating around 10-12% throughout the observed period.
+
+4. **Japan (JPN) and Germany (DEU)**:
+   - Japan and Germany held around a 5-6% market share, showing relatively consistent trade volumes over the years.
+   
+5. **Vietnam (VNM)**:
+   - Vietnam showed a significant upward trend in market share, starting low and gradually increasing each year, nearing 5%.
+
+6. **South Korea (KOR)** and **Taiwan (TWN)**:
+   - Both countries had increasing market shares throughout the period and maintained a position among the top 15.
+
+7. **India (IND)** and **Ireland (IRL)**:
+   - Both countries experienced growth in their market shares over the years, though not as pronounced as China or Mexico.
+
+8. **Italy (ITA), United Kingdom (GBR), Switzerland (CHE), France (FRA), and Malaysia (MYS)**:
+   - These countries had relatively smaller and more stable market shares compared to others but were still among the top 15 trade partners.
+
+Overall, the chart shows a dynamic evolution of the USA's trade partners, with specific countries like China and Mexico experiencing significant shifts in their market shares over the observed period.

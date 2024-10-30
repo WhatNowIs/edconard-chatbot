@@ -1,0 +1,23 @@
+The image presents a detailed analysis of U.S. consumer credit outstanding since January 2017, categorized by the type of debt. The focus is on the impact of the COVID-19 pandemic on borrowing trends. Here’s a summarized breakdown of the key points:
+
+**Title and Context:**
+- The title "Driving School" sets the scene for a discussion about education-related debt.
+- The subtitle notes that total U.S. non-mortgage household debt is about $150 billion less than expected based on pre-pandemic trends. A decline in borrowing for education is highlighted, contrasting with increases in debt for cars and other durable goods, while credit card debt stays on trend.
+
+**Graph Overview:**
+- Three types of consumer credit are tracked: Revolving (credit card debt), Non-revolving educational debt, and Non-revolving other debt.
+- Each category shows both actual values (solid lines) and pre-pandemic trend projections (dotted lines) from January 2017 to 2023.
+
+**Specific Trends (Graph Insights):**
+- **Revolving Debt (Blue line)**:
+  - Actual revolving credit dipped sharply in early 2020, coinciding with the pandemic onset, then gradually recovered to align closely with the pre-pandemic trend by 2023.
+- **Non-revolving Educational Debt (Red line)**:
+  - Showed a consistent increase until early 2020, then plateaued and even decreased through 2021 and 2022, falling well below the pre-pandemic trend.
+- **Non-revolving Other Debt (Green line)**:
+  - Increased steadily, surpassing the pre-pandemic trend especially from 2021 onwards, indicating higher borrowing for other durables.
+
+**Conclusion:**
+Overall, the data suggests that while education-related debt has significantly declined compared to pre-pandemic expectations, other forms of non-revolving debt have increased, balancing the overall debt levels. Revolving credit, or credit card debt, has largely returned to its expected trend.
+
+**Source:**
+The data is attributed to the Federal Reserve Board and calculations by Matthew Klein.

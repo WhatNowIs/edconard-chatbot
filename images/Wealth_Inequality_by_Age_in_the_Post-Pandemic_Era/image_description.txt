@@ -1,0 +1,15 @@
+The chart titled "Younger Adults Far Outpace Other Groups in Wealth Growth since the Pandemic" illustrates the cumulative growth in net worth (in percent) across different age groups from Q1 2019 to Q1 2023. The age groups represented are:
+
+1. 18-39 years old (blue line)
+2. 40-54 years old (red line)
+3. 55 and over (yellow line)
+
+Key observations and summary:
+
+- **Younger Adults (18-39 years old)**: This group saw the most significant increase in net worth starting around Q1 2020, with growth peaking close to 90% by mid-2022 before slightly declining but still remaining high at around 70% by Q1 2023.
+- **Middle-Aged Adults (40-54 years old)**: This group experienced more moderate growth, reaching a peak of about 30% in mid-2022. Growth then decreased somewhat, stabilizing around 20% by Q1 2023.
+- **Older Adults (55 and over)**: This group showed the least growth in net worth. The peak was approximately 20% in mid-2021, followed by fluctuations and a stabilization around 10% by Q1 2023.
+
+The data is sourced from the Distributional Financial Accounts by the Board of Governors of the Federal Reserve System, with calculations taking into account real (inflation-adjusted) prices.
+
+The chart indicates that younger adults have significantly outpaced older groups in wealth growth since the onset of the pandemic, marking a notable trend in economic gains among different age demographics.

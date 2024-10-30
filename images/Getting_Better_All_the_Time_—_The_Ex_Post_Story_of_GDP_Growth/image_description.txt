@@ -1,0 +1,22 @@
+The image titled "Exhibit 1: Global Estimates of GDP Tend to Be Revised Upwards" presents a comparison of Goldman Sachs' real-time GDP forecasts to the latest estimates from 2012 to 2021.
+
+Key points:
+
+1. **Annual GDP Growth Trends (2012-2021)**:  
+   - The graph shows annual GDP growth percentages, plotting both the initial (real-time) forecasts (in light blue) and the latest estimates (in darker blue).
+   - The revised GDP (marked with red dots) usually shows an upward adjustment from initial forecasts, indicating a tendency towards upward revisions over time.
+
+2. **Detailed Observations**:
+   - **2019**: Notable divergence towards the end, with major revisions observed.
+   - **2020**: The year-end GDP was revised from -3.8% to -2.9%, illustrating a smaller contraction.
+   - **2021**: Exceptional growth expected, with the year-end forecast at +6.0% and latest estimates even higher at +6.4%.
+
+3. **Differences in Forecasts**:
+   - The bar chart below the main graph shows the percentage point (PP) difference between year-end global GDP forecasts and the latest estimates.
+   - Between 2012-2021, the calculated average difference is 0.55 pp.
+   - Years such as 2014, 2015, and 2020, show larger differences, reflecting significant upward revisions.
+
+4. **General Trend**:
+   - The overall trend suggests that initial forecasts tend to underestimate the actual growth rates, subsequently revised upwards as more data becomes available.
+
+This exhibit, derived from Goldman Sachs Global Investment Research, highlights the tendency of global GDP growth estimates to be revised upwards over time, indicating the inherent uncertainty and adjustment in economic forecasting.

@@ -1,0 +1,7 @@
+The image presents two line graphs sourced from the authors' calculations using U.S. Patent and Trademark Office data, as shown in Figure 10: Registry of Patents.
+
+Graph (a) on the left depicts the "Share of Patents of the Top 1% Patenting Firms" over a period from 1980 to 2010. This graph indicates a generally increasing trend with some fluctuations, suggesting that the top 1% of patenting firms have gradually acquired a larger share of patents over time. The share starts at around 35% in 1980, showing peaks and valleys around 1990, 2000, and reaching approximately 47% by 2010.
+
+Graph (b) on the right illustrates the "Entrants’ Patent Share over Time" from 1980 to 2010. This graph reveals a rising trend until about 1995, where the entrants' share peaks at around 9%. After 1995, the trend declines noticeably, with significant dips and a final share of roughly 4% by 2010, indicating a decrease in the share of patents held by new entrants over the period.
+
+In summary, while the dominance of the top 1% patenting firms has grown over the observed time period, the share of patents by new entrants has declined, suggesting increasing concentration of patent ownership among the leading firms.

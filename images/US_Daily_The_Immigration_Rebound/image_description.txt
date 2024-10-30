@@ -1,0 +1,17 @@
+The graph depicts trends in the US Civilian Labor Force from 2010 to 2023, differentiating between native-born and foreign-born workers. Key points from the graph include:
+
+1. **Native-Born Labor Force**:
+   - Generally exhibits a consistent upward trend from around 128 million in 2010 to approximately 135 million by 2023.
+
+2. **Foreign-Born Labor Force**:
+   - Experienced a steady rise from about 22 million in 2010 to over 31 million by 2023. 
+   - The dotted green line represents the long-term trend for foreign-born individuals, based on the slope from January 2010 to January 2019. 
+   - A significant dip occurred around April 2020, showing that the foreign-born labor force was approximately 2.8 million below the trend during that time, indicating a sharp impact (likely due to the COVID-19 pandemic).
+
+3. **COVID-19 Impact (April 2020)**:
+   - Both native-born and foreign-born labor forces showed a sharp decline, with the foreign-born labor force being particularly impacted, falling significantly below its long-term trend.
+   
+4. **Recovery Post-2020**:
+   - After the trough in April 2020, both labor forces began to rebound, though at different rates. The foreign-born labor force started to align more closely with its long-term trend by 2023.
+
+Overall, while there are fluctuations, especially a sharp drop during the COVID-19 pandemic, the general trend for both native-born and foreign-born labor forces has been upward over the observed period. The foreign-born labor force also reflects a significant rebound towards the long-term trend by early 2023.

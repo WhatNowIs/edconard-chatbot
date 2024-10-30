@@ -1,0 +1,11 @@
+The image shows a trading floor with financial news being broadcasted on a large screen in the background. The screen displays a segment from CNBC discussing a significant market sell-off. Key information includes:
+
+1. The term "MARKET SELL-OFF" is prominently displayed, indicating a significant drop in market values.
+2. A graph shows a steep decline in market performance over the past week, with a 1-week change of -15.24%.
+3. Specific market indices and data points highlighted include:
+   - Russell 2000: 2,012.27
+   - Dow Transports: 14,904.25
+   - VIX (Volatility Index): 42.55
+4. A ticker on the screen mentions Interactive Brokers Group Inc. (IBKR) at 105.37, down by 7.19%.
+
+In the foreground, traders are seen working at their monitors, likely reacting to the market developments shown on the screen. The overall atmosphere is tense due to the significant market downturn.

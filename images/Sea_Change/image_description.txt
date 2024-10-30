@@ -1,0 +1,19 @@
+The image is a line graph titled "Federal Outlays and Revenue (% of GDP)" using data from the Congressional Budget Office. It displays the trends of federal outlays and revenues as percentages of GDP from 1974 to 2022.
+
+**Key Points:**
+1. **Federal Outlays (Blue Line):**
+   - Showed a general increase, peaking significantly around 2020.
+   - Generally fluctuated between 20% and 25% of GDP before 2020.
+   - Notable spike occurred around 2009 and 2020.
+   - Post-2018, outlays sharply increased to above 30% of GDP before dropping back to around 25%.
+
+2. **Federal Revenues (Orange Line):**
+   - Displayed relatively stable behavior, mostly between 15% and 20% of GDP.
+   - Slightly decreased around early 2000s and late 2010s.
+   - Showed a slight increase post-2020 towards 2022.
+
+3. **Trend Analysis:**
+   - The graph indicates periods where the outlays exceeded revenue significantly, especially noticeable around 2009 and 2020.
+   - There is a potential indication of an increasing trend in outlays as suggested by the dotted line projecting future outlay behavior.
+
+This graph highlights the fiscal trends and discrepancies between federal spending and revenue over nearly five decades, with particular attention to the spikes in spending likely associated with economic crises or policy changes.

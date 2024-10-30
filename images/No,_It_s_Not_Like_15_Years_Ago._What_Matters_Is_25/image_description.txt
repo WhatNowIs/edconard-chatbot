@@ -1,0 +1,27 @@
+The provided image is a chart comparing the performance of the KBW Bank Index relative to the S&P 500 Index (excluding financials) from the late 1990s to 2023. The purpose of the chart is to illustrate that banking underperformance typically signals trouble for the broader stock market.
+
+Key points include:
+
+1. **Indices Compared**:
+   - KBW Bank Index vs. S&P 500 Index (excluding financials)
+   - The blue line represents the S&P 500 Index.
+   - The white line represents the ratio of KBW Banks to the S&P 500 Ex-Financials.
+
+2. **Highlighted Periods**:
+   - Periods of significant banking underperformance are shaded in grey, red, purple, and green respectively throughout the timeline.
+   - These shaded periods correspond with broader stock market downturns.
+
+3. **Notable Drops**:
+   - Late 1990s to early 2000s (grey shading): Banking sector struggled, leading to a broad market correction.
+   - 2007-2008 (red shading): Financial crisis where the banking sector plummeted, dragging overall market indices down.
+   - Early 2010s (purple shading): Another period where banking underperformance was indicative of broader market problems though less severe.
+   - 2020 onwards (light and dark green shading): Recent struggles in the banking sector appear correlated with stock market volatility and downturns.
+
+4. **General Implication**:
+   - The main message is encapsulated at the top: "Bad News for Banks = Bad News for Everyone." 
+   - This suggests that banking sector performance is a leading indicator for the overall health of the stock market.
+
+5. **Relevance to Current Market**:
+   - As of March 22, 2023, there has been a noticeable decline in the KBW Bank Index relative to the S&P 500 ex-Financials, highlighted towards the right of the chart. This could signal potential trouble for the stock market in the near future.
+
+Overall, the chart emphasizes the critical relationship between the banking sector's health and the overall stock market performance, highlighting past instances where bank struggles preceded broader economic downturns.

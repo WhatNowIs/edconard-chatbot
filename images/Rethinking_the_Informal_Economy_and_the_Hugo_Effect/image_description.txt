@@ -1,0 +1,29 @@
+The provided figure illustrates the evolution of EVADER (EVADE as share of GDP) for four European countries—Greece, Italy, France, and Germany—over the period from 1999 to 2020. EVADER refers to the measure of tax evasion relative to the GDP. Recession periods are highlighted with shaded bars for each country and represent years with negative GDP growth.
+
+### Summary by Country:
+
+1. **Greece (Panel a)**:
+   - Significant rise in EVADER around 2008-2012.
+   - Highest levels of EVADER among the four countries.
+   - Clearly visible impact of recessions coinciding with increases in tax evasion.
+
+2. **Italy (Panel b)**:
+   - Relatively stable EVADER values with a slight decline towards the end of the period.
+   - Several periods of recessions aligned, though the relationship to EVADER levels is less pronounced than in Greece.
+
+3. **France (Panel c)**:
+   - Generally lower levels of EVADER compared to Greece and Italy.
+   - Peak around 2005-2008 and a decline afterwards.
+   - Few periods of recession affecting EVADER values only subtly.
+
+4. **Germany (Panel d)**:
+   - Lowest EVADER levels among the four countries, with minimal fluctuations.
+   - Slight increase in EVADER towards 2020.
+   - Recessions have little impact on tax evasion measures compared to other countries.
+
+### Observations:
+- Greece experienced more pronounced fluctuations in tax evasion in response to economic recessions.
+- Italy and France showed moderate EVADER trends with less pronounced response to recessions compared to Greece.
+- Germany maintained the lowest levels of EVADER throughout the period, with lesser impact of recessions on tax evasion.
+  
+**Notes**: The evolution of EVADER as a percentage of GDP is presented for each country along with shaded areas representing years of negative GDP growth (recessions). The graphs demonstrate the varying impact of economic downturns on tax evasion across different national contexts.

@@ -1,0 +1,14 @@
+The image is a line graph displaying the Labor Force Participation Rate (LFPR) in percent over the period from January 2013 to early 2023. The graph includes the following three lines:
+
+1. **Actual LFPR (blue line)**: The real observed labor force participation rate over time.
+2. **Age and Retirement Adjusted LFPR (red line)**: The labor force participation rate adjusted for age demographics and retirement trends.
+3. **Age Adjusted LFPR (gold line)**: The labor force participation rate adjusted for age demographics only.
+
+Key observations from the graph are:
+- From 2013 to early 2020, the actual LFPR (blue line) fluctuated slightly but remained relatively stable, around 62-63 percent.
+- There is a sharp decline in LFPR around early 2020, coinciding with the onset of the COVID-19 pandemic, dropping to just under 61 percent.
+- Post-2020, all three metrics of LFPR show a significant recovery but with variances:
+  - The actual LFPR (blue line) recovers but fluctuates around 62.5 percent by early 2023, not fully returning to pre-2020 levels.
+  - The age and retirement adjusted LFPR (red line) and the age-adjusted LFPR (gold line) both show a robust upward trend, indicating a more positive recovery when accounting for demographic changes and retirements. By early 2023, the age and retirement adjusted LFPR is nearing 64 percent, while the age-adjusted LFPR is slightly lower but still trending upwards.
+
+Overall, the graph illustrates the impact of the COVID-19 pandemic on labor force participation and the subsequent recovery efforts. Demographic adjustments indicate that without the factors of aging and retirement, the labor force participation rate recovery is much stronger from 2020 to 2023.

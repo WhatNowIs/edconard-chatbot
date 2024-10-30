@@ -1,0 +1,11 @@
+The image presents a chart labeled "Figure 12: Interest-Bearing Deposit Account Average Daily Outstanding Balance," tracking the balance from Q1 2010 to Q2 2023. The vertical axis represents the balance in billions of dollars, while the horizontal axis indicates the quarterly periods over the years.
+
+Key points from the chart:
+- From Q1 2010 to Q4 2018, the balance remained relatively low, under $5 billion, showing slight fluctuations.
+- Starting in Q1 2019, there was a noticeable uptick, reaching approximately $18 billion by Q2 2019.
+- There were fluctuations between Q3 2019 and Q3 2021, with the balance remaining above $10 billion but below $20 billion.
+- A significant surge began in Q4 2021, continuing into 2023, with the balance escalating sharply to over $30 billion by Q2 2023.
+
+The conclusion beneath the graph states: "FHLBs have significantly increased their interest-bearing deposits."
+
+Sources cited: "Based on FHLBank data, as of June 30, 2023," and "FHFA."

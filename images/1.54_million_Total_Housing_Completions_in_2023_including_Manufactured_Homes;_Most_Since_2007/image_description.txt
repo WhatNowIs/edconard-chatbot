@@ -1,0 +1,25 @@
+The image is a stacked bar chart titled "Housing Completions per Year," depicting data from 1968 to 2022. The chart categorizes housing completions into four types: Single Family (red), 2 to 4 units (cyan), 5+ units (blue), and Manufactured Homes (yellow).
+
+Key observations:
+
+1. **Fluctuations Over Time**:
+   - There are significant fluctuations in total housing completions over the years.
+   - Peaks are seen around the mid-1970s, mid-1980s, late 1990s, mid-2000s, and a gradual rise from 2012 to 2022.
+
+2. **Single Family Homes**:
+   - Single family homes consistently represent the largest portion of total completions each year.
+   - Their volume appears relatively stable from the late 1960s until the early 2000s, but shows a decline around 2008 and then a gradual increase until 2022.
+
+3. **2 to 4 Units and 5+ Units**:
+   - These types of completions (cyan and blue) show variable but smaller contributions compared to single family homes.
+   - The number of 5+ unit completions especially spikes in the mid-1970s, mid-1980s, and mid-2000s.
+
+4. **Manufactured Homes**:
+   - Manufactured homes (yellow) show notable peaks during the mid-1970s and mid-2000s.
+   - Contributions from manufactured homes declined significantly post-2000 and show minor recovery in recent years.
+
+5. **Economic Factors**:
+   - The chart reflects economic cycles, with dips notably around early 1980s, early 1990s, and the sharp dip around 2008 corresponding to the financial crisis.
+   - There's a steady recovery trend starting around 2012, indicating an improved housing market up to 2022.
+
+Overall, the chart illustrates the dynamic nature of housing completions in the U.S. over more than five decades, highlighting the dominance of single-family homes and the impact of economic cycles on housing production.

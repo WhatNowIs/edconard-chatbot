@@ -1,0 +1,15 @@
+The chart outlines the relationship between the size of the MMF (Money Market Fund) industry and monetary policy tightening, as demonstrated by data from May 2002 to January 30, 2023. It includes the following key metrics:
+
+1. **AUM (Assets Under Management)** - displayed on the left vertical axis and marked by a blue line.
+2. **EFFR (Effective Federal Funds Rate)** - shown on the right vertical axis and depicted by a brown line.
+3. **Yield Spread** - also plotted on the right vertical axis, indicated by a red line. The yield spread is defined as the difference between the MMF net yield and the retail three-month CD rate.
+
+### Key Insights:
+
+- **Early Years (2002-2006):** Gradual increase in AUM, while EFFR and yield spread remain relatively low.
+- **2007-2009 Financial Crisis:** Significant spike in EFFR, closely followed by a sharp rise in AUM. Yield spread also peaks during this period.
+- **Post-Crisis (2010-2018):** Stabilization and modest fluctuations in AUM, EFFR, and yield spread. The values maintain a lower level compared to the crisis peaks.
+- **Recent Trends (2019-2023):** Noticeable increase in AUM alongside a corresponding surge in EFFR. Yield spread also shows a significant uptick, indicating heightened monetary policy tightening in response to economic conditions.
+
+### Summary:
+The chart illustrates that the MMF industry, as represented by its Assets Under Management (AUM), tends to expand significantly following increases in the Effective Federal Funds Rate (EFFR) and yield spread. This trend is particularly evident during periods of monetary policy tightening and economic uncertainty, such as the 2007-2009 financial crisis and recent trends up to early 2023. The close correlation between these factors underscores the impact of monetary policy on the MMF industry.

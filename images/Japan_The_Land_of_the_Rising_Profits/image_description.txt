@@ -1,0 +1,11 @@
+The image presents a line graph titled "Exhibit 1: Japanese Profits (% of Sales)," which tracks the percentage of sales represented by profits in Japan from 1961 to 2021. The data source is the Japan Ministry of Finance, and the information is current as of September 2023.
+
+The graph displays fluctuations in Japanese profits as a percentage of sales over the 60-year period:
+
+- From 1961 to the mid-1980s, the profits percentage hovered mostly around 3-5%, with occasional dips and peaks.
+- Significant declines were observed around 1981 and 1986.
+- From the early 1990s through the mid-2000s, the percentage fluctuated more, dropping below 2% around 1993 and then rising again.
+- Post-2006, there was a rise reaching around 5% in the mid-2010s.
+- The period from 2016 to 2021 shows a noticeable increase, peaking above 6% just before 2020, followed by a sharp dip, and then another rise above 6%.
+
+Overall, the trend indicates general volatility but an upward trend in profits as a percentage of sales in recent decades.

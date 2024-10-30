@@ -1,0 +1,11 @@
+This chart illustrates the change in total bank deposits for large and small banks since the start of 2020. 
+
+Key points to note:
+- The data distinguishes between large banks (the 25 largest by assets) and small banks (all other banks).
+- Both large and small banks saw a significant increase in deposits starting in 2020, peaking around mid-2021.
+- Large banks experienced a peak growth rate of about 40% in bank deposits.
+- Small banks had a slightly lower peak growth rate, just above 30%.
+- After reaching the peak, deposits for both large and small banks show a declining trend from 2022 onwards.
+- As of early 2023, deposits are still above the levels seen at the start of 2020, though the growth rate has decreased, especially for large banks.
+
+Source of the data: Federal Reserve.

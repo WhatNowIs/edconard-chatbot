@@ -1,0 +1,25 @@
+The chart titled "China: Estimated Current Account Surplus" represents China's current account surplus from Q2 2001 to Q2 2024, measured in USD billion with trailing 4-quarter sums. It compares three different datasets:
+
+1. **Current Account Balance (SAFE)** - Represented by the black line.
+2. **Current Account Adjusted for Customs Gap** - Represented by the grey line.
+3. **Current Account Adjusted for Customs and Income Gaps** - Represented by the red dashed line.
+
+Key points:
+
+1. **Trends over Time**:
+   - From Q2 2001 to roughly Q2 2005, all metrics remained relatively low.
+   - A significant increase took place between Q2 2005 and Q2 2008, with peaks around 2008.
+   - Post-2008, there was a sharp decline until around Q2 2009-2011.
+   - Fluctuations were notable from Q2 2011 to Q2 2020, with several peaks and troughs.
+
+2. **Recent Developments**:
+   - A notable spike is shown around Q2 2021 to Q2 2022, followed by some decline leading into Q2 2024.
+
+3. **Comparisons Among Data**:
+   - The black line (SAFE) depicts the official current account balance.
+   - The grey and red lines generally follow similar trends but indicate adjusted values for gaps in customs and income, often showing higher or more detailed surplus figures.
+
+4. **Interpretation**:
+   - Adjustments for customs and income gaps tend to show higher surplus figures than the official balance, reflecting the potential underreporting or gaps in raw data.
+
+Overall, the chart indicates a clear historical perspective of China's current account surplus, emphasizing periods of rapid increase, subsequent decline, and periods of volatility while highlighting discrepancies between official data and adjusted estimates.

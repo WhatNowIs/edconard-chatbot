@@ -1,0 +1,15 @@
+The image is a graph titled "Figure 4: Estimated rise in capital returns for private companies," depicting the returns over a period from around 1950 to 2020. 
+
+The graph shows two lines indicating the estimated capital returns for privately held companies (in blue) and publicly traded companies (in green). The key points are as follows:
+
+1. **Privately Held Companies**:
+   - The returns have generally been higher than those of publicly traded companies throughout the period.
+   - The capital returns show fluctuations, with noticeable peaks around the late 1980s and mid-2000s.
+
+2. **Publicly Traded Companies**:
+   - The returns have been relatively stable but lower compared to privately held companies.
+   - There is a noticeable dip around the early 2000s.
+
+Overall, the graph suggests that privately held companies have had higher and more variable capital returns compared to publicly traded companies over the given period.
+
+The source of the data includes Compustat, Bureau of Economic Analysis, Federal Reserve, and authors' calculations.

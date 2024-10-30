@@ -1,0 +1,15 @@
+The image is a graph titled "Figure 1. Net establishment gains, high tech vs. non-tech" that shows the log change in net establishment gains from 2013 to 2023, with 2019 set as the baseline (0). The red line represents high-tech industries, and the blue dashed line represents non-tech industries. 
+
+Key points from the graph include:
+
+- **High Tech (red line)**:
+  - Experienced a decline below zero around 2016-2017.
+  - Gradually recovered and surpassed non-tech around 2019.
+  - Demonstrated significant growth peaking around 2022 but showed a decline in 2023, remaining well above the non-tech sector.
+
+- **Non-Tech (blue dashed line)**:
+  - Showed slight fluctuations but remained relatively stable around the baseline.
+  - Exhibited modest growth from around 2020 onwards.
+  - Recorded consistent, albeit smaller, net gains compared to high tech.
+
+The source of this data is QCEW, and the average gains are calculated based on industry averages from 2013 to 2019. High tech is defined according to the Business Dynamics Statistics. This graph suggests that high-tech industries have seen greater volatility but ultimately higher growth in net establishment gains compared to non-tech industries in recent years.

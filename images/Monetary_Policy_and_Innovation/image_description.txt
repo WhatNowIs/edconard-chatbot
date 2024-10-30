@@ -1,0 +1,16 @@
+The image features two panels of graphs illustrating various economic indicators over 16 quarters:
+
+**Panel A: Standard Outcome Variables**
+1. **Federal Funds Rate**: Starts at approximately 200 basis points, decreasing sharply to around -100 basis points by the 6th quarter before stabilizing.
+2. **Real GDP**: Initially shows a slight negative deviation, dropping to around -1.5% by the 6th quarter, then exhibiting relative stability.
+3. **Unemployment Rate**: Begins at about 30 basis points, fluctuates slightly, and then stabilizes after the 8th quarter.
+4. **Real Investment**: Shows an early decline of around 4% and eventually trends towards stability over the subsequent quarters.
+
+**Panel B: Innovation Spending**
+1. **Real Investment in IPP**: Hovers around 0% initially, dips to around -2% by the 6th quarter, and demonstrates gradual recovery.
+2. **Real VC Investment**: Indicates significant variability, dropping as low as -40%, with gradual recovery towards later quarters.
+3. **Real VC Investment (Early Stage)**: Exhibits high volatility, plunging to approximately -80% around the 8th quarter, and recovering towards 0%.
+4. **Real VC Investment (Late Stage)**: Similar to early-stage investment, it shows a sharp decline to around -60% but shows signs of recovery in later quarters.
+
+**Summary**:
+The graphs in Panel A suggest that typical macroeconomic indicators like the Federal Funds Rate, Real GDP, Unemployment Rate, and Real Investment show significant initial adjustments over the first few quarters, generally stabilizing thereafter. Panel B highlights significant initial declines in innovation spending indicators such as Real Investment in IPP and various stages of Venture Capital Investment, followed by gradual recovery towards later quarters. The overall trend points to an economic shock with slow recovery in innovation spending compared to standard outcome variables.

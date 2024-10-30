@@ -1,0 +1,14 @@
+The image depicts a line graph showing the Return on Book (a measure of profitability) over time for private firms versus public firms from 1950 to 2020. 
+
+- **Private-Firm Profits** (displayed as a solid black line): 
+  - Generally show an overall upward trend from 1950 to 2020.
+  - The line starts around 0.20 in the 1950s, dips below 0.15 in the late 1970s, fluctuates between 0.20 to 0.30 from 1980 to 2000, and rises significantly after 2000, peaking above 0.40 around 2015 before a slight decline.
+
+- **Public-Firm Profits** (displayed as a dashed gray line): 
+  - Generally fluctuate around a similar starting point as private firms in the 1950s (~0.20).
+  - Fluctuations are notable in the 1960s with peaks reaching close to 0.30, followed by a decline in the 1970s.
+  - There is notable volatility from 1980 to 2000, remaining within the range of 0.20 to 0.30.
+  - A sharp decline occurs post-2000, with profitability dropping below 0.15 and continuing to decrease through the 2010s.
+
+**Summary**:
+The Return on Book for private firms has shown a marked increase over the period of 1950 to 2020, especially after 2000, peaking at over 0.40 around 2015. In contrast, public firms' Return on Book remained relatively stable until 2000 but experienced a significant decrease thereafter, falling below 0.15 and continuing to decline through the 2010s. This indicates a growing divergence in profitability trends favoring private firms over public firms in recent years.

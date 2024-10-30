@@ -1,0 +1,13 @@
+The image is a chart titled "EXHIBIT 1: U.S. PRIVATE SECTOR DEBT (% OF GDP)" depicting the U.S. private sector debt as a percentage of GDP from 1947 to 2019. The chart is sourced from BIS (Bank for International Settlements) as of June 2023. The graph includes three categories of debt:
+
+1. **Household Debt** (represented in blue)
+2. **Nonfinancial Corporate Debt (Nonfin Corp)** (represented in orange)
+3. **Total Debt** (the sum of both household and nonfinancial corporate debt, represented by a gray line)
+
+**Key Observations:**
+
+- **1947-1980**: There was a gradual increase in total private sector debt, with steady rises in both household and nonfinancial corporate debt.
+- **1980-2009**: The debt percentages increased more sharply. Notably, around the late 1980s and early 2000s, there were substantial rises, with peaks in the early 2000s.
+- **2009-Present**: Post-2009, after the financial crisis, the total debt percentage briefly decreased before stabilizing and slightly increasing again towards 2019. 
+
+The graph indicates significant increases in private sector debt relative to GDP over the decades, highlighting key periods of economic growth and financial crises. Total debt peaked around 2009, correlating with the global financial crisis, and has somewhat leveled off since that time.

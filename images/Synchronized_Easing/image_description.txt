@@ -1,0 +1,23 @@
+The graph titled "Market Implied Path of Policy 2024 (%)" shows the projected policy rates for the year 2024 across five regions: USA, UK, Canada, Eurozone, and Switzerland. The data points are plotted for four time periods: March, June, September, and December. Here's what it depicts:
+
+1. **USA (Blue Line)**:
+   - Starts around 5.3% in March.
+   - Slightly decreases to around 5.0% by December.
+
+2. **UK (Orange Line)**:
+   - Starts around 4.6% in March.
+   - Slightly decreases to around 4.4% by December.
+
+3. **Canada (Gray Line)**:
+   - Starts around 4.5% in March.
+   - Slightly decreases to around 4.3% by December.
+
+4. **Eurozone (Yellow Line)**:
+   - Starts around 4.0% in March.
+   - Decreases more significantly to below 3.5% by December.
+
+5. **Swiss (Light Blue Line)**:
+   - Starts at the lowest point around 1.6% in March.
+   - Decreases gradually to around 1.3% by December.
+
+Overall, the chart indicates a general decline in the policy rates across all these regions throughout the year 2024. The USA remains with the highest implied policy rate, whereas Switzerland holds the lowest. The Eurozone shows a slightly steeper decline compared to other regions, aside from Switzerland. The information is sourced from Bloomberg's OIS implied pricing.

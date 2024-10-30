@@ -1,0 +1,11 @@
+This image is a scatter plot titled "Industrial subterfuge" from The Economist, which compares OECD countries based on two parameters: GDP average annual % change (x-axis) and the share of manufacturing as a % of value added (y-axis) over a 2002–2022 average period (or latest available data).
+
+Key observations:
+- South Korea is distinguished by a high percentage of manufacturing value added (around 27-28%) and a moderate GDP growth rate (about 3%).
+- Ireland also has a high manufacturing value added (around 25%) and a notable GDP growth rate (around 4%).
+- Turkey has a lower manufacturing value added (about 18%) but a relatively high GDP growth rate (between 4-5%).
+- The United States, Britain, and Germany have similar GDP growth rates (around 2%) but differing manufacturing value added percentages, with Britain being the lowest among them.
+- Japan, Italy, and Germany have similar manufacturing value added percentages (around 20-22%), with Japan and Italy exhibiting lower GDP growth rates compared to Germany.
+- Australia is characterized by one of the lowest manufacturing value added percentages (below 10%) but has a moderately higher GDP growth rate (around 3%).
+
+Overall, the graph illustrates the relationship between a country's economic growth (GDP growth) and its reliance on manufacturing as a contributor to the economy.

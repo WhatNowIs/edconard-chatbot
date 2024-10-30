@@ -1,0 +1,29 @@
+The image contains a series of line charts showing the Consumer Price Index (CPI) annual growth rate (%) for six countries from June 2017 to October 2023. The countries represented are Canada, France, Germany, Italy, the United Kingdom, and the United States. The source of this data is the OECD, with prices based on consumer prices.
+
+Here is a summary of the key data points for each country as of October 2023:
+
+1. **Canada**:
+   - CPI annual growth rate: 3.1%
+   - The graph shows fluctuations over the period with a recent downward trend.
+
+2. **France**:
+   - CPI annual growth rate: 4.0%
+   - The data exhibits a noticeable peak followed by a decline up to the latest available data.
+
+3. **Germany**:
+   - CPI annual growth rate: 3.8%
+   - The chart shows a sharp rise with some oscillations before a recent decrease.
+
+4. **Italy**:
+   - CPI annual growth rate: 1.7%
+   - The graph shows a significant upward curve with a peak and a recent downward trend.
+
+5. **United Kingdom**:
+   - CPI annual growth rate: 4.7%
+   - The chart indicates a steeper rise compared to other countries with a peak followed by a gradual decline.
+
+6. **United States**:
+   - CPI annual growth rate: 3.2%
+   - The line graph shows a sharp increase followed by a moderate decline.
+
+Overall, these charts highlight the trends and fluctuations in inflation rates (CPI) over the past few years, showing notable peaks and changes due to various economic factors, with current inflation rates ranging from high in the UK to relatively lower in Italy.

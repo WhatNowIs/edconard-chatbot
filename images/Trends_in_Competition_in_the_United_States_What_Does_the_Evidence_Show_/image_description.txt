@@ -1,0 +1,17 @@
+The image consists of two related graphs titled "Figure 1: Corporate Profits as Percentage of GDP." Both graphs span the years from 1955 to 2020.
+
+### Left Graph: Total Corporate Profits as Percentage of GDP
+- **Description:** This graph shows the total corporate profits as a percentage of GDP over time, alongside the decade average.
+- **Trends:**
+  - From 1955 to the early 1980s, corporate profits as a percentage of GDP show significant variability, with peaks around the mid-1960s and dips in the early 1980s.
+  - After the early 1980s, there is an overall upward trend, reaching new peaks in the mid-2000s and again around 2020.
+  - The decade averages (red line) indicate a gradual increase over the decades, stabilizing at a higher level from the 2000s onwards.
+
+### Right Graph: Domestic vs. Foreign Corporate Profits as Percentage of GDP
+- **Description:** This graph differentiates between domestic and foreign corporate profits as percentages of GDP.
+- **Trends:**
+  - **Domestic:** There is a decline in domestic corporate profits as a percentage of GDP from the mid-1960s until the early 1980s, followed by variability and a general upward trend since the early 2000s.
+  - **Foreign:** Foreign corporate profits start very low and display a steady increase over time, particularly from the mid-1980s onwards. By 2020, foreign profits have stabilized at a higher level.
+
+### Summary:
+From 1955 to 2020, total corporate profits as a percentage of GDP have generally increased, particularly since the early 2000s. This increase is driven by both domestic and, more significantly, foreign corporate profits. The domestic share shows a recovery and upward trend since the early 2000s while foreign profits have shown a steady growth trend since the mid-1980s. This indicates a shift in the global distribution of corporate profits, highlighting the growing importance of foreign earnings for corporations over the latter part of the period.

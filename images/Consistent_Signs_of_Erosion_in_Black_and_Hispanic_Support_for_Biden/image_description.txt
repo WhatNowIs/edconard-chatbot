@@ -1,0 +1,25 @@
+The image presents a series of line charts depicting the Democratic share of major party votes among nonwhite voters, broken down by race/ethnicity, gender, age, education, and income from 2012 to projected data for 2024. Key findings include:
+
+1. **By Race/Ethnicity**:
+   - **Black voters** show a significant decline, from near 90% in 2012 to below 80% by 2020, with a continued downward trend into 2024.
+   - **Hispanic voters**' support for Democrats dropped from approximately 80% in 2012 to around 65% in 2020 and is projected to continue declining.
+   - **Other nonwhite groups** also show a marked decrease in Democratic support, from about 70% in 2012 to around 55% in 2020.
+
+2. **By Gender**:
+   - **Female nonwhite voters** favored Democrats slightly more consistently, from approximately 80% support in 2012 down to around 70% in 2020, trending lower into 2024.
+   - **Male nonwhite voters** show a steeper decline, from roughly 75% in 2012 to about 60% in 2020.
+
+3. **By Age**:
+   - Nonwhite voters aged **18-44** show a steady decline from about 75% in 2012 to just above 60% in 2020.
+   - Nonwhite voters aged **45 and older** also depict a reduction from about 80% in 2012 to close to 70% in 2020.
+
+4. **By Education**:
+   - Nonwhite voters with a **college degree**'s support has dropped from approximately 85% in 2012 to about 70% in 2020.
+   - Those with **no college degree** show a decline from around 75% to about 60% over the same period.
+
+5. **By Income**:
+   - Nonwhite voters earning **less than $50k** annually show decreasing support from 80% in 2012 to about 70% in 2020.
+   - Those in the **$50k to $100k** income bracket show a sharp decline from around 75% in 2012 to 55% in 2020.
+   - For those earning **$100k+** annually, Democratic support dropped from about 70% in 2012 to slightly below 60% in 2020.
+
+Overall, the charts reveal a clear trend of declining Democratic support among various segments of nonwhite voters from 2012 to 2020, with further decreases projected for 2024.

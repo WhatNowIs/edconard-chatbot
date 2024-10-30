@@ -1,0 +1,22 @@
+The image is a bar chart illustrating the US Energy Balance Sheet, specifically focusing on net exported energy as a percentage of total US energy consumption from 2005 to Q1 2023.
+
+Key details of the chart include:
+
+1. **Time Frame**:
+   - The data spans from 2005 through 2022, with an estimate for Q1 2023.
+
+2. **Net Exported Energy Trends**:
+   - From 2005 to 2007, the US had a negative net export percentage, at around -30.2% indicating significant energy imports.
+   - The negative percentage decreased gradually, bottoming out at -22.2% in 2008.
+   - From 2008 onwards, the negative value progressively reduced, reaching -11.2% in 2016.
+   - Between 2017 and 2019, the net export percentage hovered around zero, indicating a more balanced energy import-export ratio.
+   - By 2020, the US shifted to a net positive energy export, standing at approximately 3.7%.
+   - In 2021, the net positive export increased further to around 5.9%.
+   - The estimate for Q1 2023 continues this positive trend, but the exact percentage is not stated.
+
+3. **Source and Estimation**:
+   - The data is sourced from eia.gov.
+   - The chart and estimation are attributed to "the gregor letter."
+
+**Summary**:
+From 2005 to Q1 2023, the United States has gradually decreased its dependency on energy imports, transitioning from a significant net energy importer status (-30.2% in 2005) to becoming a net energy exporter in recent years (5.9% in 2021), with ongoing positive estimates for early 2023.

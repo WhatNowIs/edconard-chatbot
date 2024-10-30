@@ -1,0 +1,9 @@
+The image presents data on government debt scheduled to mature within the next year, highlighting that this figure has reached a record high of $8.9 trillion. The data is visualized through three key metrics:
+
+1. **Market Interest-Bearing Public Debt Maturing Within One Year or Less ($ bn)**: This metric, represented by the green line, shows a significant increase over time, with a pronounced spike around the beginning of 2021 onwards.
+
+2. **Percentage of Marketable Debt Maturing in the Next 12 Months (RHS)**: This metric, depicted by the blue line, indicates the percentage of total marketable debt that will mature within the next year. It also shows an upward trend, particularly after early 2020.
+
+3. **Market Interest-Bearing Public Debt Maturing Within One Year or Less (% GDP, RHS)**: Represented by the orange line, this metric demonstrates the portion of maturing debt relative to the Gross Domestic Product (GDP). It exhibits similar upward movement post-2020.
+
+Overall, the chart underscores a significant increase in government debt maturing in the short term, both in absolute terms and as a percentage of GDP, primarily peaking after 2020. This trend may indicate rising fiscal pressures and emphasizes the need for effective debt management and refinancing strategies.

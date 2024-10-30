@@ -1,0 +1,33 @@
+The image contains data from a Pew Research Center survey conducted between September 26 and October 23, 2023. The survey investigates the usage patterns of various social media platforms among U.S. teens ages 13 to 17. Here’s a summarized breakdown of the findings:
+
+- **YouTube**: 
+  - Almost constantly: 16%
+  - Several times a day: 38%
+  - About once a day: 17%
+  - Net Daily Usage: 71%
+
+- **TikTok**: 
+  - Almost constantly: 17%
+  - Several times a day: 32%
+  - About once a day: 9%
+  - Net Daily Usage: 58%
+
+- **Snapchat**: 
+  - Almost constantly: 14%
+  - Several times a day: 29%
+  - About once a day: 8%
+  - Net Daily Usage: 51%
+
+- **Instagram**: 
+  - Almost constantly: 8%
+  - Several times a day: 27%
+  - About once a day: 12%
+  - Net Daily Usage: 47%
+
+- **Facebook**: 
+  - Almost constantly: 3%
+  - Several times a day: 8%
+  - About once a day: 8%
+  - Net Daily Usage: 19%
+
+In conclusion, YouTube and TikTok are the most frequently visited platforms by teens, with over 70% and 58% daily usage respectively. Snapchat and Instagram also prove popular, while Facebook lags behind with only 19% of teens using it daily.

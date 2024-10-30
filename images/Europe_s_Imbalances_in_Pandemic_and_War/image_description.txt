@@ -1,0 +1,24 @@
+The image is a line graph titled "Great Divergences," which illustrates the cumulative net fixed capital formation in four major European economies (Germany, France, Italy, and Spain) from 1999 to 2023, measured in EUR trillions. 
+
+Here are the key points extracted from the image:
+
+1. **General Observation**:
+   - The chart traces the investments in housing, public goods, and productive capacity across Germany, France, Italy, and Spain from 1999 to 2023.
+
+2. **Country-Specific Trends**:
+   - **Germany (blue line)**: Despite being larger than its neighbors, Germany has invested less consistently compared to others.
+   - **France (red line)**: France has shown steady growth in investment and appears to be the most consistent builder among the four.
+   - **Italy (green line)**: Italy has the lowest cumulative investment and shows relatively flat growth, especially noticeable since around 2008.
+   - **Spain (purple line)**: Spain initially invested significantly, surpassing Germany, but exhibited stagnation around 2011 before continuing a steady increase.
+
+3. **Investment Growth Pattern**:
+   - France leads with the highest cumulative investment.
+   - Spain showcases a significant early rise followed by stagnation around 2011 but continues to increase steadily post-2015.
+   - Germany's growth is steadier but at a lower trajectory compared to France and Spain.
+   - Italy shows modest growth with the least cumulative investment among the four.
+
+4. **Overall Insight**:
+   - The image highlights the variations in investment strategies and growth among the four countries, with France being the most consistent, while Germany, despite its economic size, has invested less over time. Spain had periods of rapid investment growth but faced stagnation, and Italy has invested the least overall.
+
+**Source**:
+   - Data from Eurostat and calculations by Matthew Klein.

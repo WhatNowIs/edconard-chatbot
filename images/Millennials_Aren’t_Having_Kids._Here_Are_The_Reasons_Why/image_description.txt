@@ -1,0 +1,15 @@
+The chart illustrates trends in the number of times women aged 25 to 44 have given birth in their lifetime from 1975 to 2021. Key observations include:
+
+1. **Zero Children**: The percentage of women who have not given birth at all has risen significantly, especially noticeable post-2000, reaching around 30% by 2021.
+
+2. **One Child**: This group has remained relatively stable since 1975, maintaining a consistent rate close to 20% throughout the period.
+
+3. **Two Children**: Once the most common category, the percentage of women having two children has seen a declining trend, falling from around 35% in the early 1980s to below 30% by 2021.
+
+4. **Three Children**: The proportion of women with three children has gradually decreased from about 20% in the late 1970s to around 15% by 2021.
+
+5. **Four Children**: This group shows a marked decline from about 10% in the late 1970s to around 5% by 2021.
+
+6. **Five-plus Children**: This category sees the most significant drop, from nearly 10% in the mid-1970s to just under 2% by 2021.
+
+The data implies a trend towards fewer children per family, with an increasing proportion of women opting for zero or fewer children compared to previous decades. The year 2020 is omitted from the data set due to disruptions caused by the pandemic.

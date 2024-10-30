@@ -1,0 +1,20 @@
+The graphic from Bloomberg, using data from the Bureau of Economic Analysis, illustrates the reacceleration of key US inflation gauges and a surge in spending. 
+
+Key Points:
+1. **Inflation Gauges**:
+   - The chart tracks the year-over-year change in two inflation measures:
+     - Personal Consumption Expenditures (PCE) Price Index (black line)
+     - PCE Price Index excluding food and energy (red line)
+
+2. **Recent Trends**:
+   - As of the latest data point, the PCE Price Index has increased by 5.38% year-over-year.
+   - The PCE Price Index minus food and energy has risen by 4.71% year-over-year.
+   - Both measures have reaccelerated recently, especially notable from December 2022 to January 2023, as indicated by the green circled area.
+
+3. **Spending Patterns**:
+   - The bar graph beneath the inflation lines shows the month-over-month change in inflation-adjusted spending.
+   - Spending saw a notable surge in March 2021 and December 2022.
+   - The most recent data reflects a significant uptick in spending in January 2023.
+
+Summary:
+The graph illustrates a reacceleration of US inflation metrics with both the overall PCE Price Index and the core PCE Index (excluding food and energy) increasing significantly. These changes coincide with a surge in inflation-adjusted consumer spending, particularly in late 2022 and early 2023. The increase in spending suggests heightened economic activity, which might be contributing to the persistently high inflation rates.

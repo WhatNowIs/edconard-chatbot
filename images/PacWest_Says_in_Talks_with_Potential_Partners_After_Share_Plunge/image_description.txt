@@ -1,0 +1,20 @@
+The image is a chart from Bloomberg showing the post-market performance of the stocks of four regional banks: PacWest, Western Alliance, Comerica, and Zions, on May 3, 2023. 
+
+- **Title**: The chart is titled "Regional Bank Stocks Slide".
+- **Description**: It notes that the shares of PacWest and its regional peers tumbled after market hours.
+- **Legend**: 
+  - PacWest is represented by a black line.
+  - Western Alliance is in red.
+  - Comerica is in blue.
+  - Zions is in green.
+- **Y-axis**: Represents the percentage change in stock prices.
+- **X-axis**: Represents time, starting from approximately 04:30 and ending around 08:00 on May 3, 2023.
+- **Zero Line**: A dashed line indicating the stock prices at the close of May 3.
+
+**Key Observations**:
+- **PacWest**: Experienced a significant drop, with its stock falling around 52.4922%. The chart shows PacWest's line plunging steeply just after 04:30.
+- **Western Alliance**: Also saw a notable decline in its stock, dropping close to 35%. The red line shows a downward trend, though less steep than PacWest's.
+- **Comerica and Zions**: These banks experienced minor declines relative to PacWest and Western Alliance, with changes hovering around -9% to -11%.
+
+**Summary**:
+On May 3, 2023, shares of regional banks, particularly PacWest and Western Alliance, experienced significant declines during post-market trading. PacWest's stock plummeted by 52.4922%, while Western Alliance's stock fell by around 35%. Comerica and Zions saw minor drops in contrast, with changes of approximately -9% to -11%. This data underscores considerable volatility and investor concerns within the regional banking sector on this date.

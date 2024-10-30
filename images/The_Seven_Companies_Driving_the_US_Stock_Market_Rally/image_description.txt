@@ -1,0 +1,14 @@
+The image is a graph titled "Valuations for the S&P 500's standout stocks look lofty" and it illustrates the forward price-to-earnings (P/E) ratio from 2015 to 2023, as of June 2023. The data is sourced from UBS, Bloomberg, and FactSet.
+
+The graph distinguishes between two categories:
+
+1. **Big 7**: Comprising Apple, Microsoft, Nvidia, Amazon, Meta, Tesla, and Alphabet.
+2. **Rest of S&P 500**: All other companies in the S&P 500 index.
+
+Key observations:
+
+- The **P/E ratio for the "Big 7"** exhibits significant volatility and has seen marked peaks, notably around 2020 and early 2021, where it peaked above 35. Despite fluctuations, it has remained consistently higher than the rest of the S&P 500 and shows an upward trend toward the middle of 2023.
+- The **P/E ratio for the "Rest of S&P 500"** is comparatively stable. It experienced minor fluctuations, with slight peaks around 2020 but has generally stayed around the 20 mark.
+- The gap between the P/E ratios of the "Big 7" and the "Rest of S&P 500" emphasizes the premium investors are willing to pay for these dominant tech and growth stocks compared to the broader market.
+
+This indicates that the standout stocks in the S&P 500, primarily tech giants, have significantly higher valuations relative to their earnings compared to the broader market, reflecting investor optimism and high expectations for these companies' future performance.

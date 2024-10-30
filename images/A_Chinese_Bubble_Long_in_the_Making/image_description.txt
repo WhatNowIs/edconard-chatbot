@@ -1,0 +1,20 @@
+The provided image contains two graphs showing trends in house prices and population of home-buying age in various cities.
+
+1. **House Prices in First-Tier Cities (as % of 2010):**
+   - Period: 2010 to 2024 (projected)
+   - Cities: Shenzhen, Guangzhou, Shanghai, and Beijing.
+   - Key Observations:
+     - Shenzhen experienced the highest increase in home prices, peaking around 2019.
+     - Guangzhou's home prices showed a significant surge, especially around 2016 and 2020, although slightly fluctuating after 2019.
+     - Shanghai and Beijing have relatively similar trends, with consistent growth in home prices from about 2013 onward.
+
+2. **Population of Home-Buying Age (28-37 years):**
+   - Period: 2010 to 2040 (projected)
+   - Data Source: 2020 Census and Yi Fuxian's projections.
+   - Key Observations:
+     - The population of home-buying age saw a peak around 2015 and has been on a decline since.
+     - According to the 2020 Census data, the population is projected to decrease steadily until 2040, with a more pronounced decline after 2025.
+     - Yi Fuxian's projections also indicate a similar downtrend, with a slight deviation starting around 2030.
+
+**Summary:**
+The graphs indicate a significant rise in home prices in first-tier cities like Shenzhen, Guangzhou, Shanghai, and Beijing, with Shenzhen experiencing the most notable increase since 2010. Concurrently, there is a concerning decline in the population of individuals aged 28-37 over the same period, suggesting potential challenges for the housing market in these cities due to a shrinking demographic of home buyers.

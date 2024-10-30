@@ -1,0 +1,19 @@
+The image shows a projection of the expansion of Aedes aegypti mosquitoes into the US and China by the year 2050, driven by environmental changes. Key points from the image are:
+
+1. **Temporal Evolution**:
+   - The change in invasion frontier boundaries is shown at 20-year intervals, specifically for the years 1950, 1970, 1990, 2010, 2030, and 2050.
+   - The color gradient (light blue to dark blue) represents the expansion over the years, from early to later periods.
+
+2. **Geographic Spread**:
+   - By 2050, the projection indicates a significant expansion of Aedes aegypti mosquitoes in both the US and China.
+   - In the US, the affected areas are mostly the southern parts and up to the Midwest.
+   - In China, the expansion is more widespread in eastern regions and parts of the interior.
+
+3. **Regions at Risk**:
+   - Other significant regions at risk include South and Central America, parts of Africa, Southeast Asia, and Australia, indicating a global spread.
+
+4. **Climate Change Impact**:
+   - The projections are based on the RCP8.5 emissions scenario, which is a high greenhouse gas concentration trajectory.
+   - This signifies that climate change is a major driver of the spread and intensification of mosquito invasion.
+
+The image emphasizes the potential health risks posed by the spread of Aedes aegypti mosquitoes under the influence of climate change, highlighting the need for global awareness and preparedness.

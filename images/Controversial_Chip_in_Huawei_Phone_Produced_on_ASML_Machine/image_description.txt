@@ -1,0 +1,11 @@
+The table displays the geographic breakdown of ASML's sales over three quarters in 2023. The key points are:
+
+1. **China's Increasing Contribution:** The most notable trend is the significant rise in sales from China, soaring from 8% in Q1 2023 to 46% in Q3 2023, suggesting a robust increase in demand from this region.
+   
+2. **Taiwan's Decline:** Conversely, Taiwan's contribution to sales has decreased, dropping from 49% in Q1 2023 to 24% in Q3 2023.
+
+3. **South Korea's Moderate Decline:** Sales from South Korea show a moderate decline from 26% in Q1 2023 to 20% in Q3 2023.
+
+4. **USA and EMEA:** Both regions, the USA and EMEA, show relatively small changes. The USA's sales contribution fell from 15% in Q1 2023 to 5% in Q3 2023. EMEA's share slightly increased from 1% in Q1 2023 to 4% in Q3 2023.
+
+Overall, the data indicates a shift in ASML's sales distribution heavily favoring China, while Taiwan, South Korea, and the USA have seen reductions in their respective shares.

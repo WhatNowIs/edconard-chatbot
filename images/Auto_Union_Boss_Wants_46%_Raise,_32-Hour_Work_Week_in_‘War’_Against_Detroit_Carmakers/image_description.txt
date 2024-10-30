@@ -1,0 +1,15 @@
+The image is a line graph illustrating the percentage of poll respondents who said they approved of labor unions in the United States from 1936 to 2023. Key observations and trends from the graph include:
+
+1. **Initial Decline and Fluctuations (1936-1960)**: Starting high, support for unions saw a significant decline in the early years, followed by several fluctuations.
+
+2. **Steady Decline (1960-1980)**: From the 1960s to the 1980s, the approval rating for labor unions experienced a steady decline, reaching one of its lowest points around the early 1980s.
+
+3. **Stabilization and Gradual Recovery (1980-2000)**: The period from the 1980s to the early 2000s saw a stabilization in union approval ratings with minor fluctuations but generally lower support levels.
+
+4. **Recent Increase (2000-2023)**: Since the early 2000s, the approval ratings for labor unions have been on a gradual rise, showing significant growth in recent years, approaching levels from the mid-20th century.
+
+The graph suggests that, after a long period of relatively low support, labor unions are experiencing a resurgence in approval from the public in the United States.
+
+Sources and Notes:
+- **Source**: Gallup
+- **Note**: Gallup did not ask the question every year in the 20th century.

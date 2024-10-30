@@ -1,0 +1,25 @@
+The bar chart presents the annual income after transfers and taxes for different quintiles (income groups) using three methods of income measurement: per household without size adjustment, per capita, and average OECD & Census size adjustment. Here are the key points:
+
+1. **Per Household No Size Adjustment:**
+   - Bottom quintile: approximately 30,000
+   - Second quintile: approximately 40,000
+   - Middle quintile: approximately 60,000
+   - Fourth quintile: approximately 80,000 
+   - Top quintile: approximately 190,000
+   
+2. **Per Capita:**
+   - Bottom quintile: approximately 30,000
+   - Second quintile: approximately 35,000
+   - Middle quintile: approximately 50,000
+   - Fourth quintile: approximately 70,000
+   - Top quintile: approximately 110,000
+
+3. **Average OECD & Census Size Adjustment:**
+   - Bottom quintile: approximately 30,000
+   - Second quintile: approximately 35,000
+   - Middle quintile: approximately 50,000 
+   - Fourth quintile: approximately 70,000 
+   - Top quintile: approximately 140,000
+
+### Summary:
+The bar chart indicates notable income disparities among different quintiles when considering the three measurement methods. The top quintile consistently has significantly higher incomes compared to the other quintiles. The disparity is most pronounced when looking at income per household without size adjustment, where the top quintile's income is nearly 190,000, much higher than the other quintiles. The difference is reduced but still significant in the other two adjustment methods: per capita and average OECD & Census size adjustment.

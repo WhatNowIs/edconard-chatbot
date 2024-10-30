@@ -1,0 +1,23 @@
+The image consists of two exhibits related to small businesses.
+
+**Exhibit 3: Small business payments volume to SB-focused hiring firms (index, 3-month moving average, 2019 average = 100) and JOLTS job openings**
+
+- It shows the comparison between small business payments to hiring firms and JOLTS (Job Openings and Labor Turnover Survey) job openings from March 2020 to September 2023.
+- The small business payments to hiring firms (red line) peaked between April and August 2021, followed by a decline.
+- JOLTS job openings (blue line) showed an overall increasing trend with fluctuations, peaking around mid-2021, then decreasing but slightly recovering in recent months.
+- Between April and August 2023, small business payments were stable, showing a small decline in September 2023.
+
+**Exhibit 4: Single most important problem for small businesses (% reporting)**
+
+- The bar chart compares the most reported issues by small businesses in September 2023 (blue bars) versus September 2022 (red bars).
+- **Top problems for small businesses in September 2023 vs. September 2022:**
+  - **Inflation:** 30% in 2022, reduced but still prominent in 2023.
+  - **Quality of Labor:** Approximately consistent in both years.
+  - **Taxes:** Also consistent in both years.
+  - **Cost of Labor:** Slightly lower in 2023 compared to 2022.
+  - **Financial & Interest Rates:** Minor, with low reporting in both years.
+
+**Source:** The data sources are Bank of America internal data, Bureau of Labor Statistics for JOLTS (Exhibit 3), and National Federation of Independent Businesses (Exhibit 4). 
+
+**Summary:**
+Small business payments to hiring firms have declined slightly in September 2023 after a stable period between April and August. JOLTS job openings peaked around mid-2021 and have fluctuated since then. Inflation remains the top concern for small businesses, though it has moderated from 2022 to 2023, while issues such as the quality of labor, taxes, and the cost of labor have shown consistent levels of concern.

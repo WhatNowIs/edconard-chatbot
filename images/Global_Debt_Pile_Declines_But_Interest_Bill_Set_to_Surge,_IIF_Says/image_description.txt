@@ -1,0 +1,20 @@
+The image is a line graph titled "Global Debt Burden" that demonstrates two key metrics over the period from 2012 to 2022:
+
+1. **Total debt in trillions of dollars** (represented by the black line)
+2. **Total debt as a percentage of world GDP** (represented by the pink line)
+
+Here are the key observations and trends from the graph:
+
+- **Total debt ($ trillion)**: 
+  - The total debt has shown a consistent increase from 2012 through 2022.
+  - There was a noticeable spike in total debt from around 2020, and it continued rising until reaching a peak before slightly declining towards 2022.
+
+- **Total debt (% of world GDP)**:
+  - The debt as a percentage of world GDP remained relatively stable from 2012 until around 2020.
+  - A significant surge occurred around 2020, where the percentage increased from approximately 300% to nearly 350%.
+  - After peaking around 2021, the debt percentage began to decline slightly but remained above the 2012-2020 levels by the end of 2022.
+  
+- **Source**: The data is provided by the Institute of International Finance.
+
+Summary: 
+Between 2012 and 2022, the global debt burden has grown substantially in absolute terms as well as when measured against the global GDP. Notably, there was a sharp increase in both metrics around 2020, coinciding likely with the economic impact of the COVID-19 pandemic. After reaching a peak, the growth pace decelerated slightly by the end of 2022.

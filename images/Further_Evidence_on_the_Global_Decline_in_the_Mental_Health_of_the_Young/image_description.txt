@@ -1,0 +1,19 @@
+The chart titled "Chart 1. % saying often and very often were unhappy and depressed last 4 weeks, ISSP 2011 and 2021" displays the percentage of individuals reporting frequent feelings of unhappiness and depression over the last four weeks, compared across two years: 2011 (red dashed line) and 2021 (blue solid line). The x-axis represents different age groups ranging from 18 to 74, while the y-axis represents the percentage of respondents.
+
+Key observations:
+1. **2011 Data (Red Dashed Line)**: 
+   - A relatively stable trend is observed from ages 18 to 74 with slight fluctuations.
+   - The percentage of people reporting unhappiness and depression slightly increases with age.
+   - The highest values are observed in the older age groups, particularly between ages 60 to 74, reaching around 0.12 at its peak.
+
+2. **2021 Data (Blue Solid Line)**: 
+   - This line shows much greater volatility compared to 2011.
+   - In the early ages (18 to around 30), there is a notable spike reaching around 0.12, followed by sharp declines and subsequent peaks.
+   - Between ages 30 to 65, the percentage generally trends downward but with numerous sharp peaks and troughs.
+   - After age 65, the percentage remains lower than 2011 statistics but still fluctuates noticeably.
+
+3. **Comparison**: 
+   - In 2021, younger age groups (18-30) reported higher percentages of unhappiness and depression compared to 2011.
+   - For individuals older than 60, the 2021 percentages are consistently lower than in 2011.
+
+In summary, the younger population (18-30) appeared to experience greater unhappiness and depression in 2021 compared to 2011. Conversely, older adults (60 and above) reported less frequent unhappiness and depression in 2021 compared to a decade earlier.

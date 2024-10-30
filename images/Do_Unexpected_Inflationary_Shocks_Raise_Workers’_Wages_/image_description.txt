@@ -1,0 +1,19 @@
+This chart illustrates the year-over-year percent change in nominal wage growth and oil price growth from Q1 2011 to Q1 2019. The data, sourced from the Federal Reserve Bank of St. Louis Economic Data (FRED), compares the Employment Cost Index (wages and salaries) for U.S. workers with spot crude oil prices.
+
+Key points of the summary:
+
+1. **Nominal Wage Growth (Left Scale, Blue Line):**
+   - Generally remains stable and exhibits gradual fluctuations.
+   - Starts at about 1.6% in Q1 2011 and shows minor variations throughout the period.
+   - Peaks at around 2.9% in mid-2018.
+
+2. **Oil Price Growth (Right Scale, Red Line):**
+   - Experiences significant volatility, with sharp rises and falls.
+   - Starts at approximately 25% in Q1 2011, reaching its lowest point around -55% in Q1 2016.
+   - Shows a dramatic peak around Q1 2017, reaching nearly 45%, followed by another decline and peak in subsequent years.
+
+3. **Overall Trend:**
+   - Despite the substantial fluctuations in oil price growth, nominal wage growth remains relatively steady.
+   - The two metrics do not exhibit a strong correlation over the period: as oil prices dropped significantly, wage growth maintained a more consistent trajectory.
+
+The main conclusion is that even as oil prices experienced dramatic changes over the given period, wage growth for U.S. workers exhibited only minor fluctuations, indicating a weak relationship between the two variables during this timeframe.

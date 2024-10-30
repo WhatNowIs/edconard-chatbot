@@ -1,0 +1,15 @@
+The image titled "Have Money, Will Spend It" indicates a relationship between changes in the growth rate of worker pay and the growth rate in measures of underlying inflation. This relationship has implications for the Federal Reserve's recent concerns regarding the costs of imposing disinflation.
+
+The graph provided shows yearly changes from 1983 to 2022 in several indicators: 
+
+1. **Atlanta Fed median change in hourly wage (blue)**: This traces the fluctuations in median hourly wages over the years, generally reflecting a positive trend but with notable variations and periods of decline.
+
+2. **PCE services excluding energy and housing (green)**: Personal Consumption Expenditures (PCE) services prices minus energy and housing show a similar pattern to wages but remain marginally lower.
+
+3. **ECI (red)**: The Employment Cost Index reflects changes in wages and salary costs, showing a moderate fluctuation around other indicators.
+
+4. **Market-based PCE services excluding housing, utilities, and health care (orange)**: It excludes areas such as housing, utilities, and health care and follows a generally similar trend to the other indicators but with slightly less variation.
+
+These series indicate that while the correlation between wages and inflation measures is not exact, there is a noticeable relationship. This correlation supports the idea that changes in earnings are related to inflation trends, thus feeding into the concerns of the Federal Reserve regarding the potential consequences of disinflation (a reduction in the rate of inflation).
+
+Sources for the data include the Bureau of Labor Statistics, Bureau of Economic Analysis, and the Federal Reserve Bank of Atlanta, with additional calculations by Matthew Klein. The information helps explain the Fed's scrutiny of wage growth as a critical factor in its inflation control measures. The table also notes that the market-based PCE services exclude several sectors such as food provided to employees, gambling, certain finance and insurance categories, and social services/nonprofits.

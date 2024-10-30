@@ -1,0 +1,27 @@
+The infographic from the Financial Times presents data from the OECD's "Indicators of Immigrant Integration 2023" report, comparing socio-economic outcomes among native and immigrant populations in France, Germany, the UK, and the US. The key metrics include:
+
+1. **Relative Poverty (%):**
+   - Immigrants in France, especially recent arrivals, exhibit higher relative poverty rates than native-born individuals. 
+   - Germany, the UK, and the US also show higher poverty rates for immigrants compared to natives, but the disparity is particularly pronounced in France.
+
+2. **Percentage in Bottom Income Decile:**
+   - In France, a higher proportion of both recent and settled immigrants fall into the bottom income decile compared to native-born individuals.
+   - Germany and the UK show similar trends but to a lesser extent. The US data suggests a lesser disparity in this metric.
+
+3. **Unemployment (%):**
+   - Unemployment rates for immigrants (both recent and settled) in France are significantly higher than for native-born individuals.
+   - Germany and the UK show a comparable trend, though the differences are smaller. In the US, unemployment disparities between natives and immigrants appear relatively small.
+
+4. **Youth Unemployment (%):**
+   - French youth unemployment is notably high among recent immigrant youth compared to native-born youth.
+   - Germany and the UK also exhibit high youth unemployment among immigrants, with the US showing relatively more balanced rates.
+
+5. **Neets (%):** (Young people not in employment, education, or training):
+   - France has a high percentage of immigrant Neets, especially among the recent foreign-born population.
+   - Germany, the UK, and the US also show higher percentages of Neets among immigrants compared to natives, with the US displaying less disparity.
+
+6. **Median Income (€000s):**
+   - Median income data adjusted for purchasing power parity illustrates that immigrants in France – both recent and settled – have significantly lower median incomes than native-born populations.
+   - The income gap is less pronounced in Germany, the UK, and the US, although immigrants still generally have lower median incomes than natives.
+
+Overall, the data suggests that immigrants in France face more severe socio-economic challenges compared to their counterparts in Germany, the UK, and the US, with significant disparities in poverty, income, and unemployment rates.

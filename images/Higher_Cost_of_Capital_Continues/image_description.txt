@@ -1,0 +1,10 @@
+The image illustrates the trend in U.S. bankruptcy filings from January 2020 to July 2023, highlighting the impact of rising capital costs.
+
+Summary:
+- The chart tracks the number of U.S. bankruptcy filings on a monthly basis over the specified period.
+- A noticeable peak in bankruptcy filings occurred around mid-2020.
+- Following a period of lower filings, there is a marked increase starting from early 2022, aligning with the time when the Federal Reserve began raising interest rates.
+- This upward trend in bankruptcy filings continues throughout 2022 and into 2023, suggesting the higher cost of capital is having a sustained negative effect on companies.
+- Data includes both public companies or private companies with public debt totaling at least $2 million in assets or liabilities, and private companies with at least $10 million in assets or liabilities.
+
+Source of data includes S&P Capital IQ, Bloomberg, and the Apollo Chief Economist.

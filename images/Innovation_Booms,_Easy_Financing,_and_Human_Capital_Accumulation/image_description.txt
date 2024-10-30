@@ -1,0 +1,26 @@
+The image provides a graphical representation of wage dynamics for workers who started in the Information and Communication Technology (ICT) sector compared to those who started in other sectors. The time frame spans from 1994 to 2015 and is divided into three cohorts:
+
+1. Pre-boom cohort (1994-1996, represented in blue)
+2. Boom cohort (1998-2001, represented in red)
+3. Post-boom cohort (2003-2005, represented in green)
+
+### Key Observations:
+
+1. **Pre-boom cohort (1994-1996):**
+   - Initially starts with a slight positive wage premium.
+   - Peaks around 1997-2000.
+   - Experiences a significant decline starting from 2000, reaching its lowest point around 2009-2011.
+   - Shows some recovery towards the end of the period but remains below the zero line.
+
+2. **Boom cohort (1998-2001):**
+   - Begins with a notable positive wage premium.
+   - Peaks sharply around 2000, showing the highest wage premium among the cohorts.
+   - Experiences the most drastic decline starting from 2001, falling to negative values, and remains low until 2015 with fluctuations but no significant recovery.
+
+3. **Post-boom cohort (2003-2005):**
+   - Starts at a lower baseline compared to the earlier cohorts.
+   - Experiences a slight decline until 2006.
+   - Shows a gradual increase from 2007 onwards, maintaining a steady positive wage premium from around 2011 to 2015.
+
+### Summary:
+The graph reflects wage dynamics for high-skill workers starting in the ICT sector versus other sectors across different cohorts. The pre-boom and boom cohorts exhibit a significant positive wage premium initially, which sharply declines post-2000, with the boom cohort demonstrating the most severe decline. In contrast, the post-boom cohort maintains a more stable and gradually increasing wage premium, particularly after 2011. This differential trend underscores the volatility experienced by ICT sector workers who entered the workforce during the boom period compared to more stable conditions for those who entered post-boom.

@@ -1,0 +1,19 @@
+This graph displays Eurozone nominal wage growth over time, specifically from before 2000 to 2023. Here are the key points:
+
+1. **Two Series**: The graph features two data series:
+   - **EA-19 Labor Cost Index, Compensation, All Industries (Yellow Line)**: This typically measures the overall cost of labor in the economy.
+   - **EA-19 Negotiated Wage Growth (Teal Line)**: This measures the growth in wages that have been formally negotiated, perhaps through collective bargaining agreements.
+ 
+2. **Time Range**: The x-axis represents the time period from before 2000 to 2023.
+
+3. **Growth Trends**:
+   - **Pre-2005**: Both indices fluctuate between 2% and 3% annual growth.
+   - **2005-2010**: There's an increase in labor cost index and negotiated wage growth, sometimes reaching above 3%, but with noticeable dips and peaks.
+   - **2010-2015**: Growth experiences volatility, with significant drops around 2010 and spikes thereafter.
+   - **Post-2015**: Both indices again display volatility, with the labor cost index experiencing sharper changes, including a significant dip around the COVID-19 pandemic (2020).
+   - **Post-2020 to 2023**: Both indices rise sharply, with the labor cost index peaking above 4% before falling back slightly, while negotiated wage growth remains stable yet elevated compared to pre-pandemic levels.
+
+4. **Current Status**:
+   - The graph suggests that right now, Eurozone wage growth remains slightly above pre-pandemic levels based on the latest data points.
+
+This summary captures the essence of Eurozone nominal wage growth trends, emphasizing periods of volatility, notable peaks and troughs, and the present status in a historical context.

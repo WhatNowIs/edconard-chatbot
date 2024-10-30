@@ -1,0 +1,10 @@
+The provided graph illustrates the percentages of gold holdings as a portion of foreign reserves for China, Turkey, Russia, and India from 1993 to 2023, based on data from the International Monetary Fund (IMF).
+
+Key Points:
+
+- **Russia** had a significant decline in gold reserves from over 35% in the mid-1990s to below 5% in the early 2000s. However, there has been a notable increase since 2008, stabilizing around 20% in recent years.
+- **Turkey** showed fluctuations, with a steep rise around 1995 to over 30%, followed by a decline, and another substantial increase from around 2012, peaking at over 40% in the early 2020s.
+- **India** maintained relatively low gold reserves as a percentage of foreign reserves throughout the period, with values mostly below 10%. There has been a slight upward trend since around 2018.
+- **China** consistently held the smallest amount of gold reserves as a percentage of foreign reserves among the four countries, remaining below 5% throughout the period.
+
+Recently, marked by the dotted oval, China, India, and Russia show a slightly increasing trend in gold holdings, while Turkey shows a decrease from its recent peak.

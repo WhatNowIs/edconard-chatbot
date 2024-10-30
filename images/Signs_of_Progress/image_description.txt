@@ -1,0 +1,22 @@
+The chart titled "US Energy Balance Sheet: Net Imported Energy as a Percent of Total US Energy Consumption 2005-2021|| Estimate 2022" visually represents the trend in the percentage of net imported energy relative to total US energy consumption from the year 2005 to 2021, with an estimate for 2022.
+
+Key points include:
+
+1. **Significant Decrease Over Time**:
+   - In 2005, net imported energy constituted 30.17% of total US energy consumption.
+   - This percentage has shown a consistent decline over the years.
+
+2. **Transition to Negative Values**:
+   - By 2019, net imported energy dropped to approximately 0%, indicating a balance between imported and exported energy.
+   - In 2020 and 2021, the US exhibited negative percentages, showing that the country became a net energy exporter.
+   - The estimated value for 2022 is -5.6%.
+
+3. **Data Source and Creation**:
+   - The data is sourced from eia.gov.
+   - The chart and estimate are attributed to "the gregor letter."
+
+4. **Visualization of Data**:
+   - The chart uses red bars to represent years with positive net imports (2005-2018).
+   - Black bars represent years with negative net imports (2019 onwards).
+
+Overall, the chart demonstrates a significant shift in the US energy balance from a major importer to a net exporter of energy over the given timeframe.

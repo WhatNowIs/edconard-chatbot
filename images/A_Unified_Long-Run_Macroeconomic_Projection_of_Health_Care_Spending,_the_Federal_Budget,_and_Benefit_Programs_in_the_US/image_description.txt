@@ -1,0 +1,20 @@
+This chart displays government health care spending as a percentage of GDP for different healthcare programs from the year 2000 to projections extending to 2092. The chart is divided into actual and projected spending.
+
+Key Observations:
+1. **Actual Spending (2000-2022)**
+    - **Total Health Care Spending (Actual)**: Started below 5% in 2000 and saw a gradual increase, reaching just above 9% by 2022.
+    - **Medicare (Actual)**: Gradual increase from around 2% in 2000 to 3.5% by 2022.
+    - **Medicaid (Actual)**: Steady increase from about 1.5% in 2000 to approximately 2.5% by 2022.
+    - **Other Healthcare Programs (Actual)**: Remained relatively constant around 1%, with a small spike around 2020.
+
+2. **Projected Spending (2022-2092)**
+    - **Total Health Care Spending (Projected)**: Expected to rise significantly, reaching about 22% by 2092.
+    - **Medicare (Projected)**: Anticipated to grow continually, reaching around 7% by 2092.
+    - **Medicaid (Projected)**: Expected to have a steady increase, reaching about 4% by 2092.
+    - **Other Healthcare Programs (Projected)**: Shown to grow modestly, reaching around 2% by 2092.
+
+3. **Trend Analysis**:
+    - There is a clear upward trend in all categories of health care spending.
+    - Medicare and the total health care spending show the most significant projected increase.
+
+Overall, government health care spending as a percentage of GDP is projected to see a substantial increase over the coming decades, with Medicare costs contributing significantly to the rise.

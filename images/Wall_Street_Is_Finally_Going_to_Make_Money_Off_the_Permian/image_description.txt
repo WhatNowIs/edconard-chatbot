@@ -1,0 +1,13 @@
+The image presents a bar graph depicting the annual changes in U.S. crude oil output production from 1975 to 2022. Key points summarized from the image:
+
+1. **Title and Main Insight**: "The American Oil Boom" – The image highlights how the annual increase in U.S. crude oil output has slowed down, with the federal government expecting further moderation in 2023 and 2024.
+
+2. **Period of Significant Growth**: The graph marks a shaded period indicating strong U.S. shale crude oil growth primarily from the early 2010s to around 2018. During this period, annual production increases often exceeded 1,000,000 barrels per day, peaking at over 1,500,000 barrels per day.
+
+3. **Slower Growth Post-2018**: After the peak in the mid-2010s, the rate of increase in crude oil output appears to slow down significantly, with fluctuations around the zero mark. 
+
+4. **Recent Trends (Post-2020)**: From late 2010s onwards, the graph shows reduced growth rates, overall indicating a slowdown. There is a particularly notable drop around 2020, with subsequent small increases still below earlier peaks.
+
+5. **Source and Note**: The data is sourced from Bloomberg's analysis of EIA (Energy Information Administration) data, noting that the graph focuses solely on crude oil, excluding natural gas liquids, biofuels, and processing gains.
+
+The overall trend shows that while there was a substantial boom in U.S. crude oil production driven by shale growth, the increase has moderated recently, and further moderation is expected in the near term.

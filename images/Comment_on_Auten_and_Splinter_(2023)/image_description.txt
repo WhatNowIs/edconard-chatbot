@@ -1,0 +1,17 @@
+The graph titled "Figure 1: Share of business income earned by the top 1%: taxed income vs. untaxed income" illustrates the proportion of business income, both taxed and untaxed, earned by the top 1% of income earners in the U.S. from 1960 to 2020. 
+
+Key observations:
+1. **Taxed Income (Observed):**
+   - Represented by the solid black line, it showcases a significant rise from around 25% in the late 1970s to over 50% by the mid-2010s.
+   - This indicates a growing share of business income being taxed for the top 1%.
+
+2. **Untaxed Income:**
+   - There are two assumptions for untaxed income:
+     - **Piketty-Saez-Zucman Assumptions:** The dotted black line indicates a moderate increase in untaxed income over time.
+     - **Auten-Splinter Assumptions:** The red line shows a distinctly smaller fraction of untaxed income, remaining below 10% throughout the period, with brief fluctuations.
+
+The notes clarify:
+- The assumptions by Auten and Splinter (2023) suggest a minor fraction of untaxed business income compared to taxed income for the top 1%.
+- The data considers business income from S-corporations, partnerships, and sole proprietorships.
+
+In summary, the top 1% earn a significant and increasing share of their business income in a taxed form, while untaxed income is shown to be a much smaller proportion, especially under the Auten-Splinter assumptions.

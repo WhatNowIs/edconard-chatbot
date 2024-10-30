@@ -1,0 +1,15 @@
+The chart from the Financial Times presents the shares of global population by region over three specific years: 1950, 2024, and 2060. Key points observed from the data include:
+
+1. **Sub-Saharan Africa Growth**: The most significant forecasted change is the population of Sub-Saharan Africa, which is projected to rise drastically from 7.1% in 1950, to 15.1% in 2024, and further to 24.4% by 2060.
+
+2. **High-income Countries**: These countries are expected to see a decrease in their share of the global population, dropping from 27.5% in 1950 to 15.5% in 2024 and slightly lower to 12.6% in 2060.
+
+3. **China**: China's share is predicted to decrease from 21.8% in 1950 to 17.8% in 2024, with a further reduction to 16.8% in 2060.
+
+4. **India**: India's share of the global population is expected to slightly decrease from 17.6% in 1950 to 17.6% in 2060, with a slight decline to 17.6% in 2024.
+
+5. **Other South, East, and Southeast Asia (excluding high income)**: This region is also expected to experience growth, from 11.8% in 1950, to 16.3% in 2024, and a moderate increase to 16.7% by 2060.
+
+6. **Other Developed**: These regions are set to see modest growth, from 14.3% in 1950 to 17.8% in 2024, and a slight decline to 17.6% by 2060.
+
+In summary, the population share of Sub-Saharan Africa is forecasted to significantly increase, surpassing the population shares of all high-income countries and China combined by 2060. Concurrently, high-income countries and China are expected to experience a relative decline in their shares of the global population.

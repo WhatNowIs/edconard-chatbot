@@ -1,0 +1,25 @@
+The image, sourced from Financial Times and based on an analysis by the Bureau of Labor Statistics, highlights the labor market conditions across the United States, indicating that DC and 18 states have entered the early stages of a recession within the past nine months. This assessment is based on the 'Sahm rule,' which defines the early months of a recession as occurring when the three-month moving average of the national unemployment rate is at least 0.5 percentage points above its low over the prior 12 months.
+
+The states identified as being in the early stages of a recession (and marked in red) are:
+
+1. Washington (WA)
+2. Oregon (OR)
+3. Wyoming (WY)
+4. Iowa (IA)
+5. Minnesota (MN)
+6. Nebraska (NE)
+7. Missouri (MO)
+8. Wisconsin (WI)
+9. Tennessee (TN)
+10. Vermont (VT)
+11. New Hampshire (NH)
+12. Maine (ME)
+13. Rhode Island (RI)
+14. New Jersey (NJ)
+15. West Virginia (WV)
+16. Virginia (VA)
+17. New Mexico (NM)
+18. Hawaii (HI)
+19. District of Columbia (DC)
+
+The map visually represents the states impacted by this economic condition, providing an at-a-glance understanding of the geographic distribution of labor market softening across the country.

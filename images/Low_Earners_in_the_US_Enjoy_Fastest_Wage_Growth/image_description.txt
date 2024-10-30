@@ -1,0 +1,12 @@
+This chart from the Financial Times presents the real hourly wage index for various segments of earners in the United States, with a baseline of 100 for January 2020. It tracks wage growth from 2015 to 2023 for the bottom 10% of earners, the median average, and the top 10% of earners.
+
+**Main Observations:**
+
+1. **Bottom 10% of Earners**: The lowest paid Americans experienced the strongest wage growth. Their real hourly wage index saw a significant increase post-2020, peaking above 105 in late 2021 and stabilizing around that level consistently, maintaining the highest growth among all groups.
+
+2. **Median Average**: The wage index for median earners also increased but at a more moderate rate compared to the bottom 10%. By 2023, their wage index hovered around the 100 mark, indicating modest growth relative to the baseline.
+
+3. **Top 10% of Earners**: Higher earners experienced the least growth. The wage index for the top 10% stayed relatively flat, dipping below 95 at various points and showing a limited upward trend.
+
+**Conclusion**:
+The data highlights that the lowest paid Americans have seen the most significant wage growth over the past several years, particularly post-2020, outpacing the median average and top earners. This trend indicates a narrowing wage gap at the lower end of the earnings spectrum.

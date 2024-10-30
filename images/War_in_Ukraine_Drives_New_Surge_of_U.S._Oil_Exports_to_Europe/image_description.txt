@@ -1,0 +1,33 @@
+The bar chart presents the average daily U.S. crude oil exports to six European countries over two different periods: February 2021 to January 2022, and February 2022 to January 2023. The data shows:
+
+1. **U.K.:**
+   - Feb. 2021 to Jan. 2022: ~250,000 barrels/day
+   - Feb. 2022 to Jan. 2023: ~320,000 barrels/day
+   - **Increase of ~70,000 barrels/day**
+
+2. **Netherlands:**
+   - Feb. 2021 to Jan. 2022: ~300,000 barrels/day
+   - Feb. 2022 to Jan. 2023: ~275,000 barrels/day
+   - **Decrease of ~25,000 barrels/day**
+
+3. **Italy:**
+   - Feb. 2021 to Jan. 2022: ~120,000 barrels/day
+   - Feb. 2022 to Jan. 2023: ~180,000 barrels/day
+   - **Increase of ~60,000 barrels/day**
+
+4. **France:**
+   - Feb. 2021 to Jan. 2022: ~150,000 barrels/day
+   - Feb. 2022 to Jan. 2023: ~200,000 barrels/day
+   - **Increase of ~50,000 barrels/day**
+
+5. **Spain:**
+   - Feb. 2021 to Jan. 2022: ~80,000 barrels/day
+   - Feb. 2022 to Jan. 2023: ~150,000 barrels/day
+   - **Increase of ~70,000 barrels/day**
+
+6. **Germany:**
+   - Feb. 2021 to Jan. 2022: ~100,000 barrels/day
+   - Feb. 2022 to Jan. 2023: ~135,000 barrels/day
+   - **Increase of ~35,000 barrels/day**
+
+In summary, U.S. crude oil exports to the U.K., Italy, France, Spain, and Germany have increased from February 2022 to January 2023 compared to the same period a year prior, while exports to the Netherlands have decreased slightly. The most significant increases were seen in exports to the U.K. and Spain.

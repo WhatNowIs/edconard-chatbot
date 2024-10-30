@@ -1,0 +1,26 @@
+The image consists of two graphs detailing the stance of monetary policy and credit growth leading up to financial crises events. The data highlights both average trends and specific patterns observed during the U.S. financial crisis of 2007.
+
+### Graph (a): Stance of Monetary Policy (in percentage points)
+- **X-axis:** Years before crisis onset (k), ranging from 8 years to 0.
+- **Y-axis:** The stance of monetary policy relative to the mean.
+- **Data Representation:**
+  - A blue line represents the average stance of monetary policy.
+  - A red-dashed line represents the monetary policy stance in the U.S. in 2007.
+  - Shaded areas around the average line indicate confidence intervals.
+- **Trend Observation:**
+  - On average, the stance of monetary policy becomes increasingly accommodative (decreasing) as the crisis approaches, reaching a trough around 4 years before the crisis. It then tightens again as the crisis onset approaches.
+  - For the U.S. in 2007, the stance follows a similar initial decline but with a more marked drop, reaching lower troughs and rebounding more sharply right before the crisis.
+
+### Graph (b): Credit-to-GDP Ratio (in percentage points)
+- **X-axis:** Years before crisis onset (k), ranging from 8 years to 0.
+- **Y-axis:** Credit-to-GDP ratio relative to the mean.
+- **Data Representation:**
+  - A blue line represents the average change in the credit-to-GDP ratio.
+  - A red-dashed line represents the change in the credit-to-GDP ratio in the U.S. in 2007.
+  - Shaded areas around the average line indicate confidence intervals.
+- **Trend Observation:**
+  - On average, there is a gradual increase in the credit-to-GDP ratio leading up to the crisis, with more steep increases noted closer to the crisis onset.
+  - For the U.S. in 2007, the build-up in the credit-to-GDP ratio also shows an increasing trend, closely following the average but with some deviations closer to the crisis onset.
+
+### Summary:
+The graphs illustrate common patterns observed prior to financial crises, where monetary policy becomes more accommodative and credit expansion accelerates. Specifically, a marked easing of monetary policy and rapid credit growth are notable indicators leading up to financial crises, as evidenced by both the average trends and the specific case of the U.S. in 2007. These trends are critical for understanding the macroeconomic conditions that precede financial crises.
