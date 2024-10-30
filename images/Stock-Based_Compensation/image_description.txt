@@ -1,0 +1,47 @@
+The exhibit displays data on stock-based compensation as a percentage of sales for various sectors within the Russell 3000 index for the year 2022. The percentages are provided in two forms: Aggregate and Median. Here is a summary:
+
+1. **Information Technology**: 
+   - Aggregate: 4.0%
+   - Median: 6.4%
+   
+2. **Communication Services**:
+   - Aggregate: 4.0%
+   - Median: 3.2%
+   
+3. **Financials**:
+   - Aggregate: 2.3%
+   - Median: 1.4%
+   
+4. **Real Estate**:
+   - Aggregate: 1.7%
+   - Median: 1.7%
+   
+5. **Consumer Discretionary**:
+   - Aggregate: 1.5%
+   - Median: 0.8%
+   
+6. **Health Care**:
+   - Aggregate: 0.9%
+   - Median: 3.7%
+   
+7. **Industrials**:
+   - Aggregate: 0.8%
+   - Median: 0.7%
+   
+8. **Materials**:
+   - Aggregate: 0.7%
+   - Median: 0.5%
+   
+9. **Energy**:
+   - Aggregate: 0.6%
+   - Median: 0.8%
+   
+10. **Utilities**:
+    - Aggregate: 0.4%
+    - Median: 0.5%
+    
+11. **Consumer Staples**:
+    - Aggregate: 0.4%
+    - Median: 0.6%
+
+The table indicates stock-based compensation varies considerably among sectors, with Information Technology and Communication Services at the top both in aggregate and median percentages. Conversely, Utilities and Consumer Staples sectors present the lowest percentages in stock-based compensation. This data is sourced from FactSet and Counterpoint Global, and it applies to companies with a minimum sales volume of $100 million in the calendar year 2022.

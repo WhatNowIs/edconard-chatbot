@@ -1,0 +1,9 @@
+This chart displays the total value of US energy exports measured in billions of USD from 2002 to 2022. Here are the key points from the data:
+
+- In 2002, the value of US energy exports was relatively low, around $50 billion USD.
+- There has been a general upward trend in energy export values over the years, with noticeable increases occurring at various points.
+- Significant increases are noted around 2007 with $81 billion USD, 2012 with $188 billion USD, and 2014 also with around $176 billion USD.
+- Although there were some fluctuations, the overall trend continued to rise, peaking dramatically in 2022 at $420 billion USD, which marks a substantial increase compared to previous years.
+- The data source is cited as trade.gov, and the chart was created by @TheGregorLetter.
+
+The chart highlights that US energy export values have grown significantly over the two-decade period, reaching their highest value in 2022.

@@ -1,0 +1,14 @@
+The graph from FRED (Federal Reserve Economic Data) visualizes the asset transactions in treasury securities by three types of institutions over time, measured in millions of dollars: 
+
+1. **Private Defined Benefit Pension Funds (red line)**: This line exhibits the most volatility among the three. There are significant fluctuations above and below the zero mark, indicating large variations in transactions. Major dips are observed around 2015 and 2020, while significant spikes occur intermittently.
+
+2. **State and Local Government Employee Defined Benefit Retirement Funds (blue line)**: The line for these transactions is relatively stable, hovering close to the zero mark throughout the period. Minor fluctuations are observed, but they stay comparatively steady.
+
+3. **Life Insurance Companies (green line)**: Transactions by life insurance companies also show some fluctuations, somewhat larger than those of state and local government funds, but still moderate compared to private pension funds. This line crosses the zero mark multiple times but remains relatively stable during the overall timeline.
+
+**Key observations:**
+- **Volatility**: Private Defined Benefit Pension Funds are the most volatile in their transactions, indicating wide swings in their purchasing and selling activities of treasury securities.
+- **Stability**: State and Local Government Employee Defined Benefit Retirement Funds exhibit the most stability throughout the observed period.
+- **Periods of Interest**: Notable periods, such as the recession periods shaded in gray, show significant disruptions primarily in private pension funds' transactions.
+  
+Understanding these trends can help analyze the behavior of different institutional investors in treasury securities, especially during periods of economic stress like recessions.

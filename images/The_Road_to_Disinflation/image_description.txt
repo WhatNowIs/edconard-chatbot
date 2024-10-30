@@ -1,0 +1,23 @@
+The image is a graph illustrating the trends in inflation expectations and their consistency with the Federal Reserve's 2% inflation target. 
+
+### Key Elements:
+1. **Title:** "Here's a Tip: Short Term Inflation Expectations are Consistent With The Fed's 2% Target"
+2. **Graph Type:** Line chart
+3. **Y-Axis:** TIPS Breakevens, %
+4. **X-Axis:** Date range from 2018 to 2023
+5. **Data Series:**
+    - Yellow Line: 5 Year Inflation Breakevens.
+    - Green Line: 5 Year, 5 Year Forward Inflation Breakevens.
+6. **Shaded Area:** Represents breakevens approximately consistent with the 2% inflation target, between approximately 1.9% and 2.2%.
+
+### Summary:
+The graph tracks the 5 Year Inflation Breakevens and 5 Year, 5 Year Forward Inflation Breakevens from 2018 to 2023. Breakevens are indicators of market inflation expectations derived from TIPS (Treasury Inflation-Protected Securities). 
+
+- **2018 to Early 2020:** Both metrics were slightly below the 2% target, with visible fluctuations.
+- **Early 2020:** There was a sharp decline in both lines, particularly in the 5-year breakevens, likely due to the onset of the COVID-19 pandemic.
+- **Late 2020 to 2021:** A significant recovery occurred, with 5-year breakevens even surpassing the upper bound of the 2% target range.
+- **2022:** There was increased volatility but trends generally hovered near or slightly above the 2% target.
+- **2023:** Both metrics appear to return closer to the 2% target, indicating that short-term inflation expectations are aligning with the Fed’s target.
+
+### Conclusion:
+The graph suggests that, despite periods of volatility and deviation, current short-term inflation expectations are now broadly consistent with the Federal Reserve's 2% target.

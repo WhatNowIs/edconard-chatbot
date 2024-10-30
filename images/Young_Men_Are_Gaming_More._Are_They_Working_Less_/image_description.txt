@@ -1,0 +1,50 @@
+This chart presents changes in the average daily hours devoted to selected activities by young men (ages 15-24) in the US, comparing data from two time periods: since 2019 and the years 2003-2019. The data is sourced from the US Bureau of Labor Statistics.
+
+**Key Observations:**
+
+1. **Playing Games:**
+   - Since 2019: Significant increase of 0.74 hours per day.
+   - 2003-2019: Increase of 0.51 hours per day.
+
+2. **Sleeping:**
+   - Since 2019: Slight decrease of 0.03 hours per day.
+   - 2003-2019: Increase of 0.41 hours per day.
+
+3. **Eating and Drinking:**
+   - Since 2019: Increase of 0.10 hours per day.
+   - 2003-2019: Increase of 0.16 hours per day.
+
+4. **Computer Use for Leisure (excluding games):**
+   - Since 2019: Increase of 0.05 hours per day.
+   - 2003-2019: Increase of 0.10 hours per day.
+
+5. **Household Activities:**
+   - Since 2019: Decrease of 0.10 hours per day.
+   - 2003-2019: Increase of 0.14 hours per day.
+
+6. **Educational Activities (including travel time to school or work):**
+   - Since 2019: Decrease of 0.04 hours per day.
+   - 2003-2019: Increase of 0.07 hours per day.
+
+7. **Organizational and Religious Activities:**
+   - Since 2019: Increase of 0.06 hours per day.
+   - 2003-2019: Decrease of 0.14 hours per day.
+
+8. **Sports, Exercise and Recreation:**
+   - Since 2019: Decrease of 0.26 hours per day.
+   - 2003-2019: Increase of 0.16 hours per day.
+
+9. **Watching TV:**
+   - Since 2019: Decrease of 0.04 hours per day.
+   - 2003-2019: Decrease of 0.15 hours per day.
+
+10. **Working and Work-Related Activities (including travel time to school or work):**
+    - Since 2019: Decrease of 0.35 hours per day.
+    - 2003-2019: Increase of 0.03 hours per day.
+
+11. **Socializing and Communicating:**
+    - Since 2019: Decrease of 0.03 hours per day.
+    - 2003-2019: Decrease of 0.41 hours per day.
+
+**Summary:**
+Since 2019, young men aged 15-24 in the US have significantly increased the time they spend playing games, which is the most notable change. There has also been a slight increase in time spent on eating and drinking, computer use for leisure, and organizational and religious activities. Conversely, there has been a decrease in the time spent on household activities, educational activities, sports, exercise, recreation, watching TV, working and work-related activities, and socializing. Compared to the period from 2003 to 2019, the changes since 2019 highlight a shift towards more digital and leisure activities, with a notable decline in work, exercise, and social interactions.

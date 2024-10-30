@@ -1,0 +1,8 @@
+This image is a graph showing the share of US Treasury bills as a percentage of the total outstanding marketable debt from March 2020 to June 2024. A few key observations are:
+
+1. **Early 2020 Peak**: The share of Treasury bills peaked around June 2020, approaching 26%.
+2. **Decline and Fluctuation**: Following the peak, the percentage experienced a significant decline, bottoming out below 15% around June 2022.
+3. **2022 Recovery**: Post decline, there was a noticeable recovery starting late 2022, with the percentage once again rising above the 20% mark by mid-2023.
+4. **Recommended Target Range**: The graph highlights a recommended target range, centered around 20%, with the upper and lower limits marked by dashed red lines.
+
+In summary, the graph illustrates fluctuations in the proportion of US Treasury bills relative to the total marketable US debt over a 4-year period. It highlights a steep drop from mid-2020 to mid-2022, followed by a steady recovery towards the recommended target range.

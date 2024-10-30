@@ -1,0 +1,28 @@
+The image is a table detailing the projected federal debt held by the public as a share of GDP, expressed in percentages, for selected years from 2023 to 2050. This table compares projections from the Congressional Budget Office (CBO) and the Penn Wharton Budget Model (PWBM), along with variations based on different interest rate scenarios (+50, +100, +150, +200, and +250 basis points).
+
+1. **CBO Projection:**
+   - 2023: 98%
+   - 2025: 102%
+   - 2030: 108%
+   - 2035: 120%
+   - 2040: 134%
+   - 2045: 150%
+   - 2050: 169%
+
+2. **PWBM Baseline:**
+   - 2023: 98%
+   - 2025: 102%
+   - 2030: 114%
+   - 2035: 134%
+   - 2040: 151%
+   - 2045: 167%
+   - 2050: 189%
+
+3. **Alternative PWBM Scenarios:**
+   - A 50 b.p. increase results in a higher trajectory, peaking at 208% in 2050.
+   - A 100 b.p. increase raises the debt share more substantially, culminating at 230% by 2050.
+   - A 150 b.p. increase leads to an even higher level, reaching 255% in 2050.
+   - A 200 b.p. increase further pushes the debt to 282% by 2050.
+   - A 250 b.p. increase results in the highest projection at 313% in 2050.
+
+Overall, the table indicates escalating federal debt as a share of GDP under all scenarios, with significant increases especially under higher interest rate assumptions.

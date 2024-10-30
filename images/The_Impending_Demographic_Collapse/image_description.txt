@@ -1,0 +1,13 @@
+The image titled "The pace of population growth is collapsing" illustrates the annual American population growth from 1970 to 2060, breaking it down into net migration (in gray) and the difference between births and deaths (in blue).
+
+Key insights:
+1. **Overall Population Growth**: The black line indicating the total population growth shows fluctuations over the decades.
+2. **Net Migration**: The gray areas denote the contribution of net migration, which has had varying impacts on population growth.
+3. **Births Minus Deaths**: The blue areas represent organic population growth, showing the difference between births and deaths.
+4. **Trend Analysis**:
+   - Around the year 2000, both net migration and natural population growth were significant, summing up to around 2.5 million people.
+   - From 2020 onwards, the overall population growth begins a steep decline.
+   - By 2038, organic population growth (births minus deaths) turns negative, as indicated by the blue area falling below the zero line.
+   - The forecast shows a continuous decrease in overall population growth, with net migration playing an increasingly critical role in counterbalancing the negative organic growth.
+
+Overall, the graph predicts a concerning trend where the U.S. population growth relies more heavily on migration, while natural population growth diminishes and turns negative by 2038.

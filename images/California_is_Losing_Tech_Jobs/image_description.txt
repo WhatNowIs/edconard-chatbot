@@ -1,0 +1,18 @@
+The image is a line graph titled "Tech Jobs are Leaving California," illustrating the trend of California’s share of total tech-sector employment from around 2010 to 2023. The graph indicates that the percentage of all US tech jobs located in California has experienced a notable decline since 2020. 
+
+Key points to summarize:
+
+1. **Time Frame and Trend**:
+   - From 2010 to approximately 2020, there was a general upward trend in the percentage of tech jobs located in California, reaching a peak of around 19%.
+   - Since 2020, this percentage has sharply declined to just above 16% by 2023.
+
+2. **Categories of Tech Jobs**:
+   - The tech sector includes software publishers, computer systems design, computing infrastructure, data processing, web hosting, web search portals, social media, and streaming services.
+
+3. **Highlight on Decline**:
+   - The most striking detail is the significant drop in California’s share of tech jobs since 2020, suggesting a shift in tech employment to other regions.
+
+4. **Data Source**:
+   - The data is based on information from the Bureau of Labor Statistics (BLS) and the graph was created by @JosephPolitano.
+
+This graph highlights a significant trend in the distribution of tech jobs within the United States, showing that California, once a dominating hub for tech employment, is losing its share to other areas.

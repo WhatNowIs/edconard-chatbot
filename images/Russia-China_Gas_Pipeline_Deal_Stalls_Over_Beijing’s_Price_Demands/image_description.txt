@@ -1,0 +1,24 @@
+The image displays a detailed map of gas pipelines across Russia, highlighting existing and proposed routes, along with key gas fields and destinations. Here's a summary of the key information from the map:
+
+1. **Pipelines:**
+   - **Existing Gazprom Pipelines:** These pipelines are shown in solid blue lines and form a dense network across Western Russia, connecting to various parts of Europe.
+   - **Proposed Gazprom Pipelines:** These are depicted with dashed lines, indicating future routes.
+   - **Other Gas Pipelines:** Shown in solid red lines, representing pipelines operated by entities other than Gazprom.
+
+2. **Key Pipelines and Projects:**
+   - **Yamal-Europe Pipeline:** This major route runs from the Yamal Peninsula, heading westward towards Europe.
+   - **Power of Siberia Pipeline:** This is a critical eastward route leading towards China.
+   - **Proposed Power of Siberia 2 Project:** Marked with a dashed line, indicating a proposed future pipeline, which will extend from Western Siberia, crossing into Mongolia and heading towards China.
+
+3. **Key Gas Fields:**
+   - **Yamal Peninsula:** A significant source region for gas.
+   - **Chayanda Field and Kovykt Field:** Major gas fields located in Eastern Siberia, feeding into the Power of Siberia Pipeline.
+
+4. **Cities and Regions:**
+   - **Major Regions:** Yamal Peninsula, Western & Eastern Siberia.
+   - **Metropolitan Areas on Pipeline Routes:** Novy Urengoy, Surgut, Tyumen, Omsk, Novosibirsk, Kemerovo, Gorno-Altaysk, Irkutsk.
+   - **International Destinations:**
+     - **To Europe:** via the Yamal-Europe pipeline.
+     - **To China:** via the Power of Siberia and the proposed Power of Siberia 2 pipelines, passing through Irkutsk, Ulan Bator in Mongolia.
+
+This map effectively showcases Russia's extensive gas pipeline infrastructure for both domestic distribution and international export, emphasizing the strategic importance of the Yamal Peninsula and Eastern Siberian fields in supplying gas to Europe and Asia.

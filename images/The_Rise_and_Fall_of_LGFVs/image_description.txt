@@ -1,0 +1,15 @@
+The image presents data regarding the cash flows of Local Government Financing Vehicles (LGFVs) over the period from 2013 to 2020, split into sources of cash (inflows) and uses of cash (expenditure).
+
+### Sources of Cash (Inflows):
+- The primary source of cash for LGFVs consistently comes from operational activities over the years.
+- In 2013, 87% of inflows originated from operations, and this figure fluctuated slightly, reaching a peak of 92% in 2016 before declining to 85% by 2020.
+- External financing has contributed modestly to the inflows, showing slight variation but generally encompassing a small portion of the overall cash inflows.
+
+### Uses of Cash (Expenditure):
+- The utilization of cash by LGFVs is categorized into operations, financial investments, external financing, and capital expenditure.
+- Operational expenditures accounted for about half of the cash use in 2013 (52%) but have seen a decline over the years, reducing to 28% by 2019 and slightly increasing to 33% in 2020.
+- Capital expenditure has risen significantly, making up 38% of total expenditure by 2015 and increasing to a high of 45% in both 2019 and 2020.
+- Financial investments have shown an incremental increase, particularly notable from 2017 onward.
+- External financing shifted slightly, contributing small percentages each year.
+
+The overall trend indicates that while the primary source of cash for LGFVs remains operational activities, expenditure has shifted over time to focus increasingly on capital expenditures, accompanied by a gradual rise in financial investments. Operations have become a decreasing portion of their use of cash.

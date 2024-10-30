@@ -1,0 +1,11 @@
+The chart illustrates Core Consumer Price Index (CPI) inflation in the shelter sector, with data from private new rent indices, specifically Zillow Observed Rent Index and Apartment List National Rent Index. The plotted data spans from January 2021 to July 2023 and showcases the annual percentage change.
+
+Key observations include:
+
+1. The blue bars represent the 1-month change in CPI inflation for shelter, while the orange line represents the 3-month change.
+2. Inflation rates peaked significantly around mid-2021, with the 1-month change rising up to approximately 16%.
+3. After reaching the peak, there is a noticeable downward trend in both the 1-month and 3-month changes, indicating a slowing inflation rate in the shelter sector.
+4. By mid-2023, both indices show a sharp decline, even dipping into negative territory in some months.
+5. The data is seasonally adjusted using Macrobond.
+
+The chart highlights that after a peak in mid-2021, the inflation rate in the shelter sector has gradually decreased, with signs of stabilization by July 2023. The data is sourced from the Bureau of Labor Statistics, Zillow, and Apartment List, and calculations are made by the author.

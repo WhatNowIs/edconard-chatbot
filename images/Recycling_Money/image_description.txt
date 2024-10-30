@@ -1,0 +1,10 @@
+The bar chart compares Nominal GDP Growth (blue bars) and 10 Year Yield (orange bars) percentages from the years 2000 to 2023. Both sets of data show fluctuating trends through these years, with some highlighted periods of interest circled in red.
+
+Key Points:
+- Early 2000s: Between 2000 and 2001, nominal GDP growth is similar to the 10-year yield but diverges thereafter, with GDP growth peaking around 2004-2006.
+- Financial Crisis (2008-2009): There is a sharp decline in nominal GDP growth, even dipping below 0% in 2009, while the 10-year yield also falls but remains positive.
+- Post-Financial Crisis: Both measures recover slowly post-2009, with some fluctuations until 2019.
+- COVID-19 Impact (2020-2021): A sharp spike in nominal GDP growth is observed in 2021 followed by a significant increase compared to the preceding and following years, while the 10-year yield remains significantly lower.
+- Recent Years (2022-2023): Both GDP growth and 10-year yield percentages rise again but do not reach the highs of the early 2000s or the 2021 spike.
+
+Source: The data is sourced from the Federal Reserve Economic Data (FRED).

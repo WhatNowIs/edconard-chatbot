@@ -1,0 +1,9 @@
+The graph illustrates the relationship between vacancy duration and the time relative to the largest increase in broadband availability. The x-axis represents the years relative to the broadband increase, ranging from -3 to +3 years, while the y-axis shows the corresponding changes in vacancy duration.
+
+Key observations from the graph:
+1. The red line at y=0 serves as a baseline to compare changes over time.
+2. Three years before the largest increase in broadband availability (Year -3), the vacancy duration is slightly above zero, with a considerable margin of error.
+3. As time progresses towards the year of the largest broadband increase (Year 0), there is a general downward trend in vacancy duration, reaching a minimum just shortly before Year 0.
+4. After the broadband increase, vacancy duration continues to decrease until around Year +2, where it begins to stabilize with minor fluctuations.
+
+Overall, the graph indicates that the largest increase in broadband availability is associated with a reduction in vacancy duration, showing a more significant impact in the years leading up to and immediately following the broadband increase, before stabilizing.

@@ -1,0 +1,23 @@
+This chart provides a visual comparison of US economy-wide national corporate profits after tax and S&P 500 operating profits over time, from January 1995 to April 2024. The values are indexed to a baseline of 100 in January 1995 and displayed on a logarithmic scale.
+
+Key observations:
+
+1. **Long-term Trend**: Both US national corporate profit after tax and S&P 500 operating profits show an overall upward trend from 1995 to 2024.
+
+2. **Early Period (1995-2008)**: 
+   - From 1995 until the early 2000s, the national corporate profit and S&P 500 operating profits moved closely together, both showing general growth with periodic fluctuations.
+   - There was a notable dip around 2001-2003, reflecting the dot-com bubble burst.
+
+3. **Financial Crisis (2008-2009)**:
+   - Both metrics experienced a significant drop during the 2008 financial crisis. The dip was sharp for both, but the national corporate profits recovered faster than the S&P 500 operating profits.
+
+4. **Post-Crisis Recovery and Growth (2010-2024)**:
+   - Post-2010, both lines show recovery and growth, with intermittent spikes and drops.
+   - Around 2013-2014, S&P 500 operating profits experienced a more notable spike compared to national corporate profits.
+   - Both indices displayed substantial growth leading up to 2018, then experienced some fluctuations around the late 2010s.
+   - Both metrics experienced a significant drop due to the COVID-19 pandemic in early 2020, followed by a rapid recovery and continued growth to 2024.
+
+5. **Recent Performance (2020-2024)**:
+   - Despite volatility, both indices reached new highs, suggesting robust performance in recent years.
+
+The chart data source is cited as Bloomberg and JPMorgan Asset Management (JPMAM), dated April 2024.

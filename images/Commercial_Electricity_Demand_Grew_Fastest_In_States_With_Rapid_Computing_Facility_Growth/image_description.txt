@@ -1,0 +1,10 @@
+The image depicts the change in annual sales of electricity to commercial customers across U.S. states between 2019 and 2023, measured in gigawatthours (GWh). This data, sourced from the U.S. Energy Information Administration (EIA), reveals the consumption trends in the commercial sector. 
+
+A color gradient is used to represent the GWh change, with shades of blue indicating an increase in electricity consumption and shades of yellow showing a decrease. The scale ranges from -4,581 GWh (decrease) to 13,615 GWh (increase). 
+
+**Key Observations:**
+- States like California, Texas, and Florida exhibit significant increases in electricity consumption, marked by darker shades of blue.
+- Some states, including New York and parts of the Midwest, show a decrease in consumption, indicated by shades of yellow.
+- Other states have mixed or neutral changes, represented in lighter shades of blue and yellow.
+
+Overall, the map illustrates a varied shift in commercial sector electricity consumption across the United States over the specified period.

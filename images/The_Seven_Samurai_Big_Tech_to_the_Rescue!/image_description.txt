@@ -1,0 +1,23 @@
+The image is a chart titled "Market Cap - MAG Seven and US Equities: 2012 to 2023." This chart tracks the market capitalization of the MAG Seven and the rest of US stocks from 2012 to 2023. Here's a detailed summary:
+
+1. **Axes:**
+   - The vertical axis on the left represents market cap in millions of dollars.
+   - The vertical axis on the right represents MAG Seven's market cap as a percentage of all US equities.
+   - The horizontal axis represents years from 2012 to 2023.
+
+2. **Data Representation:**
+   - **Red Area:** Market cap of the MAG Seven. This area increases over time.
+   - **Green Area:** Market cap of the rest of the US stocks.
+   - **Blue Line:** The MAG Seven's market cap as a percentage of all US equities.
+
+3. **Trends:**
+   - There is a clear and steady growth in the market cap for the MAG Seven from 2012 to 2023.
+   - The market cap of the rest of the US equities also increases, but at a slower pace compared to the MAG Seven.
+   - The MAG Seven's share of the total market cap (shown by the blue line) grows significantly over the period, peaking around 2021 and then encountering slight fluctuations but continuing to hold a substantial percentage through 2023.
+
+4. **Key Observations:**
+   - From 2012 to 2015, the growth in the market cap is gradual.
+   - Post-2015, there is a notable acceleration in the market cap growth for both the MAG Seven and the rest of US stocks, with a particularly sharp increase around 2020 and a peak in 2021.
+   - The MAG Seven's market cap as a percentage of the total US equities shows a sharp increase after 2017, reaching close to 25% by 2021.
+
+Overall, the chart indicates that the MAG Seven's dominance and significance in the US equities market have grown considerably over the years, especially after 2016, capturing a more substantial portion of the market capitalization over time.

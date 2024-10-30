@@ -1,0 +1,22 @@
+The image contains two graphs that track economic indicators for the United States from 2020 to 2026.
+
+**Left Graph: U.S. Inflation (Year-over-Year)**
+- The blue line represents the actual Year-over-Year (Y/Y) inflation rate.
+- The red line denotes the consensus expectations for inflation.
+- The green dot indicates the BW Leading Estimate.
+- Key observations:
+  - From 2020 to mid-2022, inflation increased steadily, peaking around mid-2022.
+  - Post-peak, there has been a significant decline in the actual inflation rate, aligning closer with the consensus expectations.
+  - Current inflation is around 3-4%, with a forecast (BW Leading Estimate) indicating a potential stabilization or slight increase.
+
+**Right Graph: U.S. Spot Short Rate**
+- The blue line indicates the actual U.S. spot short rate.
+- The red dashed line shows the current forward pricing.
+- The additional lines illustrate the forward pricing from 3 months ago, 6 months ago, and 1 year ago.
+- Key observations:
+  - The spot short rate significantly increased from early 2022 to mid-2023.
+  - The current forward pricing (red dashed line) suggests a relatively stable or slightly decreasing trend compared to prior forward pricing estimates from 3, 6, and 12 months ago.
+  - Projections suggest rates might hover around 5-6% in the near future.
+
+**Summary:**
+The graphs indicate a recent decline in U.S. inflation and a forecast of relatively stable short-term interest rates. After a peak in inflation in mid-2022, the rate has fallen to approximately 3-4%. The short-term interest rates rose sharply during the same period and are expected to stabilize around 5-6% according to current and historical forward pricing estimates.

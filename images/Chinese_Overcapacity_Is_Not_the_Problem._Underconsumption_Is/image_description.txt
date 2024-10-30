@@ -1,0 +1,13 @@
+The image presents a summary of Chinese industrial production, excluding construction, from January 2014, with a comparison to the pre-pandemic trend. Key points include:
+
+1. **Title & Lead:** The chart is titled "Underproducing," indicating that current production levels are lower than expected.
+2. **Text Summary:** 
+   - Chinese manufacturers, miners, and utilities are producing approximately 5% less than the pre-pandemic trend suggested.
+   - Export levels are high due to even weaker demand domestically.
+3. **Graph Details:** 
+   - The production index starts at 100 in January 2014.
+   - The actual production trend (depicted in blue) closely follows the projected 2014-2019 trend (depicted in red) until around 2020.
+   - From 2020 onwards, the actual production diverges from the trend, showing a consistent underproduction in the years following.
+4. **Source:** Data is sourced from the Netherlands Bureau for Economic Policy Analysis and Matthew Klein's calculations.
+
+In summary, Chinese industrial output has lagged approximately 5% behind the expected pre-pandemic trajectory, influenced by weaker demand impacting exports and overall production levels.

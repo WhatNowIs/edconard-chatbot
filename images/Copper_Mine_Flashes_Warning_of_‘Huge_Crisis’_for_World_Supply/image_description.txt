@@ -1,0 +1,8 @@
+The provided image focuses on the current state and trend of mining projects, particularly concerning the categorization of greenfield and brownfield projects. A decade ago, greenfield projects constituted fewer than half of the total pipeline. Currently, they represent 65% of the total. The pie chart illustrates the distribution of different types of mining projects in 2022 as follows:
+
+- 50% of projects are categorized as "Greenfield possible."
+- 19% are "Brownfield possible."
+- 16% are "Brownfield probable."
+- 15% are "Greenfield probable."
+
+The data source is attributed to CRU for the 2022 project pipeline. This shift suggests a growing emphasis on new mining sites (greenfield projects) over expansions or improvements of existing ones (brownfield projects).

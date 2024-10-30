@@ -1,0 +1,17 @@
+The image is a line graph titled "Exhibit 16: Weighted Average Cost of Capital for the Russell 3000, 1985-2022". It displays the annual weighted average cost of capital (WACC) for companies in the Russell 3000 index over the period from 1985 to 2022. The Y-axis represents the WACC percentage, which ranges from 0% to 12%, while the X-axis denotes the years from 1985 to 2022.
+
+Key observations:
+1. The WACC fluctuates over the years but generally trends around an average value, marked by a horizontal dashed line at approximately 8%.
+2. In the mid-1980s, the WACC peaked above 11% and continued to show significant variability through the late 1980s and early 1990s.
+3. There is a noticeable decline in the WACC starting around 2000, with values dipping below 8% on several occasions and even reaching below 6% during the mid-2010s.
+4. Recently, there is a sharp rise in the WACC in 2022, surpassing the average mark and approaching previous high levels.
+
+Footnotes:
+- The data sources include FactSet, Moody’s, Aswath Damodaran, FRED at the Federal Reserve Bank of St. Louis, and Counterpoint Global estimates.
+- It excludes financial and real estate sectors.
+- The capital structure is based on the book value of total long- and short-term debt and market value of equity.
+- The cost of debt is derived from Moody’s Seasoned Baa Corporate Bond Yield.
+- The cost of equity is calculated as the yield on a 10-year U.S. Treasury note plus an equity risk premium.
+
+Summary:
+The graph depicts the changes in the weighted average cost of capital for the Russell 3000 index companies from 1985 to 2022. It shows that the WACC has fluctuated significantly over the last few decades, with periods of both high and low costs of capital. Overall, the trend seems to hover around an average of 8%, though recent data points to a sharp increase in 2022. This could indicate changes in market conditions, borrowing costs, or risk premiums affecting companies' costs of financing.

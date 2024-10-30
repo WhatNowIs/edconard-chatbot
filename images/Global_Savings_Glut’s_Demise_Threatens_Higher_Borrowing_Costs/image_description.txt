@@ -1,0 +1,8 @@
+The image displays a line graph titled "Global Savings Flattens Out," which illustrates the trend of adjusted net savings in current dollars from 1990 to approximately 2023. 
+
+- From 1990 to the early 2000s, global savings showed moderate growth.
+- Around the early 2000s, the savings rate experienced more significant growth, peaking around 2010.
+- After 2010, the savings trend fluctuated but remained relatively high with some noticeable peaks and troughs until the present time (2023).
+- The most recent data indicates a slight upward trend approaching $10 trillion.
+
+The data collected is sourced from the World Bank, Hanover Provident LLC, and Bloomberg. Additionally, it is noted that particulate emission damage is excluded from these savings figures.

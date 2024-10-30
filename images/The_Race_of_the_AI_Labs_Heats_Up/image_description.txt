@@ -1,0 +1,9 @@
+The image is a line chart titled "Paper TrAll" which tracks the number of AI-related research papers published on arXiv and at major AI conferences from 2016 to 2022. The chart lists several institutions and companies, reflecting the number of publications (in thousands) they have contributed. The sources are the State of AI Report and Zeta Alpha. The data specifically counts papers with at least one author from the respective institution.
+
+Key points:
+- Google leads in AI-related research paper publications, with the number reaching 3,000 by 2022.
+- Microsoft follows, also showing significant growth, crossing the 2,000 mark.
+- Stanford ranks closely with Microsoft, indicating high research output from the academic institution.
+- Meta (formerly Facebook) and Amazon have also shown consistent increases but remain below the 2,000 mark.
+- DeepMind, OpenAI, and other institutions show slower growth in comparison, with fewer than 1,000 by 2022.
+- The overall trend for all listed entities shows a steady increase in the number of publications over the years, highlighting the growing interest and investment in AI research.

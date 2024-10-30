@@ -1,0 +1,18 @@
+The chart illustrates the output per worker in four different sectors: Total, Goods Producing, Services, and Government, over a period from 2015 to the end of 2022, with Q4 of 2019 set as the baseline (100).
+
+Key Observations:
+
+1. **Overall Trends**:
+   - All sectors display relative stability around the baseline (100) up until the onset of the COVID-19 pandemic in early 2020.
+   - Post-2020, fluctuations become more pronounced across sectors.
+
+2. **Sector-Specific Trends**:
+   - **Goods Producing (red line)**: This sector shows the most significant decline, dropping markedly in 2021 and remaining low until the end of 2022.
+   - **Services (golden line)**: After a dip in early 2020, this sector peaked in mid-2021 and remained relatively high compared to others.
+   - **Government (blue line)**: The Government sector experienced a decline in early 2020, followed by a gradual increase and then stabilization.
+   - **Total (light blue line)**: This line generally tracks the combined average trends of all sectors, displaying initial stability, a dip at the onset of the pandemic, and subsequent fluctuations.
+
+3. **End of 2022**:
+   - At the end of 2022, the output per worker in the Goods Producing sector was notably lower relative to other sectors.
+
+This graph indicates that while there were sector-specific variations, overall productivity was significantly influenced by external events, particularly evident in the performance of the Goods Producing sector at the end of 2022. The Services sector, on the other hand, showed better resilience and recovery post-2020.

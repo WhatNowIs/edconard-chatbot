@@ -1,0 +1,14 @@
+The graph depicts the distribution of homeowners by their mortgage percentage of home value from 2000 to 2021. The graph is segmented into nine categories representing different mortgage loan percentages relative to the home value and includes an additional category for homeowners who have no mortgage.
+
+Key insights include:
+
+1. **Homeowners with No Mortgage**: The light yellow section represents homeowners with no mortgage. By 2021, approximately 42% of homeowners fall into this category.
+2. **Mortgage Distribution Trends**:
+   - Throughout the years, there is a noticeable gradual increase in the proportion of homeowners without a mortgage.
+   - The sections representing higher mortgage percentages (90-99% and 100%+) have diminished slightly over time, indicating a trend towards homeowners having lower mortgage balances relative to their home value.
+   
+3. **Comparison Over Time**:
+   - In 2000, a smaller percentage of homeowners had no mortgage compared to 2021.
+   - Over the period from 2000 to 2021, the share of homeowners in the lower mortgage categories (e.g., 20-39%, less than 20%) has also increased.
+
+Overall, the graph suggests a positive trend where homeowners seem to be paying off their mortgages over time, and a growing number of them hold houses with no remaining mortgage balance by 2021.

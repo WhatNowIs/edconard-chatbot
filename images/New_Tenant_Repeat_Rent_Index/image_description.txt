@@ -1,0 +1,25 @@
+This graph, titled "Pandemic Prices," displays the year-over-year percentage change in various rent indices from 2019 through early 2024. The intent is to illustrate how rent growth peaks impact future inflation prints. 
+
+### Key Points:
+1. **Legend**: 
+   - **Yellow Line**: CPI: Rent of Primary Residence
+   - **Green Line**: New Tenant Repeat Rent Index, Lagged 1 Year
+   - **Red Line**: Zillow Observed Rent Index, Lagged 1 Year
+   - **Blue Line**: ApartmentList Median New Lease, Lagged 1 Year
+
+2. **Timeframe**:
+   - The x-axis covers the period from 2019 to early 2024.
+   - The y-axis shows the percentage change from the previous year, ranging from 0% to 20%.
+
+3. **Trends**:
+   - All indices show similar trends beginning at modest year-over-year percentage changes.
+   - Around early 2021, a significant increase is observed in all indices, peaking around early 2022.
+   - Following the peaks, a decline begins towards the end of 2022, continuing into 2023.
+
+4. **Observation**:
+   - The CPI (yellow line) lags behind the other indices but follows a similar trajectory.
+   - The New Tenant Repeat Rent Index (green) shows a steadier increase and is slower to peak compared to the Zillow (red) and ApartmentList (blue) indices.
+   - The Zillow and ApartmentList indices rise rapidly, peaking similarly and then decreasing more noticeably than the CPI and New Tenant Repeat Rent Index.
+
+### Summary:
+The graph illustrates the sharp rise and subsequent decline of rent prices across different indices during the pandemic. The significant rent growth peaking in early 2022 is critical for understanding future inflation trends. While the CPI lags slightly, the overall patterns are consistent across all indices, showing the volatility and impact of the pandemic on rental markets.

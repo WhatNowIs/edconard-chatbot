@@ -1,0 +1,22 @@
+The chart, titled "Against the grain," provides a visual analysis of China's commodity imports and manufacturing purchasing managers' index (PMI) over the period from 2011 to 2024. 
+
+### Key Points:
+- **Commodity Imports (% Change on a Year Earlier):**
+  - There were significant fluctuations in commodity imports over the years.
+  - Major drops are visible around 2015, 2018, and a substantial decline in 2019, which has been quantified at a 35.7% decrease.
+  - After the sharp decline in 2019, there was an increase, but it fluctuated around the zero mark for the following years.
+
+- **Manufacturing Purchasing Managers’ Index (PMI):**
+  - The PMI, which is represented by the red line, indicates the economic health of the manufacturing sector.
+  - A PMI above 50 suggests expansion, while below 50 indicates contraction.
+  - The index saw steady fluctuations just above and below the 50 mark early in the decade, peaking significantly around 2020-2021 above 56.
+  - Post-peak, the PMI saw a steep decline but again neared stability around the 50 mark.
+
+### Observations:
+- The most significant disparity occurred around 2019, with commodity imports plummeting sharply while PMI showed much less volatility.
+- There is a general trend of both metrics moving in relative synchronization, with both experiencing ups and downs at somewhat similar times but with varying magnitudes.
+
+### Source:
+- The data is sourced from JPMorgan Chase and the chart is provided by The Economist.
+
+This summary encapsulates key movements in China's commodity imports and PMI over the given period, highlighting substantial trends and shifts in the data.

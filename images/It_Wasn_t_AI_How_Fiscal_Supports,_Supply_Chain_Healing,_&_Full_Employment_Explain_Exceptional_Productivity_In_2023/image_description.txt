@@ -1,0 +1,10 @@
+The graph depicts the relationship between Year-over-Year Productivity Growth (Y) and Prime-Age Employment Rate (X) over the period from 1986 to 2023, excluding certain recession-distorted periods. The data is represented through a scattered plot of 103 quarterly observations, where each blue dot signifies a pair of values for productivity growth and employment rate from a specific quarter. 
+
+Key Findings:
+- The trend line (dotted line) has a positive slope, described by the linear equation \( y = 0.39x - 22.8 \), suggesting that there is a positive correlation between the Prime-Age Employment Rate and Productivity Growth.
+- The coefficient of determination (\( R^2 \)) is 18.7%, indicating that approximately 18.7% of the variability in productivity growth can be explained by variations in the prime-age employment rate.
+- The range for the Prime-Age Employment Rate stretches approximately from 75% to 82%, while the Year-over-Year Productivity Growth spans from about -2.1% to 4.2%.
+- The plot excludes periods right before or after recessions when employment was either decreasing in an 8-quarter look-back period or rapidly rising by at least 1.5 percentage points in the last 4 quarters.
+
+Summary:
+This graph highlights a generally positive relationship between the employment rate of prime-age individuals and the productivity growth in the economy, even after excluding distorted periods caused by recessions from the analysis. The data suggests that as the employment rate of prime-aged individuals increases, productivity growth also tends to rise. However, the explained variability being around 18.7% also shows that there are likely other significant factors influencing productivity growth apart from employment rate.

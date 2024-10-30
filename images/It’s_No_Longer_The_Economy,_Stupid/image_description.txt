@@ -1,0 +1,20 @@
+The image presents an analysis of the correlation between economic sentiment and government approval in the US, France, Germany, and the UK, highlighting changes over time. Key points include:
+
+1. **US**:
+   - Before 2002: There was a positive correlation between economic sentiment and government approval, indicated by a rising trend.
+   - Since 2002: The correlation has weakened significantly, as indicated by a near-flat trend line, implying that economic sentiment no longer strongly affects presidential approval.
+
+2. **France**:
+   - Before 2002: A moderate positive correlation was observed.
+   - Since 2002: The positive correlation persists, although slightly weaker than before 2002.
+
+3. **Germany**:
+   - Before 2002: Strong positive correlation between economic sentiment and government approval.
+   - Since 2002: The correlation remains positive, although the trend line indicates it is slightly less strong.
+
+4. **UK**:
+   - Before 2002: There was a significant positive correlation.
+   - Since 2002: Positive correlation continues, with a robust trend line similar to before 2002.
+
+### Summary:
+Since 2002, the relationship between economic sentiment and government approval has weakened significantly in the US, while it remains positively correlated in France, Germany, and the UK. This suggests that unlike in many Western European countries, economic sentiment is no longer a strong predictor of government approval in the United States.

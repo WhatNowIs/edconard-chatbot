@@ -1,0 +1,10 @@
+The graph provided by FRED (Federal Reserve Economic Data) from the U.S. Bureau of Labor Statistics compares two indices from December 2019 to mid-2023: the Average Hourly Earnings of Production and Nonsupervisory Employees (Total Private) in blue, and the Consumer Price Index (CPI) for All Urban Consumers (All Items) in red. 
+
+Key Observations:
+1. **Baseline (Dec 2019 = 100)**: Both indices start at a base value of 100 in December 2019.
+2. **Early 2020 Dip**: There is a significant dip in the CPI around early 2020 due to pandemic effects, while the hourly earnings index shows a slight increase.
+3. **Post-COVID Trends**: From mid-2020 onwards, both indices show a sharp upward trend.
+4. **Steady Increase**: Both indices rise steadily, reflecting increasing wages and inflation over the observed period.
+5. **Comparison of Growth**: The blue line (average hourly earnings) generally stays above the red line (CPI), indicating that wage growth has been slightly outpacing inflation.
+
+In summary, the graph highlights trends in wage growth and inflation since the end of 2019, showing that while both have increased significantly, average hourly earnings have grown slightly more than the consumer prices. This may suggest real wage gains for production and nonsupervisory employees during this period.

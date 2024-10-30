@@ -1,0 +1,28 @@
+The image titled "Hedge Fund Handoff" presents data on the purchases of U.S. Treasury debt by various sectors over different time periods, formatted as quarterly averages in USD billions. Here's a detailed summary:
+
+### Key Takeaways:
+- **92% of Net Issuance (2022):** About 92% of the net issuance of Treasury securities in the first nine months of 2022 was bought by sectors that had previously been minor net buyers.
+- **Main Buyers:** Likely main buyers included hedge funds in the U.S. and abroad.
+
+### Time Period Analysis:
+#### 2015 Q1 - 2019 Q4:
+- **Households, Nonprofits, and "Rest of the World":** These sectors were the primary purchasers (shown in red).
+- **Other Sectors:** There were smaller contributions from other minor sectors.
+
+#### 2020 Q1 - 2021 Q4:
+- **Federal Reserve Dominance:** The Federal Reserve (dark blue) became the predominant buyer of Treasury debt.
+- **Substantial Contributions:** Other notable contributions came from money-market mutual funds (blue) and lesser amounts from U.S.-chartered banks and credit unions (red).
+
+#### 2022 Q1 - 2022 Q3:
+- **Diverse Sectors Dominate:** Purchases were made by various sectors, marking a significant shift from previous trends.
+   - **Money-market mutual funds (blue):** These funds were the largest buyers.
+   - **State and Local Government Treasurers (light blue):** They also played a substantial role.
+   - **U.S.-chartered banks and credit unions (red):** Moderate increase in purchases.
+   - **All Other Sectors (pink):** Minor but noticeable participants.
+   - **Households, Nonprofits, and "Rest of the World" (red):** Continued to buy but with less dominance compared to the pre-Federal Reserve surge period.
+
+### Additional Details:
+- **Other Buyers:** Categories also include hedge funds, family offices, endowments, offshore subsidiaries of U.S. multinational corporations (for "Households, nonprofits, and rest of the world"), and pensions, insurers, mutual funds other than money market funds, ETFs, U.S. branches of foreign banks, and broker-dealers (for "All other sectors").
+- **Source:** Data is sourced from the Federal Reserve Board and Matthew Klein's calculations.
+
+In summary, there was a noticeable shift in the purchasing patterns of U.S. Treasury debt, with hedge funds and other sectors stepping up their buying activities significantly in 2022.

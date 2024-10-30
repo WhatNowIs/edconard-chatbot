@@ -1,0 +1,28 @@
+This image contains two charts that provide insights into the leveraged loans, direct lending takeouts, and volumes of U.S. debt outstandings. This information gives a snapshot of key trends and data pertinent to public and private credit markets.
+
+1. **Leveraged Loans and Direct Lending Takeouts (Left Chart)**:
+   - Captioned "Leveraged Loans and Direct Lending Takeouts," this bar chart shows quarterly data in billions of USD for leveraged loans (LL) refinanced by leveraged loans (LL) and leveraged loans (LL) refinanced by direct lending (DL).
+   - Quarterly data segments include:
+     - 1Q23
+     - 2Q23
+     - 3Q23
+     - 4Q23
+     - 1Q24
+   - Notably, 4Q23 shows significant activity in both LL refinanced by LL and LL refinanced by DL, but with a greater amount in LL refinanced by DL.
+
+2. **Volume of U.S. Debt Outstandings (Right Chart)**:
+   - This line chart displays the debt volume in billions of USD from 2009 to 2023.
+   - Distinguished by types, it includes:
+     - Leveraged Loans
+     - High-Yield Bonds
+     - Direct Lending AUM (assets under management)
+   - Observations:
+     - Leveraged loans have increased steadily from 2009 to around 2015, with fluctuations through 2023.
+     - High-yield bonds show a steady increase, peaking around 2015-2016, followed by some volatility, and then a slight downward trend through 2023.
+     - Direct Lending AUM has seen a notable rise, particularly from around 2017 through 2023.
+   
+**Additional Notes**:
+- The direct lending assets under management (AUM) include direct lending funds AUM and BDC (Business Development Companies) AUM, with data available as of June 2023.
+- Sources of data: Pitchbook LCD, Mergent's FISD, Thomson Reuters LPC, Preqin, and S&P Capital IQ.
+
+These charts collectively illustrate the dynamics in borrowing and refinancing through leveraged loans and direct lending mechanisms, in addition to the overall movements in the types and volumes of U.S. debt across the specified period.

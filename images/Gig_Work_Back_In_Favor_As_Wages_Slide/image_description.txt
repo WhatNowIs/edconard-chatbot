@@ -1,0 +1,18 @@
+### Summary from the Charts on Gig Income for Bank of America Customers
+
+**Exhibit 1: Percentage of Bank of America customers receiving gig income (monthly, %)**
+- The chart shows a steady increase in the percentage of Bank of America customers receiving income from gig platforms from 2017 to 2023.
+- There was a noticeable rise from under 1.0% in 2017 to around 3.0% in 2023, peaking slightly above 3.0% in early 2021.
+- As of August 2023, the percentage stands at 3.0%.
+
+**Exhibit 2: Percentage of Bank of America customers receiving select types of gig income (monthly, %)**
+- This chart breaks down the types of gig income into five categories: Deliveries, Ridesharing, Social Commerce, Vacation Rental, and Other.
+- Deliveries and Social Commerce have shown significant upward trends, closely correlated and both peaking around early 2021, with Deliveries maintaining a higher overall proportion.
+- Ridesharing saw a decline during early 2020 but showed a resurgence in recent months, becoming a key driver in the increase of gig jobs.
+- Vacation Rental and Other types represent minor proportions and have remained relatively stable over the observed period.
+- The increase in gig jobs recently was primarily driven by more ridesharing work.
+
+**Overall Insights**
+- The proportion of Bank of America customers earning income from gig jobs has tripled over six years.
+- Deliveries and Social Commerce are the dominant gig income areas, with Deliveries leading.
+- Ridesharing has made a notable impact lately, indicating a shift or expansion in the gig economy dynamics.

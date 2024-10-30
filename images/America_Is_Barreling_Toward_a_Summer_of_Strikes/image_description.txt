@@ -1,0 +1,14 @@
+The chart "Number of Workers on Strike Could Eclipse Recent Years" illustrates the number of workers on strike from 2019 to 2023, highlighting both prior strikes and potential strikes from different sectors.
+
+Here are the key points:
+
+1. **2019**: A substantial number of workers went on strike.
+2. **2020**: Strike activity saw a significant reduction.
+3. **2021**: There was an increase in the number of striking workers compared to 2020.
+4. **2022**: The number of workers on strike continued to increase.
+5. **2023**: Potential strikes could significantly surpass recent years, involving different groups:
+   - **Actors (Pink)**: A small portion of the striking workers.
+   - **UPS Workers (Blue)**: A considerable number, more than actors.
+   - **Big Three Automakers (Yellow)**: A notable segment, adding to the total strike count.
+
+Overall, 2023 is projected to see a higher number of workers on strike compared to the previous years, with major contributions from various sectors such as actors, UPS workers, and the Big Three automakers.

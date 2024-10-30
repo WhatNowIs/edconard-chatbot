@@ -1,0 +1,12 @@
+The graph illustrates the share of credit card borrowers who are newly delinquent, categorized by generational cohorts: Baby Boomers, Generation X, Millennials, and Generation Z, over the period from Q1 2015 to Q1 2023. Key points include:
+
+- Millennials (represented by the gold line) show a consistent trend of higher delinquency rates compared to other generational cohorts, particularly post-2020, with rates exceeding pre-pandemic levels.
+- Baby Boomers (represented by the red line) and Generation X (represented by the brown line) delinquency rates have generally remained close to their 2019 averages, with slight fluctuations but relatively stable trends.
+- Generation Z (represented by the blue line) shows lower delinquency rates overall but with an increasing trend starting from around Q1 2021.
+- A sharp drop in delinquency rates can be observed across all generational cohorts around Q1 2020, likely due to economic interventions during the COVID-19 pandemic, followed by gradual increases.
+
+The data source is the New York Fed Consumer Credit Panel/Equifax. The notes clarify the birth years defining each generation:
+- Baby Boomers: 1946 to 1964
+- Generation X: 1965 to 1979
+- Millennials: 1980 to 1994
+- Generation Z: 1995 to 2011

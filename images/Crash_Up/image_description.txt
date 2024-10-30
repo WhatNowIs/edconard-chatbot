@@ -1,0 +1,20 @@
+The image illustrates the process of deficit spending and how it adds purchasing power to the private sector through a series of balance sheet adjustments:
+
+1. **Federal Government**:
+   - **Assets**: +100 Widgets
+   - **Liabilities**: +100 Treasuries
+   - The government issues Treasuries to purchase widgets.
+
+2. **Investor**:
+   - **Assets**: -100 Deposits, +100 Treasuries
+   - The investor buys Treasuries using bank deposits.
+
+3. **Widget Vendor**:
+   - **Assets**: +100 Deposits
+   - The vendor receives bank deposits in exchange for selling widgets.
+
+4. **Commercial Bank**:
+   - **Assets**: -100 Deposits to Investor, +100 Deposits to Vendor
+   - The bank settles payments, resulting in a transfer of deposits from the investor to the vendor. The total amount of deposits remains unchanged overall in the banking system.
+
+The concluding note, "Deficit spending adds purchasing power to the private sector," summarizes the process, indicating that through government deficit spending, private sector entities (like the widget vendor) end up with more purchasing power in the form of increased bank deposits.

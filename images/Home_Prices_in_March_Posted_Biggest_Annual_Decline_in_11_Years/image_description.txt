@@ -1,0 +1,21 @@
+The graph displays the percentage change in the U.S. median existing-home price from a year earlier, covering the period from around 2010 to March 2023. 
+
+Key points include:
+
+1. **Trend Overview**: 
+   - From 2010 to approximately 2012, the year-over-year change in median home prices was mostly below or at 0%.
+   - From 2012 onwards, there was a noticeable upward trend in home price growth, with several peaks and troughs but generally remaining positive.
+
+2. **Highs and Lows**:
+   - The growth rate peaked around 2013 and again around 2021, where it surpassed 20%.
+   - There were significant dips observed around 2020, but prices quickly rebounded to peak again shortly thereafter.
+
+3. **Recent Decline**:
+   - Starting around 2022, there was a sharp decline in the growth rate.
+   - By March 2023, the year-over-year change in the median existing-home price showed a decrease of -0.9%.
+
+4. **Data Source and Caveats**:
+   - The noted decline in March 2023 data is preliminary.
+   - The source of the data is the National Association of Realtors.
+
+In summary, the U.S. median existing-home price saw significant growth post-2012, peaking around 2021. However, there has been a noteworthy decline, culminating in a negative change as of March 2023.

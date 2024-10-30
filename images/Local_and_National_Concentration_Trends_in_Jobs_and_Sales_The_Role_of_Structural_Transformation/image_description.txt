@@ -1,0 +1,22 @@
+The image contains Figure 2, which depicts data on national industrial concentration through two metrics: Employment and Sales. The key findings and graphical representations are summarized as follows:
+
+1. **Graph Panels**:
+   - **Left Panel (Employment)**: Shows the average national Herfindahl-Hirschman Index (HHI) across six-digit NAICS industries, weighted by their share of employment each year from 1990 to 2020.
+   - **Right Panel (Sales)**: Displays the average national HHI weighted by the industry's share of sales in a given year from 1990 to 2020.
+
+2. **Legend and Key Data Points**:
+   - *National HHI (blue circles)*: Represents the overall change in national concentration.
+   - *National HHI with fixed sector-weights (red triangles)*: Keeps the weight of each of the six selected sectors (Utilities and Transportation, Manufacturing, Services, Retail Trade, Wholesale Trade, and Finance) fixed at its 1992 levels.
+   - *National HHI with fixed industry-weights (green squares)*: Fixes the weights of each six-digit NAICS industry at its 1992 level.
+
+3. **HHI Scaling and Trends**:
+   - The HHI has an upper bound of 100 in these charts.
+   - Both the employment and sales HHI show an increasing trend from 1990 to 2020, suggesting growing national industrial concentration over three decades.
+   - In the employment data (left panel), the index rises from around 2.5 in 1990 to about 4.5 in 2020.
+   - In the sales data (right panel), the index increases from approximately 4.5 in 1990 to around 7 in 2020.
+   - Different weighting methods (sector-weights and industry-weights) present a more nuanced perspective on the concentration trends over the years.
+
+4. **Conclusion**:
+   - The data indicates a clear upward trend in industrial concentration in the United States across various sectors between 1990 and 2020, driven by both employment and sales metrics.
+
+These findings suggest that fewer firms are increasingly dominating employment and sales in multiple industries, reflecting greater market concentration.

@@ -1,0 +1,12 @@
+The image presents a bar graph from the International Monetary Fund highlighting the significant rise of off-the-books debts incurred by local government financing vehicles (LGFVs) as compared to official local debt from the years 2018 to an estimated 2024. The key points are as follows:
+
+- The title and main text emphasize that LGFVs have accumulated trillions of dollars in hidden debts that substantially exceed the official debt levels.
+- Two types of debts are shown: 
+  - Official local debt (grey bars)
+  - Local financing vehicle debt (magenta bars)
+- Both debts rise over the years, with LGFV debt consistently higher than official local debt.
+- Projections for the years 2023 and 2024 suggest that LGFV debt will continue to rise considerably, further widening the gap with official local debt.
+
+- Financial terms: 1 yuan is equivalent to $0.1376.
+
+The data indicates a growing financial risk associated with hidden debts by local government entities, suggesting a potential issue for fiscal management and transparency.

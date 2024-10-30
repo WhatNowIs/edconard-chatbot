@@ -1,0 +1,18 @@
+This graph illustrates the percentage of companies in the Russell 2000 index that have negative earnings (measured by 12-month trailing EPS) from March 1995 to March 2023. Here are the key points:
+
+1. **Current Status (as of March 2023)**:
+   - 40% of companies in the Russell 2000 have negative earnings.
+
+2. **Historical Peaks**:
+   - The percentage of companies with negative earnings spiked around March 2001 and March 2009, reaching nearly 45%.
+   - Another peak occurred around March 2021, exceeding 45%.
+
+3. **Other Notable Trends**:
+   - There was a noticeable increase around March 2008, possibly due to the financial crisis.
+   - The percentage significantly decreased after the March 2009 peak but showed a gradual upward trend after March 2018.
+   - Minor decreases and increases are observed throughout the timeline, indicating fluctuations in the health of small to mid-cap companies in the index.
+
+4. **Recessions**:
+   - Grey shaded areas indicate recessions or economic downturns which saw increases in negative earnings percentages.
+
+Overall, the graph indicates periods of economic stress where a larger portion of companies in the Russell 2000 reported negative earnings, correlating with economic downturns. The consistent rise towards 40% in recent years suggests increasing financial strain among these companies.

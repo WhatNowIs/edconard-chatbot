@@ -1,0 +1,11 @@
+The image is a graph from ADP Research Institute illustrating the U.S. software developer employment index. 
+
+Key points:
+1. **Time Frame**: The data spans from January 2018 to January 2024.
+2. **Baseline**: The index baseline (January 2018) is set at 100%.
+3. **Peak Employment**: Software developer employment peaked in 2019.
+4. **Trend**: Since peaking in 2019, the employment index has been on a general decline.
+5. **Notable Drops**: Significant drops occurred in early 2020, mid-2021, and continuing into 2023 and towards 2024.
+
+Summary:
+The U.S. software developer employment index, benchmarked at 100% in January 2018, reached its maximum in 2019. Since then, it has steadily declined, with marked decreases early in 2020, mid-2021, and a persistent downward trend through 2023 into 2024. The data indicates consistent contraction in software developer employment over the past few years.

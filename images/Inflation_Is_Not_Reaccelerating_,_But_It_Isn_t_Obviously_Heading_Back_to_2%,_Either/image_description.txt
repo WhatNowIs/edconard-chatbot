@@ -1,0 +1,13 @@
+The chart provided depicts the annualized 3-month changes in the Consumer Price Index (CPI) from 2010 to 2024, focusing on three different measures: Total CPI, All items less food, energy, shelter, and used cars and trucks, and "Sticky" CPI excluding shelter.
+
+Key observations include:
+
+1. **Inflation Trends**: There are noticeable fluctuations in CPI inflation over the period, with significant peaks and troughs, particularly around 2020, likely influenced by economic responses to the COVID-19 pandemic.
+
+2. **Recent Inflation**: In the first quarter of 2024 (2024Q1), inflation rates were higher across a broad range of measures compared to any comparable period since the end of 2022, indicating faster inflation.
+
+3. **Disinflation in 2023**: The text suggests there was apparent disinflation – a reduction in the rate of inflation – in the second half of 2023 (2023H2), which is contrasted with the faster inflation observed in early 2024.
+
+4. **Variability**: While some of the observed changes in inflation might be attributed to noise or short-term variability, both the sudden rise and prior dip in inflation rates are noteworthy.
+
+The data combined from the Bureau of Labor Statistics, Federal Reserve Bank of Atlanta, and individual calculations provide a comprehensive view of recent inflation dynamics.

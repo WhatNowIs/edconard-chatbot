@@ -1,0 +1,18 @@
+The image is a line graph titled "No longer made in China," showing the manufacturing value added as a percentage of GDP for five countries: India, China, Bangladesh, Vietnam, and Turkey from 2007 to 2021. Here is a summary of the data:
+
+1. **China (pink line):**
+   - China's manufacturing value added as a percentage of GDP has been decreasing steadily from around 32% in 2007 to about 27% in 2021.
+
+2. **Vietnam (green line):**
+   - Vietnam's manufacturing value added as a percentage of GDP has shown a consistent increase over the years. It started at around 17% in 2007 and has risen to approximately 25% by 2021.
+
+3. **Bangladesh (light blue line):**
+   - Bangladesh saw significant growth from about 15% in 2007 to around 21% in 2021, with notable increases particularly around 2015 and 2020.
+
+4. **Turkey (dark blue line):**
+   - Turkey has exhibited a general decline in manufacturing value added over the years, from about 19% to 15% between 2007 and 2021, with minor fluctuations.
+
+5. **India (dark blue line):**
+   - India experienced some fluctuation, starting at about 16% in 2007, dipping slightly, and then rising back to around 17% by 2021 with significant growth after 2015.
+
+Overall, the graph highlights a shift in manufacturing value added, with China decreasing its share while countries like Vietnam and Bangladesh have seen significant increases in their manufacturing sectors over the same period.

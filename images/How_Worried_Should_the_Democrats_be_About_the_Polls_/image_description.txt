@@ -1,0 +1,10 @@
+The image illustrates a series of graphs demonstrating a decline in support for Democrats among black voters, with a particular emphasis on young black men. The data, analyzed from American National Election Studies (1980-2004), the Cooperative Election Study (2008-2020), and Stack Data Strategies (2023), highlight trends in vote intention for presidential elections.
+
+1. **All Black Voters:** Support for Democrats has generally remained high but shows a notable decline in recent years.
+2. **Black Men:** There is a steeper decline in support for Democrats among black men.
+3. **Black Voters, Age 18-34:** Young black voters show a significant declining trend in Democratic support.
+4. **Black Men, Age 18-34:** The decline is most pronounced in this demographic, illustrating a substantial drop in Democratic vote intention.
+
+In contrast, the graphs also depict rising support for Republicans (traced in red) across all these demographics. This trend indicates that Republicans are gaining ground as Democratic support wanes.
+
+The data trend points to potential challenges for Democrats in retaining their historical levels of support within the black community, particularly among younger voters and young black men as the 2024 presidential elections approach.

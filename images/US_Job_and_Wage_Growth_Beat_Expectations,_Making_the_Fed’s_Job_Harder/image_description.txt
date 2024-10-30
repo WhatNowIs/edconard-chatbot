@@ -1,0 +1,26 @@
+This chart illustrates the average hourly earnings growth across a variety of industries from November 2021 to November 2022, measured at an annualized rate. The key data points and insights are:
+
+- **Personal Consumption Expenditures (PCE) Price Index**: The inflation rate for the period, represented by the PCE price index, was 5.9%.
+- **Industry Growth Rates**:
+  - Other services: 2.8%
+  - Mining & logging: 3.4%
+  - Manufacturing: 3.6%
+  - Financial activities: 3.7%
+  - Education & health services: 4.4%
+  - Wholesale trade: 4.7%
+  - Retail trade: 5.2%
+  - Professional & business services: 5.4%
+  - Construction: 5.8%
+  - Utilities: 5.9%
+  - Leisure & hospitality: 6.4%
+  - Information: 8.7%
+  - Transportation & warehousing: 8.8%
+
+- **Comparison Against Inflation**: 
+  - Many industries have earnings growth rates below the 5.9% inflation rate, indicating a decline in real wages for those sectors.
+  - Only the sectors of Utilities, Leisure & Hospitality, Information, and Transportation & Warehousing have earnings growth rates above the PCE price index.
+
+- **Sector Representation**: 
+  - The height of each bar in the chart reflects the industry's share of private employment, showing a visual representation of how these industries proportionally contribute to overall employment.
+
+In summary, most industries experienced nominal wage growth below the inflation rate, resulting in a decline in real wages. Only the sectors of Utilities, Leisure & Hospitality, Information, and Transportation & Warehousing saw wage growth that outpaced inflation.

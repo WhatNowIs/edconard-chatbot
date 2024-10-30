@@ -1,0 +1,20 @@
+This graph from the Business Formation Statistics of the U.S. Census Bureau depicts business applications from 2004 to 2022. 
+
+Key points:
+1. **Types of Business Applications**: The graph categorizes business applications into two types:
+   - Applications for businesses with likely payroll (yellow area at the bottom).
+   - Other business applications (blue area above the yellow region).
+
+2. **Trends Over Time**:
+   - From 2004 to around 2020, the number of applications for businesses with likely payroll remained relatively stable, ranging approximately between 100,000 to 150,000 per period.
+   - Other business applications fluctuated but showed an overall gradual increase with some peaks and valleys until around 2020.
+
+3. **Recent Spike**:
+   - A significant increase in overall business applications is observed starting in 2020, achieving a peak with over 400,000 applications per period.
+   - The majority of this spike consists of other business applications (blue).
+
+4. **Comparison**:
+   - Before 2020, the total number of applications was generally below 300,000 per period.
+   - After 2020, the applications surged well above 300,000, significantly driven by other business applications.
+
+This data suggests a robust increase in entrepreneurial activity or business formations starting around 2020, with other business applications seeing the bulk of this growth. The surge could correlate with societal changes during that period such as the COVID-19 pandemic, which may have influenced new business creation and economic shifts.

@@ -1,0 +1,18 @@
+The graph tracks the annualized quarterly percentage change in two key economic indicators from Q1 2021 to Q1 2023:
+
+1. **Average of Real GDP and Real GDI (Gross Domestic Income) - represented by the blue line:**
+   - Fluctuations are notable, with peaks and troughs evident.
+   - The most notable peak occurred in Q3 2021, reaching a significant positive change.
+   - The lowest point is seen in Q1 2022, dropping into negative territory.
+   - Throughout 2022 and into Q1 2023, the trend remains volatile, with another visible drop in Q2 2022 and a moderate increase in Q3 2022 before stabilizing near zero at the start of 2023.
+
+2. **Nonfarm Payroll Employment - represented by the black line:**
+   - This indicator remains relatively stable compared to the GDP and GDI averages.
+   - It shows a consistent positive change across quarters, though there is a slight declining trend starting in late 2021 through 2022.
+   - Despite minor fluctuations, it steadily grows around 2%, indicating continued employment growth, albeit at a decelerating rate.
+
+**Insight:**
+- This graph's focus suggests that while employment (nonfarm payrolls) has shown stable growth, overall economic output (Real GDP and Real GDI) has experienced more volatility, especially with notable declines at certain points. The question posed, "Jobful Recession?", highlights the contrast between employment stability and economic output fluctuations, raising concerns about potential economic slowdowns despite steady job growth. 
+
+**Sources:** 
+- Data is sourced from the US Bureau of Economic Analysis and the US Bureau of Labor Statistics.

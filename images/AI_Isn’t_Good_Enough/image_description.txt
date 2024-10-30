@@ -1,0 +1,11 @@
+The image depicts the size of the U.S. civilian workforce from July 1, 2013, to July 1, 2023. Here’s a summary of the key points:
+
+1. **Trend Line**: An overall upward trend is indicated by the red trend line, suggesting a growth in the size of the U.S. civilian workforce over the ten years.
+   
+2. **Steady Growth**: From mid-2013 to early 2020, there is a steady increase in the workforce size, rising from about 154,000 to around 164,000.
+
+3. **Significant Drop**: A significant and sharp drop is observed around early 2020. This drop correlates with the onset of the COVID-19 pandemic, reflecting the impact on the workforce.
+
+4. **Recovery Phase**: Post-2020, there is a noticeable recovery in the workforce size, although the recovery is uneven with some fluctuations. By mid-2023, the size has nearly reached 170,000, surpassing pre-pandemic levels.
+
+In essence, the graph showcases a decade-long growth trend in the U.S. civilian workforce, disrupted sharply by the COVID-19 pandemic in 2020, followed by a gradual and uneven recovery.

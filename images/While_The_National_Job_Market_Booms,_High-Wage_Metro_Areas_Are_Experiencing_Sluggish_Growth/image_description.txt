@@ -1,0 +1,21 @@
+This graph illustrates the share of year-over-year employment growth in metro areas categorized by average earnings quintiles from 2011 to 2024. The data is sourced from the Bureau of Labor Statistics and the chart is presented by the Economic Innovation Group.
+
+Key insights:
+1. **Highest Average Earnings Quintile**:
+   - This quintile maintains the highest share of employment growth, consistently ranging between 60% and 70% over the decade.
+   - Notable drops occurred around 2017-2018 and 2020, but the share generally recovered afterward.
+   - Recently, however, there has been a significant decline starting around 2022, reaching closer to 60%.
+
+2. **Second Highest, Middle, Second Lowest, and Lowest Average Earnings Quintiles**:
+   - These quintiles exhibit relatively stable and flat employment growth shares over the years.
+   - The second highest quintile hovers around the 20-30% range.
+   - The middle quintile remains fairly consistent around 10%.
+   - The second lowest and lowest quintiles have the least share, with values generally below 5%, showing slight but steady growth in recent years.
+
+3. **Trends and Observations**:
+   - There's a clear dominance of the highest earnings quintile in terms of job growth share.
+   - Despite minor fluctuations, the overall trend for the lower four quintiles remains constant.
+   - The considerable dip for the highest quintile in 2020 could be attributed to the economic impacts of the COVID-19 pandemic.
+   - Overall, the increasing trend in the lower quintiles' shares indicates a possible narrowing of employment growth disparities over time, especially in recent years.
+
+In summary, while the highest earnings quintile dominated metro area employment growth for much of the past decade, recent trends show a slight balancing, with lower earnings quintiles gaining a marginally larger share of employment growth.

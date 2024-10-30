@@ -1,0 +1,29 @@
+The bar and line chart titled "Exhibit 25: Capital Expenditures Net of Depreciation for the Russell 3000, 1985-2021" illustrates two key metrics over a span of 37 years:
+
+1. **Amount of Capital Expenditures Net of Depreciation (in billions of dollars), displayed on the left vertical axis and represented by blue bars.**
+2. **Capital Expenditures as a Percentage of Sales, shown on the right vertical axis and represented by a black line.**
+
+Key Observations:
+
+- **1985 to the early 1990s:**
+  - **Amount:** Capital expenditures began at approximately $150 billion and showed significant fluctuation, peaking around 1986, then dropped sharply.
+  - **% of Sales:** Started around 4%, increased slightly, and peaked at around 7% in 1986, followed by a noticeable decline.
+
+- **Mid-1990s to early 2000s:**
+  - **Amount:** Showed a steady increase, stabilizing around $150-$250 billion.
+  - **% of Sales:** Fluctuations were observed but stabilized around the 4% mark before seeing a decline.
+
+- **Mid-2000s to the financial crisis (2008-2009):**
+  - **Amount:** Rose to around $350 billion but saw a sharp dip corresponding with the financial crisis.
+  - **% of Sales:** Hovered around 4-5% before dropping during the financial crisis.
+
+- **2010 to late 2010s:**
+  - **Amount:** Exhibited significant recovery and growth, reaching peaks above $350 billion in certain years.
+  - **% of Sales:** Stayed relatively stable around 3-4% but decreased towards the end of the decade.
+
+- **2020 to 2021:**
+  - **Amount:** Dropped sharply to below $100 billion, reflecting a significant reduction.
+  - **% of Sales:** Correspondingly fell to near 1%, the lowest in the observed time frame.
+
+**Conclusion:**
+The chart illustrates the variability in capital expenditures net of depreciation, highlighting significant trends and disruptions such as the late 1980s peak and the financial crisis' impact. Overall, while expenditures and their percentage of sales generally increased over the decades, recent years (2020-2021) have shown a marked decrease.

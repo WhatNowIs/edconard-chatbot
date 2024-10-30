@@ -1,0 +1,9 @@
+The graph depicts the trend in the employment share of young firms over time, distinguishing between firms that are less than 5 years old and those that are 6-10 years old. Key details include:
+
+- The yellow line represents firms that are less than 5 years old.
+- The blue-green line represents firms that are 6-10 years old.
+- The y-axis measures the percent of private sector employment.
+- The x-axis spans from roughly 1995 to 2020.
+
+Summary:
+The graph illustrates a long-term decline in the employment share of both younger firm categories (<5 years and 6-10 years old) from the mid-1990s until 2020. However, it also indicates a noticeable increase in the employment share of younger firms during the COVID-19 pandemic, which stands out as a reversal of the prior downward trend. This suggests that the pandemic led to a relative rise in employment contributions from younger firms in the private sector.

@@ -1,0 +1,19 @@
+The image provides a map of the United States highlighting the year-over-year changes in median rent and mortgage payments in major metropolitan statistical areas (MSAs) for the six-month period ending February 2023. The data are based on Bank of America internal data.
+
+### Summary:
+- **Phoenix** experienced the highest surge in median rent payments, with a 26% YoY increase.
+- **Tampa** follows with a 23% increase in rent payments.
+- Significant rent increases were also noted in **Miami** (23%), **Charlotte** (20%), **Dallas** (18%), and **Austin** (21%).
+- Notable mortgage payment increases include **Austin** (14%), **Miami** (15%), **Atlanta** (13%), and **Charlotte** (10%) where mortgage payments also saw a double-digit increase.
+
+Conversely, some areas had smaller increases or even decreases:
+- **San Francisco** experienced a minor decline in rent payments at -2.5% while mortgage payments increased by 10%.
+- **Chicago** saw a 7% decrease in mortgage payments.
+- **Boston** had minor changes with a 2% increase in rent and an 8% decrease in mortgage payments.
+- **New York** witnessed a significant drop in mortgage payments (-9%) along with a 20% increase in rent.
+
+Color coding:
+- **Red markers** indicate areas where rent and mortgage increased by more than 10% YoY.
+- **Blue markers** show places where the increase in rent and mortgage payments was under 10% YoY.
+
+This graph effectively illustrates the variability in housing costs across different US MSAs, with some markets experiencing sharp hikes and others more modest changes.

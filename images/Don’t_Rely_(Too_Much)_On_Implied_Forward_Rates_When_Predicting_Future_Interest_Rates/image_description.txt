@@ -1,0 +1,23 @@
+The image depicts a line chart showing the yields on ten-year U.S. Treasury bonds (10y) and the ten-year forward rates in ten (10y10y) and twenty years (20y10y) from 1953 to 2024. The data has been sourced from St. Louis FRED and J. Rangvid. 
+
+**Key Points:**
+1. **Yield Trends (1953-2024):**
+   - The yields and forward rates displayed gradual movement from around 2% - 4% between 1953 and the mid-1960s.
+   - A significant upward trend is visible starting from the late 1960s through the early 1980s, peaking at around 14% - 16%.
+   - A notable decrease follows, with yields dropping significantly in the late 1980s into the early 2000s.
+   - From the 2000s onwards, the data fluctuates, reaching its lowest levels in the early 2010s.
+   - Post-2020, there is a noticeable reversal, with yields and forward rates increasing again, approaching approximately 4% - 5% by 2023.
+
+2. **Color-Coded Data Series:**
+   - **Blue Line (10y):** Represents the actual yield on ten-year U.S. Treasuries.
+   - **Orange Line (10y10y):** Denotes the ten-year forward rate in ten years.
+   - **Grey Line (20y10y):** Shows the ten-year forward rate in twenty years.
+
+3. **Historical Peaks and Troughs:**
+   - The highest point occurs around the early 1980s, reflecting a peak in interest rates.
+   - The lowest point is observed around 2012-2013, indicating historically low interest rates during this period.
+  
+4. **Current Trends (Post-2020):**
+   - Recent data from 2021 to 2023 show a rising trend in yields and forward rates, suggesting a possible economic cycle change or response to economic conditions such as inflation.
+
+This data provides an extensive historical perspective of U.S. Treasury yields and forward rates, highlighting significant economic events and trends over the last seven decades.

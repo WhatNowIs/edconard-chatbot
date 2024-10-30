@@ -1,0 +1,13 @@
+The chart titled "Unfinished portrait" from The Economist provides a comparative visualization of the S&P 500 CAPE yield and the ten-year TIPS yield in the United States between 1997 and 2024. 
+
+Key points of the chart include:
+
+1. **S&P 500 CAPE Yield (Inverse of the cyclically adjusted price-to-earnings ratio)**:
+   - The CAPE yield has experienced notable fluctuations, peaking around 2001 before experiencing periods of decline and relative stability.
+   - There was a significant peak around 2010 and again a smaller peak near the present (2024).
+
+2. **Ten-year TIPS (Treasury Inflation-Protected Securities) Yield**:
+   - The TIPS yield started above 2% in the late 1990s and has shown a downward trend, dipping below zero around 2012.
+   - The yield has recovered somewhat in recent years, moving back toward the 1% mark by 2024.
+
+This chart underscores the inverse relationship between long-term equity valuations (as represented by the CAPE yield) and safe real yields (as represented by TIPS). Lower TIPS yields often correspond with higher CAPE yields, reflecting the search for real returns amid different economic conditions. The data sources include Bloomberg and Yale University’s Robert Shiller.

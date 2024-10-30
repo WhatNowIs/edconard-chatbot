@@ -1,0 +1,11 @@
+The chart titled "Central banks have another colossal year of buying gold" reveals the amount of gold purchased by central banks from 2010 to 2023. The data is segmented into purchases made during the first three quarters (represented in dark blue) and the fourth quarter (represented in light blue).
+
+Key observations include:
+
+1. There was a significant increase in gold purchases by central banks in 2022, reaching over 1,000 tonnes, marking the highest level in the dataset.
+2. The purchasing trend shows variability over the years, with noticeable peaks in 2012-2013 and a sharp rise again from 2018 onward.
+3. There were periods of relative decline in gold purchases, particularly from 2014 to 2017.
+4. The year 2023 shows a strong continuation of heavy gold buying, almost matching the peaks of 2022 by the end of the third quarter.
+5. Overall, the chart indicates a general trend of increasing gold reserves by central banks, especially in recent years, highlighting their strategy to strengthen financial stability.
+
+Sources include Metals Focus, Refinitiv GFMS, and the World Gold Council, with the data reported to the IMF.

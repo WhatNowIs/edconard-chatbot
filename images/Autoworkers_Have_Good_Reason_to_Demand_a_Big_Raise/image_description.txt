@@ -1,0 +1,23 @@
+The image is a graph detailing the real wage trends for US production and nonsupervisory employees in the private sector and motor vehicle manufacturing over the past two decades, adjusted to July 2023 dollars. Key points include:
+
+1. **Title and Source**: 
+   - **Title**: "Two Decades of Real Wage Declines for Autoworkers"
+   - **Source**: US Bureau of Labor Statistics
+
+2. **Wage Data**: 
+   - The graph compares "Total private sector" wages (blue line) versus "Motor vehicle manufacturing" wages (black line).
+  
+3. **Time Frame**: 
+   - The timeline spans from 1990 to 2023.
+
+4. **Observations**:
+   - **Total Private Sector**: There's been a gradual increase in real wages over the past two decades.
+   - **Motor Vehicle Manufacturing**: Real wages have significantly declined since around 2003, after initially being higher in the early 1990s. The decline appears steady with a more pronounced downward trend post-2007.
+   
+5. **Current Standing**:
+   - In July 2023, the average hourly wage in motor vehicle manufacturing appears to be just above $30, while for the total private sector, it is slightly below $30.
+
+6. **Inflation Adjustment**:
+   - The data has been adjusted for inflation using the Consumer Price Index for urban wage earners and clerical workers.
+
+In summary, the graph illustrates a stark contrast between the steady increase in wages for the total private sector and the substantial decrease in real wages for workers in motor vehicle manufacturing over the past two decades.

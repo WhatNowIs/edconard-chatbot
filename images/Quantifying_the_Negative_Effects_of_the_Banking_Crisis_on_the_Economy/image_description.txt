@@ -1,0 +1,18 @@
+The image is a graph showing the impact of Silicon Valley Bank (SVB) and First Republic Bank (FRC) on funding costs for banks. The graph tracks the bond spreads for US Investment Grade (IG) banking index bonds maturing in 5-10 years, specifically looking at the spread for regional banks versus diversified banks.
+
+### Key Points:
+- **Y-Axis**: The bond spreads are measured in basis points (bps), ranging from 100 to 400 bps.
+- **X-Axis**: The timeline spans from January 2023 to May 2023.
+- The companies of interest are categorized as either **Regional Banks** or **Diversified Banks**.
+- Around early March 2023, there's a significant spike in bond spreads associated with SVB, affecting both regional and diversified banks.
+- A further increase is observed around May 2023, marked as the impact from First Republic Bank.
+- Before these events, both bond spreads were relatively stable, fluctuating between approximately 150-200 bps.
+- After these events, bond spreads for regional banks spiked to above 350 bps while those for diversified banks increased to around 250 bps.
+
+### Source Information:
+- Data sources include ICE BofA, Bloomberg, and the Apollo Chief Economist. 
+- The graph represents unweighted average spreads of bonds from ICE 5-10 Year US Banking Index, C6PX Index for bonds issued before January 1st, 2023.
+- The graph includes data from 8 regional banks (BankUnited, Citizens Financial, Huntington, and Zions) and 41 diversified banks (JP Morgan, Citibank, and Bank of America).
+
+### Summary:
+The graph illustrates a permanent increase in the funding costs for both regional and diversified banks due to significant financial events involving Silicon Valley Bank (SVB) in March 2023 and First Republic Bank (FRC) in May 2023. These events led to notable spikes in the bond spreads, indicating higher perceived risk and thus higher costs of borrowing for banks reflected in the investment-grade banking index bonds maturing in 5-10 years.

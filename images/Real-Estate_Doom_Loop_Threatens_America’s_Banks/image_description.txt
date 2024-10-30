@@ -1,0 +1,19 @@
+The image provides a visual representation of maturing commercial property loans by lender type from 2023 to 2030. The key points of the image are:
+
+1. **Total Maturing Loans**: Nearly $900 billion in commercial property loans are maturing in 2023 and 2024.
+2. **Lender Types**:
+   - Regional and local banks (represented in dark red).
+   - International and national banks (in light red).
+   - Other lenders, which include commercial mortgage-backed securities, insurance companies, and private and government lenders (in light gray).
+
+3. **Annual Breakdown**:
+   - **2023**: Approximately $250 billion in maturing loans, with a significant portion from other lenders.
+   - **2024**: Close to $450 billion, the highest amount over the period, with large contributions from international and national banks.
+   - **2025**: Around $350 billion, with a balanced mix of lender types.
+   - **2026**: Slightly over $300 billion, similar to 2025 in composition.
+   - **2027**: Near $450 billion again, with regional and local banks contributing the most.
+   - **2028 to 2030**: Amounts are lower, each under $250 billion, with other lenders being the predominant source.
+
+4. **Implications**: The maturing of such significant amounts of loans in the short term is pressuring landlords to seek more expensive refinancing from private investors and banks that are still willing to lend.
+
+Overall, the graph highlights the upcoming challenges landlords face due to significant maturing loans over the next few years, especially from 2023 to 2027, and the varying contributions from different types of lenders.

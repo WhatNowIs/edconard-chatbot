@@ -1,0 +1,17 @@
+The image is a bar chart summarizing the spending behavior of S&P 500 companies during the third quarter of 2022. It compares the quarter-over-quarter and year-over-year changes for three categories: Dividends, Buybacks, and Capital Expenditures.
+
+Here's a detailed summary:
+
+1. **Dividends:**
+   - **Quarter-over-quarter change:** Slight negative change, approximately -2%.
+   - **Year-over-year change:** Positive change, approximately +7%.
+
+2. **Buybacks:**
+   - **Quarter-over-quarter change:** Moderate negative change, approximately -8%.
+   - **Year-over-year change:** Slight positive change, around +3%.
+
+3. **Capital Expenditures:**
+   - **Quarter-over-quarter change:** Minimal positive change, around +4%.
+   - **Year-over-year change:** Significant positive change, approximately +17%.
+
+Overall, despite a few decreases in quarter-over-quarter spending, S&P 500 companies have notably increased their spending in all three categories on a year-over-year basis, with capital expenditures seeing the most significant rise.

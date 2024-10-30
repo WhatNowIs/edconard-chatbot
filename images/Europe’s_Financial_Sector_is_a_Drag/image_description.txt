@@ -1,0 +1,14 @@
+The image is a dual-chart comparison showing the performance of US and European equity returns, specifically the S&P 500 and the Euro Stoxx 50 indices. The data is rebased in local currencies and split into two periods: 1989-2009 on the left and 2009-present on the right.
+
+### Key Insights:
+
+1. **1989-2009:**
+   - Both the S&P 500 (pink line) and the Euro Stoxx 50 (blue line) display similar trends.
+   - Both indices experience similar growth and peaking patterns, especially noticeable around the dot-com bubble (late 1990s to early 2000s) and the 2008 financial crisis.
+
+2. **2009-present:**
+   - Post-2009, the S&P 500 shows significant growth, far outperforming the Euro Stoxx 50.
+   - The divergence between the indices becomes evident, with the S&P 500 experiencing a notable upward trajectory, while the Euro Stoxx 50 demonstrates relatively modest growth.
+
+### Summary:
+The data indicates that US and European equity returns were much more aligned and showed similar patterns from 1989 to 2009. However, the period from 2009 to the present reveals a marked divergence, with the S&P 500 significantly outperforming the Euro Stoxx 50. This suggests a shift in investment performance dynamics between US and European markets post-2009.

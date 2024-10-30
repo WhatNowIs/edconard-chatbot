@@ -1,0 +1,9 @@
+The chart from the Financial Times examines the anticipated collapse in the ratio of people of working age to those over 65 in various countries by the year 2050, if there is zero immigration. The ratios for the year 2020 and the forecasted ratios for 2050 with zero migration are represented as grey and blue dots, respectively. Key highlights include:
+
+1. **Italy and Japan** are forecasted to experience a significant drop in the ratio of working-age people to those over 65, indicating a potential strain on the workforce to support the aging population.
+2. **France, Germany, and Spain** face similarly steep declines, projecting a substantial decrease in their labor force relative to the aging population by 2050.
+3. **Europe as a whole**, along with other rich countries*, demonstrates a downward trend in this ratio.
+4. **The UK, Canada, and North America (including US) show a notable but less severe decline compared to European countries**.
+5. **Australia and South Korea** are predicted to have the lowest ratios in 2050 without migration, suggesting a more dramatic demographic shift.
+
+Without immigration, many countries are forecasted to see their labor forces significantly shrink relative to the population over 65, potentially creating economic and social challenges.

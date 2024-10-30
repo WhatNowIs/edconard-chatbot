@@ -1,0 +1,12 @@
+The image provides information on the interest rates of outstanding mortgages as of the first quarter of 2023. It highlights that 61% of all outstanding mortgages have an interest rate below 4%.
+
+The pie chart within the image breaks down the share of mortgages by interest rate at origination:
+- 23% of mortgages have an interest rate below 3%.
+- 38% have an interest rate between 3% to 4%.
+- 20% have an interest rate between 4% to 5%.
+- 10% have an interest rate between 5% to 6%.
+- 9% have an interest rate above 6%.
+
+This data is sourced from the Federal Housing Finance Agency (FHFA) and the Apollo Chief Economist. 
+
+In summary, the majority of outstanding mortgages have interest rates below 4%, indicating a relatively lower cost of borrowing for most mortgage holders as of early 2023.

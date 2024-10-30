@@ -1,0 +1,8 @@
+The graph illustrates the 10-year potential GDP growth from 1990 to 2020. Key points include:
+
+- From 1990 to around 2000, the potential GDP growth rate was relatively high, hovering above 3%.
+- Starting from the early 2000s, there was a significant decline in the potential GDP growth rate, dipping to around 2% by 2005.
+- After 2005, the growth rate continued to decline slightly and stabilized at approximately 1.5% from around 2015 onwards.
+- The caption at the bottom of the graph indicates a pessimistic outlook on growth, stating "Growth's glory days are gone," attributed to the Congressional Budget Office.
+
+Overall, the graph shows a downward trend in potential GDP growth over the 30-year period, suggesting a long-term slowdown in economic growth potential.

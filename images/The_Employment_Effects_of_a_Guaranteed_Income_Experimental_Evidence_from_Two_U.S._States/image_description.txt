@@ -1,0 +1,65 @@
+This table titled "Impact of Guaranteed Income on Earned and Other Unearned Income (in $1,000s)" analyzes the effect of an unconditional cash transfer on various income outcomes for participants and their households.
+
+### Key variables:
+- **Control Mean**: Average income (self-reported) for the control group, with standard deviations in parentheses.
+- **Treatment Effect**: Effect of the cash transfer on income, with standard errors in parentheses.
+- **MPE (Mean Percentage Effect)**: Estimated percentage change in income due to the treatment.
+- **Elasticity**: Ratio of percentage change in income to the percentage change in the cash transfer amount.
+- **N**: Number of observations.
+
+### Summary of Income Categories:
+
+1. **Total household income (self-reported)**:
+   - Control Mean: $48.2k
+   - Treatment Effect: -$4.1k
+   - Significant at the 0.001 level (***)
+   - Decrease in household income due to transfer, with an MPE of -0.34 to -0.42 and elasticity of -0.30.
+
+2. **Total individual income**:
+   - Control Mean: $36.6k
+   - Treatment Effect: -$1.5k
+   - Significant at the 0.05 level (*)
+   - Decrease in individual income, with an MPE of -0.12 to -0.15 and elasticity of -0.15.
+
+3. **Total individual income (self-reported)**:
+   - Control Mean: $33.5k
+   - Treatment Effect: -$2.5k
+   - Significant at the 0.05 level (**)
+   - Decrease in self-reported income, with an MPE of -0.21 to -0.26 and elasticity of -0.26.
+
+4. **Individual salaried/wage income**:
+   - Control Mean: $26.0k
+   - Treatment Effect: -$1.1k
+   - MPE: -0.10 to -0.12, Elasticity: -0.18
+
+5. **Self-employment income**:
+   - Control Mean: $5.9k
+   - Treatment Effect: -$0.1k
+   - MPE and Elasticity: Minimal effect
+
+6. **Income from gig work**:
+   - Control Mean: $0.4k
+   - Treatment Effect: -$0.1k
+   - MPE: 0.00 to -0.01, Elasticity: -1.65
+
+7. **Passive income**:
+   - No significant change noted.
+
+8. **Other income**:
+   - Control Mean: $4.7k
+   - Treatment Effect: -$0.1k
+   - MPE and Elasticity: Minimal effect
+
+9. **Government transfers**:
+   - Control Mean: $3.6k
+   - Treatment Effect: -$0.2k
+   - MPE: -0.01 to -0.02, Elasticity: -0.10
+
+### Notes:
+- Impacts and standard errors are italicized for secondary outcomes.
+- FDR-adjusted q-value in square brackets.
+- Significant levels indicated by asterisks: * (p < 0.1), ** (p < 0.05), *** (p < 0.01), † for comparable q-values.
+- Estimates are in terms of raw amounts.
+- MPE values reflect adjustments for potential misreporting.
+
+Overall, the data suggests that the guaranteed income transfer generally led to a decrease in both total individual and household income, with various degrees of impact on specific income categories such as salaried wages and gig work, albeit with some changes being statistically insignificant.

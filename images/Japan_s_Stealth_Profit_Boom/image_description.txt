@@ -1,0 +1,22 @@
+The image depicts a bar chart comparing the growth in median revenue and earnings per share (EPS) for the largest 500 American and Japanese stocks listed on the NYSE/NASDAQ and the TSE, respectively. This comparison excludes REITs and financials and is sourced from Compustat.
+
+### Key Points:
+
+**For the period 2000-2010:**
+- **Revenue Growth:**
+  - US stocks experienced a 2.4x increase.
+  - Japanese stocks saw a 1.8x increase.
+- **EPS Growth:**
+  - US stocks had a 1.7x increase.
+  - Japanese stocks had a 1.1x increase.
+
+**Since 2010:**
+- **Revenue Growth:**
+  - US stocks observed a 2.4x increase.
+  - Japanese stocks observed a 1.9x increase.
+- **EPS Growth:**
+  - US stocks observed a 3.2x increase.
+  - Japanese stocks observed a 5.8x increase.
+
+### Summary:
+The US stocks have consistently shown higher growth in revenue across both periods compared to Japanese stocks. However, since 2010, Japanese stocks have significantly outperformed US stocks in terms of EPS growth.

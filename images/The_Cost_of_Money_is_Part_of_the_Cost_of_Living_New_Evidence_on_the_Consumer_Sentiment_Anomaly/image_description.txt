@@ -1,0 +1,20 @@
+The image provided is a graph titled "Official and Estimated CPI using pre-1983 housing methods and including personal interest payments, 1972-2023." It presents a year-over-year change in the price index from April 1972 to November 2023. There are two lines plotted on the graph:
+
+1. **Official CPI (represented in blue):** This is the Consumer Price Index as officially reported by relevant authorities.
+2. **Estimated CPI using pre-1983 housing methods and including personal interest payments (represented in yellow):** This is the CPI modified to reflect the inclusion of personal interest payments and the methods used before 1983 for housing cost calculations.
+
+Key observations:
+- There were significant differences between the official CPI and the estimated CPI during inflationary periods, notably around early 1980 and between 2021 and 2023.
+- Both indices show similar trends generally but diverge notably during periods of high inflation.
+- The estimated CPI including pre-1983 methods and personal interest payments exhibits greater volatility and higher peaks during these periods compared to the official CPI.
+
+Notable peaks and troughs include:
+- An inflation peak around 1980, with both measures showing high year-over-year changes.
+- A period of relative stability and lower inflation rates from the mid-1980s to around 2020.
+- A significant spike in the estimated CPI in the early 2020s, peaking higher than the official CPI.
+
+The graph concludes with a decrease in both indices by November 2023, following a recent peak.
+
+**Note:** The footnotes clarify that personal interest payments used exclude mortgage payments and refer to the specific pre-1983 imputation procedures for further details.
+
+**Source:** Bureau of Economic Analysis and Authors' Calculations.

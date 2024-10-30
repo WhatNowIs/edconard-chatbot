@@ -1,0 +1,23 @@
+The image illustrates a bar chart presenting major felonies per 1 million rides on the New York City subway system, spanning from 1998 to the early months of 2023. The chart categorizes crimes into grand larceny, robbery, assault, burglary, rape, and murder, with different colors representing each category.
+
+Key Observations:
+1. **Crime Trends Over Time**: 
+   - There was a notable decline in major felonies from 1998 to around 2010.
+   - Post-2010, crime rates stabilized somewhat but experienced fluctuations.
+   - There is a slight uptick in crime rates around 2020.
+
+2. **Category Distribution**:
+   - Grand larceny (blue) consistently represents the highest proportion of crimes throughout the years.
+   - Robbery (black) was notably high in 1998 but decreased significantly by 2023.
+   - Assault (grey) shows a consistent but relatively lower presence compared to grand larceny.
+   - Burglary (red) and rape (purple) have minimal presence.
+   - Murder (dark grey) is the least frequent but present.
+
+3. **Recent Trends**:
+   - Since 2020, there is a noticeable increase in most categories, especially assault and grand larceny.
+   - Data for 2023 is only partial, covering statistics up to May 28.
+
+Sources:
+The data is sourced from the New York City Police Department and the Metropolitan Transportation Authority.
+
+In summary, while there was significant progress in reducing major felonies on the NYC subway system from 1998 to 2010, recent years have seen a resurgence of crime, particularly in grand larceny and assault categories.

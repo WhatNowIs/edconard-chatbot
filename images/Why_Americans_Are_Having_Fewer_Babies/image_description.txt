@@ -1,0 +1,9 @@
+The image shows a line graph illustrating the number of births and deaths in the U.S. from 1940 to 2022. Key data points and trends include:
+
+- In 1957, during the peak of the Baby Boom, the number of births reached 4.3 million.
+- The number of births in 2022 was 3.66 million, as noted in the provisional data.
+- The graph indicates overall trends of births rising to a peak during the Baby Boom and then showing fluctuations over the subsequent decades.
+- The number of deaths shows a consistent upward trend throughout the years.
+- The gap between the birth and death rates has been narrowing, particularly evident in the past few years.
+
+The data is sourced from the Centers for Disease Control and Prevention (CDC).

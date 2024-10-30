@@ -1,0 +1,20 @@
+The image presents two scatter plots illustrating the relationship between the net liquid wealth-to-income ratio and two different financial metrics: MPRD (Monthly Principal and Interest Payments to Debt) and MPC (Marginal Propensity to Consume).
+
+1. **MPRD (Monthly Principal and Interest Payments to Debt) Plot (Left Panel):**
+   - The MPRD declines as the net liquid wealth-to-income ratio increases.
+   - The scatter plot exhibits a negative linear trend, as indicated by the downward-sloping red line.
+   - The calculated slope is -4.507 with a statistical significance level of ** (p<0.05).
+
+2. **MPC (Marginal Propensity to Consume) Plot (Right Panel):**
+   - The MPC increases as the net liquid wealth-to-income ratio increases.
+   - The scatter plot shows a positive linear trend, as indicated by the upward-sloping red line.
+   - The calculated slope is 3.186 with a statistical significance level of ** (p<0.05).
+
+**Source:**
+The results are based on authors' calculations using the June special module of the New York Fed’s Survey of Consumer Expectations.
+
+**Notes:**
+- The left panel's slope is -4.507**, and the right panel's slope is 3.186**.
+- Statistical significance levels: * p<0.1, ** p<0.05, *** p<0.01.
+
+In summary, as the net liquid wealth-to-income ratio increases, the Monthly Principal and Interest Payments to Debt (MPRD) declines, while the Marginal Propensity to Consume (MPC) increases. This indicates that individuals with higher net liquid wealth relative to their income tend to allocate a smaller portion of their income to debt payments and a greater portion to consumption.

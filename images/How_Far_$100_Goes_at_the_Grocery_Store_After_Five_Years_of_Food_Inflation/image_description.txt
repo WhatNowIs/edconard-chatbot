@@ -1,0 +1,49 @@
+### Summary of Grocery Price Increase
+
+#### Total Bill Analysis:
+- **2019 Price:** $100.30
+- **Total Increase:** +$36.59
+- **New Price:** $136.89
+
+#### Itemized Price Increases:
+1. **Eggs:** +$1.48
+2. **Lettuce:** +$0.53
+3. **Carrots:** +$0.29
+4. **Broccoli:** +$0.45
+5. **Oat Milk:** +$0.61
+6. **Detergent:** +$0.52
+7. **Bananas:** +$0.06
+8. **Grapes:** +$0.73
+9. **Yogurt:** +$0.94
+10. **Frozen Meal:** +$0.99
+11. **Butter:** +$0.96
+12. **Cheese:** +$0.42
+13. **Chips:** +$0.97
+14. **Frozen Pizza:** +$1.22
+15. **Frozen Vegetables:** +$2.40
+16. **Chicken:** +$1.38
+17. **Ice Cream:** +$1.12
+18. **Soda:** +$1.04
+19. **Milk:** +$1.49
+20. **Coffee:** +$2.30
+21. **Toilet Paper:** +$2.67
+22. **Bacon:** +$1.09
+23. **Cereal:** +$1.14
+24. **Loaf of Bread:** +$0.84
+25. **Granola Bars:** +$1.30
+26. **Flour:** +$1.31
+27. **Sugar:** +$1.30
+28. **Water:** +$1.02
+29. **Crackers:** +$1.08
+30. **Juice:** +$1.56
+31. **Dish Soap:** +$1.33
+32. **Cooking Oil:** +$2.83
+
+### Key Points:
+- The average grocery bill has increased by over 36% from 2019 to 2024.
+- Items like coffee, frozen vegetables, and cooking oil saw substantial price increases, contributing significantly to the overall rise.
+- Most items have seen an increase, with minimal exceptions showing a very slight price increment such as bananas.
+- The detailed note at the bottom clarifies that these prices are calculated based on the average unit price for the 52 weeks ending March 23, compared with the same period ending March 28, 2020, and it does not consider package size rounding variances. 
+
+### Source:
+- NielsenIQ

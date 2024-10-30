@@ -1,0 +1,17 @@
+The chart illustrates the changes in Real GDP, Nominal GDP, and Unemployment Rate during various recession periods from 1960-2023. The data is compiled from BEA, Haver Analytics, and insights from the Apollo Chief Economist.
+
+### Key Insights:
+
+1. **Crash Landings**
+   - **2020 and 2008-2009**: These periods experienced significant declines in both Real GDP and Nominal GDP with severe increases in unemployment rates, indicating "Crash Landings."
+
+2. **Hard Landings**
+   - **1974-1975, 1981-1982, and 1980**: These recessions saw sharp declines in Real GDP and substantial increases in the unemployment rate, depicting "Hard Landings."
+
+3. **Soft Landings**
+   - **1990-1991, 1970-1971, 1960-1961, and 2001-2002**: These periods featured minimal declines or modest declines in GDP and relatively smaller increases in unemployment rate, indicating "Soft Landings."
+
+4. **2023 Projections**
+   - The consensus predicts that 2023 will be a "Soft Landing," with expectations of minor changes in Real GDP, Nominal GDP, and the unemployment rate.
+
+Overall, the chart categorizes past recessions into "Crash Landings," "Hard Landings," and "Soft Landings" based on the severity of GDP decline and unemployment rate increase, with a current optimistic view for a mild outcome in 2023.

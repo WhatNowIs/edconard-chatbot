@@ -1,0 +1,16 @@
+The image shows a graph titled "Sea surface temperatures start 2024 at record highs." It displays annual sea surface temperature (SST) data from 60°S to 60°N by decade, measured in degrees Celsius (°C).
+
+Key points:
+1. **Decadal SST Trends**:
+   - The decades from the 1980s to the 2020s are displayed.
+   - There is a noticeable upward trend in SST over the decades, with each decade showing progressively higher temperatures.
+
+2. **Record High in 2024**:
+   - The year 2024 is marked as starting with record-high sea surface temperatures.
+   - An absolute record was reached on February 4, 2024, with an SST of 21.12°C, surpassing the previous high set in August of the previous year, 2023.
+
+3. **Monthly Data**:
+   - Temperature data is plotted for each month from January (J) to December (D). 
+   - The temperature ranges for each decade show more fluctuation and higher peaks in recent years compared to the earlier decades.
+
+The source of the data is Climate Reanalyzer, and the image was provided by FT. The increasing trend in sea surface temperatures highlights the ongoing impact of climate change.

@@ -1,0 +1,16 @@
+The image is a graph illustrating the "Lifetime Earnings Distribution" from the ages of 25 to 55. It charts the average annual earnings (in 2005 dollars, using a logarithmic scale) across three different earnings percentiles: the Top 2% of earners, the Median, and the Bottom 2% of earners. Here are the key points:
+
+1. **Top 2% of Earners**:
+   - Their earnings start at a high level at age 25 and show a steep increase.
+   - Earnings peak around age 50 at approximately $704,000 and then slightly decline.
+
+2. **Median Earners**:
+   - Their earnings begin more modestly and exhibit a steady increase through early career years.
+   - The growth rate levels off around the mid-40s, with a slight decline towards the early 50s.
+   - Peak earnings occur approximately between 45 and 50 years, reaching just over $88,000.
+
+3. **Bottom 2% of Earners**:
+    - Their earnings are consistently low and relatively flat throughout their careers.
+    - There is minimal growth over time, with earnings generally remaining below $22,000.
+  
+This data is sourced from the Federal Reserve Bank of St. Louis, based on research by Karahan, Ozkan, and Song from 2023, and it reflects the disparities in lifetime earnings among different income groups. Overall, the graph demonstrates significant lifetime income disparities, with the top earners experiencing substantial growth in earnings, while the bottom earners see little advancement.

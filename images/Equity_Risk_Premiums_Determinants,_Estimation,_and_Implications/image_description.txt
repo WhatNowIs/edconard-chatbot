@@ -1,0 +1,28 @@
+This chart provides an analysis of the S&P 500, the Implied Equity Risk Premium (ERP), and the Ten-year Treasury Bond Rate (T. Bond Rate) from January 2022 to March 2024. The key points are summarized below:
+
+1. **Definitions**:
+   - **ERP (Implied Equity Risk Premium)**: The extra return expected for investing in the S&P 500 compared to the risk-free return on ten-year Treasury Bonds.
+   - **T. Bond Rate**: The yield on ten-year Treasury Bonds.
+   - **Expected Return**: Sum of the T. Bond Rate and the ERP.
+
+2. **Trends**:
+   - **At the start of 2022**: 
+     - T. Bond Rate: 1.51%
+     - ERP: 4.24%
+     - Expected Return: 5.75%
+   - **At the start of 2023**:
+     - T. Bond Rate: 3.88%
+     - ERP: 5.94%
+     - Expected Return: 9.82%.
+   - **As of March 1, 2024**:
+     - T. Bond Rate: 4.27%
+     - ERP: 4.33%
+     - Expected Return: 8.60%
+
+3. **Visual Composition**:
+   - The chart uses a bar graph: red bars representing ERP and green bars representing the T. Bond Rate.
+   - A black line graph shows the S&P 500 trend over the same period.
+   - The Y-axis on the left indicates percentages for T. Bond Rate, ERP, and Expected Return.
+   - The Y-axis on the right aligns with the S&P 500 index values.
+
+In summary, the chart depicts an overall upward trend in the T. Bond Rate from 2022 to 2024, a fluctuating ERP, and an increase in the overall Expected Return. The S&P 500 shows a gradually rising trend, with some fluctuations.

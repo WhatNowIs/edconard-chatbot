@@ -1,0 +1,8 @@
+The graph displays the change in the employment-population ratio for individuals aged 25-54, measured in percentage points, from February 2020 to April 2023. Here are the key points:
+
+- The data begins in February 2020, serving as the baseline (0) percentage point difference.
+- There is a steep decline in the employment-population ratio from February to April 2020, reaching a low of around -11 percentage points by April 2020.
+- After the sharp drop, there is a gradual and steady recovery in the employment-population ratio from mid-2020 onward.
+- By April 2023, the employment-population ratio has returned to around 0, indicating it has recovered to the same level as it was in February 2020.
+
+The source is based on calculations from the Bureau of Labor Statistics by Macrobond. This signifies a significant initial impact likely due to the COVID-19 pandemic, with a recovery trend over the course of three years.

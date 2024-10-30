@@ -1,0 +1,28 @@
+This image from The Economist provides detailed information about the European Union (EU) and Schengen areas, border fencing, and irregular border crossings in 2023.
+
+### **Key Points:**
+
+1. **EU and Schengen Area:**
+   - **EU Members:** Represented in dark blue.
+   - **Non-EU but Schengen Area:** Represented in light blue.
+   - **Note:** Iceland, Norway, Switzerland, and Liechtenstein are part of the Schengen area despite not being EU members.
+   - Croatia is noted to be joining the Schengen area on March 24th, 2024.
+   - EU members that are not part of the Schengen area are marked with an asterisk.
+
+2. **European Borders with Fenced Sections:**
+   - **Built/Planned Fences:** Marked in red lines.
+   - **Being Dismantled Fences:** Marked in black lines.
+   - Fences are prominently noted in the eastern and southern borders, indicating measures to control immigration and border security with neighboring non-EU countries.
+
+3. **Irregular Border Crossings in 2023:**
+   - Represented by circles of varying sizes based on the number of crossings.
+   - **Highlighted Routes:**
+     - Western Mediterranean
+     - Central Mediterranean
+     - Western Balkans
+     - Eastern Land Border
+     - Exits towards Britain
+   - Proximity to problem areas (Mediterranean region) and less so around northern Europe.
+
+### **Summary:**
+The image depicts the geopolitical landscape of Europe concerning the EU and Schengen areas and the current status of border fencing. Several irregular border crossings in 2023 are highlighted, indicating significant crossing points primarily in the Mediterranean and Balkan regions. Additionally, the map shows where border fences have been built or are planned, underscoring efforts to manage migration and enhance security.

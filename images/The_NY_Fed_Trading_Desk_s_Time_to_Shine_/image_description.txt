@@ -1,0 +1,23 @@
+The image presents a chart titled "There When You Need Them?" illustrating the net positions of broker-dealers in U.S. Treasury securities from 1997 to 2022 in terms of USD billions. 
+
+### Key Points:
+
+- **Time Period Covered:** 1997 to 2022.
+- **Data Representation:** Both weekly (blue line) from the New York Federal Reserve Bank (NYFRB) and quarterly (red line) from the Federal Reserve Board's Z.1 report (FRB Z.1).
+- **Pre-Pandemic Trends:** Broker-dealers increased their net holdings of Treasury debt before the pandemic.
+- **Pandemic Impact:** There was a notable lack of additional purchases of Treasury bills, notes, or bonds when yields jumped in March 2020.
+- **Post-2022 Activity:** Increased activity from broker-dealers since the Federal Reserve began hiking interest rates in 2022.
+
+### Observations:
+- **1997-2008:** The net positions fluctuated, often dipping below zero, indicating periods where broker-dealers' liabilities exceeded their assets in Treasury securities.
+- **2009-2012:** There is a marked increase in net positions following the financial crisis, peaking around 2012.
+- **2013-2015:** A gradual decrease with some regular fluctuations.
+- **2020:** During the onset of the pandemic, there's noticeable inactivity despite rising yields.
+- **2022:** A significant upward trend corresponding with the Federal Reserve's rate hikes.
+
+### Source:
+- Federal Reserve Board
+- Federal Reserve Bank of New York
+- Calculations by Matthew Klein
+
+The chart showcases the adaptation and shifts in broker-dealers' strategies in correlation with economic events, particularly highlighting the response to the financial crisis, the pandemic, and Fed's monetary policies.

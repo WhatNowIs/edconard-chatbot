@@ -1,0 +1,18 @@
+The chart shows the distribution of China's goods trade balance over time, specifically from 2016 to 2024. The data is presented in terms of a 12-month moving average, adjusted seasonally (12mma, $bn SA).
+
+The chart is divided into three main components:
+1. Export proceeds not repatriated (orange area)
+2. Repatriated RMB and onshore FX accumulation (gray area)
+3. Net FX sales by goods traders (blue area)
+
+Additionally, the black line represents the goods trade balance on a customs basis.
+
+Key takeaways:
+- From 2016 to 2018, the trade balance remained relatively stable, with minimal fluctuations.
+- Around 2018, the proportion of export proceeds not repatriated started increasing gradually.
+- From 2020 onwards, there was a notable rise in export proceeds not repatriated, while repatriated RMB and onshore FX accumulation as well as net FX sales by goods traders also showed an upward trend.
+- The goods trade balance (black line) demonstrated an overall increasing trend from 2020 to 2022 but experienced some fluctuations in subsequent years.
+
+The note at the bottom clarifies that the imports, exports, FX purchases, and FX sales by goods traders were seasonally adjusted individually. January and February data were calculated by averaging to minimize Lunar New Year distortions. The average for January-February 2020 is considered as December 2019 and March 2020.
+
+Source: Exante Data, Macrobond

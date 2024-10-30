@@ -1,0 +1,20 @@
+The image provides data on global public debt as a percentage of GDP for the years 2019, 2020, and 2021. According to the image, despite a drop, the debt-to-GDP ratios remain above pre-pandemic levels. Here are the key points:
+
+1. **Global Debt Trends**:
+   - World: The world's debt-to-GDP ratio increased from 2019 to 2020 and decreased slightly in 2021 but remained higher than in 2019.
+   - Advanced Economies (AEs): Display a similar trend with a significant rise from 2019 to 2020 and a slight decline in 2021.
+   - Emerging Markets (EMs): Showed a smaller increase compared to AEs, but the rising trend from 2019 to 2020 is observable, followed by a slight drop in 2021.
+   - LIDCs (Low-Income Developing Countries): The rise in debt-to-GDP is noted from 2019 to 2020, and a slight decline in 2021, but it remained elevated.
+   - US: The debt-to-GDP ratio saw a sharp increase from 2019 to 2020, followed by a slight drop in 2021 but stayed notably high.
+   - China: Exhibited an increase from 2019 to 2020 and a minor drop in 2021.
+   
+2. **Debt Ratios of Key Economic Categories**:
+   - AEs have the highest debt-to-GDP ratios compared to other categories.
+   - EMs and LIDCs have lower ratios in comparison to AEs but follow a similar upward trend.
+   - The US shows one of the most significant increases from 2019 to 2020, highlighting its high debt levels.
+
+3. **Conclusion**:
+   - The pandemic led to a marked increase in public debt across various economic categories worldwide.
+   - While there has been some reduction in 2021, the debt levels remain above those of 2019, signaling the persistent economic impact of the pandemic.
+
+Source: International Monetary Fund (IMF). The ratios of debt to GDP are weighted by each nation's GDP in dollars. AEs = Advanced Economies; EMs = Emerging Markets; LIDCs = Low-Income Developing Countries.

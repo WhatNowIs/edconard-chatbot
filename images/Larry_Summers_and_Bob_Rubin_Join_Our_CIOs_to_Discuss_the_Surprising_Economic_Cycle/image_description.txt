@@ -1,0 +1,23 @@
+The image shows a line graph of US Non-Financial Debt as a percentage of GDP (12m Avg) from 1920 to around 2020. The debt is divided into two categories: Non-Financial Private (represented in blue) and Government (represented in red).
+
+Key points:
+
+1. **Historical Trends**:
+   - **Non-Financial Private Debt**:
+     - Saw an increase during the late 1920s, peaking around 1930.
+     - Dropped significantly during the early 1930s (Great Depression).
+     - Gradually increased from the late 1940s, with notable peaks around 2008 (Global Financial Crisis) and 2020.
+   - **Government Debt**:
+     - Was relatively stable until World War II, after which it spiked drastically around the mid-1940s.
+     - After a significant decline post-WWII, it remained more stable but started gradually increasing from around 1980.
+     - Experienced a sharp increase around 2020.
+
+2. **Recent Trends**:
+   - Both Non-Financial Private and Government debt saw marked increases during the recent economic crises, particularly around 2008 and 2020.
+   - Government debt saw a sharp rise just before 2020, indicating increased borrowing, likely due to economic measures during the COVID-19 pandemic.
+
+3. **Current Levels**:
+   - By the end of the graph period, Non-Financial Private Debt is above 140% of GDP.
+   - Government Debt is just below 130% of GDP.
+
+In summary, US Non-Financial Debt (both private and government) has seen significant fluctuations over the past century, with notable increases during major economic crises. Recent trends indicate high levels of debt, particularly around 2020, due to extraordinary economic circumstances like the COVID-19 pandemic.

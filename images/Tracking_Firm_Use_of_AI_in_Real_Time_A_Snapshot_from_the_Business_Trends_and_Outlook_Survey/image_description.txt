@@ -1,0 +1,11 @@
+The image presents a graph titled "Figure 1. Trends in Current and Expected AI Use", drawing from data obtained through the Business Trends and Outlook Survey (BTOS). The graph tracks the share of U.S. firms and employment currently using or expecting to use AI in producing goods or services from September 10, 2023, to February 11, 2024.
+
+Key Points:
+- **Share of Firms Using AI**: Indicated by solid lines. The current AI use among firms shows a gradual increase, starting just above 4% and rising towards 6% by February 2024. Expected AI use is higher, close to 6% at the start and approaching 10% by the end of the period.
+- **Share of Employment Related to AI Use**: Denoted by dashed lines. Similarly, the share of employment in firms using AI starts below 6% and increases to approximately 8%. The expected AI use shows a steeper rise, starting around 8% and crossing 12% by February 2024.
+  
+The trend lines indicate that both the number of firms adopting AI and the employment in AI-related roles are expected to increase over the period surveyed. 
+
+The notes further explain that "Current AI Use" refers to businesses affirming the use of AI within the two-week period ending at the indicated date. "Expected AI Use" reflects businesses anticipating using AI within the six months following the given date. The firm-weighted shares represent the proportion of U.S. firms using or planning to use AI, while employment-weighted shares reflect the proportion of employees in firms engaged with AI technology.
+
+In summary, the data suggests a steady adoption and expected growth of AI utilization within firms and a corresponding increase in AI-related employment in the U.S. over the specified timeframe.

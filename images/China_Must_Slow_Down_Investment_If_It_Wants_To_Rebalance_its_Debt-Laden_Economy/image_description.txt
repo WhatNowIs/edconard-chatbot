@@ -1,0 +1,19 @@
+The image is a line graph showing China’s debt to GDP ratio from December 1995 to June 2021, broken down into three categories: Household (black line), Non-financial corporations (dark gray line), and General government (light gray line).
+
+### Key Points:
+1. **Household Debt**:
+   - There is a gradual increase in household debt to GDP from 1995 until around 2011.
+   - After 2011, the household debt to GDP ratio increases sharply and continues this trend up to 2021.
+   - By June 2021, it is well above the 50% mark.
+
+2. **Non-financial Corporations Debt**:
+   - This has been the highest among the three categories throughout the period.
+   - It shows a steady increase from 1995, reaching a peak around 2016-2017, fluctuating slightly afterward.
+   - By June 2021, it is slightly below 150% of GDP.
+
+3. **General Government Debt**:
+   - The general government debt remains relatively stable and low compared to the other two categories until around 2008.
+   - A notable increase starts around the 2008 financial crisis, reflecting government response to the crisis, and continues to rise steadily thereafter.
+   - By June 2021, it approaches the 75% mark.
+
+The data and graph are sourced from the National Institution for Finance and Development, illustrated by SCMP. This comprehensive illustration underscores the trend in China's increasing debt levels as a percentage of GDP across households, non-financial corporations, and governments from 1995 to 2021.

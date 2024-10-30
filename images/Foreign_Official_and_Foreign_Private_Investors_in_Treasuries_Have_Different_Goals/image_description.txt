@@ -1,0 +1,15 @@
+The chart titled "Private foreign sector now holding more US Treasuries than official foreign sector" provides a comparative analysis of the amount of US Treasury securities held by foreign official institutions and private foreigners from 1980 to 2023. 
+
+Key points:
+
+1. **Timeframe and Data**: The analysis spans from 1980 to 2023, showing the level of US Treasury securities held by the two sectors in $ billions.
+   
+2. **Two Series**:
+   - **Foreign Official Institutions (Blue Line)**: Treasury securities held by foreign official institutions have shown a steady increase from 1980, peaking around 2012 and remaining relatively stable before experiencing a slight decrease post-2018.
+   - **Private Foreigners (Green Line)**: Treasury securities held by private foreigners have also shown an incline starting in the early 2000s, noticeably increasing post-2008. This trend continues upward and surpasses holdings by foreign official institutions around 2023.
+
+3. **Crossing Point**: Around 2023, the holdings by private foreigners surpass those held by foreign official institutions for the first time within the observed period.
+
+4. **Recessions**: Shaded gray areas represent periods of economic recession. Notable recessions appear around 1981, 1990, 2001, 2008, and 2020.
+
+This chart highlights a significant shift in the ownership of US Treasury securities, with private foreign sector holdings now exceeding those of the official foreign sector. This trend could reflect changes in global financial dynamics, investment strategies, and economic conditions.

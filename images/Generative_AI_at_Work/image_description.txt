@@ -1,0 +1,9 @@
+The image displays a density plot titled "A. Resolutions Per Hour" comparing the resolution rates of three different conditions: Pre-AI, Post-AI, and Never-AI.
+
+- **Pre-AI (red)**: This distribution peaks around 2.5 resolutions per hour and has a skew towards the left, indicating that fewer resolutions per hour generally occur in this condition.
+  
+- **Post-AI (blue)**: This distribution peaks around 3 resolutions per hour, showing a shift to higher resolutions per hour compared to Pre-AI. It has a broader distribution indicating more variability in resolution rates.
+
+- **Never-AI (green)**: This distribution peaks around 2 resolutions per hour and has the highest density at this point, indicating that resolutions happen more consistently around this rate in this condition.
+
+In summary, Post-AI conditions show a noticeable increase in resolutions per hour compared to Pre-AI and Never-AI conditions, indicating an improvement in efficiency after AI implementation.

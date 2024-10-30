@@ -1,0 +1,16 @@
+The chart titled "Two Views of Rent Inflation" compares the monthly change in rent inflation, seasonally adjusted at annual rates, between the Consumer Price Index (CPI) shelter component and the Zillow Observed Rent Index over the period from 2018 to 2022.
+
+Here are key points extracted from the chart:
+
+1. **Time Frame**: The data spans from early 2018 to mid-2022.
+2. **Data Sources**:
+   - The CPI shelter component data is sourced from the US Bureau of Labor Statistics.
+   - The Zillow Observed Rent Index data is sourced from Zillow Group.
+3. **Trends**:
+   - The CPI shelter component (blue line) shows a relatively stable trend with minor fluctuations until early 2021, after which there is a slight increase, peaking around mid-2022.
+   - The Zillow Observed Rent Index (black line) demonstrates a more dramatic change, particularly from 2020 onward. There is a significant increase beginning around late 2020, peaking sharply in mid-2021 before a decline that starts around early 2022.
+4. **Notable Observations**:
+   - The Zillow Observed Rent Index sees a much sharper increase in rent inflation compared to the CPI shelter component between late 2020 and mid-2021.
+   - By mid-2022, both data sets show a downward trend, with Zillow's data indicating a reduction in rent inflation after a sharp increase.
+
+The graph highlights the differences in how rent inflation is measured and perceived by these two different indices, showing that while CPI data indicates a more steady increase, Zillow's data reflects more volatility in rent changes, particularly during the pandemic period.

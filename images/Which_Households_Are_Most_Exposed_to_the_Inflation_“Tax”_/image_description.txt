@@ -1,0 +1,22 @@
+The image is a heat map titled "Share of Net Wealth Held in Treasuries in 2019, by Age Group". It visually represents the proportion of net wealth households hold in treasuries based on both age group and quintiles of net worth. Here are the key takeaways:
+
+1. **Age Groups and Quintiles**:
+   - The age groups are divided into: 29 and Under, 30 to 44, 45 to 54, 55 to 64, and 65 and Older.
+   - The net wealth quintiles range from 1 (lowest net worth) to 5 (highest net worth).
+
+2. **Color Coding**:
+   - The heat map uses shades of red to signify the share of net wealth held in treasuries. Darker shades indicate a higher share, while lighter shades indicate a lower share.
+   - The legend indicates a range from 0% (white) to 6% (dark red).
+
+3. **Observations**:
+   - Older age groups, particularly '65 and Older', generally hold a higher share of their net wealth in treasuries as evidenced by the darker red shades.
+   - Among the '65 and Older' group, households in the 5th quintile have the highest share of net wealth in treasuries.
+   - Younger age groups, such as '29 and Under', tend to hold a lower share of their net wealth in treasuries, indicated by the lighter shades.
+   - The disparity in treasury holdings is more pronounced in the older age groups compared to the younger ones.
+   - Households in the highest net worth quintile (5th quintile) across all age groups tend to hold a larger share of their wealth in treasuries.
+
+4. **Sources and Notes**:
+   - Data is sourced from the 2019 Survey of Consumer Finances, Flow of Funds, and authors' calculations by the Federal Reserve Bank of St. Louis.
+   - Notes clarify that the map shows the share of average Treasury holdings divided by average net wealth for each combination of age group and net worth quintile.
+
+In summary, this heat map provides a detailed visualization of how different age groups and net worth quintiles allocate their wealth in treasuries, illustrating that older, wealthier households tend to hold a larger share of their net wealth in treasuries.

@@ -1,0 +1,26 @@
+The image consists of two line graphs comparing the top 1% shares of national income in the United States from 1960 to approximately 2020, using different data series.
+
+### A. Pre-tax National Income: Top 1% Share
+- This graph shows the top 1% share of pre-tax national income.
+- There are three data series: PSZ (Piketty, Saez, and Zucman), Auten-Splinter, and Piketty-Saez (with capital gains).
+- The PSZ series shows a sharper increase starting in the 1980s and peaking around 2012, reaching approximately 20%.
+- The Auten-Splinter series shows a more moderated increase, peaking around 15%.
+- The Piketty-Saez line (dotted) is also included, similar to PSZ but slightly lower.
+
+### B. After-tax National Income: Top 1% Share
+- This graph shows the top 1% share of after-tax national income using the same three data series.
+- The PSZ series indicates a higher increase reaching a peak of around 16%.
+- The Auten-Splinter series shows a lower share, peaking at about 10% in recent years but showing a flattening trend.
+- The trends between pre-tax and after-tax income show that the top 1% still holds a significant share after taxes but less than their pre-tax share.
+
+### Notes:
+- Adjustments for the Auten-Splinter series for pre-tax and after-tax income are detailed in related tables and appendices.
+- The Piketty-Saez series excludes capital gains to draw better comparisons with national income.
+
+### Sources:
+- Authors' calculations.
+- Piketty, Saez, and Zucman (2018, with updates as of October 2021).
+- Piketty and Saez (2003, with updates).
+
+### Summary:
+The graphs provide a comparative analysis of the top 1% share of national income, both pre-tax and after-tax, using different methodologies (PSZ and Auten-Splinter series). The PSZ series shows a higher share for the top 1% compared to the Auten-Splinter series, particularly post-1980. This disparity persists in both pre-tax and after-tax comparisons, indicating differential impacts of tax policies and adjustments on income distribution among the top earners in the United States.

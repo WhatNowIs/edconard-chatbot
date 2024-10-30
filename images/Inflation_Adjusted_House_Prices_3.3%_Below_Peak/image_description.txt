@@ -1,0 +1,23 @@
+This graph titled "Real House Prices" from CalculatedRiskBlog.com depicts the Case-Shiller Home Price Indices from January 1977 to January 2021. The indices are adjusted using Consumer Price Index (CPI) excluding shelter.
+
+Here are the key points:
+
+1. **Indices Tracked**:
+   - **Case-Shiller National (Monthly, SA)**: Represented by a blue line.
+   - **Case-Shiller Comp 20 (SA)**: Represented by a red line.
+
+2. **House Price Trends**:
+   - From 1977 to 2000, real house prices saw a gradual increase with minor fluctuations.
+   - Around 2001 to 2006, house prices surged rapidly, peaking in 2006.
+   - A sharp decline followed from 2006 to approximately 2012, correlating with the housing market crash and Great Recession.
+   - From 2012 onwards, real house prices have steadily increased again, reaching a new peak around 2020-2021.
+
+3. **Recessions**:
+   - The graph highlights periods of recession in light blue vertical bands. Recessions generally coincide with dips or slower rises in the house price indices (e.g., early 1980s, early 1990s, late 2000s).
+
+4. **Peaks and Troughs**:
+   - The major peak before the 2008 financial crisis occurred around 2006.
+   - The significant trough following the housing market crash was around 2012.
+   - Another peak appears to be near the end of the data range in 2021.
+
+The graph provides a comprehensive visual representation of real house price trends over several decades, illustrating their correlation with economic cycles and significant macroeconomic events like recessions.

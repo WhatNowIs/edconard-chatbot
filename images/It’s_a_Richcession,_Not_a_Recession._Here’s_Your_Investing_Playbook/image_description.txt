@@ -1,0 +1,21 @@
+The provided graph, sourced from the Federal Reserve Bank of New York, depicts households' expected change in spending over the next year, differentiated by income levels. The three income brackets represented are:
+
+1. Under $50,000 (darkest line)
+2. $50,000 to $100,000 (medium line)
+3. Over $100,000 (lightest line)
+
+Key observations from the data:
+
+1. **Overall Trend**:
+   - All income groups show an overall increasing trend in the expected change in spending from 2019 to 2023, with fluctuations over the period.
+
+2. **Detailed Insights by Income Levels**:
+   - **Under $50,000**: This group experienced the most volatility across the period. Starting at approximately 4%, expectations surged past 8% in 2022 before dropping and then stabilizing slightly above 6% in 2023.
+   - **$50,000 to $100,000**: This group had a steadier trend, generally mirroring the overall pattern of gradual increase with fewer sharp fluctuations compared to the under $50,000 group. The expected change rose to around 6-7% by early 2023.
+   - **Over $100,000**: This group consistently showed the lowest expected change in spending. Starting from just above 2%, it peaked around 6% in mid-2022 and ended slightly lower than the other groups in 2023.
+
+3. **Comparative Analysis**:
+   - In mid-2022, the under $50,000 group had the highest peak in expected spending change, potentially indicating higher sensitivity to economic conditions.
+   - The over $100,000 group displayed smaller fluctuations and generally lower expectations for changes in spending over the observed period, suggesting a more conservative outlook compared to lower income groups.
+
+In summary, the graph illustrates variations in households' spending expectations over time, with noticeable differences among income levels, reflecting varying sensitivities to economic trends and forecasts.

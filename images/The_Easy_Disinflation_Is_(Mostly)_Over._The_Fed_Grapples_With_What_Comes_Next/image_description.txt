@@ -1,0 +1,7 @@
+The chart, titled "New Normal?", examines the growth of hourly pay for nonsupervisory workers in the private sector from 1972 to 2023. During the decades between the end of the Great Inflation and the pandemic, hourly pay consistently grew at about 3% annually. This growth rate saw substantial acceleration during the reopening boom post-pandemic, with notable increases especially at the lower end of the pay scale. Although much of this heightened wage growth has subsided, wages are still growing about 2 percentage points faster than before the pandemic.
+
+The two lines on the chart represent:
+- **Blue Line (Leisure, hospitality, and retail)**: These sectors experienced sharp wage growth surges, especially evident around the pandemic years.
+- **Red Line (All other sectors)**: Other sectors show more stabilized trends but have also seen elevated growth rates compared to the pre-pandemic period average.
+
+The dotted line marks the average growth rate from 1984 to 2019. Data points from the pandemic months are excluded for clearer readability. The data sourced from the Bureau of Labor Statistics and calculations by Matthew Klein provide the basis for these insights.

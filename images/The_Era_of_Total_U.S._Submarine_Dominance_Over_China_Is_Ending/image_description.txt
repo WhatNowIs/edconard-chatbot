@@ -1,0 +1,18 @@
+This image compares the submarine fleets of the United States and China, categorizing them by type and propulsion method (nuclear or diesel-electric).
+
+**U.S. Submarine Fleet:**
+- Total: 67 submarines
+  - Ballistic missile: 14 (all nuclear)
+  - Attack: 50 (all nuclear)
+  - Guided missile: 3 (all nuclear)
+
+**Chinese Submarine Fleet:**
+- Total: 60 submarines
+  - Ballistic missile: 7 (6 nuclear, 1 diesel-electric)
+  - Attack: 52 (6 nuclear, 46 diesel-electric)
+  - Guided missile: 1 (diesel-electric)
+
+**Key Points:**
+- The U.S. submarine fleet is entirely nuclear-powered and includes a larger number of ballistic missile and guided missile submarines compared to China.
+- China's submarine fleet is more diverse in terms of propulsion, including both nuclear and diesel-electric submarines.
+- The majority of China's submarines are attack submarines, with a significant portion being diesel-electric.

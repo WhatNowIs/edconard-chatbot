@@ -1,0 +1,21 @@
+The chart titled "Exhibit 2: Alternative Growth Indicators Aren't As Strong As GDP" compares US Real GDP Growth (quarterly annual rate) with US Real GDI Growth (quarterly annual rate) and the US Current Activity Indicator (monthly annual rate) from January 2022 to January 2024.
+
+Key observations:
+1. **US Real GDP Growth** (blue line, left axis):
+   - Dropped sharply to around -3% in mid-2022.
+   - Then a significant rebound to around 4% by mid-2023.
+   - Declines later in 2023 but remains above 2% by January 2024.
+
+2. **US Real GDI Growth** (red line, left axis):
+   - Followed a similar but more moderated trend compared to GDP.
+   - Dips below zero in 2022 and shows a notable rise in mid-2023, hitting around 2%.
+   - Stabilizes around 1.5% by January 2024.
+
+3. **US Current Activity Indicator** (gray line, right axis):
+   - Initially decreases in early 2022, hovering around negative values.
+   - Experiences slight fluctuations around the zero line for the period observed.
+   - Remains steady around the 0% mark by January 2024.
+
+Additionally, the chart includes a benchmark indicator, "GS Potential Est. = 1.75%", highlighted by a dashed horizontal line, to mark the estimated potential growth rate by Goldman Sachs.
+
+Overall, the alternative growth indicators (GDI and Current Activity Indicator) show weaker performance compared to the Real GDP Growth, which exhibits more volatility and higher peaks.

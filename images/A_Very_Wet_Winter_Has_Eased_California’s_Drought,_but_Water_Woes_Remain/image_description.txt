@@ -1,0 +1,8 @@
+The chart titled "Record Snowpack Across California" illustrates the average snowpack levels statewide, showcasing a significant increase for the current year compared to previous years since 2004. Key insights include:
+
+1. **Current Year Peak**: The snowpack level this year has peaked at approximately 50 inches, the highest recorded in decades.
+2. **Comparison with Previous Years**: The thick black line representing this year's snowpack levels is noticeably higher than all the previous years depicted in faint lines.
+3. **Trend Over the Past Three Years**: The last three years, highlighted by darker green lines, show markedly lower snowpack levels, generally struggling to reach 15 inches.
+4. **Annual Cycle**: Snowpack levels build up from October, gradually rising to peak in March or April before declining.
+
+The data consolidates information from the California Department of Water Resources and shows that the annual lines use water years running from October through the end of September the following year. The data illustrated in the chart runs through March 12, 2023. This year's exceptional snowpack level indicates unusual weather conditions and potentially significant impacts on water resources and management in California.

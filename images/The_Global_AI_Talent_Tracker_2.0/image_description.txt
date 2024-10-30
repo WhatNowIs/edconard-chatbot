@@ -1,0 +1,23 @@
+The image presents data on the leading countries where the most elite AI researchers work, comparing the years 2019 and 2022. "Most elite AI researchers" are defined as authors of papers selected for Oral Presentations at NeurIPS, with an acceptance rate of 1.8% in 2022.
+
+Key points from the image:
+
+**2019:**
+- USA: 65%
+- Canada: 10%
+- France: 8%
+- UK: 6%
+- Netherlands: 3%
+- Others: 8%
+
+**2022:**
+- USA: 57%
+- China: 12%
+- UK: 8%
+- Germany: 4%
+- France: 4%
+- Canada: 3%
+- Others: 12%
+
+**Summary:**
+Between 2019 and 2022, the USA saw a decrease in the proportion of elite AI researchers from 65% to 57%. China made significant strides, growing from a non-listed proportion in 2019 to 12% in 2022. The UK has remained consistent at around 6-8%, while Canada fell from 10% to 3%. Germany, not listed separately in 2019, accounted for 4% in 2022. The category "Others" grew from 8% to 12%, indicating a diversification in the countries contributing elite AI researchers.

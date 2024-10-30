@@ -1,0 +1,26 @@
+The chart titled "Independent Contract Work on Main Job as Share of All Work Arrangements under Different Definitions, Gallup Contract Work Module and May 2017 Contingent Worker Supplement" presents a comparison between Gallup's data and the Contingent Worker Supplement (CWS) data regarding independent contract work.
+
+The bar graph illustrates the following comparisons:
+
+1. **Unadjusted IC (Independent Contract)**
+   - Gallup: Approximately 14.5%
+   - CWS: Approximately 6.7%
+   - Difference: 7.8 percentage points (pp)
+
+2. **IC minus miscoded employees**
+   - Gallup: Approximately 8.1%
+   - CWS: Approximately 5.9%
+   - Difference: 2.2 pp
+
+3. **IC working 15+ hours/week**
+   - Gallup: Approximately 14.0%
+   - CWS: Approximately 7.6%
+   - Difference: 6.4 pp
+
+4. **IC with both adjustments**
+   - Gallup: Approximately 8.2%
+   - CWS: Approximately 6.8%
+   - Difference: 1.4 pp
+
+Summary:
+The chart reveals that Gallup reports a higher share of independent contract work as a portion of all work arrangements across all definitions compared to CWS. The differences range from 1.4 percentage points to 7.8 percentage points, depending on the specific adjustments made.

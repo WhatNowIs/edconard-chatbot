@@ -1,0 +1,13 @@
+This graph titled "Supply-Side Price Stabilization" visualizes the stabilization of inflation for food, goods, and energy over the past year. Using data from the Bureau of Labor Statistics (BLS) with CPI based on December 2019 values as 100, it compares the Consumer Price Index (CPI) for three categories:
+
+1. **Energy (Yellow Line)**
+2. **Food at Home (Teal Line)**
+3. **Goods Excluding Food and Energy (Red Line)**
+
+Key observations from the graph:
+
+- Around 2020, the CPI for energy dropped significantly, then surged sharply to a peak around early 2022 before showing fluctuation and a slight stabilization trend towards the end of the period.
+- The CPI for food at home has consistently risen since 2020, showing a steady increase and recently stabilizing.
+- The CPI for goods excluding food and energy also showed a rise starting from 2020 but at a slower rate than energy and food at home, with some stabilization observed post-2022.
+
+The title and subtitle highlight that inflation rates for these categories have stabilized substantially over the last year, indicating a more controlled economic scenario compared to the sharp increases seen earlier. The graph was created by @JosephPolitano using BLS data, which lends credibility to the data source.

@@ -1,0 +1,14 @@
+The image is a bar chart titled "Determinants of Pricing Decisions" which shows various factors influencing firms' pricing decisions and the percentage of firms affected by these factors. The chart lists the following factors from most to least influential:
+
+1. Strength of demand (most influential, affecting approximately 75% of firms)
+2. Maintaining steady profit margins (around 60-70%)
+3. Wages and labor costs (also around 60-70%)
+4. Competitors' prices (approximately 55%)
+5. Nonlabor costs (about 50%)
+6. Overall rate of inflation (just below 50%)
+7. Problems with supply chains (a little over 40%)
+8. Borrowing rates and the cost of capital (around 20%)
+
+The chart provides insights based on data from calculations by authors, in conjunction with the Federal Reserve Banks of Atlanta, Cleveland, and New York; as well as the Regional Economic Information Network (REIN) from the Atlanta Fed.
+
+In summary, the primary determinants influencing pricing decisions for firms include the strength of demand, profit margins, wages and labor costs, and competitors' prices. These are critical factors for a majority of firms, with external economic conditions and specific cost considerations also playing significant roles but to a lesser extent.

@@ -1,0 +1,10 @@
+The image is a line graph illustrating the annual change in private wages and salaries (indicated by a blue line) and consumer prices (indicated by a red line) from 2013 to 2022, based on data from the Labor Department.
+
+Key Takeaways:
+1. **2013 - 2020 Trends**: Both private wages and salaries, as well as consumer prices, demonstrate minor fluctuations but generally stay within a range of 0% to 2.5%. Occasionally, the lines dip slightly below 0%, indicating decreases.
+2. **Pandemic Period (Around 2020)**: There are visible dips around the 2020 mark, likely due to the economic impact of the COVID-19 pandemic. The Consumer prices drop slightly below 0% indicating deflation.
+3. **Post-2020 Trends**: There is a significant increase in both private wages and salaries as well as consumer prices after 2020. The consumer prices (red line) increase sharply, peaking around 8%, while private wages and salaries (blue line) also rise, peaking slightly above 5%.
+4. **Disparity**: The graph highlights a growing disparity between the increase in consumer prices and private wages and salaries in recent years, suggesting that inflation is outpacing wage growth.
+
+Summary:
+The graph shows that since 2020, inflation (consumer prices) has been rising significantly faster than private wages and salaries, eroding the purchasing power of workers despite a tight labor market. The post-2013 trend of relatively stable and modest increases in both metrics shifts dramatically post-2020, with inflation sharply accelerating. This indicates that workers' wage gains are being overshadowed by the rapid increase in consumer prices, diminishing the overall benefits of wage growth in a tight labor market.

@@ -1,0 +1,25 @@
+The image is a scatter plot titled "Occupational Status Correlations, births 1780-1859" which visualizes the correlation between occupational status and implied shared genotype among different familial relations.
+
+Key Points:
+
+1. **Axes**:
+   - The X-axis represents the "Implied Shared Genotype".
+   - The Y-axis represents the "Correlation Occupational Status".
+
+2. **Data Points**:
+   - Various familial relations are plotted, including Unrelated, Cousins (with increasing numbers), Sibling (and Sibling-r for siblings raised apart), Cousin-r, Grandchild, Child, and Cousins 2, 3, and 4.
+   - The strength of correlation increases as the implied shared genotype increases.
+
+3. **Line of Best Fit**:
+   - A dashed line represents the ordinary least squares (OLS) fit to the data, indicating a positive correlation between the shared genotype and the occupational status correlation.
+   - The equation of the line is given as \(b = 0.785\) and \(m = 0.57\).
+   - The goodness of fit (R² value) for the model is 0.981, indicating an extremely strong fit.
+
+4. **Outliers**:
+   - The "Child" and "Sibling" (highlighted with red) deviate more significantly from the fitted line, suggesting that these correlations might vary more than the model predicts.
+
+5. **Notes**:
+   - Data covers the period of births from 1780 to 1859.
+   - The plot shows how occupational status correlates within familial relations, presumably linked through genetic and environmental similarities.
+
+This study reflects a robust relationship between genetic proximity and the correlation of occupational status, whereby closer genetic relationships (like siblings and children) tend to have higher correlations compared to more distant or unrelated individuals.

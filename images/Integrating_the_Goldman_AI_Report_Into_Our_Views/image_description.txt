@@ -1,0 +1,24 @@
+The chart in the image illustrates the relative exposure of various industries to automation by AI, segmented into three categories:
+
+1. 0-10%: No Automation (dark blue)
+2. 10-49%: AI Complement (light blue)
+3. 50%+: Likely Replacement (grey)
+
+### Key Insights:
+
+- **Manual and Outdoor Jobs:**
+  - Sectors like "Building and Grounds Cleaning and Maintenance," "Construction and Extraction," and "Food Preparation and Serving" show minimal exposure to automation, with the majority of employment remaining under "No Automation."
+
+- **High Automation Complement:**
+  - Industries such as "Healthcare Practitioners and Technical," "Management," "Business and Financial Operations," and "Computer and Mathematical" show a significant proportion (mostly light blue) where AI serves as a complement.
+
+- **Significant Likelihood of Replacement:**
+  - "Office and Administrative Support" and specific industry segments such as "Legal" exhibit a noticeable share under "Likely Replacement" (grey), indicating heightened susceptibility to automation.
+
+- **Overall Trends:**
+  - Most industries reflect a varied mix of exposure levels to AI, but there is a distinct tendency for manual and outdoor jobs to see little automation while roles involving cognitive, administrative, or technical skills indicate moderate to high exposure to AI as a complement or potential replacement.
+
+- **Healthcare and Personal Care:**
+  - While "Healthcare Support" has a significant portion in "No Automation," primary "Healthcare Practitioners and Technical" roles are predominantly in the "AI Complement" category, indicating their roles are enhanced rather than replaced by AI.
+
+The chart emphasizes that while some sectors will see significant enhancements through AI, others, especially manual labor and administrative support, may experience higher rates of displacement due to automation.

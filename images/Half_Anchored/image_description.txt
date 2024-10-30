@@ -1,0 +1,25 @@
+The image showcases a graph from the New York Fed Survey of Consumer Expectations, detailing 3 and 5 year inflation expectations in percentage terms across different timelines.
+
+Key points to note from the graph:
+
+1. **Inflation Expectations Categories:**
+   - Blue line: <0% (3 Year)
+   - Red line: >4% (3 Year)
+   - Gray dashed line: <0% (5 Year)
+   - Black dashed line: >4% (5 Year)
+
+2. **Time Period:**
+   - The data spans from January 2016 to around mid-2023.
+   - Note: Data for 5-year expectations is only available from 2022 onwards.
+
+3. **Trends:**
+   - The red line (>4% 3 Year) has seen a general increase from 2016 to 2023, peaking around 2021.
+   - The blue line (<0% 3 Year) has fluctuated, with significant increases around 2019-2020, stabilizing somewhat by 2023.
+   - The gray dashed line (<0% 5 Year) and the black dashed line (>4% 5 Year) both show data from 2022-2023, with both showing considerable volatility.
+
+4. **Key Observations:**
+   - Inflation expectations of greater than 4% for both 3 years and 5 years have seen significant upswings, particularly in the years post-2020.
+   - Expectations of inflation being below 0% for both 3 years and 5 years have generally trended downward or remained stable.
+
+Summary:
+The graph from the New York Fed Survey of Consumer Expectations presents data on expected inflation rates for 3 and 5 year periods. Over the years 2016 to 2023, it indicates a notable increase in the expectation that inflation will surpass 4%, particularly for the 3-year forecasts. The data for 5-year expectations, available only from 2022, show significant variability. This visualization highlights the evolving consumer outlook on inflation over time, with noticeable spikes post-2020.

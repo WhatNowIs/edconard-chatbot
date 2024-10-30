@@ -1,0 +1,30 @@
+**Summary of Table 1**
+
+The table presents different economic scenarios with corresponding projections for consumption growth, investment growth, and GDP growth. Here are the key highlights from each scenario:
+
+1. **Optimistic Scenario (A):**
+   - Consumption Growth: 6-7%
+   - Investment Growth: 0-1%
+   - GDP Growth: 4%
+
+2. **Moderate Scenario (B):**
+   - Consumption Growth: 3-4%
+   - Investment Growth: -1 to -2%
+   - GDP Growth: 1.5%
+
+3. **Difficult Scenario (C):**
+   - Consumption Growth: 1-2%
+   - Investment Growth: -2 to -3%
+   - GDP Growth: 0%
+
+4. **Crisis Scenario (D):**
+   - Consumption Growth: Not Available
+   - Investment Growth: Not Available
+   - GDP Growth: Not Available
+
+5. **15- and 20-year Scenario (E):**
+   - Consumption Growth: 3-4%
+   - Investment Growth: 0-1%
+   - GDP Growth: 2.5%
+
+Overall, the table illustrates varying degrees of economic conditions ranging from optimistic to crisis, and includes a long-term perspective for the 15- and 20-year scenario. The highest GDP growth is projected in the Optimistic Scenario (4%), while the Difficult Scenario forecasts stagnant GDP growth at 0%.

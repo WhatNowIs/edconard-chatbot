@@ -1,0 +1,24 @@
+The chart titled "Despite Recent Increases, Discretionary Spending Should Resume Falling as a Share of the Economy" provides a historical and projected overview of U.S. federal spending as a percentage of GDP from 1962 through 2033. It distinguishes between defense discretionary spending (in blue) and nondefense discretionary spending (in green).
+
+Key Observations:
+1. **Historical Peaks:**
+   - Defense discretionary spending reached a peak of 9.1% of GDP in 1968.
+   - Nondefense discretionary spending peaked at 5.0% of GDP in 1980.
+
+2. **Recent and Current Levels:**
+   - In recent years (2023), defense discretionary spending is at 3.0% of GDP.
+   - Nondefense discretionary spending is at 3.6% of GDP in 2023.
+
+3. **Projected Trends:**
+   - Both defense and nondefense discretionary spending are projected to decline.
+   - By 2033, defense discretionary spending is projected to be 2.8% of GDP.
+   - Nondefense discretionary spending is also expected to decrease to 2.9% of GDP by 2033.
+
+4. **Historical Lows:**
+   - Defense discretionary spending was at a low of 2.9% of GDP around 1999-2001.
+   - This trend is projected to return in the coming decade.
+
+Source Information:
+- The data is sourced from OMB Historical Table 8.4 and adjusted with the June 2023 CBO baseline for the continuation of current policies. 
+
+In summary, the chart suggests that despite upticks observed recently, both defense and nondefense discretionary spending as shares of GDP are expected to decline in the future, reverting to or falling below historical lows experienced in past decades.

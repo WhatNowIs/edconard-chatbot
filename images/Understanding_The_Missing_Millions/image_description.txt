@@ -1,0 +1,11 @@
+The image displays Exhibit 6, which shows the monthly index of customers making childcare payments from January 2020 to December 2022, with January 2020 set as the baseline (index = 100). According to Bank of America internal data, the number of customers making childcare payments as of December 2022 was 7% lower than at the beginning of 2020.
+
+Key observations from the graph:
+
+1. **January 2020 (Baseline)**: The index starts at 100.
+2. **Early 2020 Decline**: There is a sharp drop in the index to around 30 by mid-2020, likely due to the impact of the COVID-19 pandemic and related shutdowns.
+3. **Gradual Recovery**: From mid-2020 onwards, the number of customers making childcare payments gradually increases but remains below the January 2020 level.
+4. **Volatility**: The index shows occasional fluctuations but generally trends upwards, stabilizing around 90 by late 2022.
+5. **December 2022**: The index is approximately 93, indicating a 7% decrease compared to January 2020.
+
+In summary, the number of customers making childcare payments dropped dramatically in early 2020 due to the pandemic, but it has been recovering steadily, although it still remains slightly below pre-pandemic levels by the end of 2022.

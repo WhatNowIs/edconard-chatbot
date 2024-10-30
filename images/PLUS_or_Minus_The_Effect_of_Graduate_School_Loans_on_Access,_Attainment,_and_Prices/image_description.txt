@@ -1,0 +1,25 @@
+The image is a scatter plot chart detailing the effects of constrained students' cumulative student loans from all sources over various entry cohorts from 2002 to 2008. Refer to the following summary points to encapsulate the key information from the figure:
+
+### Summary:
+1. **Title and Purpose:**
+   - The chart (Figure 3) illustrates the impact of borrowing constraints on cumulative student loans for first-time graduate students across multiple entry cohorts. 
+
+2. **Axes and Variables:**
+   - **X-axis:** Represents the entry cohort year from 2002 to 2008.
+   - **Y-axis:** Depicts the coefficient (with a 95% confidence interval) for cumulative student loans.
+   - **Data Markers:** Different shapes and colors denote the point estimates at varying time intervals from entry: entry year, 1 year later, 2 years later, 3 years later, 4 years later, and 5 years later.
+
+3. **Trend Observations:**
+   - For cohorts from 2002 to 2005, the coefficients hover around zero, indicating minimal effect or no clear trend for most years.
+   - Starting with the 2006 cohort, coefficients begin increasing, and by the 2007 and especially 2008 cohorts, there is a noticeable rise in the coefficients, suggesting a larger cumulative loan amount the further the timeframe extends (5 years later showing the highest values).
+
+4. **Notes and Methodology:**
+   - The sample consists of first-time graduate students who borrowed during their first year.
+   - The plotted points and confidence intervals are derived from regression analysis accounting for various factors: age, race/ethnicity, gender, parental education, and enrollment status.
+   - Specifically examines the impact of being ‘constrained,’ defined as borrowing at the federal Stafford Loan limit.
+
+5. **Confidence Intervals:**
+   - The vertical lines spanning above and below each point indicate the 95% confidence intervals for the coefficients, showcasing the statistical uncertainty.
+   - Wider intervals suggest greater uncertainty, while narrower intervals indicate precision.
+
+In conclusion, for graduate students who have borrowed the maximum allowable federal Stafford Loan amount, the cumulative loan amount tends to increase significantly over time, especially observable in cohorts from 2006 onward, with the effect growing more pronounced the further they are from their entry year. This suggests a substantial growth in cumulative debt for constrained students over the observed years.

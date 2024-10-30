@@ -1,0 +1,33 @@
+The table shows the annualized rates of Consumer Price Index (CPI) inflation for July 2023 over different time horizons: 1-month, 3-month, 6-month, and 12-month. Here is a summary of the key information contained in the table:
+
+1. **Overall CPI Inflation:**
+   - 1-month: 2.0%
+   - 3-month: 1.9%
+   - 6-month: 2.6%
+   - 12-month: 3.3%
+
+2. **Core CPI Inflation (excluding food and energy):**
+   - 1-month: 1.9%
+   - 3-month: 3.1%
+   - 6-month: 4.1%
+   - 12-month: 4.7%
+
+3. **Core Inflation with Private New Rent Indices for Shelter:**
+   - 1-month: -1.4%
+   - 3-month: 0.1%
+   - 6-month: 1.8%
+   - 12-month: 2.0%
+
+4. **Core Inflation excluding Shelter and Used Cars:**
+   - 1-month: 0.3%
+   - 3-month: 0.6%
+   - 6-month: 2.1%
+   - 12-month: 3.4%
+
+5. **Core Services Inflation excluding Shelter:**
+   - 1-month: 2.7%
+   - 3-month: 1.9%
+   - 6-month: 3.0%
+   - 12-month: 4.0%
+
+The data source is the Bureau of Labor Statistics, Zillow, Apartment List, and Macrobond with the calculations done by the authors. Private new rent indices used are Zillow Observed Rent Index and Apartment List National Rent Index, and these have been seasonally adjusted.

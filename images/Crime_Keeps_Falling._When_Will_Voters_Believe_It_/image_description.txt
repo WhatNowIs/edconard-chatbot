@@ -1,0 +1,15 @@
+The bar chart, sourced from the Federal Bureau of Investigation and AH Datalytics (2023 and 2024), shows the trend in murder and non-negligent manslaughter rates per 100,000 population in the US from 1960 to 2023. Key observations include:
+
+1. **Historical Trends**:
+   - The homicide rate rose significantly from the 1960s to the mid-1970s.
+   - A peak was reached in the late 1970s and early 1980s, followed by a gradual decline.
+   - Another peak occurred in the early 1990s, with a subsequent steady decrease into the early 2000s.
+
+2. **Recent Trends**:
+   - Rates saw a minor resurgence in the 2010s, with a noticeable rise in the early 2020s.
+   - However, there was a significant estimated decline of 17.6% through mid-August 2023, if this trend holds up for the entire year.
+
+3. **Current Estimate**:
+   - The black bar at the end represents the projected homicide rate for the entire year of 2023 if the mid-year trends continue.
+
+In summary, while homicide rates in the US have fluctuated over the past six decades, recent data indicates a promising decline in the current year, suggesting potentially the lowest levels seen in recent years.

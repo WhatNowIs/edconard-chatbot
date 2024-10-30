@@ -1,0 +1,10 @@
+The image is a line graph titled "Figure 3: Across cohort variation", showing the "between-firm variance of earnings" over the period from 1990 to 2015. The y-axis represents the "Between-Firm Var(Earnings)", which quantifies the variance in earnings between different firms, and the values range from 0.25 to 0.6. The x-axis represents the year.
+
+Throughout the graph, multiple line plots illustrate variance trends for different cohorts. Observations include:
+
+1. Between 1990 and the late 1990s, the variance in earnings between firms shows a gradual decline.
+2. From the late 1990s to the mid-2000s, the decline becomes more pronounced, with the variance dropping significantly.
+3. Starting around 2005, the between-firm variance stabilizes and then shows minor fluctuations.
+4. After 2010, some cohorts exhibit a slight increase in variance, though not uniformly across all cohorts.
+
+In summary, the between-firm variance in earnings decreased significantly between 1990 and 2005, followed by a period of stabilization and minor fluctuations, with a slight uptick in variance observed post-2010.

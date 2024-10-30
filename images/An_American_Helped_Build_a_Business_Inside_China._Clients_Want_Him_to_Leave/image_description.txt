@@ -1,0 +1,10 @@
+The chart provides an overview of U.S. foreign direct investment (FDI) in China from 1990 to 2020, sourced from the Rhodium Group.
+
+Key Findings:
+1. **Early Growth (1990-2000):** There was a gradual but steady increase in U.S. FDI in China throughout the 1990s, starting from a very low base.
+2. **Significant Increase (2000-2005):** Investment saw a notable uptick in the early 2000s, peaking around 2005 with significant investments surpassing $15 billion.
+3. **Peak Investments (2005):** The highest investment occurred around 2005, reaching approximately $20 billion.
+4. **Fluctuations/Declines (2006-2020):** After the peak, investments displayed fluctuations with a notable dip in the late 2000s, followed by moderate resurgence and another notable peak around 2011-2012.
+5. **Post-2015 Decline:** Investment levels saw a gradual decline post-2015, reaching lower levels by 2020 compared to the peak years.
+
+Overall, U.S. FDI in China experienced significant growth in early 2000s, fluctuated in the following years, and eventually declined towards 2020. This trend indicates periods of high investment activity intertwined with economic and possibly geopolitical factors influencing the flows over the years.

@@ -1,0 +1,10 @@
+The image contains a line graph titled "Figure 2: The Actual Unemployment Rate and the Estimated Natural Rate during the 2009-2019 Recovery." The graph features two main data sets:
+
+1. **Unemployment Rate:** Represented by a black line that shows a decreasing trend from 2010 to 2019. The unemployment rate starts around 9-10 percent in 2010 and declines to around 3-4 percent by 2019. Specific points where the Personal Consumption Expenditures (PCE) inflation rate is between 1.5 and 2.5 percent are highlighted in red dots along the unemployment line.
+
+2. **PCE Inflation Year-over-Year (YoY):** Represented by a blue line. It fluctuates around the 1-2 percent mark throughout the period from 2010 to 2019.
+
+### Summary:
+The graph illustrates the relationship between the unemployment rate and PCE inflation during the period of economic recovery from 2009 to 2019. Over this time frame, the unemployment rate consistently declined from approximately 10 percent to about 3.5 percent. The red dots along the unemployment trend line indicate periods when the PCE inflation ranged between 1.5 and 2.5 percent. Throughout this period, the PCE inflation experienced fluctuations, generally maintaining between 0.5 to 2.5 percent. The data suggests a sustained decline in unemployment alongside relatively stable inflation as measured by PCE.
+
+Note: The data is based on authors' calculations using monthly data from the CPS and the National Income and Product Accounts for the period of October 2010 to January 2020.

@@ -1,0 +1,15 @@
+The image is a graph titled "Forest and Trees" depicting the annualized monthly changes in the U.S. Consumer Price Index (CPI) on a three-month moving average (3mma) from 1968 to 2023. The data is sourced from the Bureau of Labor Statistics and calculations by Matthew Klein. 
+
+Key points in the summary:
+
+- **Current Inflation Rate**: Consumer prices are rising at a yearly rate of about 4-5%, which is an improvement compared to the first half of 2022, but still higher than the pre-pandemic norm.
+- **Graph Lines**: 
+  - **Blue Line**: Represents the total CPI changes.
+  - **Red Line**: Represents the CPI changes excluding food, shelter, energy, and used cars and trucks.
+- **Historical Trends**: 
+  - From 1968 to around 1983, both lines show significant fluctuations with periods of high inflation rates reaching over 15%.
+  - From mid-1980s to early 2000s, the inflation rates stabilized around 5%, with fewer spikes.
+  - Post-2008 financial crisis, significant dips and spikes are visible.
+  - The 2020 COVID-19 pandemic is marked by sharp spikes upwards, pointing to high inflation rates in recent years.
+
+- **Future Considerations**: The primary question posited is whether inflation will continue to decelerate or if the current rate will be the new floor for economic expectations.

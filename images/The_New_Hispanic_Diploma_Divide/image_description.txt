@@ -1,0 +1,18 @@
+The image presents a graphical summary of Latino presidential preferences over a span of presidential election years (2012, 2016, 2020, and projections for 2024) categorized by educational attainment (Latino College graduates and Latino Non-College graduates). The data in the table originate from the Survey Center on American Life (SCAL) and Catalist.
+
+Key observations:
+1. **Latino College Graduates:**
+   - In 2024 SCAL Poll: 57% support Democrats, 33% support Republicans.
+   - In 2020: 61% supported Democrats, 37% supported Republicans.
+   - In 2016: 64% supported Democrats, 31% supported Republicans.
+   - In 2012: 64% supported Democrats, 34% supported Republicans.
+
+2. **Latino Non-College Graduates:**
+   - In 2024 SCAL Poll: 43% support Democrats, 41% support Republicans.
+   - In 2020: 60% supported Democrats, 39% supported Republicans.
+   - In 2016: 66% supported Democrats, 27% supported Republicans.
+   - In 2012: 70% supported Democrats, 27% supported Republicans.
+
+**Trend Summary:**
+- There is a noticeable educational divide among Latino voters. Latino college graduates generally lean towards Democratic preferences, though their support has slightly declined since 2012.
+- Non-college-educated Latinos initially showed a stronger preference for Democrats, but their support has waned significantly, especially evident in the 2024 SCAL poll where Democrats and Republicans are nearly evenly split.

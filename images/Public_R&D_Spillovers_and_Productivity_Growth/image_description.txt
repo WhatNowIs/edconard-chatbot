@@ -1,0 +1,26 @@
+The image depicts two graphs illustrating trends in Research & Development (R&D) funding in the United States and their correlation with Total Factor Productivity (TFP) growth over time. Below is a summary of each graph and their combined significance:
+
+**Graph (A): R&D expenditure by type of funder (1950-2020)**
+- This line graph shows R&D expenditure as a percentage of GDP, categorized by five different funding sources: Total, Private, Federal, Non-Governmental Organizations (NGOs), and Universities.
+- Key observations:
+  - Total R&D expenditure as a percentage of GDP has seen a general upward trend, peaking near 3.3% around 2020.
+  - Private sector R&D spending has notably increased since 1980, becoming the largest contributor by 2020.
+  - Federal R&D funding saw a significant rise till the mid-1960s but later stabilized around 0.6-1% of GDP.
+  - Funding from NGOs and universities has remained minor, steadying around the 0% to 0.2% range.
+
+**Graph (B): Aggregate TFP growth (1950-2020)**
+- This bar chart with an overlaid dashed line represents the five-year average of TFP growth, along with Federal R&D expenditure as a percentage of GDP.
+- Key observations:
+  - TFP growth exhibited several fluctuations, peaking high in the late 1950s and experiencing another significant rise during the 1990s.
+  - The growth rates tend to stabilize around 1% in recent decades.
+  - A notable observation is that increases in R&D expenditures, particularly federal funding, are followed by periods of higher TFP growth, suggesting a correlation between R&D investment and productivity gains.
+
+**Combined Significance:**
+- The overall trend suggests that increased investments in R&D, particularly from private sectors, correlate with periods of substantial TFP growth.
+- The long-term data indicates that strategic efforts in R&D investments by both public and private sectors could potentially lead to enhancements in productivity and, consequently, economic growth.
+
+**Notes:**
+- The data sources include the Bureau of Economic Analysis and the National Center for Science and Engineering Statistics, combining historical data from the National Science Foundation.
+- TFP growth rates, sourced from Bergeaud et al. (2016), are averaged over five-year bins to smooth short-term fluctuations and highlight underlying trends.
+
+This comprehensive analysis underscores the importance of diversified and sustained R&D investments in driving innovation and economic productivity in the US.

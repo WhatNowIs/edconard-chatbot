@@ -1,0 +1,9 @@
+The image is a line graph titled "Panel A: Exports of goods and services" which depicts the exports as a percent of GDP for Germany, China, India, the United States, and the rest of the world from 1989 to around 2021. Summary observations:
+
+1. **Germany** shows the highest export percentage relative to GDP, peaking at over 50% around 2008. The trend shows fluctuations, with another peak around 2019 before a slight decline.
+2. **Rest of the World** has a steady increase from 1989 to 2008, peaking at around 30%. It then displays some variations, maintaining a slightly declining trend post-2008.
+3. **China** shows significant growth in exports as a percentage of GDP, starting below 10% in 1989 and peaking around 2006 at about 35%. The exports then decline and stabilize around 20-25% towards 2021.
+4. **India** shows gradual growth from below 10% in 1989, peaking around 2013 at over 20%, and stabilizing around 20% by 2021.
+5. **United States** has the lowest percentage, starting at around 10% in 1989 and maintaining slight growth, peaking just above 12% around 2021.
+
+This data highlights the varying degrees of reliance on exports across these major economies, with Germany being the most export-oriented among them.

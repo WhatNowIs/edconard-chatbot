@@ -1,0 +1,11 @@
+The image illustrates the EU trade balance of goods with China for the year 2022, measured in euros. The trade balance data is color-coded to represent different deficit levels, with darker shades indicating larger deficits and lighter shades smaller deficits or surpluses.
+
+Key points:
+- Most EU countries have a trade deficit with China, as indicated by the various shades of red across the map.
+- Italy (ITA) shows the deepest shade of red, signifying it has one of the highest trade deficits with China, approximately -100 billion euros.
+- Germany (DEU) also shows a substantial trade deficit, around -80 billion euros.
+- Other countries like Spain (ESP), France (FRA), and Poland (POL) have significant deficits ranging between -60B to -40B euros.
+- Smaller deficits are indicated by lighter shades in countries such as Ireland (IRL), Greece (GRC), and Portugal (not labeled but inferred by location).
+- The overall trend shows that no EU country has a trade surplus with China in 2022.
+
+Source: Eurostat, highlighting the data accuracy and credibility.

@@ -1,0 +1,17 @@
+The graph displays the maximum income that can be earned without paying federal income taxes for various household types from 1914 to 2024, adjusted to 2024 dollars. Four categories are shown: 
+
+1. **Married + 2 Kids** (Purple Line)
+2. **Household Head + 2 Kids** (Green Line)
+3. **Married, No Kids** (Red Line)
+4. **Single, No Kids** (Blue Line)
+
+### Key Observations:
+- Initially, in 1914, the exemption threshold varied significantly, with the highest for "Married + 2 Kids" around $120,000.
+- From the 1920s through the 1940s, all categories experienced a sharp decline, with notable decreases around the 1930s, coinciding with the Great Depression.
+- Post-World War II, around the late 1940s, the exemption thresholds stabilized at lower amounts across all categories.
+- In the 1970s and early 1980s, there were fluctuations, with occasional rises and falls.
+- From the late 1990s onward, a steady increase is observed, peaking dramatically in recent estimates (around 2024) for "Married + 2 Kids" and "Household Head + 2 Kids."
+- "Single, No Kids" consistently has the lowest exemption threshold throughout the period, while "Married + 2 Kids" typically maintains the highest.
+
+### Summary:
+The graph illustrates the historical and projected trends in federal income tax exemption thresholds for different household types, showing fluctuations aligned with historical economic events. The exemption thresholds have generally increased over time, especially for families with children, indicating changing tax policies favoring households with dependents.

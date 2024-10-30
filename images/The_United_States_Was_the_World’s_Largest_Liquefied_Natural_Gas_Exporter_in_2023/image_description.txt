@@ -1,0 +1,15 @@
+This graph from the U.S. Energy Information Administration illustrates the monthly liquefied natural gas (LNG) exports from January 2016 to December 2023 for five selected countries: the United States, Australia, Qatar, Russia, and Malaysia. The data is represented in billion cubic feet per day.
+
+Key highlights include:
+
+1. **United States (Blue Line):** There has been a significant and almost continuous increase in LNG exports from 2016 onwards, reaching over 12 billion cubic feet per day by late 2023, making it the leading exporter among the five countries.
+
+2. **Australia (Red Line):** Australia's LNG exports have fluctuated but generally maintained high levels, consistently around 10 billion cubic feet per day, close to the outputs of Qatar and higher than those of Russia and Malaysia.
+
+3. **Qatar (Tan Line):** Qatar's LNG exports have shown minor fluctuations but have remained relatively stable, hovering around 8 to 10 billion cubic feet per day.
+
+4. **Russia (Brown Line):** Russia's LNG exports have been fairly stable between 1 and 2 billion cubic feet per day with minor fluctuations.
+
+5. **Malaysia (Yellow Line):** Malaysia has consistently exported between 2 and 4 billion cubic feet per day, with some fluctuations similar to those of Russia.
+
+Overall, the graph shows the substantial rise of the United States as a major LNG exporter since 2016, surpassing other traditional exporters like Australia and Qatar by the end of 2023.

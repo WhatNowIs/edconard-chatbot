@@ -1,0 +1,22 @@
+The image is a bar chart showing the cumulative amount of capital raised by US venture capital (VC) firms that has not yet been spent, often referred to as 'dry powder,' from 2017 to 2023. Here are the key points from the chart:
+
+1. **Trend Overview**: 
+   - There has been a general upward trend in the amount of 'dry powder' held by US VC firms over the years.
+
+2. **Year-wise Data**: 
+   - *2017*: The capital was around $100 billion.
+   - *2018*: The amount saw a slight increase.
+   - *2019*: There was a significant rise, approaching approximately $150 billion.
+   - *2020*: The accumulation continued, slightly higher than 2019.
+   - *2021*: There was a notable jump, reaching close to $200 billion.
+   - *2022*: The amount increased further to nearly $250 billion.
+   - *2023*: This year saw the highest amount, reaching approximately $300 billion.
+
+3. **Record Pile in 2023**:
+   - The data shows that US VC firms have accumulated a record amount of unspent capital in 2023, totaling around $300 billion. 
+
+4. **Source**:
+   - The data is sourced from Pitchbook and visualized by FT (Financial Times).
+
+### Summary:
+Over the period from 2017 to 2023, US venture capital firms have steadily built up a substantial reserve of unspent capital, often referred to as 'dry powder.' This reserve has grown from around $100 billion in 2017 to a record-high of approximately $300 billion in 2023, indicating a significant increase in available capital that has yet to be deployed into investments. The upward trend reflects a growing accumulation of funds, suggesting either increased capital raising or cautious deployment strategies by VC firms.

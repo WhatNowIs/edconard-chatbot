@@ -1,0 +1,20 @@
+The provided image contains two exhibits showcasing trends in high propensity business applications from the Census Bureau:
+
+### Exhibit 1: High Propensity Business Applications (Index, 2019 Average = 100)
+- **Trend**: Business applications are shown from 2016 to 2023.
+- **Key Points**:
+  - A significant increase in business applications in 2020.
+  - Applications surged to a peak above 160 in 2020, a substantial rise compared to the 2019 average.
+  - Post-2020, applications remained above the 2019 average but experienced some fluctuations.
+  - As of July 2023, applications are approximately 40% higher than the 2019 average, indicating sustained high levels of business formation.
+
+### Exhibit 2: High Propensity Business Applications by Major Industries (Index, 2019 Average = 100)
+- **Trend**: Business applications by major industries from 2019 to 2023.
+- **Key Points**:
+  - Each industry showed a unique trend post-2020, with different sectors driving business applications each year.
+  - The Transportation and Warehousing industry saw a substantial peak around 2020.
+  - Accomodation and Food Services also experienced a pronounced spike in 2020.
+  - Other sectors such as Healthcare and Social Assistance, Manufacturing, Wholesale Trade, Construction, and Retail Trade showed varied patterns, with some industries staying consistently higher than the 2019 average.
+
+### Summary
+Overall, the data indicates a robust increase in high propensity business applications starting around 2020, continuing into 2023, with applications being particularly strong in sectors like Transportation and Warehousing, and Accomodation and Food Services. Although there was a sharp peak in business formations at the onset of the trend, the levels have stayed well above the 2019 average, indicating a healthy and dynamic environment for new business ventures.

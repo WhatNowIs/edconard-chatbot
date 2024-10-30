@@ -1,0 +1,17 @@
+The image is a line graph titled "Figure 23: Output growth rates for the world and country groups, 1980-2028." It displays growth rates measured in percent for the world, advanced economies, and emerging market and developing economies from 1980 to 2028. The data is sourced from the IMF's World Economic Outlook database as of October 2023, with projections starting from 2023.
+
+Key points from the graph:
+1. **World Growth Rates (Blue Line)**:
+   - Generally fluctuating around 3-4% with some significant dips and peaks.
+   - Major dips observed around early 1980s, early 1990s, early 2000s, 2008-2010 (Global Financial Crisis), and 2020 (COVID-19 pandemic).
+
+2. **Advanced Economies (Orange Line)**:
+   - Consistently lower growth rates than the global average.
+   - Notable dips around the same periods as noted for the world rates, with pronounced declines during the 2008-2010 financial crisis and 2020 pandemic.
+
+3. **Emerging Market and Developing Economies (Gray Line)**:
+   - Generally higher growth rates compared to advanced economies.
+   - More volatility observed with significant peaks and troughs.
+   - Noticeable impact of the 2008 financial crisis and 2020 pandemic, with a quicker and higher recovery post-2008 compared to advanced economies.
+
+Overall, the graph illustrates the cyclical nature of economic growth across different country groups and highlights major global economic downturns and recoveries. The projections from 2023 suggest moderated growth rates with slight variations among the groups.

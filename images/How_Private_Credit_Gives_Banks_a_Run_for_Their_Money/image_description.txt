@@ -1,0 +1,11 @@
+The chart from Preqin Pro illustrates the trend in Global Private Debt Assets Under Management, broken down into two categories: unused capital and the value of current portfolios, from 2010 to March 2023. Here are the key points:
+
+1. **Overall Growth**: There has been a significant increase in total assets under management (both unused capital and current portfolio values) over the period from 2010 to 2023.
+
+2. **Unused Capital**: The portion of unused capital (represented in black) has exhibited a relatively modest increase compared to the value of current portfolios.
+
+3. **Value of Current Portfolios**: The value of current portfolios (represented in blue) has seen substantial growth, especially notable from 2016 onwards.
+
+4. **Recent Trends**: By March 2023, the total assets under management have reached their highest level in the observed period, indicating a steady and continuous rise in both the unused capital and the value of current portfolios.
+
+This image effectively showcases the growing scale of private debt investments globally, highlighting the increasing amounts of capital flowing into this asset class over the analyzed period.

@@ -1,0 +1,19 @@
+**Summary of the Survey Correlates: Significant Results**
+
+The figure presents correlation coefficients from a survey evaluating factors that influence project costs, specifically the log cost per lane-mile. The results are significant at the 10% level or marginally significant at this threshold. The key findings organized by category are as follows:
+
+1. **DOT Capacity:**
+   - **Consultants drive costs:** Positive correlation indicating that consultant involvement tends to increase costs.
+   - **DOT publishes estimated contract value:** An insignificant relationship, suggesting no strong effect of publishing contract value on costs.
+   - **DOT publishes both plans and unit costs:** No significant correlation found.
+   - **Average number of change orders:** Insignificant correlation, implying that change orders do not notably affect costs.
+   - **Administrative processes drive delays:** Positive correlation indicating administrative delays increase costs.
+
+2. **Competition:**
+   - **DOT does bidder outreach:** Negative correlation indicating that bidder outreach is associated with lower project costs.
+   - **Subcontracting limits drive costs:** Positive correlation showing that subcontracting restrictions increase costs.
+
+3. **Other:**
+   - **Weather shocks drive costs:** Positive correlation showing that weather impact leads to higher costs.
+
+The analysis includes controls for project specifics, local factors, and weather, with cluster standard errors at the state level. Survey responses are normalized and aggregated for comparability. The error bars represent the 90% confidence interval, emphasizing the robustness of the findings after adjusting for multiple hypothesis testing.

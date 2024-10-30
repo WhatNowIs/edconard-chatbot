@@ -1,0 +1,19 @@
+The infographic titled "Braiding Quantum Information" from Quanta Magazine provides a visual guide on manipulating qubits to create a braided pattern, which maintains a memory of their past connections. Here's a summarized summary:
+
+**Braiding Quantum Information Process:**
+
+1. **Initial Setup**:
+   Set up a grid where each qubit is connected to four neighbors.
+
+2. **Cutting Connections**:
+   A cut in the connection makes the qubits with three neighbors act as quasiparticles with unique properties.
+
+3. **Moving Quasiparticles**:
+   Move a connection to force a quasiparticle to jump to another position with only three neighbors.
+
+4. **Creating Braids**:
+   Continuously repeat the process to loop the quasiparticles around each other, effectively creating a braid.
+
+This method of manipulating qubits can help in exploring advanced concepts in quantum information processing.
+
+**Credit**: Merrill Sherman / Quanta Magazine

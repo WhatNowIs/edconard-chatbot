@@ -1,0 +1,13 @@
+The image provides a comparative analysis of natural gas imports by the EU-27 from Russia (including via Ukraine and Belarus) and the United States from 2018 to 2022. 
+
+Key points:
+1. **Graph Title:** Import Substitution - The EU Now Gets More Natural Gas from the US than Russia.
+2. **Time Frame:** The data covers the period from 2018 to 2022.
+3. **Data Points:** The graph uses cubic meters as the unit of measurement for imported natural gas.
+4. **Trends:**
+   - From 2018 until early 2022, natural gas imports from Russia show significant fluctuation but generally remain higher than those from the US.
+   - From early 2022 onwards, there is a marked decline in natural gas imports from Russia.
+   - Conversely, imports from the United States show a significant increase, overtaking those from Russia around the same period.
+5. **Implication:** By early 2022, the EU-27 has substituted its natural gas imports, sourcing more from the United States than from Russia.
+
+This summary illustrates a strategic shift in EU energy sourcing, moving away from Russian natural gas in favor of increased imports from the United States by 2022.

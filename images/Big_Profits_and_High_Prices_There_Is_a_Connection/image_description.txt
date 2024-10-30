@@ -1,0 +1,11 @@
+The chart presents the corporate profit margins (excluding finance) from 2000 to 2023, showing trends in profitability as a share of nonfinancial corporate gross value added. Key observations include:
+
+1. **Early 2000s Decline**: Profit margins began below 8% and declined to approximately 6% by 2002.
+2. **2003-2006 Growth**: There was a marked increase from 2003, peaking at around 14% by 2006.
+3. **2008 Financial Crisis Impact**: Profit margins sharply dropped again to about 8% during the 2008 recession.
+4. **2010-2014 Recovery and Stability**: There was a steady recovery post-crisis, maintaining generally between 10-14%.
+5. **Fluctuations During mid-2010s**: Margins experienced several fluctuations between 2015 and 2020, typically ranging from 10% to 14%.
+6. **Pandemic Spike**: A sharp rise occurred around 2021, reaching nearly 18%.
+7. **2022-2023 Adjustment**: Margins decreased slightly but stabilized around 14-15%.
+
+This chart highlights the cyclic nature of profit margins with distinct impacts from economic recessions and recovery phases, concluding with resilience and adjustment post-pandemic. The source of this data is the U.S. Commerce Department.

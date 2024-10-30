@@ -1,0 +1,22 @@
+The image presents a graph titled "Revenue Down, Spending Up," which shows U.S. government receipts and expenditures as a percentage of GDP from 1960 to 2023. The data source is the U.S. Bureau of Economic Analysis, and the 2023 figures are averages for the first three quarters.
+
+Key Observations:
+
+1. **Receipts (Blue Line):**
+   - Relatively stable over time, starting around 25% of GDP in 1960.
+   - Small gradual rises and dips, but generally fluctuating around 25-30%.
+   - Slight decline noted towards recent years.
+
+2. **Expenditures (Black Line):**
+   - Began at a lower point than receipts in 1960 but experienced more significant fluctuations.
+   - Periodic increases, most notably around the 2008 financial crisis and the COVID-19 pandemic.
+   - Peaks near 35-40% of GDP, with a noticeable increase during crisis periods.
+   - Post-crisis declines followed by stabilization closer to 30-35%.
+
+3. **Trends:**
+   - There is a long-term increase in expenditures compared to receipts.
+   - Expenditures surpass receipts consistently over the periods indicated.
+   - The divergence between receipts and expenditures has widened, especially during economic crises and recent years.
+
+Summary:
+The graph highlights the growing disparity between U.S. government receipts and expenditures as a share of GDP from 1960 to the present. While receipts have remained relatively stable around 25-30% of GDP, expenditures have shown more significant variability and an overall upward trend, particularly during economic crises. The data suggests increasing fiscal imbalances, with government spending consistently outpacing revenue intake.

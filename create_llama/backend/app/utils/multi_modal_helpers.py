@@ -2,9 +2,16 @@ import os
 import json
 import time
 from create_llama.backend.app.utils.schema import BatchResult
+from dotenv import load_dotenv
 import openai
 import requests
 from typing import List
+
+from src.app.constants import ENV_FILE_PATH
+
+load_dotenv(
+    dotenv_path=ENV_FILE_PATH,
+)
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 # Send the request to OpenAI API
@@ -114,7 +121,7 @@ def read_stored_batch_result(result_file_name: str) -> List[BatchResult]:
 
     return results
 
-def process_images_in_batch(image_urls: List[str], output_txt_file: str, batch_file_path: str = 'images/image_batch.jsonl'):
+def process_images_in_batch(image_urls: List[dict[str, str]], output_txt_file: str, batch_file_path: str = 'images/image_batch.jsonl'):
     """
     Executes the entire process of creating a batch file, uploading it, creating a batch,
     checking the batch status, downloading results, and saving them to a txt file.
@@ -123,7 +130,7 @@ def process_images_in_batch(image_urls: List[str], output_txt_file: str, batch_f
     :param output_txt_file: Path to the output .txt file where the results will be saved.
     :param batch_file_path: Path for the batch .jsonl file.
     """
-    create_batch_file(image_urls, batch_file_path)
+    create_batch_file([image_url['featured_image_url'] for image_url in image_urls], batch_file_path)
     batch_file_id = upload_batch_file(batch_file_path)
 
     batch = create_image_batch(batch_file_id)

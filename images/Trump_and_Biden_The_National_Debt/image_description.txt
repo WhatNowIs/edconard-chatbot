@@ -1,0 +1,36 @@
+The image is a summary table outlining the ten-year debt impact of executive actions and legislation approved by Presidents Trump (January 20, 2017 – January 20, 2021) and Biden (January 20, 2021 – June 21, 2024) in the United States. The table categorizes various policies under each presidency, specifying their debt impact and whether the legislation was partisan or bipartisan.
+
+### President Trump (January 20, 2017 – January 20, 2021)
+**Total Debt Impact:** $8.4 trillion
+- **Partisan:** $1.9 trillion
+- **Bipartisan:** $6.5 trillion
+
+**Policies and Debt Impacts:**
+1. **Tax Cuts & Jobs Act:** +$1.9 trillion (Partisan)
+2. **Bipartisan Budget Acts of 2018 & 2019:** +$2.1 trillion (Bipartisan)
+3. **ACA Tax Delays & Repeals:** +$39 billion (Bipartisan)
+4. **Health Executive Actions:** +$456 billion (Partisan - Executive Action)
+5. **Other Legislation:** +$310 billion (Bipartisan)
+6. **New & Increased Tariffs:** -$43 billion (Partisan - Executive Action)
+7. **CARES Act:** +$1.9 trillion (Bipartisan)
+8. **Response & Relief Act:** +$983 billion (Bipartisan)
+9. **Other COVID Relief:** +$756 billion (Bipartisan)
+
+### President Biden (January 20, 2021 – June 21, 2024)
+**Total Debt Impact:** $4.3 trillion
+- **Partisan:** $3.0 trillion
+- **Bipartisan:** $1.3 trillion
+
+**Policies and Debt Impacts:**
+1. **Appropriations for FY 2022 & 2023:** +$1.4 trillion (Bipartisan)
+2. **Honoring Our PACT Act:** +$520 billion (Bipartisan)
+3. **Bipartisan Infrastructure Law:** +$432 billion (Bipartisan)
+4. **Other Legislation:** +$620 billion (Bipartisan)
+5. **Student Debt Actions:** +$626 billion (Partisan - Executive Action)
+6. **Other Executive Actions:** +$548 billion (Partisan - Executive Action)
+7. **Fiscal Responsibility Act:** -$1.5 trillion (Bipartisan)
+8. **Inflation Reduction Act:** -$250 billion (Partisan)
+9. **Deficit-Reducing Executive Actions:** -$129 billion (Partisan - Executive Action)
+10. **American Rescue Plan Act:** +$1.84 trillion (Partisan)
+
+Overall, the table presents the aggregate fiscal impacts of the two administrations' policies, indicating that President Trump's administration's actions led to a higher total debt impact than President Biden's administration. It also highlights the share of bipartisan versus partisan legislation that contributed to the overall debt in each administration.

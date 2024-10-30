@@ -1,0 +1,20 @@
+The infographic from The Economist provides an overview of the excess profits of the world's biggest companies for the 12 months ending on July 7th, 2023, measured in trillions of dollars ($trn). Below are the major points highlighted:
+
+### World Excess Profits
+1. **United States**: Dominates in terms of excess profits, contributing the largest portion.
+2. **European Union**: The second-largest contributor.
+3. **China**: Follows the European Union in terms of excess profits.
+4. **Rest of the World**: The combined profit contributions of other regions.
+
+### United States Sector Breakdown
+1. **Communications and IT**: The largest sector contributing to excess profits.
+2. **Energy**: Significant contributor and ranks second among the sectors.
+3. **Health Care**: Another major contributor.
+4. **Consumer**: Contributes notably to the total profits.
+5. **Other**: Includes various smaller sectors cumulatively contributing to excess profits.
+
+### Notes
+- **Net Profit Above 10% Hurdle Rate, Excluding Goodwill**: The profits are calculated excluding goodwill and considering a net profit above a 10% hurdle rate.
+- **Data Source**: The infographic data is sourced from Bloomberg and The Economist, focusing on the top 3,000 non-financial companies by market capitalization.
+
+In summary, the United States leads in generating excess profits among the world's biggest companies, with Communications and IT being the most profitable sector within the country. European Union and China follow behind, and other regions collectively contribute as the rest of the world.

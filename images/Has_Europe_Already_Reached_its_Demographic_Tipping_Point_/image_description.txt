@@ -1,0 +1,23 @@
+The image is a bar chart showing the percentage change in the number of people aged 20 to 64 years across different regions, comparing two periods: 2013-23 and a forecast for 2023-33. 
+
+Key takeaways from the chart:
+
+1. **Europe and the EU**:
+   - Europe (including the EU) is experiencing a decline in its working-age population. Both the EU and Europe have negative changes for 2013-23 and are forecasted to continue this trend for the 2023-33 period.
+   
+2. **North America**:
+   - North America shows a small increase in the working-age population from 2013-23 and is projected to see a slightly higher increase in 2023-33.
+   
+3. **Asia**:
+   - Asia has a modest increase in 2013-23 but is expected to see almost no change or a very minimal increase in 2023-33.
+
+4. **Latin America**:
+   - Latin America saw a moderate increase from 2013-23 and is forecasted to have a slightly lower but still positive increase in 2023-33.
+   
+5. **Oceania**:
+   - Oceania experienced a considerable increase from 2013-23 and is expected to continue with a somewhat smaller but still significant increase in the 2023-33 forecast.
+   
+6. **Africa**:
+   - Africa has the highest percentage increases for both periods, with a significant rise in the working-age population from 2013-23 and an even larger projected increase for 2023-33.
+
+Overall, Europe is the only region with a declining working-age population, while other regions either show growth or a stable working-age population, with Africa showing the highest growth among all.

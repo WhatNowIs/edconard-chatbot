@@ -1,0 +1,4 @@
+The image is a line graph titled "Speed over the last two millennia," sourced from "Our World in Data." The graph's x-axis represents time from the year 1 to 2015, while the y-axis represents speed in miles per hour (MPH), ranging from 0 to 100 MPH. The graph demonstrates that speeds remained relatively constant, at virtually 0 MPH, for nearly two millennia. However, there is a dramatic spike upwards starting around the early 19th century, indicating a rapid increase in achievable speeds. By the 20th century, speeds quickly accelerated, reaching upwards of 100 MPH.
+
+Summary:
+The graph highlights the monumental increase in modes of transport speeds over the last 2000 years. It shows a near-constant speed up until the early 1800s, after which there is a sharp exponential rise, reflecting breakthroughs in transportation technology and engineering in recent centuries.

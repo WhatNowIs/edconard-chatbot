@@ -1,0 +1,32 @@
+This image displays Figure 2, which comprises an adjusted distribution of the Armed Forces Qualification Test (AFQT) scores for White Non-Hispanic Men from two different cohorts: NLSY-79 and NLSY-97. 
+
+Key points and summary:
+
+- **AFQT Score Range**: The scores range from 75 to 225.
+- **Density Curves**: The distribution is depicted with two density curves:
+  - The NLSY-79 cohort is represented by a dashed green line.
+  - The NLSY-97 cohort is represented by a solid red line.
+  
+The summary statistics for both cohorts are provided:
+
+1. **NLSY-79 (Green Dashed Line)**
+   - Mean AFQT: 172.7
+   - Standard Deviation (SD): 29.0
+   - Skewness: -0.62
+   - Percentile Scores: 
+     - 1st percentile (p1): 104
+     - 5th percentile (p5): 118
+     - 10th percentile (p10): 130
+     - 50th percentile (p50): 178
+
+2. **NLSY-97 (Red Solid Line)**
+   - Mean AFQT: 173.4
+   - Standard Deviation (SD): 29.8
+   - Skewness: -0.81
+   - Percentile Scores: 
+     - 1st percentile (p1): 94
+     - 5th percentile (p5): 113
+     - 10th percentile (p10): 129
+     - 50th percentile (p50): 179
+
+In summary, the figure presents a comparison of the AFQT score distributions between two different cohorts of White Non-Hispanic Men, showing slight variations in means, standard deviations, and a noticeable difference in skewness, with NLSY-97 being slightly more negatively skewed. Despite these differences, both distribution curves are quite similar in shape, indicating a relatively stable AFQT performance across these cohorts.

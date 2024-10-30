@@ -1,0 +1,10 @@
+The image is a line graph titled "Topping Record Highs," displaying the urban unemployment rates in China from 2018 to 2023. It highlights two key unemployment rates: the youth urban unemployment rate (ages 16-24) and the urban unemployment rate nationwide.
+
+Key observations:
+- The black line represents the urban unemployment rate for ages 16-24, which has exhibited a noticeable increasing trend, particularly reaching a new record high in May 2023.
+- The yellow line represents the nationwide urban unemployment rate, which has remained relatively stable over the same period.
+- The youth unemployment rate reached close to 20% by 2023, significantly higher than the national rate.
+
+Overall, the graph emphasizes that while the overall national unemployment rate has remained steady, the unemployment rate among youth has been increasing, reaching unprecedented levels in recent times.
+
+Source: National Bureau of Statistics

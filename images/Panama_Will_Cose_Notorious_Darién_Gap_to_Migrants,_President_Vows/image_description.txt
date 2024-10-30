@@ -1,0 +1,13 @@
+The image is a map depicting the region between Panama and Colombia, specifically highlighting the Darién Gap. Here's a summary of the relevant information extracted from the map:
+
+- **Countries:** The map shows parts of Panama to the northwest and Colombia to the southeast.
+- **Darién Gap:** A notable area marked in green, indicating a significant geographical region. The Darién Gap is a dense swath of jungle that interrupts the Pan-American Highway.
+- **Cities:** 
+  - **In Panama:** The map pinpoints the location of Panama City.
+  - **In Colombia:** The cities of Necoclí and Turbo are marked. Bogota, the capital of Colombia, is also shown but located further away to the southeast.
+- **Water Bodies:**
+  - **Gulf of Urabá:** This body of water is located near the border area, particularly close to the Colombian side.
+- **Scale Indicator:** The top right corner of the map features a scale bar showing a distance of 50 km for reference.
+- **Map Source:** The bottom-left corner credits the map creation to "Mapcreator.io" and "OSM.org."
+
+This map provides a clear view of the geographical connection and separation between Panama and Colombia, with a focus on the Darién Gap, an area known for its challenging terrain and lack of roads.

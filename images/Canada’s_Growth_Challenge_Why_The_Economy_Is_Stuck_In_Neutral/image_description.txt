@@ -1,0 +1,21 @@
+The chart illustrates the contribution of different factors to the growth in Canadian GDP per hour worked over five time periods (1969-79, 1979-89, 1989-99, 1999-09, and 2009-22). 
+
+The factors contributing to labor productivity growth are:
+
+1. **Contribution of capital intensity:** Represented by dark blue bars.
+2. **Contribution of labor composition:** Represented by light blue bars.
+3. **Multifactor productivity:** Represented by orange bars.
+
+### Summary:
+
+- **1969-79:** The highest growth in GDP per hour worked is observed, with significant contributions from all three factors. Capital intensity and multifactor productivity especially played major roles.
+
+- **1979-89:** There was a decrease in the overall growth rate compared to the previous decade, but all three factors continued to contribute positively, albeit at a reduced level.
+
+- **1989-99:** The contributions from capital intensity and multifactor productivity saw a modest increase compared to 1979-89, leading to an overall growth rate similar to the 1969-79 period.
+
+- **1999-09:** Multifactor productivity shows a significant negative impact, although contributions from capital intensity and labor composition remained positive.
+
+- **2009-22:** Marked by the least growth in GDP per hour worked. Contributions from capital intensity were nearly negligible, with multifactor productivity and labor composition providing minimal positive contributions.
+
+The chart effectively highlights the trend of diminishing capital intensity contributions over time and outlines multifactor productivity as a critical influence; notably, it had a negative impact during 1999-09, stressing the importance of multifactor productivity and investment to drive labor productivity growth in Canada.

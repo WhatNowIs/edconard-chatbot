@@ -1,0 +1,11 @@
+The image provides a graphical representation of the projected rise in interest costs relative to GDP over the next five years for various countries, based on market rates and current debt profiles.
+
+Key Points:
+- The bar chart shows the interest costs as a percentage of GDP for 2022 (dark blue bars) and the projected costs in five years (light blue bars). 
+- The right axis (RHS) displays the difference in percentage points (black diamonds) between 2022 interest costs and the 5-year projection.
+- The United States (USD) is expected to see the largest increase in interest costs relative to GDP over the five-year period.
+- Japan's (JPY) effective interest cost is significantly less due to the Bank of Japan (BOJ) owning around 50% of government debt and maintaining zero or negative rates on excess reserves.
+- Other economies with high policy rates, such as the UK (GBP), have larger effective interest bills on overall government liabilities due to quantitative easing (QE).
+- The UK’s interest costs are particularly affected by high rates of inflation and a substantial share of index-linked debt.
+
+Countries analyzed include USD, JPY, ESP, ITL, BEF, FRF, AUD, IEP, CAD, ATS, and GBP.

@@ -1,0 +1,9 @@
+The pie chart in the image illustrates the breakdown of projected spending growth, highlighting that Health Care, Social Security, and Interest account for 84% of this growth. The specific categories and their respective contributions to the projected spending growth are as follows:
+
+- Social Security: 28%
+- Medicare: 25%
+- Net Interest: 21%
+- Other Spending: 16%
+- Other Health Spending: 10%
+
+These percentages underscore the significant impact that Social Security, Medicare, and Net Interest have on the overall spending growth, collectively comprising the majority of the projected increase. This visualization is based on data from the Congressional Budget Office and is sourced by CRFB.org.

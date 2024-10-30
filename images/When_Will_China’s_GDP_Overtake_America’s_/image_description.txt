@@ -1,0 +1,25 @@
+The image is a line graph comparing different forecasts of China's GDP as a percentage of the United States' GDP. The title, "Smaller and further away," suggests that expectations for China's economic growth relative to the United States may have been scaled down.
+
+Here are the key takeaways:
+
+1. **Forecasting Sources**: Different forecasts are plotted from various sources, including:
+   - **Goldman Sachs (2011, 2022)**
+   - **OECD (2021)**
+   - **Capital Economics (2023)**
+
+2. **Actual Data**: The thick dashed black line represents actual data up to the present time.
+
+3. **Past Predictions**: 
+   - In 2003, Goldman Sachs forecasted China’s GDP to surpass the U.S. by the early 2020s, as shown by the dotted grey line.
+   - By 2011, updated predictions showed that China's GDP would match the U.S. by around 2026.
+
+4. **Updated Predictions**:
+   - **Goldman Sachs (2022)**: Predicts China's GDP will reach parity with the U.S. around 2035 and continue growing to about 137% by 2050.
+   - **OECD (2021)**: Foresees China reaching parity in 2034 and continuing to about 125% by 2040.
+   - **Capital Economics (2023)**: Suggests a delayed parity, achieved in 2050 and growing slower compared to previous forecasts.
+
+5. **Trend**: Each subsequent forecast has pushed the predicted date for China reaching GDP parity with the U.S. further into the future, with growth projections declining over time.
+
+6. **Historical Comparisons**: The initial trend showed rapid growth, but newer predictions highlight a more tempered pace of economic convergence between China and the U.S.
+
+This graph illustrates the shifting expectations and increasing caution among economic forecasters regarding China's future GDP growth relative to the United States.

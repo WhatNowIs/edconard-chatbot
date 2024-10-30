@@ -1,0 +1,9 @@
+The image is a graph illustrating China's growing debt levels from 2006 to around 2022, measured as a percentage of GDP. The data, sourced from CEIC and the Bank for International Settlements, breaks down the credit-to-GDP ratio into three categories: government credit, corporate credit, and household credit.
+
+### Summary:
+- **Overall Trend**: China's debt levels have been steadily increasing over the years.
+- **Government Credit**: This is represented by the blue area, which shows a gradual rise, especially noticeable after 2014.
+- **Corporate Credit**: Represented by the orange area, it is the largest segment and has seen significant growth since 2012, indicating a major contribution to the overall debt levels.
+- **Household Credit**: The grey area indicates household credit, which has also been increasing, particularly after 2016.
+
+Overall, by 2022, China's total credit-to-GDP ratio climbs to approximately 300%, with corporate credit being the largest contributor, followed by household credit and government credit. This highlights concerns about China's rising debt levels in multiple sectors of its economy.

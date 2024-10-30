@@ -1,0 +1,24 @@
+The image contains a set of four line charts tracking changes in discounted macro conditions from January 2022 to January 2023, segmented by regions—North America, Europe, and Asia. The key metrics displayed include Discounted Growth, Discounted Inflation, Changes in Discount Rates, and Changes in Risk Premiums.
+
+1. **Discounted Growth**: 
+   - North America (Blue Line): Initially showed fluctuations around 10% but saw a notable upward trend peaking at around 25% by January 2023.
+   - Europe (Red Line): Experienced volatility with peaks around 25% but remained roughly in line with the initial levels by the end of the period.
+   - Asia (Green Line): Exhibited a relatively stable trend with minor fluctuations, maintaining a consistent position around the 0% to 5% range.
+
+2. **Discounted Inflation**:
+   - North America (Blue Line): Experienced an initial sharp increase to around 25%, stabilized around 20%, and saw minor fluctuations afterward.
+   - Europe (Red Line): Spiked early on to around 30%, followed by a considerable decline, settling around 20-25%.
+   - Asia (Green Line): Showed a comparatively low and consistent movement, fluctuating slightly around 10%.
+
+3. **Changes in Discount Rates**:
+   - North America (Blue Line): Consistently decreased, reaching approximately -25% by January 2023.
+   - Europe (Red Line): Mirrored the North American trend but reached slightly lower changes, settling around -30%.
+   - Asia (Green Line): Showed less pronounced declines but still ended with a near -20% change.
+
+4. **Changes in Risk Premiums**:
+   - North America (Blue Line): Demonstrated a steady decline, ending near -25%.
+   - Europe (Red Line): Followed a similar downward trajectory with changes around -15%.
+   - Asia (Green Line): Displayed a relatively stable trend around -5%, indicating moderate fluctuations compared to the other regions.
+
+**Summary:**
+The image illustrates significant variations in macroeconomic conditions across North America, Europe, and Asia from January 2022 to January 2023, using the All Weather Lens method. North America and Europe experienced notable increases in both discounted growth and inflation initially, but both regions also saw substantial decreases in discount rates and risk premiums over time. In contrast, Asia reflected more stable economic indicators with mild changes across the observed period. The analysis showcases the volatility in financial markets and their respective regions, highlighting the varying responses to global economic conditions.

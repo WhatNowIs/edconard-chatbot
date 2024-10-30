@@ -1,0 +1,14 @@
+The provided image is a graph showing the trends in the rental and homeowner vacancy rates from around 2000 to the present. The key points include:
+
+1. **Title**: "No Vacancies"
+2. **Subtitle**: "Vacancy Rates are at the Lowest Level in Decades"
+3. **Lines**: 
+   - The yellow line represents the Rental Vacancy Rate.
+   - The teal line represents the Homeowner Vacancy Rate.
+4. **Vacancy Rate Details**:
+   - The Rental Vacancy Rate starts around 8% in 2000, rises to a peak of around 11% in 2010, and then declines significantly, reaching below 6% by 2022.
+   - The Homeowner Vacancy Rate starts below 2% in 2000, fluctuates slightly, and then steadily decreases to below 1% by 2022.
+5. **Time Period**: The graph represents data from 2000 to 2022. 
+6. **Source**: The graph was created using Census data by Joseph Politano.
+
+**Summary**: The graph shows a significant decline in both rental and homeowner vacancy rates over the past two decades. The rental vacancy rate peaked around 2010 and has since declined to its lowest level in decades, under 6% by 2022. Similarly, the homeowner vacancy rate, which started below 2%, has steadily decreased to less than 1% by 2022. Both trends indicate a tightening housing market with record-low vacancy rates.

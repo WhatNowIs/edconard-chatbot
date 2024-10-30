@@ -1,0 +1,13 @@
+The graph displays the percent of U.S. goods imports by four major trading nations (or groups): China, the European Union, Mexico, and Canada from the year 2000 to 2022 (data through November 2022).
+
+Key points from the graph:
+
+1. **China**: China's share of U.S. goods imports began at a relatively low level around 7.5% in 2000, surged dramatically over the following years, and peaked around 22% in the early 2010s. There are fluctuations afterward, and in 2022, the share has declined but remains above the European Union, Mexico, and Canada.
+
+2. **European Union (EU)**: The EU's share started at just below 20%, experienced a small peak, and then declined to around 15% over the years. Around 2022, there is a slight increase, bringing it close to 15%.
+
+3. **Mexico**: Mexico's share began at about 12.5% in 2000, fluctuated, and saw a steady increase over the years, reaching close to 15% by 2022.
+
+4. **Canada**: Canada's share of U.S. goods imports started around 18% in 2000, showing a general decline over the period and fluctuating around the 12% mark in the later years, with no significant upward trend.
+
+Overall, the graph indicates a significant rise in U.S. goods imports from China over the past two decades, with China becoming the leading source despite recent declines. Meanwhile, the European Union's and Canada's shares decreased, and Mexico's share saw a gradual increase over the same period.

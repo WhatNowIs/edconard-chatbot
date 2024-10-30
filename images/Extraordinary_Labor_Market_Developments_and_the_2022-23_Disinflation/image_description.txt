@@ -1,0 +1,11 @@
+The graph titled "Figure 5. U.S. Real Wage Behavior and the CPI, 2019 Q1 to 2024 Q1," sourced from the Bureau of Labor Statistics, Atlanta Fed, and author's calculations, tracks the trends of three different indices from Q1 2019 to Q1 2024:
+
+1. **CPI-U: All Items** (represented by the red line) - This reflects the Consumer Price Index for All Urban Consumers. It shows a consistent upward trend, indicating a rise in the overall price level of goods and services. The CPI-U starts around 97 in 2019 Q1 and accelerates significantly post-2021 Q1, peaking at around 118 by 2024 Q1.
+
+2. **Real ECI: Compensation for Private Industry Workers (deflated by CPI)** (represented by the yellow line) - This shows the real Employment Cost Index adjusted for CPI changes, which remains relatively flat throughout the time period. This suggests that while nominal compensation may have risen, it has not kept pace with inflation, reflecting stagnation in real wage growth for private industry workers.
+
+3. **Real ATL Fed Wage Growth Tracker (deflated by CPI)** (represented by the blue line) - This tracks the real wage growth according to the Atlanta Fed Wage Growth Tracker, also adjusted for inflation. Similar to the Real ECI, the tracker remains fairly stable with minor fluctuations. It shows initial growth leading up to early 2021, followed by a slight decline and stabilization.
+
+A significant point in the graph is "2021 Q1 = 100," where the CPI-U indicates a referenced base period. 
+
+In summary, from 2019 Q1 to 2024 Q1, while the CPI-U index shows significant inflation, the real compensation and wage growth (adjusted for inflation) for private industry workers remain mostly flat, implying that wage growth is not keeping pace with rising prices.

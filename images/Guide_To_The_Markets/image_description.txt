@@ -1,0 +1,36 @@
+The image provides information about the consumer balance sheet, household debt service ratio, and household excess savings as of the third quarter of 2022. Here is a detailed summary:
+
+**Consumer Balance Sheet (3Q22)**
+- **Total Assets:** $162.5 trillion.
+  - **Homes:** 29%
+  - **Other tangible:** 5%
+  - **Deposits:** 10%
+  - **Pension funds:** 18%
+  - **Other financial assets:** 39%
+- **Total Liabilities:** $19.2 trillion.
+  - **Mortgages:** 66%
+  - **Other non-revolving debt:** 2%
+  - **Revolving debt:** 6%
+  - **Auto loans:** 7%
+  - **Other liabilities:** 10%
+  - **Student debt:** 9%
+- **Comparative Points:**
+  - 3Q07 Peak: $85.3 trillion
+  - 1Q09 Low: $73.9 trillion
+
+**Household Debt Service Ratio (Debt payments as % of disposable personal income, SA)**
+- Historical data from 1980 to 2020 showing fluctuations in the household debt service ratio.
+- Peak was at 13.2% in 4Q07.
+- Low at 10.6% in 1Q08.
+- Recent data point of 4Q22* shows a significant decrease to 9.8%.
+
+**Household Excess Savings (Trillions of USD)**
+- The graph spans from 2018 to 2022, indicating trends in personal savings and accumulated excess savings.
+- Pre-pandemic trend is illustrated for reference.
+- Personal savings spiked during the pandemic, peaking at $2.1 trillion.
+- The current excess savings remaining is $0.9 trillion.
+
+Overall, the data indicates the following:
+- Consumer assets have significantly increased from past lows and peaks.
+- Household debt service ratio has decreased to levels lower than pre-2008 recession.
+- Households have accumulated a substantial amount of excess savings during the pandemic, though it has been decreasing recently.

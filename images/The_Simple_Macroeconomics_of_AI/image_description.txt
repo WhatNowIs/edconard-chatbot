@@ -1,0 +1,29 @@
+The provided image portrays Figure 1 titled "Distribution of AI Exposure across the Wage Distribution." It presents a scatter plot aimed at depicting the feasible exposure to AI across various demographic groups, measured in percentages. Key axes include:
+
+- **Horizontal Axis**: Hourly wage in 2018-2022, represented on a logarithmic scale in 2020 dollars, ranging approximately from $10 to over $75.
+- **Vertical Axis**: Feasible AI exposure percentage, ranging from 0 to 8%.
+
+The legend clarifies that:
+- The colors represent different education levels:
+  - Green: Less than high school
+  - Pink: High school
+  - Purple: Some college
+  - Blue: College
+  - Yellow: Postgraduate
+  
+- The size of the markers is proportional to the average 2018-2022 employment level of each group.
+
+**Key Observations**:
+1. **Educational Attainment and AI Exposure**:
+    - Individuals with less than a high school education (green) and high school education (pink) exhibit considerable variability in AI exposure, predominantly concentrated at lower wage levels.
+    - Those with some college education (purple) show prominent exposure levels at intermediate wage levels.
+    - College graduates and postgraduates (blue and yellow) tend to cluster towards higher wage groups with varying degrees of AI exposure.
+
+2. **Wage Distribution**:
+    - AI exposure seems to be distributed across all wage levels, with noticeable clusters at different education levels.
+    - Higher wage groups (>$31.6) demonstrate more significant representation from college and postgraduate demographics (blue and yellow).
+
+3. **Employment Level**:
+    - Larger markers signify demographic groups with higher average employment over the specified period, indicating areas of more substantial workforce presence.
+
+Summarily, the figure captures the intersection of AI exposure with wage distribution across educationally stratified demographic groups, stressing employment and earnings variability related to AI engagement.

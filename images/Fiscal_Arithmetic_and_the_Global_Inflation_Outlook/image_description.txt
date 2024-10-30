@@ -1,0 +1,27 @@
+The chart titled "Figure 1: The post-pandemic period has seen a marked correlation between rising fiscal debt and core inflation in advanced economies" illustrates the relationship between government debt growth and core inflation in several advanced economies from the onset of the COVID-19 pandemic.
+
+Key observations from the chart:
+
+1. **Axes**:
+   - X-axis represents government debt growth (cumulative from 2019 to 2021) in percentage terms.
+   - Y-axis represents cumulative core inflation (from December 2019 to December 2022) in percentage terms.
+
+2. **Countries**:
+   - The dataset includes multiple advanced economies such as the U.S., U.K., Euro area, Japan, Canada, Australia, New Zealand, Iceland, Sweden, Switzerland, and Norway.
+   
+3. **Trend**:
+   - There is a dashed trend line indicating a positive correlation between increased government debt growth and higher core inflation.
+   
+4. **Clusters**:
+   - **High Debt Growth, High Inflation**: Iceland and New Zealand are notable examples with significant increases in both debt and core inflation.
+   - **Moderate Debt Growth, Moderate Inflation**: The U.S., U.K., and Euro area show moderate increases in both.
+   - **Low Debt Growth, Low Inflation**: Countries like Switzerland and Japan demonstrate relatively lower increases in both metrics.
+
+5. **Notable Outliers**:
+   - Australia displays a higher-than-average debt growth with moderate inflation.
+   - Canada shows moderate to high debt growth but lower core inflation compared to countries with similar debt growth.
+
+6. **Data Source**:
+   - The data is sourced from Haver Analytics on consumer price indices till December 2022, and OECD and Eurostat data on government debt till December 2021.
+
+Overall, the chart underscores a notable correlation between rising fiscal debt and core inflation in the post-pandemic period across advanced economies. The trend line illustrates that as government debt has grown, core inflation has likewise increased, though the magnitude and specifics vary by country.

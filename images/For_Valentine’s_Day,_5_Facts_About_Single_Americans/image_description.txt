@@ -1,0 +1,20 @@
+The image displays a bar chart by the Pew Research Center that compares the percentage of single U.S. adults who are seeking a committed romantic relationship and/or casual dates in 2019 and 2022. The significant findings from the chart are:
+
+1. **Overall Single U.S. Adults**: 
+   - In 2019: 49%
+   - In 2022: 42%
+
+2. **Single Men**: 
+   - In 2019: 61%
+   - In 2022: 50%
+   
+3. **Single Women**: 
+   - In 2019: 38%
+   - In 2022: 35%
+
+Key takeaways:
+- There has been an overall decline in the percentage of single U.S. adults looking for relationships or dates from 2019 to 2022.
+- This decline is the most pronounced among single men, dropping from 61% in 2019 to 50% in 2022.
+- The percentage of single women seeking relationships or dates has decreased slightly from 38% in 2019 to 35% in 2022.
+
+This data is based on a survey of U.S. adults conducted between July 5-17, 2022.

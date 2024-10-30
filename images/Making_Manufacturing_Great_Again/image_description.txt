@@ -1,0 +1,13 @@
+The image is a line graph showing the trend of manufacturing construction as a percentage of GDP from 1993 to 2023. The data source is the Census Bureau of Economic Analysis.
+
+Key observations from the graph:
+
+1. **Initial Rise (1993-1997)**: Manufacturing construction as a percentage of GDP increased from about 0.3% to a peak close to 0.5% around 1997.
+2. **Fluctuations (1997-2002)**: There was a general decline with some fluctuations, reaching a low around 2002.
+3. **Steady Increase (2002-2008)**: After 2002, there was a gradual and steady increase, peaking around 2008 to approximately 0.4%.
+4. **Decline (2008-2011)**: Post-2008, there was a decline, reaching another low around 2011.
+5. **Recovery and Stability (2011-2019)**: From 2011 onward, there was a recovery followed by a period of relative stability with some minor fluctuations.
+6. **Sharp Increase (2020-2023)**: From 2020 onwards, especially after 2021, there has been a very sharp increase, with manufacturing construction as a percentage of GDP reaching approximately 0.7% in 2023.
+
+Summary:
+The graph illustrates the fluctuation of manufacturing construction's contribution to GDP over three decades. After initial growth in the mid-1990s, there was a period of decline till the early 2000s, followed by gradual growth until the late 2000s, then another decline in the early 2010s. The most notable trend is the sharp increase from 2020 to 2023, indicating a significant rise in manufacturing construction's role in the GDP in recent years.

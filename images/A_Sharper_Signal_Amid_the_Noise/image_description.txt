@@ -1,0 +1,19 @@
+The image is a graph titled "Figure 3: Cyclicality of Deleveraging in the US (1974–2014)." It analyzes the proportion of firms paying down debt in the United States, specifically focusing on Decile 10, as sourced from CRSP and Verdad research. The data presented covers the years from 1974 to 2014 and is based on out-of-sample US data.
+
+Key information from the graph:
+
+1. **Proportion of Firms Paying Down Debt:** The y-axis represents the proportion of firms actively paying down debt, ranging from 0% to 100%.
+ 
+2. **Timeline:** The x-axis spans from 1974 to 2014, marking specific years within this period.
+
+3. **Recession Periods:** Grey vertical bars indicate periods of recession.
+
+4. **Actual vs. Forecast Deleveraging:**
+   - The solid blue line represents actual deleveraging.
+   - The dashed blue line represents forecast deleveraging.
+
+5. **Patterns and Trends:**
+   - The graph shows fluctuations in the proportion of firms paying down debt, with notable peaks and troughs.
+   - There is a tendency for the proportion of firms paying down debt to increase during and around recession periods.
+
+Overall, the graph illustrates the cyclicality of deleveraging, showing that more firms tend to pay down debt during economic downturns, with these events highlighted by the recession bars. It also compares the actual deleveraging behavior of firms against forecasted patterns.

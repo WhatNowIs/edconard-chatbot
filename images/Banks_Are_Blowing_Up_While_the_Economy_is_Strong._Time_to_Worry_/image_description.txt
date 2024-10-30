@@ -1,0 +1,14 @@
+The chart titled “Don’t Bank on It” presents information about American household borrowing relative to disposable income, focusing on recent trends and historical changes from 1953 through the first quarter of 2023. The chart includes three main data series:
+
+1. **Total household liabilities (quarterly)**: Represented by a dotted blue line, this reflects the overall debt levels of households as a percentage of their disposable income. Historically, this metric shows regular cyclical peaks and troughs, with notable spikes around the late 1980s and mid-2000s followed by a decline and stabilization in more recent years.
+
+2. **Bank loans to households**: Depicted by a solid red line, this shows the proportion of bank loans to households. It peaks around 2007, followed by a sharp decline during the financial crisis and has remained relatively low with minimal fluctuations since then.
+
+3. **Bank loans to households plus banks’ holdings of Agency MBS (Mortgage-Backed Securities)**: Shown in green, this series includes bank loans and MBS holdings, which increase notably from 2008 onward, reflecting banks' increased holdings of mortgage-backed securities post-financial crisis.
+
+Key points:
+- American consumers have reduced net new borrowing sharply throughout 2022, influenced by the surge in mortgage interest rates.
+- Historically, household liabilities relative to income have shown significant cyclical variations, with notable spikes before major economic downturns.
+- Recent trends indicate a relatively stable but low level of new borrowing compared to historical standards, both in total household liabilities and specifically bank loans to households.
+  
+Source: Federal Reserve Board, Bureau of Economic Analysis, and calculations by Matthew Klein.

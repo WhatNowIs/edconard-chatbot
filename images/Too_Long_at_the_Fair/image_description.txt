@@ -1,0 +1,10 @@
+The chart titled "Largest Europe P/E discount vs US in Q3 2022" shows the relative P/E (Price-to-Earnings) discount based on forward earnings between Europe and the US. The two data sources compared are Bloomberg (brown line) and Datastream (blue line).
+
+Key points from the chart:
+1. **Overall Trend**: From 2006 to 2022, Europe has generally had a significant P/E discount compared to the US, as indicated by the negative percentages throughout the period.
+2. **Lowest Points**: Around 2011 and again in 2022, there are noticeable dips where the discount peaked, reaching almost -40% in 2022.
+3. **Less Discount Over Time**: There are periods where the discount decreases (becomes less negative) such as briefly around 2016 and 2021.
+4. **Consistency**: Both data sources, Bloomberg and Datastream, show similar trends although there are minor differences in the magnitude and timing of specific points.
+5. **Recent Changes**: In Q3 2022, the P/E discount was significantly high but started showing signs of narrowing slightly towards the end of 2022.
+
+The data suggests that European stocks were significantly cheaper relative to US stocks during much of the analyzed period, particularly noticeable during times of economic stress or uncertainty.

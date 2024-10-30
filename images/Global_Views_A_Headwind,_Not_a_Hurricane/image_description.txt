@@ -1,0 +1,10 @@
+The image is a bar graph titled "Exhibit 1: In Response to Recent Banking Turmoil, We Have Raised Our 12-Month US Recession Odds to 35%". The graph represents the estimated probability of a US recession over the next 12 months, as per a survey conducted by Bloomberg Forecaster.
+
+Key points from the image:
+- The x-axis indicates the number of forecasters ranging from 0 to 50.
+- The y-axis indicates the probability percentage ranging from 0 to 100.
+- Goldman Sachs (GS) has raised its 12-month US recession probability from a previous 25% to 35%.
+- The consensus median forecast for a US recession probability is 60%.
+- The bars in the chart represent different forecasters' predictions, varying from below 20% to above 90%, with the majority clustered around the 50% to 60% range.
+  
+This indicates a significant increase in the perceived likelihood of a US recession, influenced by recent banking sector turmoil. The consensus among forecasters shows heightened concern, with the median forecast at 60%.

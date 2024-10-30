@@ -1,0 +1,29 @@
+The chart illustrates actual and forecasted revenues by AI-exposed sectors, indexed to 100 in the fourth quarter of 2019 (4Q19). The sectors included are Semiconductors, Hardware Enablers (excluding semiconductors), and Software Enablers.
+
+Key points from the chart:
+
+1. **Overall Trend (2019-2025)**: 
+   - There is a general upward trend in revenue across all three sectors from 2019 to the projected year 2025.
+ 
+2. **Semiconductors**:
+   - Started at the base level (100) in 4Q19.
+   - Exhibited more steady but moderate growth compared to the other sectors.
+   - Significant surge projected from 2023 onwards, reaching above 220 by 2025.
+
+3. **Hardware Enablers (Excluding Semiconductors)**:
+   - Also began at the base level (100) in 4Q19.
+   - Displayed steady growth with some fluctuations.
+   - Moderate increase expected in the forecasted period, but less pronounced compared to Software Enablers and Semiconductors.
+   
+4. **Software Enablers**:
+   - Started similarly at the base level (100) in 4Q19.
+   - Showed notable increases during the actual data period (2019-2022).
+   - A significant spike in revenue is forecasted starting from 2023, potentially exceeding 240 by 2025, indicating the highest growth among the three sectors.
+
+5. **Forecast Period (2023-2025)**:
+   - Dashed lines indicate the consensus revenue forecasts.
+   - All sectors are expected to continue growing with Software Enablers leading, followed by Semiconductors, and then Hardware Enablers.
+
+The chart underscores the considerable increase in AI investment across these sectors, particularly highlighting software and semiconductor sectors as the primary drivers of projected revenue growth in the coming years. 
+
+_Source: FactSet, Goldman Sachs GIR._

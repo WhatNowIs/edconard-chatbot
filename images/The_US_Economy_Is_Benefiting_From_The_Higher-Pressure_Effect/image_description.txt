@@ -1,0 +1,11 @@
+The graph illustrates post-pandemic productivity trends across different countries from 2019 to 2024, focusing on total labor productivity (output per employed person) which has been rebased for comparison purposes. 
+
+### Key Insights:
+- **USA**: The USA exhibits the highest productivity growth among the peer countries post-pandemic. After an initial decline in 2020, the productivity index has consistently been above that of other nations.
+- **Other Countries**: 
+  - **Canada, UK, Euro Area, Australia, Japan**: These countries show a decline in productivity during the pandemic period in 2020. Recovery patterns vary, but these countries lag behind the USA in terms of productivity growth. 
+  - **Japan**: Exhibits less volatility compared to others but maintains a consistently lower productivity growth.
+  - **Rest**: Generally cluster around the 100 index point, experiencing moderate post-pandemic recovery with fluctuations.
+
+### Conclusion:
+Post-pandemic, the USA leads significantly in labor productivity growth compared to Canada, the UK, Japan, Euro Area, and Australia. While all countries experienced a dip in 2020 due to the pandemic, the USA's rebound has outpaced its peers, showcasing more robust productivity growth in the following years.

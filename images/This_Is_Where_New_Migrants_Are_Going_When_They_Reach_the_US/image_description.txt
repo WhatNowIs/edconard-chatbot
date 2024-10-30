@@ -1,0 +1,20 @@
+The image is a bubble map displaying the number of migrants with new immigration court cases in 2023 across various counties in the United States. It highlights counties where new migrants constitute more than 2% of the population. Here's a detailed summary:
+
+1. **Title**: New Migrants Made Up More Than 2% of People in Some Counties.
+2. **Metrics**:
+   - Bubbles represent the number of migrants, with larger bubbles indicating higher numbers.
+   - Colors indicate the share of population that migrants represent, with darker blue signifying higher percentages.
+3. **Key Locations with Higher Migrant Shares**:
+   - **Queens**: Noted as one of the counties with a high share of migrants.
+   - **Miami-Dade**: Similarly characterized by a high migrant per capita.
+   - **Denver**: Among the counties with significant migrant percentages.
+4. **Other Notable Counties**:
+   - **Cook**
+   - **Harris**
+   - **Los Angeles**
+   - **Bronx** and **Kings**
+5. **Additional Insights**:
+   - Some last known addresses in court records include detention centers.
+6. **Data Source**: Department of Justice EOIR case data, released after FOIA requests by TRAC at Syracuse University.
+
+In summary, the image emphasizes counties like Queens, Miami-Dade, and Denver where migrants make up a significant share of the population in 2023, supported by data from the Department of Justice EOIR.

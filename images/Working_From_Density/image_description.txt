@@ -1,0 +1,19 @@
+The image displays a scatter plot titled "Figure 1. National Relationship Between Block-Group Density and Telework." The graph illustrates the relationship between population density percentiles of block groups in metropolitan areas and the mean share of teleworkable jobs in these block groups.
+
+Key Points:
+- **Axes**: 
+  - The horizontal axis (x-axis) represents the population and density percentile of block groups, ranging from 1 (least dense) to 100 (most dense).
+  - The vertical axis (y-axis) represents the mean share of teleworkable jobs, ranging from 0.325 to 0.425.
+- **Data Points**: 
+  - Each blue dot on the scatter plot indicates an average share of teleworkable jobs for block groups within a specific density percentile.
+- **Trend**:
+  - There is a general upward trend in the share of teleworkable jobs as population density increases.
+  - The increase is more pronounced at the very high density percentiles (above 90), where the share of teleworkable jobs surpasses 0.4.
+  - For lower to mid-density percentiles (below 90), the share of teleworkable jobs seems to plateau around 0.35 to 0.385.
+
+**Note**:
+- This analysis only includes block groups in metropolitan areas as identified using the US Census Bureau's Core-Based Statistical Areas.
+- Various data sources are referenced for telework potential and employment industry data, including Dingel and Neiman (2020) and the US Census Bureau (2021, 2022).
+
+Summary:
+The graph demonstrates that in metropolitan areas, block groups with higher population densities tend to have a higher share of teleworkable jobs, with a notable increase in the highest density percentiles. This indicates a correlation between urban density and the prevalence of jobs that can be performed remotely.

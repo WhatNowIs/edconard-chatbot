@@ -1,0 +1,10 @@
+The image is a chart from Bloomberg depicting the bid-ask spreads of Treasury securities with different maturities (2-year, 5-year, 10-year, and 30-year) from September 2022 to March 2023. The chart illustrates the fluctuations in the bid-ask spreads for these Treasuries, using rolling 5-day moving averages to smooth volatility.
+
+Key points:
+- Bid-ask spreads represent the difference between the highest price a buyer is willing to pay and the lowest price a seller is willing to accept.
+- Recent data shows that the bid-ask spreads for all Treasury maturities (2-year, 5-year, 10-year, and 30-year) have increased significantly.
+- This widening of spreads indicates increased market concern or volatility, particularly amid concerns related to the banking sector.
+- The spreads for the 30-year Treasuries (yellow line) appear to have increased the most dramatically in recent times, peaking at nearly 0.5 basis points.
+- The spreads for the 2-year Treasuries (black line), 5-year Treasuries (magenta line), and 10-year Treasuries (blue line) have also exhibited notable increases.
+
+This chart suggests heightened market tension and a possible decrease in liquidity, reflecting broader concerns about the stability and confidence within the financial markets.

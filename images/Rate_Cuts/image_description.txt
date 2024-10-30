@@ -1,0 +1,15 @@
+The image presents two line charts from Goldman Sachs Global Investment Research comparing the Fed Funds Rate under different scenarios and the gap between Goldman Sachs' predictions and market pricing. 
+
+**Left Chart: Fed Funds Rate Scenario Analysis**
+- **Higher for Longer / No Cuts (30%)**: The red line shows the Fed Funds Rate peaking at around 6% by March 2023 and remaining steady through March 2025.
+- **GS Baseline (35%)**: The dark blue line shows a peak at just below 6% around March 2023, followed by a gradual decline.
+- **Growth Scare / Insurance Cuts / Shallow Recession (15%)**: The light blue line reaches around 5% by March 2023, then declines more sharply.
+- **Full Recession, Substantial Cuts (20%)**: The gray line peaks at around 4% and drops significantly thereafter.
+
+**Right Chart: Comparison of GS Predictions and Market Pricing**
+- **GS Baseline Path**: The dashed dark blue line shows a peak at just below 6% in March 2023 with a gradual decline.
+- **GS Probability-Weighted Average Path**: The green line follows a similar trajectory to the GS Baseline Path but is slightly lower overall.
+- **Market Pricing**: The orange line peaks just above 5% around March 2023 and then decreases steadily, diverging downward more sharply than the GS paths as time progresses.
+
+**Summary**:
+Goldman Sachs maintains a more hawkish stance on the Fed Funds Rate compared to market expectations. Their baseline scenario suggests a peak just below 6% around March 2023 with a gradual decline, while market pricing indicates a peak just above 5% and a sharper decrease. Although recession fears have diminished, scenarios range from no cuts to substantial cuts, reflecting different recession probabilities and their impacts on the rate trajectory.

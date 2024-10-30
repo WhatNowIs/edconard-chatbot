@@ -1,0 +1,28 @@
+The image is a U.S. map titled "Figure 1: Natural Disaster Data Descriptive Statistics," which uses color coding to represent statistical data on natural disasters across various counties. 
+
+### Color Key:
+- **p75 to max (dark red)**: Indicates areas with the highest percentile (75th percentile to maximum) of natural disasters.
+- **p50 to p75 (red)**: Shows areas within the 50th to 75th percentiles.
+- **p25 to p50 (orange)**: Represents regions within the 25th to 50th percentiles.
+- **min to p25 (yellow)**: Denotes regions from the minimum to the 25th percentile.
+- **no data (cream)**: Represents areas where no data is available.
+
+### Summary:
+The map provides a visual distribution of natural disaster statistics across the United States. 
+
+- **High-Risk Areas (Dark Red)**: 
+  - Concentrated in the western U.S., particularly California, parts of the Pacific Northwest, and regions along the eastern and southeastern U.S. coastlines.
+  
+- **Moderate to High-Risk Areas (Red)**: 
+  - Spread throughout parts of the Midwest, the Southeast, and the Eastern Seaboard.
+  
+- **Moderate Risk Areas (Orange)**: 
+  - Found in more central regions of the U.S., including parts of the Midwest and the Northern Plains.
+  
+- **Low-Risk Areas (Yellow)**: 
+  - Scattered throughout various less densely populated regions, especially noticeable in central and northern states.
+
+- **Areas with No Data (Cream)**: 
+  - Sparsely scattered across the map but more prevalent in certain areas of the West and Midwest.
+  
+This map serves as a useful tool for identifying regions in the U.S. that are prone to experiencing natural disasters, helping policymakers, researchers, and emergency planning teams to prioritize and allocate resources effectively.

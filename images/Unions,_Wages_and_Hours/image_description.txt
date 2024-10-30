@@ -1,0 +1,17 @@
+The chart titled "Adjusted union private sector wage differentials, 1983-2023" depicts the wage differentials for unionized workers in the private sector over a 40-year period. The data is split into two categories: weekly and hourly wage differentials. 
+
+Key observations:
+
+1. **Weekly Private Sector (Red Line):**
+   - The differential started around 20.8% in 1983.
+   - It saw a decline until around 1990, followed by a relatively stable period from the early 1990s to the mid-2000s.
+   - There is notable fluctuation from the mid-2000s to the early 2020s, peaking around 21.6% around 2018.
+   - By 2023, the differential declined significantly to around 13.0%.
+
+2. **Hourly Private Sector (Green Line):**
+   - The differential began slightly above 17% in 1983.
+   - It showed a downward trend with several peaks and troughs throughout the years.
+   - Significant declines are observed during the early 2000s and post-2016, where it reached below 11% around 2020.
+   - It slightly rebounded, reaching roughly 12.0% by 2023.
+
+Overall, both weekly and hourly union wage differentials in the private sector have demonstrated a general declining trend over the 40 years, with periodic fluctuations. The weekly differential has consistently remained higher than the hourly differential, indicating a persistent, albeit decreasing, premium for unionized workers in weekly wages compared to hourly wages.

@@ -1,0 +1,29 @@
+### Summary of US and EU Economic Differences
+
+This graphic illustrates the historical economic differences between the United States (US) and the European Union (EU) from 2000 to 2022 across several key metrics: GDP, GDP per head, GDP per working-age population, working age employment, GDP per person employed, and GDP per hour worked. Positive values indicate the EU figures are higher, whereas negative values show US figures are higher.
+
+**1. **GDP:**
+  - Initially, the EU had a slight advantage in GDP around the year 2000. 
+  - However, the gap quickly turned negative around 2005, indicating the US's higher GDP.
+  - This trend persists and deepens through 2022.
+
+**2. **GDP per head:**
+  - The US has consistently had a higher GDP per head compared to the EU. 
+  - The gap grew more pronounced over the years, particularly from 2005 onward, with the EU lagging further behind the US.
+
+**3. **GDP per working-age population:**
+  - Similar to GDP per head, the EU consistently trails the US in GDP per working-age population.
+  - The gap widens significantly from 2005 and continues to grow through 2022.
+
+**4. **Working-age employment:**
+  - The EU generally had lower working-age employment rates compared to the US, except for a brief period around 2010 where it saw a positive gap.
+  - Over time, the negative gap widened, indicating higher working-age employment in the US.
+
+**5. **GDP per person employed:**
+  - The gap consistently shows that GDP per person employed is higher in the US compared to the EU.
+  - This difference has widened notably from 2005 onwards, continuing through 2022.
+
+**6. **GDP per hour worked:**
+  - Although there is a persistent negative gap indicating that the US has higher GDP per hour worked, the difference fluctuates less dramatically compared to other metrics.
+
+Overall, this data provides a clear indication of the economic disparities between the US and the EU, with the US maintaining higher performance metrics in GDP, productivity, and employment over the past two decades.

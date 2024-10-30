@@ -1,0 +1,23 @@
+The provided image contains two graphs comparing sport team valuations with equity markets over time and their valuation to revenue ratios for different leagues against the S&P 500.
+
+### Left Graph: Sport Team Valuations vs Equity Markets (Index 100 = 2005)
+- **Time Frame**: 2005 to 2025.
+- **Data Sources**: JP Morgan Sports Coverage Team, Forbes, Bloomberg, 2024.
+- **Observations**:
+  - **NBA** shows the most significant increase in valuations, peaking around 1300 by 2023.
+  - **NHL** and **MLB** also show substantial growth, but at a lower rate compared to the NBA.
+  - **NFL** and **S&P 500** exhibit more moderate growth, with the NFL slightly outperforming the S&P 500.
+  - From 2005 to around 2010, all indices rose at a similar rate. Post-2010, sports team valuations, especially the NBA, began to diverge significantly from the S&P 500.
+
+### Right Graph: Valuation to Revenues for Major Sports Teams vs S&P 500 (Price to Sales)
+- **Time Frame**: Not explicitly mentioned, but sorted by current valuation.
+- **Data Sources**: Forbes, Bloomberg, JPMAM, 2024.
+- **Observations**:
+  - **NBA** teams have the highest valuation to revenue ratio, consistently around 13-14x.
+  - **NFL** teams follow, with ratios generally decreasing from 10x to 4x.
+  - **MLB** teams show a similar trend to the NFL but start at a slightly higher ratio and end slightly below the NFL.
+  - **NHL** teams have the lowest ratios among the sports leagues, decreasing from around 8x to less than 1x.
+  - The **S&P 500** is represented by a straight line at a much lower valuation to revenue ratio, indicating that sports teams are significantly overvalued compared to the broader market.
+
+### Summary
+The graphs illustrate that sports team valuations, particularly in the NBA, have increased dramatically from 2005 through 2023 compared to the S&P 500. This indicates high investor interest and optimism in the sports industry. Despite this overall valuation increase, the valuation to revenue ratios indicate that sports teams, specifically the NBA, have significantly higher price-to-sales ratios when compared with the broader market, suggesting potential overvaluation in comparison to traditional equity markets.

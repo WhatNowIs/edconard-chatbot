@@ -1,0 +1,21 @@
+The image provides two graphs under the title "Figure 1: Student Loan Balances and Payments." The graphs illustrate student loan payments and balances over time, with specific key dates emphasized.
+
+**Payments Graph (Left):** 
+- The Y-axis represents the level of student loan payments.
+- The X-axis spans from early 2019 to late 2022.
+- There is a noticeable sharp decline in payments around the beginning of 2020, coinciding with the announcement of the payment moratorium.
+- Following this decline, payments remain low but start to slightly increase around mid-2021, maintaining a gradual upward trend through the rest of the period.
+
+**Balances Graph (Right):** 
+- The Y-axis measures student loan balances.
+- The X-axis covers a similar time period, from early 2019 to late 2022.
+- Balances remain relatively stable until early 2020, where there is a marked upward trend coinciding with the payment moratorium period.
+- The upward trend continues, showing a steep increase after mid-2021, and balances reach their highest levels by late 2022.
+
+**Overall Summary:**
+- The provided figure presents student loan payments and balances over a period from the beginning of 2019 to the end of 2022.
+- The payment moratorium, which began around early 2020, led to a significant reduction in payments, as shown by the sharp drop in the payments graph.
+- Correspondingly, student loan balances began to rise steadily during this period, indicating that although payments decreased, balances grew.
+- Both graphs include 95% confidence intervals, and fixed effects are accounted for individual and initial loan payment deciles.
+- Key dates are marked by solid and dashed lines, reflecting important periods such as the payment moratorium and forgiveness announcements.
+- The data source for this analysis is TransUnion.

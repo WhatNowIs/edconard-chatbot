@@ -1,0 +1,22 @@
+This image is a graph illustrating the stock market concentration in the U.S. from 1950 to 2023. The graph tracks the percentage of total market capitalization held by the top 1, top 3, and top 10 companies listed on major U.S. stock exchanges (NYSE, NASDAQ, and NYSE American Stock Exchange).
+
+Here are the key points from the graph:
+
+1. **Top 10 Companies**:
+   - In 2023, the top 10 companies accounted for 27% of total market capitalization, which shows a general upward trend from the mid-2010s.
+
+2. **Top 3 Companies**:
+   - In 2023, the top 3 companies held approximately 15% of the total market capitalization, highlighting a significant increase from previous decades.
+
+3. **Top 1 Company**:
+   - In 2023, the leading single company held around 6% of the total market capitalization, which is relatively higher compared to most years tracked in the graph.
+
+4. **Historical Perspective**:
+   - The concentration levels for all three (Top 1, Top 3, and Top 10) fluctuated over the decades, with notable peaks and troughs, reflecting various economic conditions and market trends.
+   - The concentration for the top 10 companies was particularly high from the late 1960s to early 1970s and saw another significant rise in recent years.
+  
+5. **Sources and Notes**:
+   - The data is sourced from FactSet, Compustat, U.S. Securities and Exchange Commission annual reports, and Counterpoint Global.
+   - The universe of companies includes those listed on the New York Stock Exchange, NASDAQ, and NYSE American Stock Exchange, excluding American depositary receipts.
+
+Overall, the graph indicates a rising trend in market concentration among the top companies in recent years, especially for the top 10 and top 3 companies, which could suggest increasing dominance of large corporations in the U.S. stock market.

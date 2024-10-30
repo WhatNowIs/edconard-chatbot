@@ -1,0 +1,12 @@
+The chart titled "Exhibit 3: Investment as Percent of Sales for Companies in the Russell 3000, 1996-2021" shows the percentage of sales that companies in the Russell 3000 index have invested from 1996 to 2021. The investments include capital expenditures and mergers & acquisitions (M&A), covering all sectors, while R&D and non-R&D SG&A exclude financial and real estate sectors.
+
+Key points from the chart:
+1. The investment percentage exhibited fluctuations over the observed period.
+2. From 1996 to around 2003, the investment percentage experienced a peak, reaching over 40% in 1998, before declining significantly below 25% by 2003.
+3. The period from approximately 1996 to 2007 shows an average investment percentage of 27.3%.
+4. Post-2007, the average investment percentage dropped to 24.5%.
+5. The investment percentage generally remained stable with some fluctuations post-2007, marked by noticeable peaks around 2014 and 2021.
+6. A general trend of higher variability in investment percentages is seen prior to 2007 compared to post-2007.
+
+Source: FactSet and Counterpoint Global
+Note: Capital expenditures and M&A reflect all sectors; R&D and non-R&D SG&A exclude financial and real estate sectors.

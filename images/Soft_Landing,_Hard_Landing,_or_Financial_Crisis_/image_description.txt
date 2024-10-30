@@ -1,0 +1,12 @@
+This image highlights a critical observation about the current state of the economy concerning wage growth. 
+
+Key points:
+- Title: "The one way the economy is not yet in equilibrium is wage growth remains elevated."
+- Graph: Displays the change in average hourly earnings for all private industries, measured in percent change on an annual rate.
+  - The graph shows two metrics: a 3-month change (in orange) and a 1-month change (in blue bars).
+- The period covered extends from January 2021 to October 2023.
+- The 3-month change fluctuates, peaking at around 7% and dropping to around 4% by the latest data point.
+- The 1-month change also fluctuates, with significant monthly variations around the 4% to 7% range.
+
+Summary:
+The economic analysis suggests that wage growth remains elevated and is a significant factor in the economy not yet achieving equilibrium. The data from January 2021 to October 2023 illustrates that both short-term and slightly longer-term wage growth rates continue to show variation, with periodic peaks and drops. While it is anticipated that wage growth will eventually slow to align with price growth, persistent high wage growth could be a contributing factor if core inflation resurfaces. The source of the data includes the Bureau of Labor Statistics (BLS) and individual calculations.

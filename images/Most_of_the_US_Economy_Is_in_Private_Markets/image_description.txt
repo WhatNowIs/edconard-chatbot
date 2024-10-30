@@ -1,0 +1,6 @@
+The image displays a bar chart illustrating the employment distribution between S&P 500 companies and the entire US economy. The title of the chart emphasizes that the employment in S&P 500 companies constitutes 18% of the total employment in the United States. 
+
+- The left bar shows that the total employment in S&P 500 companies is 29 million.
+- The right bar represents the total employment in the US economy, which is 158 million.
+
+This comparison highlights the significant role that S&P 500 companies play in the US job market, employing nearly one-fifth of the total workforce.

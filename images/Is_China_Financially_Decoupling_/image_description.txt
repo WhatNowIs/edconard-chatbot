@@ -1,0 +1,26 @@
+The chart displays China's annual balance of payments from 2010 to 2023 in billions of dollars ($bn). The components analyzed include Net Foreign Direct Investment (FDI), Net Capital Flows, Errors and Omissions (E&O), the Current Account, and Reserves.
+
+Key points:
+
+1. **Net Foreign Direct Investment (FDI)** (shown in pink):
+   - Generally positive throughout the years.
+   - Highest around 2010-2011 and 2017-2018.
+   
+2. **Net Capital Flows** (shown in red):
+   - Highly volatile, with significant outflows especially during 2014-2016.
+   - Relatively stabilized post-2016 but still fluctuating.
+
+3. **Errors and Omissions (E&O)** (shown in yellow):
+   - Variable contributions but generally positive around 2010-2011 and 2016-2017.
+   - Periods of negative values particularly in 2018-2020.
+
+4. **Current Account** (shown in blue):
+   - Mostly positive across the years.
+   - Noticeable surges around 2010-2011 and 2022.
+
+5. **Reserves** (represented by the black line):
+   - Exhibits significant fluctuations.
+   - Sharp decline around 2015-2016 followed by recovery until 2017-2018.
+   - Subsequent variations with a general upward trend post-2018, peaking in early 2020, then declining slightly towards 2023.
+
+In summary, the chart illustrates the dynamic nature of China's balance of payments over the period. There are marked fluctuations in net capital flows and reserves, a generally positive current account, and consistent yet varying contributions from net FDI and E&O. The overall trend shows volatility with periods of significant economic activity, particularly in terms of capital flows and reserves.

@@ -1,0 +1,27 @@
+The image outlines the efforts to build a self-sufficient chip network centered around Huawei, supported by a state investment fund, the Shenzhen Major Industry Investment Group. Here's a summary:
+
+1. **Central Role**: The Shenzhen Major Industry Investment Group acts as the central body coordinating various entities involved in chip fabrication and semiconductor development.
+
+2. **Major Collaborators**:
+   - **Chip Fabrication Manufacturers**:
+     - **PXW**: Focuses on image sensors and RF (radio frequency) chips.
+     - **SWAYSURE**: Produces memory chips.
+     - **PST**: Develops logic chips.
+
+3. **Semi-Conductor Developers**: 
+   - **MITK**: Specializes in third-generation chip development.
+
+4. **Consultants**:
+   - **PENGJIN**: Engages in tech transfer.
+
+5. **Chip Making Machines and Materials**:
+   - **SICARRIER**: Deals with chip making machinery and materials and has subsidiaries like:
+     - **CORNERSTONE**: Photoresist.
+     - **ZETOP**: Optical machines.
+     - **UEASCEND**: Chip equipment.
+
+6. **Collaboration with Huawei**:
+   - The three key chipmakers (PXW, SWAYSURE, and PST) are building new fabrication facilities in conjunction with Huawei.
+   - Huawei and SICARRIER have exchanged both staff and patents to bolster their efforts.
+
+This network aims to create a sustainable and self-reliant ecosystem for chip manufacturing, enhancing Huawei’s capabilities in producing advanced semiconductor technologies.

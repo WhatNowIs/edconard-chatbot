@@ -1,0 +1,24 @@
+The provided image is a bar chart titled "Price Increases Are Higher For Services Than Goods," which compares the percentage price increases for various goods and services from January 2000 through February 2023. The data is sourced from the Consumer Price Index (CPI) and represents seasonally adjusted values.
+
+### Key Insights:
+
+1. **Overall Trend:**
+   - Services have generally seen higher price increases over the given period compared to goods. 
+
+2. **Top Increases in Services:**
+   - **Delivery Services:** Highest increase, exceeding 175%.
+   - **Hospital Services, Water and Sewage Maintenance,** and **Pet Services:** Significant increases, around 125% to 175%.
+   - **Education:** Elementary, high school, and college tuition and fees, along with educational books and supplies, have seen substantial price hikes.
+   - **Insurance and Medical Services:** Motor vehicle insurance, nursing home services, and various medical services (e.g., physicians' services, hospital services) have also increased notably.
+
+3. **Goods with Notable Price Increases:**
+   - **Eyeglasses and Eye Care, Boys' and Girls' Footwear:** Show moderate increases (~50%).
+   - **Airline Fares, New Vehicles, and Used Cars and Trucks:** These categories have seen higher price increases than other goods, around 25% to 50%.
+
+4. **Goods with Price Reductions or Minimal Increases:**
+   - **Televisions, Photographic Equipment and Supplies, Toys,** and **Other Video Equipment:** These categories have seen substantial price decreases, in some cases exceeding -100%.
+   - Despite minimal to no increases, men's suits, sport coats, outerwear, and other similar categories have mostly remained stagnant in price changes.
+
+### Summary:
+
+Overall, service-related expenses such as delivery services, medical services, education, and insurance have experienced significant price increases between January 2000 and February 2023. In contrast, the prices of many goods, especially electronics and apparel, have either remained stable or decreased. This disparity underlines the heavier inflationary pressure on services compared to goods over the past two decades.

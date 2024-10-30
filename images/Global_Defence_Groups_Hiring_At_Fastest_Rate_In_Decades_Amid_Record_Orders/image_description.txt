@@ -1,0 +1,22 @@
+The image, published by the Financial Times, illustrates the hiring intentions of various defense companies for the year 2024. The data is divided into two categories: the number of new hires and the percentage of 2023 headcount that these hires represent.
+
+### Key Takeaways:
+1. **Number of New Hires (Left Chart)**:
+   - **Thales** plans to hire the most employees, with approximately 8,300 new hires.
+   - **Leonardo** is next with around 6,700 new hires.
+   - **L3 Harris** follows, intending to hire about 6,000 new employees.
+   - **BAE Systems** plans for roughly 5,000 new hires.
+   - Other companies such as Rheinmetall, MBDA, Saab, Dassault, Hensoldt, and Renk have hiring plans ranging from about 2,000 to a few hundred.
+
+2. **Percentage of 2023 Headcount (Right Chart)**:
+   - **Renk**'s new hires represent the highest percentage increase relative to its current staff, hitting around 15%.
+   - **Saab** and **MBDA** have new hires amounting to roughly 15% and 12% of their current headcount, respectively.
+   - **Hensoldt**, **L3 Harris**, **Leonardo**, and **Rheinmetall** also show significant headcount increases proportionally.
+   - Companies like **Thales**, **Dassault**, and **BAE Systems** show moderate increases in relative percentage terms.
+
+### Source Information:
+- The data is based on company estimates.
+- Thales' hiring plans include replacements and cover all sectors, including aerospace and security.
+- Leonardo's numbers also include replacements.
+
+Through this chart, it becomes clear that many defense companies are gearing up for substantial growth in their workforce, aligning with their projected needs and expansions.

@@ -1,0 +1,22 @@
+The bar chart compares economic growth metrics of the US and Europe over the period from 1999 to 2019, focusing on three key areas: real GDP growth, working-age population growth, and GDP growth per working-age adult.
+
+1. **Growth in Real GDP**: 
+   - **US**: Approximately 50%
+   - **Europe**: Approximately 30%
+   
+   The US experienced higher growth in real GDP compared to Europe.
+
+2. **Growth in Working-age Population**:
+   - **US**: Approximately 20%
+   - **Europe**: Very marginal growth, close to 0%
+   
+   The US saw significant growth in its working-age population, while Europe’s growth in this area was negligible.
+
+3. **Growth in GDP per Working-age Adult**:
+   - **US**: Approximately 35%
+   - **Europe**: Slightly less than the US, around 30%
+   
+   Both regions exhibited similar growth in GDP per working-age adult, with the US slightly leading.
+
+**Summary**:
+Between 1999 and 2019, the US outperformed Europe in terms of real GDP growth and growth in the working-age population. However, both regions showed comparable levels of growth in GDP per working-age adult, with the US holding a slight advantage. These trends indicate stronger economic performance and demographic growth in the US during this period.

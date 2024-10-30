@@ -1,0 +1,9 @@
+The image is a graph illustrating "Consumption responses when illicitly manufactured (IM) marginal prices are low." The graph depicts the relationship between the consumption of "all other goods" and the quantity of "opioids" consumed. Key elements of the graph include:
+
+- **Red Line (Rx)**: Represents the prescription opioids' consumption curve.
+- **Black Line (Illicitly manufactured)**: Stands for the consumption curve of illicitly manufactured opioids.
+- **Blue Line (Indifference curve)**: Indicates levels of satisfaction or utility where a consumer is indifferent between combinations of opioids and other goods.
+- **Black Market Fixed Cost**: A vertical segment from the y-axis, representing the fixed costs associated with acquiring opioids from the black market.
+- **Points B and C**: Intersection points suggesting different levels of opioid consumption under marginal and prescription prices.
+
+In summary, this graph visually represents how lower marginal prices of illicitly manufactured opioids affect consumption patterns. When these prices are low, individuals may shift their consumption from prescription opioids (Rx) to illicitly manufactured opioids, reflecting changes in their indifference curves and overall consumption behaviors. The black market fixed cost is a factor influencing the opioid consumption decision.

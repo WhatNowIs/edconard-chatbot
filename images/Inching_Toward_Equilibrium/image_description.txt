@@ -1,0 +1,16 @@
+The image consists of two line graphs, both titled "Earnings Yield vs Level Required to Earn Normal Risk Premium over Bonds". They illustrate the relationship between earnings yield and the level needed to achieve a normal risk premium over bonds over different time periods. Here are the key points:
+
+1. **Left Graph (2018-2024)**:
+   - Timeline: 2018 to 2024.
+   - The vertical axis represents the percentile, ranging from 0.00 to 1.00.
+   - The earnings yield percentile remained relatively stable from 2018 to around 2022, fluctuating between the 0.50 and 0.75 intervals.
+   - From 2022 onwards, the earnings yield percentile began to decline sharply, falling below the equilibrium range (0.25-0.75) and approaching 0.00 by 2024.
+
+2. **Right Graph (Long-term Historical Perspective)**:
+   - Timeline: Approximately 1960 to 2024.
+   - The vertical axis represents the same percentile range as the left graph (0.00 to 1.00).
+   - The earnings yield percentile followed a cyclical pattern over many decades, with multiple peaks and troughs.
+   - Similar to the left graph, there is a recent sharp decline from being above the equilibrium range to approaching 0.00 in the latest data.
+
+### Summary:
+The graphs show that over both short-term (2018-2024) and long-term historical timelines, the earnings yield required to earn a normal risk premium over bonds has recently dropped sharply. This indicates a very low current earnings yield compared to historical standards, suggesting potential risks or lower future returns from equities compared to bonds in the near term.

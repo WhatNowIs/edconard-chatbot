@@ -1,0 +1,21 @@
+The chart titled "Annual change in the age 0-4 population, 2020-2023" illustrates the yearly percentage change in the population of children aged 0-4 for different county types in the United States, from July 1 of each year. The data spans the years 2020-2021, 2021-2022, and 2022-2023, with each year represented by a different color: green for 2020-21, yellow for 2021-22, and blue for 2022-23.
+
+Key insights from the chart:
+
+1. **Nonmetro Rural Counties**: The population of children aged 0-4 decreased every year, with the decline being steepest in 2020-21 (around 2.5%) and lessening slightly over the subsequent years.
+
+2. **Metro Rural Counties**: Similarly, these counties also experienced a decline in this age group every year. The decline worsened in 2021-22 compared to 2020-21, but improved marginally in 2022-23.
+
+3. **Exurban Counties**: These counties saw an increase in the population of children aged 0-4 for the years from 2021-22 and 2022-23, with a significant rise seen in 2021-22 (above 1%).
+
+4. **Suburban Counties**: They fluctuated around zero change, with a small increase in 2020-21, slight negative growth in 2021-22, and a small positive growth in 2022-23.
+
+5. **Small Urban Counties**: These counties had relatively minimal change, with a slight decrease in 2020-21 and a slight increase in 2021-22. 
+
+6. **Mid-sized Urban Counties**: Showed decreases every year, with the largest drop in 2020-21.
+
+7. **Large Urban Counties**: Exhibited the most significant decline in the 2020-21 period (around 3%). The decline continued but at a lesser rate in the subsequent years.
+
+8. **Nationwide**: Overall, the nationwide trend showed a negative growth rate in the population aged 0-4 across all years, with the largest decline in 2020-21.
+
+Overall, the trend indicates that the population of children aged 0-4 has mostly been declining across various county types, with large urban counties experiencing the steepest decreases and some minor positive changes observed in exurban and suburban regions in recent years.

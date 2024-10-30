@@ -1,0 +1,23 @@
+The image, titled "Leading on the edge," illustrates the projected microprocessor production volumes (measured in wafers per month, in millions) for leading-edge (up to 3 nanometres), advanced (4-18 nanometres), and trailing-edge (20-65 nanometres) technologies across three time periods: 2019, 2022, and 2025 (the latter being a forecast).
+
+### Leading-Edge (up to 3 nanometres)
+- **2019**: Production was minimal, primarily in Taiwan.
+- **2022**: Slight increase in production, still dominated by Taiwan.
+- **2025**: Significant increase, with contributions from the rest of the world and the Americas, but Taiwan maintaining a strong lead.
+
+### Advanced (4-18 nanometres)
+- **2019**: Taiwan had the largest production, followed by the Americas, China, and the rest of the world.
+- **2022**: Production levels were relatively stable across all regions, similar to 2019.
+- **2025** (forecast): Expected to see Taiwan retaining the largest share, with stable contributions from the Americas, China, and the rest of the world.
+
+### Trailing-Edge (20-65 nanometres)
+- **2019**: Taiwan led in production, followed by the Americas, China, and the rest of the world.
+- **2022**: Increase across all regions, particularly in Taiwan.
+- **2025** (forecast): Significant increase expected globally, especially in the rest of the world and Taiwan, with notable contributions from the Americas and China.
+
+### Summary:
+- **Leading-Edge (up to 3 nanometres)**: Taiwan dominates production, but by 2025, the Americas and the rest of the world will also significantly contribute.
+- **Advanced (4-18 nanometres)**: Taiwan remains the leader, with stable production volumes expected across all regions.
+- **Trailing-Edge (20-65 nanometres)**: Significant growth anticipated, particularly in the rest of the world and Taiwan by 2025.
+
+Overall, Taiwan currently leads in microprocessor production, with substantial growth expected globally, especially in leading-edge and trailing-edge technologies by 2025.

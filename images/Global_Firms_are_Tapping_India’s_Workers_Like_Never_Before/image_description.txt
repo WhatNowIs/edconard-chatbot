@@ -1,0 +1,8 @@
+The graph illustrates the trend in R&D spending by US multinational companies in India from 2010 to 2021. The spending is measured in billions of dollars ($bn). Over this period, there is a consistent and significant increase in investment. 
+
+- In 2010, the R&D spending was around $1 billion.
+- By 2015, the spending had more than doubled, reaching approximately $2.5 billion.
+- The growth continued relatively steadily until 2018, when the investment hit around $3.5 billion.
+- Post-2018, there is a sharper increase, culminating in 2021 with the spending reaching approximately $5.5 billion.
+
+This indicates a strong and growing commitment by US multinational companies to invest in R&D in India over the last decade. The data sources for this graph are NASSCOM and the Bureau of Economic Analysis.

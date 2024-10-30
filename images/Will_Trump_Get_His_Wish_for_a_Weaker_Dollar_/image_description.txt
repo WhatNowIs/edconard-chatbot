@@ -1,0 +1,10 @@
+The image is a display board showing the exchange rate information for USD/JPY (United States Dollar to Japanese Yen) in a foreign exchange context. Here are the key details extracted:
+
+- **Currency Pair**: USD/JPY
+- **Current Value**: 160.96-97
+- **Daily Change**: +0.23
+- **Previous Day's Close**: Not expressly mentioned but the increment indicates the previous close was approximately 160.73-74.
+- **Highest Value of the Day**: 161.26
+- **Lowest Value of the Day**: 160.64
+
+The displayed exchange rate indicates that the US Dollar is trading at about 160.96-97 Japanese Yen. The exchange rate has increased by 0.23 points compared to the previous day. The highest value that the rate reached during the day is 161.26, while the lowest it fell to was 160.64. This information is useful for understanding the daily fluctuations and the current standing of the USD/JPY exchange rate.

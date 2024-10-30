@@ -1,0 +1,13 @@
+The chart illustrates the trajectory of general government gross debt (% of GDP) for the United States and selected Eurozone crisis countries from 2013 to 2028. The countries highlighted include Greece, Italy, Portugal, Ireland, and Spain.
+
+Key points from the chart are:
+
+- In 2013, Greece had the highest government debt at 178.84% of GDP.
+- Over the years, Greece’s debt is projected to decrease to 143.64% by 2028.
+- Italy started with a debt of 132.46% of GDP in 2013, which is expected to decrease to 131.95% by 2028.
+- Portugal’s debt also decreased from 131.43% in 2013 to a projected 96.47% in 2028.
+- Ireland’s debt is set to decrease sharply from 119.94% in 2013 to 25.19% by 2028.
+- Spain’s debt, starting at 100.49%, is expected to decrease to 109.32% by 2028.
+- Notably, the United States' debt, represented in red, started lower at 104.54% in 2013 but is projected to rise sharply to 136.22% by 2028.
+
+The chart underscores a contrasting trend: while the public debt of Eurozone crisis countries is on a general downward trajectory or stabilizing, the US public debt is on a rising trend, diverging from the stabilization trends seen in the 2010s Eurozone crisis economies.

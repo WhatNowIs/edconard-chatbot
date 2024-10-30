@@ -1,0 +1,16 @@
+This map, titled "Figure 2: Regional Exposure to Import Competition from China," illustrates the change in import penetration across various U.S. counties from 2000 to 2012. The data reflects different levels of "trade shock" or changes in import competition from China.
+
+The color-coded legend represents the levels of trade shock:
+- Dark red (1.81 – 6.10): Highest import penetration change.
+- Red (1.33 – 1.81)
+- Orange (0.85 – 1.33)
+- Light orange (0.51 – 0.85)
+- Light yellow (0.23 – 0.51)
+- Very light yellow (-0.51 – 0.23): Lowest or negative import penetration change.
+
+Key observations:
+1. **High Impact Areas**: The Midwest and certain parts of the Southeast and Northeast exhibit the highest trade shock, indicated by dark red and red zones.
+2. **Moderate Impact Areas**: Parts of the West, Southwest, and central rural areas show moderate levels of import penetration.
+3. **Lower Impact Areas**: The Great Plains, Rocky Mountains, and parts of the West Coast have lighter colors, representing lesser impact from import competition.
+
+Overall, the map highlights significant regional variations in exposure to import competition from China, with the Midwest and Southeast regions experiencing more profound effects.

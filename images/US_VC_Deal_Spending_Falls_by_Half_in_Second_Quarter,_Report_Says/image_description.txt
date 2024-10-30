@@ -1,0 +1,11 @@
+The bar graph, titled "Pandemic Boom Still Busted," illustrates the quarterly values of US venture capital deals from Q1 2018 to Q1 2023. 
+
+Key observations:
+
+1. **Pre-Pandemic Period (2018-2019)**: The venture capital deal values fluctuated, showing moderate but stable investments, peaking in Q3 2018.
+   
+2. **Pandemic Period (2020-2022)**: There was a significant increase starting from Q1 2021, reaching its highest in Q3 2021, likely due to increased demand for technology and new ventures during the pandemic.
+   
+3. **Post-Pandemic Period (2022-2023)**: The deal values began to decline after Q1 2022, indicating a downturn in venture capital investments, stabilizing at a lower level by Q1 2023.
+
+Overall, the graph highlights the boom in venture capital during the pandemic and a subsequent decline, suggesting a correction or cautious investment behavior in the post-pandemic period.

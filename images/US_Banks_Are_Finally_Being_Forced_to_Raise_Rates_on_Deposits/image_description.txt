@@ -1,0 +1,14 @@
+The image presents a bar chart illustrating how banks have turned to different funding sources due to deposit outflows from 2016 to Q3 2022. Three types of funding are observed: Certificates of Deposit (CDs) as a percentage of total deposits, Federal Home Loan Bank (FHLB) advances as a percentage of total liabilities, and Brokered deposits as a percentage of total deposits.
+
+Key points from the chart:
+
+1. **CDs as a percentage of total deposits**:
+   - The usage of CDs has slightly decreased over the years from 2016 to 2022, with the least percentage recorded in 2021.
+
+2. **FHLB advances as a percentage of total liabilities**:
+   - FHLB advances peaked in 2017 and 2018, then showed a decline, and remained stable from 2020 till Q3 2022.
+
+3. **Brokered deposits as a percentage of total deposits**:
+   - Brokered deposits had the highest percentage in 2019 and the lowest in the most recent period, Q3 2022, compared to other years.
+
+Overall, the chart illustrates a general trend of banks adjusting their funding strategies in response to changing deposit conditions over the examined time frame.

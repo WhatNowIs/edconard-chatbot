@@ -1,0 +1,24 @@
+The image presents two scatter plots labeled as "Figure 2. Change in entry rates and markups, broad sectors." These plots analyze the relationship between changes in sector-wise sales-weighted markups and entry rates, measured between two different time periods: 2012-2016 and 1980-1984.
+
+### Left Plot: Change (Difference)
+- **X-Axis:** Sales-weighted markup (change)
+- **Y-Axis:** Entry employment rate (change, percentage points)
+- **Notable Observations:**
+  - Sectors like "Utilities," "Educ," and "Manuf" exhibit higher entry rates.
+  - "Health" sector shows a significant decrease in entry rates.
+  - A general positive trend is visible, indicating that sectors with increased markups tend to have higher entry rates.
+
+### Right Plot: Log Difference
+- **X-Axis:** Sales-weighted markup (log diff)
+- **Y-Axis:** Entry employment rate (log diff)
+- **Notable Observations:**
+  - The trend is more dispersed compared to the left plot.
+  - "Utilities" and "Educ" sectors still show higher entry rates.
+  - "Health" sector consistently shows the lowest values in entry rates.
+  - The general trend shows a slight positive correlation, indicating that sectors with increased sales-weighted markups also witness slightly higher entry rates.
+
+### Source
+- The data is sourced from Business Dynamics Statistics, and studies by De Loecker, Eeckhout, Unger (2020), and Compustat.
+
+### Summary
+The plots indicate a positive correlation between the increase in sales-weighted markups and the entry rates across broad sectors. Both plots show that sectors with higher markups, such as "Utilities," "Educ," and "Manuf," have relatively higher entry rates, while sectors like "Health" have seen significant declines. The data supports the notion that increased market markups may encourage new entries to a sector.

@@ -1,0 +1,9 @@
+The image, published by the Financial Times, illustrates the trend of the US’s largest trading partners over time as a percentage of US total imports, exports, and total trade. The key insights from the chart are:
+
+- **Mexico** has recently become the US’s largest trading partner as of 2023.
+- Over the past decades, the share of trade between the US and **Canada** (indicated by the green line) has slightly decreased, while the share with **China** (indicated by the blue line) had been increasing significantly until it started to decline around 2018.
+- **China’s** share of US total trade peaked around 2018 but has since decreased notably.
+- **Canada**'s share peaked earlier and has seen a gradual decline over time.
+- **Mexico** (indicated by the pink line), on the other hand, has seen a steady increase in its trading share and has now overtaken both Canada and China as the primary trading partner.
+
+The data spans from approximately 1990 to 2023, with the 2023 figures updated up to September according to the US Census Bureau data analyzed by FT.

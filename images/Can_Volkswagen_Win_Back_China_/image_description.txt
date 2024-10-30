@@ -1,0 +1,10 @@
+The bar chart titled "Chinese carmakers are outselling foreign rivals" depicts China's passenger vehicle sales by brand origin (foreign vs. local) as a percentage of total sales from 2017 to 2023. The following key points can be summarized from the chart:
+
+1. **Trend Over Time**: There has been a gradual increase in the share of local brand car sales over the years.
+2. **Foreign vs. Local Sales**: 
+    * In 2017, the market share of foreign brands was roughly equal to or slightly greater than that of local brands.
+    * From 2018 to 2023, the market share of local brands steadily increased while that of foreign brands decreased.
+    * By 2023, local brands have a larger market share compared to foreign brands.
+3. **Significant Thresholds**: The tipping point seems to occur around 2020, where local brands' market share became significantly larger than foreign brands.
+
+Overall, the chart clearly indicates a shifting trend in consumer preference towards local car brands in China, culminating in local brands outselling foreign rivals by 2023.

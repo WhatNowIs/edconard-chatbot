@@ -1,0 +1,10 @@
+The chart titled "Figure 5: U.S. labor productivity: Accelerated Great Recession cyclical dynamics, little obvious level effect" illustrates the percent change in labor productivity in the United States since the fourth quarter of 1995 through the fourth quarter of 2019. 
+
+Key elements from the chart include:
+- A black line representing actual labor productivity.
+- A red line representing fitted values derived from the relationship between labor productivity growth and changes in the unemployment rate from 1995 to 2019.
+- A blue dashed line indicating a broken trend.
+
+The chart shows a generally upward trend in labor productivity over the period, with notable accelerations and decelerations through economic cycles, particularly visible around the time of the Great Recession. Despite the cyclical dynamics observed, the overall level effect on productivity is not clearly obvious. 
+
+The fitted values closely follow the actual labor productivity, highlighting a strong correlation between productivity growth and unemployment rate changes over this period. Around 2019, the lines depict a slight deviation, but overall, the trends align closely.

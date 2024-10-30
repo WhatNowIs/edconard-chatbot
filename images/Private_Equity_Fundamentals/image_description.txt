@@ -1,0 +1,8 @@
+The bar chart in Figure 3 illustrates the interest costs as a percentage of EBITDA (Earnings Before Interest, Taxes, Depreciation, and Amortization) for PE/VC (Private Equity/Venture Capital) owned public companies compared to the S&P 500 median in 2022. 
+
+Key points:
+- PE/VC-owned public companies have a significantly higher median interest cost, constituting 43% of EBITDA.
+- In stark contrast, the median interest cost for companies in the S&P 500 is only 7% of EBITDA.
+- This indicates that PE/VC-owned public companies bear a considerably larger proportion of interest costs relative to their earnings before interest, taxes, depreciation, and amortization compared to the broader market represented by the S&P 500.
+
+Source: Capital IQ, Verdad research.

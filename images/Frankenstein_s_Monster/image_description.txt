@@ -1,0 +1,16 @@
+This chart illustrates the weekly change in drawdown of U.S. commercial bank deposits from peak levels, spanning from February 1, 2023, to March 29, 2023. 
+
+Key points are as follows:
+
+- On February 1, 2023, the weekly change in drawdown was at approximately -0.2%.
+- The drawdown experienced a slight increase to around -0.3% by February 8, 2023.
+- By February 15, 2023, the drawdown lessened slightly, reaching around -0.1%.
+- Following this rise, the drawdown again decreased marginally near February 22, 2023, then dropped further by March 1, 2023.
+- A significant drop was noted by March 8, 2023, with a drawdown close to -0.5%.
+- The largest decrease occurred around March 15, 2023, reaching approximately -1.0%.
+- After March 15, the trend showed recovery; by March 22, 2023, the drawdown rose back to roughly -0.6%.
+- By March 29, 2023, the drawdown diminished further to about -0.4%.
+
+The data demonstrates a volatile trend in drawdown changes over this period, with a pronounced dip around mid-March before showing signs of recovery toward the end of March. 
+
+Source: Bloomberg, JPMAM, March 29, 2023.

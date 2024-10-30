@@ -1,0 +1,10 @@
+The image presents a bar chart displaying the monthly percentage changes in core capital goods orders and shipments (excluding defense and aircraft) from December 2020 to May 2023. The chart indicates a positive trend for investment in May 2023, following a downward revision in April 2023.
+
+Key Information:
+- Core capital goods orders for May 2023 increased by 0.7%.
+- Core capital goods shipments for May 2023 increased by 0.2%.
+- The chart includes fluctuations in orders and shipments over a span of approximately two and a half years.
+- The data source is the US Commerce Department, and the chart is attributed to Bloomberg.
+
+Summary:
+The chart illustrates an ongoing trend in core capital goods, showing a significant 0.7% rise in orders in May 2023 after a decrease in April. Shipments also saw a modest increase of 0.2% in May. These data suggest a positive momentum for investment, reflecting growth in businesses' capital expenditures excluding defense and aircraft sectors.

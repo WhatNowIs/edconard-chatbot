@@ -1,0 +1,17 @@
+This graph depicts the year-over-year changes in U.S. import prices from four regions/countries: Mexico, the European Union (EU), Japan, and China, spanning the years 2017 to a point in 2023. The import prices are measured in percentage change.
+
+Key observations:
+
+1. **Mexico:**
+   - Mexico's import prices saw significant fluctuations, peaking around 10% in early 2021, then decreasing sharply but rising again to approximately 4% by early 2023.
+
+2. **European Union (EU):**
+   - The EU's import prices followed a similar trend, with notable increases and a peak of around 8% in early 2021. The prices later dipped but showed volatility and remained around 2% in early 2023.
+
+3. **Japan:**
+   - Japan's import prices showed less volatility compared to Mexico and the EU, with changes mostly staying within the -2% to 4% range, peaking around 4% in early 2021, and stabilizing around 0% to 1% by early 2023.
+
+4. **China:**
+   - Import prices from China experienced a different trend, seeing a consistent decline from 2017, dipping to -4% around mid-2020, and continuing to fluctuate around the -2% to 0% range thereafter.
+
+In essence, while import prices for Mexico and the EU both displayed significant volatility and higher peaks, Japan's changes were more stable. In contrast, China's import prices consistently trended downwards or remained relatively flat, indicating different economic or trade dynamics with these regions.

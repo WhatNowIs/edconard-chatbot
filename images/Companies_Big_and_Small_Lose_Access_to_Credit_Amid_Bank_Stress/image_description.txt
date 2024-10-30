@@ -1,0 +1,14 @@
+The image displays a bar chart that shows the volume of U.S. investment-grade bond sales in March for the years 2019 through 2023. The figures, measured in billions of dollars, are as follows:
+
+- March 2019: Approximately $100 billion.
+- March 2020: Approximately $275 billion.
+- March 2021: Approximately $200 billion.
+- March 2022: Approximately $225 billion.
+- March 2023: Approximately $50 billion (data is as of March 20).
+
+Key observations:
+- The highest bond sale volume occurred in March 2020, around $275 billion.
+- The sales volume fluctuated in the subsequent years, decreasing in March 2021 but increasing again in March 2022.
+- March 2023 shows a significant drop, only reaching around $50 billion by March 20.
+
+Source: PitchBook LCD.

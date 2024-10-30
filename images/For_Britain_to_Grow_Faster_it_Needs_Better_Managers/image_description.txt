@@ -1,0 +1,10 @@
+The image presents a chart from The Economist that shows the average company-management scores from selected countries over the period 2004-2022. The scores are on a scale from 1 to 5, with 5 being the best. 
+
+Key points from the chart:
+- The United States has the highest average management score, close to 3.4.
+- Japan and Germany follow, both slightly above 3.2.
+- Sweden and Canada also have high scores, above 3.0.
+- Britain has an average score close to 3.0, positioned ahead of France, Australia, and Singapore which all score slightly above 2.8.
+- Italy has the lowest score among the selected countries, just below 2.8.
+
+The source of the data is the World Management Survey, Programme on Innovation and Diffusion. This information highlights the varying quality of management practices across different countries, with the United States leading and Italy lagging.

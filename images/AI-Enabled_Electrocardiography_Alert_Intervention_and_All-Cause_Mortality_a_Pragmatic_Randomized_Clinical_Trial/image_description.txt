@@ -1,0 +1,19 @@
+The image presents a graph that illustrates the cumulative death percentage over 90 days for high-risk patients identified by an AI-ECG. It compares two groups: an intervention group (depicted in blue) and a control group (depicted in yellow).
+
+Key Findings:
+
+1. **Cumulative Death Percentage:**
+   - The intervention group consistently shows a lower cumulative death percentage over time compared to the control group.
+
+2. **Statistical Analysis:**
+   - The Hazard Ratio (HR) is 0.69 with a 95% Confidence Interval (CI) of 0.53 to 0.90, indicating a significant reduction in the risk of death for the intervention group.
+   - The p-value is 0.006, suggesting that the results are statistically significant.
+
+3. **Number at Risk/Event Rate (%):**
+   - At the start (Day 0), 709 participants are at risk in the intervention group with 0% event rate, and 688 participants are at risk in the control group with 0% event rate.
+   - By Day 30, the number at risk drops to 518 with a 9.9% event rate for the intervention group, whereas the control group has 480 participants at risk with a 15.0% event rate.
+   - By Day 60, the intervention group has 418 participants at risk with a 14.1% event rate, and the control group has 397 participants at risk with a 20.3% event rate.
+   - By Day 90, the intervention group has 376 participants at risk with a 16.0% event rate, while the control group has 350 participants at risk with a 23.0% event rate.
+
+Summary:
+The intervention group identified by the AI-ECG has a significantly lower cumulative death percentage compared to the control group over a 90-day period. The hazard ratio and p-value solidify the statistical significance of the findings, demonstrating that the intervention effectively reduces the risk of death in high-risk patients.

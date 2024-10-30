@@ -1,0 +1,19 @@
+The image displays a polling summary depicting voter support for the 2024 election, categorizing responses by groups and distinguishing between those who did not vote in the 2022 midterms and those who did. Here's the concise summary:
+
+- **Overall Voters:**
+  - Did not vote in 2022 midterms: Trump leads by 2 points (41-39).
+  - Voted in 2022 midterms: Biden leads by 4 points (47-43).
+  
+- **Black Voters:**
+  - Did not vote in 2022 midterms: Biden leads by 48 points (63-14).
+  - Voted in 2022 midterms: Biden leads significantly by 73 points (81-8).
+
+- **Hispanic Voters:**
+  - Did not vote in 2022 midterms: Biden leads by 5 points (42-37).
+  - Voted in 2022 midterms: Biden leads by 20 points (53-33).
+
+- **Young Voters:**
+  - Did not vote in 2022 midterms: Biden leads by 10 points (44-34).
+  - Voted in 2022 midterms: Biden leads by 16 points (49-34).
+
+Figures are approximate based on NYT/Siena College polls and presented by The New York Times.

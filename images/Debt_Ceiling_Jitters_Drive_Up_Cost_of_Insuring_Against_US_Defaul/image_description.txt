@@ -1,0 +1,11 @@
+The graph illustrates the cost of insuring US debt through 5-year credit default swaps (CDS), which are euro-denominated and measured in basis points. 
+
+Key points from the graph:
+
+1. **Time Period**: The data spans from 2008 to 2023.
+2. **Initial Spike**: There was a significant spike in the cost of CDS around 2008-2009, likely associated with the global financial crisis.
+3. **Fluctuations**: From 2009 to 2014, the cost exhibited considerable volatility, with several peaks and troughs.
+4. **Stability and Decline**: Between 2014 and 2020, the cost of insuring US debt became relatively stable and trended downwards.
+5. **Recent Increase**: Starting around 2020, the cost began to rise again, with a sharp increase observed as it approached 2023, indicating heightened perceived risk or uncertainty about US debt.
+
+Summary: The cost to insure US debt, as measured by 5-year CDS prices, experienced a significant spike during the 2008-2009 financial crisis, followed by fluctuating and eventually stabilizing costs through 2020. Recently, there has been a notable increase in these costs, reflecting rising concerns about US debt.

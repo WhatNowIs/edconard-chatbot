@@ -1,0 +1,18 @@
+The chart presents the US inflation-adjusted net private investment per capita from 1990 to 2022. It categorizes the investments into four types: net intellectual property products, net private domestic investment, net residential investment, and net structures.
+
+### Key Takeaways:
+
+1. **Net Intellectual Property Products** (Purple Line):
+   - This category shows a significant and consistent increase, particularly from 2010 onwards. By 2022, it reached roughly 400% of its initial value, indicating substantial growth in investments related to intellectual property.
+
+2. **Net Private Domestic Investment** (Black Line):
+   - The overall trend is upward, with notable fluctuations. After dipping significantly around 2009, it recovered and has continued to rise, stabilizing around 100-150% in recent years.
+
+3. **Net Residential Investment** (Green Line):
+   - This category experiences high variability. There was a sharp decline around the 2008 financial crisis, followed by a moderate recovery, and then stabilization. By 2022, it shows a slight downward trend close to the baseline (0%).
+
+4. **Net Structures** (Orange Line):
+   - Similar to residential investments, net structures have varied with noticeable dips around economic downturns, particularly in 2009. Compared to other categories, it has relatively low growth, closing around 0-50% by 2022.
+
+### Summary:
+The chart showcases the dynamic nature of US net private investments per capita over more than three decades, adjusting for inflation. Key observations include the robust growth in intellectual property investments and the significant recovery in private domestic investment post-recession. Meanwhile, residential and structural investments have shown more volatility and less pronounced growth, particularly in response to economic downturns.

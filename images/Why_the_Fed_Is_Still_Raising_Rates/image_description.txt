@@ -1,0 +1,8 @@
+The chart titled "Steady State" discusses the changes in the services PCE (Personal Consumption Expenditures) price index excluding energy and housing over time. This measure of inflation, preferred by Federal Reserve officials for tracking underlying inflation, has increased from approximately 2% per year before the COVID-19 pandemic to around 4.5% per year currently. This accelerated rate of inflation has been consistent since early 2021 and aligns with underlying wage growth.
+
+Key points in the chart:
+- The green line represents the month-over-month (M/M) annualized change, calculated using a three-month moving average.
+- The red line shows the three-month over three-month (3m/3m) annualized change.
+- The blue line represents the year-over-year (Y/Y) change.
+
+In summary, the chart highlights the acceleration of the preferred inflation measure from pre-pandemic levels to the current rate and its consistency with wage growth since early 2021. The data is sourced from the Bureau of Economic Analysis and Matthew Klein's calculations.

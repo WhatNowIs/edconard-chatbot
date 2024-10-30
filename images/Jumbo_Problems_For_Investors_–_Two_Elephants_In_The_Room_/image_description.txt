@@ -1,0 +1,17 @@
+The chart titled "Net Inflows into US Dollar, 2000-23 (NBER Recessions highlighted)" provides a visual representation of the annual rate of net capital inflows into the US dollar over the period from 2000 to 2023, measured in billions of US dollars. The shaded areas indicate periods of recession as per the National Bureau of Economic Research (NBER).
+
+### Summary:
+
+- **2000 to 2010**: The net inflows into the US dollar experienced significant fluctuations, generally remaining below or slightly above zero and frequently dipping into negative territory, especially during the 2008 financial crisis.
+  
+- **2008 Financial Crisis**: There is a noticeable drop in net inflows into the US dollar around 2008, coinciding with the global financial crisis. This period corresponds with a shaded recession area.
+
+- **2010 to 2015**: After the crisis, the net inflows began to recover, becoming positive and showing modest growth.
+
+- **2015 to 2020**: The inflows into the US dollar increased considerably, peaking around 2015-2016 and again around late 2018. These periods correspond to a rise up to around 1500 billion US dollars.
+
+- **2020 COVID-19 Pandemic**: Around 2020, during the COVID-19 pandemic, there was another surge in net inflows into the US dollar, reaching a new peak. This period is also highlighted as a recession.
+
+- **Post-2020**: Following the 2020 peak, the inflows remained high but showed a degree of normalization, with a slight decline yet still substantial compared to the pre-2010 period.
+
+The chart, provided by CrossBorder Capital, visually highlights the economic impact of major financial crises and recessions on the capital inflows into the US dollar, demonstrating significant shifts during periods of economic stress.

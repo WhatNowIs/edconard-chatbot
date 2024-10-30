@@ -1,0 +1,9 @@
+The image is a line graph titled "Higher Rates Often Precede Recessions," and it shows the correlation between the Federal funds rate (in purple) and the unemployment rate (in orange) from approximately 1970 to 2023. The graph indicates that spikes in the Federal funds rate typically precede increases in the unemployment rate, often coinciding with periods marked as recessions (represented by shaded vertical bars).
+
+Key observations:
+- Periods of sharp increases in the Federal funds rate are followed by rises in the unemployment rate.
+- Recessions notably coincide with these events, suggesting a pattern where higher interest rates may signal an impending economic slowdown.
+- Significant increases in both the Federal funds rate and the unemployment rate can be observed around early 1980s, early 1990s, early 2000s, and during the Great Recession around 2008-2009.
+- The most recent data up to June 2023 shows a rise in the Federal funds rate and a slight uptick in the unemployment rate, potentially signaling an upcoming recession.
+
+Sources mentioned include the Bureau of Labor Statistics and the Business Cycle Dating Committee along with the Federal Reserve. The graph is published by The New York Times.

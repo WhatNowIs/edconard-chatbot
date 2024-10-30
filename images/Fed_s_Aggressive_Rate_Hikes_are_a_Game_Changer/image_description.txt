@@ -1,0 +1,14 @@
+The provided chart illustrates the change in housing starts from the initiation of various interest rate hiking cycles. The x-axis represents the time in years from the first interest rate hike, while the y-axis displays the percentage change in housing starts from the initial point.
+
+Key Points:
+1. General Trend: Housing starts typically decline within two years of the first hike in an interest rate cycle.
+2. Recent Data (2022 Cycle): As of July 2022, new homes were being built at a rate of 1.4 million per year, reflecting a 24% drop since the peak in April.
+3. Past Cycles Analysis:
+   - 1976-80 Cycle
+   - 1980-81 Cycle
+   - 1983-84 Cycle
+   - 1987-89 Cycle
+   - 2004-06 Cycle: Notably, housing starts didn't stabilize until almost five years after the Federal Reserve began raising rates.
+4. Source Information: The data is sourced from the U.S. Census Bureau and the U.S. Department of Housing and Urban Development.
+
+In summary, the chart exhibits a pattern of declining housing starts following rate hikes, with the 2022 cycle showing a significant 24% decrease from its peak. Historical trends indicate variable recovery times across different cycles.

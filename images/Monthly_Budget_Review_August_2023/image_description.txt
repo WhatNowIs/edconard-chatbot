@@ -1,0 +1,14 @@
+The image displays a line graph titled "Cumulative Monthly Deficits, Fiscal Years 2022 and 2023," measured in billions of dollars. The data sources include the Congressional Budget Office and the Department of the Treasury. All values have been adjusted to exclude timing shifts.
+
+Key observations from the graph are:
+
+1. **Deficit Trends Over Time:**
+   - Both fiscal years 2022 and 2023 show cumulative deficits that increase over time.
+   - For fiscal year 2022, the deficit started below $250 billion in October and gradually decreased, reaching approximately $1,000 billion by April, before decreasing to around $1,250 billion by August.
+   - In fiscal year 2023, the cumulative deficit started similarly but increased more sharply after March, reaching nearly $1,750 billion by June, before a slight upward trend in August.
+
+2. **Comparison Between Years:**
+   - Fiscal year 2023 shows a significantly more substantial cumulative monthly deficit compared to 2022.
+   - The gap between the deficits of the two years widens considerably starting from March onwards, with 2023 maintaining a higher deficit throughout the rest of the fiscal year.
+
+This graph illustrates a growing deficit trend in fiscal year 2023 compared to fiscal year 2022, indicating rising fiscal challenges.

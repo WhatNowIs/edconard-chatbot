@@ -1,0 +1,31 @@
+The image depicts the percentage of US undergraduates diagnosed with various mental illnesses between 2008 and 2018, showcasing trends for several conditions:
+ 
+1. **Anxiety**:
+   - Shows the highest increase, rising by 134% since 2010.
+   - The percentage increased significantly after 2012.
+
+2. **Depression**:
+   - Increased by 106% since 2010.
+   - The trend shows a gradual rise with a steep increase post-2012.
+
+3. **ADHD**:
+   - Increased by 72% since 2010.
+   - The increase is more moderate compared to anxiety and depression.
+
+4. **Bipolar Disorder**:
+   - Increased by 57% since 2010.
+   - The percentage remains relatively low compared to anxiety and depression.
+
+5. **Anorexia**:
+   - Shows a 100% increase since 2010.
+   - The increase is noticeable in recent years.
+
+6. **Substance Abuse or Addiction**:
+   - Increased by 33% since 2010.
+   - The trend remains relatively stable with minor increases.
+
+7. **Schizophrenia**:
+   - Increased by 67% since 2010.
+   - The increase is moderate, maintaining a low percentage compared to other conditions.
+
+Overall, the image highlights a significant rise in mental health diagnoses among US undergraduates from 2010 to 2018, particularly for anxiety and depression.

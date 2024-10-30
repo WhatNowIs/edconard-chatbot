@@ -1,0 +1,18 @@
+The image presents a bar and line chart comparing debt load and buyback activities among US companies in 2022. The chart categorizes companies into three groups: "Most Buyback Companies (Top Decile)," "All Buyback Companies," and "No Buyback Companies."
+
+Key metrics are highlighted:
+
+1. **Total Debt/Capital (Debt to Capital in %)**:
+   - Most Buyback Companies: 36.96%
+   - All Buyback Companies: 33.74%
+   - No Buyback Companies: 66.16%
+
+2. **Total Debt/EBITDA (Debt to EBITDA ratio)**:
+   - Most Buyback Companies: 4.18
+   - All Buyback Companies: 4.10
+   - No Buyback Companies: 29.02
+
+**Summary:**
+- Companies that did not engage in buybacks in 2022 have significantly higher debt loads, both in terms of Debt to Capital (66.16%) and Debt to EBITDA (29.02), compared to companies that performed buybacks. 
+- The "Most Buyback Companies" and "All Buyback Companies" have relatively lower and fairly similar debt loads, with Debt to Capital percentages around 34-37% and Debt to EBITDA ratios around 4.1-4.2.
+- This suggests a correlation between lower debt levels and higher instances of buybacks among US companies in 2022.

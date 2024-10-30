@@ -1,0 +1,21 @@
+The image is a graph illustrating the surge in US chip equipment spending, specifically highlighting the significant increase in private fixed investment in special industry machinery, mostly pertaining to semiconductor equipment. The data covers a period from 2018 to early 2023.
+
+Key points summarized from the graph:
+
+1. **Time Frame**: The graph spans from Q1 2018 to early 2023.
+2. **Adjustment Metrics**: The graph compares two different metrics:
+   - Nominal spending (represented by a yellow line).
+   - Real 2018 dollars (represented by a green line), which accounts for inflation and provides a constant dollar comparison.
+  
+3. **Spending Growth**: Both nominal and real 2018 dollar expenditures exhibit a noticeable increase, effectively doubling from the starting point in Q1 2018.
+
+4. **Spending Trends**:
+   - From 2018 to around mid-2020, there was a steady incremental growth.
+   - Post-2020, there is a sharp rise in spending, particularly noticeable in the nominal values which demonstrate a significant spike around 2022.
+   - Although there is a slight dip after the peak, the spending remains significantly higher compared to the levels in 2018, indicating strong overall growth.
+
+5. **Comparison Between Nominal and Real Spending**: 
+   - The gap between the nominal and real values widens over time, which underscores the effect of inflation on nominal spending.
+   - Real spending adjusts for this inflationary effect but still indicates a robust increase.
+
+This graph exemplifies the substantial enhancements in investments into semiconductor equipment in the United States, reflecting a heightened focus on advancing technology and production capabilities in the field as part of broader trends in the tech industry.

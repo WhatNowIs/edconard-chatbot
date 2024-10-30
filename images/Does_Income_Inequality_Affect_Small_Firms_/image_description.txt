@@ -1,0 +1,12 @@
+This chart, titled "Top Income Shares Have Increased While Small Firm Employment Has Fallen," shows two different trends from 1975 to 2015. 
+
+Key observations from the chart include:
+
+1. **Top 10 Percent Income Share (blue line, right scale)**:
+   - This shows a general upward trend over time, with the income share of the top 10 percent increasing from about 47% in 1980 to around 52% in 2015.
+
+2. **Small Firm Employment Share (red line, left scale)**:
+   - This represents the percentage of employment in small firms with 1-499 employees.
+   - It indicates a downward trajectory, declining from roughly 55% in 1980 to about 34% in 2015.
+
+Sources for the data include Frank (2009) and U.S. Census Bureau, Business Dynamics Statistics. The note explains that the chart averages the top 10 percent income share across states and shows the evolution of small firm employment shares over time.

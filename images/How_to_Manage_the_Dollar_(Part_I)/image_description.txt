@@ -1,0 +1,10 @@
+The chart titled "United States High Frequency Spot Intervention (Monthly Version)" displays monthly data on spot interventions in the United States from March 1, 1973, to July 1, 2024. 
+
+Key observations:
+- The y-axis measures the intervention amount in USD billions, ranging from -4 to 2.
+- The x-axis represents the timeline from 1973 to 2024.
+- Significant intervention activity is noted from the late 1970s through the 1990s, marked by frequent and large fluctuations both above and below zero.
+- Post-2000, the frequency and magnitude of interventions have significantly decreased, showing limited activity with only a few notable spikes.
+- There is minimal intervention activity from 2010 onwards.
+
+The chart suggests a decline in the frequency and scale of high-frequency spot interventions by the United States over the last few decades after a period of considerable activity in earlier years. The most recent update on this data was on July 22, 2024, at 09:38 am.

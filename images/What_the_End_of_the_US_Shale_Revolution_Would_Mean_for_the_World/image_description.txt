@@ -1,0 +1,28 @@
+The image features two line charts displaying trends in rig rates and production costs from 2018 to 2022.
+
+### Left Chart: Rig Rates
+- **Y-Axis (Rig rate in $)**: Shows values ranging from 18,000 to 30,000.
+- **X-Axis**: Spans from 2018 to 2022.
+- **Trend**: 
+  - There is a general increase in rig rates over the time period.
+  - Between 2018 and late 2020, rig rates increased from around 18,000 to approximately 22,000.
+  - Rig rates fell sharply in early 2021, dropping back to around 18,000.
+  - From late 2021 to 2022, rig rates saw a dramatic rise, peaking just below 30,000.
+
+### Right Chart: Production Costs (rebased)
+- **Y-Axis (Rebased Production Costs)**: Values range from 85 to 120.
+- **X-Axis**: Spans from 2018 to 2022.
+- **Legend**:
+  - **Green Line**: Drilling operations
+  - **Light Blue Line**: Drilling mud
+  - **Dark Blue Line**: Ball valves
+  - **Blue Line**: Chemicals
+- **Trends**:
+  - General observation shows fluctuating but overall increasing production costs for all categories.
+  - **Drilling operations**: Consistently increased after 2018, with notable peaks around 2020 and 2022.
+  - **Drilling mud**: Had significant fluctuations but an overall upward trend.
+  - **Ball valves**: Show frequent variances with an increase around 2018, a dip around 2020, and a subsequent rise.
+  - **Chemicals**: Experienced significant volatility but showed an overall rising trend, especially after 2021.
+
+### Summary:
+The rig rates displayed a rising trend with a sharp drop in early 2021, followed by a steep increase through 2022. Production costs for drilling operations, drilling mud, ball valves, and chemicals show general fluctuations but have trended upwards across the same period, indicating increasing costs in drilling-related activities. This suggests an overall increase in the expenses associated with drilling operations from 2018 to 2022.

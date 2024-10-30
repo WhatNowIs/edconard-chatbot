@@ -1,0 +1,12 @@
+The graph displays the percentage of the total manufactured goods imported to the United States from selected countries for the years 2018 and 2022. The selected countries are Vietnam, India, Taiwan, Thailand, and Malaysia.
+
+Key highlights:
+1. **Vietnam** saw a significant increase, rising from 6% in 2018 to 12% in 2022, indicating a doubling of its share.
+2. **India's** share grew from 2% in 2018 to approximately 4% in 2022.
+3. **Taiwan's** share increased from about 4% in 2018 to around 5% in 2022.
+4. **Thailand** also experienced growth, with its share rising from about 3% in 2018 to approximately 4% in 2022.
+5. **Malaysia's** share remained relatively stable with a slight increase from about 3% in 2018 to approximately 3.5% in 2022.
+
+The data comes from a mix of several countries including Bangladesh, Cambodia, China, India, Indonesia, Malaysia, Pakistan, Philippines, Singapore, Sri Lanka, Taiwan, Thailand, and Vietnam, as indicated by the source: Kearney.
+
+In summary, Vietnam showed the most prominent growth in the U.S. import share among the listed countries from 2018 to 2022, while other countries such as India and Taiwan also showed noticeable increases in their share of U.S. imports of manufactured goods.

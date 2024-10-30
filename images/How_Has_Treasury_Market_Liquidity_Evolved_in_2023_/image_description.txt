@@ -1,0 +1,24 @@
+The chart titled "Liquidity in Line with Historical Relationship with Volatility" displays the relationship between price impact (measured in 32nds of a point per $100 million) and price volatility (measured in percent) for the on-the-run five-year note. The data spans from January 1, 2005, to September 30, 2023, and includes weekly measures of both price impact and price volatility. 
+
+Key points included:
+
+1. **Data Points and Periods:**
+   - **Other (Light Blue):** Represents the majority of the data outside of specified significant periods.
+   - **Fall 2008 (Red):** Data from September 21, 2008, to January 3, 2009.
+   - **March 2020 (Gold):** Data from March 1, 2020, to March 28, 2020.
+   - **2022 (Dark Blue):** Data from January 1, 2022, to December 31, 2022.
+   - **2023 (Gray):** Data from January 1, 2023, to September 30, 2023.
+
+2. **Trend Analysis:**
+   - A concentration of data points indicates that higher price volatility generally correlates with higher price impact. 
+   - Exceptional periods (Fall 2008 and March 2020) show increased volatility and price impact compared to other periods.
+   - More recent data (2022 and 2023) aligns with historical trends, showing expected impacts on liquidity during times of varying volatility.
+
+3. **Source and Methodology:**
+   - The chart is based on the author’s calculations using data from BrokerTec.
+   - Each point on the chart is an average of daily measures plotted against price volatility and impact.
+
+4. **Context:**
+   - The chart suggests that liquidity conditions, as represented by price impact, remain consistent with historical patterns relative to volatility.
+
+Overall, the chart provides a detailed view of how market liquidity, measured in terms of price impact, correlates with price volatility over an extended period, highlighting significant historical financial events.

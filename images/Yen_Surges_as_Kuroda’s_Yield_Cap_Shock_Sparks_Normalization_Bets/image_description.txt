@@ -1,0 +1,13 @@
+The image shows a Bloomberg graph illustrating the sharp strengthening of the Japanese Yen (JPY) against the US Dollar (USD) following a policy decision by the Bank of Japan (BOJ) on December 20, 2022. The BOJ widened the yield band, a move that caused a significant drop in the USD/JPY exchange rate.
+
+Key details:
+- Title: Yen Jump
+- Subtitle: Japan's currency sharply strengthens after BOJ widens yield band.
+- Timeframe: December 16, 2022, to December 20, 2022.
+- USD/JPY exchange rate movements:
+  - Initially, the USD/JPY rate was relatively stable, fluctuating moderately around 136 to 137.
+  - On December 20, 2022, there was a sharp drop from around 137 to 133, ultimately settling at approximately 132.91.
+  - The drop indicates a 3.79% appreciation in the Yen's value.
+- The previous closing rate on December 14 was 135.48.
+
+This exchange rate movement is depicted in a line graph, with a marked sharp decline on December 20, highlighting the significant market reaction to the BOJ's policy adjustment.

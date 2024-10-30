@@ -1,0 +1,11 @@
+The image is a bar chart titled "Quit Rates Varied by Demographic Group" that depicts the changes in quit rates and employer-to-employer rates across different demographics from the fourth quarter of 2020 to mid-2022. The categories examined include education level (noncollege vs. college), race (nonwhite vs. white), age (< 35 vs. > 35), and gender (women vs. men). 
+
+Key findings:
+1. Non-college-educated individuals showed a higher increase in quit rates compared to college-educated individuals.
+2. Nonwhite workers experienced a more significant increase in quit rates compared to their white counterparts.
+3. Workers under the age of 35 exhibited a notably higher increase in quit rates than those over 35.
+4. Women had a larger increase in quit rates compared to men.
+
+The quit rates (magenta bars) are consistently higher across all demographic groups compared to employer-to-employer rates (blue bars). 
+
+Data Sources: JOLTS, LEHD, and CPS.

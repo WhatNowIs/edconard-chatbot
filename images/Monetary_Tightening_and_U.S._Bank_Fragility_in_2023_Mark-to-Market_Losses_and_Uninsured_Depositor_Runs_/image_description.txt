@@ -1,0 +1,51 @@
+The table “Table 2: Mark-to-Market Statistics by Size” provides financial statistics broken down by the size of firms. Here is a summary for each column:
+
+### Column 1: Total
+- **Aggregate Loss**: 2.2 Trillion (T)
+- **Individual Dollar Loss**: 28.6 Million (M)
+- **Share RMBS (Residential Mortgage-Backed Securities)**: 13.2
+- **Share Treasury and Other**: 15.5
+- **Share Residential Mortgage**: 19.9
+- **Share Other Loan**: 32.8
+- **Loss/Asset**: 9.2%
+- **Uninsured Deposit/MM Asset**: 24.2%
+- **Insured Deposit Coverage Ratio**: 4.2
+- **Observations**: 4844
+
+### Column 2: Small (<1.384B)
+- **Aggregate Loss**: 144 Billion (B)
+- **Individual Dollar Loss**: 22.3 M
+- **Share RMBS**: 11.4
+- **Share Treasury and Other**: 17.0
+- **Share Residential Mortgage**: 19.8
+- **Share Other Loan**: 32.7
+- **Loss/Asset**: 9.1%
+- **Uninsured Deposit/MM Asset**: 22.7%
+- **Insured Deposit Coverage Ratio**: 3.9
+- **Observations**: 4072
+
+### Column 3: Large (1.384B, 250B)
+- **Aggregate Loss**: 1.3 T
+- **Individual Dollar Loss**: 308.0 M
+- **Share RMBS**: 22.6
+- **Share Treasury and Other**: 20.6
+- **Share Residential Mortgage**: 20.4
+- **Share Other Loan**: 33.8
+- **Loss/Asset**: 10.0%
+- **Uninsured Deposit/MM Asset**: 35.7%
+- **Insured Deposit Coverage Ratio**: 5.9
+- **Observations**: 743
+
+### Column 4: GSIB (>250B)
+- **Aggregate Loss**: 0.73 T
+- **Individual Dollar Loss**: 837.0 M
+- **Share RMBS**: 17.4
+- **Share Treasury and Other**: 8.1
+- **Share Residential Mortgage**: 20.5
+- **Share Other Loan**: 1.0
+- **Loss/Asset**: 4.6%
+- **Uninsured Deposit/MM Asset**: 19.0%
+- **Insured Deposit Coverage Ratio**: 15.4
+- **Observations**: 29
+
+The statistics include categories of financial holdings and assets, individual and aggregate losses, loan types, uninsured deposits, asset losses, and coverage ratios. These figures indicate substantial financial differentiation between small, large, and GSIB firms, each handled by the respective regulations and financial strategies based on their size and asset distribution.

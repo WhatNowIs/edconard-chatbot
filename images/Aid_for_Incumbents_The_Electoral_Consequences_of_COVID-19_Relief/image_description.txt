@@ -1,0 +1,19 @@
+This scatter plot represents the relationship between the incumbent party vote share and the number of congressional representatives per million residents for different states. Here's a summary of the key information from the image:
+
+### Title:
+**Incumbent Party Vote Share vs. Congressional Representation (Main Sample)**
+
+### Axes:
+- **X-axis:** Number of representatives per million residents
+- **Y-axis:** Incumbent party vote share percentage
+
+### Key Observations:
+1. **Positive Correlation:** There is a generally positive correlation between the number of representatives per million residents and the incumbent party vote share, as suggested by the upward-sloping trend line.
+2. **Sparse Representation:** States with fewer representatives per million residents (closer to 1 on the x-axis) show a more scattered vote share, ranging predominantly between 40% to 80%, indicating more variability. 
+3. **High Representation:** States with higher representatives per million residents (closer to 5 on the x-axis) show less variability in vote share, generally higher (close to 70% to 80%).
+4. **States on Extremes:** 
+   - **Low Vote Share Extremes:** States like MA (Massachusetts) and MD (Maryland) show a relatively lower incumbent party vote share despite having around 2 representatives per million residents.
+   - **High Vote Share Extremes:** States like WY (Wyoming) and VT (Vermont) show a higher vote share, particularly in Wyoming where the vote share is around 80% with about 5 representatives per million residents.
+5. **General Trend:** Most states cluster around 1-3 representatives per million residents with incumbent vote shares ranging roughly between 50% to 70%.
+
+This plot illustrates that as the number of representatives per million residents increases, the incumbent party vote share generally tends to increase, but there is substantial variation, particularly at lower numbers of representatives.

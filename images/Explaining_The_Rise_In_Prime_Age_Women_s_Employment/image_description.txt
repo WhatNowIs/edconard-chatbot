@@ -1,0 +1,17 @@
+This image shows two charts related to prime age women, focusing on their educational attainment and motherhood status:
+
+**(a) Employment rates**
+The first chart (a) illustrates employment rates for different groups of prime age women over the period from 1995 to 2020:
+- Women with a college degree and children under age 10 (orange solid line) show an increasing trend in employment rates, reaching about 80% in 2020.
+- Women with a college degree and no children under age 10 (yellow dashed line) have consistently higher employment rates, hovering around 80-85% across the years.
+- Women without a college degree but with children under age 10 (light blue dashed line) exhibit declining employment rates since the early 2000s, dipping below 60% at times.
+- Women without a college degree and no children under age 10 (dark blue solid line) show fluctuating employment rates, but generally lower than those with a college degree. Their rates saw a significant drop around the 2008 financial crisis but have been rising since then, reaching around 65% in 2020.
+
+**(b) Population shares**
+The second chart (b) conveys the population shares of these groups from 1995 to 2020:
+- Women without a college degree and no children under age 10 (blue section) constitute the largest group in all years, but their share has been decreasing from about 50% in the early 1990s to below 40% by 2020.
+- Women with a college degree and no children under age 10 (yellow section) have a growing share of the population, increasing from about 25% to around 35% over the same period.
+- Women without a college degree but with children under age 10 (dark blue section) also exhibit a shrinking population share, decreasing from around 20% to just over 10%.
+- Women with a college degree and children under age 10 (orange section) have a relatively stable population share of about 10-12%, with slight increases over time.
+
+In summary, employment rates differ significantly based on educational attainment and motherhood status among prime age women. Women with college degrees generally have higher employment rates, and there is a noticeable trend of an increasing share of women with college degrees in the population.

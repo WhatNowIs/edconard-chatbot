@@ -1,0 +1,15 @@
+The image provides a comparative analysis of GDP per employee and per hours worked for the EU27 and Germany over the period from 1995 to 2024, normalized to US=100, based on purchasing power standards.
+
+Here are the key observations from the graph:
+
+- **EU27 vs. Germany (GDP per Employee)**: The GDP per employee in Germany (represented by the gold dashed line) increased steadily from 2010 onwards, peaking around 2022. In comparison, the EU27 GDP per employee (represented by the solid blue line) exhibits a slower increase and remains consistently lower than Germany's GDP per employee throughout the period.
+
+- **EU27 vs. Germany (GDP per Hours Worked)**: Germany's GDP per hours worked (solid gold line) trends downward from 1995 to around 2005, experiences fluctuations but shows a general recovery from around 2010 onwards. The EU27 GDP per hours worked (dashed blue line) follows a more consistent and stable trend, showing a gradual increase over time but remains below Germany's GDP per hours worked.
+
+- **Peak and Fluctuations**: Notably, around 2020, there is a visible dip in all indicators, likely attributed to the COVID-19 pandemic, followed by a recovery phase.
+
+- **General Trends**: Overall, Germany's economic performance, as measured by GDP per employee and per hours worked, shows higher values compared to the EU27 aggregate throughout the entire period from 1995 to 2024.
+
+- **Comparison with US**: Given that values are normalized to the US=100, both EU27 and Germany show GDP per employee and per hours worked below the US levels for the entire duration.
+
+The data source is based on the AMECO dataset, compiled in May 2023, and uses purchasing power standards similar to those used in IMFs purchasing power parity methodology. The EU27 aggregation considers the current 27 members for the full sample period.

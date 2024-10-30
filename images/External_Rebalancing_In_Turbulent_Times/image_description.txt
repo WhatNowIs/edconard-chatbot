@@ -1,0 +1,28 @@
+The image is a figure titled "Figure 1.1.7. US Incurrence of Portfolio Investment Liabilities (Billions of US dollars, unless noted otherwise)." It is sourced from the US Bureau of Economic Analysis and IMF staff calculations. The graph visualizes the growth of US portfolio investment liabilities by region from Q1 2003 to Q4 2022, measured in billions of US dollars. 
+
+Key elements from the graph:
+
+1. **Regions Contributing to US Portfolio Investment Liabilities:**
+   - **Europe (dark blue)**
+   - **Luxembourg (red)**
+   - **Middle East (yellow)**
+   - **China (green)**
+   - **Japan (pink)**
+   - **Other (gray)**
+   - **Belgium, The Netherlands, Asia and Pacific, Hong Kong SAR, Singapore** (with corresponding colors indicated in the legend)
+
+2. **Trends and Levels over Time:**
+   - From 2003 onwards, there has been a significant increase in US portfolio investment liabilities.
+   - By Q4 2022, total liabilities surpass 14,000 billion USD.
+   - The largest contributors are Europe and Other regions (inclusive of regions like Canada, Latin America, Africa, and international organizations).
+
+3. **Percent of GDP:**
+   - The blue line shows the percentage of US GDP represented by these investment liabilities.
+   - The percentage of GDP has climbed from nearly 0% in 2003 to approximately 14% by the end of 2022.
+
+4. **Notable Observations:**
+   - There is a noticeable uptick in liabilities post-2008 financial crisis.
+   - Various regions show different growth trajectories, with Europe having a markedly high contribution throughout.
+
+Summary:
+US portfolio investment liabilities have consistently grown from Q1 2003 to Q4 2022, reaching over 14,000 billion USD, with Europe and an aggregated "Other" category being the most significant contributors. By the end of 2022, these liabilities account for approximately 14% of US GDP, showcasing a steady and substantial increase over nearly two decades.

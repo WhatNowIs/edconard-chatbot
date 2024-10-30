@@ -1,0 +1,11 @@
+The image is a graph comparing the cumulative total returns on $100 invested in the S&P 500 Index, MSCI China Index, and MSCI India Index from December 1992 to May 2022.
+
+**Key points:**
+
+1. Over the past 30 years, Indian equities (MSCI India Index) have outperformed Chinese equities (MSCI China Index) by a significant margin.
+2. At various points in time, the MSCI India Index has shown much higher total returns than the MSCI China Index.
+3. The S&P 500 Index, representing U.S. equities, also demonstrates consistent growth.
+4. By May 2022, all three indices show growth, with the MSCI India Index performing the best, followed by the S&P 500 Index, and then the MSCI China Index.
+
+**Summary:**
+From December 1992 to May 2022, Indian equities, as measured by the MSCI India Index, have significantly outperformed Chinese equities, as measured by the MSCI China Index. The S&P 500 Index also shows strong returns, though lower than the MSCI India Index. The overall trend indicates that investments in Indian equities yielded the highest cumulative returns over this 30-year period.

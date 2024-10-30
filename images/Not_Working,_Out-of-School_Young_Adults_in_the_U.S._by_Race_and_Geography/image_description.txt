@@ -1,0 +1,46 @@
+The table outlines the rates of disconnected young adults, aged 18 to 24, across different demographic groups in the U.S. from January 2017 to April 2024. Disconnected young adults are defined as those not enrolled in high school or college and not employed.
+
+### Key Findings:
+
+- **All Young Adults**: 
+  - National average: 16.0%
+  - Metro Area: 15.6%
+  - Rural Area: 20.2%
+  - Principal City: 17.1%
+
+- **Young White Adults**: 
+  - National average: 13.9%
+  - Metro Area: 13.3%
+  - Rural Area: 18.5%
+  - Principal City: 12.8%
+
+- **Young Black Adults**: 
+  - National average: 21.3%
+  - Metro Area: 20.9%
+  - Rural Area: 29.1%
+  - Principal City: 23.8%
+
+- **Young Hispanic Adults**: 
+  - National average: 17.8%
+  - Metro Area: 17.8%
+  - Rural Area: 19.3%
+  - Principal City: 19.7%
+
+- **Young Adults of Other Races**: 
+  - National average: 15.6%
+  - Metro Area: 14.9%
+  - Rural Area: 26.9%
+  - Principal City: 14.1%
+
+### Observations:
+
+1. **Higher Disconnection Rates in Rural Areas:**
+   - Across all demographic groups, the disconnection rates are notably higher in rural areas compared to metro and principal city areas.
+   - For example, Young Black Adults have a significantly higher disconnection rate in rural areas (29.1%) than in metro (20.9%) or principal city areas (23.8%).
+
+2. **Demographic Differences:**
+   - Young Black Adults have the highest overall disconnection rate (21.3%) among the groups listed, whereas Young White Adults have the lowest (13.9%).
+   - Disconnection rates for Young Hispanic Adults and Young Adults of Other Races are 17.8% and 15.6% respectively, indicating a moderate level of disconnection compared to their white and black counterparts.
+
+### Conclusion:
+Efforts to reduce the rates of disconnected young adults should consider demographic differences and focus significantly on rural areas where disconnection is more prevalent. The data highlights the need for tailored intervention strategies to address educational and employment challenges faced by young adults, particularly those in rural settings and among specific racial demographics.

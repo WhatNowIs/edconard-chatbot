@@ -1,0 +1,8 @@
+Since 2010, there have been significant increases in various types of US debt outstanding:
+
+1. **Bank Loans**: Lending by banks has surged by $5.5 trillion. This is visually represented by the green line, showing a steady and significant increase over time.
+2. **Investment Grade (IG) Bonds**: IG markets have also grown by $5.5 trillion. The light blue line shows a consistent upward trajectory, similar to bank loans.
+3. **High Yield (HY) Bonds**: HY markets have seen a growth of $500 billion, indicated by the dark blue line. This growth is more modest compared to bank loans and IG bonds.
+4. **Private Credit Assets Under Management (AUM)**: There has been an increase of $800 billion in private credit AUM, depicted by the orange line, showing a gradual and steady rise.
+
+The chart clearly displays these growth trends from January 2010 to January 2023, with data sourced from FRB, ICE BofA, Bloomberg, and Apollo Chief Economist. The overall trend indicates a robust expansion in these debt markets over the past decade.

@@ -1,0 +1,18 @@
+The image contains two line graphs depicting China's credit impulse over time, as measured from 1995 to around 2020.
+
+**Panel A: As a % of China's GDP**
+- This graph illustrates China's credit impulse as the change in the flow of new credit over the past 12 months, expressed as a percentage of China's nominal GDP.
+- Notable peaks occur around 2009 during the Global Financial Crisis (GFC) and another significant rise around 2016.
+- There are several periods of fluctuation, with diminishing credit impulses in the years following each peak.
+- The most pronounced fluctuations occur between -10% and +20%.
+
+**Panel B: As a % of Global GDP**
+- This graph shows China's credit impulse as a percentage of global nominal GDP.
+- Similar to Panel A, there is a noticeable spike around 2009 during the GFC and another increase around 2016.
+- The fluctuations, while notable, are less extreme compared to Panel A, ranging between -1% and +2% of global GDP.
+
+**Figure Caption: China’s Credit Impulse**
+- The note explains that China's credit impulse is calculated as the change in the flow of new credit over a 12-month period relative to the prior year, expressed as a percentage of China's nominal GDP (Panel A) and global nominal GDP (Panel B).
+
+**Summary:** 
+The graphs in Figure 1 depict China's credit impulse from 1995 to 2020, as a percentage of both China's and global GDP. The credit impulse represents the annual change in new credit flows. There are significant peaks around key economic events, notably during and after the Global Financial Crisis, demonstrating substantial interventions in credit flows by China. The measurements indicate China's significant influence on global economic conditions through its credit activities.

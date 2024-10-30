@@ -1,0 +1,21 @@
+The image is a graph from FRED (Federal Reserve Economic Data), which shows three lines representing different financial metrics over the period from 2014 to 2023. The graph displays data for:
+
+1. **Market Yield on U.S. Treasury Securities at 10-Year Constant Maturity (Red Line)** and 
+2. **The 10-Year Breakeven Inflation Rate (Green Line)**
+
+### Key Findings:
+- **Market Yield on U.S. Treasury Securities at 10-Year Constant Maturity (Red Line)**:
+  - Initially remained around 2.5% until 2020 where it dropped sharply during the Covid-19 pandemic.
+  - Had a significant increase from below 1% in early 2020 to over 4% in 2022-2023.
+  
+- **10-Year Breakeven Inflation Rate (Green Line)**:
+  - Fluctuated between 1.5% and 2.5% before 2020. 
+  - Dropped slightly below 1% in 2020 before rising back to fluctuate around 2.5% from 2021 onwards.
+  
+- **10-Year Treasury Inflation-Indexed Security, Constant Maturity (Blue Line)**:
+  - Started below zero around 2014, gradually increased but remained below 1% until 2019.
+  - Dropped significantly below zero in 2020 during the pandemic period.
+  - Shows a gradual increase back to positive territory approaching 1%.
+
+### Summary:
+The chart illustrates the dynamics between Treasury yields, inflation expectations, and real returns over a nearly decade-long period. There were notable declines in yields and breakeven rates during the pandemic in 2020, followed by significant increases in both metrics as the economy recovered. The actual yields have risen sharply in recent years, driven by factors including inflationary pressures and Federal Reserve policies. This provides insight into how economic events and policy changes impact financial markets over time.

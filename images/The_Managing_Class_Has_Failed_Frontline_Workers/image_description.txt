@@ -1,0 +1,11 @@
+The image provides a graph depicting the monthly quits rate in the US for both total nonfarm and manufacturing sectors, adjusted seasonally. Key information:
+
+- The title highlights that manufacturing workers are beginning to quit their jobs again, similar to trends seen in the past.
+- The graph covers data from roughly 2000 to 2020.
+- The quits rate for total nonfarm (blue line) and manufacturing (black line) fluctuates over this period.
+- Both measures experienced a significant dip around the 2008 financial crisis.
+- There is a notable upward trend in the quits rate around 2020, spiking to peaks not seen in earlier years.
+- The total nonfarm quits rate has generally been higher than the manufacturing quit rate.
+- The most recent data shows a relative decline from the peak, yet rates remain higher compared to early 2000.
+
+The source of data is the US Bureau of Labor Statistics, indicating its credibility and reliability. The graph clearly illustrates trends in employment behavior, emphasizing that the quit rates are on the rise particularly post-2020.

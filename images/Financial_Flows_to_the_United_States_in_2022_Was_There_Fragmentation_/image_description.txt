@@ -1,0 +1,10 @@
+The image illustrates the purchases of U.S. securities in 2022 by selected Emerging Market Economies (EMEs) measured in billions of dollars. The graph also includes average annual net purchases for the period from 2013 to 2021 as black dots for comparison. Here are the key insights:
+
+- Middle East Oil Exporters, which include Bahrain, Iraq, Kuwait, Oman, Qatar, Saudi Arabia, and UAE, made the highest purchases of U.S. securities in 2022, exceeding $100 billion, which is significantly higher than their average annual net purchases from 2013 to 2021 (below zero).
+- China made purchases close to $60 billion, slightly higher than its average annual net purchases from 2013 to 2021 (slightly below zero).
+- India purchased around $40 billion in U.S. securities, which is significantly higher than its average annual net purchases from 2013 to 2021 (close to zero).
+- Mexico, Colombia, and South Africa all made relatively small purchases of U.S. securities in 2022, with all around or below $10 billion.
+    - Mexico's and South Africa’s purchases are higher than their average annual net purchases from 2013 to 2021.
+    - Colombia’s purchases are lower than its average annual net purchases for the same period.
+    
+Overall, the chart highlights significant increases in purchases of U.S. securities by several EMEs in 2022, particularly by Middle East oil exporters, China, and India.

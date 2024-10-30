@@ -1,0 +1,28 @@
+The image presents Figure 3 titled "Treasury Security Holdings of Households and Hedge Funds," showcasing the trends in the holdings from 2013 to 2023 in billions of dollars. The data is segmented into three categories: Households, Foreign Hedge Funds, and Domestic Hedge Funds.
+
+### Summary:
+
+**Households:**
+- Represented by the black line.
+- Show a significant increase in holdings starting around 2022, peaking at over $2500 billion in 2023.
+- Prior to 2022, the holdings were relatively stable with minor fluctuations.
+
+**Foreign Hedge Funds:**
+- Indicated by the light blue area.
+- Have moderately varying levels of holdings, maintaining a range approximately between $500 billion and $1000 billion for most of the period.
+- Experienced rises and falls, peaking around 2018 and seeing another rise towards 2022.
+
+**Domestic Hedge Funds:**
+- Depicted by the dark blue area at the bottom.
+- Show a consistent but relatively lower level of holdings compared to households and foreign hedge funds.
+- Holdings have remained stable at below $500 billion over the entire period, with minimal fluctuations.
+
+### Key Observations:
+1. **Sharp Increase in Household Holdings:** The most notable trend is the significant surge in household treasury security holdings from around 2021 onwards, reaching a new high in 2023.
+2. **Stable Yet Variable Foreign Hedge Funds Holdings:** Although foreign hedge funds exhibit variability, their overall range remains within certain limits.
+3. **Consistent Domestic Hedge Funds Holdings:** Domestic hedge funds have maintained consistent, low-level holdings throughout the years.
+
+### Source:
+The data is sourced from the Board of Governors of the Federal Reserve System, specifically from various financial accounts of the United States, including enhanced financial accounts.
+
+This chart highlights the changing dynamics and significant trends in treasury security investments among households and hedge funds over the past decade.

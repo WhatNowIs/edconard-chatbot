@@ -1,0 +1,16 @@
+The image visualizes how the voting preferences of the "Age 65+" demographic in the U.S. have shifted over a 12-year period and across different generations. Here are the key details:
+
+1. **Greatest Generation (Born 1901-1927):**
+   - In 2012: 3.4 million voters aged 65+ favored Romney by a margin of 7%.
+   - If voting today: 321,000 voters aged 65+ would slightly favor Obama by less than 1%.
+
+2. **Silent Generation (Born 1928-1945):**
+   - In 2012: 21 million voters aged 65+ favored Romney by a margin of 9%.
+   - If voting today: 12.1 million voters aged 65+ would favor Romney by a reduced margin of 6%.
+
+3. **Baby Boomers (Born 1946-1964):**
+   - In 2012: 4.3 million voters aged 65+ favored Obama by a margin of 2%.
+   - If voting today: 27.6 million voters aged 65+ would favor Obama by an increased margin of 5%.
+
+**Summary:**
+The analysis indicates a shift towards more liberal voting preferences among older generations as time progresses. The Greatest Generation shows a significant move towards Obama, while the Silent Generation’s preference for Romney has decreased. Baby Boomers have consistently favored Obama, with an increase in their support over time. This trend demonstrates how the aging of the Baby Boomer generation is contributing to a more liberal senior voting demographic.

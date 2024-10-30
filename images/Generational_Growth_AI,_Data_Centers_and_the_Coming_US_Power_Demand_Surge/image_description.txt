@@ -1,0 +1,10 @@
+The image presented is an investment research chart depicting the expected share of US power demand taken up by data centers through 2030, sourced from IEA, Goldman Sachs Global Investment Research, and EIA. The key points are:
+
+- By 2030, data centers are anticipated to make up around 8% of the total US power demand in the base case scenario.
+- This figure could rise to 11% in the bull case scenario and drop to 5% in the bear case scenario.
+- The chart differentiates between Non-AI Data Center Demand (in dark blue) and AI Demand (in light blue), indicating that both are contributing to the increasing power demand.
+- The data shows a gradual increase in the share of the overall US power demand from 2023 to 2030.
+- In the bull case scenario, the data center power demand shows a steeper increase.
+- In the bear case scenario, the increase is more moderate with a slight upward trend.
+
+Overall, the chart underscores the growing significance of data centers in the overall US energy consumption scenario, particularly highlighting the impact of AI on this demand.

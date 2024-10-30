@@ -1,0 +1,19 @@
+The image is a graph titled "Monetary Policy is Tighter Than It Seems," illustrating the gap between the Federal Reserve's actual policy rate and the QT-equivalent (Quantitative Tightening) policy rate, along with their projections.
+
+Key points include:
+
+1. **Actual Policy Rate vs. QT-Equivalent Policy Rate**:
+   - The actual policy rate (solid dark blue line) has risen from around 1% in early 2022 to above 5% by 2024.
+   - The QT-equivalent policy rate (solid black line), which includes the impact of balance-sheet shrinkage, begins slightly higher than the actual policy rate and shows a growing gap, reaching over 6% by 2025.
+
+2. **Projections**:
+   - The actual rate projections (dotted blue line) about 5.5% in early 2024, then declining gradually to around 4% by 2026.
+   - The QT-equivalent projections (dotted black line) suggest a peak at about 6% in 2024, remaining relatively higher than the actual rate projections throughout, before falling to approximately 4.5% by 2025, and indicates a steadier decline post-2025.
+
+3. **Impact of Balance-Sheet Reduction**:
+   - The graph highlights a projected significant divergence between the actual policy rate and the QT-equivalent rate, influenced by balance-sheet reduction, marked with a grey dotted line showing the projected end of balance-sheet reduction around 2025.
+
+4. **Sources**:
+   - The graph's data comes from the Federal Reserve and authors' calculations.
+
+The overall implication is that the Federal Reserve's policy rate might not fully reflect the tightness of current monetary policy as balance-sheet shrinkage contributes additional tightening, leading to a potentially larger impact on economic conditions than the policy rate alone suggests.

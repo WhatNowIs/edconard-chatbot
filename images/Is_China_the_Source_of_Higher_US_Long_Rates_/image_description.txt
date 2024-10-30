@@ -1,0 +1,18 @@
+The image presents a trend analysis of China's holdings of US Treasury Securities from January 2000 to mid-2023. The key highlights extracted from the image are:
+
+1. **China's Sale of Treasuries:**
+   - China has sold $300 billion in US Treasuries since 2021, with $40 billion sold since April 2023.
+
+2. **Trend in Holdings:**
+   - There was a significant increase in China's holdings of US Treasury Securities from 2000, reaching a peak around mid-2014.
+   - Since then, the trend shows fluctuations and a general decline, especially notable from around 2018 onwards.
+   - A sharper decline is observed in the period from 2021 onwards, aligning with the information about China selling large amounts of Treasuries.
+
+3. **Graph Details:**
+   - The y-axis represents the value in billion dollars ($ bn).
+   - The x-axis shows the timeline from January 2000 to July 2023.
+   - The shaded areas on the graph may represent periods of economic perturbations, possibly recession periods, but specific reasons are not detailed in the image.
+
+**Source:** The data is sourced from Bloomberg, and the analysis is provided by the Apollo Chief Economist.
+
+In summary, the image visually underscores the significant reduction in China's investments in US Treasury Securities over the past few years, marking a notable trend in the global economic landscape.

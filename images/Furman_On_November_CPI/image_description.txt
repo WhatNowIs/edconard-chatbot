@@ -1,0 +1,42 @@
+The image represents a table detailing the Consumer Price Index (CPI) inflation data for November 2023, presented at annual rates across various time spans (1-month, 3-month, 6-month, and 12-month). 
+
+### Summary:
+- **Overall Inflation**:
+  - 1-month: 1.2%
+  - 3-month: 2.2%
+  - 6-month: 3.1%
+  - 12-month: 3.1%
+
+- **Core Inflation (excluding food and energy)**:
+  - 1-month: 3.5%
+  - 3-month: 3.4%
+  - 6-month: 2.9%
+  - 12-month: 4.0%
+
+- **Core CPI with Private New Rent Indices for Shelter**:
+  - 1-month: 1.8%
+  - 3-month: 1.4%
+  - 6-month: 0.6%
+  - 12-month: 1.7%
+
+- **Core ex Shelter**:
+  - 1-month: 1.9%
+  - 3-month: 1.5%
+  - 6-month: 1.2%
+  - 12-month: 2.1%
+
+- **Core ex Shelter and Used Cars**:
+  - 1-month: 0.9%
+  - 3-month: 2.1%
+  - 6-month: 1.9%
+  - 12-month: 2.6%
+
+- **Core Services ex Shelter**:
+  - 1-month: 6.2%
+  - 3-month: 5.4%
+  - 6-month: 4.4%
+  - 12-month: 4.0%
+
+### Additional Information:
+- Note: Private new rent indices are derived from Zillow Observed Rent Index and Apartment List National Rent Index and are seasonally adjusted using Macrobond.
+- Source: Bureau of Labor Statistics; Zillow; Apartment List; Macrobond; author's calculations.

@@ -1,0 +1,15 @@
+This figure presents data on the impact of remote schooling during the 2020-21 school year on math achievement, segmented by school poverty levels. It summarizes the Standard Deviation (SD) differences from predicted performance (based on data from 2017-19) for schools of different poverty levels: high poverty (blue circles), mid poverty (red squares), and low poverty (green triangles).
+
+Key Points:
+
+1. **General Trend**: As the percentage of the school year spent in remote instruction increases, the achievement in math generally declines for all poverty levels.
+  
+2. **High Poverty Schools**: These schools experienced the greatest decline in achievement with increased remote instruction. At 60% remote instruction, the deviation is around -0.5 SDs.
+  
+3. **Mid Poverty Schools**: These schools also show a decline in achievement, but it is less severe than that of high poverty schools. The deviation stabilizes past the 30% mark, around -0.3 to -0.4 SDs.
+  
+4. **Low Poverty Schools**: These schools show the least decline in achievement. The maximum deviation observed is slightly over -0.2 SDs, and it remains relatively stable after the 20% mark.
+  
+5. **Relative Comparison**: High poverty schools were most negatively affected by increased remote instruction, followed by mid poverty schools, and then low poverty schools.
+
+Summary: Remote instruction during the 2020-21 school year had a varying impact on math achievement depending on the poverty level of the school, with higher poverty schools experiencing the most significant declines.

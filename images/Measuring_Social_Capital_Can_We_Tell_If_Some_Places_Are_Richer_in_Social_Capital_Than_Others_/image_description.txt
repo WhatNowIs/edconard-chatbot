@@ -1,0 +1,8 @@
+The image is a map of the United States that displays the Joint Economic Committee State-Level Social Capital Index by decile. The map uses different colors to represent the range of social capital scores for each state, categorized into deciles (1 through 10). Here’s a breakdown:
+
+- Colors range from dark red (indicating the lowest social capital decile, 1) through shades of brown and green to dark blue (indicating the highest social capital decile, 10).
+- States with the highest social capital (decile 10, dark blue) are primarily located in the upper Midwest and the Northeast.
+- States with the lowest social capital (decile 1, dark red) are primarily in the southeastern region and parts of the West, particularly the southern states.
+- The map provides a visual representation that helps easily identify which states rank higher or lower in terms of social capital.
+
+The map is produced by AEI (American Enterprise Institute) and the Center on Opportunity and Social Mobility.

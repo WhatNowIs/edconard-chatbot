@@ -1,0 +1,46 @@
+The image provides a summary of the Return on Invested Capital (ROIC) for US and Global Firms in January 2023. It features two main sections: a histogram showing the distribution of ROIC percentages for global and US firms, and a table detailing statistics by region.
+
+### Histogram
+
+- **X-axis:** Represents the ROIC (after-tax) in percentage ranges. The ranges go from less than -50% to greater than 30%.
+- **Y-axis:** Indicates the percent of companies within each ROIC range.
+- **Colors:** Blue bars indicate global firms, while gray bars represent US firms.
+- **Most Common ROIC Range:** The largest percentage of companies for both global and US firms fall in the 0% to 2% ROIC range.
+
+### Table: Return on Invested Capital by Region
+
+- **Regions Covered:**
+  - Africa and the Middle East
+  - Australia and New Zealand (NZ)
+  - Canada
+  - China
+  - European Union (EU) and Environs
+  - Eastern Europe and Russia
+  - India
+  - Japan
+  - Latin America and the Caribbean
+  - Small Asia
+  - United Kingdom (UK)
+  - United States
+  - Global (covering all regions)
+
+- **Columns:**
+  - **# Firms:** The number of firms in each region.
+  - **Return on Capital:** The 25th percentile (25th), median, and 75th percentile (75th) ROIC values for each region.
+
+### Key Insights
+
+1. **US Firms' Performance:**
+   - The median ROIC for US firms is 7.44%, which is higher than the global median of 5.19%.
+   - The 75th percentile for US firms stands at 24.04%, indicating a substantial number of high-performing companies.
+
+2. **Global Comparison:**
+   - Regions like the EU and Environs and Small Asia show relatively high median ROIC values of 6.66% and 4.77%, respectively.
+   - The lowest median ROIC is reported in Canada, with a value of -7.99%.
+   - The highest median ROIC is in the Eastern Europe & Russia region at 4.96%.
+
+3. **Performance Distribution:**
+   - Globally, most firms fall within the 0%-2% ROIC range, but there are significant outliers with ROIC greater than 30%.
+   - US firms show a wider spread in ROIC, significantly contributing to the higher ROIC percentages both on the lower and upper ends.
+
+This shows that while global firms have a broad spread of returns, US firms generally exhibit a higher median return with more companies performing at very high ROIC levels.

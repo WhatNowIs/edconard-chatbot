@@ -1,0 +1,21 @@
+The image presents a set of six scatter plots illustrating the correlation between the corruption index and various standardized innovation variables. The title indicates that a higher corruption index value (from ICRG) denotes higher levels of corruption (i.e., lower values are better).
+
+1. **Log (R&D–GDP ratio) vs Corruption Index**:
+    - There's a negative correlation: as the corruption index increases (more corruption), the R&D–GDP ratio decreases.
+
+2. **Log (res. patent apps per R&D) vs Corruption Index**:
+    - There's a faint negative correlation, indicating that as corruption increases, the number of patent applications per R&D spending slightly decreases.
+
+3. **Log (researchers per population) vs Corruption Index**:
+    - There's a clear negative correlation suggesting that higher corruption corresponds to fewer researchers per population.
+
+4. **Log (scitech articles per R&D) vs Corruption Index**:
+    - This plot shows a negative correlation: as corruption increases, the number of scientific and technical articles per unit of R&D expenditure decreases.
+
+5. **Economic Complexity Index vs Corruption Index**:
+    - There's a strong negative correlation: higher corruption is associated with lower economic complexity.
+
+6. **Log high tech export share vs Corruption Index**:
+    - There is a negative correlation, indicating that as corruption rises, the share of high-tech exports tends to decline.
+
+Overall, the plots suggest that higher levels of corruption are generally associated with poorer performance in various innovation-related metrics, such as GDP ratio dedicated to R&D, patent applications, researcher density, scientific articles publication, economic complexity, and the share of high-tech exports.

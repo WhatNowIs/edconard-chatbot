@@ -1,0 +1,24 @@
+**Summary of Data from Figure 12: China's trade-to-GDP ratio, share of world exports, and current account balance to GDP, 1985–2021:**
+
+The figure provides a comparative analysis of three key economic indicators for China from 1985 to 2021:
+
+1. **China's Trade-to-GDP Ratio (Black Line)**
+   - Shows a significant increase particularly from 2001 to 2007, peaking around 2007.
+   - Experienced a substantial drop post-2007, with fluctuations but overall still high until 2021.
+
+2. **China's Share of World Exports (Orange Line)**
+   - Steadily increased over time, particularly notable post-2001.
+   - Continues to grow post-2007 until around 2015 where it plateaus around 12-13% of global exports.
+
+3. **China's Current Account Balance to GDP (Green Dashed Line)**
+   - Displayed regular fluctuations before 2007 with peaks and troughs.
+   - Plummeted dramatically around 2008 and stays relatively lower afterward, with minimum levels post-2011 but showing a slight uptick closer to 2021.
+
+**Key Observations:**
+- The data reflects significant economic changes around 2001 and post-2007, highlighting China’s integration into the global economy and the impact of global economic events.
+- The period labeled "Post Hyperglobalization" shows notably contrasting dynamics in China's trade metrics, indicating a shift in economic performance and strategy.
+
+**Sources:**
+- Data derived from WTO International Trade Statistics, IMF Balance of Payments and International Investment Position Statistics, and World Bank's World Development Indicators.
+
+Remarks in the note point out that trade here is evaluated as the sum of exports and imports.

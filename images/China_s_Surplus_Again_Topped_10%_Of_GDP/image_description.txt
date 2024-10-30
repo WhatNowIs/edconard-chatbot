@@ -1,0 +1,19 @@
+This image is a line graph titled "Chinese trade in manufactures as a share of China's GDP." It illustrates the percentage trends of two economic indicators from Q4 1996 to Q4 2022:
+
+1. **Non-processing manufactured imports** (represented by a light red/pink line).
+2. **Manufactured exports net of processing** (represented by a dark red line).
+
+### Key Observations:
+- **Non-processing manufactured imports**:
+  - They started at approximately 4-5% of GDP in Q4 1996.
+  - Their peak is seen around Q4 2003, reaching about 7%.
+  - Following the peak, the percentage gradually declined, falling below 4% around 2014 and remaining relatively stable at a lower level subsequently.
+
+- **Manufactured exports net of processing**:
+  - Initially, they were around 8% of GDP in Q4 1996.
+  - There was a steady and notable increase, peaking significantly above 18% around Q4 2007.
+  - Post-peak, there was a decline that leveled out around 12% by 2012, followed by several fluctuations but an overall decline to below 10% around 2018.
+  - An uptick is visible towards the end of the period, ending above 12% by Q4 2022.
+
+### Summary:
+The graph indicates that China's manufactured exports as a share of GDP grew substantially from the late 1990s to around 2007, after which they declined but remained a significant part of the GDP. In contrast, non-processing manufactured imports have remained relatively less significant, with a peak in the early 2000s but a general downward trend since then. This suggests that China has increasingly focused on exporting manufactured goods, even though the rate has somewhat stabilized in recent years with a slight rebound.

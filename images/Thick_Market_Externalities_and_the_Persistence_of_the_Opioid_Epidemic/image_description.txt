@@ -1,0 +1,23 @@
+The figure depicts the trends in drug and opioid overdose deaths per 100,000 people in the U.S. from 1990 to 2020. Several key insights can be drawn from the graph:
+
+1. **Overall Drug Overdoses (Any Drug)**: There has been a significant increase in overdose deaths related to any drug over the period.
+   - In the early 1990s, the deaths per 100,000 were relatively low.
+   - A noticeable increase begins around the late 1990s and early 2000s.
+   - The rate of increase accelerates markedly after 2010, with a sharp rise observed from 2013 onwards.
+
+2. **Any Opioid**: Similar to the overall drug overdoses, the deaths due to any opioid also show a marked increase.
+   - The trend largely mirrors the overall trend for any drug, with significant increases particularly after 2013.
+
+3. **Fentanyl**: Overdose deaths involving Fentanyl start to rise sharply around 2013.
+   - By 2020, Fentanyl-related deaths show a steep upward trend, indicating a major increase in fatalities.
+
+4. **Rx Opioids and Heroin**: 
+   - Prescription opioids (Rx Opioids) show a gradual increase from the 1990s to around 2010, after which the rate of increase slows but continues to rise steadily.
+   - Heroin-related deaths start to rise around 2010, showing a substantial increase, but still remain lower than Fentanyl and any opioids in general by 2020.
+
+**Notes Summary**:
+- The data is sourced from the National Center for Health Statistics.
+- The statistics are adjusted for age and sex to the U.S. population in 2010.
+- Specific death codes used to identify overdose deaths are described in the referenced section of the text.
+
+Overall, the chart illustrates a growing public health crisis related to drug and opioid overdose deaths, with particularly alarming increases associated with Fentanyl and opioids post-2010.

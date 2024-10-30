@@ -1,0 +1,20 @@
+The figure displays updated estimates of intergenerational mobility, specifically focusing on the correlation between the status of fathers and sons across different birth cohorts from 1840 to 1980. The y-axis represents the father-son association of status, with values ranging from 0 to 1, and the x-axis categorizes the birth cohorts.
+
+Two sets of estimates are presented:
+1. **Standard Estimates (represented by red diamonds)**
+2. **Updated Estimates (represented by blue triangles)**
+
+**Key Observations:**
+1. For earlier birth cohorts (from 1840 to around 1910), the standard and updated estimates show a notable disparity, with the standard estimates being significantly lower (ranging from 0.21 to 0.33) compared to the updated estimates (ranging from 0.61 to 0.83).
+2. The updated estimates show a peak in the father-son association of status around the mid-1800s (0.83 for 1840) and then a slight decline and stabilization around the turn of the century (around 0.68 to 0.62).
+3. From 1910 onwards, the standard estimates see minimal decline or stabilization (around 0.31), while the updated estimates show brief decreases followed by a rise, peaking at 0.70 for the 1920 cohort.
+4. For later cohorts (post-1940), both estimates converge closer but still show discrepancies, with standard estimates ranging from 0.31 to 0.37, and updated ones ranging from 0.33 to 0.44.
+  
+**Notes:**
+- These estimates represent the slope coefficient of the son's status on the father’s status.
+- The updated estimates incorporate several methodological improvements:
+  1. Pooling of Black families with white families.
+  2. Correction for measurement errors using instrumental variables.
+  3. Adjustments for within-occupational differences in status by race and region.
+
+Overall, the figure suggests that updated methods result in consistently higher estimates for father-son status associations, indicating lower intergenerational mobility than previously estimated by standard methods.

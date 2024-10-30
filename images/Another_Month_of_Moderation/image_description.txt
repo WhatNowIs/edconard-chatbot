@@ -1,0 +1,21 @@
+The provided charts from the Bank of America Institute illustrate trends in total card spending per household and spending growth by different income groups.
+
+### Exhibit 1: Total Card Spending per Household (monthly, %YoY)
+- **Timeframe**: September 2021 to October 2023
+- **Main Points**:
+  - **Overall Trend**: Total card spending has generally declined over the period, with some fluctuations.
+  - **October 2023**: Total card spending decreased by 0.5% year-over-year.
+  - **Retail Excluding Restaurants**: This category showed stagnation or slight decline throughout much of the timeline, moving close to or below 0% YoY growth in recent months.
+  - **Services Including Restaurants**: Although this category was more volatile, it generally showed higher growth rates compared to retail excluding restaurants but followed a similar downward trend over time.
+
+### Exhibit 2: Total Card Spending YoY Growth by Income (monthly, %)
+- **Timeframe**: June 2022 to October 2023
+- **Main Points**:
+  - **Income Groups**: The chart separates data into three income brackets: under $50K, $50K-$125K, and over $125K.
+  - **Lower-income Households**: Households earning less than $50K showed the largest decline in year-over-year spending growth.
+  - **Mid and Upper-Income Households**: These groups also saw decreases but not as sharply as the lowest-income group.
+  - **Feb 2023 Low Point**: Around February 2023, all income groups dipped close to or below 0% YoY growth, particularly the middle and higher income groups.
+  - **Recent Data (October 2023)**: All income groups hovered around 0% YoY growth, indicating a general stabilization in spending across various income levels, albeit at much lower growth rates compared to the start of the analyzed period.
+
+### Summary
+Overall, the data highlights a downward trend in total card spending per household from late 2021 to late 2023. Despite some short-term increases, spending growth across all sectors and income groups has generally been declining. Lower-income households experienced the most significant drop in spending, particularly noticeable in the early part of 2023. By October 2023, total card spending and spending growth across various income brackets had stabilized but remained at subdued levels, reflecting economic challenges and changes in consumer behavior.

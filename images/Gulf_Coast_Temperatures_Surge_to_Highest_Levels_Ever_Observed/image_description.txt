@@ -1,0 +1,7 @@
+The image is a map showing sea surface temperatures in the Gulf of Mexico, observed on August 26, 2023. The temperature data includes:
+
+- Maximum temperature (+): 90.5°F
+- Minimum temperature (x): 85.8°F
+- Area average temperature: 87.7°F
+
+The map uses a color gradient to represent the sea surface temperature in degrees Fahrenheit. The gradient ranges from lighter shades representing cooler temperatures around 85.0°F to darker shades indicating warmer temperatures up to 91.0°F. The coordinates on the map span longitudes from approximately 82.5°W to 90.0°W and latitudes from 26°N to 31°N, depicting the northern Gulf of Mexico, including the coastal areas of Texas, Louisiana, Mississippi, Alabama, and Florida.

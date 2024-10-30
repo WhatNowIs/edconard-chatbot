@@ -1,0 +1,30 @@
+The image titled "Figure 1: Biggest Market Events: FOMC" presents shock decompositions of the pre- and post-FOMC (Federal Open Market Committee) announcement changes in the S&P 500 index. These decompositions illustrate how market changes are attributed to revisions in perceived macroeconomic shocks and the subjective equity premium.
+
+### Key Components:
+- **Panels**:
+  - **(a) Jan/03/01: 50bps FFR cut**
+  - **(b) Apr/18/01: 50bps FFR cut**
+  - **(c) Oct/29/08: Cut with reference to slowdown**
+  - **(d) Apr/28/10: No hike with reference to strengthening**
+
+### Variables Analyzed:
+1. **Monetary Policy (bars in cyan)**: Includes trends in interest rate.
+2. **Inflation (+ in green, - in magenta)**: Differentiates between total and trend inflation.
+3. **Output Growth (red)**: Includes both total and trend output growth.
+4. **Payout Share (yellow)**: Total and trend payout share.
+5. **Equity Premium (purple)**: The subjective equity premium and its stochastic volatility.
+
+### Findings:
+1. **FFR Cuts**:
+   - Both January and April 2001 FOMC events showed a 50 basis points cut in the federal funds rate (FFR). 
+   - These cuts led to notable impacts on market variables like inflation and equity premiums.
+
+2. **Economic Slowdown Reference (Oct/29/08)**:
+   - This event is marked by a strong negative reaction, with significant market changes influenced by negative inflation perceptions.
+
+3. **No Hike with Strengthening (Apr/28/10)**:
+   - An FOMC announcement without an interest rate hike, linked to strengthening economic conditions.
+   - Observes mixed effects on various economic indicators, but overall positive sense.
+
+### Summary Conclusion:
+The figure provides a detailed analysis of how FOMC announcements significantly influence S&P 500 by adjusting perceived macro shocks and equity premiums. The shock decompositions show that larger market responses are often tied to shifts in monetary policy, inflation, and equity premium expectations. The timeline from 2001 to 2021 captures varied economic conditions and the consequential market responses to FOMC decisions.

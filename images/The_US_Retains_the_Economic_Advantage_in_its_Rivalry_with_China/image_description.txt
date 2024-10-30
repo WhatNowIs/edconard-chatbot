@@ -1,0 +1,20 @@
+The chart, titled "In industry, the US plus allies and friends are still very large," displays the share of global industry value added (%) from 1995 to 2022. The data is sourced from Capital Economics and the World Bank. Here's a summary:
+
+- The chart is divided into six segments, each representing a different group:
+  - US & allies (dark blue)
+  - Leans US (light blue)
+  - Unaligned (blue)
+  - Leans China (burgundy)
+  - China & allies (pink)
+  
+- In 1995, the majority share of global industry value was held by the US & allies, with substantial contributions from the unaligned and much smaller portions for China & allies and countries leaning towards China.
+
+- Over time, the share of US & allies has slightly decreased, while the proportion of China & allies has notably increased.
+
+- The unaligned section has fluctuated but remains a significant portion throughout the period.
+
+- From 2015 onwards, there is a distinct increase in China & allies and countries leaning towards China, while the US & allies maintain a significant but relatively declining share.
+
+- By 2022, China & allies and those leaning towards China have achieved significant shares, reflecting the growing industrial influence of China and its allies globally.
+
+Overall, despite the increasing industrial contributions from China and its allies, the US and its allies still retain a substantial share of global industry value.

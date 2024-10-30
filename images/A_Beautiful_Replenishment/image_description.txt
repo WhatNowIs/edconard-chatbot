@@ -1,0 +1,14 @@
+The graph depicts three key items from the Federal Reserve’s balance sheet, measured in billions of dollars, over the period from January 1, 2023, to July 1, 2023. The items include Reserves, Reverse Repos (RRP), and Treasury General Account (RHS).
+
+- **Reserves**: Represented by the orange line, the reserves started the year around $3,100 billion, experienced some fluctuations, but remained relatively stable, ending slightly below the starting value.
+- **RRP (Reverse Repos)**: Shown as the grey line, RRP began around $2,300 billion and steadily declined over the period, ending at just over $400 billion.
+- **Treasury General Account**: Represented by the blue line and using the right-hand scale (RHS) for values, it began the period around $1,900 billion, but experienced a sharp decline until a significant rise in the last part of the period, ending closer to $600 billion.
+
+The red circle emphasizes the intersection and significant shift where the Treasury General Account rises above the RRP towards the end of the period.
+
+**Summary**: 
+
+Over the first half of 2023, the Federal Reserve saw:
+- Relative stability in Reserve levels, hovering around $3,000 billion.
+- A sharp decline in Reverse Repo Agreements from approximately $2,300 billion to just over $400 billion.
+- An initial decline in Treasury General Account balances, followed by a notable increase towards the end of the period, ending around $600 billion.

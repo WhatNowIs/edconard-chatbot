@@ -1,0 +1,44 @@
+The table presents data on Personal Consumption Expenditures (PCE) inflation rates for June 2023, given as annualized percentage changes over different periods (1-month, 3-month, 6-month, and 12-month).
+
+### Summary:
+
+- **Overall Inflation:**
+  - 1-month: 2.0%
+  - 3-month: 2.5%
+  - 6-month: 3.3%
+  - 12-month: 3.0%
+
+- **Core Inflation:**
+  - 1-month: 2.0%
+  - 3-month: 3.4%
+  - 6-month: 4.1%
+  - 12-month: 4.1%
+
+- **Core with Private New Rent Indices for Housing:**
+  - 1-month: 0.9%
+  - 3-month: 2.3%
+  - 6-month: 3.3%
+  - 12-month: 3.1%
+
+- **Core ex Housing and Used Cars:**
+  - 1-month: 1.4%
+  - 3-month: 2.1%
+  - 6-month: 3.5%
+  - 12-month: 3.5%
+
+- **Core Services ex Housing:**
+  - 1-month: 2.7%
+  - 3-month: 3.3%
+  - 6-month: 4.1%
+  - 12-month: 4.1%
+
+- **Market Core:**
+  - 1-month: 1.2%
+  - 3-month: 2.8%
+  - 6-month: 3.9%
+  - 12-month: 4.0%
+
+### Notes:
+- The "Core" category excludes food and energy prices.
+- "Core with Private New Rent Indices for Housing" incorporates indices from Zillow and Apartment List, adjusted for seasonality.
+- Data sources include the Bureau of Economic Analysis, Zillow, Apartment List, Macrobond, and author's calculations.

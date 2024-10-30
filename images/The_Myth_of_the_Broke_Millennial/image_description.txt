@@ -1,0 +1,22 @@
+The chart titled "Average Real Wealth by Generational Age" illustrates the household wealth trends across different generations, adjusted for 2021 dollars. The data is derived from an analysis by the Institute for Economic Equity at the Federal Reserve Bank of St. Louis.
+
+Key points to summarize:
+
+1. **Generations Compared**:
+   - The chart compares three generational groups: Millennials/Gen Z, Gen X, and Boomers.
+
+2. **Wealth Trends**:
+   - **Millennials/Gen Z**: This group shows a gradual and relatively modest increase in average household wealth starting from age 24.
+   - **Gen X**: This generation demonstrates a steeper increase in wealth than Millennials/Gen Z, particularly noticeable after age 30.
+   - **Boomers**: The Boomer generation exhibits the highest and most rapid growth in household wealth, especially noticeable after age 40.
+
+3. **Wealth Peaks**:
+   - By age 50, the Boomers' average household wealth peaks just below $1,000,000.
+   - Gen X approaches similar wealth levels at the same age but does not surpass Boomers.
+   - Millennials/Gen Z log the lowest wealth levels in comparison to the other two generations at equivalent ages.
+
+4. **General Observations**:
+   - Each generation's wealth increases with age, but the rate and peak wealth differ.
+   - The wealth accumulation rate appears higher for older generations, implying possible structural or economic shifts that have favored them in terms of wealth building.
+
+The chart underscores generational disparities in wealth accumulation, with Boomers achieving the highest household wealth followed by Gen X, while Millennials/Gen Z trail behind significantly.

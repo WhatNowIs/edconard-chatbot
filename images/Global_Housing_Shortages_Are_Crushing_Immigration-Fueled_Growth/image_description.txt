@@ -1,0 +1,23 @@
+The image is a chart by Bloomberg Economics showing the per-capita GDP contraction in Q3 and Q4 of 2023 for thirteen advanced economies. Here are the key details:
+
+1. **Countries and Contractions**:
+   - **Australia**: Q3: -0.04%, Q4: -0.06%
+   - **Austria**: Q3: -0.44%, Q4: -0.08%
+   - **Canada**: Q3: -0.72%, Q4: -0.34%
+   - **Czech Republic**: Q3: -1.20%, Q4: -0.16%
+   - **Estonia**: Q3: -0.75%, Q4: -0.71%
+   - **Finland**: Q3: -1.40%, Q4: -0.97%
+   - **France**: Q3: -0.08%, Q4: -0.02%
+   - **Germany**: Q3: -0.03%, Q4: -0.31%
+   - **Israel**: Q3: -0.02%, Q4: -5.99%
+   - **Luxembourg**: Q3: -1.76%, Q4: -0.44%
+   - **New Zealand**: Q3: -0.56%, Q4: -0.30%
+   - **Sweden**: Q3: -0.79%, Q4: -0.74%
+   - **UK**: Q3: -0.25%, Q4: -0.47%
+
+2. **Observation**:
+   - All thirteen countries experienced at least two consecutive quarters of GDP per capita contraction.
+   - Israel experienced the most significant decline in Q4 2023 with a contraction of -5.99%.
+
+3. **Summary**:
+   The chart highlights a concerning economic trend among thirteen advanced economies, showing that all faced at least two successive quarters of declining GDP per capita in the second half of 2023. Israel stands out with an exceptionally sharp fall, especially in Q4. This widespread trend of economic contraction suggests potential challenges and instability in the global economic landscape during this period.

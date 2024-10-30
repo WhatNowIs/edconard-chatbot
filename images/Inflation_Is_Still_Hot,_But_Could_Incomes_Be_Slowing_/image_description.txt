@@ -1,0 +1,11 @@
+The image provides data on the growth in total wages, bonuses, and tips in counties with at least 75,000 people, as sourced from the Bureau of Labor Statistics and Matthew Klein's calculations. 
+
+Key points:
+- As of the third quarter of 2023 (2023Q3), the growth in total income paid to workers has returned to pre-pandemic levels.
+- The data indicates that average wage growth is extremely slow.
+- The line graph shows two metrics: Year over Year (Y/Y) and Four Quarters over Four Quarters (4Q/4Q) growth rates.
+- From 2005 to 2023, the graph reveals fluctuations in income growth, with significant drops around the 2008 financial crisis and slight dips around 2020, indicating the impact of the COVID-19 pandemic.
+- Post-2020, the data shows a brief period of higher growth before stabilizing back to pre-pandemic norms.
+- The trends illustrate a peak and subsequent decline in recent years, closely trailing pre-pandemic patterns.
+
+In summary, wage, bonus, and tip earnings have stabilized to pre-pandemic levels by 2023Q3, but wage growth remains notably slow. The historical data captures economic impacts from significant events like the 2008 financial crisis and the 2020 pandemic.

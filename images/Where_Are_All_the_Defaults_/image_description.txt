@@ -1,0 +1,12 @@
+The image presents a line graph titled "Figure 3: Percent of High-Yield Issuers Rated B2 or Below vs. Those Rated BB," sourced from the Verdad Bond Database. The x-axis of the graph spans from 1996 to 2022, and the y-axis ranges from 0% to 70%.
+
+Two data series are shown:
+- A dashed line representing the percentage of high-yield issuers rated B2 or below.
+- A solid line representing the percentage of high-yield issuers rated BB.
+
+Key observations:
+1. The percentage of issuers rated B2 or below has experienced significant fluctuations, reaching peaks of around 60% in the early 2000s and again around 2010, followed by a general decline towards 2022, where it sits just below 50%.
+2. The percentage of issuers rated BB shows less volatility and a general upward trend from around 20% in the late 1990s to approximately 35% in 2022.
+
+Summary:
+Over the span from 1996 to 2022, the percentage of high-yield issuers rated B2 or below has shown considerable volatility, peaking twice and then gradually declining. In contrast, the percentage of issuers rated BB has steadily increased over the years, displaying a trend of growing stability and improvement in credit quality amongst high-yield issuers.

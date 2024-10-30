@@ -1,0 +1,13 @@
+The image is a graph from the Federal Reserve Economic Data (FRED) that illustrates the relationship between the Consumer Price Index (CPI) for All Urban Consumers and the Federal Funds Effective Rate from approximately 2004 to 2017. The CPI is represented in red, showing inflation or the percent change from the previous year, while the Federal Funds Effective Rate is shown in blue, indicating the interest rate.
+
+Key points to note:
+
+1. **Deflation Spiral (2008 - 2009):** The graph shows a significant drop in the CPI around 2008, reaching below zero and indicating deflation during the financial crisis period (shaded area representing U.S. recession). This period is marked with an arrow and labeled "Deflation spiral?"
+
+2. **Interest Rate Stuck at Zero (2009 onwards):** Following the crisis, the interest rate dropped close to zero and remained there for an extended period. It is indicated by a blue flat line and marked with a label.
+
+3. **Inflation Peaks and Low Interest Rates:** There are noticeable peaks of inflation following 2009, while the interest rates remained low, causing long periods of negative real returns, where the inflation rate surpassed the interest rate.
+
+4. **Long Period of Negative Real Returns:** The graph shows multiple intervals after 2010 where the CPI was relatively higher compared to the Federal Funds Rate, causing persistent negative real returns.
+
+The overall summary highlights the financial crisis' impact leading to deflation, followed by an extended period where the interest rates were kept at zero to stimulate the economy, resulting in inflation outpacing the interest rate and causing periods of negative real returns.

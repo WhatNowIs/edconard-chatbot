@@ -1,0 +1,18 @@
+The chart illustrates the movements in the Corporate Bond Market Distress Index (CMDI) percentiles for the years 2015 and 2022, against the backdrop of adjustments in the midpoint of the Federal Reserve's (Fed) funds target range. The period covered spans from 12 weeks before to 51 weeks after the first tightening (increase in the federal funds rate).
+
+Key points:
+
+1. **CMDI Percentiles:**
+   - **2015 (Blue Line):** The CMDI percentile for 2015 shows moderate fluctuations, mostly staying between 30 and 70.
+   - **2022 (Red Line):** The CMDI percentile for 2022 oscillates within a similar range but exhibits a later decrease than in 2015.
+
+2. **Fed Funds Target Range:**
+   - **2015 (Yellow Line):** The target range midpoint remained relatively stable at 0.125% after the initial tightening.
+   - **2022 (Green Line):** The midpoint saw a more pronounced increase, reaching up to around 3.75%, reflecting a faster pace of tightening compared to 2015.
+
+3. **Comparison and Analysis:**
+   - Despite a faster and steeper increase in the Fed funds target in 2022, the CMDI percentiles for both years remained relatively small, indicating that the corporate bond market distress did not significantly escalate even with the more aggressive tightening in 2022.
+
+This information suggests that the corporate bond market's response to increased interest rates has not shown major distress, indicating resilience despite significant monetary policy shifts. 
+
+Sources for the data include Mergent FISD, TRACE, Moody's KMV, and ICE BAML indices, along with data from St. Louis Federal Reserve (FRED).

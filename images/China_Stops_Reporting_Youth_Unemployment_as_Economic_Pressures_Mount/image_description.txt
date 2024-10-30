@@ -1,0 +1,9 @@
+The image depicts a chart detailing the unemployment rate in urban areas of China, broken down by age group, from 2018 to 2023. Key insights from the image include:
+
+- **Youth Unemployment (Age 16-24)**: The line representing the youth (16-24 years old) unemployment rate has shown a significant upward trend, peaking at a record high just before China ceased reporting this data. The increase is particularly noticeable around 2023, where it surpasses 20%.
+  
+- **Overall and 25-59 Unemployment**: These rates have remained relatively stable over the same period, between approximately 4% to 6%. Both the overall unemployment rate and the rate for those aged 25-59 show much less variability and lower levels compared to the youth unemployment rate.
+
+- **Context and Trend**: While the overall and middle-aged adult unemployment rates show minor fluctuations, it is the youth unemployment rate that has experienced dramatic fluctuations and a sharp rise in recent years.
+
+The source of the data is credited to the National Bureau of Statistics, and the chart is presented by the Financial Times. This suggests a particular concern for youth employment in China's urban areas, as highlighted by the rising trend before the reporting ceased.

@@ -1,0 +1,7 @@
+The image displays a bar chart titled "Figure 3: Real Manufacturing Construction Spending by Type," measured in billions of 2022 U.S. dollars. The chart compares the average construction spending from 2005 to 2022 with spending in the first four months of 2023.
+
+Key points include:
+- The 2005-2022 average annual spending was $84 billion. The largest category during this period was "Other," followed by "Food, Beverage, & Tobacco," "Chemical," "Transportation," and "Computer, Electrical, & Electronic."
+- In 2023 (January to April), spending notably increased to $166 billion, with "Computer, Electrical, & Electronic" being the dominant category.
+
+The chart's source is the U.S. Census Bureau, noting the data is seasonally adjusted and annualized. Nominal spending figures are adjusted using the Producer Price Index for Intermediate Demand Materials and Components for Construction by the Bureau of Labor Statistics.

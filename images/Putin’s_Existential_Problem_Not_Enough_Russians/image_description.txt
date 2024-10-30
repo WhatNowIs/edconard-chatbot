@@ -1,0 +1,16 @@
+The graph illustrates the total population trends of Russia and the United States from 1980 to 2100, utilizing historical data up to 2021 and projections thereafter.
+
+Key points:
+1. **Historical Trends (1980-2021)**:
+   - Russia (red line): The population was relatively stable with minor fluctuations around 150 million.
+   - United States (blue line): The population experienced steady growth from approximately 225 million to about 330 million.
+
+2. **Projected Trends (2021-2100)**:
+   - Russia: The population is projected to decline steadily from around 150 million to nearly 100 million by 2100.
+   - United States: The population is projected to continue increasing, reaching close to 400 million by the end of the century.
+
+3. **Comparative Analysis**:
+   - By the year 2100, the population of the United States is projected to be about four times larger than that of Russia.
+   - The trend underscores a significant divergence in population growth dynamics between Russia and the United States over the 21st century.
+
+The graph is sourced from the United Nations and indicates that while the U.S. population will continue to grow, albeit at a slower pace, Russia’s population is expected to decline considerably.

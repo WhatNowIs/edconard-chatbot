@@ -1,0 +1,18 @@
+The image displays a chart titled "Exhibit 1: The 10-year Treasury 'term premium' is rising," which tracks the 10-year Treasury term premium percentage from 2006 to 2023. Some key observations are:
+
+1. **Historical Trends**:
+   - The term premium peaked around 2008-2009 during the financial crisis, reaching levels above 4%.
+   - It experienced a general decline post-2010 with periodic fluctuations.
+   - Between 2015-2019, it remained mostly negative, bottoming out around 2019.
+
+2. **Recent Activity**:
+   - The term premium started rising again sharply in late 2021.
+   - As of late 2023, the term premium is around the highest levels seen in the past few years, but not as high as in 2008-2009.
+
+3. **Time Frame**:
+   - The data spans from 2006 to November 29, 2023.
+
+4. **Source**:
+   - The chart is sourced from Bloomberg and the Apollo Chief Economist.
+
+In summary, the chart illustrates the trends in the 10-year Treasury term premium over a 17-year period, highlighting significant fluctuations during the financial crisis and a recent upward trend beginning in 2021, reaching a notable rise by late 2023.

@@ -1,0 +1,11 @@
+The provided chart, titled "Exhibit 1: Nominal Bank Lending Growth Slowed From 10% to 2% Annualized Since the Start of the Year," illustrates the changes in bank lending rates from January 2023 to September 2023. The key points are as follows:
+
+- At the beginning of 2023, the annualized growth rate of bank lending was approximately 10%.
+- A significant decline is observed over the months, with growth dropping steadily.
+- By mid-2023 (around June), the annualized growth rate fell to near 2%.
+- Post-June, the fluctuations continue with minor recoveries but predominantly downward trends, reaching lows close to 0% in August.
+- A slight increase is noticed in early September, but it doesn't sustain.
+
+Annotations indicate that the data encompasses real estate, commercial and industrial (C&I), and consumer loans. An adjustment for a $60 billion transfer in March affects the reported growth rate, and occasional jumps are attributed to mergers and acquisitions.
+
+This data, sourced from the Federal Reserve and Goldman Sachs Global Investment Research, highlights a notable trend: a rapid deceleration in bank lending growth throughout 2023, which could indicate tighter lending conditions or weakened demand for loans.

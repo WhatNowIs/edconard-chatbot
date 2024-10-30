@@ -1,0 +1,19 @@
+The image is a line graph depicting the manufactured goods surpluses of four countries — Germany, Japan, the United States, and China — from 1962 to 2022. The data is expressed as a percentage of global GDP and sourced from UN Comtrade Data with SITC Categories. Here is a summary highlighting the trends for each country:
+
+1. **China (Red Line)**:
+   - China shows a significant increase starting around 2001, with a sharp rise in surplus.
+   - The surplus continually grows, reaching a peak close to 1.5% of global GDP by 2022.
+
+2. **Germany (Yellow Line)**:
+   - Germany's surplus generally remains positive throughout the given period.
+   - There is a slight increase during the 2000s, but the surplus slightly declines towards 2022.
+
+3. **Japan (Grey Line)**:
+   - Japan experiences an increase in surplus during the 1970s reaching its peak.
+   - After peaking, there is a decline starting around the early 2000s, showing a steady reduction as it approaches 2022.
+
+4. **United States (Blue Line)**:
+   - The United States shows a negative trend, indicating a deficit.
+   - The deficit deepens significantly in the 1980s and maintains a generally negative trend into the 2020s, with some fluctuations but never returning to surplus.
+
+Overall, the notable trends indicate China’s rising dominance in manufactured goods surplus, a steady albeit slightly declining surplus for Germany, a decreasing surplus for Japan, and a persistent deficit for the United States.

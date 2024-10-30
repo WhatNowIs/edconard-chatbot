@@ -1,0 +1,14 @@
+The image highlights the impact of President Biden's Inflation Reduction Act (IRA) on green energy manufacturing investments across the United States, mapped out by state. Key takeaways include:
+
+1. **Overall Investment Impact**:
+    - The IRA has significantly boosted green energy manufacturing investments across multiple states since its passage.
+
+2. **State-by-State Investment Distribution**:
+    - **Massachusetts** (MA) received a notable investment of **$450 million for 1 project**.
+    - **Arizona** (AZ), **Texas** (TX), and **Okahoma** (OK) have also seen considerable investments, indicated by their larger circles.
+
+3. **Investment Concentration in Specific Regions**:
+    - The **Southeastern U.S.** is a major beneficiary, with **Georgia** (GA), **South Carolina** (SC), **North Carolina** (NC), and **Tennessee** (TN) receiving substantial investments. Collectively, **$10 billion for 10 projects** is directed to this cluster of states, emphasizing a high concentration of green energy manufacturing projects. 
+    - Significant investments in the **Midwestern U.S.**, particularly in **Michigan** (MI), **Ohio** (OH), **Indiana** (IN), and **Kentucky** (KY).
+
+This map reflects the geographical emphasis and the scale of investment following the IRA, with substantial investments aimed at fostering green energy development and manufacturing capabilities in different regions of the U.S.

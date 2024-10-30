@@ -1,0 +1,9 @@
+This image depicts a bar graph entitled "Much Less Time Is Now Lost to Strikes," which charts the days of idleness due to work stoppages as a share of total working time from 1950 through June 2023. The data source is the US Bureau of Labor Statistics, focusing on stoppages involving 1,000 or more workers. 
+
+Key points from the graph include:
+- The proportion of days lost to strikes was highest between 1950 and 1980, with notable peaks throughout those years.
+- There is a significant decline in work stoppages from the 1980s onwards.
+- By the 2000s, the days of idleness due to strikes are much lower, almost negligible, compared to earlier decades.
+- The trend continues into the 2020s, with the 2023 figure for June showing a very small share (less than 0.004%).
+
+Overall, the graph highlights a substantial reduction in the percentage of total working time lost due to strikes over the past several decades.

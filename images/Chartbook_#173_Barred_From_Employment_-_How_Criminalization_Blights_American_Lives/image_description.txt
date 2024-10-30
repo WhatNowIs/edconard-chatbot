@@ -1,0 +1,9 @@
+The image provides a bar graph showing the percentage of the U.S. population arrested at least once before age 26, excluding career criminals. The data is segmented by birth year as follows:
+
+- Pre-1949: 6.4%
+- 1949-1958: 10.7%
+- 1959-1968: 13.8%
+- 1969-1978: 18.7%
+- 1979-1988: 23.0%
+
+The summary indicates a notable increase in the percentage of people arrested before the age of 26 across successive birth cohorts. This suggests that younger generations are experiencing higher arrest rates compared to older ones.

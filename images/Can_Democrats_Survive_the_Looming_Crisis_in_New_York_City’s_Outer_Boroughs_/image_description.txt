@@ -1,0 +1,17 @@
+The chart presents the Democratic vote share in precincts of Queens, New York, for the gubernatorial elections from 2014 to 2022. It categorizes data by racial demographics in precincts with more than 75% of the population representing a single racial group: White, Black, Hispanic, and Asian.
+
+**Key Observations:**
+
+1. **Black Precincts:**
+   - The Democratic vote share remained relatively stable and consistently high, close to 100%, over the period from 2014 to 2022.
+
+2. **Hispanic Precincts:**
+   - The Democratic vote share decreased significantly from 2018 to 2022. While it started near 100% in 2014, it saw a notable decline particularly after 2018, ending around 80%.
+
+3. **Asian Precincts:**
+   - The Democratic vote share also decreased over time, though not as steep as Hispanic precincts. It started below 100% in 2014 and showed a steady decline, ending closer to 75% by 2022.
+
+4. **White Precincts:**
+   - The Democratic vote share in White-majority precincts was the lowest among the groups and showed a decline over the years, from about 50% in 2014 to around 25% in 2022.
+
+Overall, the trend across different racial demographics shows a general decrease in Democratic vote share in Queens' gubernatorial elections, with the most significant declines observed in Hispanic and Asian precincts.

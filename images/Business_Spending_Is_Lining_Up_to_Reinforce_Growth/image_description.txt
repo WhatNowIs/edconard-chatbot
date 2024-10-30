@@ -1,0 +1,24 @@
+The provided image contains two line graphs comparing different growth metrics over time. Here is an in-depth summary of each graph:
+
+1. **Total Market (Left Graph)**:
+   - **Time Period**: 1980 to 2020
+   - **Variables**:
+     - **Real Sales Growth (Blue Line)**: This metric displays significant volatility, particularly with peaks and troughs reflecting economic cycles.
+     - **Capex Growth (Red Line)**: This metric tracks capital expenditures and shows a similar level of volatility and correlation to real sales growth, but with higher peaks and deeper troughs.
+   - **Key Observations**:
+     - Both metrics often move in tandem, indicating a positive correlation.
+     - There are periods of sharp declines, likely corresponding to economic recessions (e.g., early 2000s, 2008-2009, and around 2020).
+     - There are instances where Capex growth outpaces and then retraces below sales growth indicating investment shifts possibly aligning with business cycle phases.
+
+2. **1yr Fwd Consensus Capex Growth (Right Graph)**:
+   - **Time Period**: 2005 to 2025
+   - **Variables**:
+     - **Total Market (Blue Line)**: Indicates the forward-looking consensus growth estimates of capital expenditures for various industries.
+     - **Info Tech (Red Line)**: Specifically looks at the forward Capex growth estimates within the Information Technology sector.
+   - **Key Observations**:
+     - Both lines show forward-looking growth expectations fluctuating significantly over the period, particularly around economic downturns and recoveries (e.g., post-2008-2009 and around 2020).
+     - Information Technology's forward Capex growth generally shows sharper and more pronounced fluctuations compared to the total market.
+     - Recent data leading up to 2025 suggests an uptick in both total market and Info Tech Capex growth, indicated by the rising trend towards the right edge.
+
+**Summary**:
+The two graphs illustrate the cyclical nature of real sales and Capex growth in the total market over the past few decades, showcasing the alignment and volatility of these metrics in response to economic conditions. The forward-looking graph emphasizes the dynamic expectations of Capex growth for both the total market and specifically within the Information Technology sector, demonstrating a sensitivity to economic cycles with a recent uptick in projections towards 2025.

@@ -1,0 +1,17 @@
+The chart compares China's formal PBOC reserves with potential hidden reserves based on the cumulative balance of payments flows from 1998 to 2023, measured in USD billion. The breakdown includes several components:
+
+- FX Reserves (in light green)
+- Net Trade Credit (in dark green)
+- Loans (in yellow)
+- Deposits Abroad (in light blue)
+- Portfolio Debt Securities (in dark blue)
+- Other Foreign Assets (in red)
+
+### Summary:
+- **FX Reserves** have shown a significant increase from 1998, peaking around 2014 before experiencing a decline. After the decline, they have shown stabilization and a slight upward trend from 2017 onwards.
+- **Deposits Abroad** also have shown a consistent increase, especially post-2010, contributing significantly to the overall reserves.
+- **Net Trade Credit** has grown considerably since 2014, indicating an increase in trade credits.
+- **Loans** have shown considerable growth, particularly from around 2015 onwards, adding a significant volume to the reserves.
+- **Portfolio Debt Securities** and **Other Foreign Assets** contribute to the overall reserves but to a lesser extent compared to the other components.
+
+Over the years, there has been a diversification from solely FX Reserves to a mix of these financial components, indicating an evolving and complex balance of payments structure.

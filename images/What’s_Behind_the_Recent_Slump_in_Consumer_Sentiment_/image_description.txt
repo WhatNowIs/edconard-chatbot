@@ -1,0 +1,14 @@
+The image is a graph showing the historical deviations of consumer sentiment and real personal income growth, covering the period from 1980 to 2019. The data is represented in terms of standard deviation from the 1980–2019 mean. The sources of this data include the University of Michigan Surveys of Consumers, the Bureau of Economic Analysis, and the authors' calculations. 
+
+Key Points:
+- **Sentiment (Black Line)**: This line represents the deviations in consumer sentiment. Consumer sentiment is a measure of the overall economic health as perceived by consumers and includes their financial health and sentiment about the economy.
+- **Growth of Real Personal Income (Green Dotted Line)**: This line shows the growth in real personal income, excluding current transfer receipts, adjusted for standard deviation against the historical mean.
+- **Key Observations**:
+  - There are various periods where consumer sentiment and real personal income growth show noticeable deviations, both upward and downward.
+  - In the early 1980s, there was a sharp negative deviation in both consumer sentiment and real personal income growth.
+  - The early 1990s and early 2000s show peaks in deviations for both measures.
+  - Significant dips are observed around the financial crisis of 2008.
+  - Recent years leading up to 2019 indicate volatility but no extreme deviations as seen in earlier periods.
+
+Summary:
+The graph provides a historical perspective on the deviations of both consumer sentiment and real personal income growth from their long-term mean, illustrating economic periods of optimism and pessimism among consumers, aligning with various economic events and trends over the past decades. Notably, the graph highlights periods of economic downturn and recovery, offering insights into the relationship between consumer perceptions and actual income growth trends.

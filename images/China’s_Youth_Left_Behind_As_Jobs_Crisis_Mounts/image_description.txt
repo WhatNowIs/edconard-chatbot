@@ -1,0 +1,21 @@
+The chart illustrates the youth unemployment rates (for individuals aged 16-24 in China, and 15-24 in other countries) in China compared to the G7 countries from January 2018 to July 2023. Key observations include:
+
+1. **China’s Youth Unemployment Rate**: 
+   - China’s youth unemployment rate consistently ranks the highest among the countries represented.
+   - There is noticeable volatility in China’s rate, particularly with a significant increase around mid-2023, reaching over 20%.
+
+2. **Italy and France**:
+   - Italy and France show relatively high rates compared to other G7 countries, but these rates are still lower than China’s.
+   - There is noticeable fluctuation, especially in France, where the rate seems to have mild peaks particularly around mid-2021.
+
+3. **United Kingdom (UK)**:
+   - The UK’s youth unemployment rate reduced markedly after a peak around early to mid-2020.
+
+4. **Germany and Japan**:
+   - Germany and Japan display the lowest youth unemployment rates among the countries listed, exhibiting relatively steady and low rates.
+
+5. **United States (US) and Canada**:
+   - Both the US and Canada have moderate youth unemployment rates, generally lower than Italy and France but higher than Germany and Japan.
+   - Both nations show a sharp increase around mid-2020, corresponding to the COVID-19 pandemic, with subsequent reductions.
+
+Overall, the data underline China’s elevated youth unemployment challenge, consistently surpassing that of all the G7 countries over the observed period.

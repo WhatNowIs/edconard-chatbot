@@ -1,0 +1,19 @@
+The graphic outlines the expected dynamics in credit markets following a softening labor market, focusing on high yield (HY) yields (costs of capital) over time.
+
+Here is a summary of the key points illustrated:
+
+1. **Economy Slowing due to Federal Reserve Hikes:**
+   - Both credit yields and base rates show a relatively stable behavior initially.
+   - Credit spreads are maintained within a tight range.
+
+2. **Nonfarm Payrolls Falling Below 100K:**
+   - This marks the initial phase of market softening.
+   - Credit spreads begin to widen, indicating increasing borrower risk.
+   - However, inflation remains significantly above 2%, delaying a dovish shift by the Fed.
+
+3. **Recession Begins:**
+   - As recession sets in, inflation trends closer to the Fed's 2% target.
+   - The Fed adopts a dovish stance and reduces base rates rapidly.
+   - Despite the fall in base rates, credit spreads continue widening due to weakening earnings, increasing overall cost of capital.
+
+In essence, as the labor market softens and recession begins, credit markets experience widening spreads and falling base rates driven by Federal Reserve policies aimed at managing inflation.

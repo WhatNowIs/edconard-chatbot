@@ -1,0 +1,25 @@
+This chart illustrates the estimated distribution of China's dollar-denominated fixed income portfolio based on TIC data from December 1999 to December 2021. The portfolio is broken down into five categories: corporate bonds, agencies, treasury notes and bonds, treasury bills, and short-term (banks). 
+
+Key observations:
+
+1. **Treasury Notes and Bonds (Green)**
+   - Dominant portion of the portfolio since around 2004.
+   - Significant rise from 2000 to 2008, peaking around 2009-2010.
+   - Moderate fluctuations but maintaining a prominent share up to 2021.
+
+2. **Agencies (Blue)**
+   - Notable increase starting around 2003.
+   - Peak around 2008, followed by a gradual decline and stabilization.
+
+3. **Corporate Bonds (Yellow)**
+   - Smallest share of the portfolio.
+   - Increasing trend from around 2000, staying relatively low in comparison to other categories.
+
+4. **Treasury Bills (Peach)**
+   - Spike around 2008-2009, indicating a temporary shift in portfolio weight.
+   - Reduced presence after 2010.
+
+5. **Short-term (Banks) (Red)**
+   - Consistently small share of the portfolio, showing minor fluctuations.
+
+Overall, the chart indicates a strong preference for treasury notes and bonds, with moderate and varying investments in agencies, and minimal proportions in corporate bonds, treasury bills, and short-term bank investments. Notable peaks and shifts occur around economic events such as the 2008 financial crisis.

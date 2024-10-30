@@ -1,0 +1,11 @@
+The chart illustrates the status of factory investments in the United States, valued at a minimum of $100 million, under President Biden's industrial policies, evaluated within the first year of the Inflation Reduction Act and the Chips and Science Act. The data, collated from FT research and numerous interviews with relevant stakeholders, is categorized into five statuses: operational, on track, delayed, paused, cancelled, and unclear.
+
+Key Insights:
+1. **Operational Projects:** These account for a relatively small portion of the investments, depicted by the shortest bar on the chart.
+2. **On Track Investments:** Represent the largest share, exceeding $100 billion, indicating that most announced projects are progressing as planned.
+3. **Delayed Projects:** Substantial but lower than those on track, amounting to around $65 billion, suggesting significant implementation challenges.
+4. **Paused Projects:** Smaller yet notable segment, nearly $20 billion, indicating projects currently halted.
+5. **Cancelled Projects:** Minimal, under $10 billion, reflecting a few projects that have been completely abandoned.
+6. **Unclear Status:** Representing a significant portion, about $35 billion, indicates projects with ambiguous progress or pending determinations.
+
+The findings highlight that while a large proportion of projects are advancing as scheduled, a significant number face delays, pauses, or status uncertainties, underscoring the challenges in the industrial sector despite supportive legislative measures.

@@ -1,0 +1,13 @@
+The graph titled "Federal Deficit as Percent of GDP" depicts the fluctuations in the U.S. federal deficit expressed as a percentage of the Gross Domestic Product (GDP) over the period from around 1965 to 2022. The data sources cited are the Office of Management and Budget and the International Monetary Fund. Here are the key trends and observations from the graph:
+
+- **1965-1985**: The federal deficit as a percentage of GDP shows significant volatility, with multiple peaks and troughs. It notably increases and decreases multiple times, with each increase generally rising to about 0.05 of GDP.
+  
+- **1985-2000**: This period exhibits a generally decreasing trend in the federal deficit, moving towards neutrality (0% of GDP) around the late 1990s.
+  
+- **2000-2010**: The early 2000s see a rise in the deficit, peaking just above 0.05 of GDP around 2009-2010, likely influenced by economic policies and the financial crisis.
+  
+- **2010-2020**: A period of reduction in the federal deficit follows, but it remains above zero for much of this period.
+  
+- **2020-2022**: A massive spike in the federal deficit occurs, pushing it close to 0.15 of GDP, followed by a sharp decline, but still remaining significantly high historically.
+
+The graph illustrates an overarching pattern of cyclical increases in the federal deficit, with recent years (up until 2022) marking particularly stark spikes, likely impacted by extraordinary fiscal measures during the COVID-19 pandemic.

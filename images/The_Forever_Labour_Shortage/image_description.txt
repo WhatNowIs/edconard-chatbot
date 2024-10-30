@@ -1,0 +1,15 @@
+The image presents two distinct data graphs focused on demographic trends:
+
+1. **Share of Retirees (Left Graph)**:
+   - The percentage of retirees has been gradually increasing from around 17.5% in 2015 to approximately 19.5% in 2023.
+   - There was a significant deviation from the 2017-2019 trend line starting around 2020, leading to a higher than expected share of retirees.
+   - As of 2023, there's an excess retiree share of 43 basis points (bps), equating to roughly 0.8 million excess retirees.
+   - Note: Data prior to 2022 has been adjusted to account for the January 2022 change in population controls.
+
+2. **Working-Age Foreign-Born Population (Right Graph)**:
+   - The working-age foreign-born population has risen steadily from about 41 million in 2017 to approximately 46 million in 2023.
+   - Despite some fluctuations, the overall trend has been upward.
+   - The population count has exceeded the trend line since around 2020, reaching close to 47 million by 2023.
+
+### Summary:
+The graphs highlight changing demographic trends in the U.S. The share of retirees has increased more sharply since 2020, resulting in an excess of 0.8 million retirees over the projected trend. Simultaneously, the working-age foreign-born population has grown significantly, exceeding the expected growth trend since around 2020, with the count nearing 47 million in 2023. These shifts indicate substantial impacts on the workforce and retirement landscape.

@@ -1,0 +1,18 @@
+The chart displays two key metrics in the housing market from January 1976 to January 2024: the Affordability Price Index (in blue) and the 5-Year Real Return (in red). Additionally, periods of economic recessions are highlighted in light blue vertical bands.
+
+1. **Affordability Price Index (in terms of January 1976 = 100):**
+   - This index measures how affordable housing is over time.
+   - There are significant peaks in affordability around the early 1980s, early 1990s, and late 2008.
+   - The affordability has trended downward significantly in the early 2000s and stabilized at a relatively low level post-2013.
+
+2. **5-Year Real Return (annualized, in %):**
+   - This tracks the real (inflation-adjusted) return on housing investments over a five-year period.
+   - High returns are seen in periods of market booms, such as the late 1970s, the late 1980s, the early 2000s, and post-2013.
+   - Negative returns are observed during market corrections, such as the early 1980s, early 1990s, the Great Recession around 2008-2012.
+
+3. **Recessions (highlighted in light blue):**
+   - The chart shows that periods of recession often coincide or precede changes in the affordability index and real return.
+   - Examples include the recessions in the early 1980s, early 1990s, early 2000s, and the Great Recession of 2008.
+
+### Summary:
+The chart encapsulates the dynamic interaction between housing affordability and real returns over nearly five decades. The Affordability Price Index shows periods of high affordability around economic recessions, while the 5-Year Real Return indicates the booms and busts of the housing market, often influenced by economic cycles. The chart highlights significant peaks and troughs that align closely with periods of economic downturns and recoveries.

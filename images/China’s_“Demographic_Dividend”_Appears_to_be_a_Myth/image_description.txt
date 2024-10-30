@@ -1,0 +1,12 @@
+This graph illustrates the relationship between the working-age share of China's population and its GDP per person from 1960 to 2020.
+
+Key Points:
+- The working-age share of the population (aged between 15 and 64) is depicted by the red line, measured as a percentage on the left y-axis.
+- China's GDP per person, adjusted to 2015 prices in dollars, is shown by the beige line, measured on the right y-axis.
+- Around 1975, there was a significant surge in the working-age population which rose steadily from roughly 55% to around 70% by 1995.
+- The graph notes that the increase in the working-age population began well before China's rapid GDP growth.
+- Starting around 1980, China's GDP per person began to increase sharply, reaching a peak of about $10,000 by 2020.
+- Around 2010, the working-age share started to decline slowly from about 70%.
+
+Summary:
+The surge in China's working-age population anticipated its rapid GDP growth. The proportion of working-age individuals increased significantly between 1975 and 1995, peaking around 70% in 2010 before declining. Simultaneously, China experienced substantial economic growth from 1980 onwards, with GDP per person soaring from under $1,000 in 1980 to nearly $10,000 by 2020. This trend highlights the correlation between demographic shifts and economic development in China.

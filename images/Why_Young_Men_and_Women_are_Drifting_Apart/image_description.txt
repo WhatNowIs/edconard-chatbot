@@ -1,0 +1,7 @@
+The image is a line graph titled "Pulling apart," which shows the self-identified position of 18- to 29-year-olds on the political spectrum from 2002 to 2020. The scale ranges from 0 (very liberal) to 10 (very conservative). The data is averaged from 20 rich countries and sourced from the European Social Survey, General Social Survey, and Korean Social Survey.
+
+Summary:
+- The graph distinguishes between male and female respondents.
+- Over the 18-year span, males have mostly maintained a stable self-identification around a slightly conservative mid-point, with a score fluctuating around 4.8 to 4.6.
+- Female self-identification has gradually become more liberal, dropping from approximately 4.6 in the early 2000s to around 4.2 by 2020, showing a clear downward trend.
+- This indicates an increasing divergence in political self-identification between young males and females, with males leaning towards conservatism and females becoming more liberal over time.

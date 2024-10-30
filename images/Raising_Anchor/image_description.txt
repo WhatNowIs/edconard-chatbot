@@ -1,0 +1,18 @@
+The chart titled "Japanese Holdings of U.S. Bonds ($bln)" depicts the value of Japanese investments in U.S. bonds over time from January 2020 to May 2023. It categorizes the bonds into three types: Agencies (orange line), Corporate Bonds (gray line), and Treasuries (blue line, Right-Hand Scale - RHS).
+
+Key Observations:
+1. **Agencies and Corporate Bonds (Left Axis)**
+   - The value of both agencies and corporate bonds fluctuated around the $250-$350 billion range.
+   - There was no significant drop observed in these categories during the time period.
+   - The value of these bonds remained relatively stable compared to Treasuries.
+
+2. **Treasuries (Right Axis)**
+   - Treasuries held by Japan started at about $1,250 billion in early 2020.
+   - There is a noticeable decline around mid-2022, where the value dropped sharply from approximately $1,250 billion to nearly $950 billion.
+   - Following the sharp decline, some recovery is observable but not to the initial levels; the value fluctuates below $1,100 billion by May 2023. 
+
+3. **Overall Trend**
+   - Japanese investments in U.S. bonds have seen a significant decline, particularly in Treasuries during mid-2022.
+   - Note: As mentioned in the chart, some of the declines in value reflect lower market values of these bonds during the observed period.
+
+This summary provides an overview of the trends and key changes in the Japanese holdings of U.S. bonds over the specified time period.

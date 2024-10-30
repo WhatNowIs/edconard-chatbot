@@ -1,0 +1,14 @@
+The bar chart depicts the percentage of households equipped with air conditioning (AC) in various selected countries in the year 2018. The countries are listed as follows:
+
+1. **Japan:** Nearly 100% of households are equipped with AC.
+2. **United States:** Close to 90% of households have AC.
+3. **Korea:** Almost 90% of households are equipped with AC.
+4. **Saudi Arabia:** Around 60% of households have AC.
+5. **China:** Approximately 50% of households are equipped with AC.
+6. **Mexico:** Around 25% of households have AC.
+7. **Brazil:** About 15% of households are equipped with AC.
+8. **Indonesia:** Around 10% of households have AC.
+9. **South Africa:** Close to 5% of households have AC.
+10. **India:** Only about 5% of households are equipped with AC.
+
+The chart highlights a significant discrepancy in AC availability, with developed countries like Japan, the United States, and Korea having the highest percentages, whereas developing countries such as India and South Africa have the lowest.

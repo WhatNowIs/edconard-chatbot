@@ -1,0 +1,13 @@
+The scatter plot depicted in Figure 4 illustrates the predicted effect of tariff exposure on the employment-population ratio against its effects on the Republican vote share in presidential elections. The x-axis represents the predicted combined effect of import tariffs, retaliatory tariffs, and subsidy exposure on the employment-population ratio. The y-axis shows the predicted effect of these same factors on the Republican vote share in presidential elections.
+
+Key observations:
+- There is a cluster of data points mostly concentrated around the origin of the axes, with a positive trend where higher predicted effects on the employment-population ratio correspond to higher predicted effects on the Republican vote share.
+- The data points are distributed across four quadrants divided by red axes at (0,0), indicating different effects on employment and vote shares.
+- Most data points lie in the first quadrant, suggesting a positive correlation between higher predicted employment effects and increased Republican vote shares.
+
+Notes provide additional context:
+- The shown prediction is based on each Commuting Zone’s (CZ) exposure as of December 2019, scaled by the regression coefficients from Table 1.
+- It summarizes the combined effect of trade war variables on the Republican vote share by scaling the same exposures with regression coefficients from Table 5.
+- The predictions aggregate CZs into 40 bins based on employment values for a more comprehensive depiction.
+
+In summary, the chart suggests a positive correlation between the effects of tariffs and subsidies on employment and Republican vote shares, reflecting complex economic and political impacts of trade policies.

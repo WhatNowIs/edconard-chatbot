@@ -1,0 +1,16 @@
+The image illustrates the fusion reaction process used by the US government's National Ignition Facility (NIF) in California. Here's a summary of the key information:
+
+1. **Setup Description**:
+   - **Hohlraum**: A gold cavity with openings at either end.
+   - **Fuel Capsule**: Located at the center of the hohlraum.
+   - **Deuterium-Tritium Fuel Layer**: Within the capsule.
+
+2. **Laser Interaction Process**:
+   - **Step 1**: Up to 192 laser beams are fired into the hohlraum, heating it and creating a superhot plasma, a gas stripped of electrons.
+   - **Step 2**: X-rays resulting from the laser interaction with the hohlraum’s inner wall blow off the surface of the capsule.
+   - **Step 3**: This reaction causes the fuel layer to implode, creating the conditions for fusion. If the heat spreads rapidly enough through the fuel, the energy yield can surpass the input energy, an event known as ignition.
+
+3. **Visual Aid**:
+   - The infographic includes a series of diagrams demonstrating the stages of the laser-driven fusion process, with labels explaining each part and step involved.
+
+This fusion process aims to achieve a self-sustaining reaction where the energy output exceeds the energy input, a significant scientific milestone known as ignition.

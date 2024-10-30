@@ -1,0 +1,17 @@
+The image is a bar graph illustrating the change in the number of homeowning households in 5-year increments from 1985 to 2060. The key insights from the graph are as follows:
+
+1. **Historical Data (1985-2020)**:
+   - There was steady growth in the number of homeowning households from 1985 to 2005.
+   - The most significant growth occurred around 2000, with an increase of close to 8 million homeowners.
+   - Post-GFC (Global Financial Crisis), there was a noticeable dip around 2010.
+   - Growth rebounded in the years following the GFC but did not reach the previous peak levels.
+
+2. **Forecasted Data (2020-2060)**:
+   - The trend shows a decline in the number of new homeowners.
+   - The projected growth in homeowning households significantly decreases over the decades, starting from around 6 million in the early 2020s and falling gradually to about 2 million by 2060.
+
+3. **Overall Trend**:
+   - There is a clear indication that the growth rate of homeowning households is slowing down over the long term.
+   - The combination of slowing population growth and other socio-economic factors could be contributing to this decline.
+
+The source of this data is an analysis by the author based on Census Bureau data, and the chart was created by Aziz Sunderji for the website "Home-Economics.us."

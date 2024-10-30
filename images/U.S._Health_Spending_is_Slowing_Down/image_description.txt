@@ -1,0 +1,22 @@
+The graph presents an analysis of health spending as a percentage of GDP from 2003 to 2022, highlighting the impact of adjusting for non-health inflation. 
+
+**Key components:**
+- **Blue Line (BEA NIPA)**: Represents health spending as a percent of GDP without inflation adjustment.
+- **Red Line (BEA NIPA, adjusted for inflation)**: Accounts for non-health inflation.
+
+**Main Observations:**
+1. **Overall Trend (2003-2022)**: 
+   - There is a general upward trend in unadjusted health spending (blue line), increasing from about 15.5% in 2003 to a peak of around 18.7% in 2020 before declining slightly.
+   - The inflation-adjusted health spending (red line) remains relatively stable between 18.0% - 19.0% until 2019, before showing a downward trend.
+
+2. **Recent Decline (post-2015)**:
+   - Both series show a divergence post-2015, indicating that non-health inflation has caused the adjusted health spending to drop more significantly than the unadjusted figures.
+
+3. **Significant Gaps**: 
+   - The gaps between the two lines highlight periods where inflation adjustment had notable impacts, especially after 2015 through 2022. 
+
+**Conclusion:**
+Non-health inflation has significantly influenced the relative decline in health spending as a percent of GDP in recent years. The inflation-adjusted health spending demonstrates a more pronounced decline compared to the unadjusted figures. This suggests that the costs associated with health spending, when adjusted for broader economic inflation, have not kept pace with inflationary trends in other sectors.
+
+**Source and Methodology Note:**
+Data from the Bureau of Economic Analysis (BEA), Bureau of Labor Statistics (BLS), and GDP Price Deflator. The unadjusted series is calculated by dividing nominal health spending by nominal GDP. The adjusted series takes into account annual health spending adjusted to 2022 dollars using the medical care CPI and GDP adjustments to 2022 dollars using the GDP deflator.

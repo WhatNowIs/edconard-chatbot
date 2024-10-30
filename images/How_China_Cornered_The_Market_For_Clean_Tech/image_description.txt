@@ -1,0 +1,14 @@
+The image provides a comparative analysis of China and the United States in terms of their self-sufficiency in the battery supply chain, particularly focusing on lithium production (upstream) and battery manufacturing (downstream). The data spans from 2021 to 2030, with percentages indicating self-sufficiency (100% = self-sufficient).
+
+### Key Points:
+
+#### Upstream - Lithium Production:
+- **China Domestic**: Exhibits significant self-sufficiency, achieving over 120% from 2025 to 2027, and maintaining near 100% or higher through to 2030.
+- **US Domestic**: Displays minimal self-sufficiency, staying well below 20% throughout the period.
+
+#### Downstream - Battery Manufacturing:
+- **China**: Shows robust growth in self-sufficiency, reaching nearly 300% by 2030 from just over 60% in 2021.
+- **US**: Demonstrates a gradual increase, rising from around 40% in 2021 to about 110% by 2030.
+
+### Summary:
+China is projected to remain self-sufficient and even surplus in both lithium production and battery manufacturing through 2030. In contrast, the US shows marginal self-sufficiency in lithium production but is expected to make significant progress in battery manufacturing, approaching self-sufficiency by 2030 but still trailing behind China. Overall, China maintains a dominant position across the battery supply chain, while the US is expected to make notable strides downstream.

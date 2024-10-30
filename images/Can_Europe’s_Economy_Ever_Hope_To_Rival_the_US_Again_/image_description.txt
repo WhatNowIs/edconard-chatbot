@@ -1,0 +1,14 @@
+This image from the Financial Times demonstrates the relationship between investment rates and productivity growth in the US and selected European economies over time. 
+
+**Key insights:**
+
+1. **Net Investment Rate (% of GDP):**
+   - The US generally maintained a higher net investment rate compared to Europe from 1995 to 2019.
+   - Both regions experienced fluctuations, with significant dips around the time of the 2008 financial crisis. However, the US showed a recovery in investment rates while the average for Europe did not rebound as strongly.
+
+2. **Change in Total Factor Productivity (TFP):**
+   - Productivity growth (indexed at 100 in 1995) shows a more substantial increase for the US, especially after 2010.
+   - European countries (France, Germany, UK) show slower and more stagnant growth in Total Factor Productivity. Germany experienced a sharp decline around 2010, but overall, none of these countries matched the productivity gains seen in the US.
+
+**Conclusion:**
+The data suggests a positive correlation between higher investment rates and higher productivity growth. The US, with its higher investment rate post-2008 crisis, achieved a significant increase in productivity compared to Europe. This indicates the potential importance of investment in driving productivity improvements.

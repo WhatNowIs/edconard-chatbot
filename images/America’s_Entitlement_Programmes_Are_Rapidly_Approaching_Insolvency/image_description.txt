@@ -1,0 +1,20 @@
+The image presents a graph from "The Economist" depicting the trust-fund asset reserves as a percentage of annual cost for the United States' Social Security old-age insurance and Medicare hospital insurance from 1970 onwards, with a forecast extending to 2034.
+
+Key points in the summary:
+
+1. **Timeframe**: The graph covers historical data from 1970 to the present and includes forecast data up to 2034.
+
+2. **Data Source**: The information is sourced from the Social Security Administration.
+
+3. **Trends in Reserves**:
+   - Initially, from 1970, both Social Security old-age insurance (dark blue line) and Medicare hospital insurance (light blue line) had reserves that were inadequate to cover costs, denoted as below the 100% line.
+   - Social Security old-age insurance reserves grew significantly, peaking around the year 2010, at which point the reserves surpassed 300% of annual costs.
+   - However, following the peak, a sharp decline is projected, indicating a significant reduction in reserves by 2034, expected to drop back to below 100%, marking a potential inadequacy again.
+   
+4. **Medicare Insurance**:
+   - Over time, Medicare hospital insurance reserves experienced fluctuations and slight improvements but consistently stayed below the adequacy threshold (100% line).
+   - A slight uptick is visible around the early 2000s but shows a consistent decline afterward, remaining below the adequate reserves to cover costs forecast, even in 2034.
+
+5. **Forecast Insight**: Both programs show a concerning future trend where reserves are projected to deplete to levels inadequate to cover costs, posing a financial challenge for the sustainability of these social security systems.
+
+This graph underscores the looming financial challenges facing the U.S. social security and Medicare systems, highlighting the need for policy intervention to ensure long-term financial sustainability.

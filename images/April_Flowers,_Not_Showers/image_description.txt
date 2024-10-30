@@ -1,0 +1,25 @@
+The image is a line graph illustrating the trend in home and auto insurance payments from 2020 to 2024, based on Bank of America internal data. The primary observation is that insurance payments have risen by nearly 25% compared to 2019 levels. 
+
+Key points from the image are:
+
+1. **Two lines are charted:**
+   - **Average payment** (blue line)
+   - **Average customer payment** (red line)
+
+2. **Trend Observations:**
+   - Both the average payment and average customer payment have an upward trajectory.
+   - The average customer payment (red) consistently trends higher than the average payment (blue) starting from the early months of 2022.
+
+3. **Time Frame:**
+   - The timeframe observed spans from 2020 to the projected values in 2024.
+
+4. **Percentage Increase:**
+   - By 2024, the insurance payments have increased nearly 25% compared to the baseline year of 2019 (index=100).
+
+5. **Source:**
+   - Data is sourced internally from Bank of America.
+   - Definitions provided:
+     - **Average payment:** The average value of a transaction paid for property insurance in that month.
+     - **Average customer payment:** The average value of all property insurance payments per customer per month.
+
+In conclusion, both average payments and customer payments for home and auto insurance have shown a significant and continuous increase from 2020 onwards, reflecting a nearly 25% rise by 2024.

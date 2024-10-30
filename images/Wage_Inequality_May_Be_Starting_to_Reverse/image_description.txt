@@ -1,0 +1,7 @@
+The chart illustrates the annual wage growth differential between individuals with a Bachelor's degree or higher and those with a high school diploma or less from 1998 to 2023. The data, sourced from the Federal Reserve Bank of Atlanta, is plotted against various economic recessions indicated by shaded areas.
+
+Key points:
+- In the late 1990s and early 2000s, the wage growth differential was positive, peaking around 1.5 percentage points.
+- From the mid-2000s to late 2010s, this differential fluctuated but generally remained above zero, suggesting that the wage growth for individuals with higher education was consistently outpacing those with lower education.
+- However, after 2018, the differential started to decline sharply, eventually turning negative in the early 2020s.
+- By 2021, the gap had widened to approximately -1.5 percentage points, indicating that in recent years, the wage growth for individuals with a high school diploma or less has surpassed that of those with a Bachelor's degree or higher.

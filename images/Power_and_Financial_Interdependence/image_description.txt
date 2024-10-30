@@ -1,0 +1,22 @@
+The image titled "Figure 6. U.S. Portfolio vs. China’s Reserves and Other Foreign Assets" presents a comparative analysis of the composition and size of the U.S. and China’s financial portfolios over time, specifically from Q4 2000 to Q4 2023. The data is represented in USD billions and is sourced from the Bureau of Economic Analysis, Treasury International Capital (TIC) Data, and the State Administration of Foreign Exchange (SAFE).
+
+Key Components Represented:
+1. **Deposits** (light gray)
+2. **Short-Term Treasuries** (dark gray)
+3. **Long-Term Treasuries** (light green)
+4. **Belgium (Euroclear)** (medium green)
+5. **Long-Term Agencies** (blue)
+6. **Long-Term Corporate** (dark blue)
+7. **U.S. Equities** (red)
+
+Additional Indicators:
+- **60% of Reserves** (solid black line)
+- **80% of Reserves** (dashed black line)
+
+Trends and Observations:
+- There is a significant growth in the total value of these assets from 2000 to around 2014, after which it stabilizes and experiences minor fluctuations.
+- _Deposits_ and _Long-Term Treasuries_ form a substantial portion of the assets.
+- _Belgium (Euroclear)_ and _U.S. Equities_ see a consistent presence throughout the period.
+- The markers for 60% and 80% of reserves suggest thresholds indicative of reserve sufficiency or targets.
+
+Overall, the graph illustrates the dynamic changes in the structure and scale of the U.S. and China’s foreign assets/reserves, reflecting the shifts in economic strategies and the impact of global financial trends over two decades.

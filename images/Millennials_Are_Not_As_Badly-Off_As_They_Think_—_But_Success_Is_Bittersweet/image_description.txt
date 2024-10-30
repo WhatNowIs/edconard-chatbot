@@ -1,0 +1,18 @@
+The image presents four graphs illustrating various measures of generational wealth accumulation in the United States, comparing Millennials with Gen X and Boomers. The key points are:
+
+1. **Share of National Wealth Owned by Each Generation (%)**:
+   - Millennials have accumulated less national wealth compared to Boomers and Gen X when adjusted for age.
+   - The red line (Millennials) shows a slower growth in wealth share compared to gray (Gen X) and blue (Boomers) lines.
+
+2. **Inflation-Adjusted Per Capita Wealth ($K)**:
+   - The per capita wealth for Millennials initially shows a rapid increase but levels off and does not reach the same heights as Gen X and Boomers at comparable ages.
+   - Despite growth, Millennials lag behind previous generations in terms of per capita wealth.
+
+3. **Inflation-Adjusted Per Capita Wealth (Adjusted for House Price Inflation)**:
+   - When adjusted for house price inflation, the trend is similar; Millennials make gains but still trail behind the wealth accumulation rates of Boomers and Gen X.
+
+4. **Generational Wealth Relative to National Per Capita Wealth (National Average = 100)**:
+   - This graph indicates that Millennials' wealth is below the national average relative to their generational counterparts were at the same age.
+   - Boomers and Gen X have wealth levels closer to or above the national average compared to Millennials.
+
+Overall, the data reflects that Millennials, despite making some gains, have accumulated less wealth than previous generations at the same stages in life, especially when adjusted for historical comparisons and inflation factors. This is indicative of broader economic trends and challenges faced by the Millennial generation.

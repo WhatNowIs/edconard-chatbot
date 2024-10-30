@@ -1,0 +1,15 @@
+The chart titled "Old money" shows the net wealth of different generational cohorts in the United States from 1990 to 2023, displayed in trillions of dollars. The generations represented are:
+
+1. Silent Generation (1928-45)
+2. Baby Boomers (1946-64)
+3. Generation X (1965-80)
+4. Millennials (1981-96)
+
+Key observations:
+
+- The Baby Boomers hold the largest share of net wealth, markedly increasing from around 1990 and peaking around 2020.
+- Generation X began accumulating significant wealth in the early 2000s, with a noticeable increase around 2013.
+- Millennials have a smaller share of net wealth, but it has grown steadily since around 2015.
+- The Silent Generation's wealth appeared stable until it started to decline after 2000.
+
+Overall, Baby Boomers dominate in terms of net wealth, followed by Generation X, with Millennials gradually increasing their share. The trends suggest shifts in wealth predominantly from older to younger generations over time.

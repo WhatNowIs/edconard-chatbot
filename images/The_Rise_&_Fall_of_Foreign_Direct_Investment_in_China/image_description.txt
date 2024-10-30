@@ -1,0 +1,13 @@
+The image presents a chart titled "China: Estimated Cumulative Reinvested Earnings on FDI" which tracks the cumulative reinvested earnings on Foreign Direct Investment (FDI) in China from December 2004 to December 2022. The data is expressed in billions of USD.
+
+There are two sets of data plotted:
+1. **Cumulative Reinvested Earnings on FDI (SAFE-MOFCOM)** - represented by the blue line.
+2. **Cumulative Reinvested Earnings on FDI (Primary Income Debits ex-Estimated Interest and Dividends)** - represented by the orange line.
+
+Key observations:
+- Both trends show steady growth from 2004 to 2022, indicating increasing reinvested earnings on FDI in China.
+- The blue line consistently stays above the orange line, suggesting that the SAFE-MOFCOM cumulative reinvested earnings are higher than those calculated from primary income debits excluding estimated interest and dividends.
+- There is a noticeable dip around the period from the end of 2019 through 2020, potentially reflecting the impact of the global COVID-19 pandemic on reinvested earnings.
+- Post-2020, both metrics again increase but exhibit some degree of fluctuation through to the end of 2022.
+
+The chart is sourced from Exante Data, SAFE, and MSCI.

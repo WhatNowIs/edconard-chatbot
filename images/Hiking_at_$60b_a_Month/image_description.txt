@@ -1,0 +1,14 @@
+The image is a line graph from the Federal Reserve Economic Data (FRED) showing the trends in three different rates over time from mid-2020 to late 2022. The graph includes:
+
+1. **National Deposit Rates: Savings** (blue line) - Represents the typical interest rates offered on savings accounts.
+2. **Effective Federal Funds Rate** (red line) - Represents the interest rate at which depository institutions trade federal funds (balances held at Federal Reserve Banks) with each other overnight.
+3. **Market Yield on U.S. Treasury Securities at 5-Year Constant Maturity** (green line) - Represents the yield on U.S. Treasury securities with a 5-year maturity.
+
+Key observations from the graph:
+
+- The **Market Yield on U.S. Treasury Securities** shows a distinct upward trend starting around mid-2021 and peaking in mid-2022, reflecting increasing Treasury yields.
+- The **Effective Federal Funds Rate** begins to rise noticeably around early 2022, following several sharp increases in a stepwise manner, indicating that the Federal Reserve has been raising interest rates.
+- The **National Deposit Rate: Savings** remains largely flat throughout the period, showing only a slight increase towards the end of the period in late 2022.
+- There is a notably large gap between **Treasury yields** and the typical rate offered in savings accounts, as highlighted by the annotation "GAP" in the image.
+
+Summary: The graph illustrates a significant rise in U.S. Treasury yields and the Effective Federal Funds Rate starting in 2022, while the interest rates offered on savings accounts have remained relatively low and flat. This has created a substantial gap between Treasury yields and savings account rates, indicating that savers are potentially missing out on higher returns available from Treasury securities compared to traditional savings accounts.

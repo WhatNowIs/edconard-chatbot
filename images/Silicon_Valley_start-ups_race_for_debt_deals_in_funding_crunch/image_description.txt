@@ -1,0 +1,23 @@
+The chart from Financial Times highlights the valuation and recent funding rounds of the largest privately valued companies. Key observations include:
+
+1. **Valuation Timing**:
+   - Three-fifths of the largest privately valued companies were priced before 2022.
+   - The chart uses different colors to signify the year of the last funding round: 
+     - **Blue** for 2022,
+     - **Pink** for 2021,
+     - **Red** for 2020 or earlier.
+
+2. **Funding Trends**:
+   - There has been a significant drop in start-up funding, hitting the lowest in the last quarter in the past two years.
+   - Only 37 companies surpassed the $1 billion valuation mark backed by venture capital since Q1 2020, indicating a slowdown in high-valued funding rounds.
+
+3. **Notable Companies**:
+   - **ByteDance** and **Ant Group** feature as some of the highest-valued companies, with valuations around and above $150 billion, with their last funding rounds before 2022.
+   - **SpaceX** and **Stripe** are also highlighted, with valuations over $100 billion, indicating recent funding activity in 2021 and 2020 respectively.
+   - Other notable companies include **Shein** and **JUUL**, positioned at around $60 billion and $40 billion valuations, respectively.
+
+4. **Days Since Last Funding**:
+   - Many companies had their latest funding rounds over 500 days ago, particularly those with higher valuations like ByteDance, Ant Group, and JUUL.
+   - Companies with recent funding rounds within the last year or so (blue-colored) show more dense clustering near lower valuations, indicating recent funding activities are concentrated in newer or smaller ventures.
+
+In summary, the chart provides a visual representation of the correlation between the timing of the last funding rounds and the valuation of major privately-held companies, indicating a general trend of fewer new high-value investments in recent years.

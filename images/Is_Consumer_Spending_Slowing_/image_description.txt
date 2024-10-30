@@ -1,0 +1,12 @@
+The image provides an analysis of price changes in the U.S. economy, focusing on Personal Consumption Expenditures (PCE) price indices. The title, "Bad News on Goods?" suggests a concern about inflation trends. The key points are:
+
+- **Underlying Services Inflation:** There has been a slow moderation in the inflation rates for underlying services, which exclude housing and utilities.
+- **Manufactured Goods Prices:** An increase in the prices of manufactured goods, excluding food, energy, and motor vehicles, has offset the moderation in services.
+- **Overall Inflation:** This dynamic has kept the overall inflation rate above the Federal Reserve's target of 2% per year.
+  
+The chart illustrates three key elements:
+1. **Total PCE Price Indices (Blue Line):** Shows the overall 3-month annualized change in PCE prices, reflecting a relatively steady increase with some fluctuations since 2011.
+2. **Market-Based Services excluding Housing and Utilities (Red Line):** Depicts a gradual moderation in service inflation rates.
+3. **Market-Based Goods excluding Food, Energy, and Motor Vehicles (Green Line):** Highlights significant variability and recent rebounds in the inflation rates of market-based goods.
+
+Data is sourced from the Bureau of Economic Analysis and calculated by Matthew Klein. The overall message is that despite a slowdown in services inflation, the rising prices in manufactured goods continue to drive overall inflation above the Fed’s 2% annual target.

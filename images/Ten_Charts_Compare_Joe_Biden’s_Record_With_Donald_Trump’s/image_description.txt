@@ -1,0 +1,20 @@
+The image is a graph from The Economist displaying the number of encounters at the southwestern border of the USA, categorized as illegal immigration. Here is a summary of the information presented:
+
+1. **Timeline**: The graph covers from 2017 to 2023, divided into two periods:
+   - "Trump" administration: Up to late 2020.
+   - "Biden" administration: From early 2021 onward.
+
+2. **Y-Axis**: The vertical axis represents the number of encounters, measured in thousands (000), ranging from 0 to 300.
+
+3. **12-Month Moving Average**: A black line indicates the 12-month moving average of encounters.
+
+4. **Trends**:
+   - Under the Trump administration, the graph shows fluctuations with a notable decrease in encounters around 2019.
+   - In the later part of Trump's administration, there is a notable increase in encounters.
+   - With Biden's administration starting in early 2021, the graph shows a significant rise in encounters, peaking at over 200,000 monthly in mid-2021, with fluctuations but overall maintaining high levels through the first part of 2023.
+
+5. **Data Note**: Since March 2020, monthly totals include both apprehensions and expulsions. Before this, the totals only included apprehensions.
+
+6. **Source**: The data is sourced from US Customs and Border Protection.
+
+In summary, the graph displays a general increase in encounters at the southwestern border, particularly rising during the start of the Biden administration. The 12-month moving average follows this upward trend with notable peaks and fluctuations.

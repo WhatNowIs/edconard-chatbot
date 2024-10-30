@@ -1,0 +1,29 @@
+This image titled "Figure 7: HHP 30-City Real HPI by Region, 1890-2006" presents a graphical representation of regional housing price indices (HPI) adjusted for inflation across several U.S. regions from 1890 to 2006. The graph uses the year 1890 as a base year (indexed to 1) to illustrate the changes in real estate prices over time.
+
+The following key points can be observed from the graph:
+
+1. **Regions Represented and Key**:
+   - The Northeast Coast is represented by dark blue.
+   - The Midwest is denoted by medium blue.
+   - The South Coast is shown in light blue.
+   - The South Inland line is in very light blue.
+   - The West Coast is in the deepest blue.
+
+2. **Trend Overview**:
+   - From 1890 until the mid-1940s, HPI values for all regions fluctuated around a relatively stable range, mostly between 0.5 and 1.5.
+   - Post-World War II (from around 1945), a gradual upward trend begins, especially noticeable in the West Coast and Northeast Coast regions.
+   - The Midwest and South Inland regions show a relatively modest increase compared to other regions.
+
+3. **Significant Peaks and Troughs**:
+   - Noticeable peaks in HPI data occur during the late 1970s and mid-1980s across most regions, with the West Coast particularly standing out during these periods.
+   - The West Coast region exhibits a dramatic rise starting from the mid-1990s, peaking sharply in the early 2000s.
+
+4. **Recent Trends (Post-1990s)**:
+   - From the mid-1990s to 2006, all regions show a significant increase in HPI, with the West Coast displaying the most considerable growth, peaking at over 3.5 times the 1890 base value.
+   - During the same period, the South Coast, Northeast Coast, and Midwest also show substantial increases, albeit less extreme compared to the West Coast.
+
+5. **General Observations**:
+   - The HPI data indicates differing growth rates and volatility among the regions, with the West Coast and, to some extent, the Northeast Coast showing higher volatility and more significant increases in real estate prices over time.
+   - The regions such as the Midwest and South Inland demonstrate much more controlled and moderate trends in their HPI values.
+
+The note accompanying the graph specifies that the indices are aggregated by city population to the regional level, emphasizing that the starting point for comparison is the HPI value of 1 for all regions in 1890.

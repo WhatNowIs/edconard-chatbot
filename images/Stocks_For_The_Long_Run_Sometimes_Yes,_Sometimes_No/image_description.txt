@@ -1,0 +1,19 @@
+The chart titled "Stock and Bond Performance from 1792" illustrates the inflation-adjusted performance of stocks and bonds over a period from 1792 to 2019. Specific points of reference are marked to highlight the different phases of performance:
+
+1. **Back-and-forth Era (1792 - 1941)**:
+   - During this period, there is a frequent alternation in performance where both stocks (blue line) and bonds (orange line) experience periods of superior returns compared to each other.
+
+2. **Decisive Stock Superiority (1941 - 1981)**:
+   - From 1941 onward, stocks begin to show a clear outperformance over bonds. This phase is marked by significant growth in stock values while bond performance remains comparatively modest.
+
+3. **Fluctuating Advantage (Post-1981)**:
+   - After 1981, the performance of stocks and bonds becomes more volatile and diverse. The bond performance (dark brown line) is reset to be equal to stock wealth at the end of 1981 to facilitate comparison. 
+   - Both asset classes show growth, but with varying dynamics. The stock returns continue to generally outpace bond returns, though the relative advantages fluctuate more distinctly.
+
+**Key Notes:**
+- The illustration uses a logarithmic scale to show performance over the long term.
+- Performance data is adjusted for inflation up to December 2019, so it is pre-pandemic.
+- The dark brown line representing bond performance is reset at the end of 1981 to match stock wealth for better comparison henceforth.
+- The chart visualizes compounded growth of an initially invested dollar in nominal terms adjusted to real values through the timeline. 
+
+Overall, the chart effectively compares the long-term growth trajectories of stocks versus bonds, illustrating varying periods of relative performance between the two asset classes.

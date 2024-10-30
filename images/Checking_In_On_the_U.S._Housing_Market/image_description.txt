@@ -1,0 +1,11 @@
+The graph titled "Absolutely Fabulous" highlights the surge in investment in new semiconductor fabrication plants since mid-2021. Key points from the graph and accompanying text include:
+
+1. **Rapid Increase in Spending**: Since mid-2021, construction spending by computer and electronics manufacturers has dramatically escalated. By January 2023, the spending was six times the recent average.
+2. **Stagnation in Other Sectors**: In stark contrast, structure investments by other manufacturing sectors have largely stayed flat since 2015.
+3. **Historical Context**: The graph, spanning from 1993 to January 2023, illustrates the trends in manufacturers' spending on structures, measured in billions of USD per month.
+4. **Spending by Sector**: There are two specific spends shown: 
+   - **Dark Blue**: Represents spending by all other manufacturing sectors.
+   - **Light Blue**: Represents spending specifically by computers and electronics manufacturers.
+5. **Long-Term Trends**: The data indicates relatively steady expenditures in other manufacturing sectors over the decades, while spending on computers and electronics has seen notable increases at various points, peaking sharply since 2021.
+
+Source: Census Bureau, Matthew Klein’s calculations.

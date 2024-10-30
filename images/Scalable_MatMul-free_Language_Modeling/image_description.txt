@@ -1,0 +1,14 @@
+The image is a graph comparing GPU Memory (VRAM) usage and Latency during inference between two model types: MatMul-free LM and Transformer++. The X-axis represents various model sizes, ranging from "1 Layer 370M" to "13B". The Y-axes display two metrics — VRAM in gigabytes (GB) on the left and Latency in milliseconds (ms) on the right.
+
+Key observations from the graph:
+
+1. **VRAM Usage**:
+   - MatMul-free LM (blue bars) consistently uses less VRAM compared to Transformer++.
+   - As the model size increases, the VRAM usage for both models also increases, but the Transformer++ VRAM grows significantly more steeply.
+
+2. **Latency**:
+   - MatMul-free LM (blue line with dots) has a consistently lower latency than Transformer++ across all model sizes.
+   - The latency for both models increases with the model size, but the Transformer++ latency (red line with dots) grows much more sharply, especially noticeable at the largest model size (13B), where latency is significantly higher compared to MatMul-free LM.
+
+Summary:
+The MatMul-free LM model demonstrates superior efficiency in both GPU memory usage and latency as model size increases. In contrast, the Transformer++ model requires significantly more VRAM and has higher latency, particularly as models scale to larger sizes. This suggests that MatMul-free LM might be more suitable for scenarios with memory constraints and where lower latency is critical.

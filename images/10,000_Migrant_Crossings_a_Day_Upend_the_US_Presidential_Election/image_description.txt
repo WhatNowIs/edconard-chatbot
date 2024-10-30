@@ -1,0 +1,10 @@
+The image shows a bubble map illustrating the number of migrants with new immigration court cases in 2023 across various counties in the United States. Key details include:
+
+- The map highlights counties with notable numbers of new migrants.
+- Bubbles represent the numbers of migrants, with larger bubbles indicating a higher number of migrants.
+- Darker blue shades indicate counties where new migrants make up more than 2% of the population.
+- The highest concentrations of new migrants are seen in counties like Los Angeles, Denver, Harris, Miami-Dade, Bronx, Queens, Kings, and Cook.
+- Some addresses in court records include detention centers within these counties.
+- The source of the data is the Department of Justice EOIR case data, released after FOIA requests by TRAC at Syracuse University.
+
+This visualization underscores how certain counties, particularly major urban areas, are seeing significant proportions of new migrants relative to their populations.

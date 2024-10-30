@@ -1,0 +1,9 @@
+The image is a map of the United States that illustrates the costs associated with billion-dollar weather and climate disasters as a share of total state tax revenues from 2012 to 2021. The map uses color coding to represent disaster costs, with lighter colors (yellow) indicating lower costs as a share of state tax revenues and darker colors (purple to black) indicating higher costs. 
+
+Key observations from the map include:
+- Louisiana has the highest disaster cost as a share of state tax revenues at 100.4%.
+- Texas has significant costs at 36.3%.
+- South Dakota (38.8%), Iowa (24.2%), Colorado (18.4%), Nebraska (21.8%), and Oklahoma (14.6%) also show relatively high shares of disaster costs.
+- Many states, particularly in the Northeast and Northwest, have relatively lower shares of tax revenues affected by disaster costs, often under 5%, with Hawaii having the lowest at 0%.
+
+The map is based on data from the National Oceanic and Atmospheric Administration, the Bureau of Labor Statistics, and the U.S. Census Bureau and omits chronic climate phenomena such as low rainfall and higher average temperatures.

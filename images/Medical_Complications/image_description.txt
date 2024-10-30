@@ -1,0 +1,19 @@
+The images show the weekly rate of COVID-19 hospitalizations per 100,000 people in the United States, segmented by age groups, from March 2020 to January 2024. The data is sourced from the CDC and JPMAM.
+
+**Left Chart: US COVID hospitalizations by age starting at age 40**
+- **Age Groups**: 40-49, 50-64, 65-74, 75+ years.
+- **Key Insights**:
+  - The highest hospitalization rate is consistently observed in the 75+ age group, peaking in early 2022 with rates exceeding 140 per 100,000.
+  - The 65-74 age group also shows significant peaks but lower than the 75+ age group.
+  - Hospitalization rates for the 40-49 and 50-64 age groups are markedly lower than the older age groups, though spikes are noticeable, particularly in early 2022.
+  - Throughout the timeline, there are notable spikes in early 2021, early 2022, and a gradual increase towards early 2023.
+
+**Right Chart: US COVID hospitalizations by age, 30 to 64**
+- **Age Groups**: 30-39, 40-49, 50-64 years.
+- **Key Insights**:
+  - The 50-64 age group shows the highest hospitalization rate among the three, with significant peaks particularly in early 2022.
+  - The 40-49 age group demonstrates similar trends but with slightly lower rates compared to the 50-64 group.
+  - The 30-39 age group consistently has the lowest hospitalization rates among the shown age groups.
+  - Peaks are noticeable in early 2021, early 2022, but at lower rates compared to the older age groups.
+
+Across both charts, hospitalization rates show distinct spikes during certain periods (early 2021, early 2022) affecting all age groups, but the severity and rate vary significantly with age, being highest in the oldest age groups.

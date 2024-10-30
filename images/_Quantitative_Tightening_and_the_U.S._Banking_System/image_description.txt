@@ -1,0 +1,20 @@
+The image depicts a graph titled "Liability Swap," which illustrates the changes in select liabilities of U.S. commercial banks since January 5, 2022, measured in USD billions. It highlights the following key points:
+
+1. **Context**: 
+   - American banks have shown reluctance in passing along interest rate increases to depositors.
+   - This reluctance has motivated depositors to move their funds to higher-yielding money market funds.
+   - Banks have responded by selling reserves and compensating for the lost financing through increased borrowings.
+
+2. **Graph Details**:
+   - **Deposits (Blue Line)**: The deposits steadily decrease over time. The blue line representing deposits shows fluctuations initially but demonstrates a notable and consistent decline starting around May 2022, plummeting to approximately -$400 billion by early 2023.
+   - **Borrowings (Red Line)**: Borrowings show an upward trend. The red line representing borrowings begins near zero and progressively increases, hitting nearly $500 billion by early 2023.
+
+3. **Time Frame**:
+   - The data spans from January 2022 to January 2023.
+   - Key observations can be made around mid-2022, where the trends for both deposits and borrowings significantly diverge.
+
+4. **Sources**:
+   - The data is sourced from the Federal Reserve Board and Matthew Klein's calculations.
+
+**Summary**:
+The graph indicates a significant financial shift for U.S. commercial banks over the past year. Due to banks' reluctance to increase interest rates for depositors, there has been a substantial outflow of deposits, which have fallen dramatically. Concurrently, banks have augmented their borrowings to offset the liquidity gap, leading to a substantial rise in borrowings. This liability swap outlines critical responses by commercial banks facing changing financial landscapes and depositor behaviors.

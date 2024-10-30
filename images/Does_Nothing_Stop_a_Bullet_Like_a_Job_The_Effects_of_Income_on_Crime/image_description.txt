@@ -1,0 +1,22 @@
+The figure provides a summary of various studies concerning the relationship between macroeconomic conditions, job programs, or transfer programs and their impact on property and violent crime rates. 
+
+1. **Axis**:
+   - X-axis shows the percentage change in crime, ranging from -80% to +40%.
+   - Studies are plotted on the Y-axis, each marked with the author's name and publication year.
+
+2. **Indicators**:
+   - Different markers are used to represent different types of sections within each study:
+     - **Circles (●)** for Job Programs
+     - **Triangles (▲)** for Macro Evidence
+     - **Squares (■)** for Transfer Programs
+
+3. **Findings**:
+   - **Property Crime**: Evidence shows a wider and more diverse range of effects on property crime, with most studies indicating a reduction in property crime percentages, especially evident in studies involving job and transfer programs.
+   - **Violent Crime**: The effects of various programs on violent crime are more concentrated around zero, with fewer studies showing a substantial impact and not as wide a range of crime reduction as seen in property crime.
+
+4. **Notable Points**:
+   - Bollinger & Yelowitz (2021) and Deshpande & Mueller-Smith (2022) show significant impacts on property crime with high variation.
+   - Transfer programs generally indicate a higher reduction in property crime compared to job programs and macroeconomic evidence.
+   - Violent crime responses are generally less varied with many studies indicating little to no significant change.
+
+The figure emphasizes that the strategies involving job creation and transfer programs more frequently correlate with reductions in property crime, whereas their effect on violent crime is less consistent and smaller in magnitude.

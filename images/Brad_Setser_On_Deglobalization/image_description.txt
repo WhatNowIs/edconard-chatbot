@@ -1,0 +1,18 @@
+This chart titled "China: manufactured exports and surplus v WGDP" illustrates the trends in China's manufactured exports relative to the Gross Domestic Product (GDP) of its trade partners and its manufacturing surplus over the period from 1995 to 2022.
+
+Key points from the chart include:
+
+1. **China's Manufactured Exports (Black Line):**
+   - There is a clear upward trend in China's manufactured exports as a percentage of the GDP of its trade partners.
+   - Starting from a modest level of around 0.5% in 1995, it rose significantly through the years, reaching around 2.0% by 2005 and continuing to grow steadily.
+   - By 2022, China's manufactured exports account for over 4.0% of the GDP of its trade partners.
+
+2. **China's Manufacturing Surplus (Red Line):**
+   - The manufacturing surplus remained relatively low and stable until the early 2000s.
+   - A notable increase began around 2001, with the surplus growing steadily, albeit with some fluctuations.
+   - By around 2008, the surplus approached 2%, followed by a slight dip but recovering to around 1.5% in 2012.
+   - Post-2012, there was a fluctuation with growth resuming around 2015 and a marked increase starting from 2019.
+   - By 2022, the manufacturing surplus had risen to around 2.5%.
+
+**Summary:** 
+Over the span of nearly three decades, China has seen a notable increase in both its manufactured exports relative to the GDP of its trade partners and its manufacturing surplus. The manufactured exports have shown a consistent and steep upward trend, especially notable after the year 2000. The manufacturing surplus also shows a rising trend but with more fluctuations compared to the exports metric. Overall, by 2022, both indicators reach their highest points, signifying China's significant role in global manufacturing and trade.

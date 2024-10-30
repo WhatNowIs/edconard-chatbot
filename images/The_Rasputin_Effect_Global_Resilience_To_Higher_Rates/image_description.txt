@@ -1,0 +1,18 @@
+This image contains two graphs illustrating financial data pertaining to central banks and the US corporate sector.
+
+### Graph 1: Central Banks' Reversal of Emergency Stimulus
+- **Title**: Central banks have reversed ~35% of emergency stimulus
+- **Data Coverage**: Total assets in US$ trillions from 2007 to 2023
+- **Source**: Bloomberg, JPMAM. June 2023
+- **Description**: This graph shows the total assets of major central banks, including the Fed, ECB, BoJ, SNB, BoC, BoE, and FX reserves of the PBoC.
+- **Observation**: There is a significant increase in total assets from 2007 to around 2021, peaking at roughly $30 trillion, followed by a decrease indicating that central banks have reversed about 35% of the emergency stimulus measures.
+
+### Graph 2: US Corporate Sector Financial Balance
+- **Title**: US corporate sector financial balance
+- **Data Coverage**: Percent of corporate gross value added, 4-quarter average from 1960 to 2023
+- **Source**: Federal Reserve, BEA, JPMAM. Q2 2023.
+- **Description**: This graph represents the gross savings less capital transfers, capital expenditures, and foreign profits retained abroad as a percentage of the corporate gross value added.
+- **Observation**: The financial balance has been fluctuating, sometimes significantly negative and other times positive. The graph highlights various periods of economic downturn (indicated by gray vertical bars) where corporate financial balance was particularly low.
+
+### Overall Summary
+The first graph shows a substantial increase in central banks' total assets between 2007 and 2021 due to emergency monetary stimulus measures, with a notable reduction of roughly 35% by 2023 as these measures were being reversed. The second graph highlights the cyclical nature of the US corporate sector’s financial balance from 1960 to the present, illustrating periods of economic distress where the balance was particularly negative. This information suggests a transitioning phase in post-crisis economic policies and fluctuations in corporate financial health over time.

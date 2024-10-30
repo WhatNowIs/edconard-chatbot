@@ -1,0 +1,20 @@
+The graph compares the number of college graduates and service employees from 2000 to 2022, indexed to a value of 100 in 2019.
+
+### Key Observations:
+1. **Initial Values (2000):**
+   - College Graduates: Around 10-15 (indexed value).
+   - Service Employees: Around 55-60 (indexed value).
+
+2. **Trends Over Time:**
+   - **College Graduates:** There is a consistent and substantial increase in the number of college graduates throughout the period. The growth is particularly steep between 2010 and 2022.
+   - **Service Employees:** The number of service employees exhibits a more gradual increase compared to college graduates. The growth rate is relatively stable but balances out and even decreases slightly after 2019.
+
+3. **Intersection:**
+   - Around 2015, the number of college graduates intersects with the number of service employees, indicating equal indexing values at this point.
+
+4. **Recent Trends (2020-2022):**
+   - **College Graduates:** Sharp increase post-2019, peaking significantly above service employees by 2022.
+   - **Service Employees:** Slight decline after 2019, indicating potential reduction or slower growth rate in recent years.
+
+### Summary:
+Over the period from 2000 to 2022, the number of college graduates has shown a notable and consistent increase, surpassing the growth rate of service employees, especially after 2010. By 2015, the indexed values for both categories converged, but post-2019, the number of college graduates soared dramatically, while service employee numbers leveled off or slightly decreased. This indicates a growing trend of higher education attainment compared to employment in service roles over the past two decades.

@@ -1,0 +1,39 @@
+This table presents the results from regression analyses examining the effect of Blue Law repeals on mortality rates across different age groups and causes of death. The causes of death analyzed are: 
+
+1. All deaths of despair (Column 1)
+2. Liver disease (Column 2)
+3. Poisonings (Column 3)
+4. Suicide (Column 4)
+
+The data is divided into three different age groups: 25-44, 45-64, and 65-84, as well as an "All Ages" category. Each cell contains the regression coefficient (showing the effect size of Blue Law repeals on the specific cause of death) with its standard error in parentheses.
+
+### Summary of the Results:
+
+**Ages 25-44:**
+- Blue Law repeals are associated with an increase of 0.501 (standard error: 0.536) in all deaths of despair.
+- Liver disease: 0.0279 (standard error: 0.268)
+- Poisonings: 0.233 (standard error: 0.351)
+- Suicide: 0.240 (standard error: 0.300)
+
+**Ages 45-64:**
+- Blue Law repeals are associated with an increase of 2.154 (standard error: 0.669) in all deaths of despair.
+- Liver disease: 0.745 (standard error: 0.608)
+- Poisonings: 0.208 (standard error: 0.208)
+- Suicide: 1.201 (standard error: 0.234)
+
+**Ages 65-84:**
+- Blue Law repeals are associated with an increase of 0.210 (standard error: 0.980) in all deaths of despair.
+- Liver disease: 0.386 (standard error: 0.692)
+- Poisonings: -0.468 (standard error: 0.181)
+- Suicide: 0.292 (standard error: 0.532)
+
+**All Ages:**
+- Blue Law repeals are associated with an increase of 0.913 (standard error: 0.536) in all deaths of despair.
+- Liver disease: 0.259 (standard error: 0.351)
+- Poisonings: 0.101 (standard error: 0.196)
+- Suicide: 0.552 (standard error: 0.264)
+
+### Additional Notes:
+- The analyses include controls and state trends (linear and quadratic).
+- Figures are per 100,000 population.
+- The sample, controls, and weighting are consistent with specifications from Table 3 (not provided here).

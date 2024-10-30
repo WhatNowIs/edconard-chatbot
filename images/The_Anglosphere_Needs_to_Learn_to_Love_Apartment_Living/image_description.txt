@@ -1,0 +1,16 @@
+The image outlines the disparity in housing supply and price changes between English-speaking (Anglophone) countries and other developed European nations. It consists of two graphs:
+
+1. **Total Dwelling Stock per 1,000 People (Left Graph)**
+   - This graph shows the trends from 1960 to 2020.
+   - It illustrates that developed European countries have significantly higher dwelling stocks compared to English-speaking countries.
+   - By 2020, the dwelling stock in developed European nations is around 500-550 per 1,000 people, while Anglophone countries lag behind with scores around 350-450.
+   - Individual countries within the Anglophone category, such as the UK, Ireland, and New Zealand, are highlighted, all showing lower total dwelling stocks than their European counterparts.
+
+2. **Change in Real House Prices since Q1 2013 (Right Graph)**
+   - This graph tracks the percentage change in real house prices on a log scale from Q1 2013 to 2022.
+   - It reveals that Anglophone countries have experienced more significant increases in house prices compared to European countries over this period.
+   - New Zealand shows the highest increase in house prices, followed by Ireland, the US, Canada, Australia, and the UK.
+   - Developed European countries generally show minimal to moderate increases in house prices, with Italy even showing a decrease.
+
+**Summary:**
+English-speaking countries have struggled more with increasing their housing supply than other developed nations, leading to steeper rises in real house prices. Traditional European countries have effectively maintained higher dwelling stocks per capita and have seen more restrained increases in house prices. This contrast highlights a significant difference in housing market dynamics between Anglophone countries like New Zealand, Ireland, the US, Canada, and Australia, and their European counterparts.

@@ -1,0 +1,9 @@
+The provided graph, titled "Exhibit 1: Core Inflation Is Back at the Target," illustrates the sequential core inflation trends for specific countries that experienced a significant and undesired inflation surge. The data spans from 2010 to 2024 and measures both the month-on-month annualized inflation (in blue) and the 3-month annualized inflation (in red). Key points include:
+
+- The core inflation trends showcase fluctuations, generally ranging between 0% and 2% for substantial stretches of time.
+- There were occasional spikes and dips, particularly visible around 2015, 2020, and 2021, with core inflation sometimes exceeding 4% or even dropping below -1%.
+- Most recently, inflation shows a noticeable decline after a surge, bringing it back closer to target levels around the 2% mark.
+- This analysis is based on GDP-weighted averages of G10 economies (excluding Japan) and several emerging market (EM) early hiking countries such as Brazil, Chile, Colombia, Czechia, Hungary, Mexico, Peru, Poland, and Romania.
+- The data was analyzed by Goldman Sachs Global Investment Research, with certain unreleased values estimated.
+
+In summary, the graph indicates that after experiencing a period of elevated and unwanted inflation, core inflation rates in the analyzed countries have generally returned to targeted levels.

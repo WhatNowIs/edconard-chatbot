@@ -1,0 +1,12 @@
+The image is a graph from FRED (Federal Reserve Economic Data), showing the market yield on U.S. Treasury Securities at a 10-Year Constant Maturity, quoted on an investment basis, inflation-indexed. The data ranges from 2004 to 2023.
+
+Key observations:
+
+1. **2004-2008**: The yield fluctuated between 1% and 3%, showing an overall slightly declining trend.
+2. **2008 Financial Crisis**: There was a sharp increase followed by a steep drop from 3% to below 0% as the crisis unfolded.
+3. **2009-2013**: The yield remained low, oscillating around 1%, and occasionally dipping below 0%.
+4. **2013-2019**: There was a gradual recovery with yields increasing to around 1% but fluctuating.
+5. **2020 (COVID-19 Pandemic)**: A sharp decline is observed, with yields dropping below -1%.
+6. **2021-2023**: A significant recovery in yields is visible, rising sharply from -1.5% to more than 1%.
+
+The graph indicates periods of economic stress (e.g., the 2008 financial crisis and the 2020 COVID-19 pandemic) by marked declines in yields, with subsequent recoveries aligning with economic recoveries. The latest data shows a notable increase in yields, suggesting an improved economic outlook or inflation expectations.

@@ -1,0 +1,10 @@
+The provided image is a line graph titled "Energy efficiency and electricity price," showing data from 1995 to 2020. The left Y-axis represents energy efficiency (value added per MWh, deflated), and the right Y-axis represents the electricity price (in natural logarithm form). Two lines are plotted on the graph:
+
+1. **Energy efficiency** (solid blue line, left axis): This starts at around 0.195 in 1995 and shows overall improvement over time, with notable fluctuations. Significant increases are evident particularly around 1999-2001, 2006-2008, and 2009-2015, reaching its peak value around 2014-2015 before slightly declining towards 2017-2018 and then rising again towards 2020.
+
+2. **Electricity price** (dashed red line, right axis): This starts at approximately -3 in 1995 and shows a similar upward trend but with its own set of fluctuations over the years. A significant increase occurred between 2004-2007 and 2008-2014, peaking around 2014-2015 similar to energy efficiency before slightly decreasing and then increasing towards 2020.
+
+The data source for this graph is cited from EACEI and FICUS/FARE.
+
+### Summary
+The graph depicts both energy efficiency and electricity prices rising over the period from 1995 to 2020, with notable peaks around 2014-2015. Despite the fluctuations in both metrics, the overall trend indicates an improvement in energy efficiency and an increase in electricity prices. The lines suggest a potential correlation between the increasing cost of electricity and improvements in energy efficiency over time.

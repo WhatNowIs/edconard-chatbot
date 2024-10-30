@@ -1,0 +1,12 @@
+The image is a bar graph depicting the share of business-owning families by race and ethnicity from 2016 to 2022. The data is based on the Survey of Consumer Finances (SCF) and covers four main racial and ethnic groups: non-Hispanic white (White), non-Hispanic Black or African American (Black), Hispanic or Latino, and Other.
+
+Key points from the graph:
+1. **Consistent Dominance of White Business Owners**: White families consistently represent the largest share of business-owning families over all the years sampled (2016, 2019, and 2022).
+2. **Minority Representation**: The shares of Black, Hispanic or Latino, and Other families owning businesses remain significantly lower than that of White families across all years.
+   - **Black Business Owners**: There is little change in the proportion of Black business owners from 2016 to 2022.
+   - **Hispanic or Latino Business Owners**: The share of Hispanic or Latino business owners appears to have a slight increase over the years.
+   - **Other Business Owners**: The share of business owners categorized as Other shows a minor increase in 2022 compared to previous years.
+
+The note at the bottom clarifies that the categories cover a broad range of identities and the data for Asian families was specifically broken out and publicly available in the 2022 SCF, but not in prior years. This provides context on the data's limitations and usage.
+
+Overall, the graph highlights that while there are business owners among all racial and ethnic groups, white families constitute the majority, with some modest shifts in minority business ownership over the surveyed years.

@@ -1,0 +1,18 @@
+The image depicts a bar chart showing changes in the share of the adult population in the United States from the 2019 average to December 2022, divided by age group and employment status (in workforce vs. not in workforce).
+
+Key points summarized:
+
+1. **Age Group: 65 years and over**
+   - Significant increase (about 1.25 percentage points) in the share of the population not in the workforce.
+
+2. **Age Group: 55-64 years**
+   - Decrease in both the share of the population in the workforce (around -0.35 percentage points) and not in the workforce (around -0.1 percentage points).
+
+3. **Age Group: 25-54 years (prime-age workers)**
+   - Noticeable decrease (around -0.5 percentage points) in the share of the population in the workforce.
+
+4. **Age Group: 16-24 years**
+   - Minor decrease in the share of the population both in the workforce and not in the workforce (around -0.15 percentage points each).
+
+**Overall Insight:**
+- Relative to its population, the United States now has fewer prime-age workers and more retirees, indicating a demographic shift towards an aging population with an increasing share of retirees and a decreasing share of working-age individuals in the workforce.

@@ -1,0 +1,20 @@
+This chart, titled "Expected housing affordability correction became more gradual after January 2023," illustrates the price-to-income ratio index using February 2022 as the reference point (indexed to 100). The key points are:
+
+1. **Historical Trends (1987-2024)**
+   - The black line represents historical data from the Case-Shiller price-to-income ratio.
+   - The index shows notable peaks around the early 2000s and the early 2020s, corresponding to periods of significant real house-price exuberance (those periods are shaded in gray).
+
+2. **Recent Data and Trends (2022-2024)**
+   - The index peaked at 104 in May 2022.
+   - By March 2023, the index dropped to 94.
+   - The most recent data point in January 2024 indicates a level of 98.
+
+3. **Projections (2023-2029)**
+   - Projections for the future show a gradual decline in the price-to-income ratio:
+     - The projection from January 2023 indicates an index of 79 by February 2028.
+     - The projection from October 2023 shows an index of 86 by February 2028.
+     - The April 2024 projection suggests an index of 87 by February 2029.
+
+The chart suggests that after a sharp rise, the housing affordability index is expected to correct more gradually following January 2023. The projections varying slightly indicate expectations of the ratio decreasing over time, pointing to a gradual improvement in housing affordability. 
+
+Sources and calculations for this data are credited to the Dallas Fed's International House Price Database and several other notable economic and statistical institutions.

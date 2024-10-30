@@ -1,0 +1,19 @@
+The chart titled "Labor Productivity Trends, 1998-2021" illustrates the trend in labor productivity, measured in value added (VA) per worker in chained 2012 USD, across three different categories: tradable sectors, non-tradable sectors, and overall productivity.
+
+### Key Takeaways:
+
+1. **Overall Productivity (Grey Line):
+   - From 1998 to 2021, overall productivity saw a gradual increase from just above 100,000 to about 125,000 in 2012 USD value added per worker.
+   - The trend is relatively consistent, with a steady but moderate upward slope throughout the years.
+
+2. **Tradable Sectors (Blue Line):
+   - Tradable sectors exhibit the most significant growth in labor productivity.
+   - Starting at the same point as overall productivity in 1998, the productivity in tradable sectors rose sharply after 2000, reaching approximately 200,000 by 2021.
+   - There is a noticeable acceleration in productivity growth post-2008.
+
+3. **Non-tradable Sectors (Orange Line):
+   - Productivity in non-tradable sectors shows minimal growth over the period.
+   - The value added per worker in this category remains relatively flat, starting above 90,000 in 1998 and barely reaching 100,000 by 2021.
+
+### Summary:
+From 1998 to 2021, labor productivity has generally increased, with the most substantial gains observed in tradable sectors, nearly doubling during this period. In contrast, non-tradable sectors show little improvement in productivity, as the value added per worker has stagnated around the same level. Overall productivity displays a moderate, steady rise, indicative of gradual economy-wide efficiency improvements.

@@ -1,0 +1,14 @@
+The image is a graph titled "Figure 8: State-level Recovery Rates of Claims-based Unemployment Rates," showing recovery paces for different recovery cycles in the United States from 1949 to 2020. Key details include:
+
+1. **Recovery Pace**: The y-axis represents the recovery pace, ranging from 0.0 to 0.8.
+2. **Recovery Cycles**: The x-axis lists different recovery cycles by year, from 1949 to 2020.
+3. **State-Level Heterogeneity**: Represented by grey circles, showing variability across different states for each recovery cycle.
+4. **U.S. National Level**: Represented by red cross marks, indicating the average national recovery pace for each cycle.
+
+The overall trend depicts significant variability in state-level recovery rates for each recovery cycle, as evidenced by the spread of grey circles, with national averages marked by red crosses. Specific notes below the graph mention:
+- Recovery dates are calculated using the DNS algorithm based on official U.S. unemployment rates.
+- The 1980 recession recovery is excluded.
+- Pandemic recovery is set to peak in December 2023.
+- Negative recovery rates (where unemployment rose during the recovery) are present but not plotted; only nonnegative recovery rates are shown.
+
+This graph illustrates both the national and state-level disparities in unemployment recovery rates over several decades.

@@ -1,0 +1,11 @@
+The image is a graph illustrating the export capacity and exports of liquefied natural gas (LNG) for various countries from 2019 to 2023, measured in billion cubic feet per day. Here are the key points:
+
+- **United States**: Showed significant growth in LNG exports, increasing from around 4 billion cubic feet per day in 2019 to over 11 billion cubic feet per day in 2023.
+- **Australia**: Export capacity remained stable, fluctuating slightly around 10 billion cubic feet per day.
+- **Qatar**: Similar to Australia, Qatar's LNG exports held steady at about 10 billion cubic feet per day.
+- **Russia**: Maintained consistent LNG export levels close to 4 billion cubic feet per day.
+- **Malaysia**: Displayed stable export levels just above 3 billion cubic feet per day.
+- **Indonesia, Nigeria, Algeria, and Oman**: Each showed steady and relatively lower LNG export capacities, ranging between 1 and 2 billion cubic feet per day.
+- **Others**: The collective category for other countries shows an increase from below 4 billion cubic feet per day in 2019 to around 5 billion cubic feet per day in 2023.
+
+Overall, the United States displayed the most significant growth in LNG export capacity over the given period, while other major exporters like Australia and Qatar continued to maintain high yet stable levels.

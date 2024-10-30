@@ -1,0 +1,11 @@
+The chart illustrates the projected increase in Treasury auction sizes across various tenors (maturity durations) from 2013 to 2024. The projections indicate a notable rise in Treasury issuance for the year 2024 compared to previous years, particularly 2023. Key points are as follows:
+
+- **2s (2-year Treasury notes)**: Increased by 29% from 2023 to 2024.
+- **3s (3-year Treasury notes)**: Increased by 37% from 2023 to 2024.
+- **5s (5-year Treasury notes)**: Increased by 28% from 2023 to 2024.
+- **7s (7-year Treasury notes)**: Increased by 18% from 2023 to 2024.
+- **10s (10-year Treasury notes)**: Increased by 10% from 2023 to 2024.
+- **20s (20-year Treasury notes)**: Increased by 16% from 2023 to 2024.
+- **30s (30-year Treasury notes)**: Increased by 23% from 2023 to 2024.
+
+In summary, the estimated Treasury auction sizes in 2024 will see an average increase of 23% across the yield curve compared to 2023. This data was compiled from sources like SIFMA, TBAC, Haver Analytics, and estimates from Apollo Chief Economist, considering the period from September 2023 to December 2024, under a neutral issuance scenario.

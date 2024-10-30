@@ -1,0 +1,16 @@
+The chart titled "Leverage Cycles" illustrates the leverage trends in U.S. private and government debt as a percentage of GDP from 1945 to 2021. The discussion notes that the 1930s defaults and 1940s reflation effectively reduced private debts, giving a fresh start to consumers and businesses. However, the 2020s reflation has not had the same effect, especially when compared to the post-WWII era.
+
+Key observations from the chart include:
+
+1. **Total Private Debt (in blue):**
+   - Started below 50% of GDP in 1945.
+   - Experienced a steady increase over the decades.
+   - Saw significant rises particularly from the mid-1980s onwards, peaking around 2009.
+   - After peaking, it exhibited some fluctuations but remained high, declining slightly post-2010.
+   
+2. **Government Debt (Federal, State, and Local, in red):**
+   - Began above 100% of GDP in 1945, reflecting WWII impacts.
+   - Declined steadily until around the 1980s.
+   - Experienced gradual increases post-1980s, with notable rises in recent years, particularly after 2008.
+
+The data source is credited to the Federal Reserve Board, Bureau of Economic Analysis, and calculations by Matthew Klein.

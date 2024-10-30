@@ -1,0 +1,18 @@
+The graph presents a visual representation of Russian government spending from 2012 to 2022, measured in rolling 12-month sums in USD billions. The data are divided into two categories: Federal (depicted by the blue line) and Constituent entities (depicted by the red line), with the constituent entities data available only through November.
+
+### Key Observations:
+
+1. **Federal Spending**:
+   - From 2012 until mid-2013, federal spending showed a slow increase, peaking around $450 billion.
+   - From 2014 to about 2016, there was a substantial decline, reaching approximately $270 billion.
+   - After 2016, federal spending showed a gradual upward trend, remaining somewhat stable until around 2020.
+   - In 2021, there was a sharp increase, with spending spiking to around $460 billion by 2022.
+
+2. **Constituent Entities Spending**:
+   - Constituent entities' spending was stable around $260 billion from 2012 until mid-2014.
+   - From 2014 to 2016, there was a significant decline, bottoming out at about $150 billion.
+   - Spending then plateaued at around $160 billion until early 2021.
+   - Starting in 2021, there was an uptick, reaching approximately $220 billion by the end of the range.
+
+### Summary:
+Over the decade from 2012 to 2022, Russian government spending patterns reveal a divergence between federal and constituent entity spending. Both experienced notable declines during the 2014-2016 period. Post-2016, federal spending showed a steady increase, dramatically spiking around 2021-2022. In contrast, constituent entities' spending remained relatively stable after the decline until starting to increase moderately in 2021. Overall, federal spending greatly outpaces constituent entity spending, especially in recent years.

@@ -1,0 +1,33 @@
+The image shows the menu board and an order screen at a fast-food drive-thru, specifically Wendy's. Here is a summary of the relevant information:
+
+### Order Screen (Your Bag)
+- **Subtotal:** $22.53
+- **Items Ordered:**
+  - **Breakfast Baconator:** Qty 1, $3.99
+  - **Classic Sausage Egg and Cheese Sandwich:** Qty 1, $6.39
+  - **Homestyle French Toast Sticks (6 piece):** Qty 1, $3.99
+  - **Bacon Egg and Cheese Biscuit with Applewood Smoked Bacon:** Qty 1, $3.49
+  - **Frosty-Ccino (Large, Chocolate):** Qty 1, $2.79
+  - **Decaffeinated Coffee (Small, with Coffee Creamer):** Qty 1, $1.29
+
+### Menu Board Highlights
+- **Promoted Items:**
+  - **Breakfast Baconator**
+  - **Homestyle French Toast Sticks**
+  
+- **Combo Options:**
+  - Maple Bacon Croissant Combo
+  - Sausage, Egg & Cheese Croissant Combo
+  - Honey Butter Chicken Biscuit Combo
+  - Bacon Egg and Swiss Croissant Combo
+  - Classic Sausage, Egg & Cheese Combo
+  - Classic Bacon, Egg & Cheese Combo
+
+- **Upgrades and Sides:**
+  - Option to upsize any combo by adding a small drink and seasoned potatoes
+  - Side options include seasoned potatoes, homestyle French toast sticks, oatmeal bar, sausage gravy & biscuit, and more.
+  
+- **Drinks:**
+  - Options include Hot Coffee, Cold Brew Coffee, Frosty-Ccino, and seasonal beverages.
+
+This combination of the electronic order screen and physical menu board provides a clear glimpse into the offerings and current order at this fast-food restaurant.

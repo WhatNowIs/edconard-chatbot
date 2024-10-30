@@ -1,0 +1,17 @@
+The chart titled "Mexico becomes top U.S. trading partner at start of 2023" illustrates the share of total U.S. trade in percentages with Mexico, Canada, and China from 2000 to early 2023. The data are seasonally adjusted and presented on a quarterly basis, including figures up to April 2023.
+
+Key highlights:
+
+1. **Trade Shares Over Time**:
+   - **Canada** (blue line): Started with a high share (close to 20%) in 2000, experiencing a gradual decline over the years. Canada’s share decreased significantly after the U.S. tariffs on Chinese exports were announced and during the COVID-19 pandemic.
+   - **China** (red line): Displayed notable growth from around 5% in 2000, peaking near 15% around 2018. However, it began to decline, especially after 2018 when the U.S. tariffs on Chinese exports were announced and during the COVID-19 pandemic.
+   - **Mexico** (green line): Initially steady around 10%-15%, Mexico’s trade share steadily increased, crossing over China and Canada by early 2023.
+
+2. **Influential Events**:
+   - **U.S. tariffs on Chinese exports (2018)**: Triggered a decline in the trade share with China.
+   - **COVID-19 pandemic (2020)**: Caused significant volatility in the trade shares with all three countries.
+
+3. **Recession Periods**:
+   - Indicated by shaded areas on the chart, these periods show economic downturns where trade shares might be affected.
+
+By early 2023, Mexico emerged as the top trading partner of the United States, surpassing both Canada and China.

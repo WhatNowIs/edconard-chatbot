@@ -1,0 +1,9 @@
+The image is a bar chart comparing the median Price-to-Earnings (PE) ratios of the Top 10 companies, the S&P 500, and the companies excluding the Top 10 from 1990 to 2024. The chart, titled "The current AI bubble is bigger than the 1990s tech bubble," is provided by Apollo.
+
+Key points:
+1. **1990s Tech Bubble**: The median PE ratios peaked around the 1995-2000 period, with the Top 10 companies hitting just below 30, while the S&P 500 and companies excluding the Top 10 hovered around 20.
+2. **Recent AI Bubble (2024)**: The PE ratios for the Top 10 companies have soared to nearly 45, surpassing the levels of the 1990s tech bubble by a significant margin.
+3. **Comparison with Historical Periods**: Throughout the years, the PE ratios for the S&P 500 and companies excluding the Top 10 have remained relatively stable, generally between 15 and 25.
+4. **S&P 500 and Excluding Top 10**: There is a noticeable divergence in 2024, where the PE ratios of the Top 10 companies are significantly higher than the rest of the S&P 500 and companies excluding the Top 10.
+
+This chart highlights the increased speculations and valuations concentrated in the top companies driven by AI, indicating a substantial market bubble compared to the 1990s tech bubble.

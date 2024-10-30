@@ -1,0 +1,10 @@
+The image presents a graph titled "More Energy Per Worker," which depicts the US oil and gas production over a trailing 12 months in British Thermal Units (BTU) equivalent per oil and gas employee from around 1990 to 2023. Key observations include:
+
+1. **Historical Trends**: From 1990 onwards, there have been fluctuations in the BTU production per worker.
+2. **Significant Drop and Recovery**: A notable decline occurred around the 2010s, reaching a low point before recovering significantly around 2020.
+3. **Peak and Stabilization**: Production per worker saw a sharp increase, peaking around 2021, before stabilizing slightly below the 200 billion BTUs mark.
+4. **Benchmark Level**: The graph highlights a benchmark level of 167 billion BTUs in February 2020 as a reference point.
+
+**Sources**: The data is sourced from the US Energy Information Administration and the US Bureau of Labor Statistics. The methodology used involves the field production of crude oil and marketed production of natural gas divided by payroll employment in oil and gas extraction and support activities for oil and gas operations.
+
+This graph underscores the changes in productivity within the US oil and gas sector, illustrating significant variability and improved energy output per worker in recent years.

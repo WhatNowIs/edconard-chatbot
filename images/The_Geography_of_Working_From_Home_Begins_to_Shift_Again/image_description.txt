@@ -1,0 +1,25 @@
+The image provides a list of the top neighborhoods in the United States where employed residents primarily worked from home in 2022. These neighborhoods are part of central cities in metropolitan areas. Here's a summary of the data:
+
+### Top WFH Neighborhoods by Percentage of Employed Residents:
+1. **Oakland (Oakland Hills), CA** - 45.4%
+2. **District of Columbia (West)** - 44.1%
+3. **Raleigh (Northwest), Morrisville, NC** - 40.9%
+4. **Seattle (Lake Union-Downtown)** - 40.9%
+5. **Arlington County (North), VA** - 40.5%
+6. **Snoqualmie, Cottage Lake, Union Hill, Novelty Hill, WA** - 40.0%
+7. **Johns Creek, Alpharetta, GA** - 39.8%
+8. **San Francisco (South of Market, Mission)** - 39.5%
+9. **Charlotte (Northwest), NC** - 39.5%
+10. **Santa Monica, CA** - 39.0%
+11. **Austin (Lost Creek, Barton Creek)** - 38.9%
+12. **Austin (Northwest)** - 38.6%
+13. **Seattle (West Seattle-Industrial)** - 38.6%
+14. **Greater Bellevue, WA** - 38.4%
+15. **San Francisco (Western Addition, Marina)** - 38.1%
+16. **Seattle (Northwest)** - 38.1%
+17. **Sammamish, Issaquah, Mercer Island, Newcastle, WA** - 38.1%
+18. **South Bethesda, Chevy Chase, MD** - 37.9%
+19. **Chicago (Loop, Near North & South Sides)** - 37.8%
+20. **Redmond, Kirkland, Inglewood, Finn Hill, WA** - 37.6%
+
+This list emphasizes areas with a significant portion of residents working remotely, showcasing a shift in work patterns towards remote work in various prominent neighborhoods across the country.

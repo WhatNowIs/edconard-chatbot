@@ -1,0 +1,26 @@
+The image contains a bar chart with the title "China PE Funds Face a Tough Fundraising Market" and the subtitle "This year's haul is heading for a decade-low." The data, sourced from Preqin, shows the aggregate capital raised (in billions of dollars) by China private equity (PE) funds from 2013 to Q2 2023. 
+
+Here is a summary of the information:
+
+1. **Trend Over the Years:**
+   - **2013:** $29.8 billion
+   - **2014:** $50.1 billion
+   - **2015:** $87.3 billion
+   - **2016:** $190.5 billion (peak)
+   - **2017:** $183.0 billion
+   - **2018:** $169.5 billion
+   - **2019:** $126.2 billion
+   - **2020:** $114.8 billion
+   - **2021:** $94.1 billion
+   - **2022:** $33.3 billion
+   - **Q2 2023:** $9.9 billion (projected to be lowest in a decade if trend continues)
+
+2. **Key Insights:**
+   - The peak of aggregate capital raised was in 2016 at $190.5 billion.
+   - There has been a significant decline since 2016.
+   - The fundraising numbers in 2022 dropped to $33.3 billion, showing a marked reduction.
+   - The capital raised in Q2 2023 is only $9.9 billion, indicating that this year might see the lowest fundraising in a decade.
+
+3. **Conclusion:**
+   - China’s PE funds are experiencing a tough fundraising market, with values significantly lower than their peak in the mid-2010s.
+   - The current year (2023) is on track to having the lowest fundraising figures in the past decade.

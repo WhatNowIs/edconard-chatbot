@@ -1,0 +1,14 @@
+The image is a graph from the Congressional Budget Office and the Committee for a Responsible Federal Budget estimating future U.S. federal expenditure as a percentage of GDP. The graph compares historical and projected spending on various programs from 2010 to 2052. The key spending categories shown are Social Security, Medicare, Defense, Nondefense Discretionary, and Net Interest.
+
+Key Points:
+1. **Net Interest**: Interest payments on national debt are projected to exceed spending on all other major federal programs. Beginning around 2029, net interest surpasses defense spending. By around 2042, it exceeds nondefense discretionary spending and by 2046, Medicare. By approximately 2049, net interest costs surpass Social Security spending. Net interest spending is projected to reach 6.7% of GDP by 2052.
+  
+2. **Social Security**: This is projected to stay relatively stable, fluctuating, and reaching around 6.2% of GDP by 2052.
+  
+3. **Medicare**: Spending is shown to maintain a gradual increase, reaching around 5.5% of GDP by 2052.
+  
+4. **Defense**: This category shows a gradual decline, stabilizing around 2.6% of GDP from the late 2020s onward.
+  
+5. **Nondefense Discretionary**: Similar to defense spending, nondefense discretionary spending declines and stabilizes around 2.9% of GDP from the late 2020s to 2052.
+
+Overall, the chart highlights a significant concern that the cost of servicing national debt (net interest) is projected to become the largest federal expenditure, surpassing major programs like Medicare and Social Security in the long term.

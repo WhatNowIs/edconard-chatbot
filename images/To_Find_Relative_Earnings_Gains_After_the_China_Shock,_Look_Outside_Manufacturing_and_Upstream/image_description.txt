@@ -1,0 +1,33 @@
+The image is a composite figure consisting of two panels depicting "Median Nominal Earnings Growth Among Initial M Workers" across different sectors, focusing on workers transitioning from manufacturing between 2000 and 2007 in 46 states. The left panel shows earnings growth for all workers across various sectors, while the right panel compares this growth between counties with high and low exposure to PNTR (Permanent Normal Trade Relations).
+
+**Left Panel: All Workers**
+- Sectors with significant positive growth include:
+  - Mining (21)
+  - Utilities (22)
+  - Management (55)
+  - Finance, Insurance (52)
+  - Information (51)
+
+- Sectors with minimal to negative growth include:
+  - Admin, Support, Waste Management (56)
+  - Arts, Entertainment, Recreation (71)
+  - Hotel, Food (72)
+  - Education (61)
+  - Retail (44-45)
+
+**Right Panel: By County Exposure to PNTR**
+- Sectors with high exposure (in orange) to PNTR tend to have lower earnings growth compared to low exposure (in blue). 
+- High exposure counties show significant negative growth in sectors such as:
+  - Admin, Support, Waste Management (56)
+  - Arts, Entertainment, Recreation (71)
+  - Hotel, Food (72)
+  - Education (61)
+
+- Conversely, sectors with low exposure show positive growth, especially in:
+  - Mining (21)
+  - Utilities (22)
+
+**Source Information:**
+- Data sources include LEHD (Longitudinal Employer-Household Dynamics), LBD (Longitudinal Business Database), and the authors' calculations.
+- The analysis focuses on workers transitioning out of manufacturing across various 2-digit NAICS sectors.
+- Some states like Alabama, Arkansas, New Hampshire, Mississippi, and the District of Columbia are excluded due to lack of information in LEHD for these years.

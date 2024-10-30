@@ -1,0 +1,17 @@
+The image is a series of graphs illustrating the relationship between voter turnout and the share of the two-party vote received by the Democratic Party across different presidential election years: 2000, 2004, 2008, 2012, 2016, and 2020. The analysis indicates how changes in voter turnout impact Democratic performance over time. Key observations from each graph are summarized below:
+
+1. **2000**: The graph suggests an increase in the Democratic vote share with higher turnout, although the confidence interval is wide.
+   
+2. **2004**: Similar to 2000, higher turnout tends to favor Democrats, with the graph showing an upward trend.
+   
+3. **2008**: Clearly, the more people who voted, the better Democrats performed, evidenced by a sharp upward trend with increasing voter turnout.
+   
+4. **2012**: This graph also shows a positive correlation between voter turnout and Democratic vote share, continuing the upward trend.
+   
+5. **2016**: Unlike previous years, this graph shows a dip at lower turnout levels and then a slight increase, indicating a more neutral or complex relationship between turnout and Democratic performance.
+   
+6. **2020**: In contrast to earlier years, Democrats fare better in low-turnout elections, as evidenced by a higher vote share at low turnout levels that declines with increasing turnout.
+
+The trend indicates a shift over time: high voter turnout historically favored Democrats, but in recent years, specifically in 2020, higher turnout might not be as beneficial to them and might even boost their opposition, potentially benefiting Trump. The shading in the graphs represents 95% confidence intervals, adding a measure of uncertainty to the model predictions.
+
+Sources used include FT analysis of Cooperative Election Study and various academic studies, highlighting the rigorous analytical foundation behind these insights.

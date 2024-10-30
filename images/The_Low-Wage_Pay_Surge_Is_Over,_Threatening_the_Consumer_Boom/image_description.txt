@@ -1,0 +1,15 @@
+The image is a line graph titled "Wage growth by wage level," sourced from the Federal Reserve Bank of Atlanta. It shows the 12-month moving average of median wage growth on an hourly basis from around 2020 to 2023. The graph breaks down wage growth into different income quartiles: Lowest, 2nd, 3rd, and Highest, along with an overall average.
+
+Key observations include:
+
+1. **Lowest Quartile (blue line):** This group experienced significant variability in wage growth, peaking sharply around mid-2022 at about 7.5% before declining slightly.
+   
+2. **2nd Quartile (dark gray line):** Initially, the wage growth was stable but started increasing around mid-2021, peaking at just below 7% towards the end of 2022 and then dropping slightly afterward.
+   
+3. **3rd Quartile (light gray line):** This quartile saw a steadier, less pronounced increase, with growth rates peaking slightly above 5% around early 2023 before showing a minor decrease.
+   
+4. **Highest Quartile (beige line):** The highest quartile displayed the least volatility, with a gradual increase that peaked at just over 5% and then slightly decreased.
+   
+5. **Overall (dark gray line):** The overall wage growth follows a similar pattern to the individual quartiles, peaking around 6% in mid to late 2022 before seeing a mild decline.
+
+Throughout the entire period, there were notable increases in wage growth starting from mid-2021, peaking across all quartiles by late 2022, followed by a drop in early 2023. The impact of potential economic disruptions, like the recession indicated in the graph, likely influenced these trends.

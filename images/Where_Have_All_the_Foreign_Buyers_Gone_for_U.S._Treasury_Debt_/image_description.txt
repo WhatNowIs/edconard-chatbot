@@ -1,0 +1,32 @@
+The image is a graph titled "Foreign Flows" depicting the buying or selling of U.S. Treasurys from overseas by three primary categories: China, Other central banks, and Private investors. The timeline spans from early 2013 to 2023, with the y-axis representing amounts in billions of dollars ranging from -$600 billion to $600 billion.
+
+### Key Points:
+
+1. **Categories:**
+   - **China (Red)**
+   - **Other central banks (Gray)**
+   - **Private investors (Yellow)**
+
+2. **Trends Over Time:**
+   - From 2013 to early 2016, China and other central banks predominantly sold U.S. Treasurys (negative values).
+   - Starting in around 2016, the graph shows fluctuations with both buying and selling activities by all groups, with moments of positive and negative balance shifting frequently.
+   - Around 2018, other central banks and private investors began more substantial positive flows.
+   - There was a notable increase in purchases from mid-2020 attributed to private investors, peaking close to $500 billion.
+
+3. **10-Year Average:**
+   - A 10-year average is marked around zero, indicating overall net positions over the decade balanced out the large buys and sells.
+
+4. **Recent Trends (2020-2023):**
+   - A strong positive purchasing trend was observed from mid-2020 by private investors.
+   - Post-2021, there's been another significant sell-off by China and other central banks but sustained purchases by private investors up to early 2023.
+
+5. **China’s Activity:**
+   - China, shown in red, has considerable sell-off periods marked in negative from early 2013 through to several years, with deviations above the average line occasionally.
+   - Note: China's data includes purchases via a Belgian custodian account.
+
+### Data Source:
+- Council on Foreign Relations
+- The Wall Street Journal, Alana Pipe
+
+### Conclusion:
+The foreign flows of U.S. Treasurys show cyclical trends, with significant sell-offs by China and other central banks primarily during the earlier years, a period of net purchases from around 2016–2018, and increased activity by private investors starting in mid-2020, showing strong purchasing trends that help balance the overall net position over the decade.

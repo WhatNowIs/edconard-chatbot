@@ -1,0 +1,11 @@
+The image is a line graph from The Economist, titled "The America of oil," which shows crude oil production as a percentage of the world total for three countries: the United States, Russia, and Saudi Arabia. 
+
+Here's a summary of the key points:
+
+- The data spans from 2017 to a projected forecast for Q4 of 2023.
+- The United States has shown a significant increase in its crude oil production starting from 2017, leading to a peak around 2023 where production reaches approximately 16% of the world's total.
+- Russia's production has been relatively stable with minor fluctuations, standing slightly above 12% by 2023 but showing a slight downward trend.
+- Saudi Arabia's crude oil production remained stable until it showed a sharp decline around 2022, leveling off at about 11% by 2023.
+- By the projected Q4 of 2023, the United States is leading in crude oil production with the highest percentage, followed by Russia and then Saudi Arabia.
+
+Overall, the United States has become a dominant player in crude oil production globally as evidenced by their increasing share depicted in the graph.

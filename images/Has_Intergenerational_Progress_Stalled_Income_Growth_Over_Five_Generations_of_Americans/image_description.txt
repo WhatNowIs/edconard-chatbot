@@ -1,0 +1,46 @@
+The image presents two graphs showing the median market income by age and generation, separated by different sharing units: couples and households.
+
+### Figure 2a: Couple Sharing Unit
+- **X-axis**: Age range from 20 to 80 years.
+- **Y-axis**: Median market income in dollars (up to 60,000).
+- **Generations**:
+  - Lost (1883–1900)
+  - Greatest (1901–1927)
+  - Silent (1928–1945)
+  - Boomers (1946–1964)
+  - Gen X (1965–1980)
+  - Millennials (1981–1996)
+  - Gen Z (1997–2012)
+
+**Observations**:
+- Median market income starts low in the 20s, increases steadily, peaks around the age of 50, and then gradually declines.
+- Boomers and Gen X appear to have the highest peak incomes, with Boomers slightly outperforming other generations.
+- Millennials show a visible upward trajectory but do not reach the peak income of Gen X or Boomers within the observed age range.
+
+### Figure 2b: Household Sharing Unit
+- **X-axis**: Age range from 20 to 80 years.
+- **Y-axis**: Median market income in dollars (up to 60,000).
+- **Generations**:
+  - Lost (1883–1900)
+  - Greatest (1901–1927)
+  - Silent (1928–1945)
+  - Boomers (1946–1964)
+  - Gen X (1965–1980)
+  - Millennials (1981–1996)
+  - Gen Z (1997–2012)
+
+**Observations**:
+- Similar trend as Figure 2a: an initial increase in income, a peak in middle age, followed by a decline.
+- Boomers have the highest peak median income around age 50.
+- Millennials and Gen X follow similar trajectories with Millennials still on an upward trend within the observed age range.
+- Gen Z data is starting to show an upward trend in the early age range.
+
+### Source Information:
+- Data derived from the Current Population Survey Annual Social and Economic Supplement (1964–2023).
+- Calculations and definitions of generational cohorts provided by Burkhauser et al., forthcoming.
+- Adjustments made for inflation using the Personal Consumption Expenditure price index.
+
+### Key Takeaways:
+- Both couple and household median incomes peak around middle age (late 40s to early 50s) for all generations.
+- Boomers and Gen X show higher peak incomes compared to newer generations.
+- Millennials and Gen Z are on an upward path, but the full peaks are not yet observed within the current age data.

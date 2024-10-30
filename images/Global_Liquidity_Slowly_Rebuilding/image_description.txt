@@ -1,0 +1,19 @@
+The image is a graph titled "US 10-Year Treasury Note – Implied Terminal Fed Funds Rate and Term Premia, 2019-23 (Daily)" sourced from CrossBorder Capital and US Federal Reserve. This graph tracks the daily changes in the implied terminal Fed Funds policy rate (in black) and the US 10-year term premium (in orange) from 2019 to 2023.
+
+### Key Observations:
+1. **Terminal Fed Funds Policy Rate (Black Line)**:
+   - Started around 2.5% in 2019.
+   - Experienced some fluctuations but generally trended downward until mid-2021.
+   - From mid-2021 to early 2022, significant upward movement began.
+   - Dramatic rise from early 2022, peaking above 5.5% by early 2023.
+   - As of late 2023, it leveled around 5.25%.
+
+2. **US 10-Year Term Premium (Orange Line)**:
+   - Began in 2019 just under 0%.
+   - Gradually declined with some fluctuations through 2020 and 2021.
+   - Notable spikes in early 2021.
+   - From mid-2021 to 2023, there was a continuous downward trend.
+   - Reached levels below -1.8% by late 2023.
+
+### Summary:
+The graph presents a clear inverse relationship between the implied terminal Federal Funds rate and the 10-year US Treasury term premium since 2019. While the Federal Funds rate has exhibited significant increases, particularly from mid-2021 onwards, the 10-year term premium has decreased steadily reaching negative territory by the end of 2023. This suggests increasing borrowing costs as indicated by the Fed's policy rate hikes while long-term bond yields (adjusted for term premium) are becoming less attractive, indicating potential market concerns over long-term economic growth or inflation.

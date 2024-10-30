@@ -1,0 +1,15 @@
+This image presents a line graph from The Hamilton Project and Brookings institution, titled "CBO estimates of net immigration, by category, 2000–24," using data sourced from the Congressional Budget Office (CBO) for the year 2024. The graph tracks net immigration by three categories from the year 2000 to projections for 2024: lawful permanent residents +, INA nonimmigrants, and other nonimmigrants.
+
+Key observations include:
+1. **Lawful Permanent Residents +**: Represented by a medium shade (likely blue), this group shows relatively consistent net immigration starting from around 0.5 million in 2000, experiencing minor fluctuations but generally remaining steady over the years. Around 2024, the number stabilizes a little above 0.5 million.
+
+2. **INA Nonimmigrants**: Represented by the light shade, these numbers show significant fluctuations, dipping notably around 2009 and again in 2019, but somewhat stabilizing with smaller fluctuations throughout the years.
+
+3. **Other Nonimmigrants**: Represented by the dark shade, shows a dramatic upward trend starting around 2020. The net immigration for this category rises steeply, reaching almost 2.5 million by 2024.
+
+The graph indicates that there has been substantial variation in net immigration among the categories, with the most dramatic increase seen in the "Other Nonimmigrants" category from 2020 onwards. The lawful permanent residents + category has remained relatively steady, while INA nonimmigrants display significant fluctuations but without a strong upward or downward trend. 
+
+Additional notes clarify the categories:
+- Lawful permanent residents + includes lawful permanent residents (LPRs) and those eligible for LPR status.
+- INA nonimmigrants refer to temporary visa holders such as students and workers.
+- Other nonimmigrants refer to those with nonlegal or pending immigration status.

@@ -1,0 +1,13 @@
+The image contains two graphs from Goldman Sachs Global Investment Research, illustrating the trends and projections for US Core PCE (Personal Consumption Expenditures) inflation and consumer inflation expectations.
+
+**First Graph (Left): US Core PCE Inflation**
+- **Actual (Current)**: The solid dark blue line shows the actual core PCE inflation rate, which has been declining sharply from around 3.75% in August 2023 to below 3.0% by November 2023.
+- **GS Forecast, Current**: The dashed dark blue line indicates the current Goldman Sachs forecast, projecting a further gradual decline in core PCE inflation to about 2.35% by November 2024.
+- **GS Forecast, as of September FOMC**: The light blue dashed line represents the forecast based on the September Federal Open Market Committee (FOMC), suggesting a slightly more optimistic decline to about 2.20% by November 2024.
+
+**Second Graph (Right): FRBNY Median Consumer Inflation Expectations**
+- **One-Year Ahead**: The dark blue line tracks the median consumer inflation expectations one year ahead, showing a peak above 6% in the 2021-2022 period, but declining significantly back to around 3% by late 2023 and early 2024.
+- **Three-Year Ahead**: The light blue line shows the median consumer inflation expectations three years ahead, which also peaked during the 2021-2022 period and has since returned to around 3%, mirroring pre-pandemic levels from around 2016 to 2019.
+
+**Overall Summary:**
+US Core PCE inflation is on a downward trend, indicating a softening of inflationary pressures. Goldman Sachs forecasts suggest this decline will continue into late 2024. Additionally, consumer inflation expectations, as measured by the Federal Reserve Bank of New York (FRBNY), have reverted to levels similar to those seen before the COVID-19 pandemic, signaling stabilizing inflation expectations among consumers for both one-year and three-year horizons.

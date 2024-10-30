@@ -1,0 +1,15 @@
+The graph presents the ratio of Real Gross Domestic Product (Real GDP) to Real Potential Gross Domestic Product (Potential GDP) from 2005 to 2022, effectively showing how actual economic output compares to potential economic output over this period. This ratio is significant as it indicates the level of resource utilization within an economy.
+
+Key observations from the graph:
+
+1. **2005-2008**: The ratio remains relatively stable around 1.00, indicating that Real GDP was close to Potential GDP.
+
+2. **2008-2009 (Great Recession)**: There is a sharp decline in the ratio, dropping to around 0.92, reflecting a significant underutilization of economic resources due to the financial crisis and subsequent recession.
+
+3. **2010-2020**: The ratio gradually improves, fluctuating around 0.96-0.98, showing periods of growth but not quite reaching the pre-recession levels of resource utilization.
+
+4. **2020 (COVID-19 Pandemic)**: There is a dramatic drop, indicating severe economic disruption and a substantial gap between actual output and potential output.
+
+5. **2021-2022**: The ratio rebounds sharply, approaching and eventually exceeding the previous peaks, suggesting a strong recovery and efficient resource utilization.
+
+Overall, the graph highlights significant economic events and their impacts on the U.S. economy's output relative to its potential, including the Great Recession and the COVID-19 pandemic, and the subsequent recoveries. The data sources are the Bureau of Economic Analysis (BEA) and the Congressional Budget Office (CBO), and the graph is provided by the Federal Reserve Bank of St. Louis (FRED).

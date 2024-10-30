@@ -1,0 +1,20 @@
+The provided graph is a line chart titled "Regular price index, by quartile" that shows the matched-model regular price indexes for products in quartiles of average unit price in 2019 for the United States, spanning from January 2019 to April 2023. 
+
+Key points:
+1. **Quartiles**:
+   - **Q1 (cheapest)**: Represented by a solid red line.
+   - **Q2**: Represented by a dashed green line.
+   - **Q3**: Represented by a dash-dot orange line.
+   - **Q4 (most expensive)**: Represented by a dotted blue line.
+
+2. **Trend**:
+   - All quartiles start with indices close to 100 in early 2019.
+   - From 2019 to 2020, all quartiles maintain similar indices with slight oscillations.
+   - Beginning in early 2021, all indices begin to rise sharply.
+   - The increasing trend continues until the end of the observed period in April 2023.
+
+3. **Difference in Price Index**:
+   - While all quartiles follow a similar upward trend, Q1 (cheapest) consistently has the highest index and Q4 (most expensive) consistently has the lowest index.
+   - By April 2023, Q1 peaks at just below 130, Q2 and Q3 at around 125 and 120, respectively, and Q4 at close to 115.
+
+This graph illustrates how prices across different product quartiles have increased similarly over the past few years, with cheaper products (Q1) experiencing a more significant relative price increase compared to the more expensive products (Q4).

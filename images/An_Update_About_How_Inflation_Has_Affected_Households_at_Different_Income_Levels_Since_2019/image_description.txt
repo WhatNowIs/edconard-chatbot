@@ -1,0 +1,21 @@
+The image presents data from the Congressional Budget Office (CBO) showing changes since 2019 in the share of household income required to purchase a 2019 consumption bundle, categorized by income quintile. The key points are:
+
+1. **Change in Share of Adjusted Income After Transfers and Taxes**:
+   - For all income quintiles (lowest to highest), the share of adjusted income needed to buy the 2019 consumption bundle decreased by 2023.
+   - The highest quintile experienced the most significant decrease, indicating that their adjusted income increased more than prices from 2019 to 2023.
+
+2. **Change in Share of Adjusted Market Income**:
+   - Similar to adjusted income after transfers and taxes, all quintiles saw a decrease in the share of adjusted market income needed for the 2019 consumption bundle by 2023.
+   - The largest decrease was observed in the highest quintile, suggesting a notable rise in adjusted market incomes over the period.
+
+3. **Summary Points**:
+   - In 2023, households in all income quintiles were able to purchase the same bundle of goods and services as in 2019 with a smaller portion of their income, reflecting income growth outpacing price increases.
+   - This trend was true for both adjusted income after transfers and taxes and adjusted market income.
+
+Data Source: Congressional Budget Office (CBO).
+
+**Definitions**:
+- **Adjusted Income After Transfers and Taxes**: Income after accounting for government transfers and income taxes.
+- **Adjusted Market Income**: Income before accounting for government transfers and taxes.
+
+Each quintile contains approximately equal numbers of households, sorted by income adjusted for household size. The lowest quintile does not include households with negative income.

@@ -1,0 +1,12 @@
+The image illustrates the number of US banks exceeding the 2006 Commercial Real Estate (CRE) loan concentration guidance from March 2021 to March 2023. The data highlights two key categories:
+
+1. Banks with CRE loans at least 300% of risk-based capital and 36-month CRE growth of 50% or higher.
+2. Banks with Construction and Development (C&D) loans at least 100% of risk-based capital.
+
+The chart indicates a steady increase in the number of US banks exceeding the 2006 CRE loan concentration guidance over the two-year period. In March 2021, approximately 200 banks had significant CRE loan concentrations, which increased to nearly 700 banks by March 2023.
+
+Key points:
+- The number of banks exceeding CRE loan concentration thresholds more than tripled from March 2021 to March 2023.
+- Both the number of banks exceeding C&D loan concentration guidance and overall CRE loan concentration guidance saw consistent growth during this period.
+  
+Source: S&P Global Market Intelligence, Apollo Chief Economist. The data, provided as of May 2023, is based on regulatory filings. Note that C&D refers to Construction and Development loans.

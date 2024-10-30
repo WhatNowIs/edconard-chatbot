@@ -1,0 +1,17 @@
+This image is a graph titled "Figure 1. Share Migrated by Rank," which illustrates the migration patterns of students based on their rank at the Joint Entrance Exam (JEE) for admission to the Indian Institutes of Technology (IIT).
+
+### Key Points:
+1. **Graph Axes**:
+   - **Horizontal Axis (X-axis)**: Rank at the Joint Entrance Exam (All India Rank).
+   - **Vertical Axis (Y-axis)**: Share of students who migrated.
+
+2. **Data Series**:
+   - **Overall Migration**: Represented by a red line with diamond markers.
+   - **Migration for Grad School**: Represented by a grey dashed line with square markers.
+
+3. **Observations**:
+   - **Overall Migration**: The share of migration fluctuates at different ranks but generally increases as ranks improve, peaking significantly at the top ranks.
+   - **Migration for Grad School**: The trend remains relatively lower than the overall migration but shows a rise among better ranks, eventually exceeding the overall migration rate around the top ranks (approximately top 30).
+
+### Notes:
+The data is derived from the 2010 JEE exam-takers who had migrated by 2018, focusing on those in the general category. This analysis utilizes public data released from the 2010 JEE and reflects a thorough data collection effort concerning migration outcomes.

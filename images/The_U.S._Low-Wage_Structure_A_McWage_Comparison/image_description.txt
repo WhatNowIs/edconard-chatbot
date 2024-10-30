@@ -1,0 +1,20 @@
+The figure presents a comparative analysis of the extent of McWage censoring at the state minimum wage level in the years 2016 and 2023.
+
+### Key Observations:
+1. **2016 Data:**
+   - States with a state minimum wage around $7-8 USD exhibit higher shares of McWages being censored at the state minimum wage level. 
+   - Notable states with high McWage censoring include Mississippi, Louisiana, Georgia, South Carolina, Texas, and Alabama.
+   - States with a higher minimum wage, such as California, Massachusetts, New York, and Washington D.C., show lower shares of McWages censored, indicating that fewer workers are earning exactly the minimum wage in these states.
+
+2. **2023 Data:**
+   - By 2023, the state minimum wages have generally increased across many states.
+   - The spread of McWage censoring data points has shifted to the right, indicating higher state minimum wages.
+   - States like California, Washington, New York, and Massachusetts continue to have higher minimum wages ($13-16 USD) but show varied shares of McWages censored, with some reduction in censoring noticeable.
+   - Some states like Arkansas and Virginia have moved towards higher minimum wages while also showing reduced shares of McWages censored.
+
+### Conclusions:
+- From 2016 to 2023, there has been a significant upward shift in state minimum wages.
+- States with low minimum wages in 2016 generally show higher shares of McWages censored, meaning more workers earn exactly the minimum wage in those states.
+- The increase in state minimum wages by 2023 is accompanied by a notable reduction in the share of McWages censored, indicating that fewer workers are earning exactly the minimum wage and possibly benefiting from higher wages overall.
+  
+Overall, the data suggests an improvement in wage conditions for minimum wage earners in the U.S. over the period from 2016 to 2023, with a trend towards higher state minimum wages and potentially less wage suppression at the minimum wage level.

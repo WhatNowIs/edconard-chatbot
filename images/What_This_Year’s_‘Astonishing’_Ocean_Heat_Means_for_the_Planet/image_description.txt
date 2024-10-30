@@ -1,0 +1,20 @@
+The image displays a graph showing the daily average sea surface temperatures from January to December, with data spanning the years from 1982 to 2022. Key points of the graph are:
+
+1. **2023 Sea Surface Temperature**:
+   - The plot highlighted in blue represents the temperature trend for the year 2023.
+   - As of July 31, 2023, sea surface temperature reached approximately 69.8°F.
+
+2. **1991-2020 Average**:
+   - The dashed line represents the average sea surface temperature for the period from 1991 to 2020. 
+   - This average shows a prominent seasonal trend with the peak occurring around mid-year and a decrease towards the end of the year.
+
+3. **All Other Years (1982-2022)**:
+   - The various thin gray lines represent sea surface temperatures for other years between 1982 and 2022.
+   - These lines show variability but generally follow the same seasonal pattern as the 1991-2020 average.
+
+4. **Temperature Range**:
+   - The temperature range depicted on the y-axis spans from about 67.5°F to 69.5°F.
+
+**Source and Data Note**:
+- The data source is Climate Reanalyzer from the Climate Change Institute at the University of Maine, based on NOAA's Optimum Interpolation Sea Surface Temperature (OISST) data.
+- The temperatures shown are average sea surface temperatures for ocean areas between 60 degrees north and 60 degrees south latitude.

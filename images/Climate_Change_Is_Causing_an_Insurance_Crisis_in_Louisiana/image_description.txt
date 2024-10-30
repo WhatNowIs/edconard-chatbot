@@ -1,0 +1,10 @@
+This image, sourced from the Louisiana Department of Insurance, depicts a significant surge in home insurance premiums in Louisiana from 2018 to 2022. The title "Louisiana Insurance Rates Surge" suggests that the increase is largely due to a dwindling number of underwriters following back-to-back storms.
+
+The data is visualized in a bar graph that highlights the annual percentage increase in average home insurance premiums over five years. The bars show the following respective increases:
+- 2018: Slight increase, near 0%
+- 2019: Slightly higher increase, but still below 2%
+- 2020: Similar increase to 2019
+- 2021: Noticeable increase, just above 5%
+- 2022: Significant surge, nearly reaching 20%
+
+This trend indicates that the average home insurance premiums in Louisiana rose dramatically in recent years, particularly spiking in 2022. The graph underscores the impact of consecutive storms and a reduced number of underwriters on the insurance market.

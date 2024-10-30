@@ -1,0 +1,20 @@
+The image titled "Figure 1: Correlation between Preferences and Actual Redistribution" presents three scatter plots demonstrating the relationships between the redistributive preferences of different socioeconomic status groups and the actual redistribution observed at the country level. The socioeconomic groups are distinguished as the top 5%, middle 5%, and bottom 5% of respondents based on a socioeconomic status index.
+
+1. **Top 5% Socioeconomic Group**:
+   - **Spearman's rho**: 0.157
+   - The scatter plot shows a weak positive correlation between the redistributive preferences of the top 5% and actual redistribution. 
+
+2. **Middle 5% Socioeconomic Group**:
+   - **Spearman's rho**: 0.406
+   - The scatter plot indicates a moderate positive correlation between the redistributive preferences of the middle 5% and actual redistribution.
+
+3. **Bottom 5% Socioeconomic Group**:
+   - **Spearman's rho**: 0.542
+   - The scatter plot reveals a stronger positive correlation between the redistributive preferences of the bottom 5% and actual redistribution compared to the other two groups.
+
+**General Trend**:
+The overall trend indicates that the redistributive preferences of the lower socioeconomic group (bottom 5%) have a stronger correlation with actual redistribution policies than those of the higher (top 5%) or middle socioeconomic groups.
+
+**Notes**:
+- The notes emphasize that these correlations are calculated on a country level, comparing redistributive preferences with actual redistributive measures.
+- Socioeconomic status groups are identified based on a predefined socioeconomic status index, which categorizes respondents into the top 5%, middle 5%, and bottom 5% of the socioeconomic distribution.

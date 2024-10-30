@@ -1,0 +1,11 @@
+The image presents data on the average drop in math scores for students from 3rd to 8th grade between 2019 and 2022, segmented by the type of learning environment (mostly in-person vs. mostly remote/hybrid) and socioeconomic status (richest districts vs. poorest districts). The key findings include:
+
+- **Mostly In-Person Learning:**
+  - Richest districts experienced a decline of 0.29 years behind in math scores.
+  - Poorest districts experienced a greater decline of 0.39 years behind in math scores.
+
+- **Mostly Remote/Hybrid Learning:**
+  - Richest districts experienced a decline of 0.44 years behind in math scores.
+  - Poorest districts experienced the most significant decline of 0.64 years behind in math scores.
+
+The data underscores that remote and hybrid learning environments, coupled with socioeconomic challenges, have exacerbated the decline in math performance, particularly for students in poorer districts.

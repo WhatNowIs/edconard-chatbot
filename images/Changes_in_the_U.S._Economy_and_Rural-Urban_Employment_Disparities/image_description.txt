@@ -1,0 +1,20 @@
+The image is a line graph that shows the change in total employment from 2000 to 2022, with 2007 as the base year (indexed at 100). The data is categorized into two groups: Metro (depicted by a solid blue line) and Nonmetro (depicted by a dashed orange line).
+
+### Summary:
+- **Initial Trends (2000-2006):**
+  - Metro employment started slightly below 95 in 2000 and experienced a slight decline until 2003. From 2003 to 2006, it gradually increased, approaching the 95 mark again by 2007.
+  - Nonmetro employment began near 100 in 2000, saw a minor decline until 2003, and then started a gradual increase, maintaining a value around 100 by 2007.
+
+- **Post-2007:**
+  - Following 2007, both Metro and Nonmetro employment experienced a decline during the 2008-2009 recession period with Nonmetro declining moderately and Metro showing a more significant dip.
+  - From 2010 to 2019, Metro employment consistently grew, surpassing the 100 index by 2012 and continually rising to around 110 by 2019.
+  - During the same period, Nonmetro employment increased slowly and steadily, reaching just below 105 by 2019.
+
+- **Pandemic Impact (2020-2022):**
+  - The year 2020 shows a noticeable decrease in employment for both groups, more pronounced in Nonmetro areas.
+  - By 2021 and 2022, both Metro and Nonmetro employment started to recover. Metro employment saw a significant rise, exceeding 110 by 2022. Nonmetro employment also rose but at a slower rate, approaching slightly above the 105 mark by 2022.
+
+### Key Insights:
+- Metro areas have demonstrated significant growth in employment over the period, especially after the 2008-2009 recession, continuing an upward trend until 2022.
+- Nonmetro areas experienced moderate growth with a less volatile trajectory, though they both similarly declined during the COVID-19 pandemic before starting to recover.
+- The overall trend indicates Metro areas have rebounded more strongly in terms of employment compared to Nonmetro areas as of 2022.

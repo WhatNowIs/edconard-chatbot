@@ -1,0 +1,17 @@
+The image shows a line graph that displays average insurance premiums over time (from the first half of 2014 to the first half of 2023) segmented by quintiles of disaster risk exposure, with data represented in real 2023 dollars. 
+
+The key quintiles represented are:
+- Risk Quintile 1 (lowest risk) 
+- Risk Quintile 2
+- Risk Quintile 3
+- Risk Quintile 4
+- Risk Quintile 5 (highest risk)
+
+Key points from the graph:
+1. **Risk Quintile 5 (highest risk)** shows the highest average premiums throughout the period, starting around 2500 and reaching nearly 3000 in 2023.
+2. **Risk Quintile 4** shows a relatively steady trend with premiums averaging around 2000 to 2200.
+3. **Risk Quintile 3** has similar premiums as Quintile 2 and 4 initially but shows fluctuations without significant long-term trend changes.
+4. **Risk Quintile 2** and **Risk Quintile 1** depict lower premiums, consistently hovering around 2000 or slightly below.
+5. The highest risk group exhibits more pronounced premium increases, especially noticeable towards the latest data points, indicating that higher disaster risk is a significant factor driving up insurance premiums over time.
+
+Overall, the graph highlights a clear correlation between disaster risk exposure and insurance premiums, with higher risk quintiles paying significantly more than lower risk groups.

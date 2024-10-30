@@ -1,0 +1,10 @@
+The image is a graph showing daily global 2-meter surface temperature anomalies for September relative to the 1991-2020 baseline. It highlights unprecedented temperature anomalies for September, with 2023 standing out significantly.
+
+Key Points:
+1. **Temperature Anomalies**: The graph illustrates temperature anomalies, measured in degrees Celsius, with lines representing different years.
+2. **2023 Record**: September 2023 experienced an anomaly of 0.93°C above the monthly average, marking it as the warmest September on record.
+3. **Comparison with Previous Years**: The red line representing 2023 is notably higher than other years, particularly those from 2000 onwards (shown in yellow) and 1940-1999 (shown in gray).
+4. **Significant Anomalies**: The graph highlights that 2016 had a significant temperature spike but 2023 surpassed this, especially in September.
+5. **Long-term Trends**: The data reflects a clear trend of increasing temperature anomalies over the years, indicating a pattern of global warming. 
+
+Overall, the graph underscores the severity of climate change, with September 2023 setting a new high for global temperature anomalies.

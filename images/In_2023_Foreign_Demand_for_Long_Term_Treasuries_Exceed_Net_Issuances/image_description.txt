@@ -1,0 +1,19 @@
+The graph illustrates the relationship between Treasury marketable long-term (LT) issuance versus foreign demand over time, measured in trailing 4-quarter sums and expressed in billions of USD.
+
+### Key Information:
+1. **Time Frame**: Q4-00 to Q2-23 (quarterly data spanning late 2000 to mid-2023).
+2. **Metrics Tracked**:
+   - **Note Issuance (green area)**: Represents the volume of marketable notes issued.
+   - **Treasury LT Issuance, net of Fed (black line)**: Shows long-term Treasury issuance after accounting for Federal Reserve's transactions.
+   - **Fed Purchases (yellow/orange line)**: Indicates the volume of purchases made by the Federal Reserve.
+   - **Foreign Purchases (solid blue line)**: Tracks the volume of purchases made by foreign entities.
+   - **Change in dollar FX Reserves (dashed blue line)**: Represents the changes in foreign exchange reserves held in USD.
+
+### Summary:
+- **Early Years (2000-2006)**: Low and stable issuance of notes with fluctuating but modest foreign participation and changes in FX reserves.
+- **Pre and Post-Financial Crisis (2007-2012)**: Significant increase in note issuance and Treasury LT issuance, peaking around Q4-10. Foreign purchases and changes in dollar FX reserves show notable fluctuation.
+- **Post-Crisis to Pre-Pandemic (2013-2019)**: Gradual normalization and decline in issuance and purchases, with a reduction in Fed purchases.
+- **COVID-19 Pandemic (2020-2021)**: Sharp increase in note issuance and Treasury LT issuance, with significant activity in Fed purchases peaking during this period.
+- **Recent Years (2022-2023)**: Post-pandemic normalization shows decreased issuance and a more balanced state between issuance and foreign demand, though the trajectory remains somewhat variable.
+
+This visualization highlights the interplay between Treasury issuance and foreign demand, including the Federal Reserve's influence over the years, showcasing significant events such as the 2008 financial crisis and the COVID-19 pandemic's economic impact.

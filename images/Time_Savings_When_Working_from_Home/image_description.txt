@@ -1,0 +1,26 @@
+The image displays a table summarizing commute time savings and the allocation of that saved time across different countries when working from home. Here's a detailed summary:
+
+**Table 1: Commute Time Savings and its Allocation, Country-Level Conditional Means**
+
+*Countries analyzed*: Australia, Canada, France, Germany, Italy, Japan, South Korea, United Kingdom, and United States.
+
+The table is divided into three main columns:
+1. **Daily Time Savings When Working from Home (in minutes)**: Indicates the average amount of time saved per day by not commuting.
+2. **Percentage of Time Savings Devoted to:**
+   - **Primary or Secondary Job**: Percentage of saved time allocated to work-related tasks.
+   - **Leisure**: Percentage of saved time allocated to leisure activities.
+   - **Caregiving**: Percentage of saved time allocated to caregiving responsibilities.
+
+**Key Findings**:
+
+- **Australia**: Saves 78 minutes daily with 43% for work, 33% for leisure, and 9% for caregiving.
+- **Canada**: Saves 65 minutes daily with 41% for work, 37% for leisure, and 7% for caregiving.
+- **France**: Saves 62 minutes daily with 44% for work, 26% for leisure, and 19% for caregiving.
+- **Germany**: Saves 65 minutes daily with 31% for work, 46% for leisure, and 8% for caregiving.
+- **Italy**: Saves 61 minutes daily with 34% for work, 31% for leisure, and 15% for caregiving.
+- **Japan**: Saves 100 minutes daily with 32% for work, 39% for leisure, and 8% for caregiving.
+- **South Korea**: Saves 86 minutes daily with 40% for work, 35% for leisure, and 6% for caregiving.
+- **United Kingdom**: Saves 73 minutes daily with 38% for work, 39% for leisure, and 9% for caregiving.
+- **United States**: Saves 55 minutes daily with 42% for work, 35% for leisure, and 8% for caregiving.
+
+Overall, commute time savings vary across countries, ranging from 55 minutes (United States) to 100 minutes (Japan). The primary allocation of saved time is predominantly work-related in most countries, followed by leisure activities, with relatively smaller portions of time dedicated to caregiving.

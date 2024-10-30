@@ -1,0 +1,16 @@
+The image is a chart detailing the percentage change from a year earlier in prices and earnings, spanning from 2019 to 2023. The data compares average hourly earnings to the consumer-price index (CPI). Here are the key points:
+
+- From 2019 to mid-2021, the average hourly earnings (depicted in a teal line) grew faster than the consumer-price index (depicted in a beige line), indicating that wages were increasing more rapidly compared to prices.
+- Starting from mid-2021, this trend reversed as the consumer-price index began to outpace the growth in average hourly earnings, marking a period where prices increased faster than wages.
+- This rapid increase in the CPI peaked around mid-2022, after which it gradually declined.
+- By mid-2023, the growth rate of average hourly earnings roughly matched or slightly exceeded the growth rate of the consumer-price index once again.
+
+Additional notes:
+- The data are not seasonally adjusted.
+- The consumer-price index data is for urban consumers.
+- Earnings data are for employees in the private sector.
+- Figures for May and June 2023 are preliminary.
+
+Source and Credits:
+- Data is sourced from the Labor Department via St. Louis Fed.
+- The chart is credited to Andrew Mollica of The Wall Street Journal.

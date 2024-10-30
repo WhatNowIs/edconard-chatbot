@@ -1,0 +1,9 @@
+The image is a graph titled "Multiple Jobholders on the Rise in the US," indicating the trend of people holding multiple jobs from the year 2000 to 2024. The graph, based on data from the Bureau of Labor Statistics and Bloomberg, is seasonally adjusted and highlights the total number of multiple jobholders (in millions).
+
+Key points from the graph:
+
+- **Trend from 2000 to 2024**: The number of multiple jobholders shows a fluctuating yet steadily increasing trend over the years.
+- **Recession Periods**: The graph marks recession periods (shaded in red) around 2001, 2007-2009, and early 2020. During these periods, there were notable dips in the number of multiple jobholders.
+- **Recent Rise**: The number of multiple jobholders has significantly increased post the 2020 recession, reaching approximately 8 million as of the latest data.
+
+Summary: The graph shows that the number of individuals holding multiple jobs in the US has been fluctuating yet generally increasing from 2000 to 2024, with notable declines during recession periods. Recently, post the 2020 recession, there has been a marked rise in the number of multiple jobholders, suggesting a robust job market.

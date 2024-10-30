@@ -1,0 +1,12 @@
+The image presents a bar chart titled "Figure 1. Job Distribution in OECD Countries: SMEs (1–249 Employees) and Large Enterprises (250+ Employees)." It displays the proportion of jobs in small and medium-sized enterprises (SMEs) versus large enterprises across various OECD countries.
+
+Key observations:
+- South Korea has the highest percentage of SME employment, nearing 80%.
+- The United States has the highest percentage of large enterprise employment, approximately 50%.
+- Many countries, including Greece, Estonia, Portugal, and Turkey, have over 70% of employment in SMEs.
+- The majority of OECD countries have over half of their employment in SMEs, with the remaining distribution in large enterprises.
+- Countries like Germany, the United Kingdom, and the United States show a more balanced distribution between SME and large enterprise employment.
+
+The chart uses two colors: orange for SMEs (1-249 employees) and blue for large enterprises (250+ employees), easily distinguishing the proportions of job distribution among these categories. It indicates a general trend where SMEs play a crucial role in providing employment, especially in certain countries, while large enterprises dominate employment in others. 
+
+Source: OECD, SME and Entrepreneurship Outlook 2021: Country Profiles, 2021.

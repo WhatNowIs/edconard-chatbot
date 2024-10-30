@@ -1,0 +1,16 @@
+The chart titled "US Power Generation: Nuclear vs Wind+Solar in TWh 2010-2022," sourced from eia.gov and created with Datawrapper, compares the annual power generation in terawatt hours (TWh) from nuclear and wind+solar energy from 2010 to 2022.
+
+Key observations:
+1. **Nuclear Power Generation**:
+   - The power generation from nuclear energy has remained relatively stable, hovering around 800 TWh from 2010 to 2022.
+   - There is a slight decreasing trend in nuclear power generation towards the end of the period.
+
+2. **Wind+Solar Power Generation**:
+   - Power generation from wind and solar energy has shown a significant and steady increase from about 100 TWh in 2010 to over 800 TWh in 2022.
+   - This growth represents a dramatic rise in the adoption of wind and solar energy over the 12-year period.
+
+3. **Trend Intersection**:
+   - Around 2022, the power generation from wind+solar sources surpasses that of nuclear, indicating a pivotal shift in the US power generation landscape.
+
+Summary:
+Between 2010 and 2022, the US saw a substantial increase in power generation from wind and solar sources, which grew from approximately 100 TWh to over 800 TWh. During the same period, nuclear power generation remained relatively steady around 800 TWh, with a slight downward trend. By 2022, wind+solar energy surpassed nuclear power in terms of total TWh generated, reflecting a significant shift towards renewable energy sources.

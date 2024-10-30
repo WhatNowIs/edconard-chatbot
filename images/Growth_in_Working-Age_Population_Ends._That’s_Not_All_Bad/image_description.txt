@@ -1,0 +1,15 @@
+The image is a graph showing the annual population growth rate for ages 15-64 in the US from 1951 to 2100. The data includes both actual growth rates and UN "medium scenario" projections. The key points are:
+
+1. **Historical Growth (1951-2000)**: 
+   - The actual growth rate, depicted in blue, shows significant fluctuations from about 2% to lower growth rates.
+   - There was a general declining trend.
+
+2. **Recent Historical Context (2000-Onwards)**:
+   - After 2000, the growth rate sharply decreased towards close to 0%.
+
+3. **Future Projections (2020-2100)**:
+   - The UN "medium scenario" projection, shown in black, suggests that the growth rate will hover around 0% with minor fluctuations.
+   - There is an indication of periods where growth rates may slightly dip below zero, suggesting a possible decline in the working-age population at certain points during this century.
+
+**Summary**: 
+The graph illustrates a significant decline in the working-age population growth rate in the US from the mid-20th century to the present day, with projected rates showing negligible to negative growth for the remainder of the century. This trend indicates the potential end of working-age population growth in the US, leading to stable or shrinking working-age demographics according to the UN's medium scenario.

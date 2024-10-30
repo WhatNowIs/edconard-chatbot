@@ -1,0 +1,23 @@
+The image presents a comparison of the current account versus manufacturing value added as shares of GDP for the ten largest advanced manufacturing economies in the years 2000, 2010, and 2020. The economies included are Canada, France, Germany, Italy, Japan, South Korea, Spain, Switzerland, the United Kingdom, and the United States.
+
+Key points:
+1. **2000 Distribution**:
+   - Switzerland (CHE) had a high current account (around 10%) with a manufacturing value added just below the global average (~16%).
+   - Japan (JPN) and South Korea (KOR) had prominent manufacturing value added (~20% for JPN and ~25% for KOR) with significant current accounts.
+   - Other countries such as Germany (DEU), France (FRA), Italy (ITA), the United States (USA), the United Kingdom (GBR), and Canada (CAN) had varied positions with both positive and negative current accounts and manufacturing value added around or below the global average.
+
+2. **2010 Distribution**:
+   - Switzerland (CHE) maintained a high current account surplus and modest manufacturing value added.
+   - Germany (DEU) and Japan (JPN) had high manufacturing value-added and substantial current accounts.
+   - South Korea (KOR) had one of the highest manufacturing value added with a positive current account balance.
+   - Other economies showed mixed results, some with current account deficits.
+
+3. **2020 Distribution**:
+   - Germany (DEU) remained strong in both current account and manufacturing value added.
+   - South Korea (KOR) and Japan (JPN) continued to have high manufacturing value added and positive current accounts.
+   - Switzerland (CHE) positioned similarly as in previous decades, with a high current account surplus.
+   - Other economies like France (FRA), Italy (ITA), the United States (USA), the United Kingdom (GBR), and Canada (CAN) showed less dominance in manufacturing shares with varied current account balances, some even experiencing deficits.
+
+For all three snapshots (2000, 2010, 2020), the red vertical line represents the global average share of manufacturing value added over the period. 
+
+The data illustrates how dominant advanced manufacturing economies have evolved over two decades with respect to their manufacturing output and current account balances. Switzerland consistently shows a high current account surplus despite modest manufacturing value added, while Germany, Japan, and South Korea demonstrate strong manufacturing sectors with significant current account surpluses. Other nations display varied performance, with some experiencing persistent deficits.

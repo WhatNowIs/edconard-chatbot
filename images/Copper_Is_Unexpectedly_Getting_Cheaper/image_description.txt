@@ -1,0 +1,22 @@
+The image is a graphical representation of the number of non-commercial contracts by position (in thousands) over the period from 2022 to 2023. The contracts are divided into "Long" and "Short" positions, with a grey line representing the "Net" position.
+
+Key information includes:
+
+1. **Contracts Breakdown:**
+   - "Long" positions (colored in blue) represent the commitments to buy.
+   - "Short" positions (colored in turquoise) represent the commitments to sell.
+   - The "Net" position (gray line) is the difference between the long and short positions.
+
+2. **Trends and Fluctuations:**
+   - At the beginning of the period in 2022, long positions were considerably higher, fluctuating around the 50,000 mark, while short positions were around -50,000. This suggests a bullish trend in the market.
+   - Around mid-2022, both positions showed significant volatility with net positions occasionally dropping towards -50,000, indicating an increase in short positions.
+   - Towards the end of 2022 and into early 2023, there is notable variability with frequent crossing of the net position around the zero mark, which suggests a mixed or neutral market sentiment.
+   - By mid-2023, long positions again surge up towards 50,000, while short positions decrease significantly, again indicating a bullish trend.
+
+3. **Quantitative Details:**
+   - One contract is equivalent to 11.3 tonnes, allowing for the calculation of the volume of the assets traded.
+
+4. **Data Sources:**
+   - The data for the graph is sourced from Asian Metal, Bloomberg, and Liberum.
+
+The graph overall depicts market sentiment and its fluctuations over time, showing periods of bullish and bearish trends, as well as times of market indecision.

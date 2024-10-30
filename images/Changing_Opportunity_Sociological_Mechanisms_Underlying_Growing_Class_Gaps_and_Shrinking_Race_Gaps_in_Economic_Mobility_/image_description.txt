@@ -1,0 +1,12 @@
+This figure, labeled "FIGURE VI", displays the relationship between changes in children's household income ranks in adulthood and changes in employment rates for same-race adults by county. It utilizes a binned scatterplot to depict this data.
+
+### Key Points:
+
+- **Positive Correlation**: There is a clear positive correlation between changes in children's household income ranks and changes in employment rates for same-race adults in their childhood counties (1980-2000 calendar years). The slope is 0.21 with a standard error of 0.03.
+- **Data Range**: The x-axis represents changes in county-level employment rates for same-race adults, ranging from about -4 to 8 percentage points. The y-axis shows changes in children's household income percentile ranks, ranging from about -1 to 1.5.
+- **Data Specifics**: The analysis controls for race-by-parental income percentile fixed effects. The focus population includes white and Black children born to parents in the 25th and 75th percentiles of the national income distribution. Employment rates were measured using data from adults aged 25-44 across the 1980 and 2000 Decennial Censuses.
+- **Methodology**: The fitted line is estimated via ordinary least squares (OLS regression), weighted by the number of children in each county-by-race-by-class cell. The counties included have more than 2,000 children in the relevant race and parental income group.
+
+### Summary:
+
+The graph in Figure VI indicates that improvements in employment rates for same-race adults in a child's county are positively associated with increases in that child's household income rank when they reach adulthood. This pattern holds when controlling for parental income percentile ranks and spans white and Black children born in the 25th and 75th percentiles of the national income distribution. The data suggests that local employment conditions play a significant role in determining economic mobility across generations.

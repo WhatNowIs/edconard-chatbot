@@ -1,0 +1,18 @@
+The image contains a line graph titled "Federal funds rate and prescriptions from the Taylor rule," which spans the years from approximately 1965 to 2025. The graph comprises two lines:
+
+1. **Federal Funds Rate** (in red): This line represents the actual federal funds rate over the years.
+2. **Taylor Rule** (in blue dashed): This line represents the prescribed rate according to the Taylor rule.
+
+Here’s a summary of the graph:
+
+- **1970s-1980s**: The federal funds rate exhibits significant volatility, with sharp increases and decreases. The Taylor rule also follows a similar pattern but is generally smoother than the actual federal funds rate.
+  
+- **1980s-2000s**: There are several cycles of rising and falling rates, with the federal funds rate occasionally converging with the Taylor rule prescription. The Taylor rule appears to be more stable with fewer drastic changes.
+
+- **Post-2000**: The federal funds rate becomes comparatively low and stable, with the Taylor rule suggesting variations that the actual rate does not always follow.
+
+- **2010s-Present**: The federal funds rate rises significantly around 2018, aligning closely with the Taylor rule's prescription, but both drop drastically around 2020, likely reflecting the economic response to the COVID-19 pandemic. Following the pandemic, the Taylor rule suggests a rapid increase in rates, while the federal funds rate has only begun to rise more gradually up to 2023.
+
+- **Projection to 2025**: The Taylor rule suggests continuing upward pressure on rates, while the actual federal funds rate is trending upwards, reflecting a potential attempt to align more closely with the Taylor rule recommendations in the future.
+
+Overall, the graph illustrates the interplay between actual federal monetary policy decisions (as measured by the federal funds rate) and the theoretical recommendations of the Taylor rule over the decades.

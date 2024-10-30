@@ -1,0 +1,16 @@
+The image is a chart titled "Select Fed Balance Sheet Liabilities ($tln)" with data from January 2022 to October 2023. It features three types of liabilities in different colors:
+
+- **Reserves** (blue)
+- **TGA (Treasury General Account)** (orange)
+- **Reverse Repo Facilities** (gray)
+
+Key observations:
+1. The overall size of the Fed's balance sheet liabilities has been gradually decreasing from January 2022 to October 2023.
+2. The reserves, shown in blue, have remained relatively steady during this period.
+3. The TGA (orange) and Reverse Repo Facilities (gray) have been shrinking as well, contributing to the overall reduction in liabilities.
+4. A notable point is circled in red around October 2023, indicating some specific change or highlight in the TGA portion.
+
+The summary statement below the chart states:
+"QT is shrinking the overall size of the Fed balance sheet, but reserve balances remain steady."
+
+This suggests that Quantitative Tightening (QT) is effectively reducing the total liabilities on the Fed's balance sheet, but the reserves' balances have stayed the same over the period.

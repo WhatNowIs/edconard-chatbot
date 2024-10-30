@@ -1,0 +1,20 @@
+The image provides an analysis of U.S. residential construction activity, covering changes in single-family and multifamily housing permits and starts from January 2017 to early 2024. Several key points and observations can be made:
+
+1. **Trend Observations**:
+   - **Single-family Construction**: Both permits and starts experienced significant increases from 2020 to 2021, peaking during the pandemic period. Post-peak, there is a noticeable decline but it shows signs of recovery towards early 2024.
+   - **Multifamily Construction**: The construction of multifamily units followed a similar trend with a noticeable rise during the pandemic, peaking in 2021. However, the decline post-peak is less severe, and multifamily starts show a slight upward trend towards early 2024.
+
+2. **Impact of Mortgage Rates**:
+   - Despite the sustained increase in real mortgage rates since the end of 2021, homebuilding activity:
+     - Remains roughly 18% higher than pre-pandemic levels.
+     - Is only 9% lower than the highs observed during the pandemic.
+
+3. **Data Source and Calculations**:
+   - The information is based on data from the U.S. Census Bureau and calculations by Matthew Klein.
+   - The metrics used are thousands of units per month, three-month moving averages (3mma).
+
+4. **Visual Data Points**:
+   - **Single-family permits** (dotted blue line) and **single-family starts** (solid blue line) show a strong correlation in trends.
+   - **Multifamily permits** (dotted red line) and **multifamily starts** (solid red line) also track closely together, with less volatility post-pandemic.
+
+In summary, the U.S. residential construction sector has demonstrated resilience in the face of rising mortgage rates, retaining higher overall activity compared to pre-pandemic levels and showing potential signs of recovery as of early 2024, particularly in single-family home construction.

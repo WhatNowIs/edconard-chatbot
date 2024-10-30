@@ -1,0 +1,9 @@
+The graph depicts the "Futures Implied SOFR Path (%)" from November 2023 to September 2024, based on data from the CME and the Federal Reserve. Key information includes:
+
+- **1-Month SOFR Futures (Blue Line):** The graph shows the projected path of the 1-month SOFR (Secured Overnight Financing Rate) futures. Starting at approximately 5.4% in November 2023, the rate peaks around November or December 2023 and then steadily declines to just above 4.8% by September 2024.
+
+- **Spot SOFR (Red Square):** There's an indication of the current spot SOFR at around 5.3% for November 2023.
+
+- **Fed December 2024 Dot (Gray Dashed Line):** This reflects the Federal Reserve's target rate for December 2024, which is indicated to be around 5.1%.
+
+In summary, the projection suggests that while the current SOFR is around 5.3%, it is expected to gradually decrease over the next year, aligning closer to the Federal Reserve's target rate of 5.1% by late 2024. The graph data is up-to-date as of October 6, 2023.

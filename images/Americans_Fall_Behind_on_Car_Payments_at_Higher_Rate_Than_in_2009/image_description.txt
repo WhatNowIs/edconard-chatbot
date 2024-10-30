@@ -1,0 +1,9 @@
+The image presents a line graph titled "Rise in Auto Delinquencies," which showcases the percentage of borrowers who are at least 60 days late on their car payments. The data spans from 1994 to 2020. 
+
+Key observations:
+1. **Early Spike**: There was a significant spike in auto delinquencies in the mid-1990s, peaking around 5.5%.
+2. **Fluctuations**: Following the spike, there were fluctuations, with periods of increase and decrease.
+3. **Recent Trend**: Since around 2010, there has been a noticeable upward trend, reaching closer to 6% by 2020.
+4. **Current Data**: The most recent data suggests that auto delinquencies are rising again, surpassing the 4% mark and approaching 6%.
+
+Overall, the graph indicates a worrying trend where the percentage of late car payments is climbing, signaling potential financial distress among borrowers. This information is sourced from Fitch Ratings.

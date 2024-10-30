@@ -1,0 +1,21 @@
+The image comprises two line graphs illustrating different metrics related to the US labor market and wage growth.
+
+1. **Left Graph: US Jobs-Workers Gap**
+   - The graph displays the gap between job openings and unemployed workers, using three different measures:
+     - JOLTS (Job Openings and Labor Turnover Survey)
+     - Indeed
+     - LinkUp
+   - All three measures show a significant spike in the gap from early 2021, peaking mid-2022, followed by a decline.
+   - By mid-2023, the gaps have narrowed substantially, indicating that the job market has moved back into balance.
+
+2. **Right Graph: Wage Growth**
+   - The graph tracks wage growth rates from 2018 to 2024 using four different measures:
+     - GS Wage Tracker
+     - Employment Cost Index
+     - Average Hourly Earnings
+     - Atlanta Fed Wage Tracker
+   - All measures depict wage growth accelerating sharply from around mid-2020, peaking around early 2022-2023, and then starting to decelerate steadily.
+   - By 2024, wage growth has significantly slowed down and is stabilizing.
+
+**Summary:**
+The left graph shows that the US labor market, which experienced substantial imbalances in 2021 and 2022, is now back in balance with the job openings and unemployed workers gap narrowing. The right graph indicates that wage growth surged during the same period, reaching its peak, but has been consistently decelerating ever since, suggesting that wage pressures are easing. This information collectively points to a normalization in the labor market after a period of significant volatility and growth.

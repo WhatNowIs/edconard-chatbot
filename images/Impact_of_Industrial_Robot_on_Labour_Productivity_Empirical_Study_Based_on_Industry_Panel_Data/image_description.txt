@@ -1,0 +1,16 @@
+The graph presents the relationship between labor productivity (measured in yuan per person) and robot density over the period from 2006 to 2020. Here is a summary of the data:
+
+1. **Labor Productivity (Blue Bars)**:
+   - In 2006, the labor productivity was around 20,000 yuan per person.
+   - Labor productivity shows a steady increase each year, reaching approximately 50,000 yuan per person by 2010.
+   - The upward trend continued, and by 2015, labor productivity had more than doubled to about 100,000 yuan per person.
+   - Between 2016 and 2020, there was significant growth, with labor productivity peaking at around 150,000 yuan per person in 2020.
+
+2. **Robot Density (Red Line)**:
+   - Robot density remained low but gradual from 2006 to 2012, with a value of under 2 robots.
+   - From 2013 onwards, robot density increased more sharply, breaking the 2 robots mark around 2014.
+   - The increase accelerated further after 2015, reaching over 6 robots by 2018.
+   - By 2020, the robot density had sharply climbed to approximately 13 robots.
+
+**Summary**:
+This graph illustrates a positive correlation between labor productivity and robot density over the years 2006 to 2020. As robot density increased, labor productivity also rose significantly, suggesting that the integration of more robots into the workforce may be contributing to enhanced productivity. The marked increase in both metrics particularly after 2015 highlights the accelerating impact of automation technology on labor efficiency.

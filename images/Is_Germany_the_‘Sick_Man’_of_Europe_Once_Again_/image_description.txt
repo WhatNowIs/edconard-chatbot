@@ -1,0 +1,17 @@
+The chart illustrates gross public investment as a share of GDP for various countries, averaged over the period from 2018 to 2022. It underscores that Germany's public investment is notably low compared to other countries. Here is a summary of the key points:
+
+1. **Highest Public Investment**:
+   - Norway leads with the highest gross public investment as a share of GDP, close to 5%.
+
+2. **Relatively High Public Investment**:
+   - Countries such as Sweden, Poland, New Zealand, Japan, Canada, and France follow with shares ranging roughly between 3% and 4.5%.
+
+3. **Moderate Public Investment**:
+   - The Netherlands, Austria, the US, Denmark, and Switzerland have moderate public investment shares, generally between 2% and 3%.
+
+4. **Low Public Investment**:
+   - The UK, Italy, Germany, and Spain show relatively low public investment shares, all below 2.5%, with Germany and Spain being particularly low.
+
+This comparison reveals that Germany’s level of public investment is quite low compared to many other nations, situating it near the bottom alongside Spain. 
+
+**Source**: The data is sourced from OECD and IMF.

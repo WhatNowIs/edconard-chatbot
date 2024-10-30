@@ -1,0 +1,9 @@
+The chart titled "How Average Returns Affected Estimated Net Worth, 2022" visualizes the estimated impact of average returns on the net worth of households in 2022, stratified by the age of the household head. The data is represented in thousands of 2019 dollars.
+
+Key findings are as follows:
+- Households with heads aged less than 35 experienced an average return impact of -$4,000 on their net worth.
+- Households with heads aged 35-44 saw a significantly higher negative impact, with an average decrease of -$33,000.
+- The negative impact continues to grow with age: households headed by those aged 45-54 faced a -$74,000 impact, 55-64 faced a -$107,000 impact, and 65-74 faced the largest decrease with a -$123,000 impact.
+- For the oldest group (household heads aged 75 and over), the negative impact slightly decreased to -$97,000.
+
+The source of the data includes the Federal Reserve’s 2019 Survey of Consumer Finances, FRED, Haver Analytics, and authors’ calculations. It is important to note that the method used assumes households' distribution of assets remained constant over the 2019-2022 period.

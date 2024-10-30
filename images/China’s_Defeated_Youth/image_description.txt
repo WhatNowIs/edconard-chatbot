@@ -1,0 +1,12 @@
+The image is a line graph titled "Tweet bitterness," sourced from The Economist and based on data from Baidu Tieba, a Chinese online forum. The graph measures sentiment over time from forum posts, with a scale where 0 indicates negative sentiment and 1 indicates positive sentiment. The data is grouped by sub-forums representing different decades of birth: the 1980s, 1990s, and 2000s.
+
+Key points include:
+
+- The sentiment for each decade of birth is tracked from 2019 to 2023.
+- The data show significant fluctuations in sentiment for each group over time.
+- The 1990s group (dark blue line) consistently exhibits the lowest sentiment, dipping close to 0.5 around 2023.
+- The 2000s group (light blue line) shows higher sentiment levels, generally around 0.6 to 0.7.
+- The 1980s group (light grey line) lacks data before 2021 but appears to also maintain sentiment levels around 0.6 to 0.7.
+- All groups show a general downward trend in sentiment over time, with notable dips during the period represented.
+
+The graph summary suggests that younger generations (born in the 1990s and 2000s) have seen a more pronounced decline in positive sentiment on Baidu Tieba forums compared to those born in the 1980s.

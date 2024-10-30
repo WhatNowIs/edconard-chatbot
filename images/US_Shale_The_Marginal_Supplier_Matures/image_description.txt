@@ -1,0 +1,16 @@
+The image contains two bar charts highlighting the status of the US as the world's marginal oil supplier and trends in well productivity in the Permian Basin.
+
+**Left Bar Chart: Impact of Brent Oil Prices on Annual Liquids Supply**
+- Title: Estimated Effect of a 10% YoY Increase in Brent Oil Price in Prior Year on Annual Liquids Supply
+- X-axis: Various regions and countries
+- Y-axis: Percent increase in annual liquid supply
+- Key Insight: The US displays the highest sensitivity, with an estimated effect of around 1% increase in supply from a 10% YoY increase in Brent oil prices. Other regions, including core OPEC, China, Mexico, Africa, Brazil, Kazakhstan, Qatar, Canada, and Russia show less responsiveness, with Russia exhibiting a negative impact.
+
+**Right Bar Chart: Permian Well Productivity**
+- Title: Permian Wells: Average First 6 Month Production Adjusted by Lateral Length
+- X-axis: Years from 2007 to 2023
+- Y-axis: Production in kb/1000ft
+- Key Insight: The productivity of Permian wells increased significantly from 2007, peaking around 2019-2020. However, it has remained relatively stable or slightly decreased from 2021 onwards. The 2023 estimates are marked as preliminary.
+
+**Summary:**
+The US remains a critical marginal oil supplier globally, being highly responsive to changes in Brent oil prices. Meanwhile, productivity in the US's key growth engine, the Permian Basin, has plateaued in recent years after a period of steady increase, with the preliminary 2023 estimates indicating no further growth.

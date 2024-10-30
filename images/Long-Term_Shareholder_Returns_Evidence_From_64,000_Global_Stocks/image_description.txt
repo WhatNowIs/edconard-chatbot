@@ -1,0 +1,19 @@
+The figure, titled "Percent of Stock-Years with Indicated Buy-and-Hold Return," visualizes the distribution of annual buy-and-hold returns for both US and non-US stocks, rounded to 1%. The horizontal axis represents the annual buy-and-hold return, ranging from -100% to greater than 400%. The vertical axis represents the percentage of stocks experiencing those returns.
+
+**Key Points:**
+
+1. **Distribution Shape:** Both US (blue line) and non-US (red line) stocks exhibit a distribution that is peaked around the 0% return mark, with a higher percentage of stocks having returns close to 0%.
+
+2. **Symmetry and Skewness:** The graphs are somewhat symmetrical around the 0% return but show a longer right tail, indicating some stocks achieve very high positive returns (up to 400% or more). This skewness suggests that while most stocks have moderate returns, a few achieve exceptionally high returns.
+
+3. **Comparison of US and Non-US Stocks:**
+   - The US stocks’ distribution has a slightly higher peak around the 0% return mark compared to non-US stocks.
+   - Both distributions closely mirror each other throughout most of the return spectrum.
+   - The far-right tail (extreme high returns of 400%) is visible for both categories but is slightly more pronounced for US stocks.
+
+4. **Frequency of Extreme Returns:** The extreme negative returns (approaching -100%) are relatively uncommon, as are the extreme positive returns (approaching or exceeding 400%).
+
+5. **Concentration of Returns:** The majority of the stock-years for both US and non-US stocks fall within a central range of returns, with fewer stock-years experiencing high variability.
+
+**Summary:**
+The figure highlights the distribution of annual buy-and-hold returns for US and non-US stocks. Both US and non-US stocks have the highest concentration of returns around 0%, indicating that most stocks have minor gains or losses in a given year. The graph shows similar distributions between US and non-US stocks, with a slight advantage in peak height for US stocks near 0% return. While both categories exhibit rare instances of extreme positive returns (greater than 400%), these occurrences are more frequent for US stocks. This distribution pattern suggests that while typical returns for most stocks are modest, there exists a small subset of stocks that achieve significantly higher returns, contributing to the long right tail of the distribution.

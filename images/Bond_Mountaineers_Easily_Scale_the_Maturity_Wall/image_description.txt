@@ -1,0 +1,11 @@
+The image is a line graph titled "Less Anxiety in Bonds?" which depicts the trend of US corporate high-yield spreads over time. The data spans from January 2022 to September 2023, sourced from Bloomberg data. The blue line represents the Bloomberg U.S. corporate high-yield, option-adjusted spread (sovereign curve), measured in percentage points.
+
+Key points:
+1. The spreads started rising early in 2022.
+2. A notable increase commenced around March 2022, coinciding with the first Federal Reserve rate increase.
+3. Following a peak in June 2022 at around 6 percentage points, the spreads show fluctuations.
+4. Despite occasional spikes, a general downward trend ensues from mid-2022 onward.
+5. By mid-2023, the spreads have leveled off around 3 percentage points, indicating a significant decrease from their peak.
+
+Summary:
+The graph illustrates a significant decline in US corporate high-yield spreads in recent months, reaching lower levels despite initial hikes following the first Federal Reserve rate increase in March 2022. As of mid-2023, the spreads have stabilized, suggesting reduced anxiety in the bond market.

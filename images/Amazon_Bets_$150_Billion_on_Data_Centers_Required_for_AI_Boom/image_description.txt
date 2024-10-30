@@ -1,0 +1,8 @@
+The image is a line graph titled "Amazon's Cloud Computing Empire." It illustrates the growth of Amazon Web Services' (AWS) real estate holdings from 2015 to 2023. The graph includes both data centers and office space, with the total area measured in square feet. 
+
+Key points include:
+- AWS's real estate holdings have significantly increased over the years from 2015 to 2023.
+- There is a notable surge in the holdings starting around 2020.
+- The real estate holdings have doubled since 2020, reaching nearly 40 million square feet by 2023.
+
+Source: Amazon.com Inc.

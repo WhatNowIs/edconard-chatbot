@@ -1,0 +1,11 @@
+The chart titled "10-year bond auction tails" shows the auction tails for 10-year Treasury bonds from January 2020 to July 2024. The term "auction tail" refers to the difference between the highest bid price and the lowest accepted bid price at a Treasury auction. 
+
+Key points:
+- The time frame covered is from January 2020 to July 2024.
+- The vertical axis represents the auction tail value, ranging from -4 to 4.
+- Data points show fluctuation in auction tails over time.
+- A notable event marked on the chart is "Fed starts hiking" in March 2022, which refers to the Federal Reserve starting to increase interest rates.
+- Before the Fed started hiking rates (pre-March 2022), the auction tails fluctuated around zero with some periods of negative and positive values.
+- Post the rate hikes (post-March 2022), there is a noticeable increase in the variability and the magnitude of the auction tails, with many more instances of higher positive values, indicating greater differences in bid prices at auctions.
+
+The summary indicates that the Fed's decision to start increasing interest rates in March 2022 had a significant impact on the auction tails of 10-year Treasury bonds, leading to greater volatility in the differences between bid prices at auctions.

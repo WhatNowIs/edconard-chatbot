@@ -1,0 +1,18 @@
+The graph "Total Real Return on Stocks and Bonds Using McQuarrie Data, 1802-2012" illustrates the growth of real returns on stocks and bonds over a period of more than two centuries. Key points include:
+
+1. Time Frame and Scale:
+   - The x-axis represents the years from 1802 to 2012.
+   - The y-axis is logarithmic, showing the total return starting from a base of 1 and scaling up to 1,000,000.
+
+2. Performance Statistics:
+   - Stocks (represented by a solid line) had an average annual real return of 5.9%.
+   - Bonds (represented by a dotted line) had an average annual real return of 4.1%.
+
+3. Comparative Growth:
+   - Over the given period, stocks consistently outperformed bonds in terms of total return.
+   - While both stocks and bonds showed exponential growth, the gap between the two widened significantly, especially post-1900.
+
+Source:
+- The data is sourced from edwardfmcquarrie.com and analyzed by Verdad. 
+
+In summary, the graph indicates that despite periodic fluctuations, investing in stocks has provided substantially higher returns compared to bonds over the long run from 1802 to 2012.

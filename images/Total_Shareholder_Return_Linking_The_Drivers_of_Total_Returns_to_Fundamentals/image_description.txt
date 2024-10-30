@@ -1,0 +1,17 @@
+The image presents a comprehensive analysis of the contributing factors to the total shareholder return for the S&P 500 from 2012 to 2021 on an annualized basis. The total shareholder return during this period was 16.6%, with the contributions broken down into price appreciation, dividends, and dividend reinvestment.
+
+**Key Drivers and Sub-Drivers:**
+
+1. **Price Appreciation** (14.3%):
+   - **Earnings per Share Growth** (7.4%): This consists of:
+      - Net income growth contributing 6.7%, corresponding to 40.2% of the total shareholder return.
+      - Change in shares outstanding contributing 0.7%, which accounts for 4.3% of the total return.
+   - **P/E Multiple Change**: Contributing 6.9%, equating to 41.6% of the total return.
+
+2. **Dividend** (2.0%):
+   - Responsible for 12.2% of the total shareholder return.
+
+3. **Dividend Reinvestment** (0.3%):
+   - Adding 1.7% to the total shareholder return.
+   
+Overall, these drivers together sum up to 100% of the total annualized shareholder return of 16.6%, with a major contribution from price appreciation, particularly driven by earnings per share growth and changes in P/E multiples.

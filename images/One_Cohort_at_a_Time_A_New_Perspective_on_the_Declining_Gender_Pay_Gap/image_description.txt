@@ -1,0 +1,19 @@
+The graph titled "Figure 2: Gender Pay Gap Between and Within Cohorts" in Panel A shows the gender pay gap in the USA from 1976 to 2018. 
+
+Key points from the graph are as follows:
+
+1. **Total Gender Pay Gap Over Time (Black Line with Triangles)**:
+   - The total gender pay gap has experienced a downward trend from 1976 (~0.77 log weekly earnings) to 2018 (~0.38 log weekly earnings), indicating a reduction in the gender pay gap over the years.
+
+2. **Cohort Analysis**:
+   - Individuals born between 1947-1951 (Blue Line with Circles): This cohort shows a relatively higher gender pay gap initially, which slowly decreases over time but still remains above 0.5 log weekly earnings around 2018.
+   - Individuals born between 1952-1956 (Pink Line with Squares): Displays a similar trend with a decreasing gender pay gap, starting around 1977 at about 0.6 log weekly earnings and lowering to about 0.45 by 2018.
+   - Individuals born between 1957-1961 (Green Line with Diamonds): Starts with a higher pay gap in the early years (~0.55 in 1980), decreasing steadily until about 2016 (~0.35).
+   - Individuals born between 1962-1966 (Orange Line with Triangles): Starts lower than earlier cohorts (~0.45 in mid-1980s) and decreases to ~0.35 by 2018.
+   - Later Cohorts (Violet, Purple, Dotted Lines): Reveal a trend where each successive cohort starts with a lower initial gender pay gap and also sees a significant reduction over time, with some variability.
+
+3. **Recent Cohorts**:
+   - More recent cohorts born between 1977-1981, 1982-1986, and 1987-1991 show lower initial gender pay gaps starting around 0.35-0.4 log weekly earnings in early 2000s and decreasing to below 0.3 by 2018, indicating more rapid closure of the gender pay gap in recent birth years.
+
+Summary:
+The overall gender pay gap in the USA has been closing over the past decades. Each succeeding birth cohort starts with a progressively lower initial gender pay gap and sees more rapid reductions over time, though a measurable gap still persists in even the most recent years. This suggests both long-term progress and ongoing challenges in achieving full gender pay equity.

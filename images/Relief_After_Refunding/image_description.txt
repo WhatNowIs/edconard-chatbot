@@ -1,0 +1,14 @@
+The two exhibits from Goldman Sachs Global Investment Research provide insights into recent changes in the financial market.
+
+**Exhibit 1: Contribution to 10-year UST Yield Changes by Macro Factor**
+- It illustrates that a significant portion of the recent declines in 10-year U.S. Treasury yields can be attributed to slowing economic growth and policy factors.
+- Different factors included in the analysis are Growth, Policy, Inflation, Residual, and the 10-year UST yield.
+- The graph shows that both growth and policy factors largely explain the downward trend in yields from October 19 to November 2, 2023.
+
+**Exhibit 2: Cumulative Change in 5-year Swap Spread by Explanatory Variable**
+- This exhibit explains the material tightening of the 5-year swap spread since August, mostly attributed to higher funding costs and increased supply.
+- Variables included are 2s10s, 3m-ois, Residual, 5y, and log(Debt/GDP).
+- The graph shows a cumulative change in the 5-year swap spread from August 2023 projected into December 2024.
+- The steepest changes are attributed to factors like 2s10s and 3m-ois, starting in August 2023 and anticipated to continue fluctuating until December 2024.
+
+These exhibits suggest that slowing economic growth and policy changes have influenced the decrease in 10-year U.S. Treasury yields, while increased funding costs and supply adjustments have significantly impacted the 5-year swap spread since August 2023.

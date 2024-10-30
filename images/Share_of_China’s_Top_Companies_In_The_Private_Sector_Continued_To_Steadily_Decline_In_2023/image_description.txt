@@ -1,0 +1,20 @@
+The image is a chart from the Peterson Institute for International Economics (PIIECharts) illustrating the changes in the share of aggregate market capitalization of China's top 100 listed firms, categorized by ownership type, from the end of 2010 to the end of 2023.
+
+Key points and summary:
+
+1. **Ownership Categories**:
+   - **State-owned**: Firms where the state owns a majority stake.
+   - **Mixed-ownership**: Firms in which the state owns between 10 and 50 percent of equity.
+   - **Nonpublic**: Firms where state entities hold less than 10 percent of equity.
+
+2. **Trends Over Time**:
+   - **State-owned** firms have seen relatively stable to slightly increasing share over the period, peaking around the end of 2019.
+   - **Mixed-ownership** firms experienced significant growth in share until around the end of 2019, with a subsequent decline thereafter.
+   - **Nonpublic** firms showed a steady decrease in their share of market capitalization over the entire period, especially noting a decline steady through the recent years to 2023.
+
+3. **Summary of Findings**:
+   - There has been a notable decline in the share of market capitalization held by nonpublic (private sector) firms from 2010 to 2023.
+   - Mixed-ownership firms' share rose sharply at first but then decreased starting from the end of 2019.
+   - State-owned enterprises have maintained a dominant and stable share, with a discernible increase in their influence over the years.
+
+Overall, the data suggests a trend towards greater influence and dominance of state-owned and mixed-ownership firms in China's top 100 listed companies, at the expense of the private sector share, which continues to decline steadily through 2023.

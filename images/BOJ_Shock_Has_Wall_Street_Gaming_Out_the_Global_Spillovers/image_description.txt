@@ -1,0 +1,29 @@
+This image provides a visual representation of Japan's cumulative purchases of assets by country during Kuroda's term as of December 2022. The data covers the period between April 2013 and December 2022. The investments are broken down by region using different colors and the size of the bubbles represents the value of net purchases in trillion yen. Here are the key details extracted:
+
+1. ***North America (Purple)***:
+   - **US**: 50.1 trillion yen
+   - **Canada**: Not specified but shown with smaller bubble compared to the US.
+
+2. ***Latin America and Caribbean (Light Blue)***:
+   - No specific country figures provided, but represented by smaller bubbles.
+
+3. ***Europe and Central Asia (Blue)***:
+   - **Cayman Islands**: 50.7 trillion yen (the largest investment)
+   - **France**: 10.7 trillion yen
+   - **Spain**: 5.0 trillion yen
+   - Additional investments in the UK, Ireland, Italy, Luxembourg, and other countries represented by varying bubble sizes.
+
+4. ***Middle East and North Africa (Green)***:
+   - Not specified but represented with smaller bubbles.
+
+5. ***South Asia (Orange)***:
+   - Not specified but represented with smaller bubbles.
+
+6. ***Sub-Saharan Africa (Turquoise)***:
+   - Not specified but represented with smaller bubbles.
+
+7. ***East Asia and Pacific (Orange)***:
+   - **Australia**: Prominently represented, details not specified, but significant investment implied by bubble size.
+   - Other investments in the region represented with smaller bubbles.
+
+Overall, the Cayman Islands and the US are the two most significant destinations for Japanese international investments during Kuroda's term, each having around 50 trillion yen in net purchases. Europe, particularly France and Spain, also attracts substantial investments. Other regions, although represented, attract relatively lower investments.

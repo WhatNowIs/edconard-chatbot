@@ -1,0 +1,30 @@
+The image contains Figure 3, titled "GDP following Business Credit Booms," which illustrates the impact of a 10 percentage point increase in business credit to GDP ratio over the preceding 5 years on real GDP, depending on bankruptcy efficiency.
+
+### Key Points:
+
+1. **Graph Descriptions**:
+   - There are two panels:
+     - **Left Panel: Low Bankruptcy Efficiency**
+     - **Right Panel: High Bankruptcy Efficiency**
+   - Both graphs depict the impulse response of real GDP (in percentage points) on the y-axis vs. years since the credit boom on the x-axis.
+
+2. **Findings**:
+   - **Low Bankruptcy Efficiency (Left Panel)**:
+     - Shows a significant negative impact on real GDP following a business credit boom, with the response declining more steeply over the 5 years.
+     - The impulse response of real GDP starts at 0, drops to around -2 percentage points within the first year, and continues declining to around -4 percentage points by the fifth year.
+   - **High Bankruptcy Efficiency (Right Panel)**:
+     - Displays a relatively stable response with a slight decline in real GDP, but the impact is far less pronounced compared to low bankruptcy efficiency.
+     - The impulse response of real GDP starts at 0 and remains close to 0, with a minor dip slightly below -1 percentage point within the same period.
+
+3. **Notes and Methodology**:
+   - The figure evaluates the effect of a 10 percentage point increase in business credit to GDP ratio over the past 5 years.
+   - Uses state-dependent local projections for estimating the GDP trajectory.
+   - In the equation provided in the notes, Δ𝑖,ℎlog(real 𝐺𝐷𝑃𝑖,𝑡+ℎ) = 𝛼𝑖,ℎ + 𝛽1,ℎΔ𝑆_𝑐𝑖,𝑡 + 𝛽2,ℎ (Δ𝑆_𝑐𝑖,𝑡 × 𝐵𝑖,𝑡) + 𝛽3,ℎ𝐵𝑖,𝑡 + γ_ℎ𝑥𝑖,𝑡 + ε_𝑖,𝑡, the outcome variable is the change in log real GDP. 
+   - The control variables include contemporaneous and 5 lags of real GDP growth and cumulative household credit to GDP.
+   - The sample includes annual data from 2003 to 2019 for 39 countries, with median bankruptcy efficiency at 43% (for low) and 83% (for high). 
+
+4. **Confidence Intervals**:
+   - Shaded areas marked the 90% confidence intervals based on Driscoll-Kraay standard errors. This provides an indication of the reliability and variability of the results presented.
+
+### Summary:
+The figure illustrates that the effect of an increase in the business credit to GDP ratio on real GDP is significantly negative in countries with low bankruptcy efficiency, where GDP sharply decreases over 5 years. In contrast, in countries with high bankruptcy efficiency, the negative impact is negligible, showing that higher bankruptcy efficiency mitigates the adverse effects of expanded business credit on GDP.

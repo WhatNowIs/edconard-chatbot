@@ -1,0 +1,32 @@
+The image is a stacked area chart showing the global balance of payments for selected economies from Q1-2000 to Q1-2022, expressed in trailing four-quarter sums in USD billion. The chart includes the following economies:
+
+- **China** (red)
+- **Saudi Arabia** (orange)
+- **Kuwait** (yellow)
+- **Qatar** (light orange)
+- **Russia** (dark red)
+- **Japan** (gray)
+- **Asian NIEs** (light green)
+- **US** (dark green)
+- **UK** (dark blue)
+- **India** (orange-brown)
+- **Turkey** (light blue)
+
+**Key Observations:**
+
+1. **Periods of Surplus and Deficit:**
+  - From Q1-2000 to roughly 2004, the global balance oscillated around zero.
+  - Post-2004, there is a significant increase in the surplus for many economies, especially noticeable in the areas corresponding to China and Japan.
+  - The 2008 financial crisis marks a notable shift, with the US showing a substantial deficit and the balance for other economies such as Japan and China showing corrections.
+
+2. **Post-2008 Financial Crisis:**
+  - Following the crisis, China and Japan maintained substantial surpluses, although there was some volatility.
+  - The US consistently shows a significant deficit throughout the time period, deepening especially around 2008 and again from 2016 onward.
+
+3. **Recent Trends (2020-2022):**
+  - From 2020 to 2022, there's a sharp fluctuation, where surpluses in certain economies (e.g., China, Saudi Arabia, and Japan) increased dramatically.
+  - The US appears to continue having a large deficit.
+
+The chart effectively illustrates the dynamic changes in global balances of payments, highlighting the major contributing economies and the impact of global financial shifts and crises.
+
+*Note: Q1-2000 stands for the first quarter of the year 2000, and similar notation follows for subsequent data points.*

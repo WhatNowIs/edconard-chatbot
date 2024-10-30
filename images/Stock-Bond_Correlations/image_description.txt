@@ -1,0 +1,24 @@
+The table presents Sharpe Ratios of various asset classes (Equities, US Treasurys, High-Yield Credit, Brent Oil, and Gold) under different correlation regimes (Negative, Neutral, Positive) from 1990 to 2023. Here are the key points:
+
+1. **Negative Correlation**:
+   - **Equities**: 0.29
+   - **US Treasurys**: 1.10 (highest in this regime)
+   - **High-Yield Credit**: 0.70
+   - **Brent Oil**: -0.16 (only negative value in this regime)
+   - **Gold**: 0.58
+
+2. **Neutral Correlation**:
+   - **Equities**: 0.50
+   - **US Treasurys**: -0.29 (lowest in this regime)
+   - **High-Yield Credit**: 0.49
+   - **Brent Oil**: 0.86 (highest in this regime)
+   - **Gold**: 0.18
+
+3. **Positive Correlation**:
+   - **Equities**: 0.59 (highest in this regime)
+   - **US Treasurys**: 0.22
+   - **High-Yield Credit**: 0.51
+   - **Brent Oil**: 0.61
+   - **Gold**: 0.08 (lowest in this regime)
+
+Overall, US Treasurys tend to have higher Sharpe Ratios during negative correlation periods, while Equities perform better when correlations are positive. Brent Oil and Gold show varying performance based on correlation regimes, with Brent Oil turning negative during negative correlation.

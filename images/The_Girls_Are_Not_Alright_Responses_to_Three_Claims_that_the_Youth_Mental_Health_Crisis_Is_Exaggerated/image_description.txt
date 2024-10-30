@@ -1,0 +1,7 @@
+The graph shows the rate (per 100,000 population) of hospitalizations for intentional self-harm among U.S. adolescents aged 15-19 from 2001 to 2021, broken down by gender. 
+
+Key points:
+1. Girls: The rate of hospitalizations significantly increased by 91% since the period from 2007-09, reaching a peak at various points around 2015 and then again in 2020-21, though there's noticeable fluctuation.
+2. Boys: There has been a 53.2% increase in hospitalization rates since 2007-09, but the rates have remained relatively stable with minor fluctuations over the years compared to girls.
+
+Source: CDC Non-Fatal Injury Reports.

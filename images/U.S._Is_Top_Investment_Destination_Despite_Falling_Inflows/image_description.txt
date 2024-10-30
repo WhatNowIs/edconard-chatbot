@@ -1,0 +1,10 @@
+The image shows a graph titled "Slowing Investment," which illustrates the trends in overseas business investment up to 2022. According to the chart and its labels, overseas business investment fell in 2022, yet the United States maintained its top position ahead of China in terms of foreign direct investment (FDI).
+
+The graph tracks FDI over time from 2011 to '22, with the y-axis representing the amount in billion dollars (ranging from 0 to 2.5 billion dollars). The data is categorized into three groups: global (World), U.S., and China.
+
+Key points include:
+- The global FDI fluctuated, reaching peaks and experiencing significant declines over the decade.
+- The U.S. consistently outperformed China in terms of FDI.
+- Despite the overall decline in global FDI in 2022, the U.S. retained its leading position over China.
+
+The source of the data is the United Nations Conference on Trade and Development.

@@ -1,0 +1,22 @@
+The chart titled "Exhibit 2: The increase in income from gig work over the past year has been driven primarily by ridesharing" presents data on the percentage of Bank of America customers receiving income from various types of gig work on a monthly basis from March 2019 to June 2023. The chart focuses on four categories of gig income: Deliveries, Social Commerce, Vacation Rental, and Ridesharing.
+
+Key points from the chart are as follows:
+
+1. **Ridesharing**:
+   - This category has shown significant growth, particularly starting from March 2020.
+   - Ridesharing consistently remains one of the highest sources of gig income among the categories, demonstrating a notable upward trend throughout the observed period.
+   - It peaks multiple times, indicating its fluctuating but generally increasing nature.
+
+2. **Social Commerce**:
+   - Social commerce saw a noticeable increase beginning in March 2020, continuing to grow steadily.
+   - It surpasses delivery work in terms of customer percentage at various points.
+
+3. **Deliveries**:
+   - Deliveries experienced a jump in percentage starting around March 2020, likely due to the COVID-19 pandemic, and maintained a higher level compared to the pre-2020 period.
+   - It eventually stabilizes to a certain extent but remains significant in terms of gig income source.
+
+4. **Vacation Rental**:
+   - This category remains relatively low and stable throughout the period compared to other gig work categories.
+   - There is a slight rise in mid-2020 but it does not experience significant fluctuations.
+
+Overall, the chart indicates that ridesharing has been the primary driver of increased income from gig work over the past year, showing substantial peaks and maintaining relatively higher percentages compared to other types of gig work. Social commerce also shows growth but to a lesser extent, while deliveries and vacation rentals are comparatively lower but still indicate increased activity post-March 2020.

@@ -1,0 +1,14 @@
+The chart titled "The Big Seven" shows the share of total goods trade between the US and its top goods trading partners from 2004 to 2022, as sourced from the US Census Bureau. The chart reveals changes in the rankings of these trading partners over time. As of 2022, Vietnam has replaced the UK among the top seven US goods trading partners. 
+
+The trading partners depicted include:
+
+- **Canada (black)**: A consistent major partner.
+- **Mexico (pink)**: Also a dominant partner throughout the years.
+- **China (grey)**: Showing significant influence, especially from 2010 onwards.
+- **Japan (blue)**: Maintaining a steady share.
+- **Germany (yellow)**: Another steady but slightly decreasing partner.
+- **UK (green)**: Present until recently, displaced by Vietnam.
+- **South Korea (dark blue)**: Showed growth, especially prominent in recent years.
+- **Vietnam (bright green)**: Emerging and gaining share by 2022.
+
+The graph highlights major shifts in the composition of the US’s main goods trading partners, with Vietnam's notable rise to prominence by 2022. The timeline indicates increasing diversification in the US's global trade relationships.

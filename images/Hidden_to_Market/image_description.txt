@@ -1,0 +1,19 @@
+This chart tracks the trend of High-Quality Liquid Assets (HQLA) within the banking sector from January 2000 to January 2022. The Y-axis on the left displays the HQLA in trillions of dollars, indicating the absolute quantity of these assets. The Y-axis on the right shows the HQLA as a percentage of total assets.
+
+### Key Observations:
+1. **Steady Initial Trend**:
+    - From 2000 to around 2008, the HQLA remained stable at around $2 trillion, representing about 10-15% of total assets.
+    
+2. **Post-GFC Increase**:
+    - Post the Great Financial Crisis (GFC) of 2008, there's a noticeable step-up in both absolute HQLA and its percentage of total assets.
+    - The biggest increase occurred between 2008 and late 2010, where HQLA jumped to around $4 trillion and the corresponding percentage rose appreciably.
+    
+3. **Basel III and QE Impact**:
+    - Implementation of Basel III and Quantitative Easing (QE) policies post-GFC made the banking sector's liquidity ratio much higher.
+    - The HQLA rose sharply, peaking in 2020 at around $9 trillion and over 35% of total assets.
+    
+4. **Recent Decrease**:
+    - A slight decline in HQLA is noted starting 2021, bringing it down to approximately $8 trillion and around 30% of total assets by 2022.
+
+### Conclusion:
+Basel III and QE measures significantly increased the liquidity within the banking sector post-GFC. However, there's a recent decline in both the absolute HQLA and its proportion of total assets. This trend signifies that while the liquidity remains high compared to pre-GFC levels, the banking sector might be experiencing a slight rollback or stabilization phase.

@@ -1,0 +1,37 @@
+The image presents two graphs illustrating population gains and losses for East Asia and the United States from 1950 to 2050, focusing on births, deaths, and net migration. Here are the key takeaways from the graphs:
+
+### East Asia
+- **Births (Red Line):**
+  - A significant peak in the mid-1960s, reaching over 300 million.
+  - A steady decline from the 1960s onward, with a notable drop around 1980.
+  - A gradual decrease continuing through 2050, reaching below 100 million.
+  
+- **Deaths (Black Line):**
+  - Relatively stable and low from 1950 to 1980.
+  - A sharp increase starting from the 1980s, surpassing births around 2000.
+  - Death rates continue to rise, reaching around 200 million by 2050.
+
+- **Net Migration (Gray Line):**
+  - Generally insignificant and nearly constant at a very low level throughout the period.
+
+### United States
+- **Births (Red Line):**
+  - A peak around 1960 at about 4 million births.
+  - A slight decline, followed by fluctuations but generally stable from the 1980s through 2050.
+  - A slight decrease projected from around 2030 onward.
+
+- **Deaths (Black Line):**
+  - Steadily increasing from 1950 onward, with a significant rise beginning around 2000.
+  - Death rates surpass births around 2025, continuing to rise steadily, reaching about 3.5 million by 2050.
+
+- **Net Migration (Gray Line):**
+  - Some fluctuations but relatively stable compared to births and deaths.
+  - Generally oscillates between approximately 0.5 million to just above 1 million from 1950 to 2050.
+
+### Conclusion
+- **East Asia:** There is a clear trend of decreasing births and increasing deaths, resulting in a negative natural population growth by around 2000.
+- **United States:** The births and deaths trends show an increase in deaths overtaking births around 2025, leading to an aging population. Net migration remains a significant factor in population change.
+
+### Source Information
+- Data is sourced from the UN Department of Economic and Social Affairs, Population Division.
+- Note: East Asia data includes figures from China (including Hong Kong and Macau), Japan, Mongolia, North Korea, South Korea, and Taiwan.

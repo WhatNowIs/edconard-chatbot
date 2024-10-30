@@ -1,0 +1,40 @@
+The image displays two bar charts comparing venture capital funding rounds from 2022 to 2023 across different series (A to E). 
+
+### Key Insights:
+
+#### Percent of Rounds That Were Down Rounds
+1. **Series A:** 
+   - 2022: Approximately 10%
+   - 2023: Around 15%
+2. **Series B:**
+   - 2022: Roughly 12%
+   - 2023: Just over 20%
+3. **Series C:**
+   - 2022: About 12%
+   - 2023: Over 25%
+4. **Series D:**
+   - 2022: Approximately 15%
+   - 2023: Close to 30%
+5. **Series E:**
+   - 2022: Around 18%
+   - 2023: Nearly 30%
+
+#### Median Decline in Post-Money Valuation
+1. **Series A:** 
+   - 2022: ~12%
+   - 2023: ~18%
+2. **Series B:** 
+   - 2022: ~22%
+   - 2023: ~30%
+3. **Series C:** 
+   - 2022: ~26%
+   - 2023: ~35%
+4. **Series D:**
+   - 2022: ~35%
+   - 2023: ~32%
+5. **Series E:**
+   - 2022: ~48%
+   - 2023: ~50%
+
+### Summary:
+From 2022 to 2023, the venture capital funding environment saw notable increases in the percentage of down rounds across all series, with Series C and beyond experiencing the most significant upticks. Correspondingly, there were steeper median declines in post-money valuations, particularly in the Series B and C stages. Series E rounds were hit hardest in both years, with around half of their valuations decreasing. This indicates a generally tougher funding landscape in 2023 compared to 2022.

@@ -1,0 +1,9 @@
+The image presents a line graph titled "Figure 1. Estimated Effect on the Deficit, Conventional Basis and Population-Change Approach," sourced from the Penn Wharton Budget Model. The horizontal axis represents years, spanning from 2024 to 2044. The vertical axis indicates the effect on the primary deficit, measured in billions of dollars, ranging from -100 to 20.
+
+There are two distinct trends illustrated:
+
+1. **Conventional Basis (Blue Line):** This line maintains a steady, slightly increasing trend around the zero mark throughout the years from 2024 to 2044, suggesting a minimal or constant effect on the primary deficit.
+
+2. **Accounting for Population Change (Brown Line):** This line starts near zero but shows a consistent and significant decline over the years, reaching a deficit effect of about -90 billion dollars by 2044. This indicates a growing negative impact on the primary deficit when accounting for population changes.
+
+The graph underscores the considerable difference in the primary deficit estimates when population changes are taken into account versus the conventional basis. The conventional approach estimates a relatively stable deficit, whereas accounting for population change projects a significantly worsening deficit over time.

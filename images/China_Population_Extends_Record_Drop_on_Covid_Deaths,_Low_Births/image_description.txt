@@ -1,0 +1,15 @@
+The chart titled "China's Population Shrinks Faster" illustrates the demographic trends in China from 1980 to 2023. According to the data sourced from Chinese official statistics, the key points include:
+
+1. **Births vs. Deaths**:
+   - The pink bars signify the number of births, while the yellow bars represent the number of deaths.
+   - Initially, the number of births was significantly higher than deaths, but this trend began to decline over the years.
+
+2. **Population Change**:
+   - The black line represents the absolute change in population.
+   - From the early 1980s to around the mid-2010s, there was a positive population growth, although the rate began to decrease steadily.
+   - By the 2020s, the population change turned negative, indicating more deaths than births.
+
+3. **2023 Milestone**:
+   - By 2023, the number of births fell to a record low, concurrent with a rise in deaths, marking an accelerated shrinking of China's population.
+
+Overall, this data indicates a significant demographic shift in China, characterized by declining birth rates and increasing death rates, leading to an unprecedented contraction in population beginning around 2023.

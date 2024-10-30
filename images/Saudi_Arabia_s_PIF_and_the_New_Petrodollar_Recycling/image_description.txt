@@ -1,0 +1,20 @@
+The chart "PIF Investment Securities by Region" details the investments of the Public Investment Fund (PIF) from January 2020 to January 2022, broken down by four regions: MENA, United States of America, Europe, and Others.
+
+Key takeaways:
+
+1. **Overall Growth**: There has been a significant growth in total investments over the three-year period. The total investment value has approximately doubled from January 2020 to January 2022.
+
+2. **Regional Breakdown**: 
+   - **MENA Region (Blue)**: The MENA region consistently constitutes a prominent portion of the investments. It shows steady growth over the years.
+   - **United States of America (Orange)**: The United States sees the most substantial increase in investment over the three years, reflecting a major part of PIF's portfolio.
+   - **Europe (Gray)**: Investments in Europe have remained relatively stable, with a slight increase over time.
+   - **Others (Yellow)**: Investments in "Others" category have seen minimal growth compared to the other regions.
+
+3. **Investment Values**:
+   - In January 2020, total investments were slightly above 200 billion USD, with the MENA region and the USA being the largest recipients.
+   - By January 2021, investments grew closer to 250 billion USD, with marked increases in both the MENA region and the USA.
+   - By January 2022, total investments approached 350 billion USD, with notable increases in the MENA region and the USA, while Europe's growth remained moderate.
+
+4. **Source**: The data is sourced from Exante Data and PIF.
+
+In summary, the PIF has expanded its investment portfolio significantly from 2020 to 2022, with the largest increases seen in the MENA region and the USA, while Europe and other regions saw relatively modest growth.

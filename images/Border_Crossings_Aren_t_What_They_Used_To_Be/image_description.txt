@@ -1,0 +1,22 @@
+The chart provides data on the number of border crossings by outcome over various fiscal years, with particular emphasis on apprehensions and entries without inspection. It utilizes data from sources such as U.S. Customs and Border Protection and the Department of Homeland Security.
+
+Key observations:
+
+1. **Types of Data Represented**:
+   - **Apprehensions (including Title 42)** (shown in blue): The number of border entries that were apprehended.
+   - **Entries without inspection (DHS estimates)** (shown in red): Estimated entries without inspection.
+   - **Imputed entries without inspection for 2021** (shown in brown): Entries estimated using the apprehension rate for 2021.
+   - **Imputed entries without inspection for 2000-2010** (shown in light pink): Entries estimated using the mean apprehension rate for 2000-2010.
+
+2. **Trends Over Time**:
+   - The number of apprehensions significantly increased around the late 1990s and early 2000s.
+   - There was a notable peak in apprehensions around the early 2000s.
+   - Entries without inspection also appear to increase simultaneously with apprehensions but have periods of fluctuation over the years.
+   - Recently, apprehensions reached an unprecedented high level while the estimated entries without inspection have remained relatively stable or even lower compared to previous decades.
+
+3. **Key Points**:
+   - Despite the record levels of apprehensions in recent years, which are at an apparent all-time high, it is suggested that the overall number of border crossings may not have increased correspondingly. The high apprehension rates might indicate better enforcement rather than an actual increase in crossings.
+
+**Source**: U.S. Customs and Border Protection, Department of Homeland Security, and author's calculations. The notable points also clarify that apprehensions include Title 42 expulsions for the years 2020 to 2023. Entries without inspection were estimated by DHS for 2000-2021, with the mean apprehension rate used to estimate entries for the years prior to 2000.
+
+The graph provides useful insights into border crossing trends and highlights the importance of understanding both apprehensions and estimated entries without inspection to obtain a comprehensive view of border activity.

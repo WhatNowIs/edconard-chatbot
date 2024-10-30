@@ -1,0 +1,10 @@
+This image is a line graph titled "U.S. primary energy production by source (1950–2023)" and measures energy production in quadrillion British thermal units (BTUs). The graph, sourced from the U.S. Energy Information Administration (EIA) through the Monthly Energy Review, illustrates the trends in U.S. energy production across different sources over a span of more than seven decades. Key takeaways include:
+
+- **Natural Gas**: There has been a significant increase in natural gas production, particularly starting in the late 2000s, making it the leading source of energy production by 2023 at approximately 40 quadrillion BTUs.
+- **Crude Oil**: Crude oil production has seen fluctuations but has been on a rising trend since around 2008, reaching over 20 quadrillion BTUs by 2023.
+- **Coal**: Coal production peaked around 2008 but has since declined sharply, dropping below 15 quadrillion BTUs by 2023.
+- **Renewables**: The production from renewable sources has shown a steady increase over the years, nearing 10 quadrillion BTUs by 2023.
+- **Natural Gas Plant Liquids**: This category has also increased, showing a steady upward trend reaching around 10 quadrillion BTUs by 2023.
+- **Nuclear**: Nuclear energy production saw rapid growth until the late 1990s but has since leveled off, remaining relatively stable at around 8 quadrillion BTUs.
+
+The graph clearly illustrates the dynamic changes and shifts in the energy production landscape in the U.S., with notable increases in natural gas and renewable energy sources in recent years.

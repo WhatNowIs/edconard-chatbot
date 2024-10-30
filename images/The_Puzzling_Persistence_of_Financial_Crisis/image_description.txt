@@ -1,0 +1,87 @@
+This table summarizes the characteristics of 10 significant financial panics throughout history. The key details for each panic are categorized by various factors as follows:
+
+1. **Panic of AD 33**
+   - **Period**: Early Roman Empire
+   - **Initial Affected Markets**: Bank Credit/Italian Land
+   - **Political Environment**: Preserving Imperial Expansion
+   - **Economic Environment**: Static/Declining
+   - **Collapse Predictable Pre-Crisis?**: No
+   - **Prior "Excess Price Boom"?**: No
+   - **Political Risk Subsidies?**: Yes
+   - **Preference, Interest rate, Risk shifts?**: No
+   - **Learning about new markets?**: No
+   - **Endogenous fraud?**: No
+
+2. **Mississippi Bubble**
+   - **Period**: 1720s
+   - **Initial Affected Markets**: Sovereign Debt/Stocks/Currency
+   - **Political Environment**: Global Early Modern Competition
+   - **Economic Environment**: Nascent Expansion
+   - **Collapse Predictable Pre-Crisis?**: Yes
+   - **Prior "Excess Price Boom"?**: Yes
+   - **Political Risk Subsidies?**: Yes
+   - **Preference, Interest rate, Risk shifts?**: No
+   - **Learning about new markets?**: Yes
+   - **Endogenous fraud?**: Yes
+
+3. **South Sea Bubble**
+   - **Period**: 1720s
+   - **Initial Affected Markets**: Sovereign Debt/Stocks
+   - **Political Environment**: Global Early Modern Competition
+   - **Economic Environment**: Nascent Expansion
+   - **Collapse Predictable Pre-Crisis?**: Yes
+   - **Prior "Excess Price Boom"?**: Yes
+   - **Political Risk Subsidies?**: Yes
+   - **Preference, Interest rate, Risk shifts?**: No
+   - **Learning about new markets?**: Yes
+   - **Endogenous fraud?**: Yes
+
+4. **Florida Land Boom**
+   - **Period**: 1920s
+   - **Initial Affected Markets**: Florida Land/Banks
+   - **Political Environment**: U.S. 20th Century Democracy
+   - **Economic Environment**: New Frontier
+   - **Collapse Predictable Pre-Crisis?**: Unclear
+   - **Prior "Excess Price Boom"?**: Yes
+   - **Political Risk Subsidies?**: Yes
+   - **Preference, Interest rate, Risk shifts?**: No
+   - **Learning about new markets?**: Yes
+   - **Endogenous fraud?**: Yes
+
+5. **US Stock Crash of 1929**
+   - **Period**: 1920s
+   - **Initial Affected Markets**: Stocks
+   - **Political Environment**: U.S. 20th Century Democracy
+   - **Economic Environment**: Roaring 20s
+   - **Collapse Predictable Pre-Crisis?**: Unclear
+   - **Prior "Excess Price Boom"?**: Unclear
+   - **Political Risk Subsidies?**: No
+   - **Preference, Interest rate, Risk shifts?**: Yes
+   - **Learning about new markets?**: Yes
+   - **Endogenous fraud?**: Yes
+
+6. **Great Depression Bank Crises**
+   - **Period**: 1930s
+   - **Initial Affected Markets**: Banks
+   - **Political Environment**: U.S. 20th Century Democracy
+   - **Economic Environment**: Global Recession/Agricultural Decline
+   - **Collapse Predictable Pre-Crisis?**: No
+   - **Prior "Excess Price Boom"?**: No
+   - **Political Risk Subsidies?**: No
+   - **Preference, Interest rate, Risk shifts?**: Yes
+   - **Learning about new markets?**: Yes
+   - **Endogenous fraud?**: No
+
+7. **Mexican Crisis**
+   - **Period**: 1994-1995
+   - **Initial Affected Markets**: Banks/Currency
+   - **Political Environment**: PRI Dominance
+   - **Economic Environment**: FX Peg/1993 Recession
+   - **Collapse Predictable Pre-Crisis?**: Yes
+   - **Prior "Excess Price Boom"?**: No
+   - **Political Risk Subsidies?**: Yes
+   - **Preference, Interest rate, Risk shifts?**: No
+   - **Learning about new markets?**: No
+   - **Endogenous fraud?**: Yes
+
+8. **Korean Crisis**

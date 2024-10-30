@@ -1,0 +1,19 @@
+The scatter plot presented in Figure 4 showcases the relationship between new immigration court cases in 2023 and the V-U ratio (VAC-UNITER ratio) in 2024 across various states in the United States. The V-U ratio represents the ratio of job vacancies to unemployment.
+
+Key observations from the chart include:
+
+1. **Horizontal Axis (X-Axis):** Shows the number of new immigration court cases in 2023, with values ranging from 0 to 7.
+2. **Vertical Axis (Y-Axis):** Represents the V-U ratio for 2024, spanning values from 0 to 3.5.
+
+3. **Trend Line:** There is a downward sloping dashed trend line, suggesting a negative relationship between the number of new immigration court cases in 2023 and the V-U ratio in 2024. As new court cases increase, the V-U ratio tends to decrease.
+
+4. **State-specific Observations:**
+   - **North Dakota** has one of the highest V-U ratios but among the lowest new court cases.
+   - **Maryland** also shows a high V-U ratio with fewer new court cases.
+   - **Florida, Massachusetts, Colorado, Texas, and New York** have moderate V-U ratios with higher new court cases, ranging from 2-5. 
+   - **California** and **Illinois** exhibit lower V-U ratios and moderate numbers of new court cases.
+   - **New Jersey** has a low V-U ratio but high new court cases.
+
+These observations infer that states with higher immigration court cases in 2023 tend to have lower V-U ratios in 2024, indicating tighter labor markets with fewer job vacancies relative to the number of unemployed. 
+
+The data utilized for this figure comes from the author's calculations using BLS data and Syracuse University's Transactional Records Access Clearinghouse.

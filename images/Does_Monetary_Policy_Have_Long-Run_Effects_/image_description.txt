@@ -1,0 +1,24 @@
+The figure titled "Real GDP response to unexpected policy rate changes" illustrates the impact of a 1% unexpected change in domestic short-term interest rates on real GDP over a period of 12 years. 
+
+### Key Points:
+- **Loosening Shock (blue line and shading):**
+  - Following a loosening shock (an unexpected cut in the interest rate):
+    - Initially, the real GDP increases slightly.
+    - The maximum positive effect is observed around 4-5 years after the change.
+    - The GDP response gradually diminishes but remains slightly positive over the 12-year horizon.
+  - The shaded blue area represents the one-standard-error confidence bands, indicating the potential range of the response.
+
+- **Tightening Shock (red line and shading):**
+  - Following a tightening shock (an unexpected hike in the interest rate):
+    - The real GDP initially decreases.
+    - The maximum negative effect is significant and is observed around 3-4 years after the change.
+    - The GDP response continues to be negative over the 12-year horizon, with the negative impact diminishing slightly over time.
+  - The shaded red area represents the one-standard-error confidence bands around the average response.
+
+### Note:
+- The data sample spans from 1900 to 2015, excluding World War periods.
+- The confidence bands reflect a measure of uncertainty in the estimates.
+- For detailed estimation methodology, see Jordà, Singh, and Taylor (2023).
+
+### Summary:
+The chart demonstrates that an unexpected decrease in interest rates (loosening shock) has a generally positive impact on real GDP, particularly noticeable within the 4-5 year period post-change, whereas an unexpected increase in interest rates (tightening shock) results in a considerable and prolonged negative impact on real GDP, especially notable within the first 3-4 years.

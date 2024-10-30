@@ -1,0 +1,17 @@
+The image is titled "The Start of Quantitative Tightening," and it illustrates the changes in the Federal Reserve's balance sheet over time, indicating that it is shrinking again.
+
+Here is a summary of the key information:
+
+- The visual graph uses data from the U.S. Federal Reserve to depict its balance sheet from approximately 2005 to 2020+.
+- The balance sheet is broken down into three categories of assets:
+   - **Treasury Securities (yellow)**
+   - **Mortgage-Backed Securities (green)**
+   - **All Other Assets (red)**
+
+From the graph, it can be observed that:
+- The Federal Reserve's balance sheet was relatively stable from 2005 until around 2008.
+- After 2008, there was a significant increase in assets, particularly in Treasury Securities and Mortgage-Backed Securities. This corresponds with the financial crisis period and subsequent monetary policy interventions.
+- There was a noticeable expansion around 2020, likely as a response to the economic impact of the COVID-19 pandemic.
+- Post-2020, the graph suggests that the growth in these assets is decreasing or stabilizing, indicating the beginning of "Quantitative Tightening" where the Federal Reserve is likely reducing its balance sheet.
+
+In essence, the graph displays the growth and recent reduction of the Federal Reserve's balance sheet, illustrating the shift from quantitative easing to quantitative tightening.

@@ -1,0 +1,4 @@
+The image is a bar chart depicting the contribution of federal defense spending to US GDP growth, measured in percentage points, over different time periods. The source of the data is the US Department of Commerce, as compiled by Bloomberg.
+
+### Summary:
+The chart illustrates how US federal defense spending has influenced economic growth over several intervals. Initially, defense spending has shown positive contributions, peaking significantly at one point. There was a period of notable negative impact on GDP growth, suggesting that outlays were dragging. However, recent trends show a reversal, with defense spending once again contributing positively to GDP growth. As of the last measured period, defense spending is providing an extra boost to the US economy, indicated by a rise to 0.21 percentage points.

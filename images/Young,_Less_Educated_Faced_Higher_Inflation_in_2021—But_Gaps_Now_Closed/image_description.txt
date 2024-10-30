@@ -1,0 +1,22 @@
+The image provides an analysis of inflation disparities by education level, with a focus on the period from 2019 to 2023. It is broken down into two main sections:
+
+1. **Share of Expenses on Food, Housing, and Transportation by Education (2020)**:
+   - This section, depicted by a bar chart, compares the percentage share of expenses for individuals with no college education (represented in blue) versus those with a college education (represented in yellow).
+   - People with no college education spend approximately:
+     - 18% on Food
+     - 39% on Housing
+     - 14% on Transportation
+   - In contrast, individuals with a college education spend:
+     - 12% on Food
+     - 25% on Housing
+     - 10% on Transportation
+   - This indicates higher expenditure shares in these categories for individuals without a college education.
+
+2. **Inflation Gaps by Education Relative to Overall CPI**:
+   - This section, depicted by a line graph, shows the inflation gap between individuals with no college education and those with college education relative to the overall Consumer Price Index (CPI) from 2019 to early 2023.
+   - Individuals without college education experienced significant inflation disparities, with a peak reaching nearly 1.50 percentage points around 2021 and then gradually declining through 2022.
+   - The disparity appears to narrow and almost converge to zero by the end of 2022 and into early 2023, indicating that inflation impacts became more equal across education levels during this period.
+
+**Sources**: The data is sourced from the U.S. Bureau of Labor Statistics, Consumer Expenditure Surveys, and the Consumer Price Index.
+
+Overall, the study highlights the diminishing impact of education-based inflation disparities from their peak in 2021 to a more balanced state by the end of 2022.

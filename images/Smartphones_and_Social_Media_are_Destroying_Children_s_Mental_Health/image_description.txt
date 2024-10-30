@@ -1,0 +1,18 @@
+The image presents a study analyzing the correlation between screen-time on social media and self-harm among British teenagers. It highlights that girls, in particular, are more vulnerable to large amounts of screen-time, which is linked to higher rates of self-harm.
+
+Key findings:
+1. Girls show a steep increase in self-harm rates as their daily screen-time on social media increases.
+   - Less than 1 hour: around 18%
+   - 1-2 hours: around 20%
+   - 2-5 hours: close to 30%
+   - 5+ hours: over 35%
+
+2. Boys also show an increase in self-harm rates, but to a lesser extent compared to girls.
+   - Less than 1 hour: around 7%
+   - 1-2 hours: just above 7%
+   - 2-5 hours: around 9%
+   - 5+ hours: around 14%
+
+The summary suggests a concerning trend where more screen-time on social media is linked with higher instances of self-harm, with girls being particularly at risk. This underscores the need for monitoring and potentially managing social media usage among teenagers. 
+
+Sources noted include FT analysis of the Millennium Cohort Study (UK) wave 6, and prior work by Jean Twenge. The graphic is credited to John Burn-Murdoch.

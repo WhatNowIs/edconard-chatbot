@@ -1,0 +1,15 @@
+The chart, titled "Diverging Debts," presents a comparison of government debt as a percentage of GDP for the U.S. and the Eurozone from 2001 to 2022, with future projections included.
+
+Key points:
+1. **U.S. Government Debt**:
+   - The debt percentage begins just below 60% in 2001.
+   - There is a steady increase over the years, peaking sharply around 2020.
+   - From 2020 onwards, the debt percentage falls slightly before continuing to rise in future projections, approaching around 140% towards the end.
+
+2. **Eurozone Government Debt**:
+   - The debt percentage starts at around 60% in 2001, similar to the U.S.
+   - Unlike the steady increase seen in the U.S., the Eurozone debt rises more gradually.
+   - It peaks slightly under 100% during the early 2010s and has a relatively stable course post-peak.
+   - After 2020, the debt percentage shows a declining trend according to projections.
+
+In summary, the chart highlights a divergence in the trajectory of government debts for the U.S. and the Eurozone. U.S. government debt as a percentage of GDP is projected to rise in the coming years, while Eurozone debt is expected to fall. The data is sourced from the International Monetary Fund and Barclays, and projections are included beyond 2022.

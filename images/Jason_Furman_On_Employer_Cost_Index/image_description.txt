@@ -1,0 +1,19 @@
+The provided image is a chart titled "Employment Cost Index, Private Compensation," which displays percent changes on an annual rate from 2007 through 2021. The chart includes two data series:
+
+1. **3-month Change** (represented by blue vertical bars)
+2. **12-month Change** (represented by an orange line)
+
+### Summary of Trends:
+- **2007-2011**: Both the 3-month and 12-month changes saw a general decline, reflecting reduced growth rates in private compensation.
+- **2011-2019**: The 12-month change displayed a relatively stable but moderate upward trajectory, typically hovering between 2% and 3%.
+- **2020**: The onset of the COVID-19 pandemic initially caused notable fluctuations in the 3-month change.
+- **2021**: Both the 3-month and 12-month changes exhibited significant increases, with the 12-month change peaking at around 6%.
+
+### Key Observations:
+- The 12-month change shows a long-term steady rise in private compensation until a sharp increase in 2021.
+- The 3-month change displays more volatility, particularly during economic downturns like the 2008 Financial Crisis and the 2020 COVID-19 pandemic.
+  
+### Data Source:
+- The data is attributed to the Bureau of Labor Statistics and Macrobond, along with the author's calculations. 
+
+This chart highlights trends in the employment cost index for private compensation, demonstrating the impacts of economic cycles and unusual events like the COVID-19 pandemic on compensation growth rates.

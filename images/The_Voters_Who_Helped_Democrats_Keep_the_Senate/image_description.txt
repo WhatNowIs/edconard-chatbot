@@ -1,0 +1,14 @@
+The image is a scatter plot chart titled "Fetterman overperformed Biden among white voters with no college degree" which indicates the difference between each Pennsylvania county's 2020 and 2022 vote margin compared to its share of non-Hispanic white residents without a bachelor's degree. The chart is sized by the counties' 2022 statewide vote share.
+
+Key points:
+- **2022 Margin Color Scale**: The counties are color-coded from red (R+70) to blue (D+70), indicating the vote margins.
+- **X-Axis**: Represents the share of white residents without a bachelor's degree (from 20% to 80%).
+- **Y-Axis**: Difference in the margin from even performance (marked as "EVEN") up to a D+10 or a -10% margin (Fetterman’s overperformance or underperformance relative to Biden).
+- **County Labels**: Notable counties like Philadelphia and Allegheny are specifically labeled.
+- **Notation**: Counties where at least 60% of residents are white without a college degree accounted for 36% of the statewide vote.
+- **Bubble Size**: Indicates the 2022 statewide vote share with larger circles representing larger shares of the vote.
+- **Data Points Analysis**: 
+  - Philadelphia and Allegheny counties are depicted with significant Democratic margins and blue bubbles indicating Democratic lean.
+  - Most counties with a higher percentage of white residents without a bachelor's degree tend to show a red hue, reflecting Republican lean.
+
+In summary, John Fetterman generally performed better than Joe Biden in Pennsylvania counties with a higher share of white residents without a college degree. This overperformance is particularly noted in specific counties like Philadelphia and Allegheny, although many red-hued counties indicate Republican strongholds among this demographic.

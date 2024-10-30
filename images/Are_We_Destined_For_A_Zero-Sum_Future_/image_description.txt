@@ -1,0 +1,13 @@
+The image illustrates the relationship between GDP growth experienced by different birth cohorts and their prevailing economic mindsets in high-income countries. Here is a summary of the key points:
+
+- The chart shows two metrics plotted for different birth cohorts from 1930 to 1990:
+  1. The average annual growth in GDP per capita (%) experienced as a young adult (represented by blue dots).
+  2. The prevalence of zero-sum or positive-sum thinking, measured on a mindset scale (0-100), where 100 indicates a belief that "wealth can grow so there's enough for everyone" and 0 indicates a belief that "people can only get rich at the expense of others" (represented by red dots).
+
+- Birth cohorts from 1930 to around 1950 experienced relatively high GDP growth (around 3-4%) and are associated with positive-sum beliefs (mindset scores above 57).
+
+- Subsequent birth cohorts (from 1960 onwards) experienced declining GDP growth as young adults, with growth rates falling below 2% for those born around 1980 and later.
+
+- Correspondingly, the mindset of these cohorts has shifted towards more zero-sum thinking, indicated by mindset scores declining towards 53.
+
+- The trend suggests that older generations, having grown up during periods of higher economic growth, tend to believe in positive-sum principles. In contrast, younger generations, facing lower growth, are more inclined toward zero-sum thinking.

@@ -1,0 +1,22 @@
+The image highlights significant investment announcements in the Southern United States following the Inflation Reduction Act. It details projects across three key sectors: Batteries and Electric Vehicles (EVs), Renewable Energy, and Carbon Capture.
+
+### Investment Sectors:
+1. **Batteries and EVs (Blue circles)**
+   - **Form Energy (W.Va.)**: Battery manufacturing for long-duration energy storage.
+   - **LG Chem (Tenn.)**: Battery cathode materials plant.
+   - **Hyundai and SK On (Ga.)**: Battery manufacturing for EVs.
+   - **BMW Group (S.C.)**: Battery assembly and EV manufacturing.
+   - **Freyr Battery and Koch Industries (Ga.)**: Battery plant for the electric grid.
+   - **Envision AESC (N.C.)**: Battery cell manufacturing.
+   - **Redwood Materials (S.C.)**: Battery recycling and component manufacturing.
+
+2. **Renewable Energy (Green circles)**
+   - **Hanwha QCells (Ga.)**: Solar power manufacturing.
+
+3. **Carbon Capture (Black circles)**
+   - **Competitive Power Ventures (W.Va.)**: Natural gas plant with carbon capture.
+
+### Investment Magnitudes:
+- The investment values range from $1 billion to $3 billion, with circle sizes on the map representing varying investment scales.
+
+Overall, the map shows a significant concentration of investments in the sectors of batteries and EVs, renewable energy, and carbon capture technologies across various Southern states, driven by the incentives from the Inflation Reduction Act. This highlights the regions' pivotal role in advancing the future of clean energy and advanced manufacturing technologies.

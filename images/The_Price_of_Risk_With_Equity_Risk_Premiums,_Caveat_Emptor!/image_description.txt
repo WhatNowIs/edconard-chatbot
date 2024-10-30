@@ -1,0 +1,19 @@
+The image displays a graph depicting the Equity Risk Premia (ERP) from 1960 to August 2023, with three distinct measures:
+
+1. **EP - T. Bond Rate (Red Line):**
+   - Shows the difference between earnings yield (EP) and 10-year Treasury Bond rates.
+   - The graph fluctuates significantly, with notable negative troughs in the late 1970s, mid-1980s, and 1990s.
+   - After peaking in early 2020s, it trends downwards towards the latest data point in August 2023. 
+
+2. **Implied ERP (Green Line):**
+   - Implied ERP is derived from forecasting future financial market returns.
+   - It also shows variability but generally stays positive with peaks around 1974, 2009, and 2020.
+   - Post-2009, the implied ERP experiences some volatility but remains within a positive range.
+
+3. **Historical ERP (Blue Line):**
+   - Represents an average ERP based on historical data.
+   - Remains more stable compared to the other two lines, hovering mostly around the 4% range across the entire period.
+   - Shows a slight upward trend towards the end in August 2023.
+
+### Summary:
+The graph provides a comparative analysis of three measures of Equity Risk Premia (ERP) from 1960 to August 2023. The EP - T. Bond Rate indicates notable negative periods in the 1970s, 1980s, and 1990s, showing significant fluctuations over time. The Implied ERP, while also variable, remains positive with significant peaks in 1974, 2009, and 2020. On the other hand, the Historical ERP demonstrates relative stability around the 4% mark, with a slight upward trend toward the latest data point.

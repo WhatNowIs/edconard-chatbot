@@ -1,0 +1,8 @@
+The graph illustrates the estimates of the long-run Federal Funds Rate (central tendency midpoint) by FOMC members over time, spanning from June 2015 to June 2023. It shows the following key trends:
+
+1. **Initial Decline**: The rate began around 3.75% in June 2015 and gradually declined, reaching around 3.0% by June 2016.
+2. **Stabilization and Fluctuations**: Between June 2016 and December 2019, the rate fluctuated between 2.75% and 2.90%.
+3. **Further Decline**: From December 2019, the rate consistently dropped, stabilizing at approximately 2.50% from June 2020 to December 2022.
+4. **Recent Increase**: Since December 2022, the rate has started to rise, reaching around 2.75% by June 2023.
+
+The source of this data is the Federal Reserve Board (FRB) and was compiled by the Apollo Chief Economist. The trend indicates a recent shift by FOMC members towards raising their estimates of the long-run Federal Funds Rate.

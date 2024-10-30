@@ -1,0 +1,7 @@
+The image highlights a significant gap between the projected demand and supply of graduates in semiconductor-related fields in the U.S. by 2030. According to the data:
+
+1. **Technicians**: The projected demand is 134.3K, while the supply is only 107.9K, indicating a shortfall of 26.4K.
+2. **Engineers**: The projected demand is 69.0K, with a supply of 41.7K, resulting in a deficit of 27.3K.
+3. **Computer Scientists**: The projected demand is 34.5K, compared to a supply of 21.1K, showing a shortage of 13.4K.
+
+The source of the data is SIA. The image underscores the need for the U.S. to boost its educational output in these fields to meet the rising demand for semiconductor experts.

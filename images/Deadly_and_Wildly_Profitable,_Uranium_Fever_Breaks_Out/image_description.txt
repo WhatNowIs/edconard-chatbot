@@ -1,0 +1,24 @@
+This image focuses on the global landscape of nuclear reactor expansion, highlighting the status of nuclear reactors across different countries. The nuclear reactors are categorized by their operational status: Operating, Under Construction, Planned, and Proposed. Here’s a summary of the key points:
+
+1. **Overall Nuclear Expansion**:
+    - The image shows that numerous countries globally are engaged in expanding their nuclear power capabilities.
+    - China and India are leading this expansion with a significant number of reactors in operation, under construction, planned, and proposed.
+
+2. **Country-Specific Details**:
+    - **China**: Has a large number of operating reactors and substantial planned and proposed expansions.
+    - **India**: Displays a significant number of reactors across all stages of development, concentrating heavily on increasing its nuclear power capacity.
+    - **USA** and **France**: Have numerous operating reactors and a few under construction or planned expansions.
+    - **Russia** and **South Korea**: Show a mix of operating and under-construction reactors, showcasing active nuclear development.
+    - **Japan**, **Finland**, and **South Africa**: Feature a combination of operating reactors and planned expansions, although Japan's construction is currently suspended.
+ 
+3. **Regional Insights**:
+    - The European region sees various levels of nuclear activity, with countries like the UK and Finland showing planned and operating reactors.
+    - Eastern Europe and Middle East countries like Turkey, Iran, and Egypt are also making significant strides with planned and proposed nuclear reactors.
+
+4. **Suspended Projects**:
+    - The note at the bottom mentions that reactor construction in Brazil, Ukraine, and Japan is currently suspended.
+
+5. **Key Source**:
+    - The data and categorization presented in the image are sourced from the World Nuclear Association, which provides an authoritative overview of nuclear energy developments globally.
+
+In summary, this diagram provides a comprehensive visual representation of the global nuclear reactor landscape, emphasizing that China and India are at the forefront of nuclear power expansion, while many other countries are also actively developing their nuclear energy capabilities.

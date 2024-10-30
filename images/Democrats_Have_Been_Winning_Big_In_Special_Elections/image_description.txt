@@ -1,0 +1,19 @@
+This table showcases the relationship between special-election performance and the eventual national House popular vote in general elections for three electoral cycles: 2017-18, 2019-20, and 2021-22. 
+
+### Summary:
+
+**Cycle: 2017-18**
+- **Special-Election Overperformance:** D+10.7
+- **National House Popular Vote:** D+8.6
+
+**Cycle: 2019-20**
+- **Special-Election Overperformance:** D+4.3
+- **National House Popular Vote:** D+3.0
+
+**Cycle: 2021-22**
+- **Special-Election Overperformance:** D+0.5
+- **National House Popular Vote:** R+2.7
+
+Details explain that special-election overperformance is calculated based on average margin swings between special-election margins and each district's weighted relative partisanship, factoring in the district's lean in recent presidential elections. Special elections with no significant Democratic or Republican candidate presence or unusual circumstances are excluded, and "vote margin" refers to total vote share calculations of all candidates from the two primary parties.
+
+This analysis indicates that the degree of overperformance in special elections can serve as a predictor for the general election outcomes, with noticeable shifts in party performance trends over the three cycles.

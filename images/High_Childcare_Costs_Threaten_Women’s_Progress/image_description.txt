@@ -1,0 +1,13 @@
+The bar graph from the Bank of America Institute illustrates the income distribution of customers making childcare payments in January for the years 2019 and 2024. The income brackets are categorized as follows:
+
+- Less than $50K (blue)
+- $50K to $100K (red)
+- Greater than $100K (yellow)
+
+Key observations:
+
+1. In January 2019, the largest share (approximately 40%) of customers making childcare payments were from the $50K-$100K income bracket. Customers earning less than $50K constituted about 35%, while those earning more than $100K made up around 25%.
+
+2. By January 2024, there was a notable drop in the share of lower-income customers (less than $50K) making childcare payments, reducing to roughly 20%. The share of customers in the $50K-$100K bracket remained relatively stable at around 40%. However, the proportion of higher-income customers (greater than $100K) making these payments increased significantly to approximately 35%.
+
+Overall, from 2019 to 2024, the data shows a decline in lower-income customers (<$50K) making childcare payments, while higher-income customers (> $100K) saw an increase in their share of the childcare payment market. The middle-income bracket ($50K-$100K) maintained a steady share over the observed period.

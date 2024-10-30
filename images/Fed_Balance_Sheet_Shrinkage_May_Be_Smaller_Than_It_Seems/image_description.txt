@@ -1,0 +1,16 @@
+### Summary:
+The image is a line graph accompanied by a brief analysis concerning the Federal Reserve’s holdings of U.S. Treasury debt, segmented by maturity. The key points extracted from the image are as follows:
+
+- **Title**: Long Goodbye
+- **Description**: "The Fed's holdings of longer-dated debt have barely budged since the balance sheet peaked in mid-2022. Most of the shrinkage has come at the short end, lengthening the portfolio’s average duration."
+- **Graph Details**: The y-axis represents the holdings in U.S. Treasury debt in USD trillions, ranging from $0 to $3.5 trillion. The x-axis represents a time span from 2019 to 2024.
+    - Blue Line (Under 5 years maturity): Shows an initial increase from around $1.5 trillion in 2020 to peaking near mid-2022 at about $3.2 trillion, followed by a gradual decrease.
+    - Red Line (Over 5 years maturity): Remains relatively stable, starting at about $1.0 trillion in 2019, increasing slightly to around $1.6 trillion by mid-2022, and then showing a modest decline.
+
+### Main Insights:
+- The Federal Reserve's portfolio of short-term debt (under 5 years maturity) increased significantly between 2019 and mid-2022, but has since been decreasing gradually.
+- The holdings of longer-term debt (over 5 years maturity) have remained relatively stable with only slight fluctuations.
+- The overall effect is a reduction in the Fed's shorter-term debt holdings, slightly extending the average duration of their portfolio.
+
+### Source:
+- The data is sourced from the Federal Reserve Board and calculations by Matthew Klein.

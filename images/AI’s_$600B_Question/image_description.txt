@@ -1,0 +1,28 @@
+The table provides detailed financial metrics for NVDA's data center operations and AI-related finance for Q4 2023 through Q4 2024. Here's a summary:
+
+1. **NVDA Data Center Run-Rate Revenue**:
+   - Q4 2023 Estimate: $50
+   - Q4 2023 Actual: $74
+   - Q1 2024 Actual: $90
+   - Q4 2024 Estimate: $150
+
+2. **Data Center Facility Build and Cost to Operate**: The percentage is consistently 50% across all the periods mentioned.
+
+3. **Implied Data Center AI Spend**:
+   - Q4 2023 Estimate: $100
+   - Q4 2023 Actual: $147
+   - Q1 2024 Actual: $181
+   - Q4 2024 Estimate: $300
+
+4. **Software Margin**: The margin remains constant at 50% across all the periods mentioned.
+
+5. **AI Revenue Required for Payback**:
+   - Q4 2023 Estimate: $200
+   - Q4 2023 Actual: $294
+   - Q1 2024 Actual: $363
+   - Q4 2024 Estimate: $600
+
+Key points to note:
+- The actual run-rate revenue for Q4 2023 was higher than the estimate.
+- The implied Data Center AI Spend and AI Revenue Required for Payback show a significant increase from Q4 2023 to Q4 2024.
+- Software margin and Data Center Facility Build and Cost to Operate percentages remain constant at 50%.

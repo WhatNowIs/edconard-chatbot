@@ -1,0 +1,29 @@
+The table titled "Global Total Debt, 1950–2022" illustrates the trend in global total debt as a percentage of GDP across various economies from the 1950s to 2022. The table segregates data into three main categories: World, Advanced Economies, and Emerging Market Economies. A subcategory for Low-Income Developing Countries is also included.
+
+### Summary:
+
+#### Global Trends:
+- **World Total Debt**: Increased steadily from 96.8% in the 1950s to a peak of 258.0% in 2020, followed by a slight decline to 238.1% in 2022.
+
+#### Advanced Economies:
+- **Overall**: Saw a continual rise from 110.0% in the 1950s to 281.0% in 2020 before reducing marginally to 277.9% in 2022.
+- **Euro Area**: Increased from 53.5% in the 1950s to 301.3% in 2020, then decreased to 290.1% in 2022.
+- **Japan**: Accelerated from 13.1% in the 1950s to a high of 447.4% in 2022.
+- **United Kingdom**: Grew from 134.0% in the 1950s to 269.3% in 2021, then dipped to 252.1% in 2022.
+- **United States**: Rose from 133.5% in the 1950s to 297.4% in 2020, settling slightly lower at 273.9% in 2022.
+
+#### Emerging Market Economies:
+- **Overall**: Increased from 28.2% in the 1950s to a high of 201.2% in 2020, and then decreased to 191.2% in 2022.
+- **China**: Exhibited a rapid rise from 71.3% in the 1990s to 272.1% in 2022.
+- **Others**: Grew from 28.2% in the 1950s to 124.2% in 2022.
+
+#### Low-Income Developing Countries:
+- Fluctuated significantly, peaking at 87.4% in 2021 before ending at 87.8% in 2022.
+
+### Key Observations:
+1. **Overall Increase**: Total debt as a percentage of GDP has grown globally and across most regions.
+2. **Advanced Economies**: Noticeable steep rise throughout the decades, with Japan and the Euro Area having the most significant increases.
+3. **Emerging Markets**: Significant increases especially post-1980s, with China showing a rapid climb starting from the 1990s.
+4. **Low-Income Developing Countries**: Experienced fluctuating debt levels, with notable peaks during the 1980s and 2019-2022.
+
+This table underscores the global trend of increasing debt relative to GDP over the seven decades, reflecting heightened borrowing and financial commitments across both advanced and emerging economies, slightly tempered in recent years but still notably high.

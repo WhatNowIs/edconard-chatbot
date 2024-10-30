@@ -1,0 +1,15 @@
+The chart illustrates the annual U.S. federal deficit from 2017 to 2023, with a significant increase during the Covid-19 pandemic due to a surge in spending. Here are the main points:
+
+1. **Deficit Trends**:
+   - The deficit was relatively stable from 2017 to 2019, falling between $0.6 trillion and $1.0 trillion.
+   - In 2020, there was a sharp increase to $3.1 trillion, coinciding with the Covid-era spending surge.
+   - Although it slightly decreased to $2.8 trillion in 2021, it fell dramatically to $1.0 trillion in 2022.
+
+2. **Recent and Projected Deficit**:
+   - In 2023, the deficit is projected to rise again to $2.0 trillion, showing a notable increase from the previous year.
+
+3. **Source and Details**:
+   - Data is sourced from the Committee for a Responsible Federal Budget.
+   - The chart covers fiscal years and excludes estimates for student debt cancellation.
+
+This visualization emphasizes the significant impact of Covid-19 on federal spending and the subsequent volatility in the deficit.

@@ -1,0 +1,9 @@
+The chart illustrates the percentage of home buyers who are purchasing a home for the first time, spanning the years 2015 to 2023. 
+
+Key points from the data:
+- In 2015, the percentage of first-time home buyers was approximately 35%.
+- There was a gradual decline in the percentage until it plateaued around 33% from 2017 to 2020.
+- A significant drop occurred in 2022, where the percentage dipped to around 26%, attributed to higher mortgage rates.
+- By 2023, the percentage of first-time buyers had partially recovered to 32%, showing an upward trend.
+
+The summary indicates shifts in the housing market, with notable impacts due to economic factors such as mortgage rates. The recovery in 2023 suggests a potential easing or adaptation by buyers to the previous year's challenges.

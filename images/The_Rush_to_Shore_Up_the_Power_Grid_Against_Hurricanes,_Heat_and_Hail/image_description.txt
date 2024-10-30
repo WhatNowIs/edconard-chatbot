@@ -1,0 +1,18 @@
+The image provided is a map of the United States showing the average annual reported power outages per customer from 2019 to 2023. The map details the outages in a gradient scale, where varying shades of purple represent different outage frequencies: 
+
+- Light purple indicates fewer outages.
+- Dark purple represents more outages.
+- Areas with no data are left in white.
+
+Key observations include:
+
+- The West Coast, especially around Los Angeles, experiences a high frequency of power outages, signified by darker purple shades.
+- Other significant hotspots include:
+  - Northwestern regions around Seattle.
+  - The East Coast, particularly areas around Washington, D.C., and New York.
+  - The southeastern regions have pockets of higher outages, notably around Miami and Atlanta.
+  - Midwestern areas, particularly near Chicago, show moderate frequencies.
+  - The southern parts, including regions around Houston, also seem to experience higher outage frequencies.
+- Many areas in the central part of the nation, such as around Denver and surrounding counties, show relatively low frequencies of power outages (lighter shades of purple).
+  
+This map derives its data from the Oak Ridge National Laboratory and was produced by Carl Churchill/WSJ. The reported outages are measured in 15-minute periods, providing a granular view of power reliability across different regions.

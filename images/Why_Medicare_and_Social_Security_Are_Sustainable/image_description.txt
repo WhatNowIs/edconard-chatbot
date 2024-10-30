@@ -1,0 +1,15 @@
+The graph presents Medicare spending as a percentage of GDP, comparing projections from the years 2009 and 2023 spanning from 2009 to 2051.
+
+Key takeaways from the graph:
+
+1. **2009 Projection (Blue Line):**
+   - Starts at around 4.0% in 2009.
+   - Shows a steady increase over the years.
+   - Expected to exceed 10.0% by mid-century, gradually approaching approximately 12.0% by 2051.
+
+2. **2023 Projection (Orange Line):**
+   - Starts at a similar level (around 4.0%) around 2021 but immediately tracks significantly lower than the 2009 projection.
+   - Despite rising, it does so at a much slower pace.
+   - By 2051, this projection reaches just under 7.0% of GDP, notably lower than the 2009 projection.
+
+Overall, the 2023 projection suggests a more restrained growth in Medicare spending relative to the older 2009 projection, implying a belief that future Medicare spending will be a smaller share of GDP than earlier predicted.

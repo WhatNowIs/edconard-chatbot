@@ -1,0 +1,12 @@
+The image provides a detailed analysis of the monthly changes in average hourly worker pay, annualized, from 2007 to 2023, categorized by different worker groups. Key points from the graph and accompanying text include:
+
+- Wage growth for most Americans, represented by the red line, appears to be stabilizing at approximately 4.5% annually.
+- This growth rate aligns with the pace just before the financial crisis and is around 2 percentage points faster than the growth observed between 2015 and 2019.
+- The data is segmented into three categories:
+  1. **Retail, leisure, and hospitality (nonsupervisory only)**: This group shows the most variability, particularly evident during the COVID-19 pandemic period (2020-2021).
+  2. **All other nonsupervisory workers**: This group's wage growth is depicted by the red line and has been stabilizing recently.
+  3. **Supervisory workers**: Represented by a green line, the wage growth for this group is comparatively more stable with less fluctuation over the years.
+  
+There are questions pointed out about whether wage growth will continue to slow down and whether productivity can keep pace to support these wage increases.
+
+Overall, the data indicates the trends in wage growth by different worker groups, with special attention to the post-2015 and pandemic periods.

@@ -1,0 +1,8 @@
+The provided image is a bar chart that shows the annual profit or loss on property-casualty underwriting for U.S. insurers from 2018 to 2023. Here are the detailed highlights:
+
+- From 2018 to 2020, U.S. insurers experienced slight profits in property-casualty underwriting. The profits increased marginally each year.
+- In 2021, profits turned into a loss of approximately $5 billion.
+- The loss in 2022 significantly increased, reaching about $25 billion.
+- For 2023, covering data from January through September, the loss further deepened to approximately $35 billion.
+
+Source: AM Best

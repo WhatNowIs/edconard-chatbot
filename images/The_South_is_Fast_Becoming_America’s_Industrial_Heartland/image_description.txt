@@ -1,0 +1,17 @@
+The provided image is a map from The Economist that illustrates the investments in 21st-century manufacturing across various states in the United States from January 2021 to June 2023. The map categorizes investments in areas such as semiconductors, electric vehicles (EVs) and batteries, clean energy, and biomanufacturing.
+
+Key points from the image:
+
+1. **High Investment States:**
+   - **New York (NY):** Over $76 billion 
+   - **Texas (TX):** Between $40 billion and $60 billion
+   - **Arizona (AZ):** Between $20 billion and $40 billion
+
+2. **Moderate Investment States:** States like **California (CA), Ohio (OH), Georgia (GA), Michigan (MI), Massachusetts (MA)** and **others** saw investments ranging from $2 billion to $10 billion.
+
+3. **Low to Negligible Investment States:**
+   - Many states, including **Florida (FL), North Dakota (ND), South Dakota (SD), West Virginia (WV), Missouri (MO), Kansas (KS), Nebraska (NE),** and others observed investments below $2 billion.
+
+4. **Zero Investments:** A few states, such as **Delaware (DE)**, are indicated in white, showing little to no investment in these sectors.
+
+This map provides a comprehensive overview of how investments in advanced manufacturing technologies and areas are distributed across the United States, with significant concentrations in certain states suggesting hubs of innovation and industry development.

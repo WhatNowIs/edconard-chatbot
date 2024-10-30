@@ -1,0 +1,12 @@
+The graph titled "Inflation Trend Decomposition: Sector Aggregates" presents the inflation trends from 2017 to 2023, segmented into different sectors: Goods, Services excluding housing, Housing, and the Multivariate Core Trend.
+
+Key observations are:
+1. **From 2017 to 2019**: Inflation trends for all sectors are relatively stable, remaining close to zero.
+2. **2020**: There are significant fluctuations around early 2020, likely due to the economic impacts of the COVID-19 pandemic.
+3. **2021 Onwards**: A noticeable surge in inflation is evident across all sectors:
+   - **Goods (blue line)**: Show a pronounced spike starting from early 2021, reaching peak levels around mid-2022, and then beginning to decline towards 2023.
+   - **Services excluding housing (red line)**: Experiences a steadier rise but doesn't peak as dramatically as goods. 
+   - **Housing (brown line)**: Shows a significant increase starting from late 2020 and continues to rise through 2022, leveling off towards the end of the period.
+   - **Multivariate Core Trend (dashed grey line)**: Captures the overall trend across all sectors, showing a sharp increase starting from mid-2020, peaking around early 2022, and then declining towards 2023.
+
+Overall, the data suggest that inflation pressures have been particularly prominent in the Goods and Housing sectors during the observed period, with broader core trends reflecting these movements. The source of the data is based on estimates from the Bureau of Economic Analysis.

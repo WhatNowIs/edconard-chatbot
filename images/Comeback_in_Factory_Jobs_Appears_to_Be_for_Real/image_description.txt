@@ -1,0 +1,5 @@
+The provided graph illustrates the trend in real US manufacturing output per hour worked from 1987 to 2022, using an index where the year 2012 is set as 100. The data is sourced from the US Bureau of Labor Statistics.
+
+- From 1987 to approximately 2010, there was a consistent and significant increase in manufacturing productivity, reflecting a period of substantial growth.
+- Around 2010, the productivity rate peaked, and since then, it has shown various fluctuations but largely stabilized near the index value of 100.
+- This recent trend suggests an end to the previous decades-long productivity boom in the US manufacturing sector, indicating a plateau in productivity gains per hour worked over the last decade.

@@ -1,0 +1,11 @@
+The image is a bar chart titled "Figure 3: Cumulative impact of ECI (Employment Cost Index) increase on core PCE (Personal Consumption Expenditures) inflation." The chart illustrates how a 1% increase in the employment cost index impacts core PCE inflation over a four-year period, broken down into three categories: Goods, Housing services, and Nonhousing services.
+
+Key points from the chart:
+
+1. **Goods**: There is a slight negative impact on core PCE inflation, as indicated by the bar extending slightly below zero (approximately -0.05 to -0.1 percentage points).
+
+2. **Housing services**: There is a small positive impact on core PCE inflation, with the bar reaching just above zero (approximately 0.025 percentage points).
+
+3. **Nonhousing services**: There is a more substantial positive impact on core PCE inflation, with the bar approaching 0.15 percentage points.
+
+Overall, the largest positive impact on core PCE inflation from a 1% increase in the employment cost index is observed in nonhousing services, while goods show a slight negative impact. Housing services have a minor positive impact.

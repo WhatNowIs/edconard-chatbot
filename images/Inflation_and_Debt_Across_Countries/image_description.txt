@@ -1,0 +1,16 @@
+The chart titled "Figure 2: The post-pandemic period has seen limited correlation between monetary expansion and core inflation in advanced economies" presents a scatter plot comparing core inflation to monetary base growth in various advanced economies. 
+
+**Key Details:**
+1. **X-Axis:** Represents monetary base growth (cumulative from 2019 to 2021, in percentage terms).
+2. **Y-Axis:** Represents core inflation (cumulative from December 2019 to December 2022, in percentage terms).
+3. **Countries:**
+    - High Core Inflation, Moderate to High Monetary Growth: Iceland, U.S., U.K., New Zealand, Australia, Canada.
+    - Moderate Core Inflation, Moderate Monetary Growth: Sweden.
+    - Low Core Inflation, Low Monetary Growth: Norway, Euro area, Switzerland, Japan.
+
+**Observations:**
+1. **Limited Correlation:** The chart indicates a limited correlation between monetary base growth and core inflation, as evidenced by the scattered placement of countries with respect to the trend line.
+2. **Trend Line:** Despite the limited correlation, there is a slight positive slope in the trend line suggesting a minimal increase in core inflation with higher monetary base growth.
+
+**Concluding Summary:**
+The chart suggests that in the post-pandemic period, there has been a limited correlation between the extent of monetary expansion and the level of core inflation among advanced economies. While some countries like Iceland and New Zealand have seen high inflation paired with moderate to high monetary growth, others like Switzerland and Japan have experienced low inflation despite low monetary growth. This indicates that other factors besides monetary base growth might be influencing core inflation in these economies.

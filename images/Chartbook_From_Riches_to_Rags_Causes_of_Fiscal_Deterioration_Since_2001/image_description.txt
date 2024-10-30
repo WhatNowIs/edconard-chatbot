@@ -1,0 +1,12 @@
+This graph illustrates the various components of U.S. federal spending as a percentage of GDP from 2001 to 2023, highlighting trends in Health Care, Social Security, Interest, Other Mandatory spending, and Discretionary spending. It also compares these expenditures with Revenue over the same period.
+
+Key points:
+
+1. **Revenue Trends**: The red line indicates revenue, which consistently fluctuates around 16% to 18% of GDP.
+2. **Health Care Spending**: There has been a noticeable increase in health care spending over this period.
+3. **Social Security Spending**: Social Security spending also shows a gradual increase.
+4. **Interest Spending**: Interest payments remain relatively stable except for a noticeable spike around 2021.
+5. **Discretionary Spending**: This category has remained relatively steady, although there was a significant increase around the 2020-2021 period, likely influenced by the COVID-19 pandemic.
+6. **Overall Growth in Spending**: Total federal spending increased sharply in 2020-2021, reaching its highest levels as a percentage of GDP in the timeframe considered.
+
+The data is sourced from the Congressional Budget Office, Treasury Department, and the Committee for a Responsible Federal Budget. The graph visually emphasizes that higher health and retirement spending are the main drivers of increasing federal expenditures.

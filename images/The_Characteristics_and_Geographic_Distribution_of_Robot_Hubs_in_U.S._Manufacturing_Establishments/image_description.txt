@@ -1,0 +1,29 @@
+This table presents the results of OLS regressions analyzing the influence of CBSA characteristics on the likelihood of being classified as a Robot Hub (dependent variable: Robot Hub Indicator). Key variables included in the regressions and their statistically significant coefficients (with significance levels indicated) are:
+
+1. **Has Integrator**:
+   - All coefficients are positive and highly significant (p<0.01) across columns (1-4), ranging from 0.1955 to 0.2465.
+   
+2. **Union Membership (%)**:
+   - Positive and highly significant (p<0.01) across all columns, with coefficients around 0.0154 to 0.0164.
+
+3. **Top Manufacturer 30 Yrs Prior**:
+   - Negative but not significant across all columns.
+
+4. **Share with High School Degree**:
+   - Positive and significant (p<0.05) in column (3) with a coefficient of 0.01209.
+
+5. **Share with Bachelor's Degree**:
+   - Positive and significant (p<0.05) in columns (3) and (4), with coefficients 0.01598 and 0.01324 respectively.
+
+6. **Share of STEM Workers**:
+   - Not significant in any columns.
+
+7. **Share of Production Workers**:
+   - Positive and significant (p<0.05) only in column (5) with a coefficient of 0.02049.
+
+**Observations**: There are 250 observations in each regression.
+
+**R-squared** values range from 0.05146 to 0.133, indicating the proportion of variance in the dependent variable that is predictable from the independent variables.
+
+### Summary
+The factors "Has Integrator" and "Union Membership" consistently show a significant positive association with the likelihood of a CBSA being a Robot Hub. Education levels (both high school and bachelor degrees) also show some positive significance, while other factors like long-term manufacturing presence and share of STEM workers do not show consistent significant association. The share of production workers is significant only in one regression model. The model explains a modest amount of the variance (indicated by the R-squared values).

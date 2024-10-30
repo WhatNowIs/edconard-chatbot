@@ -1,0 +1,15 @@
+The image is a graph depicting the annual rate percentage change of Core PCE (Personal Consumption Expenditures) inflation, excluding housing and used autos, from January 2021 to January 2023. The graph presents two trend lines: 
+
+1. The blue bars representing the 1-month change.
+2. The orange line representing the 3-month change.
+
+Key observations:
+
+- From January 2021 to mid-2021, there was a general increase in both one-month and three-month change rates, with the highest peaks in mid-2021 reaching around 6%-7% for the one-month change.
+- A notable decline was observed in late 2021, but both rates exhibited fluctuations rather than steady trends.
+- In early 2022, there’s another increase followed by a period of fluctuation and brief declines, particularly noticeable around July 2022.
+- From mid-2022 to January 2023, the rates saw a series of rapid up and down movements, highlighting ongoing volatility in inflation rates.
+
+Overall, the graph indicates a fluctuating trend in Core PCE inflation rates, with several peaks and troughs over the examined period. 
+
+The data is sourced from the Bureau of Economic Analysis, and the calculations are attributed to the author.

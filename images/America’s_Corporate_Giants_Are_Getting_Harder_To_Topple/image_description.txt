@@ -1,0 +1,15 @@
+The image presents data about the founding years and average age of companies listed in the Fortune 500 for the year 2023. 
+
+**Number by decade founded:**
+1. Most Fortune 500 companies were established in the early 20th century, particularly during the 1910s to the 1950s.
+2. The peak decades for company establishments were the 1920s and 1940s, with around 50 companies founded in each of these decades.
+3. The number of new companies declined significantly post-1960, with each subsequent decade seeing fewer new companies.
+4. Very few companies were founded in the 2010s.
+
+**Average age, years:**
+1. The average age of Fortune 500 companies has been increasing continuously from 1990 to 2023.
+2. In 1990, the average age was around 70 years.
+3. By 2023, the average age had risen to approximately 90 years.
+
+**Summary:**
+Fortune 500 companies in 2023 were predominantly established in the first half of the 20th century, with the 1920s and 1940s being particularly notable decades for company founding. The number of companies established has decreased significantly in recent decades. Furthermore, the average age of these companies has been steadily increasing over the past few decades, reaching about 90 years in 2023.

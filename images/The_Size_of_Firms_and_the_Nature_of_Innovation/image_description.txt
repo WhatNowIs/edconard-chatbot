@@ -1,0 +1,10 @@
+The image is a log-log plot that displays the relationship between firm R&D (Research and Development) expenditures and total sales in millions of 2020 dollars. Here are the key points extracted from the image:
+
+- The y-axis represents R&D expenditures (in millions of 2020 dollars).
+- The x-axis represents total sales (in millions of 2020 dollars).
+- The data points form a nearly linear relationship, indicating a proportional relationship between R&D spending and total sales.
+- The slope of the line is 0.98, suggesting that as total sales increase by a factor, R&D expenditures increase nearly at the same rate.
+- The data is taken from US publicly listed firms in Compustat and includes only firms that report some R&D expenditures in a year.
+- Sales and R&D numbers are adjusted for inflation using the Bureau of Labor Statistics CPI.
+
+In summary, the plot conveys that there's a strong positive correlation between firm sales and their R&D expenditures, with larger firms generally spending more on R&D nearly in direct proportion to their sales.

@@ -1,0 +1,22 @@
+The heat map provides a detailed comparison of various categories relevant to urban recovery and economic conditions across major U.S. cities. The categories assessed include urban recovery, economy/demographics since 2019, business conditions, and fiscal health. Each category is evaluated and color-coded for easier interpretation—green indicating better performance and red indicating poorer performance.
+
+### Key Points:
+- **New York City (NYC)** performs above the median in measures of urban mobility, retail, and mass transit utilization but faces challenges in overall economic recovery, business conditions, and fiscal health.
+- **Atlanta (ATL)** shows moderate performance across all categories but particularly struggles in fiscal health.
+- **Austin (AUS)** ranks highly in urban recovery and economy/demographics but shows weaknesses in fiscal health.
+- **Boise (BOI)** performs exceptionally well in all categories except for business conditions and fiscal health.
+- **Boston (BOS)** excels in economy/demographics and business conditions but is average in fiscal health.
+- **Chicago (CHI)** shows poor overall performance, especially in fiscal health and urban recovery.
+- **Dallas (DAL) and Denver (DEN)** have good business conditions but poorer fiscal health and overall economic measures.
+- **Detroit (DET)** struggles significantly across all categories, indicating overall weak performance.
+- **Houston (HOU)** shows mixed results with particular weakness in fiscal health.
+- **Los Angeles (LA)** has a significant gap in urban recovery and fiscal health.
+- **Miami (MIA) and Phoenix (PHO)** have moderate performance across the board but face challenges in fiscal health.
+- **Philadelphia (PHL)** shows a balanced profile but isn’t leading in any specific area.
+- **Salt Lake City (SLC)** excels in both urban recovery and economy/demographics.
+- **San Antonio (SANT)** has overall average to good performance.
+- **San Francisco (SF)** struggles significantly in fiscal health despite relatively strong business conditions.
+- **Seattle (SEA)** has robust economic measures and urban recovery but shows weaknesses in fiscal health.
+- **Washington, D.C. (DC)** demonstrates moderate to good performance but shows room for improvement in urban recovery.
+
+Overall, the study highlights that while some cities are performing well in specific areas such as urban mobility and business conditions, others face notable challenges, especially regarding fiscal health and comprehensive economic recovery post-2019.

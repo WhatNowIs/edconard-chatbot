@@ -1,0 +1,15 @@
+The graph compares the Bloomberg United States Financial Conditions Index with the Federal Funds target rate from March 2021 to May 2024. The Index is displayed on the left vertical axis, while the Federal Funds target rate is shown on the right vertical axis. 
+
+Key points:
+1. **Timeline and Key Event**: The Federal Reserve started raising interest rates in March 2022, indicating the onset of monetary tightening.
+2. **Bloomberg U.S. Financial Conditions Index**:
+   - Initially fluctuated close to 0.5 before March 2022.
+   - Dropped significantly after the Fed started raising rates, reaching as low as -1.5.
+   - Gradually improved and recovered to positive levels, nearing 1 again by the end of the observed period.
+3. **Federal Funds Target Rate**:
+   - Remained at a stable low level around 0 prior to rate hikes.
+   - Began increasing steadily from March 2022, reaching around 5.25% by mid-2023.
+   - Stayed high, continuing to fluctuate around 5.25% to 5.5% through May 2024.
+4. **General Trend**: Despite the Fed's continuous rate hikes, financial conditions have become significantly easier compared to when the tightening began in March 2022.
+
+The image suggests that even with a high Federal Funds target rate, financial conditions experienced a notable recovery and improvement post the rate hike initiation.

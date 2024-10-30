@@ -1,0 +1,29 @@
+The image presents two graphs under the header "Exhibit 4: Wage Growth Is Slowing Steadily," which depict different measures of wage growth over time. 
+
+### Left Graph:
+- **Timeframe**: 2018 - 2024
+- **Measures Tracked**:
+  - GS Wage Tracker (dark blue line)
+  - Employment Cost Index (red line)
+  - Average Hourly Earnings (light blue line)
+  - Atlanta Fed Wage Tracker (gray line)
+
+### Observations:
+- All four wage growth measures experienced notable increases around mid-2021.
+- The GS Wage Tracker, Employment Cost Index, and Atlanta Fed Wage Tracker showed peaks around the end of 2021 or early 2022, nearing a 6-7% increase in wage growth year-over-year.
+- Since early 2022, all measures have shown a declining trend, decreasing to approximately 4% by 2024.
+
+### Right Graph:
+- **Timeframe**: 2015 - 2024
+- **Measures Tracked**:
+  - GS Wage Survey Tracker (dark blue line)
+  - Indeed Wage Tracker (light blue line)
+
+### Observations:
+- Both wage trackers displayed relatively steady growth from 2015 to early 2020 with minor fluctuations.
+- There was a sharp decline in wage growth during the early stage of the COVID-19 pandemic in 2020.
+- Post-COVID, there was a significant spike in wage growth, especially notable in the Indeed Wage Tracker, peaking around mid-2021.
+- Both trackers have shown a downward trend since then, stabilizing at around 4-5% growth rate by 2024.
+
+### Summary:
+The data clearly indicate that wage growth has been slowing progressively since its peak in late 2021 or early 2022. Various measures such as the GS Wage Tracker, Employment Cost Index, Average Hourly Earnings, and the Atlanta Fed Wage Tracker reflect this trend. The decline appears consistent across different sources and types of wage growth metrics, suggesting a broader economic trend of decelerating wage growth as 2024 approaches.

@@ -1,0 +1,21 @@
+The chart titled "May Your Prices Not Rise" focuses on the monthly changes in the Consumer Price Index (CPI), annualized, emphasizing the performance in May 2024. The key observations and details extracted from the image are:
+
+1. **Headline**: "Prices rose less in May 2024 than in a long time. Measures that strip out volatile or idiosyncratic components look particularly good relative to the recent past. Is this a fluke or something more?"
+   
+2. **Data Representation**:
+   - **Time Frame**: The chart covers the period from 2017 to 2024.
+   - **CPI Categories**: 
+      - Total CPI (blue line)
+      - All items excluding food, shelter, energy, and used vehicles (red line)
+      - 16% trimmed mean (red dotted line)
+
+3. **Trends**:
+   - Over recent years, the total CPI (blue line) showed significant volatility.
+   - The red lines, representing the CPI excluding certain volatile items and the 16% trimmed mean, exhibit a generally less volatile trend compared to the total CPI.
+   - All measures show a noticeable decline in price increases by May 2024, indicating that price rises in this month are particularly low compared to previous years.
+
+4. **Key Note**: Asterisks note that the data excludes items whose expenditure weights fall in the top 8 percent and bottom 8 percent of the price change distribution.
+
+5. **Sources**: The data is sourced from the Bureau of Labor Statistics, Federal Reserve Bank of Cleveland, and calculated by Matthew Klein.
+
+The chart suggests an optimistic outlook for consumer prices as of May 2024, highlighting reduced volatility and lower price increases across different measures of the CPI. However, the text prompts the reader to consider whether this decline is an anomaly or indicative of a more stable trend moving forward.

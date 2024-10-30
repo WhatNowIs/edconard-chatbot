@@ -1,0 +1,19 @@
+### Summary:
+
+**Exhibit 3** and **Exhibit 4** analyze the trends in Electric Vehicle (EV) demand based on new auto loan originations from Bank of America, spanning a period from 2021 to 2023.
+
+#### Exhibit 3: Overall EV Demand
+- **Title**: "Bank of America data highlights an apparent leveling off in EV demand"
+- **Content**: The chart shows the share of EVs in Bank of America's new auto loan originations, presented as a rolling 12-month moving average percentage.
+- **Trend**: Initially, there is a steep increase in EV demand from 2021 through 2022, peaking in early 2023. Post this peak, the demand levels off, indicating potential saturation or stabilization in EV loan originations.
+
+#### Exhibit 4: EV Demand by Generation
+- **Title**: "Older generations' demand for EVs appears to have cooled"
+- **Content**: The chart breaks down the share of EVs in new auto loan originations across different generations (Millennials and Gen Z, Gen X, Boomers, and Traditionalists), also presented as a rolling 12-month moving average percentage.
+- **Generational Trends**:
+  - **Millennials and Gen Z** (Red Line): Showcase a consistent increase in EV demand, which spikes sharply around early 2023.
+  - **Gen X** (Yellow Line): Similarly, there is a significant rise in EV demand through late 2022, with slight cooling near the middle of 2023.
+  - **Boomers and Traditionalists** (Blue Line): Initially, EV demand rises until early 2023, but a noticeable decline is observed thereafter.
+
+### Conclusion:
+The data from Bank of America indicates a strong initial growth in EV adoption through 2022, peaking around early 2023. However, there is a marked leveling off in total EV demand following this peak. Additionally, while younger generations (Millennials and Gen Z) continue to drive EV adoption with increased momentum, the older generations (Boomers and Traditionalists) show a reduction in demand post-early 2023.
