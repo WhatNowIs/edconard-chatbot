@@ -20,7 +20,7 @@ RUN poetry install --no-root
 COPY . .
 
 # Ensure the required directories exist
-RUN mkdir -p data storage
+RUN mkdir -p data storage images
 
 # Expose the application port
 EXPOSE 8080
