@@ -1,9 +1,0 @@
-The chart titled "Stalled Engine" presents data on Chinese motor vehicle production from March to July, measured in millions of units, over the years 1999 through 2023. The key points are:
-
-1. **Rapid Growth:** There was a significant and steady increase in vehicle production from 1999 to around 2018.
-2. **Peak Production:** Production peaked in the years leading up to 2018, reaching close to 11 million units.
-3. **Post-2018 Fluctuations:** Post-2018, production levels have fluctuated and experienced a slight decline.
-4. **Recent Increases but Below Peak:** Following the end of the "Covid Zero" policy, the pace of auto assemblies has increased markedly compared to any year since 2018 but still remains below the peak production levels of that year.
-5. **Domestic Underconsumption:** The chart notes that higher levels of production and export of vehicles are due to domestic underconsumption in China.
-
-The data indicates a dynamic automotive manufacturing sector in China with peaks and troughs influenced by domestic and global factors, including recent policy shifts and consumption patterns.

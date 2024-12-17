@@ -1,9 +1,0 @@
-The image presents a graph depicting the median real family net worth in the United States over several years, adjusted to 2022 dollars. Key points to note include:
-
-1. **Title**: "US Median Wealth Has Hit a Record High."
-2. **Subtitle**: "The Real Net Worth of the Median American Family Rose 37% Since 2019 to a Record High."
-3. **Data Source**: The graph was created by @JosephPolitano using Federal Reserve data.
-4. **Date Range**: The graph spans from around 1989 to 2022.
-5. **Trend**: The median real family net worth demonstrates a general increasing trend with notable fluctuations. The net worth saw significant growth, reaching a pinnacle around 2007 followed by a sharp decline, and then a recovery starting from the mid-2010s leading to a record high in 2022.
-
-In summary, the graph indicates that the median real family net worth in the U.S. has reached its highest level on record, especially after a substantial 37% increase since 2019. This trend reflects an overall rise in wealth for the median American family, despite economic fluctuations and downturns over the past few decades.

@@ -1,9 +1,0 @@
-The image represents a line graph showing the suicide rate among U.S. men aged 20-59, divided into four age groups (20-29, 30-39, 40-49, and 50-59) from 2007 to 2021. The data source is the WISQARS fatal injury database from the CDC.
-
-Key observations:
-- The suicide rate for men aged 30-39 (green line) generally increased from 2007 to 2021, peaking around 2021, surpassing all other age groups.
-- For men aged 40-49 (light green line), the rate remained relatively stable between 2007 and 2021, with slight fluctuations and a noticeable peak around 2019.
-- The age group 50-59 (dark green line) experienced a gradual rise in the suicide rate, peaking in recent years around 2021, before slightly declining.
-- Men aged 20-29 (blue line) showed a consistent increase in the suicide rate over the years, with a noticeable spike around 2021.
-
-In summary, the overall trend indicates a general increase in the suicide rates for men within each age group from 2007 to 2021, with the most significant rises observed in the 30-39 and 20-29 age groups in recent years.

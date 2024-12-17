@@ -1,9 +1,0 @@
-The image provides data on the daily net interest expense of the U.S. government on public debt from 2019 to 2023. Key points include:
-
-- The U.S. government's interest payments per day have doubled from $1 billion per day before the pandemic to almost $2 billion per day in 2023.
-- In 2019, the daily net interest expense was approximately $1 billion.
-- This expense remained consistent in 2020 but saw a slight decrease in 2021.
-- By 2022, the daily expense increased significantly, reaching approximately $1.5 billion.
-- In 2023, the expense further escalated to nearly $2 billion per day.
-
-The data sources include the Congressional Budget Office (CBO), Haver Analytics, and the Apollo Chief Economist. The note mentions that the interest rate assumptions by CBO were 2.1% in 2022 and 2.7% in 2023, and the annual CBO data was divided by 365 to calculate the daily expense.

@@ -1,6 +1,0 @@
-The image illustrates the annual academic growth in terms of days of learning for charter school students in two subjects: Reading and Math. The chart indicates that:
-
-- For Reading, charter school students experience an additional 16 days of learning annually, a result that is statistically significant (p ≤ 0.01).
-- For Math, these students gain an extra 6 days of learning, which is also statistically significant (p ≤ 0.01).
-
-This data suggests that charter school students show more substantial academic growth in reading compared to math over a year, with both improvements being statistically significant.

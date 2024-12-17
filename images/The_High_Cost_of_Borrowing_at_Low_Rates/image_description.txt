@@ -1,9 +1,0 @@
-The image is a bar chart titled "Most Debt Was Issued Under Low Interest Rates," displaying the share of debt held by the public based on the interest rate of original issuance. There are two categories of debt shown: 3-month yield (represented in blue) and 10-year yield (represented in orange). The data is broken down into four interest rate brackets: Below 2%, Below 3%, Below 4%, and Below Inflation.
-
-Summary:
-- Below 2%: 71% of the 3-month yield debt and 34% of the 10-year yield debt.
-- Below 3%: 74% of the 3-month yield debt and 59% of the 10-year yield debt.
-- Below 4%: 82% of the 3-month yield debt and 69% of the 10-year yield debt.
-- Below Inflation: 75% of the 3-month yield debt and 30% of the 10-year yield debt.
-
-This data indicates that a significant portion of public debt was issued under low interest rates, with the majority of 3-month yield debt consistently falling below the specified rate thresholds, followed by a lesser but still substantial portion of 10-year yield debt. This suggests that the government capitalized on lower interest rates for issuing debt across varying maturities.

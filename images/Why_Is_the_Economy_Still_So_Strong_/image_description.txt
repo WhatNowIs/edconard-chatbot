@@ -1,9 +1,0 @@
-The bar chart depicts the trend in U.S. bankruptcies from 2010 to 2024, segmented by filing type into liquidation and reorganization. Key observations include:
-
-1. From 2010 to 2024 (Year-to-Date, YTD), there has been a notable increase in the proportion of reorganizations compared to liquidations.
-2. The percentage of liquidations, represented by the green bars, shows a consistent decrease over the years.
-3. Conversely, the proportion of reorganizations (blue bars) shows an upward trend during the same period.
-4. A marked shift occurred after the Federal Reserve began raising interest rates, indicated by the dashed line between 2021 and 2022. Following this, there was a sharper rise in reorganizations and reduction in liquidations.
-5. This trend continues into 2023 and 2024 YTD, with reorganizations clearly outnumbering liquidations.
-
-In summary, the data suggests a transition in bankruptcy filings with fewer liquidations and more reorganizations, particularly influenced by the Federal Reserve's policy changes.

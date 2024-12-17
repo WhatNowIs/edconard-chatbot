@@ -1,9 +1,0 @@
-The image presents three line charts displaying macroeconomic data used in a VAR (Vector AutoRegression) model from 1975 to 2005. Each chart is labeled with a specific econometric variable and features shaded areas indicating different inflation regimes. 
-
-1. **Federal Funds Rate**: This chart shows the trend of the Federal Funds Rate over the specified period. It peaked sharply in the early 1980s, exceeding 18%, followed by a general decline with fluctuations, stabilizing below 5% towards the end of the period.
-
-2. **Unemployment**: The unemployment rate shows fluctuations with notable peaks around 1982 and the early 1990s, reaching up to 10%. There is a general downward trend with periodic increases, remaining below 6% towards the end of 2005.
-
-3. **Inflation**: The inflation rate indicates significant fluctuations, with a peak above 14% around 1980, followed by a steep decline. After that, it mostly remained below 6%, with occasional increases, and maintained a relatively low level towards the end of the period.
-
-The figure caption clarifies that the light and dark grey areas on the charts signify medium- and high-inflation regimes, respectively.

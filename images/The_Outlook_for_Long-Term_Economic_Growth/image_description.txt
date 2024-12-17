@@ -1,9 +1,0 @@
-This graph (Figure 1) illustrates the Real GDP per Person in the United States from the year 1870 to 2020. The vertical axis represents Real GDP per person in constant 2022 dollars (on a ratio scale), ranging from $4,000 to $64,000. The horizontal axis spans the years from 1870 to 2020.
-
-Key points:
-- The graph showcases a consistent upward trend in Real GDP per person over the 150-year period.
-- There are fluctuations observed in the GDP, particularly around major economic events such as the Great Depression in the 1930s and post-World War II recovery.
-- The overall average growth rate of Real GDP per person is noted to be 2.0% per year, as indicated by the dashed trend line.
-- The data for the graph up to 1928 is sourced from Barro and Ursua (2010), and from 1929 onwards, it utilizes the NIPA data from the FRED database (GDPCA and B230RC0A052NBEA).
-
-In summary, the graph highlights the long-term economic growth and fluctuations in the Real GDP per person in the United States, with an average annual growth rate of 2.0% over the specified period.

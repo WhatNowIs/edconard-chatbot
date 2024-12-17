@@ -1,9 +1,0 @@
-The scatter plot in Figure 7 illustrates the relationship between the average working age population (WAP) growth rate and the average startup rate across U.S. states from 1979 to 2007. Each data point represents a state, identified by its postal abbreviation. 
-
-Key observations from the plot include:
-
-1. **Positive Correlation**: There is a positive correlation between the average working age population growth rate and the average startup rate, as indicated by the linear trend line with a slope of 1.64.
-2. **States with High Growth Rates**: Nevada (NV) has the highest values for both average WAP growth rate and startup rate, indicating a strong entrepreneurial activity in conjunction with high population growth. Other states such as Florida (FL) and Arizona (AZ) also show high figures in both metrics.
-3. **States with Low Growth Rates**: Washington D.C. (DC) and Iowa (IA) have lower averages for both WAP growth and startup rates.
-
-In summary, the graph suggests that states with higher growth rates in their working-age population tend to have higher average startup rates. This relationship points to a dynamic where population growth potentially fuels entrepreneurial activity across the U.S. states.

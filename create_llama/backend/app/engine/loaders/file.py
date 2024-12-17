@@ -29,7 +29,7 @@ class ImageLoaderConfig(BaseModel):
         return v
 
 class CSVLoaderConfig(BaseModel):
-    data_dir: str = "tmp/csv/topic"
+    data_dir: str = "tmp/csv"
     use_llama_parse: bool = False
     is_called_on_topic: bool = False
     is_blog_post: bool = False

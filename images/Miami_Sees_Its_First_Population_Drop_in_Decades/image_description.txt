@@ -1,9 +1,0 @@
-The image is a line graph showing the population change by county from 2012 to 2020, using 2012 as the base year (indexed to 100). The data is sourced from the Federal Reserve Bank of St. Louis and the U.S. Census Bureau. The graph includes four counties: 
-
-1. **Travis County, TX**: Represented by a light green line. It shows a steady increase in population, reaching above 120 by 2020.
-2. **Maricopa County, AZ**: Represented by a tan line. It also shows steady growth, surpassing 115 by 2020.
-3. **Miami-Dade County, FL**: Represented by a dark grey line. It shows a moderate increase initially but then levels off, hovering around a slight increase from the base year by 2020.
-4. **San Francisco County, CA**: Represented by a darker green line. Shows an increase until around 2019, after which it drops sharply below the base year value by 2020.
-
-Summary:
-Between 2012 and 2020, Travis County, TX, and Maricopa County, AZ experienced significant population growth. Miami-Dade County, FL saw moderate growth which later stabilized. In contrast, San Francisco County, CA, initially grew but then experienced a notable population decline around 2020.

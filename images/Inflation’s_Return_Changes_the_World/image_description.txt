@@ -1,9 +1,0 @@
-The chart illustrates the change in global debt as a percentage of GDP from 1999 to 2023, categorized by households, non-financial corporates, financial corporates, and government. 
-
-Key observations:
-1. **Overall Increase**: Total indebtedness has risen significantly since the global financial crisis of 2007-2008.
-2. **Government Debt Surge**: Post-crisis, government debt saw the most noticeable increase, peaking around 2020-2021.
-3. **Households and Corporates**: Debt levels for households and non-financial corporates also grew steadily over the years. Financial corporates maintained a relatively consistent share.
-4. **Trend Post-2008**: The rate of increase in total global debt visibly accelerated after the financial crisis, hitting higher levels in recent years, especially around the COVID-19 pandemic in 2020.
-
-In summary, global indebtedness has escalated markedly since the financial crisis, with significant contributions from increased government borrowing and steady rises in household and corporate debt.

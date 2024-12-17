@@ -1,9 +1,0 @@
-The image is a bar chart titled "Low Return on Investment" which illustrates that infrastructure projects in China are not self-sustaining financially. The chart compares "Income from special bond-funded projects" (represented in black) versus "Interest payment on special bonds" (represented in blue) across various provinces, based on provincial data from 2022.
-
-Key takeaways:
-1. For most provinces, the interest payments on special bonds far exceed the income generated from the associated projects, indicating a financial imbalance.
-2. Shandong, Zhejiang, and Jiangsu display significantly high interest payments compared to other provinces.
-3. Provinces such as Hebei, Liaoning, and Guangxi have notably minimal income from special bond-funded projects relative to their interest payments.
-4. Hainan shows the least financial activity in both income from projects and interest payments.
-
-This disparity underscores a significant issue in China's infrastructure project financing, where the generated income is insufficient to cover the costs of the interest on bonds, leading to concerns about the economic sustainability of these initiatives.

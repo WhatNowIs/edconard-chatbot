@@ -3,7 +3,7 @@ import os
 from llama_index.core.chat_engine import CondensePlusContextChatEngine
 # from llama_index.core.base.base_multi_modal_retriever import MultiModalRetriever
 from llama_index.core.settings import Settings
-from app.engine.index import get_index
+from create_llama.backend.app.engine.index import get_index
 # import llama_index
 # from llama_index.postprocessor.cohere_rerank.base import CohereRerank
 # from llama_index.core.agent import AgentRunner

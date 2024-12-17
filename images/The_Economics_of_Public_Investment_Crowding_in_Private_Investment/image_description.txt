@@ -1,9 +1,0 @@
-The image displays a bar chart titled "Figure 5. Contribution of Private Nonresidential Investment in Manufacturing Construction to Real GDP Growth, over time." The chart tracks the contribution to annualized real GDP growth in percentage points from 1958 to 2023.
-
-Key observations:
-1. The chart indicates significant variability in the contribution of private nonresidential investment in manufacturing to GDP growth over the studied period.
-2. The contribution frequently fluctuated between positive and negative values, with distinct peaks and troughs.
-3. Noteworthy peaks occur around the mid-1980s and late-2022 to 2023.
-4. The year 2023 Q2 shows an exceptionally high contribution to real GDP growth, surpassing almost all previous values since 1958, indicating a substantial rise in private nonresidential investment in manufacturing in that quarter.
-
-Sources of data are cited as the Bureau of Economic Analysis and CEA calculations, with the statistics being current as of July 27, 2023, at 8:30 am.

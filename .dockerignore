@@ -1,7 +1,7 @@
 **/.git
 **/.cache
 *Dockerfile*
-**/.env
+# **/.env
 
 # Python
 **/__pycache__
@@ -9,25 +9,30 @@
 *.pyo
 *.pyd
 *,cover
-*.log
+*.
+*.db
+*.sqlite3
+.DS_Store
 .git*
-
 
 # Node
 **/.results
 **/node_modules
 
 ./static
-
+./images
 # Ignore development create_llama code
-./create_llama/
+# ./create_llama/
 ./storage/
-./static/
+# ./static/
 ./data/
+.venv
+.vscode/
+.changeset
+.github
 
 # Deployment files
 ./Dockerfile
-./docker-compose.yml
 
 # Do not ignore template config files
-!config/*
+# !config/*

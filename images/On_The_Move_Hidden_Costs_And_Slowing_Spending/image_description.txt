@@ -1,9 +1,0 @@
-The chart from the Bank of America Institute displays the net population change in major Metropolitan Statistical Areas (MSAs), comparing year-over-year percentage changes between the first and second quarters of 2024. A positive value indicates net population inflow, while a negative value represents net outflow. Key insights from the chart include:
-
-1. **Columbus, OH**: Shows significant population inflow, leading all other MSAs.
-2. **Southern MSAs**: Present mixed trends. Cities like Austin, Las Vegas, and San Antonio have notable inflows, while others like Miami are experiencing outflows.
-3. **Northeastern MSAs**: Predominantly display population outflows, with New York, Boston, and Philadelphia being notable examples.
-4. **West Coast MSAs**: San Francisco and Los Angeles are experiencing significant outflows.
-5. **Overall Trends**: The chart indicates that while some Southern and Western MSAs are witnessing growth, many Northern and coastal cities are experiencing net population declines.
-
-This data suggests migration patterns, with people moving towards certain Southern cities and away from traditional metropolitan hubs in the Northeast and on the West Coast.

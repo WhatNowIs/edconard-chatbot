@@ -1,6 +1,6 @@
 import logging
 # from llama_index.core.settings import Settings
-from app.engine.vectordb import get_vector_store
+from create_llama.backend.app.engine.vectordb import get_vector_store
 from llama_index.core.indices import VectorStoreIndex
 
 

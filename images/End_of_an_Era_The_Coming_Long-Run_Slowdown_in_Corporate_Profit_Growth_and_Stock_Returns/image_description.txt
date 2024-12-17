@@ -1,9 +1,0 @@
-This chart, titled "Interest and tax expenses as a share of EBIT," depicts the trend of interest and tax expenses relative to Earnings Before Interest and Taxes (EBIT) for S&P 500 nonfinancial firms over the period from 1962 to 2022. The y-axis represents the ratio of (Interest + Tax Expenses) to EBIT, while the x-axis spans the years from 1962 to 2022. Data is sourced from Compustat. 
-
-Key observations:
-1. From 1962 to the peak in the early 1980s, the ratio fluctuated within a range but trended upwards to a peak of around 0.55 to 0.60.
-2. Starting from the mid-1980s, the trend began a gradual decline.
-3. The decline continued more sharply after the 2000s and further accelerated post-2008 financial crisis.
-4. The ratio dropped significantly in the 2010s, descending to its lowest point by 2022, reaching close to 0.20.
-
-Overall, the chart highlights a long-term significant decrease in the proportion of interest and tax expenses relative to EBIT for these firms over the last six decades.

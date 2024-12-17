@@ -1,7 +1,0 @@
-The image illustrates the change in 3-month Certificate of Deposit (CD) rates at US banks of various sizes since February 24, 2023, following the SVB (Silicon Valley Bank) incident. The graph breaks down the changes by bank size, measured by assets:
-
-1. For banks with assets between $10 billion and $50 billion, the 3-month CD rates increased by 24 basis points (bps).
-2. For banks with assets between $50 billion and $250 billion, the 3-month CD rates increased by 16 basis points (bps).
-3. For banks with assets greater than $250 billion, the 3-month CD rates decreased by 36 basis points (bps).
-
-This data indicates that smaller banks experienced an increase in CD rates, while larger banks saw a decrease in their 3-month CD rates after the SVB incident. This source of this information is S&P Global Market Intelligence, and it is analyzed for a $10,000 3-month CD by the Apollo Chief Economist.

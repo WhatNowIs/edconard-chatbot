@@ -1,9 +1,0 @@
-The image presents data from a WSJ/NORC poll conducted among 1,019 adults between March 1-13, 2023, examining the importance of various values to people personally. The poll compares responses from the youngest age group (18-29 years) and the oldest age group (65+ years) regarding four values: patriotism, having children, religion, and hard work.
-
-Summary:
-- **Patriotism**: There is a significant difference in the importance placed on patriotism between the youngest (18-29) and oldest (65+) age groups, with a 36 percentage point gap.
-- **Having children**: The value of having children shows a 9 percentage point difference between the two age groups.
-- **Religion**: Religion is considered very important by a larger margin in the oldest age group, showing a 24 percentage point difference.
-- **Hard work**: There is a 14 percentage point difference regarding the importance of hard work between the youngest and oldest age groups.
-
-Overall, the poll reveals that older adults tend to place more importance on these values compared to younger adults, with the largest gap seen in patriotism and the smallest in having children. The margin of error for the poll is +/- 4.1 percentage points.

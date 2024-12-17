@@ -1,5 +1,0 @@
-The image is a graph titled "Figure 2: Price as a Function of Cost," with the X-axis representing "Cost" ranging from 0.7 to 1.4 and the Y-axis representing "Price" ranging from 0.0 to 3.0. The graph shows a stepped line indicating how price changes with cost. 
-
-One notable feature of the graph is the "Zone of inaction" marked between cost values around 1.0 to 1.1. Within this zone, the price remains constant at approximately 2.0 despite changes in cost. Outside this zone, the price adjusts with changes in cost. 
-
-In summary, this graph illustrates that there is a specific cost range (around 1.0 to 1.1) where price does not change, referred to as the "Zone of inaction." Outside of this zone, price increases with cost.

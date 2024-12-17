@@ -1,9 +1,0 @@
-The image discusses the significant role of small banks in lending to small businesses, specifically highlighting that banks with less than $250 billion in assets account for 50% of commercial and industrial (C&I) lending. Based on data from the FDIC and Apollo Chief Economist as of Q3 2022, the breakdown of C&I lending as a percentage of total C&I loans by bank asset size is as follows:
-
-- Banks with assets less than $100 million contribute 0.1%.
-- Banks with assets between $100 million and $1 billion contribute 3.3%.
-- Banks with assets between $1 billion and $10 billion contribute 9.6%.
-- Banks with assets between $10 billion and $250 billion contribute 36.3%.
-- Banks with assets greater than $250 billion contribute 50.7%.
-
-This data underscores the importance of smaller banks in providing financial support to small businesses.

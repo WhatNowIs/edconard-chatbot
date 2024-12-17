@@ -1,9 +1,0 @@
-The image is a graph showing the performance of the S&P 500 index (green line) alongside the Federal Reserve's quantitative easing (QE) net assets (grey line) from March 2020 to May 2023. The left y-axis represents the Federal Reserve's QE measure in billion dollars, while the right y-axis represents the S&P 500 index value.
-
-**Summary:**
-The graph details the relationship between the Federal Reserve's QE and the S&P 500 index since the onset of the COVID-19 pandemic. It demonstrates a sharp increase in Fed QE beginning in March 2020, coinciding with significant growth in the S&P 500 index. Throughout 2021, though the S&P 500 underwent some fluctuations, both metrics peaked. Post-2021, the S&P 500 shows notable volatility while the Fed's QE flattened out and started a modest decline. As of May 2023, the S&P 500 rebounded somewhat, aligning with a slight recovery in QE assets.
-
-**Source Attribution:**
-The data is sourced from the Federal Reserve Board, Bloomberg, and the Apollo Chief Economist. The chart also defines Fed QE as assets encompassing the Balance of the Treasury General Account and temporary cash adjustments through Overnight Reverse Repo.
-
-This graph suggests a correlation between the Federal Reserve's asset purchasing program and stock market performance, particularly during crises and recovery periods.

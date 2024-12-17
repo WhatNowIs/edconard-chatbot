@@ -1,3 +1,0 @@
-The image shows a graph labeled as FIG. 4, representing the calculated spin-polarized electronic band structure near the Fermi level for an isolated two-band Cu-d manifold. The vertical axis represents energy (in electron volts, eV), ranging from -0.4 eV to 0.1 eV. The horizontal axis contains labeled high-symmetry points in the Brillouin zone (Γ, M, K, A, L, H). Solid and dashed lines indicate different energy bands. 
-
-A key observation is that the Fermi level is set at 0 eV, represented by a dashed horizontal line at the zero-energy point. The bands appear to vary in energy across different high-symmetry points, showcasing the electronic structure in this energy range.

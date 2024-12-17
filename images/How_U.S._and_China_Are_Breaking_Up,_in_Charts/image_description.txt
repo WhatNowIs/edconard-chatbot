@@ -1,9 +1,0 @@
-The image is a line chart showing the percentage of U.S. goods imports from various regions and countries over a period from 2017 to 2023, using a 12-month rolling sum. Here is a summary based on the chart's data:
-
-- **China**: The percentage of U.S. imports from China peaked between 2017 and 2018 but has experienced a significant decline since mid-2018, dropping from above 21% to around 16% by 2023.
-- **Asia excluding China**: The share of U.S. imports from other Asian countries (including India, Japan, South Korea, Taiwan, Thailand, and Vietnam) has shown a steady increase, rising from 18% in 2017 to over 24% by 2023.
-- **EU + UK**: Imports from the EU and UK have remained relatively stable, with a modest increase from around 19% in 2017 to just above 20% in 2023.
-- **Mexico**: U.S. imports from Mexico have gradually risen from around 12% in 2017 to just under 15% in 2023.
-- **Canada**: The percentage of imports from Canada has remained relatively steady, fluctuating slightly around the 12% mark throughout the period.
-
-This chart suggests a diversification of U.S. import sources with a notable decline in reliance on China and an increase in imports from other Asian countries and Mexico.

@@ -1,8 +1,0 @@
-The image presents a comparison of median hourly earnings in the UK and the US across different educational attainment levels, adjusted for inflation and price levels. It illustrates the following key points:
-
-1. **Did Not Complete High School:** Earnings are similar between the UK and US until around 2020, where UK earnings trail slightly behind the US.
-2. **Finished High School, No College:** Earnings are very close between the UK and US over the entire period, with the US slightly higher most recently.
-3. **Some College, No Bachelor’s Degree:** Earnings are again quite similar, with US earnings consistently a little higher.
-4. **Bachelor’s Degree and Higher:** A significant divergence is seen, with US graduates earning much more than their UK counterparts from the mid-2000s onwards.
-
-Overall, non-graduates in both countries earn similarly, but graduates earn significantly more in the US than in the UK.

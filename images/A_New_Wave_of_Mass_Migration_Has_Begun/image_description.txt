@@ -1,9 +1,0 @@
-The chart from The Economist provides an analysis of the percentage change in the foreign-born population in developed countries from 2008 to 2022. The developed countries included are Australia, Britain, Canada, the European Union, Iceland, Norway, Switzerland, and the United States. The data used in the chart is sourced from national statistics.
-
-Key observations:
-1. In 2008, the percentage change was relatively low but positive.
-2. From 2008 to around 2017, the percentage change in the foreign-born population fluctuated between approximately 0.5% and 3.5%.
-3. After 2017, a significant drop is visible, reaching a low close to 0%.
-4. A marked increase in the foreign-born population percentage change is observed from 2020 to 2022, peaking at around 4% in 2022.
-
-Overall, the chart shows notable fluctuations over the period with a significant rise in the foreign-born population in the later years, indicating a trend of increasing migration to developed countries in recent times.

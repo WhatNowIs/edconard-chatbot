@@ -7,7 +7,7 @@ storage/
 .venv/
 
 data/
-tmp/
+images/
 node_modules/
 # create_llama/
 ollama/

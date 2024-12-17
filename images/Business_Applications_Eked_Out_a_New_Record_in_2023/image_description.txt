@@ -1,9 +1,0 @@
-The image is a bar chart displaying the number of U.S. total annual likely employer business applications from 2005 to 2023. Key findings from the chart are:
-
-1. **2005-2008:** Applications started high at 1.45 million in 2005, peaked at 1.51 million in 2006, and then slightly dipped to 1.22 million in 2008.
-2. **2009-2013:** There was a period of relative stagnation with applications consistently around 1.14 to 1.17 million.
-3. **2014-2016:** The numbers began to slightly increase, reaching 1.24 million by 2016.
-4. **2017-2019:** There was a steady increase each year, culminating at 1.29 million in 2019.
-5. **2020-Present:** A significant surge occurred, spiking to 1.46 million in 2020, 1.76 million in 2021, and stabilizing at around 1.78 million in 2023.
-
-The data suggests an overall upward trend in likely employer business applications, with notable growth especially in the recent years post-2019. The source of this data is the U.S. Census Bureau's Business Formation Statistics, and the chart is provided by the Economic Innovation Group.

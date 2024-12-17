@@ -1,9 +1,0 @@
-The image is a line chart detailing China's commodity stocks in millions of tonnes for maize, wheat, rice, and soybeans across various marketing years, from around 1960 to 2023. The data source is the United States Department of Agriculture.
-
-### Summary:
-- **Maize**: Shows a significant rise starting around 2000, peaking at around 225 million tonnes around 2020, then slightly declining to around 200 million tonnes by 2023.
-- **Wheat**: Experienced moderate increases starting from 2000, peaking at about 150 million tonnes around 2020, and then slightly dropping toward 2023.
-- **Rice**: Gradually increased, with several fluctuations, reaching approximately 110 million tonnes by 2023.
-- **Soybeans**: Displays a steady rise since 1960, significantly accelerating around 2000, and peaking at approximately 30 million tonnes by 2023.
-
-Overall, maize and wheat have substantial stocks in recent years, whereas rice has shown consistent growth, and soybeans, although lower in volume, have increased steadily.

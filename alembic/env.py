@@ -11,7 +11,7 @@ from alembic import context
 current_file = Path(__file__).resolve()
 root_directory = current_file.parents[1]  
 
-env_path = root_directory / 'config' / '.env'
+env_path = root_directory / '.env'
 
 load_dotenv(dotenv_path=env_path)
 

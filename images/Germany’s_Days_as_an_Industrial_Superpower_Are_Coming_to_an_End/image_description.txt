@@ -1,9 +1,0 @@
-The image shows a chart titled "German Output Has Trended Downward Since 2017 Peak," which tracks Germany's industrial production index, standardized to the year 2015 as the base (with a value of 100). According to the source, the German Federal Statistics Office, the chart offers the following insights:
-
-- From 1991 until around 2017, there was a general upward trend in Germany's industrial production, with some periods of decline interspersed throughout.
-- After 2017, the industrial production index peaked and subsequently displayed a downward trend.
-- A significant drop is observed around 2020, indicating a sharp decline.
-- Post-2020, there has been some recovery, although the index remains below the pre-2017 levels.
-- As of the latest data point, the index value is below 90, continuing the downward trend.
-
-In summary, German industrial production, which consistently grew with occasional declines over the decades, began decreasing after reaching its peak in 2017, with a significant drop around 2020 and a partial recovery thereafter, though it has not returned to its highest levels.

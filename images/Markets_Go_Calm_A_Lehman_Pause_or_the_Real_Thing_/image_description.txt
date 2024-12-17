@@ -1,8 +1,0 @@
-This image shows a line graph titled "The US True Financial Conditions Index is close to a 40-year low." The graph tracks various aspects of financial conditions in the US, incorporating metrics such as the ROIC-WACC spread, housing affordability, yield curve, money growth, and loan standards, from 1975 to 2023. 
-
-Key observations:
-- The index shows significant fluctuations over the years with notable peaks and troughs.
-- Periods of recession (shaded areas) can be seen coinciding with low points on the index, such as during the early 1980s, early 1990s, early 2000s, and 2007-2009.
-- As of the latest data point, the index has plummeted to approximately -66.8, approaching a 40-year low, indicative of severely tightened financial conditions.
-
-The data is sourced from Gavekal Research/Macrobond.

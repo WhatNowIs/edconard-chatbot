@@ -1,9 +1,0 @@
-The image is a graph that illustrates the Dow Jones Industrial Average (DJIA) price movements between 1960 and 1982. Key points to note from the graph are:
-
-1. **Time Frame**: The graph covers an 18-year period from 1960 to 1982.
-2. **Price Range**: Throughout this 18-year period, the DJIA fluctuated within a 200-point range, primarily between 800 and 1000 points, as highlighted by the red box in the graph.
-3. **Fluctuations**: The DJIA experienced multiple peaks and troughs within this range, indicating significant volatility in the market during this time frame.
-4. **Consistent Trend**: Despite the fluctuations, the DJIA did not break out significantly from this range until the end of the observed period.
-5. **Source**: The data and the graph were provided by BofA Research Investment Committee and Bloomberg.
-
-Overall, the graph highlights a lengthy period of relative stagnation for the DJIA, with persistent volatility but no significant upward or downward breakouts over 18 years.

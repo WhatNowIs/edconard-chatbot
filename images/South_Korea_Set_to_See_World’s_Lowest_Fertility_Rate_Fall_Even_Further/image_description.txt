@@ -1,9 +1,0 @@
-The image is a line graph titled "Shrinking Population," which projects the population trends in South Korea over the next five decades (up to 2072). According to the source, Statistics Korea, the graph presents three scenarios: Best case (pink line), Median case (black line), and Worst case (yellow line).
-
-Key points:
-- All scenarios show a decreasing population trend from 2022 to 2072.
-- In the best-case scenario, the population decreases slightly but remains above 40 million.
-- The median case predicts a more substantial decline, with the population dropping to around 35 million by 2072.
-- The worst-case scenario shows a sharp decline, with the population falling to approximately 26 million by 2072.
-
-The overall message is that South Korea is expected to experience a significant population decline over the next 50 years under various projection scenarios.

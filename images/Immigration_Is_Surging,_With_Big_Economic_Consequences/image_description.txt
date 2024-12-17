@@ -1,9 +1,0 @@
-This chart from The Economist displays the year-over-year percentage change in the foreign-born population within selected countries, including Australia, Britain, Canada, the EU, and the United States, from 2009 to 2023. The data is sourced from national statistics.
-
-Key observations:
-- The percentage change began slightly below 1% in 2009.
-- There were fluctuations in growth rates over the years, with notable increases around 2013, 2015, and 2016.
-- A significant dip was observed around 2019, where the growth rate briefly dropped to just above -1%.
-- Starting in 2020, there was a marked increase, peaking near 4% in 2023.
-
-Overall, the chart suggests a volatile yet upward trend in the growth rate of the foreign-born population in these countries over the 14-year period.

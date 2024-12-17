@@ -1,8 +1,0 @@
-The image is a bar chart from The Economist depicting the percentage change in the adult foreign-born population on a year-to-year basis for selected countries: Australia, Britain, Canada, EU, Iceland, Norway, and the USA, from 2008 to 2024.
-
-Here's a summary:
-
-- From 2008 to 2017, the percentage change in the adult foreign-born population generally fluctuated between 0% to 3%.
-- There was a notable dip around 2020, where the change dropped to below 1%.
-- Post-2020, there was a significant rise, reaching around 5% in 2022 and maintaining high levels through to 2024.
-- This indicates a recent substantial increase in the adult foreign-born population in the selected countries, following a period of relatively lower growth during the pandemic period.

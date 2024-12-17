@@ -1,9 +1,0 @@
-The image presents a bar chart titled "Taxes Up and Down" depicting federal revenue by month, spanning the years from 2020 to 2023. The y-axis represents federal revenue in billions of dollars, reaching up to $1,000 billion. 
-
-Key points:
-1. The chart shows monthly variations in federal revenue, with notable peaks and troughs.
-2. The highest observed federal revenue month approaches $800 billion, occurring in 2022.
-3. Other prominent peaks in revenue are observed sporadically throughout each year.
-4. The lowest revenue months fall below $200 billion.
-5. Federal revenue appears generally higher and more variable in 2022 compared to 2020 and 2021, with substantial monthly fluctuations throughout the period depicted.
-6. The data is sourced from the U.S. Treasury Department, indicating the official nature of the information.

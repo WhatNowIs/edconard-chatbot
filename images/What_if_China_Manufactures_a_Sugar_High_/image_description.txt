@@ -1,9 +1,0 @@
-The image presents a chart titled "A Notable Rotation in Credit Allocation" illustrating new bank loans by sector in China from 2008 to 2022. The sectors are broken down into total loans, property-related (including mortgages), industrial, and green loans. The data is represented in trillions of RMB with the left vertical axis for total loans and the right vertical axis for sector-specific loans.
-
-Key observations include:
-- Total loans (in blue, left scale) have been steadily increasing from approximately 5 trillion RMB in 2008 to about 20 trillion RMB in 2022.
-- Property-related loans (in red, right scale) saw an initial rise from around 5 trillion RMB in 2008, peaking near 8 trillion RMB around 2019, and subsequently declining sharply to nearly 1 trillion RMB by 2022.
-- Industrial loans (in brown, right scale) maintained a relatively stable trajectory, hovering around 1 trillion RMB throughout the period.
-- Green loans (in green, right scale), introduced around 2015, have shown a significant upward trend from 0 to almost 5 trillion RMB by 2022.
-
-This data is sourced from the People’s Bank of China via CEIC with a note indicating that China's classification of "green" loans overlaps with other sectors, hence it is shown for illustrative purposes. Overall, the chart highlights a substantial shift in credit allocation, emphasizing a reduction in property-related loans and a significant increase in green loans.

@@ -1,9 +1,0 @@
-The chart titled "Real Returns" presents a comparison between U.S. stock prices and real bond yields over the period of 2019 to 2023, represented using z-scores normalized for this time frame. The blue line denotes the 10-year TIPS (Treasury Inflation-Protected Securities) yield, while the red line represents the Wilshire 5000 price index.
-
-**Summary:**
-- **2019-2020:** Stock prices (red line) rose as real yields (blue line) fell, reflecting an inverse relationship between the two metrics.
-- **2021:** There was a notable increase in stock prices as corporate earnings surged, all while real yields stayed low.
-- **First Half of 2022:** A sharp rise in real yields coincided with a significant drawdown in stocks, indicating a negative impact on stock prices.
-- **Post Half of 2022:** Despite continuous increases in real yields, stock prices showed no significant further impacts, suggesting a potential divergence in their relationship.
-
-Overall, the chart captures the dynamic relationship between stock prices and real bond yields, highlighting periods where stock performance was closely tied to or independent of real yield fluctuations.

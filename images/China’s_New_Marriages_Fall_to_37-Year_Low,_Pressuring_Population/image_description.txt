@@ -1,9 +1,0 @@
-The image is a bar chart titled "Fewer People of Marriageable Age" and it highlights demographic trends from 1950 to 2020, emphasizing the disparity between the number of men and women aged 20-34. The chart uses black bars to represent men and blue bars to represent women, both within the specified age group.
-
-Key points from the chart:
-- Between 1950 and 1990, there was a steady increase in the number of people in this age group, peaking around 1990.
-- After peaking in the 1990s, the number of people aged 20-34 has been generally declining or plateauing.
-- Throughout the period, there are consistently more men than women in this age group.
-- By 2020, the total number of people in the age group (both men and women) is around 300 million, but with a significant gender imbalance where more men than women are present.
-  
-The chart is sourced from the United Nations World Population Prospects 2022, underscoring the growing challenge of finding a mate due to these demographic imbalances.

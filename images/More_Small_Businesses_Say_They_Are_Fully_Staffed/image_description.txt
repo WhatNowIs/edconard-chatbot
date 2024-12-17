@@ -1,9 +1,0 @@
-The provided image shows a line graph depicting the share of small businesses that expect to increase their headcount over the next 12 months. The data is based on monthly surveys of small-business owners conducted by Vistage Worldwide.
-
-Summary:
-- The graph illustrates a significant decline in the percentage of small businesses planning to increase their headcount from 2021 to 2023. 
-- In 2021, the percentage started at around 60% and peaked above 70%.
-- Throughout 2022, there was a downward trend with brief fluctuations.
-- Entering 2023, the trend continued to decline sharply, dropping below 50%. 
-
-In conclusion, the overall trend suggests decreasing optimism among small businesses concerning hiring prospects over the upcoming months.

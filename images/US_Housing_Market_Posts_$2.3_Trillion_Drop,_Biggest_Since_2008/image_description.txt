@@ -1,7 +1,0 @@
-The US housing market experienced a significant decline in value in 2022, with the total value of homes dropping by $2.3 trillion. This marks the largest six-month decrease since the 2008 financial crisis. The data, sourced from Redfin, shows the percentage change in home values from June to December over several years. According to the visual representation:
-
-- The largest decline in home value for 2022 occurred at approximately -5%, notably highlighted in yellow.
-- Historically, other declines in home value are observed around the 2008 housing crisis and various other years with smaller declines.
-- In contrast, some years saw positive changes in home values, indicated by bars rising in black above the 0% mark.
-
-This trend signals significant volatility in the housing market, implicating broader economic impacts.

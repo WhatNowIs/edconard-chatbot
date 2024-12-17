@@ -1,9 +1,0 @@
-The image presents a line graph illustrating the percent change in grocery prices compared to the previous year from January 2020 to January 2024. The key points to note are:
-
-1. In 2020, grocery price inflation saw several fluctuations, peaking around 6%.
-2. Throughout 2021, the grocery price inflation rate remained below 6%, with periods of decline and some stability.
-3. A significant upward trend began in 2022, with grocery price inflation surging to a peak of approximately 12%.
-4. Post-2022, the graph shows a steadily declining trend in grocery price inflation.
-5. By January 2024, the grocery price inflation decreased sharply to about 1.1%.
-
-Overall, the graph highlights a substantial rise in grocery price inflation, peaking in 2022, followed by a considerable decrease into early 2024.

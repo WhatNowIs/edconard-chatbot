@@ -1,9 +1,0 @@
-The chart depicts the trailing 12-month sums of Chinese exports of vehicles and parts (HTS 87) to the EU, US, and Japan from December 2000 to September 2023, based on Chinese Customs Data. 
-
-Key observations:
-- There has been a steady increase in exports to all three regions over the years, with notable surges in recent times.
-- Exports to the US (orange line) have shown significant growth since around early 2020, surpassing the EU (blue line) and Japan (grey line), although there was a sharp increase and then a slight decline towards the end of the period.
-- Exports to the EU also saw a sharp rise around the same time, maintaining a steady upward trend.
-- Exports to Japan have consistently been the lowest among the three regions but still show a gradual increase over the period.
-
-This data suggests a clear growth in China's vehicle and parts export market, particularly towards the US and the EU in recent years.

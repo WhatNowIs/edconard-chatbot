@@ -1,4 +1,0 @@
-The image presents a line graph displaying the 10-year growth rate of GDP per capita for several countries from 1960 to approximately 2015. The countries represented are Germany (DEU), Spain (ESP), France (FRA), the United Kingdom (GBR), Italy (ITA), the Netherlands (NLD), and the United States (USA). 
-
-Summary:
-From 1960 to the 1980s, there was generally a high growth rate of GDP per capita across all countries, with some fluctuations. Over time, the growth rates show a declining trend starting in the late 1970s through the early 1980s. This decline continues with periodic smaller spikes and dips. Notably, there was a significant dip around the 2008 financial crisis, which affected all countries. Afterwards, while there is some recovery, the growth rates remain lower compared to the early decades of the graph. The overall trend indicates a converging downward slope in the growth rates of GDP per capita for these nations over the timeframe.

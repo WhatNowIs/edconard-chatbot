@@ -1,8 +1,0 @@
-The chart details the annual growth of the US Divisia M4 monetary aggregate from 2000 to 2022, representing 12-month growth percentages. Key insights include:
-
-1. **1999-2019 Trends:** Monetary growth was relatively stable with some fluctuations, generally ranging between small positive and negative values.
-2. **Great Recession Impact:** There was a noticeable dip around 2008-2010, corresponding with the global financial crisis.
-3. **2020 Surge:** An unprecedented spike is observed in 2020, with growth rates surging to around 30%. This marks the highest level of monetary growth in the presented timeline.
-4. **Post-2020 Decline:** Following the peak in 2020, the growth rate rapidly declined, nearing 0% by 2022.
-
-This rapid increase in 2020 indicates significant monetary expansion, likely in response to the economic disruptions caused by the COVID-19 pandemic, and subsequent normalization as the economy adjusted.

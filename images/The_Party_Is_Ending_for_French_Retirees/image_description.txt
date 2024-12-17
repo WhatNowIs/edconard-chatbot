@@ -1,8 +1,0 @@
-The image shows a line graph depicting the ratio of workers to retirees from 2000 to a projected value in 2070. Key data points highlighted in the graph include:
-
-- **2002**: The ratio was 2.1 workers for every retiree.
-- **2019**: The ratio decreased to 1.7 workers per retiree.
-- **2033 (projected)**: The ratio is expected to decrease further to 1.5 workers per retiree.
-- **2070 (projected)**: The ratio is projected to decline to 1.2 workers per retiree.
-
-The overall trend indicated by the graph shows a gradual decline in the ratio of workers to retirees over time. This information was sourced from the Pensions Advisory Council and presented by Camille Bressange of The Wall Street Journal.

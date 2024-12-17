@@ -1,9 +1,0 @@
-The chart in Figure 1 shows the US Small-Cap Median GP/Assets by Cohort (Core, Exits, Entrants) from 1999 to 2022. 
-
-- **Core (black solid line):** The GP/Assets ratio for Core companies remains relatively stable throughout the period, hovering consistently around the 20% mark with slight variations.
-  
-- **Exits (blue solid line):** The GP/Assets ratio for companies exiting the market shows a general downward trend with some peaks and troughs. Initially higher in the early 2000s, it peaks around 2006-2007 near 30% and then noticeably drops post-2008 financial crisis, and continues to decline moderately till 2020 before a small uptick by 2022.
-
-- **Entrants (green dashed line):** The GP/Assets ratio for new entrants starts around 20% in the late 1990s, sees a decline through the early 2000s, and then shows a sharper decline post-2008, bottoming out near 5% by the mid-2010s, with a small bump around 2020 but remains low.
-
-This data is sourced from Capital IQ and Verdad analysis and visually represents the median GP/Assets ratios showcasing differences in performance and trends over time between core companies, those exiting the market, and new entrants.

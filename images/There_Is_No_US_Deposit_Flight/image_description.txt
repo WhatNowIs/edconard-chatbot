@@ -1,9 +1,0 @@
-The image is a line graph showing US bank deposit rates over time, divided into three types: savings, interest checking, and money market deposit accounts. The time period spans from the second quarter of 2021 (Q2 21) to the first quarter of 2023 (Q1 23).
-
-Key observations:
-1. **Money Market Deposit Rates**: These rates remained relatively flat until around Q2 22. From then on, they showed a significant upward trend, surpassing 0.5% by Q1 23.
-2. **Savings Deposit Rates**: These followed a similar pattern to money market deposits but with a slightly lower increase. There's a marked rise starting around Q2 22, reaching above 0.4% by Q1 23.
-3. **Interest Checking Deposit Rates**: These remained relatively stable throughout the period, with a minor increase noticeable towards the end of 2022. However, these rates stayed consistently low compared to savings and money market deposit rates.
-
-Overall Summary:
-The graph illustrates that from mid-2021 to early 2023, US bank deposit rates for savings and money market deposits experienced a significant rise, particularly from Q2 22 onwards. On the other hand, interest checking deposit rates have remained relatively unchanged throughout this period.

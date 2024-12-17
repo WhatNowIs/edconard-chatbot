@@ -1,8 +1,0 @@
-The image presents "Figure 2" which outlines the paths of overall labor market responses to a trade-cost shock from 2019 to 2035. The graph tracks three metrics over time: unemployment (red line), labor participation change (green line), and employment change (blue line), with percentage on the y-axis.
-
-Key observations:
-1. **Unemployment:** Experiences a sharp increase around 2023, reaching approximately 0.3%, before stabilizing back to around 0% for the remainder of the period.
-2. **Labor Participation Change:** Initially experiences no significant change, but drops sharply by around 0.8% by 2023. It then gradually recovers over the following years and approaches 0% by 2035.
-3. **Employment Change:** Exhibits a similar pattern to labor participation change, with an initial sharp drop of about 0.5% by 2021. It reaches its lowest point around -0.8% by 2023 then it gradually rises, trending towards 0% by 2035.
-
-In summary, the trade-cost shock leads to a temporary spike in unemployment and a corresponding initial drop in both employment and labor participation rates. Over time, the employment and labor participation rates show recovery, approaching baseline levels by 2035, indicating the labor market's adjustment and eventual equilibrium.

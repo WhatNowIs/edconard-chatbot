@@ -1,9 +1,0 @@
-The image is a graph illustrating the spread of Credit Default Swaps (CDS) for the United States, Mexico, Greece, and Brazil in basis points, over a period from October 2022 to May 2023. The key point highlighted by the graph is that the US one-year CDS spreads (black line) have seen a sharp increase, surpassing those of some countries known for serial defaults such as Mexico (red line), Greece (blue line), and Brazil (green line).
-
-Here are the main takeaways:
-
-1. **US Credit Risk Increase**: The US one-year CDS spreads have surged notably from around 10 basis points in January 2023 to approximately 160-180 basis points by May 2023.
-2. **Comparison with Other Countries**: Throughout the period, the US CDS spreads have increased to be higher than those of Mexico, Greece, and Brazil.
-3. **Emerging Market Resemblance**: The increase in the US CDS spreads suggests that the US credit risk is beginning to resemble that of typical emerging markets, often characterized by higher risk of default.
-
-The source of the data is Bloomberg.

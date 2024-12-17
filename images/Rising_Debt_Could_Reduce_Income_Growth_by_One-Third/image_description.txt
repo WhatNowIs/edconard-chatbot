@@ -1,7 +1,0 @@
-The image presents a comparative analysis of future income growth under different debt scenarios. The title "Rising Debt Could Reduce Income Growth by One-Third" sets the premise. It illustrates this through a chart showing the projected Real Gross National Product (GNP) per person in 2054 (in 2024 dollars) across three scenarios:
-
-1. **Stable Debt**: Under this scenario, the Real GNP per person is projected to be $128,600, with an increase of $44,200.
-2. **Baseline Debt**: Here, the real GNP per person is projected to be $123,200, with an increase of $38,800.
-3. **Rising Debt**: In this scenario, the Real GNP per person is projected to be $114,100, with an increase of $29,600.
-
-The sources for this data are the Congressional Budget Office and the Committee for a Responsible Federal Budget (CRFB). The image demonstrates that rising debt might lead to significantly lower income growth compared to maintaining stable or baseline debt levels.

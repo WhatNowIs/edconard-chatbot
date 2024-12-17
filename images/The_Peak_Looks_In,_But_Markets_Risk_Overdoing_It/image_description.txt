@@ -1,7 +1,0 @@
-The image contains two line graphs illustrating inflation measures closely monitored by the Federal Reserve. The title of the image suggests that these measures have either stalled or turned, indicating a potential peak.
-
-1. **Cleveland Fed Trimmed Mean**: This graph shows the inflation rate over the period from 1992 to 2022. Initially, the rate experiences fluctuations but remains relatively stable until around 2020 when it sharply increases, reaching about 7% by 2022.
-
-2. **Atlanta Fed Sticky Price**: Similar to the first graph, this one tracks a different measure of inflation from 1992 to 2022. There are notable fluctuations through the years, but from approximately 2020, the inflation rate shows a sharp rise, peaking at around 7% by 2022.
-
-The primary takeaway from these graphs is that both inflation measures experienced significant increases, particularly over the last few years, and have reached points that may indicate a peak. This information comes from the Federal Reserve Banks of Atlanta and Cleveland, highlighting the recent inflation trends that the Federal Reserve is closely monitoring.

@@ -1,0 +1,79 @@
+name: Deploy CRI Chatbot Backend to DigitalOcean
+
+on:
+  push:
+    branches:
+      - main
+      - prod
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.10"
+
+      - name: Set up Docker
+        uses: docker/setup-buildx-action@v1
+
+      - name: Log in to DockerHub
+        run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
+
+      - name: Build and push Docker image
+        run: |
+          IMAGE_NAME=${{ secrets.DOCKER_USERNAME }}/cri-chatbot-backend:latest
+          IMAGE_NAME_LOWER=$(echo $IMAGE_NAME | tr '[:upper:]' '[:lower:]')
+          docker build -t $IMAGE_NAME_LOWER .
+          docker push $IMAGE_NAME_LOWER
+
+      - name: SSH into Droplet and deploy
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.DROPLET_IP }}
+          username: root
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            docker pull ${{ secrets.DOCKER_USERNAME }}/cri-chatbot-backend:latest
+            docker stop cri-chatbot-backend || true
+            docker rm cri-chatbot-backend || true
+            docker run -d --name cri-chatbot-backend -p 80:8000 \
+                -e OPENAI_API_KEY="${{ secrets.OPENAI_API_KEY }}" \
+                -e REDIS_URL="${{ secrets.REDIS_URL }}" \
+                -e RESEND_API_KEY="${{ secrets.RESEND_API_KEY }}" \
+                -e GCP_SCOPES="${{ secrets.GCP_SCOPES }}" \
+                -e SHEETS_NAMES="${{ secrets.SHEETS_NAMES }}" \
+                -e DB_URI="${{ secrets.DB_URI }}" \
+                -e LLAMA_CLOUD_API_KEY="${{ secrets.LLAMA_CLOUD_API_KEY }}" \
+                -e COHERE_API_KEY="${{ secrets.COHERE_API_KEY }}" \
+                -e SYSTEM_PROMPT="${{ secrets.SYSTEM_PROMPT }}" \
+                -e REFRESH_EMBEDDING="${{ secrets.REFRESH_EMBEDDING }}" \
+                -e MODEL_PROVIDER="${{ secrets.MODEL_PROVIDER }}" \
+                -e MODEL="${{ secrets.MODEL }}" \
+                -e EMBEDDING_MODEL="${{ secrets.EMBEDDING_MODEL }}" \
+                -e EMBEDDING_DIM="${{ secrets.EMBEDDING_DIM }}" \
+                -e APP_HOST="${{ secrets.APP_HOST }}" \
+                -e APP_PORT="${{ secrets.APP_PORT }}" \
+                -e TOP_K="${{ secrets.TOP_K }}" \
+                -e VECTOR_STORE_PROVIDER="${{ secrets.VECTOR_STORE_PROVIDER }}" \
+                -e STORAGE_DIR="${{ secrets.STORAGE_DIR }}" \
+                -e CHROMA_COLLECTION="${{ secrets.CHROMA_COLLECTION }}" \
+                -e CHROMA_IMG_COLLECTION="${{ secrets.CHROMA_IMG_COLLECTION }}" \
+                -e CHROMA_PATH="${{ secrets.CHROMA_PATH }}" \
+                -e QDRANT_PATH="${{ secrets.QDRANT_PATH }}" \
+                -e QDRANT_API_KEY="${{ secrets.QDRANT_API_KEY }}" \
+                -e QDRANT_COLLECTION="${{ secrets.QDRANT_COLLECTION }}" \
+                -e QDRANT_IMG_COLLECTION="${{ secrets.QDRANT_IMG_COLLECTION }}" \
+                -e QDRANT_URL="${{ secrets.QDRANT_URL }}" \
+                -e OPENAI_API_VERSION="${{ secrets.OPENAI_API_VERSION }}" \
+                -e FROM_EMAIL="${{ secrets.FROM_EMAIL }}" \
+                ${{ secrets.DOCKER_USERNAME }}/cri-chatbot-backend:latest
+          debug: true

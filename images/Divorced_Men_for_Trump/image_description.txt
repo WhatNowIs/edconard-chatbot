@@ -1,9 +1,0 @@
-The image presents data from the American Social Capital Survey, 2024, illustrating the percentage of registered voters who support Donald Trump, broken down by marital status and gender.
-
-Key observations:
-1. Overall Voters: 47% of male voters and 40% of female voters support Trump.
-2. Divorced Voters: 56% of divorced male voters support Trump, compared to 42% of divorced female voters.
-3. Married Voters: 50% of married male voters support Trump, while 45% of married female voters do.
-4. Single Voters: 38% of single male voters support Trump, in contrast to 29% of single female voters.
-
-Overall, the data indicates that a higher percentage of men support Trump across all marital statuses, with divorced men showing the highest level of support at 56%.

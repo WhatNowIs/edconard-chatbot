@@ -1,7 +1,0 @@
-The chart depicts the percentage change in the Dow Jones Industrial Average (DJIA) since Election Day for two U.S. Presidents: Trump (in red) and Biden (in blue). Key events marked on the chart include the inauguration and the onset of the COVID-19 pandemic. 
-
-- **Trump's tenure**: The DJIA showed a marked increase, climbing steadily and peaking several times before the onset of the pandemic, which caused a significant but brief dip. Post dip, the DJIA continued to ascend sharply, reaching around 67% above the election day level by the end of the period shown.
-
-- **Biden's tenure**: While the data for Biden is incomplete (up to May 16), the chart shows an initial rise post-election. The gain fluctuates but remains below the peak percentage change achieved during Trump's tenure. Toward the end of the period shown, Biden's DJIA gains seem to hover around 20% above the election day level.
-
-The data, sourced from FactSet, highlights stock market performance under each president, indicating stronger trends and higher peaks during Trump's tenure, contrasted with Biden's chart that, though positive, lacks the same sharp increases.

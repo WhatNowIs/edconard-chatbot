@@ -1,8 +1,0 @@
-The graph depicts U.S. employment trends in the small arms, ammunition, and other ordnance manufacturing sector from 2000 to roughly 2023. The data, sourced from the Labor Department and seasonally adjusted, illustrate significant fluctuations:
-
-1. **Early 2000s:** Employment started near 40 thousand, experienced a dip, but recovered back to around 40 thousand by 2005.
-2. **Mid 2000s to 2008:**  Employment levels displayed minor fluctuations, generally trending slightly above 40 thousand.
-3. **Post-2008 Financial Crisis:** Employment saw notable increases, rising to nearly 45 thousand around 2010, followed by more fluctuations.
-4. **Post-2015:** A steady increase followed by a peak approaching 55 thousand employees by 2023.
-
-As of 2023, employment in this sector reached its highest level in over two decades, indicating significant growth in the U.S. small arms, ammunition, and ordnance manufacturing industry.

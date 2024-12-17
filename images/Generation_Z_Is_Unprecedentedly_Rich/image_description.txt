@@ -1,9 +1,0 @@
-The image is a line graph titled "Now you'll watch me bloom," depicting the full-time employment numbers in millions for different generations in the United States over time. The data sources are the Census Bureau and Glassdoor. The generations featured are:
-
-1. **Silent Generation (1928-1945)**: Their employment peaked in the '90s at around 12 million and has consistently declined since then.
-2. **Boomer Generation (1946-1964)**: Their employment peaked at around 50 million in the 2000s and has steadily decreased thereafter.
-3. **Generation X (1965-1980)**: Their employment saw a rapid rise starting from the '90s, peaking at around 45 million in the 2015s, and has remained steady since.
-4. **Millennials (1981-1996)**: Their employment began rising significantly from the early 2000s, peaking at around 50 million by mid-2000s, making them currently the largest employed generation.
-5. **Generation Z (1997-2012)**: Their employment figures started to rise from 2020, reaching about 10 million by 2023 and continuing to grow.
-
-Overall, the graph illustrates the employment trends for different generations, showing Millennials occupying the largest segment of full-time employment as of recent years, with Generation Z rapidly increasing their presence in the workforce.

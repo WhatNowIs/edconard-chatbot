@@ -1,9 +1,0 @@
-The image is a line graph titled "Inflation is poised to drop below wage growth." The graph depicts the 12-month percent change in wages and prices from 2004 to a forecast for 2024.
-
-Key takeaways:
-- **Wages (red line)**: Display fluctuations over the period, generally staying between 2% and 4% growth until 2020, after which they increase significantly, reaching around 6% growth by 2022, before declining in the forecast period to previous levels.
-- **Prices (blue line)**: Show more volatility, dropping significantly around 2008-2009 (indicating deflation), and generally remaining below wage growth until about 2021, when they spike to around 6%. Prices are forecasted to drop below wage growth again by 2023-2024.
-
-The graph uses data from the US Bureau of Labor Statistics, US Bureau of Economic Analysis, Federal Reserve Economic Data, and authors' calculations. 
-
-The notes specify that wages are measured by the employment cost index (ECI) for all private workers, and prices are measured by the personal consumption expenditures (PCE) price index.

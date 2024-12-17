@@ -61,27 +61,15 @@ app.include_router(threads_router, prefix="/api/chat/threads", tags=["Thread"])
 app.include_router(chat_router, prefix="/api/chat", tags=["Chat"])
 app.include_router(workspace_router, prefix="/api/workspaces", tags=["Workspaces"])
 
-@app.get("/")
-async def redirect():
-
-    config = get_config()
-    if config.configured:
-        # system is configured - / points to chat UI
-        return FileResponse("static/index.html")
-    else:
-        # system is not configured - redirect to onboarding page
-        return RedirectResponse(url="/admin/#new")
-
-
 app.mount("/api/data", StaticFiles(directory="data"), name="static")
-app.mount("", StaticFiles(directory="static", html=True), name="static")
 
 # Customize Swagger UI
 app.openapi_schema = app.openapi()
+
 app.openapi_schema["info"] = {
-    "title": "Edconrad Chatbot",
+    "title": "CRI Chatbot",
     "version": "1.0.0",
-    "description": "Edconrad Chatboat is an AI RAG chatbot.",
+    "description": "Coherent Research Institute chatbot is an AI RAG chatbot.",
     "contact": {
         "name": "WhatNow.is Support",
         "url": "https://whatnow.is/support",
@@ -110,41 +98,41 @@ def delete_all_converted_csv(folder_path):
 @app.on_event("startup")
 async def startup(
 ):
-    async for db in get_db():
+    # async for db in get_db():
         # Get the current directory
-        templates_directory = os.path.join(os.getcwd(), 'src', 'templates')
+        # templates_directory = os.path.join(os.getcwd(), 'src', 'templates')
 
         # Call the populate methods
-        email_type_service = EmailTypeService(db_session=db)
-        email_template_service = EmailTemplateService(db_session=db)
-        role_service = RoleService(db_session = db)
+        # email_type_service = EmailTypeService(db_session=db)
+        # email_template_service = EmailTemplateService(db_session=db)
+        # role_service = RoleService(db_session = db)
 
-        await email_type_service.populate_email_types()
-        await email_template_service.populate_email_templates(templates_directory)
-        await setup_roles(role_service)
+        # await email_type_service.populate_email_types()
+        # await email_template_service.populate_email_templates(templates_directory)
+        # await setup_roles(role_service)
 
-        async def create_admin():
-            obj_in = User(
-                first_name = "Byamasu",
-                last_name = "Patrick",
-                sex = "Male",
-                email = "patrick@whatnow.is",
-                phone_number = "+265996668149",
-                status = EntityStatus.Active
-            )
-            user_service = UserService(db_session = db)
-            workspace_service = WorkspaceService(db_session = db)
+        # async def create_admin():
+        #     obj_in = User(
+        #         first_name = "Byamasu",
+        #         last_name = "Patrick",
+        #         sex = "Male",
+        #         email = "patrick@whatnow.is",
+        #         phone_number = "+265996668149",
+        #         status = EntityStatus.Active
+        #     )
+        #     user_service = UserService(db_session = db)
+        #     workspace_service = WorkspaceService(db_session = db)
 
-            user, is_created = await user_service.create_default_super_admin_account_if_not_exists(obj_in, "Patrick2020")
+        #     user, is_created = await user_service.create_default_super_admin_account_if_not_exists(obj_in, "Patrick2020")
             
-            workspace = await workspace_service.create_default_workspace_if_not_exists(user)
-            if is_created:
-                await workspace_service.add_user_to_workspace(workspace.id, user.id)
-                await workspace_service.db_session.commit()
+        #     workspace = await workspace_service.create_default_workspace_if_not_exists(user)
+        #     if is_created:
+        #         await workspace_service.add_user_to_workspace(workspace.id, user.id)
+        #         await workspace_service.db_session.commit()
 
-        await create_admin()
+        # await create_admin()
 
-
+    get_logger().info(get_config().model_dump())
     get_logger().info("Successfully populated default email templates and types")
 
     if os.getenv("REFRESH_EMBEDDING", "False").lower() == "true":

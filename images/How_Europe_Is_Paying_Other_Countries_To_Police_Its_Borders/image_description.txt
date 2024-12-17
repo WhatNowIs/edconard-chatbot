@@ -1,9 +1,0 @@
-The line graph depicts the trend of irregular migration to the European Union (EU) from 2015 to 2024. The data represents the sum of irregular arrivals to Europe over the previous 12 months, measured in millions, and includes arrivals by sea and land to Bulgaria, Cyprus, Greece, Italy, Malta, and Spain.
-
-Key observations:
-- The peak of irregular migration occurred in 2016, with arrivals exceeding 1 million.
-- After 2016, there was a steep decline, with the numbers dropping significantly and stabilizing around 0.2 million from 2017 to 2020.
-- Post-2020, there has been a gradual increase, but the numbers remain well below the 2016 peak, staying under 0.5 million through to 2024.
-
-Summary:
-Irregular migration to the EU peaked in 2016 with over 1 million arrivals. Following this peak, there was a substantial decline, and the numbers stabilized at lower levels from 2017 to 2020. Although there has been a slight increase in irregular arrivals since 2020, the levels remain significantly below the 2016 peak. The data covers arrivals to several EU countries over a span of years, illustrating the long-term trend in migration patterns.

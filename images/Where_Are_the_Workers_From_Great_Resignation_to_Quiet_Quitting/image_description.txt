@@ -1,7 +1,0 @@
-The image is a line graph titled "Trend in Annual Hours per Worker" with separate lines representing male and female workers from 2007 to 2021. The key points of the data presented are as follows:
-
-- **Male Workers**: The annual hours worked per male worker started above 2050 hours in 2007, saw a decline until around 2010, and then generally increased until 2018, peaking just above 2000 hours. There was a notable drop in annual hours in 2020, but it increased again in 2021.
-  
-- **Female Workers**: The annual hours worked per female worker began slightly above 1750 hours in 2007, dipped in 2009, and then generally showed a gradual upward trend until 2019. In 2020, there was a decrease in hours worked by female workers, followed by an increase in 2021, but it remained below 1800 annual hours.
-
-Overall, male workers consistently worked more annual hours than female workers throughout the period, with both showing some fluctuations, especially around 2020.

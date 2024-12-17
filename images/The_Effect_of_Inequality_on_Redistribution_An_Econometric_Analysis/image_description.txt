@@ -1,9 +1,0 @@
-The provided image displays a bar chart titled "Attenuation by Quintile - GMM" and includes a legend for Spillover (dark blue) and Cancellation (light blue). The vertical axis represents Income Shares, ranging from -0.1 to 0.8, while the horizontal axis is divided into five quintiles (Q1 to Q5). 
-
-- In Q1, there is a small amount of Spillover (approximately 0.15) without any Cancellation.
-- For Q2, both Spillover (slightly over 0.3) and Cancellation (around 0.15) are observed.
-- In Q3, the highest levels of both Spillover (over 0.5) and Cancellation (over 0.2) are documented.
-- Q4 shows a moderate Spillover (around 0.25) and a smaller amount of Cancellation (approximately 0.1).
-- Q5 has the lowest impact with a minimal Spillover (around 0.1) and negligible or no Cancellation.
-
-Figure 4, titled "The Attenuation Structure," summarizes the distribution and proportion of Spillover and Cancellation effects across income quintiles. The middle quintiles, especially Q3, experience the highest impact of both Spillover and Cancellation, while the extremes, Q1 and Q5, are less affected.

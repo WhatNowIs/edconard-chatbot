@@ -1,9 +1,0 @@
-The image presents a graphical analysis titled "Mexico's Trade Boom is More Than Reexports", which examines the growth of Mexico’s net goods exports to the USA compared to its net goods imports from China. The chart spans from 2016 to 2024, with data represented on a rolling yearly total basis. 
-
-Key points from the chart are:
-- There is a consistent, significant growth in Mexico's net goods exports to the USA (represented in yellow) from around $140 billion in 2016 to approaching $240 billion by 2023.
-- Mexico's net goods imports from China (shown in teal) also display an upward trend but at a much slower rate, rising from nearly $50 billion in 2016 to just above $90 billion by 2023.
-- The data highlights that the growth in Mexico's exports to the USA vastly dwarfs the growth in its imports from China, indicating a strong export performance relative to imports over the observed period.
-- The chart was created using data from the Bank of Mexico and includes information from Hong Kong as part of the data for China. It notes that different origin/destination methods are used, which means the data is not directly equivalent to US Census Bureau data.
-
-In summary, the chart underscores a booming trade relationship between Mexico and the USA, with the growth in exports to the USA significantly outpacing the growth in imports from China, suggesting that Mexico's trade growth is being driven by more than just reexports.

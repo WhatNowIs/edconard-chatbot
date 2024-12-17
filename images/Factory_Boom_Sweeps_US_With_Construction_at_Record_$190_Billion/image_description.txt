@@ -1,9 +1,0 @@
-The image is a graph depicting the manufacturing share of total private construction in the United States from the early 1990s to around 2020, according to the US Census Bureau. The key points of the graph can be summarized as follows:
-
-- The share of manufacturing in private construction was relatively stable in the 1990s.
-- There were fluctuations with peaks occurring around the years 2000 and 2008.
-- A significant decline is observed around the late 2000s, likely due to the economic recession.
-- The share increased again gradually through the 2010s with noticeable fluctuations.
-- By 2020, the manufacturing share of total private construction spiked to its highest point since the data series began, reaching approximately 13%.
-
-This high recent share indicates a resurgence or significant growth in the manufacturing sector within private construction.

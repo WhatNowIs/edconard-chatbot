@@ -1,8 +1,0 @@
-The image provides insight into the economic views of Democratic-leaning voters, segmented by their voting activity. According to the data:
-
-- Among 2022 primary voters, 64% view the economy as "good or excellent," and 36% see it as "fair or poor."
-- For those who voted in the 2022 midterm elections, 34% rate the economy as "good or excellent," while 65% consider it "fair or poor."
-- Voters who participated in the 2020 elections but not in 2022 are more pessimistic, with only 21% rating the economy as "good or excellent," and 77% viewing it as "fair or poor."
-- The most negative outlook is among those who did not vote in either 2020 or 2022, where only 16% see the economy as "good or excellent," and 84% believe it is "fair or poor."
-
-This data is based on polls conducted by The New York Times, Philadelphia Inquirer, and Siena College in Pennsylvania, Michigan, Georgia, Arizona, Wisconsin, and Nevada.

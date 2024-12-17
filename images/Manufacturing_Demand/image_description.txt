@@ -1,9 +1,0 @@
-The chart titled "Bank Treasury Holdings and Total Outstanding ($trn)" sourced from the Federal Reserve presents trends from 1945 to 2023. It includes three primary data series:
-
-1. **Percent of Bank Assets in Treasuries (RHS, Right Hand Scale)**: Represented by the grey area, it shows a sharp decline from approximately 25% in 1945 to below 5% by the early 1990s. Since then, it has fluctuated but remained below this level through 2023.
-
-2. **Total Bank Assets**: Represented by the blue line, it has shown substantial growth over the decades, particularly accelerating from around the early 2000s to 2023.
-
-3. **Treasuries Outstanding**: Indicated by the yellow line, this series also reflects significant growth, particularly noticeable from the early 2000s onwards, aligning closely in trend with Total Bank Assets.
-
-Key insights include the considerable decrease in the percentage of bank assets held in treasuries over the long term, contrasted by a large growth in both total bank assets and the amount of treasuries outstanding from the early 2000s to 2023.

@@ -8,7 +8,7 @@ from src.core.config.gcp import GCPConfig
 from src.llm.env_config import get_config
 
 load_dotenv(
-    "config/.env"
+    ".env"
 )
 
 env = get_config()
@@ -16,7 +16,7 @@ SCOPES = os.getenv("GCP_SCOPES").split(",")
 SUBJECT = 'patrick@whatnow.is'
 
 # # Initialize the Drive API
-gcp_config = GCPConfig(env.s3_bucket_name, 'gcp credentials/updated-service-account-credentials.json')
+gcp_config = GCPConfig()
 
 docs_service = gcp_config.get_google_service('docs', 'v1', SCOPES, SUBJECT)
 spreadsheet_service = gcp_config.get_google_service('sheets', 'v4', SCOPES, SUBJECT)

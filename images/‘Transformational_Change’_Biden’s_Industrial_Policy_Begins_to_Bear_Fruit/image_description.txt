@@ -1,7 +1,0 @@
-The chart from the Financial Times, based on FT research, illustrates the cumulative total of announced projects since August 2022, broken down by political district. The data reveals a significant disparity in investment:
-
-1. **Republican Congressional Districts**: Secured the majority of investments, totaling approximately $140 billion.
-2. **Democratic Congressional Districts**: Received considerably less investment, amounting to roughly $40 billion.
-3. **Multiple/Unclear Districts**: Secured very minimal investment, barely notable on the chart.
-
-The overarching insight is that Republican districts have attracted far more investment for announced projects compared to Democratic districts and other locations, highlighting a notable discrepancy in funding distribution.

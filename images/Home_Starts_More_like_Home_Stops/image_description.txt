@@ -1,9 +1,0 @@
-The image provides a comparative analysis of the building cycles for multifamily and single-family housing units, focusing on four stages: permits, starts, units under construction, and completions. The data compares March 2024 against the 2019 average.
-
-Key Points:
-1. **Permits:** Permits for single-family units (yellow) and multifamily units (blue) show different trends, but the specific data points are not provided.
-2. **Starts:** Starts for multifamily units are 20% below the 2019 pace, indicating a slowdown in new multifamily housing projects compared to the past.
-3. **Construction:** The multifamily construction rate is shown to be highly volatile.
-4. **Completions:** Multifamily units are being constructed and completed over 40% faster than in 2019, suggesting an accelerated pace in bringing these units to market.
-
-The chart visually demonstrates that the building cycle for multifamily units is more volatile compared to single-family units, with significant deviations in starts and completions. The source of the data is the National Association of Realtors.

@@ -1,9 +1,0 @@
-The image presents a line chart titled "Unpleasant Monetary Arithmetic?" that illustrates the trend of U.S. federal government interest payments net of interest income and Federal Reserve dividends as a percentage of Nominal Gross Domestic Product (NGDP) from 1947 to 2022. 
-
-Key Points:
-
-- The chart suggests an increase in the federal budget deficit starting in 2022 due to a rise in U.S. interest rates and yield curve inversion, which has added about 2 percentage points to the deficit.
-- The data indicates fluctuations over the decades, with notable peaks around the early 1980s and a sharp increase beginning in recent years after 2020.
-- Source information includes calculations by Matthew Klein using data from the Bureau of Economic Analysis.
-
-Overall, the chart highlights the impact of changing interest rates on federal government interest payments relative to the country's economic output over time.

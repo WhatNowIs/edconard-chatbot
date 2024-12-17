@@ -1,9 +1,0 @@
-The image displays a graph showing the largest 2-week declines in bank lending over time. The data, sourced from the Federal Reserve Board, Haver Analytics, and Apollo Chief Economist, tracks the 2-week changes in loans and leases in bank credit for all commercial banks, measured in billions of dollars ($bn), from January 1975 to January 2023.
-
-Key observations include:
-
-- Periodic fluctuations in lending volumes, with notable declines during economic recessions, indicated by the shaded areas.
-- Remarkable spikes and troughs, with significant drops in lending observed around the 2008 financial crisis and recently in early 2023.
-- The latest marked decline indicates the largest 2-week drop in bank lending observed in the historical data presented.
-
-Overall, this graph highlights periods of financial stress and economic downturns reflected in sharp decreases in bank lending activities, showcasing recent unprecedented declines.

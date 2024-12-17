@@ -1,8 +1,0 @@
-The image is a graph titled "Homeowners Policies Surging in Florida" and shows the average homeowners insurance rates in Florida compared to the US over the time period from 2018 to 2023. The key points from the graph are:
-
-- The black line represents Florida premiums, and the yellow line represents US premiums.
-- Florida homeowners insurance rates have increased dramatically from 2018 to 2023, nearly tripling, and reaching approximately $6,000 by 2023.
-- National premiums have also risen but at a much slower rate, remaining well below Florida's rates throughout this period.
-- The significant divergence in trends between Florida and the rest of the US is apparent, with Florida experiencing a much steeper increase.
-  
-The source of this information is the Insurance Information Institute.

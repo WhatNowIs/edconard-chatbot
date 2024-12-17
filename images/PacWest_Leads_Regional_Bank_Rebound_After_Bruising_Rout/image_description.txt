@@ -1,9 +1,0 @@
-This graph, sourced from Bloomberg, tracks the performance of regional bank stocks, highlighting the KBW Regional Banking Index, PacWest shares, and Western Alliance shares. The data is normalized to the starting point on December 30, 2022.
-
-Key Observations:
-1. **Initial Growth:** Early in the year, both PacWest and Western Alliance shares saw some growth, while the KBW Regional Banking Index remained relatively stable.
-2. **Significant Drop:** Around mid-March, there was a significant drop across all three metrics. The KBW Index experienced a milder decline compared to PacWest and Western Alliance shares, which plummeted sharply.
-3. **Post-Drop Volatility:** Following the initial drop, all three stocks exhibited volatility, with minor recoveries followed by further declines. 
-4. **End of April Performance:** By the end of April, mapped within the highlighted area, all stocks experienced another sharp decline. Notably, PacWest and Western Alliance shares faced a steeper drop, indicating heightened volatility and market stress.
-
-The chart illustrates the turbulent period for regional bank stocks and underscores the higher volatility and risk associated with specific bank stocks (PacWest, Western Alliance) compared to the broader regional bank index.

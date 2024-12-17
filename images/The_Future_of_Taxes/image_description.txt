@@ -1,8 +1,0 @@
-The image is a bar chart titled "High incomes after federal tax (% of GDP)." It compares the percentage of GDP for high incomes after federal taxes under three different tax rates:
-
-1. **35% rate**: The percentage of GDP is approximately 1%.
-2. **37% rate**: The percentage of GDP is approximately 2.75%.
-3. **20% capital gains**: The percentage of GDP is approximately 2.5%.
-
-Summary:
-The bar chart illustrates the relative impact of different federal tax rates on the high incomes as a percentage of GDP. The highest federal tax rate on income (37%) leads to an amount equivalent to approximately 2.75% of GDP, the highest in the comparison. Next is the capital gains tax rate of 20%, which corresponds to around 2.5% of GDP. The 35% tax rate yields the lowest percentage at around 1% of GDP. This indicates that higher tax rates on income from high earners lead to significantly higher contributions relative to GDP.

@@ -1,8 +1,0 @@
-This chart, titled "American Ideal," illustrates the trends in the ideal family size and the actual U.S. total fertility rate from 1972 to approximately 2020. Here are the main points:
-
-- The ideal family size, represented by the blue line, has remained remarkably stable over time, with minor fluctuations around the preferred number of children, which is close to 3.
-- In contrast, the U.S. total fertility rate, shown by the black line, has experienced more significant changes, generally trending downwards over the decades.
-- The U.S. total fertility rate appears to start above 2 children per woman in the early 1970s but shows peaks and troughs with an overall decline, ending just above 1.5 children per woman around 2020.
-- The graph indicates a divergence between the stable ideal family size and the decreasing actual fertility rates.
-
-Sources: General Social Survey for ideal family size and the CDC for actual birthrate.

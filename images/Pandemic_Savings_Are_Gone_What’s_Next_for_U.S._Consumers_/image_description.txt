@@ -1,9 +1,0 @@
-The image displays a bar chart titled "Figure 2: Monthly change in cumulative excess savings," which illustrates the changes in excess savings from 2020 to 2024.
-
-Key observations:
-
-- **Savings Peak**: There is a significant spike of over $300 billion in April 2020 and March 2021.
-- **Initial Decline**: After the peak in March 2021, the monthly excess savings consistently decrease.
-- **Negative Savings**: Starting from around mid-2021 and continuing to March 2024, the chart shows negative values, indicating that cumulative excess savings are declining, reaching approximately $-100 billion by March 2024.
-
-The note at the bottom clarifies that excess savings are calculated as the difference between actual de-annualized personal savings and the trend implied by pre-recession data. This note also attributes the data to the Bureau of Economic Analysis and the authors' calculations.

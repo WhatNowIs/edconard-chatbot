@@ -1,4 +1,0 @@
-The image is a line graph titled "Start-up shutdowns are rising fast," illustrating the annual failure rate of startups from 2020 to 2024, based on data from Carta.
-
-Summary:
-The graph shows a significant upward trend in startup shutdowns over the past few years, with the annual failure rate rising from approximately 70 in 2020 to nearly 250 in 2024. The graph depicts periods of fluctuation but generally demonstrates an escalating pattern of startup closures. The sharp increase in failure rates starting in early 2022 is particularly notable, indicating a challenging environment for startups in the recent period.

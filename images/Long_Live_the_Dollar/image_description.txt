@@ -1,9 +1,0 @@
-This graph illustrates the cumulative issuance of longer-dated U.S. Treasuries and their foreign purchases over the course of 2023 into early 2024. The vertical axis represents the amount in billions ($bln), while the horizontal axis marks time from February 2023 to April 2024.
-
-Key points:
-1. Both metrics show an overall upward trend.
-2. In early 2023, net foreign purchases of treasuries exceeded net treasury issuance, but this trend began to shift.
-3. From mid-2023 onwards, net treasury issuance accelerated and surpassed net foreign purchases.
-4. By early 2024, the gap between net treasury issuance and net foreign purchases widened, with issuance reaching close to $900 billion, while foreign purchases lagging behind at around $700 billion.
-
-The source of the data is the U.S. Treasury. This trend indicates an increasing divergence between the issuance of U.S. Treasuries and foreign demand for them, which could have implications for fiscal policy and international financial markets.

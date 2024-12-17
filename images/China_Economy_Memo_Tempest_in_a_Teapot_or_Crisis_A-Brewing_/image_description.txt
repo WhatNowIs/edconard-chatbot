@@ -1,7 +1,0 @@
-The image displays a pie chart titled "Debt Shares of Different LGFV Categories," sourced from MacroPolo. The pie chart is divided into three categories of Local Government Financing Vehicle (LGFV) debt:
-
-1. Safe (represented by blue)
-2. Garden Variety (represented by yellow)
-3. Hybrid (represented by gray)
-
-Each category represents a portion of the total debt share. The chart suggests a relatively equal distribution among the three categories, with each occupying roughly one-third of the pie, although exact percentages are not provided. This visualization highlights the diversity in the types of LGFV debts and underscores the varying levels of risk associated with each category.

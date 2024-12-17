@@ -1,48 +1,29 @@
-# ======= FRONT-END BUILD ==========
-FROM node:20-alpine as build
-
-# Install make
-RUN apk add --no-cache make
-
-WORKDIR /app
-
-COPY Makefile .
-COPY admin ./admin
-COPY patch/frontend ./patch/frontend
-COPY patch/backend ./patch/backend
-
-# Build static files for the Chat UI
-RUN make build-frontends
-
-# ======= RELEASE ==========
+# ======= BASE IMAGE ==========
 FROM python:3.11
 
 WORKDIR /app
 
-# Add create_llama/backend to PYTHONPATH
+# Add the necessary paths to PYTHONPATH
 ENV PYTHONPATH=/app:/app/create_llama/backend
+# Add Poetry's binary path to the PATH environment variable
+ENV PATH="/root/.local/bin:$PATH"
 
 # Install Poetry
-RUN curl -sSL https://install.python-poetry.org | POETRY_HOME=/opt/poetry python && \
-    cd /usr/local/bin && \
-    ln -s /opt/poetry/bin/poetry && \
+RUN curl -sSL https://install.python-poetry.org | python && \
     poetry config virtualenvs.create false
 
-# Copy current code to the container
-# and remove the frontend folder
-COPY poetry.lock pyproject.toml ./
-# Install dependencies
-RUN poetry install --no-root --no-cache --only main
+# Copy Poetry configuration and install dependencies
+COPY pyproject.toml poetry.lock ./
+RUN poetry install --no-root
 
-# Copy static files from the build stage 
-COPY --from=build /app/create_llama/frontend/out /app/static
-COPY --from=build /app/admin/out /app/static/admin
-COPY --from=build /app/create_llama/backend /app/create_llama/backend
+# Copy the rest of the application code
 COPY . .
 
-# Create an empty data folder
-RUN mkdir -p data
+# Ensure the required directories exist
+RUN mkdir -p data storage
 
-EXPOSE 8000
+# Expose the application port
+EXPOSE 8080
 
+# Command to run the application
 CMD ["python", "main.py"]

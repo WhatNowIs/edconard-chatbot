@@ -1,9 +1,0 @@
-The image is a line graph illustrating the rapid growth in three of China's emerging industries from 2015 to 2023. The graph, using a rebased scale (2015=100), compares the trends in battery production, new energy vehicle (NEV) production, and wind and solar power generation capacity. Key observations include:
-
-- **Battery Production (blue line)**: This sector exhibits the most significant growth, showing a steep increase starting around 2020 and continuing upwards to 2023, reaching close to 5,000 by 2023.
-  
-- **NEV Production (red line)**: Growth in this sector also accelerates from 2019, with a notable rise starting in 2020 and continuing to increase steadily, approaching 3,000 by 2023.
-  
-- **Wind and Solar Power Generation Capacity (teal line)**: Although it shows a positive growth trend, the increase is more modest compared to the other two sectors, rising steadily and reaching around 1,200 by 2023.
-
-Sources are attributed to NBS and Goldman Sachs Global Investment Research, as cited by the Financial Times (FT). The data underscores the rapid advancements in key renewable and sustainable energy industries within China.

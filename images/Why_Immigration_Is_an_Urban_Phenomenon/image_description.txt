@@ -1,7 +1,0 @@
-This image contains two scatter plots summarizing the concentration of the immigrant population in U.S. cities, based on Census Bureau data from 2000. Each dot in the plots represents a metropolitan statistical area (MSA).
-
-- **Plot A (Left)**: This plot illustrates the relationship between immigrant concentration and city size (measured by log scale of MSA population). As city size increases, the concentration of immigrants also tends to increase, indicated by the upward trendline.
-
-- **Plot B (Right)**: This plot shows the relationship between immigrant concentration and city price levels (measured by MSA price index as a percentage deviation from the national average). An upward trendline suggests that higher city price levels correlate with higher immigrant concentration.
-
-Both plots indicate a positive correlation; larger cities and those with higher price levels tend to have a higher concentration of immigrants. The horizontal lines set at zero in both plots mark the national average for immigrant concentration, helping to visually differentiate between cities above and below the national average.

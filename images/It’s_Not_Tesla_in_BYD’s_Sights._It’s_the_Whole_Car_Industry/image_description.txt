@@ -1,9 +1,0 @@
-The image features a chart from Bloomberg titled "Tailgating." The chart compares the operating incomes of BYD (represented by a blue line) and Tesla (represented by a black line) from 2014 to 2023. The vertical axis measures the operating income in billions of dollars ($B), ranging from -2 to 4 billion, while the horizontal axis shows the timeline from 2014 to 2023.
-
-Key points:
-- Both BYD and Tesla had operating incomes close to zero from 2014 through 2018.
-- Tesla's operating income began to rise significantly around 2018, peaking around 2022, reaching nearly $3.5 billion, but it started to decline in 2023.
-- BYD's operating income showed a modest increase starting around 2021 and has been closing in on Tesla's operating income as of 2023 despite a much lower valuation compared to Tesla.
-
-Summary:
-The chart depicts the operating income trends of BYD and Tesla over the years, highlighting that BYD's operating income has increasingly approached that of Tesla, especially in recent years. Despite Tesla having a higher valuation, BYD has managed to close the gap significantly by 2023.

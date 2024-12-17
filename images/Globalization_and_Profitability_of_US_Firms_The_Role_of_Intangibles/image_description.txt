@@ -1,8 +1,0 @@
-The provided image is a graph showing the time series of aggregate profit margins (EBIT Margins) of firms from 1980 to approximately 2017. The data includes three variations: the overall EBIT Margin (EBIT Margin_3MA), Domestic EBIT Margin (Domestic EBIT Margin_3MA), and Foreign EBIT Margin (Foreign EBIT Margin_3MA). Each line is denoted by a different style— with the overall EBIT Margin represented by a solid blue line, the Domestic EBIT Margin by a green dashed line, and the Foreign EBIT Margin by a red dashed line. The EBIT margin is calculated as the ratio of aggregate Earnings Before Interest and Taxes (EBIT) to aggregate Sales.
-
-Key observations:
-1. The EBIT Margins experienced fluctuations over the period, with noticeable dips around the years 2000.
-2. Two significant structural breaks, indicated by red vertical dotted lines, occur around the years 2001 and 2004. These breaks identify changes in the time series using the Andrews (1993) supremo Wald test.
-3. Post-2004, the Foreign EBIT Margin shows a significant increase, clearly distinguishable from the Domestic EBIT Margin which remains relatively stable or even declines after the structural breaks.
-
-Additionally, the variables used in the graph are explained in more detail in Appendix A of the referenced document.

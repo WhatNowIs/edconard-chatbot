@@ -1,9 +1,0 @@
-The image displays a bar chart that represents the number of apprehensions at the U.S.-Mexico border from January 2020 to December 2023. 
-
-Key points to note:
-- The general trend shows a significant increase in border apprehensions from the beginning of 2020 through late 2021.
-- There are fluctuations in the number of apprehensions, with noticeable peaks and troughs, particularly in 2022 and 2023.
-- The data indicates a consistent rise during certain periods, with the apprehensions reaching their highest point in December 2023, indicating ongoing issues with illegal border crossings.
-- Furthermore, the chart notes that illegal crossings increased by 1 percent in November 2023, as reported by the CBP preliminary enforcement data obtained by The Post.
-
-Overall, the data depicts the evolving situation of illegal border crossings at the Southwest border, highlighting both increases and some periods of decline over the past four years.

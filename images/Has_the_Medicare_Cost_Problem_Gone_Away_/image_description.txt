@@ -1,9 +1,0 @@
-The image shows a graph depicting annual Medicare spending per beneficiary from 1970 to 2023. It highlights the following key points:
-
-1. **Spending Trends**: There has been a significant upward trend in Medicare spending per beneficiary since 1970, rising continuously from below $2,000 in 1970 to the current value in 2023.
-
-2. **Actual vs. Projected Spending**: In 2023, the actual annual Medicare spending per beneficiary is $12,459. However, if the recent trend had continued, the spending was projected to be much higher at $22,006 per beneficiary in 2023.
-
-3. **Spending Gap**: There is a noticeable gap between the recent trend in expected spending and the actual spending, amounting to a $3.9 trillion shortfall. 
-
-This graph illustrates the significant divergence between projected Medicare expenditures and actual spending, pointing to possible changes in policy, healthcare practices, or other factors influencing these trends in recent years.

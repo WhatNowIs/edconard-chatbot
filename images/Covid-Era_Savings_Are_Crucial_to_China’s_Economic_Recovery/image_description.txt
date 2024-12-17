@@ -1,8 +1,0 @@
-The image presents a line graph highlighting the trends in household saving rates across four regions: the European Union, the U.S., Japan, and China, from 2019 to 2022. The key takeaways are:
-
-- **China** (red line) experienced an increase in its household saving rate during the pandemic, starting near 30% in 2019, peaking slightly above 30% around 2020, and maintaining a relatively stable rate close to 30% through 2022.
-- **European Union** (green line) showed a sharp increase in savings rates around 2020, peaking near 20%, followed by a gradual decline towards 2022, ending close to where it started in 2019.
-- **U.S.** (blue line) saw a significant spike around 2020, reaching approximately 15%, then a continuous decrease through 2021, ultimately dropping back down close to 2020 levels by 2022.
-- **Japan** (black line) displayed a more moderate increase in 2020, reaching around 10%, and then gradually declining through 2021 and 2022, similarly ending close to its 2019 levels.
-
-Overall, while China managed to maintain a higher and more stable saving rate, the European Union, the U.S., and Japan saw spikes in their saving rates during the pandemic, followed by declines approaching their pre-pandemic levels.

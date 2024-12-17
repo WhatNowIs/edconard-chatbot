@@ -6,9 +6,9 @@ from llama_index.core.chat_engine.types import BaseChatEngine
 from llama_index.core.schema import NodeWithScore
 from llama_index.core.llms import ChatMessage, MessageRole
 from sqlalchemy.ext.asyncio import AsyncSession
-from app.engine import get_chat_engine
-from app.api.routers.vercel_response import VercelStreamResponse
-from app.api.routers.messaging import EventCallbackHandler
+from create_llama.backend.app.engine import get_chat_engine
+from create_llama.backend.app.api.routers.vercel_response import VercelStreamResponse
+from create_llama.backend.app.api.routers.messaging import EventCallbackHandler
 from aiostream import stream
 from src.app.routers.auth.accounts import get_session
 from src.core.config.postgres import get_db
@@ -18,7 +18,7 @@ from src.core.services.message import MessageService
 from src.core.services.thread import ThreadService
 from src.core.services.user import UserService 
 from redis.asyncio.client import Redis
-from app.utils.helpers import Article, get_document_by_url
+from create_llama.backend.app.utils.helpers import Article, get_document_by_url
 
 from src.schema import _UpdateChat, ChatMode, ResponseMessage, SetArticleData
 from src.utils.logger import get_logger

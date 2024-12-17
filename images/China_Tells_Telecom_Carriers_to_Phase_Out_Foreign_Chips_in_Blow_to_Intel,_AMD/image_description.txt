@@ -1,8 +1,0 @@
-The image is a bar chart showing the global market share for CPUs in servers by Intel and AMD from 2019 to 2024. The chart indicates that:
-
-- Intel's market share (represented in blue) has been gradually decreasing, starting at approximately 95% in 2019 and declining to around 80% projected in 2024.
-- AMD's market share (represented in gray) has been steadily increasing, starting from a minimal value of approximately 5% in 2019 and is projected to reach around 20% by 2024.
-
-These trends reflect a gradual shift in the server CPU market share from Intel to AMD over the observed period. The figures for 2024 are estimates.
-
-Source: TrendForce

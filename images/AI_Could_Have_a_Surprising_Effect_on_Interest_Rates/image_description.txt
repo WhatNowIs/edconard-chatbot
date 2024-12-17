@@ -1,6 +1,0 @@
-The provided image is a graph from Bloomberg showing the trend of the US Treasury 10-year yield from 1984 to 2023. The graph indicates that interest rates have been predominantly declining over the past four decades. The central idea of the graph is that this longstanding trend might be disrupted by the advent of artificial intelligence (AI).
-
-Key points:
-- The US Treasury 10-year yield has been generally decreasing since 1984.
-- There are fluctuations in the yield, but the overall direction has been downward.
-- The introduction and advancement of AI could potentially change this long-term trend of interest rates.

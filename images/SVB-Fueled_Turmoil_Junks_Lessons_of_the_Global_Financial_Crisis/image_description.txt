@@ -1,9 +1,0 @@
-The graph illustrates the percentage of banks' total assets that consist of Treasury and federally backed securities from 2001 to around 2023. Key points to note:
-
-1. Between 2001 and 2008, the share of these securities fluctuated between 12% and 16%, peaking around 2002 and 2003, and then decreasing notably.
-2. The share dipped to its lowest point, around 10%, in the period around 2012.
-3. After 2012, there was a gradual increase, reaching higher levels around 2016.
-4. Post-2016, the share continued to increase significantly, peaking at around 20% by 2022.
-5. After the peak in 2022, there is a slight decline indicated right at the end of the graph.
-
-The data, sourced from the Federal Reserve, shows a significant increase in banks’ reliance on Treasury and federally backed securities in the last decade, particularly post-2020.

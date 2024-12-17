@@ -1,8 +1,0 @@
-The image presents a line graph detailing EU trade with China, measured in monthly euros (seasonally and calendar adjusted), from 2015 to 2023. 
-
-Key points include:
-1. **Imports:** Represented by the blue line, EU imports from China saw a significant upward trend beginning around 2018, peaking in 2022 at just over €50 billion. However, there has been a noticeable decline since the peak, though numbers remain higher compared to pre-2018 levels.
-2. **Exports:** Represented by the red line, EU exports to China have shown a more stable trend, with only slight increases over the years. Throughout the period, exports stayed largely within the €10 billion to €20 billion range.
-3. **Trade Imbalance:** The imports line consistently stays above the exports line, indicating a trade imbalance where the EU imports more from China than it exports.
-
-This visualization highlights how EU-China trade has evolved, showing a robust growth in imports that recently began to taper off, while exports have remained relatively stable over the past eight years.

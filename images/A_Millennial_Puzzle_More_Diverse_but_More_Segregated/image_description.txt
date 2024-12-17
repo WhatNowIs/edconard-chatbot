@@ -1,8 +1,0 @@
-The image provides a comparison of neighborhood segregation indices for white and nonwhite 25- to 29-year-olds at three different time points: 2000 (Gen X), 2010 (Elder Millennials), and 2019 (Young Millennials). The segregation index ranges from 0 to 100, where 0 signifies no segregation and 100 indicates a metropolitan area where each neighborhood has only one racial or ethnic group.
-
-The findings show:
-- In 2000 (Gen X), the segregation index is approximately 17.5.
-- In 2010 (Elder Millennials), the segregation index drops to about 12.
-- By 2019 (Young Millennials), the segregation index further decreases to around 10.
-
-These trends indicate a decline in neighborhood segregation among the specified age group over the last two decades. The study and data are sourced from Noli Brazil and Jennifer Candipan.

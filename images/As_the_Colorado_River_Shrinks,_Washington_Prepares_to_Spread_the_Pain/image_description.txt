@@ -1,8 +1,0 @@
-The image illustrates the declining flow of the Colorado River from 1906 to 2022. Key points in the provided data are:
-
-1. **Assumed Allocation**: Water allocations have been made based on an assumed river flow of 17.5 million acre-feet.
-2. **Actual Flow Variability**: The actual flow of the Colorado River has often been lower than the assumed allocation.
-3. **Historical Data**: The graph charts the river's flow from 1906 to 2022, showing considerable fluctuations.
-4. **Long-term Trend**: A noticeable downward trend in the river's flow has been identified, with a dotted line representing this trend over the years.
-
-Overall, the graphic emphasizes the disparity between allocated water resources and the actual water availability from the Colorado River, with a long-term trend of decreasing water flow. This data has significant implications for regional water management and planning. The flow data is sourced from measurements taken at Lee’s Ferry, Arizona, and the provisional values for 2021 and 2022 are included.

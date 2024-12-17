@@ -6,8 +6,8 @@ from llama_index.core.ingestion import IngestionPipeline
 from llama_index.core.node_parser import SentenceSplitter
 from llama_index.core.storage.docstore import SimpleDocumentStore
 from llama_index.core.storage import StorageContext
-from app.engine.loaders import get_documents
-from app.engine.vectordb import get_vector_store
+from create_llama.backend.app.engine.loaders import get_documents
+from create_llama.backend.app.engine.vectordb import get_vector_store
 from create_llama.backend.app.engine.loaders.file import ImageLoaderConfig, get_file_documents
 
 load_dotenv()

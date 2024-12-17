@@ -1,9 +1,0 @@
-This chart illustrates the annual rate of CPI (Consumer Price Index) inflation from January 2021 to January 2023, tracked by one-month and three-month changes.
-
-Key observations include:
-1. **Initial Phase (Jan 21 - Apr 21)**: There's a noticeable increase in the CPI inflation rate from around 3% to approximately 6%.
-2. **Intermediate Fluctuations (Apr 21 - Apr 22)**: The inflation rate continues to rise but shows volatility, peaking around 13% in mid-2021, subsequently declining and seeing another spike.
-3. **Peak and Decline (Apr 22 - Oct 22)**: Inflation reaches its highest point, peaking over 15% in mid-2022. After this peak, a significant decline is observed, dropping to around 4-5% by October 2022.
-4. **Recent Trends (Oct 22 - Jan 23)**: Despite some fluctuations, the one-month change in CPI inflation shows minor increases toward the end, while the three-month change indicates a moderate upward trend.
-
-The data source cited is the Bureau of Labor Statistics via Macrobond and includes the author's calculations.

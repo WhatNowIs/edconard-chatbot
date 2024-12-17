@@ -1,9 +1,0 @@
-The image presents a graph from Bloomberg illustrating inflation trends among different sectors from 2017 to 2023, highlighting concerns about services inflation. The key observations include:
-
-1. **Goods Deflation**: The title and subtitle state that goods deflation is underway, while services deflation has not yet started.
-2. **Services (Excluding Food & Energy)**: Represented in blue, the inflation rate for services has remained steady, with no significant deflation observed.
-3. **Goods (Excluding Food & Energy)**: Shown in black, the inflation rate for goods spiked in 2021 and 2022 but has since started to show signs of deflation.
-4. **Food**: Depicted in gray, food-related inflation mirrored the trends seen in goods, increasing significantly in 2021 and 2022 with some recent moderation.
-5. **Energy**: Illustrated in red, energy prices demonstrated significant volatility, especially starting from late 2020, peaking in 2022 before showing signs of deflation.
-
-The overall inflation rate across these sectors peaked in 2022 but has varied widely by category, causing a distinct concern for sustained services inflation as opposed to goods where deflation is evident.

@@ -1,7 +1,0 @@
-The chart, titled "Exhibit 1: Three Developments Are Set to Weigh Meaningfully on Q4 Growth," illustrates the expected impact of three significant factors on quarterly annualized GDP growth in Q4. These factors are:
-
-1. **The Resumption of Student Loan Payments**: Expected to reduce GDP growth by approximately 0.5 percentage points.
-2. **A Government Shutdown**: With a Goldman Sachs (GS) baseline assumption that the shutdown would last 2-3 weeks, the hit to GDP growth is expected to incrementally increase for each week the event lasts.
-3. **A UAW (United Auto Workers) Strike**: The chart compares the potential impact to similar events in 1998, 2019, and 2007, suggesting varying degrees of negative impact depending on the duration of the strike.
-
-The source of this data is Goldman Sachs Global Investment Research. The implication is that these three events could collectively and significantly weigh on economic growth in the fourth quarter.

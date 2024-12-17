@@ -1,8 +1,0 @@
-The image depicts a housing affordability index that measures whether the typical family earns enough to qualify for a mortgage on a median-priced single-family home, assuming a 20% down payment and a 30-year fixed-rate mortgage. The index is sourced from the National Association of Realtors, with preliminary data for June 2024.
-
-Key information:
-- An index value above 100 suggests that the typical family earns more than enough to qualify for a mortgage.
-- An index value below 100 suggests that the typical family doesn't earn enough to qualify.
-
-Summary:
-From 1981 to the early 1990s, the index remained below 100, indicating that the typical family generally didn't earn enough to qualify for a mortgage. From the 1990s to around 2005, the index rose consistently above 100. Post-2005, the index saw significant fluctuations, with peaks around 2012. However, in recent years, especially leading up to June 2024, the index has seen a sharp decline and mostly remains below 100, indicating worsening housing affordability for the typical family.

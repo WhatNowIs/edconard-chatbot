@@ -1,9 +1,0 @@
-The graph depicts the year-on-year growth of the US Gross Domestic Product (GDP) from 2018 through 2023, focusing on both Nominal GDP and Real GDP. Key points are:
-
-1. **Pre-Pandemic Trends (2018-2019):** Both Nominal and Real GDP showed steady growth, hovering around 5% for Nominal GDP and roughly 2-3% for Real GDP.
-2. **Pandemic Impact (2020):** Both measures experienced significant volatility. A sharp decline occurred, with Real GDP plummeting to around -10%, indicating a severe contraction in economic activity.
-3. **Recovery Phase (Mid-2020 Onwards):** There was a rapid recovery, with Nominal GDP peaking above 15% growth, while Real GDP also recovered significantly, though with more fluctuations.
-4. **Recent Trends (2022-2023):** GDP growth rates have been decelerating. While still above pre-pandemic levels, Nominal GDP remains above Real GDP consistently, with Nominal GDP growth around 8-10% and Real GDP showing a slower-paced recovery.
-
-Overall, the graph indicates that while the US GDP has experienced significant disruptions due to the pandemic, growth has recovered. However, the pace of growth is decelerating, and Real GDP is stabilizing at a positive rate, showing signs of a stable recovery. The information was sourced from BEA data, and the graph was created by a user on social media (Twitter: @JosephPolitano).
-

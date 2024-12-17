@@ -1,9 +1,0 @@
-The graph titled "Monthly Payments to the Department of Education" illustrates the annual rate of monthly receipts for the Department of Education, primarily from student loans, from 2018 to 2024. Key observations from the graph include:
-
-1. **Consistent Levels (2018 - 2020)**: From 2018 to the beginning of 2020, the payments remained fairly stable within the range of around $50 billion to $75 billion.
-2. **Significant Increase (2020)**: There was a noticeable spike in payments around the start of 2020, reaching nearly $100 billion.
-3. **Sharp Decline (2020 - 2021)**: Following this peak, there was a steep decline in payments, dropping below $25 billion in 2021.
-4. **Fluctuations and Stability (2021 - 2022)**: The amount fluctuated slightly throughout 2021 and 2022 but generally remained low.
-5. **Rebound (2023)**: Beginning in 2023, there is a significant rebound in payments, surging back towards $75 billion.
-
-The graph, created by @JosephPolitano using US Treasury data, visually represents these fluctuations and trends over time.

@@ -1,7 +1,0 @@
-The graph illustrates the trend of China's Gross Domestic Product (GDP) as a share of the United States' GDP from 1999 to 2023. Key observations include:
-
-1. **Steady Increase (1999-2014):** China's GDP as a share of the US GDP saw a notable rise, consistently increasing from a low base.
-2. **Fluctuations (2014-2023):** From around 2014, the growth slowed and displayed fluctuations.
-3. **Recent Decline (Post-2020):** Around 2022, there is a marked decline, indicating that China's GDP is decreasing as a share of the US GDP.
-
-This data is sourced from the National Bureau of Statistics of China and the US Bureau of Economic Analysis. The overall trend highlights China's GDP gaining ground considerably over the first 15 years, followed by a period of inconsistency, culminating in a recent downturn.

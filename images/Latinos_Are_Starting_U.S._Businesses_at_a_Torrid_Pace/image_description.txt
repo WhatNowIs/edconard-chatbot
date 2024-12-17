@@ -1,9 +1,0 @@
-The chart titled "New Entrepreneurship Rate by Nativity" compares the entrepreneurship rates between native-born and immigrant populations from 1996 to 2020. The key points to note are:
-
-- **Native-born:** The native-born rate (shown in blue) remains relatively stable throughout the years, maintaining a rate around 0.25 to 0.3.
-  
-- **Immigrant:** The immigrant rate (shown in red) shows significant fluctuations but generally exhibits an upward trend, peaking particularly in recent years around 2020 where it reaches around 0.65.
-
-- **General Trend:** Immigrant entrepreneurship rates have consistently been higher than those of the native-born population, especially since the mid-2000s.
-
-This data comes from the Current Population Survey and was compiled by Robert Fairlie from UCLA. The chart indicates that immigrants are more likely to start businesses compared to their native-born counterparts.

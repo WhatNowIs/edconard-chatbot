@@ -15,31 +15,6 @@ class MailConfig(BaseModel):
     )
 
 class BaseEnvConfig(BaseModel):
-    aws_key: str | None = Field(
-        default=None,
-        description="The key to authenticate to aws.",
-        env="AWS_KEY",
-    )
-    aws_secret: str | None = Field(
-        default=None,
-        description="The secret used to authenticate to aws.",
-        env="AWS_SECRET",
-    )
-    s3_region: str | None = Field(
-        default=None,
-        description="The region where the bucket is located and data is stored.",
-        env="S3_REGION",
-    )
-    s3_bucket_name: str | None = Field(
-        default=None,
-        description="The name of the bucket holding our data.",
-        env="S3_BUCKET_NAME",
-    )
-    s3_asset_bucket_name: str | None = Field(
-        default=None,
-        description="The bucket that contains the assets.",
-        env="S3_ASSET_BUCKET_NAME",
-    )
     # Env for topic generation    
     gcp_scopes: str | None = Field(
         default=None,

@@ -1,8 +1,0 @@
-The graph depicts the effective tax rates for the 400 richest Americans compared to the bottom half of income earners from 1960 to 2018. Here are the key points:
-
-- **1960s**: The richest Americans had a high effective tax rate, which peaked at 56%. During this period, the bottom half of earners had a much lower tax rate, around 22%.
-- **1980s-1990s**: There was a significant decline in the tax rate for the richest Americans, especially noticeable through the late 1970s and early 1980s. This period saw the rates fall from around 50% to nearly 30%. The tax rate for the bottom half mildly increased to around 25%-30%.
-- **2000s and onward**: The effective tax rate for the richest continued to decrease, with occasional fluctuations but with a clear downward trend, stabilizing around 23%-24% by 2018. The bottom half's tax rate remained relatively steady and close to the tax rate of the richest by the late 2010s.
-- **2018**: By this year, the effective tax rates for both the richest Americans and the bottom half of earners converged around 23-24%.
-
-**Source**: According to Emmanuel Saez and Gabriel Zucman, the tax rates shown include levies paid at all levels of government, and government transfers such as Social Security benefits have not been subtracted. This helps highlight the shifting burden of taxes from the wealthiest individuals to more equitable levels with lower-income earners over time.

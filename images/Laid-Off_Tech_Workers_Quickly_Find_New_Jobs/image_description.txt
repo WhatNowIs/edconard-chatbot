@@ -1,9 +1,0 @@
-The chart titled "Job search duration for workers hired after a layoff or termination" compares the job search durations across two categories: Tech (workers previously employed in technology-related firms) and All industries.
-
-Key points from the chart:
-- For those who found a job in less than 1 month, about 30% were from the tech sector, while approximately 45% were from all industries combined.
-- The majority of job seekers from both categories found a job within 1 to 3 months. Approximately 40% of tech workers and 50% of all industries fell into this category.
-- A smaller portion of workers took 3 to 6 months to find a job, with tech workers having a slightly higher proportion (15%) compared to all industries (10%).
-- Very few job seekers took more than 6 months to find a job, with both tech workers and those from all industries at about 5%.
-
-The source of the data is ZipRecruiter. This information highlights that the majority of job seekers in both tech and other industries find new employment within 3 months after a layoff or termination.

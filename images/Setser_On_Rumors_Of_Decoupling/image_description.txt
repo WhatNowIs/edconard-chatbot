@@ -1,9 +1,0 @@
-The chart illustrates the share of imports from China (using China's export data) as a percentage of the GDP of key trading partners: the United States, Germany, and the European Union (excluding Germany), over the period from Q4 2000 to Q3 2022.
-
-Key observations:
-1. **Overall Trend**: There is a general upward trend in the share of imports from China as part of the GDP for all three regions.
-2. **Chinese Exports to the EU (ex Germany)**: These have the highest share compared to the US and Germany, consistently above the other two regions post-2010. The share starts from around 0.5% in Q4 2000 and rises to approximately 3.5% by Q3 2022.
-3. **Chinese Exports to the US**: These also show a significant increase, rising from below 0.5% in Q4 2000 to about 2.5% by Q3 2022. There is a noticeable dip around 2019-2020, likely due to the trade tensions or other economic factors, followed by a rapid recovery.
-4. **Chinese Exports to Germany**: The trend for Germany is similar to that of the EU (ex Germany) but at a slightly lower level. Starting at around 0.5% in Q4 2000, it reaches near 2.5% by Q3 2022.
-
-In summary, the chart demonstrates the increasing economic dependence on Chinese exports across all three regions, with the EU (excluding Germany) having the highest relative share of imports from China as a part of its GDP. The growth is steady, with notable dips and recoveries, particularly for exports to the US.

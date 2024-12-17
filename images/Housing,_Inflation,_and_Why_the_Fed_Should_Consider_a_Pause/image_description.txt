@@ -1,9 +1,0 @@
-This graph illustrates the Core Consumer Price Index (CPI) excluding shelter costs, presenting both the annualized and year-over-year percent changes from January 2013 to January 2024.
-
-Key observations:
-1. **Historical Stability:** From January 2013 through early 2020, both the annualized and year-over-year percent changes remained relatively stable, fluctuating mostly between -5% and 5%.
-2. **Pandemic Impact:** Starting around early 2020, there is significant volatility, marked by large spikes and drops in the annualized percent change. Notably, during the early months of the COVID-19 pandemic, there are sharp declines.
-3. **Post-Pandemic Inflation:** Since early 2021, the graph shows a sharp increase in both the annualized and year-over-year percent changes, indicating rising inflation rates. This rise is especially pronounced in mid to late 2021, reaching peaks of up to around 15% in annualized terms.
-4. **Recent Trends:** From late 2022 into early 2023, there is a noticeable decrease in both metrics, suggesting a potential easing of inflationary pressures.
-
-Overall, the graph effectively shows the increased volatility and inflation in the post-pandemic period, with significant deviations from the pre-pandemic stability.

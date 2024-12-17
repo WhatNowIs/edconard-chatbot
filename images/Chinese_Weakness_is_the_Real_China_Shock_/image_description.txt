@@ -1,9 +1,0 @@
-This graph provides insights into the trajectory of China's manufacturing sector's recovery from the pandemic, emphasizing the role of foreign demand. The chart tracks inflation-adjusted values for industrial production, real exports, and real imports from January 2019 to the present. Key observations are:
-
-1. **Industrial Production:** This line (blue) shows a steady increase over time, particularly from 2022 onwards, indicating consistent growth in manufacturing output.
-
-2. **Real Exports:** The red line shows significant fluctuations but an overall upward trend. The spike in recent months reflects strong foreign demand driving export volumes higher.
-
-3. **Real Imports:** Represented by the green line, real imports have remained relatively flat with minor fluctuations, suggesting that domestic demand in China has been mostly stable.
-
-In summary, China's manufacturing resurgence post-pandemic has been largely driven by increased foreign demand, as evidenced by rising export volumes, whereas domestic demand, as reflected by import volumes, has remained relatively constant.

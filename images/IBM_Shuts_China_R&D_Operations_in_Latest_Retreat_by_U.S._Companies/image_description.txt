@@ -1,8 +1,0 @@
-The image displays a bar chart titled "Feeling Blue: Percentage change in IBM’s yearly revenue" with data points from 2014 to 2023. The chart provides comparative revenue change percentages for IBM globally (gray bars) and in China (blue bars).
-
-Key observations:
-- IBM's global revenue showed fluctuations, with generally smaller percentage changes, either positive or negative. Notably, the global revenue changes were minor positive between 2018 and 2021.
-- IBM's revenue in China consistently declined throughout the displayed years, with notable sharp decreases in certain years such as 2015 (-35%), 2019 (-20%), 2022 (-30%), and 2023 (-20%).
-- There were minor improvements or less severe declines both globally and in China in years like 2016, 2017, and 2021 for global revenue, indicating some periods of stabilization or growth, but China consistently faced challenges with steep declines.
-
-Overall, IBM experienced varying global revenue changes while facing significant and consistent revenue declines in the Chinese market during the period from 2014 to 2023.

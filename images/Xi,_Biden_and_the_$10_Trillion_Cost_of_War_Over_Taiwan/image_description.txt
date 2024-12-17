@@ -1,8 +1,0 @@
-This bar chart, sourced from Bloomberg Economics and the IMF, evaluates the potential impact of various crises on global GDP by measuring deviation from the pre-crisis trend. The chart includes the Israel-Hamas war (2023), the September 11 attacks (2001), the Gulf War (1991), a Taiwan blockade, the Global Financial Crisis (GFC) of 2009, the Covid-19 pandemic (2020), and a hypothetical Taiwan war.
-
-Key takeaways:
-- The potential impact of a Taiwan war on global GDP is estimated to be significantly larger than other recent shocks, reaching a deviation of nearly -10%.
-- The Taiwan blockade also shows a notable impact but less severe than a full-scale war.
-- Other crises listed – the Israel-Hamas war, September 11 attacks, Gulf War, GFC, and Covid-19 pandemic – demonstrate lesser but still substantial negative impacts on global GDP.
-  
-The chart underscores the significant economic risks associated with a Taiwan war, highlighting its potential for a more considerable drag on global GDP compared to other major historical and current events.

@@ -1,9 +1,0 @@
-The image is a line graph titled "Figure 2. Republican Two-Party Vote Share, 1992-2022". It presents the percentage of the Republican vote share in U.S. elections over a 30-year period from 1992 to 2022. The y-axis represents the Republican percentage vote share, ranging from 46% to 52%, while the x-axis shows the years in increments from 1992 to 2022.
-
-Key points:
-- The graph shows significant fluctuations in the Republican vote share over the given period.
-- Peaks are observed in the years 1994, 2002, 2010, 2014, and 2022 with the vote share surpassing 52%.
-- Lows are observed in 2008 and 2018 with the vote share dropping to around 46%.
-- The vote share hovers around the 50% mark for many elections, indicating a competitive two-party system.
-
-Source provided at the bottom cites: US House of Representatives, History, Art & Archives, “Election Statistics: 1920 to Present,” with a provided URL for more details.

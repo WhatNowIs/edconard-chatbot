@@ -1,8 +1,0 @@
-The provided graph depicts the quarterly net income change from a year earlier for Taiwan Semiconductor Manufacturing Co. (TSMC) from 2018 to the second quarter of 2023. Key observations include:
-
-1. **Net Income Variability**: There has been significant fluctuation in TSMC’s quarterly net income over the years.
-2. **Peak Increases**: Notable peaks occurred in late 2019, late 2020, and again in early 2022, where net income showed substantial year-on-year growth, reaching close to or above 100%.
-3. **Decline Trends**: Periods of negative growth are evident, particularly in early 2019, mid-2022, and significantly in the second quarter of 2023, where the net income saw a sharp decline of -23%.
-4. **Recent Trends**: The most recent data point indicates a significant drop in net income in 2Q 2023.
-
-Overall, while TSMC has experienced periods of robust growth, it also faces substantial volatility and significant recent declines in its net income from a year earlier.

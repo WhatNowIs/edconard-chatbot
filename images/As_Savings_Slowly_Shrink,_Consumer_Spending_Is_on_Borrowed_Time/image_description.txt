@@ -1,9 +1,0 @@
-The provided graph titled "Stock of Excess Savings" illustrates the trend in excess savings from the first quarter of 2020 (Q1 2020) to the second quarter of 2022 (Q2 2022) in billions of dollars.
-
-Here's a summary of the key points:
-
-1. **Initial Increase**: The stock of excess savings saw a steep increase from nearly zero in Q1 2020 to around 2000 billion dollars by Q4 2020.
-2. **Plateau**: Following this surge, the savings stock remained relatively stable, with slight fluctuations around the 2300 billion dollar mark through the first quarter of 2021 (Q1 2021) to the third quarter of 2021 (Q3 2021).
-3. **Decline**: Starting in Q4 2021, the excess savings began to decrease, dropping to about 1800 billion dollars by Q2 2022.
-
-This graph suggests a rapid accumulation of excess savings at the start of the COVID-19 pandemic, followed by a leveling off period, and a subsequent decline beginning in late 2021.

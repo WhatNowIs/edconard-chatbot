@@ -1,9 +1,0 @@
-The image is a line graph from Bloomberg depicting the combined weighting of Apple and Microsoft in the S&P 500 Index from 1995 to 2024. The graph shows that the combined weighting of these two companies has fluctuated but generally increased over time. 
-
-Key points include:
-- In the late 1990s and early 2000s, the combined weighting was relatively low, with noticeable volatility.
-- From 2005 to 2015, the weighting remained relatively stable but started rising significantly afterward.
-- Post-2015, there is a sharp increase, particularly from 2020 onwards.
-- As of 2024, the combined weighting of Apple and Microsoft in the S&P 500 Index reaches a record high, surpassing 14%.
-
-This indicates the growing dominance and influence of Apple and Microsoft in the S&P 500, reflecting their significant impact on the overall market.

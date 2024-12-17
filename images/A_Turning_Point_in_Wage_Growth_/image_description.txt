@@ -1,8 +1,0 @@
-The graph titled "Persistence in Wage Growth and Services Inflation" illustrates the trends in wage growth and core services inflation (excluding housing) in the United States from 2016 to 2022. 
-
-- The black line represents wage growth, which stays relatively stable around 4% from 2016 until the onset of 2020. After 2020, it sharply climbs to a peak over 6% before starting to decline towards the end of 2022.
-- The blue dotted line represents services inflation excluding housing, which fluctuates around 2%-3% throughout the same period. It shows a slight upward trend starting from mid-2020, reaching a peak close to 5%, and then declining gradually by the end of 2022.
-
-Both wage growth and services inflation exhibit notable increases around 2020 but begin to decrease by 2022, indicating significant shifts likely influenced by economic events during this period, possibly related to the COVID-19 pandemic.
-
-The bottom of the image states: "Source: Authors' estimates based on Current Population Survey data." This indicates that the data was derived from the Current Population Survey, offering a credible basis for these observed trends.

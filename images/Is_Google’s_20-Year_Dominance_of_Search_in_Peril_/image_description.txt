@@ -1,8 +1,0 @@
-The image is a bar chart titled "Let me Google that" from The Economist, showing the monthly share of global search engine queries from 2009 to 2023. The data source is StatCounter. 
-
-Key points from the chart:
-1. **Google Dominance**: Google consistently holds the largest share of global search queries, maintaining around 90% throughout the period.
-2. **Bing's Share**: Bing maintains a small but steady share, hovering around 3-4%.
-3. **Other Search Engines**: The remaining search engines (grouped under "Other") collectively hold a minor share, fluctuating slightly but staying below the 10% mark.
-
-Overall, the chart illustrates Google's overwhelming dominance in the search engine market over the past 14 years, with little fluctuation in the shares held by Bing and other search engines.

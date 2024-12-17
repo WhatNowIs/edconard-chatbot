@@ -1,6 +1,0 @@
-The image is a bar graph titled "Labor demand effects from deviations from reciprocity: ROW," depicting the employment effects in the tradable and non-tradable sectors in the rest of the world. The graph features two vertical bars:
-
-1. The tradable sector shows a significant negative employment effect, with the bar extending to approximately -0.04.
-2. The non-tradable sector shows a positive employment effect, with the bar extending to roughly 0.02.
-
-Figure 2 illustrates these employment effects resulting from changes in wages due to actual changes in tariffs between China and the rest of the world over the period 1990-2007. The note below the figure emphasizes the impact of these wage changes on employment in the two sectors across the rest of the world.

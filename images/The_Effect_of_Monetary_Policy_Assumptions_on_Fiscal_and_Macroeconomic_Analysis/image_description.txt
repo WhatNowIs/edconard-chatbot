@@ -1,9 +1,0 @@
-The image is a graph titled "Distribution of Cumulative Price Increases, 2024-30" and represents the PCE Price Index. It shows the probability of different cumulative 6-year inflation percentages over the specified period. 
-
-Key points from the graph:
-- Two scenarios are depicted: "No Capture" (in blue) with a coefficient (c) of 0 and "High Capture" (in orange) with a coefficient (c) of 0.85.
-- Both scenarios show similar trends in inflation probabilities, peaking around 12% cumulative 6-year inflation with over 50% probability.
-- The "High Capture" scenario tends to have higher probabilities at higher inflation rates compared to the "No Capture" scenario.
-- The "No Capture" and "High Capture" lines converge and peak around the same inflation rate but diverge at higher and lower inflation rates, with the "High Capture" curve showing a more gradual decrease in probability as inflation increases beyond the peak.
-
-Source: The data is credited to the FRB and The Budget Lab analysis.

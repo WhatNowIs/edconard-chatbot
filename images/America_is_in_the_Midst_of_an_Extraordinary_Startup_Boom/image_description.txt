@@ -1,7 +1,0 @@
-The given image is a bar graph titled "Just the job" that illustrates the net new jobs in millions within the United States' private sector. The data compares startups (firms less than one year old) and all other firms for the periods 2020-2023 and 2016-2019.
-
-From the graph:
-- During 2020-2023, startups generated approximately 1 million new jobs, while all other firms generated around 7 million new jobs.
-- In the period 2016-2019, startups also generated about 1 million new jobs, while all other firms created around 5 million new jobs.
-
-Overall, the graph indicates that while the job creation by startups remained relatively steady at about 1 million jobs in both periods, the job creation by other firms increased from 5 million in 2016-2019 to 7 million in 2020-2023. The source of this data is the Bureau of Labour Statistics.

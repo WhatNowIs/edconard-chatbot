@@ -32,13 +32,13 @@ usable_width = page_width - left_margin - right_margin
 first_col_width = usable_width * 0.25  # 1/4 of the usable width
 second_col_width = usable_width * 0.75  # 3/4 of the usable width
 # Register a Unicode-compatible font
-pdfmetrics.registerFont(TTFont('DejaVu', 'fonts/DejaVuSans.ttf'))
-pdfmetrics.registerFont(TTFont('DejaVu-Bold', 'fonts/DejaVuSans-Bold.ttf'))
+pdfmetrics.registerFont(TTFont('DejaVu', 'assets/fonts/DejaVuSans.ttf'))
+pdfmetrics.registerFont(TTFont('DejaVu-Bold', 'assets/fonts/DejaVuSans-Bold.ttf'))
 
-pdfmetrics.registerFont(TTFont('Arial', 'fonts/Arial.ttf'))
-pdfmetrics.registerFont(TTFont('Arial-Bold', 'fonts/Arial-Bold.ttf'))
-pdfmetrics.registerFont(TTFont('Arial-Italic', 'fonts/Arial-Italic.ttf'))
-pdfmetrics.registerFont(TTFont('Arial-Bold-Italic', 'fonts/Arial-Bold-Italic.ttf'))
+pdfmetrics.registerFont(TTFont('Arial', 'assets/fonts/Arial.ttf'))
+pdfmetrics.registerFont(TTFont('Arial-Bold', 'assets/fonts/Arial-Bold.ttf'))
+pdfmetrics.registerFont(TTFont('Arial-Italic', 'assets/fonts/Arial-Italic.ttf'))
+pdfmetrics.registerFont(TTFont('Arial-Bold-Italic', 'assets/fonts/Arial-Bold-Italic.ttf'))
 
 
 styles = getSampleStyleSheet()
@@ -265,7 +265,7 @@ def create_image_folder_and_download_image(featured_image_url: str, folder_name:
 
 def macro_roundup_preprocessor(input_dir: str, output_dir: str):
     if not os.path.isdir(input_dir):
-        return []
+        return [], []
     
     if not os.path.isdir(output_dir):
         os.makedirs(output_dir)
@@ -276,7 +276,7 @@ def macro_roundup_preprocessor(input_dir: str, output_dir: str):
     
     if not csv_files:
         print("No CSV files found in the input directory.")
-        return
+        return [], []
 
     for csv_file in csv_files:
         input_file = os.path.join(input_dir, csv_file)

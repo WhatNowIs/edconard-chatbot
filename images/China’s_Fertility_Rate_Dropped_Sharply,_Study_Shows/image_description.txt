@@ -1,9 +1,0 @@
-The image provided is a line graph titled "Marital Trouble: Marriage registrations in China", showcasing the number of marriage registrations from 2012 to 2021. The data, sourced from the China Ministry of Civil Affairs, demonstrates a clear downward trend. 
-
-Key points from the graph:
-- In 2012, there were around 13 million marriage registrations.
-- From 2012 onwards, there is a noticeable decline each year.
-- By 2021, the number of marriage registrations has dropped to approximately 7 million.
-
-Summary:
-The graph illustrates a significant decrease in marriage registrations in China over a span of roughly a decade, declining from around 13 million in 2012 to about 7 million in 2021. This data suggests a substantial reduction in the number of people getting married in China during the reported period.

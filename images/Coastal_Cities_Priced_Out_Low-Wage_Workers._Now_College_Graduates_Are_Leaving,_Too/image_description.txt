@@ -1,9 +1,0 @@
-The chart illustrates the net domestic migration trends of working-age college graduates in the 12 most expensive large metro areas, including cities such as New York, Los Angeles, and Chicago, between 2010 and 2020. 
-
-Key points:
-- From 2010 to around 2015, there was a positive net migration, peaking at over +50k.
-- After that peak, the trend started to decline steadily.
-- Starting around 2017, the net migration turned negative, and the decline accelerated.
-- By 2020, the net migration dropped significantly, hitting levels below -200k.
-
-This data indicates a noticeable shift from a positive migration trend to a substantial negative migration trend of working-age college graduates moving away from the most expensive large metro areas over the last decade.

@@ -1,9 +1,0 @@
-The image is a graph that illustrates the trend of Real Fixed Investment in Manufacturing Structures in the United States over a period from around 2009 to 2023. The y-axis represents the investment amounts in billions of 2017 dollars, ranging from $0B to $150B. The x-axis represents the time period in years.
-
-### Key Points:
-
-- **Significant Increase**: There has been a notable increase in real fixed investment in manufacturing structures over the last few years, especially a significant rise observed post-2020.
-- **Multi-Decade High**: The current investment levels are at a multi-decade high.
-- **Historical Trend**: The investment saw fluctuations from 2009 through 2020, but none were as pronounced as the recent surge.
-  
-Overall, the graph indicates a very robust growth in the last few years, suggesting a strong focus on manufacturing infrastructure in the country. This data has been compiled by @JosephPolitano using BEA data.

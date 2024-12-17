@@ -1,8 +1,0 @@
-The image from the Financial Times presents data showing the decline in the share of non-white U.S. adults identifying as Democrats over time since the 1960s. Here are the key points:
-
-- Overall Trend: The advantage of the Democratic Party among non-white voters has been rapidly decreasing and is currently at its weakest point since the 1960s.
-- Black Voters: Initially, around 1960, nearly 60% identified as Democrats. This peaked at over 80% in the 1970s and has remained relatively steady until recently, where there is a noticeable decline from around 80% to just above 60%.
-- Latino Voters: The proportion of Latino voters identifying as Democrats started at close to 80% in the 1960s but has seen a more continuous decline, now hovering slightly above 50%.
-- All Non-White Voters: Aggregated data for all non-white voters shows a similar peak in the 1970s at over 80%, followed by a general decline to around 60% in recent years.
-
-Source Attribution: The data is derived from FT analysis of American National Election Studies and the Cooperative Election Study, with graphics by John Burn-Murdoch.

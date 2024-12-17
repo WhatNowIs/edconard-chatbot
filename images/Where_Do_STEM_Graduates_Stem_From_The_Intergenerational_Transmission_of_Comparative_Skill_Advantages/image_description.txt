@@ -1,5 +1,0 @@
-Figure 2 showcases the intergenerational transmission of comparative skill advantages through a binned scatterplot. It plots the relationship between parent and child comparative skill advantages in math and language. The child comparative skill advantage is calculated as the difference in percentile ranks between math and language test scores of children in a given year based on administrative data. Similarly, parent comparative skill advantage is measured as the difference in percentile ranks of math and language test scores of parents in an education cohort. 
-
-The scatterplot is constructed by dividing the parents' math-language rank differences into 20 ranked equal-sized groups and plotting the mean difference of children against the mean difference of parents in each group. The best-fit line indicates a positive relationship with a coefficient of 0.092 (standard error of 0.005), suggesting that children’s comparative skill advantages partially reflect those of their parents. 
-
-The data sources for this analysis include administrative data and a pooled ITS survey dataset.

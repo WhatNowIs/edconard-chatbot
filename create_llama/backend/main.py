@@ -8,10 +8,9 @@ import uvicorn
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import RedirectResponse
-from app.api.routers.chat import chat_router
-from app.settings import init_settings
-from app.observability import init_observability
-from fastapi.staticfiles import StaticFiles
+from create_llama.backend.app.api.routers.chat import chat_router
+from create_llama.backend.app.settings import init_settings
+from create_llama.backend.app.observability import init_observability
 
 
 app = FastAPI()

@@ -1,8 +1,0 @@
-The image is a bar chart titled "Decline in the number of Japanese nationals has accelerated." The chart visually represents the decreasing population of Japanese nationals in thousands (000s) over the years from 2016 to 2023. Each bar shows a drop in population compared to the previous year.
-
-Key observations:
-- There is a consistent decline in the population of Japanese nationals from 2016 to 2023.
-- The rate of decline has accelerated over the given period, with the largest decrease occurring in 2023.
-
-Source: Statistics Bureau of Japan.
-Attribution: FT (Financial Times)

@@ -1,8 +1,0 @@
-The image is a line chart representing the price of Brent crude oil from early January 2023 to the end of April 2023. The y-axis shows the price in dollars per barrel, ranging from 72 to 88 dollars. Key insights include:
-
-1. The chart indicates a general decline in Brent crude oil prices, despite the announcement of production cuts by OPEC+ members.
-2. There is a marked dip in the price around early March, which rebounded slightly post the announcement of production cuts in mid-March, suggesting a temporary positive impact.
-3. The prices peaked near the end of March, reaching approximately 87-88 dollars per barrel.
-4. After the peak, the price experienced another decline, demonstrating volatility and an overall slumping trend towards the end of April.
-
-The source of this data is Bloomberg, highlighting its credibility and relevance to current economic conditions within the oil market.

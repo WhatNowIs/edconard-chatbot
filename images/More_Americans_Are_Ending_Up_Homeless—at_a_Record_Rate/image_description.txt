@@ -1,8 +1,0 @@
-The bar chart illustrates the trends in homelessness in the U.S. from 2012 to 2020, with a noticeable anomaly in 2021 due to pandemic-related disruptions in data counting.
-
-Key Points:
-1. The number of homeless people in the U.S. consistently remained around 500,000 to 600,000 from 2012 to 2020.
-2. A significant deviation is observed in the year 2021, where the recorded homelessness figure drops considerably below the level of previous years. This is attributed to disruptions in counting due to the pandemic.
-3. The data source is the U.S. Department of Housing and Urban Development's point-in-time estimates.
-
-The chart highlights the relatively stable levels of homelessness over the years, with a cautionary note on interpreting the 2021 data due to pandemic-related counting issues.

@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "coherent-research-institute",
+  "private_key_id": "5291a8a5a023473185c9d7ebf4afa2e6d58fde88",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCvBcr/uMhZaXFi\nD9zIFAYHktELc2dHaBUU+ORm4c0Av+9BAEaLIXexAuuk9+CT6LJ9kFhrUdqLJHpd\n4xdc/rAtSpKd8NEJnZHYemWO2Bw02XHyvkNzpKucGbrbc2vc1+XM2Co33zA592YO\n20sM/Duxo5odGo7StxRFnSednjm4XJnnvWaOOds8Y3EErK5xFxD4ez25qoIDbe7c\nn6aQ3qNmBjh3oySu052W+iLYjmhpS8XBMfp7/yM+P+B8zAJDRlc544u/tJO0z/lK\nkQrqq75Fm36eTSWbiDV77L73uz3sbPMW7griISNsYN2iso8pYZiiwN11ZDYNqEpF\n9jVFGJ8lAgMBAAECggEADHgQL0m91Ejj0AWrSAHNMCrwg61UFU0/+z+EHiRGE6CY\n7fuUCwN2YIEBwr36HO9+D94BvpuVQ0Z1BU1Rc8mdSYy/h0sJyXKVWmPV6mhREh7P\ntGiDq7B2nWdj3ZCKhbBH6eEYmORoriiG99X9sc4ifpRWPW6P8Ekkw5TfpqYIHK82\nAH5w1XM6WIJ72GsZlVu6eSVCNgK8mxD++1Wz+WsvHKOHaYPDBv9CfKpAhoSjLk+2\n6lu8IHK1xR0gF3gehv6jBw9JA9LJa5zbOs/cXVIhAQ/5/JFGQw1u+oPiY1dEQUs8\nVN3V7Mul3LBSvypan5J91ejNohrYHoIHb/9UzGGiQQKBgQDJGuaLnoGqOxoqg/Wp\neFfXec1VkHiKg3xYsjy19p99F2tUHPEeQJm5nhE7nc44HvGZaf5w4ImwZ9PG72lP\nxbwQ/9WO0l9gr1g8zMO37z9DLc269t9JbiWPvsgDrW2uyGyQHSZMXL/5nNXKjZtA\nRNOGVoy0y8knApNXIRaVx9PTVQKBgQDezERHAwQkTIWfm0Fo2KeMIVGp6hbK0whW\nmYsq/VC4jDLSiD/XBB1oR9L1/cVp+V/c8XTeMxJqBQiEjBzmMEarBTyIyrD4jQvl\nFWa6YYtjESuhTQAntvhGqrpsDIdfME+w4hWrL7Q/x2sVvgQTE93hlj5h2t8XFX3J\nht3vOj48kQKBgExDZExsNrXspdabpky3M3CmYyTgnaXBiSVFqlpDBWZ1vCDwvMuB\nKgrHE7fs9yg3K93G4VPDAtQf+6LEZcZ3sQMtUbpQsxTCSg78g/g7xVzfgNY3CqQZ\nHitt6QHkAeU3YlwggcaRoceyHy0qGEb+Es0uAzwIz+Z4RpHTHXJ9jinlAoGAdLpQ\ni2PpJ5tv5s9Q1b2tCp3qSzt59YnbNIP9hehyAj5x4hvAVsaxIZF/1aG/bGZa80cO\nE9xuKV25uLgv6+ofHDsCHCkVzyMWuE8eI0g33w9/7GKLUkNqkJuiUDnAMv78wY+y\nCp5TsZapZBrJx7UA6s/snxgtCcsYvB0M6el58gECgYBok+oaqIxv6o5HCQb+pM0T\nJLMy8sR1/Mrh32Ekyg7srFUNh5GcVhHQRsrjBguu3h/r8d7+ricGV0UDJ7lwAxqD\ngh+gcrCZ2DB+rPrez3sobQHbeabZvsi7ZdzoWlMY9p8mtAudeZAln9Owp69OgDX6\n0R0GXmMPY9Wtgl6FC7pHBg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "google-drive-docs-integration@coherent-research-institute.iam.gserviceaccount.com",
+  "client_id": "100689726581766470424",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/google-drive-docs-integration%40coherent-research-institute.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
