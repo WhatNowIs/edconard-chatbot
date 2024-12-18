@@ -3,7 +3,7 @@
   "python.analysis.extraPaths": [
     "/home/byamasu-patrick/.cache/pypoetry/virtualenvs/edcornard-chatbot-PO2dp6Pn-py3.10/lib/python3.10/site-packages"
   ],
-  "cSpell.words": ["ondigitalocean", "QDRANT", "signin", "venv"]
+  "cSpell.words": ["macroroundup", "ondigitalocean", "QDRANT", "signin", "venv"]
   // "python.linting.enabled": true,
   // "python.linting.pylintEnabled": true,
   // "python.linting.flake8Enabled": true,

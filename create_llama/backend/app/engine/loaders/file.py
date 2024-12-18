@@ -58,20 +58,20 @@ def get_file_documents(config: FileLoaderConfig | CSVLoaderConfig):
                     filename_as_id=True,
                 )
 
-                if config.use_llama_parse:
-                    from llama_parse import LlamaParse
-                    parser = LlamaParse(
-                        api_key=os.getenv("LLAMA_CLOUD_API_KEY"),
-                        use_vendor_multimodal_model=True,
-                        vendor_multimodal_model_name="openai-gpt4o",
-                        show_progress=True,
-                        verbose=True,
-                        invalidate_cache=True,
-                        do_not_cache=True,
-                        num_workers=8,
-                        language="en"
-                    )
-                    reader.file_extractor = {".pdf": parser}
+                # if config.use_llama_parse:
+                #     from llama_parse import LlamaParse
+                #     parser = LlamaParse(
+                #         api_key=os.getenv("LLAMA_CLOUD_API_KEY"),
+                #         use_vendor_multimodal_model=True,
+                #         vendor_multimodal_model_name="openai-gpt4o",
+                #         show_progress=True,
+                #         verbose=True,
+                #         invalidate_cache=True,
+                #         do_not_cache=True,
+                #         num_workers=8,
+                #         language="en"
+                #     )
+                #     reader.file_extractor = {".pdf": parser}
                          
                 return reader.load_data()
                 
@@ -111,19 +111,19 @@ def get_file_documents(config: FileLoaderConfig | CSVLoaderConfig):
             recursive=True,
             filename_as_id=True,
         )
-        if config.use_llama_parse:
-            parser = LlamaParse(
-                api_key=os.getenv("LLAMA_CLOUD_API_KEY"),
-                use_vendor_multimodal_model=True,
-                vendor_multimodal_model_name="openai-gpt4o",
-                show_progress=True,
-                verbose=True,
-                invalidate_cache=True,
-                do_not_cache=True,
-                num_workers=8,
-                language="en"
-            )
-            reader.file_extractor = {".pdf": parser, ".csv": parser}
+        # if config.use_llama_parse:
+        #     parser = LlamaParse(
+        #         api_key=os.getenv("LLAMA_CLOUD_API_KEY"),
+        #         use_vendor_multimodal_model=True,
+        #         vendor_multimodal_model_name="openai-gpt4o",
+        #         show_progress=True,
+        #         verbose=True,
+        #         invalidate_cache=True,
+        #         do_not_cache=True,
+        #         num_workers=8,
+        #         language="en"
+        #     )
+        #     reader.file_extractor = {".pdf": parser, ".csv": parser}
 
         return reader.load_data()
     except ValueError as e:
