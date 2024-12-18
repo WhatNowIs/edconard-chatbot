@@ -2,7 +2,6 @@ import os
 import logging
 from create_llama.backend.app import csv_to_pdf, macro_roundup_preprocessor, process_blog_articles
 from create_llama.backend.app.utils.multi_modal_helpers import process_images_in_batch
-from llama_parse import LlamaParse
 from pydantic import BaseModel, validator
 
 logger = logging.getLogger(__name__)
@@ -60,6 +59,7 @@ def get_file_documents(config: FileLoaderConfig | CSVLoaderConfig):
                 )
 
                 if config.use_llama_parse:
+                    from llama_parse import LlamaParse
                     parser = LlamaParse(
                         api_key=os.getenv("LLAMA_CLOUD_API_KEY"),
                         use_vendor_multimodal_model=True,
