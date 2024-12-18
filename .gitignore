@@ -2,8 +2,8 @@ static/
 storage/
 
 **/__pycache__/
-
-**/.env
+__pycache__/
+.env
 .venv/
 
 data/
