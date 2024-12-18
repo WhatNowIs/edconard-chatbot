@@ -45,7 +45,7 @@ jobs:
             docker pull ${{ secrets.DOCKER_USERNAME }}/cri-chatbot-backend:latest
             docker stop cri-chatbot-backend || true
             docker rm cri-chatbot-backend || true
-            docker run -d --name cri-chatbot-backend -p 80:8000 \
+            docker run -d --name cri-chatbot-backend -p 8080:8000 \
                 -e OPENAI_API_KEY="${{ secrets.OPENAI_API_KEY }}" \
                 -e REDIS_URL="${{ secrets.REDIS_URL }}" \
                 -e RESEND_API_KEY="${{ secrets.RESEND_API_KEY }}" \
