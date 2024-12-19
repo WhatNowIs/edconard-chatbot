@@ -417,7 +417,7 @@ def macro_roundup_preprocessor(input_dir: str, output_dir: str):
                     
                     folder_name = clean_string_for_filename(row['headline'])
                     # Download and store featured image in the images folder
-                    # create_image_folder_and_download_image(row['featured_image_url'], folder_name)
+                    create_image_folder_and_download_image(row['featured_image_url'], folder_name)
                     
                     images_data.append({
                         "featured_image_url": row['featured_image_url'], 
