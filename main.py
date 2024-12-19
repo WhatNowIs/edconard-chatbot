@@ -8,7 +8,6 @@ from src.core.services.workspace import WorkspaceService
 import uvicorn
 from fastapi import FastAPI
 from dotenv import load_dotenv
-from fastapi.responses import RedirectResponse, FileResponse
 from fastapi.staticfiles import StaticFiles
 from create_llama.backend.app.settings import init_settings
 from create_llama.backend.app.api.routers.chat import chat_router
@@ -136,7 +135,6 @@ async def startup(
     get_logger().info("Successfully populated default email templates and types")
 
     if os.getenv("REFRESH_EMBEDDING", "False").lower() == "true":
-        # delete_all_converted_csv("tmp/converted_csv")
         reset_index()
         get_logger().info("Successfully upserted data to chromadb")
 
