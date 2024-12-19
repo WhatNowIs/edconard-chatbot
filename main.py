@@ -1,6 +1,6 @@
 import os
 import shutil
-from src.app.tasks.indexing import index_all, reset_index
+from src.app.tasks.indexing import reset_index
 from src.core.models.base import EntityStatus, User
 from src.core.services.role import RoleService, setup_roles
 from src.core.services.user import UserService
@@ -22,8 +22,6 @@ from src.app.routers.auth.accounts import accounts_router
 from src.app.routers.chat.threads import threads_router
 from src.app.routers.chat.workspace import workspace_router
 from fastapi.middleware.cors import CORSMiddleware
-from src.llm.env_config import get_config
-
 load_dotenv(
     dotenv_path=ENV_FILE_PATH,
 )
