@@ -4,7 +4,7 @@ from llama_index.vector_stores.chroma import ChromaVectorStore
 
 def get_vector_store():
     collection_name = os.getenv("CHROMA_COLLECTION", "default")
-    img_collection_name = os.getenv("CHROMA_IMG_COLLECTION", "image_collection")
+    # img_collection_name = os.getenv("CHROMA_IMG_COLLECTION", "image_collection")
     chroma_path = os.getenv("CHROMA_PATH")
     # if CHROMA_PATH is set, use a local ChromaVectorStore from the path
     # otherwise, use a remote ChromaVectorStore (ChromaDB Cloud is not supported yet)
@@ -12,9 +12,9 @@ def get_vector_store():
         store = ChromaVectorStore.from_params(
             persist_dir=chroma_path, collection_name=collection_name
         )
-        image_store = ChromaVectorStore.from_params(
-            persist_dir=chroma_path, collection_name=img_collection_name
-        )
+        # image_store = ChromaVectorStore.from_params(
+        #     persist_dir=chroma_path, collection_name=img_collection_name
+        # )
     else:
         if not os.getenv("CHROMA_HOST") or not os.getenv("CHROMA_PORT"):
             raise ValueError(
@@ -26,9 +26,9 @@ def get_vector_store():
             collection_name=collection_name,
         )
 
-        image_store = ChromaVectorStore.from_params(
-            host=os.getenv("CHROMA_HOST"),
-            port=int(os.getenv("CHROMA_PORT")),
-            collection_name=collection_name,
-        )
-    return store, image_store
+        # image_store = ChromaVectorStore.from_params(
+        #     host=os.getenv("CHROMA_HOST"),
+        #     port=int(os.getenv("CHROMA_PORT")),
+        #     collection_name=collection_name,
+        # )
+    return store

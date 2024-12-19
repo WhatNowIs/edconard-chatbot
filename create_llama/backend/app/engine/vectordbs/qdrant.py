@@ -6,16 +6,16 @@ from llama_index.vector_stores.qdrant import QdrantVectorStore
 
 def get_vector_store():
     collection_name = os.getenv("QDRANT_COLLECTION")
-    img_collection_name = os.getenv("QDRANT_IMG_COLLECTION")
+    # img_collection_name = os.getenv("QDRANT_IMG_COLLECTION")
     # get qdrant url and api key
     url = os.getenv("QDRANT_URL")
     api_key = os.getenv("QDRANT_API_KEY")
 
-    if not collection_name or not img_collection_name:
-        raise ValueError(
-            "Please set QDRANT_COLLECTION, QDRANT_IMG_COLLECTION"
-            " to your environment variables or config them in the .env file"
-        )
+    # if not collection_name or not img_collection_name:
+    #     raise ValueError(
+    #         "Please set QDRANT_COLLECTION, QDRANT_IMG_COLLECTION"
+    #         " to your environment variables or config them in the .env file"
+    #     )
     
     aclient = AsyncQdrantClient(        
         url=url,
@@ -34,11 +34,11 @@ def get_vector_store():
         max_retries=3
     )
     
-    image_store = QdrantVectorStore(
-        client=client,
-        aclient=aclient,
-        collection_name=img_collection_name,
-        max_retries=3
-    )
+    # image_store = QdrantVectorStore(
+    #     client=client,
+    #     aclient=aclient,
+    #     # collection_name=img_collection_name,
+    #     max_retries=3
+    # )
 
-    return default_store, image_store
+    return default_store

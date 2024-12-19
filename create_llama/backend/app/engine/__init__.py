@@ -13,7 +13,7 @@ async def get_chat_engine():
         raise RuntimeError("Index is not found")
     
     return CondensePlusContextChatEngine.from_defaults(
-        retriever=index.as_retriever(similarity_top_k=top_k, image_similarity_top_k=top_k),
+        retriever=index.as_retriever(similarity_top_k=top_k),
         system_prompt=system_prompt,
         llm=Settings.llm,
         verbose=True
