@@ -60,15 +60,15 @@ def get_file_documents(config: FileLoaderConfig | CSVLoaderConfig):
                 return reader.load_data()
                 
             elif not config.is_called_on_topic and (config.is_blog_post or config.is_macroroundup):
-                macro_files, macro_images_info = macro_roundup_preprocessor(f"{config.data_dir}/macro_roundup", "data")
+                macro_files, _ = macro_roundup_preprocessor(f"{config.data_dir}/macro_roundup", "data")
                 
                 blog_post_files = process_blog_articles(f"{config.data_dir}/blog_post", "data")
                 output_summary_file: str = 'images/image_summaries.jsonl'
                 batch_file_path: str = 'images/image_batch.jsonl'
 
-                sumaries = process_images_in_batch(macro_images_info, output_summary_file, batch_file_path)
+                # sumaries = process_images_in_batch(macro_images_info, output_summary_file, batch_file_path)
 
-                logger.info(f"Macro Roundup featured images generated: {sumaries}")
+                # logger.info(f"Macro Roundup featured images generated: {sumaries}")
 
                 if os.path.exists(output_summary_file) and os.path.exists(batch_file_path):
                     os.remove(output_summary_file)
