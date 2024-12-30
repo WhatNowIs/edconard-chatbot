@@ -37,22 +37,14 @@ def reset_index():
     def reset_index_qdrant():
         from create_llama.backend.app.engine.vectordbs.qdrant import get_vector_store
 
-        store, image_store = get_vector_store()
+        store = get_vector_store()
         # Delete previously created store
         store.client.delete_collection(
             store.collection_name,
         )
-        image_store.client.delete_collection(
-            image_store.collection_name,
-        )
-
         # # Recreate new stores for images and for texts
         store._create_collection(
             collection_name=store.collection_name,
-            vector_size=int(os.getenv("EMBEDDING_DIM", 1536)),
-        )
-        image_store._create_collection(
-            collection_name=image_store.collection_name,
             vector_size=int(os.getenv("EMBEDDING_DIM", 1536)),
         )
 

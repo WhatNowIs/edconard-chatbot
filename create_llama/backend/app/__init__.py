@@ -293,145 +293,140 @@ def macro_roundup_preprocessor(input_dir: str, output_dir: str):
         ]
         df = df[columns_to_extract]
 
-        # i = 0
+        i = 0
 
         images_data = []
 
         for _, row in df.iterrows():     
 
-            # if i < 10:       
-            elements = []
-            # Use the CSV filename (without extension) as the title
-            file_name = row['headline']
-        
-            output_pdf = os.path.join(output_dir, f"{clean_string_for_filename(file_name)}.pdf")
-            output_dirs.append(output_pdf)
-
-
-            # Create the PDF
-            doc = BaseDocTemplate(output_pdf, pagesize=letter, topMargin=0.5 * inch, bottomMargin=0.5 * inch,
-                                leftMargin=0.5 * inch, rightMargin=0.5 * inch)
-
-            frame = Frame(0.5 * inch, 0.5 * inch, doc.width, doc.height, id='normal')
-            template = PageTemplate(id='macro_roundup', frames=frame, onPage=add_header)
-            doc.addPageTemplates([template])
-
-            elements.append(Spacer(1, 24))
-            elements.append(Paragraph(f"Macro Roundup Article", heading_style))
-            elements.append(Spacer(1, 12))
-
-            # Headline and summary
-            elements.append(Paragraph(f"<font color='black'>Headline:&nbsp;&nbsp;</font> {str(row['headline'])}", subheading_style))
-            elements.append(Spacer(1, 12))
-
+            if i < 10:       
+                elements = []
+                # Use the CSV filename (without extension) as the title
+                file_name = row['headline']
             
-            # Links
-            if pd.notna(row['article_link']):
-                elements.append(Paragraph(f"<b><font name='{all_subheading_style.fontName}' size='{all_subheading_style.fontSize}' color='{all_subheading_style.textColor}'>Article Link:</font></b>"
-                                    f"&nbsp;&nbsp;"
-                                    f"<u><font name='{normal_style.fontName}' size='{normal_style.fontSize}' color='{normal_style.textColor}'><a href=\"{row['article_link']}\">{row['article_link']}</a></font></u>", normal_style))
+                output_pdf = os.path.join(output_dir, f"{clean_string_for_filename(file_name)}.pdf")
+                output_dirs.append(output_pdf)
+
+                # Create the PDF
+                doc = BaseDocTemplate(output_pdf, pagesize=letter, topMargin=0.5 * inch, bottomMargin=0.5 * inch,
+                                    leftMargin=0.5 * inch, rightMargin=0.5 * inch)
+
+                frame = Frame(0.5 * inch, 0.5 * inch, doc.width, doc.height, id='normal')
+                template = PageTemplate(id='macro_roundup', frames=frame, onPage=add_header)
+                doc.addPageTemplates([template])
+
+                elements.append(Spacer(1, 24))
+                elements.append(Paragraph(f"Macro Roundup Article", heading_style))
                 elements.append(Spacer(1, 12))
-            
-            # Publication details
-            pub_details = [
-                ['Author(s)', row['authors']],
-                ['Publication', row['publication']],
-                ['Publication Date', convert_date_format(str(row['publication_date']).split(" ")[0])],
-            ]
-            pub_table = Table(pub_details, colWidths=[first_col_width, second_col_width])
-            pub_table.setStyle(TableStyle([
-                ('FONTNAME', (0, 0), (-1, -1), 'Arial'),
-                ('FONTSIZE', (0, 0), (-1, -1), 10),
-                ('VALIGN', (0, 0), (-1, -1), 'TOP'),
-                ('GRID', (0, 0), (-1, -1), 0.5, colors.grey),
-                ('BACKGROUND', (0, 0), (0, -1), colors.lightgrey),
-            ]))
-            # Create a KeepTogether flowable
-            pub_details_block = KeepTogether([
-                pub_table,
-                Spacer(1, 12),
-            ])
 
-            elements.append(pub_details_block)
-            #  Tweet text injection
-            tweet_texts = str(row['tweet'])
-            elements.append(Paragraph(f"<b><font name='{all_subheading_style.fontName}' size='{all_subheading_style.fontSize}' color='{all_subheading_style.textColor}'>Tweet:</font></b>" 
-                                    f"&nbsp;&nbsp;"
-                                    f"<font name='{tweet_style.fontName}' size='{tweet_style.fontSize}' color='{tweet_style.textColor}'>{tweet_texts}</font>", tweet_style))
-            elements.append(Spacer(1, 12))
+                # Headline and summary
+                elements.append(Paragraph(f"<font color='black'>Headline:&nbsp;&nbsp;</font> {str(row['headline'])}", subheading_style))
+                elements.append(Spacer(1, 12))
 
-            # Article Summary
-            extrated_summary, extracted_related_articles = extract_related_article(row['summary'])
-            summary = clean_html(str(extrated_summary))
-            elements.append(Paragraph(f"<b><font name='{all_subheading_style.fontName}' size='{all_subheading_style.fontSize}' color='{all_subheading_style.textColor}'>Summary:</font></b>"
-                                    f"&nbsp;&nbsp;"
-                                    f"<font name='{normal_style.fontName}' size='{normal_style.fontSize}' color='{normal_style.textColor}'>{summary}</font>", normal_style))
-            elements.append(Spacer(1, 12))
-
-            related_article_data = extracted_related_articles if extracted_related_articles != None else str(row['related_articles'])
-            # Related Articles
-            if pd.notna(related_article_data) and related_article_data.strip():
-                related_articles = keep_only_anchor_tags(related_article_data)
-                elements.append(Paragraph(f"<b><font name='{all_subheading_style.fontName}' size='{all_subheading_style.fontSize}' color='{all_subheading_style.textColor}'>Related Articles:</font></b>"
-                                    f"&nbsp;&nbsp;"
-                            f"<font name='{normal_style.fontName}' size='{normal_style.fontSize}' color='{normal_style.textColor}'>{related_articles}</font>", normal_style))
                 
-                elements.append(Spacer(1, 12))
-            
-
-            # Topics
-
-            if pd.notna(row['primary_category_name']):
-                elements.append(Paragraph(f"<b><font name='{all_subheading_style.fontName}' size='{all_subheading_style.fontSize}' color='{all_subheading_style.textColor}'>Primary Topic:</font></b>"
-                                    f"&nbsp;&nbsp;"
-                            f"<font name='{normal_style.fontName}' size='{normal_style.fontSize}' color='{normal_style.textColor}'>{row['primary_category_name']}</font>", normal_style))
-                elements.append(Spacer(1, 12))
-
-            if pd.notna(row['categories']):
-                elements.append(Paragraph(f"<b><font name='{all_subheading_style.fontName}' size='{all_subheading_style.fontSize}' color='{all_subheading_style.textColor}'>Topics:</font></b>"
-                                    f"&nbsp;&nbsp;"
-                                        f"<font name='{normal_style.fontName}' size='{normal_style.fontSize}' color='{normal_style.textColor}'>{row['categories']}</font>", normal_style))
-                elements.append(Spacer(1, 12))
-
-            if pd.notna(row['pdf_file_url']):
-                elements.append(Paragraph(f"<b><font name='{all_subheading_style.fontName}' size='{all_subheading_style.fontSize}' color='{all_subheading_style.textColor}'>PDF File URL:</font></b>"
-                                    f"&nbsp;&nbsp;"
-                                        f"<u><font name='{normal_style.fontName}' size='{normal_style.fontSize}' color='{normal_style.textColor}'><a href=\"{row['pdf_file_url']}\">'{row['pdf_file_url']}</a></font></u>", normal_style))
-                elements.append(Spacer(1, 12))
-
-            # Links
-            if pd.notna(row['permalink']):
-                elements.append(Paragraph(f"<b><font name='{all_subheading_style.fontName}' size='{all_subheading_style.fontSize}' color='{all_subheading_style.textColor}'>Permalink:</font></b>"
-                                    f"&nbsp;&nbsp;"
-                                    f"<u><font name='{normal_style.fontName}' size='{normal_style.fontSize}' color='{normal_style.textColor}'><a href=\"{row['permalink']}\">{row['permalink']}</a></font></u>", normal_style))
-                elements.append(Spacer(1, 12))
-
-            if pd.notna(row['featured_image_url']):
-                # Featured Image
-                elements.append(Paragraph(f"<b><font name='{all_subheading_style.fontName}' size='{all_subheading_style.fontSize}' color='{all_subheading_style.textColor}'>Featured Image Link:</font></b>"
-                                    f"&nbsp;&nbsp;"
-                            f"<font name='{normal_style.fontName}' size='{normal_style.fontSize}' color='{normal_style.textColor}'><a href=\"{row['featured_image_url']}\">{row['featured_image_url']}</a></font>", normal_style))
-                elements.append(Spacer(1, 12))
-
-                try:
-                    
-                    folder_name = clean_string_for_filename(row['headline'])
-                    # Download and store featured image in the images folder
-                    # create_image_folder_and_download_image(row['featured_image_url'], folder_name)
-                    
-                    images_data.append({
-                        "featured_image_url": row['featured_image_url'], 
-                        "folder_name": folder_name,
-                    })
+                # Links
+                if pd.notna(row['article_link']):
+                    elements.append(Paragraph(f"<b><font name='{all_subheading_style.fontName}' size='{all_subheading_style.fontSize}' color='{all_subheading_style.textColor}'>Article Link:</font></b>"
+                                        f"&nbsp;&nbsp;"
+                                        f"<u><font name='{normal_style.fontName}' size='{normal_style.fontSize}' color='{normal_style.textColor}'><a href=\"{row['article_link']}\">{row['article_link']}</a></font></u>", normal_style))
+                    elements.append(Spacer(1, 12))
                 
-                except Exception as e:
-                    print(f"Error downloading image: {e}")
+                # Publication details
+                pub_details = [
+                    ['Author(s)', row['authors']],
+                    ['Publication', row['publication']],
+                    ['Publication Date', convert_date_format(str(row['publication_date']).split(" ")[0])],
+                ]
+                pub_table = Table(pub_details, colWidths=[first_col_width, second_col_width])
+                pub_table.setStyle(TableStyle([
+                    ('FONTNAME', (0, 0), (-1, -1), 'Arial'),
+                    ('FONTSIZE', (0, 0), (-1, -1), 10),
+                    ('VALIGN', (0, 0), (-1, -1), 'TOP'),
+                    ('GRID', (0, 0), (-1, -1), 0.5, colors.grey),
+                    ('BACKGROUND', (0, 0), (0, -1), colors.lightgrey),
+                ]))
+                # Create a KeepTogether flowable
+                pub_details_block = KeepTogether([
+                    pub_table,
+                    Spacer(1, 12),
+                ])
 
+                elements.append(pub_details_block)
+                #  Tweet text injection
+                tweet_texts = str(row['tweet'])
+                elements.append(Paragraph(f"<b><font name='{all_subheading_style.fontName}' size='{all_subheading_style.fontSize}' color='{all_subheading_style.textColor}'>Tweet:</font></b>" 
+                                        f"&nbsp;&nbsp;"
+                                        f"<font name='{tweet_style.fontName}' size='{tweet_style.fontSize}' color='{tweet_style.textColor}'>{tweet_texts}</font>", tweet_style))
+                elements.append(Spacer(1, 12))
 
+                # Article Summary
+                extrated_summary, extracted_related_articles = extract_related_article(row['summary'])
+                summary = clean_html(str(extrated_summary))
+                elements.append(Paragraph(f"<b><font name='{all_subheading_style.fontName}' size='{all_subheading_style.fontSize}' color='{all_subheading_style.textColor}'>Summary:</font></b>"
+                                        f"&nbsp;&nbsp;"
+                                        f"<font name='{normal_style.fontName}' size='{normal_style.fontSize}' color='{normal_style.textColor}'>{summary}</font>", normal_style))
+                elements.append(Spacer(1, 12))
 
-            # Build the PDF
-            doc.build(elements)
-            # i = i + 1
+                related_article_data = extracted_related_articles if extracted_related_articles != None else str(row['related_articles'])
+                # Related Articles
+                if pd.notna(related_article_data) and related_article_data.strip():
+                    related_articles = keep_only_anchor_tags(related_article_data)
+                    elements.append(Paragraph(f"<b><font name='{all_subheading_style.fontName}' size='{all_subheading_style.fontSize}' color='{all_subheading_style.textColor}'>Related Articles:</font></b>"
+                                        f"&nbsp;&nbsp;"
+                                f"<font name='{normal_style.fontName}' size='{normal_style.fontSize}' color='{normal_style.textColor}'>{related_articles}</font>", normal_style))
+                    
+                    elements.append(Spacer(1, 12))
+
+                # Topics
+                if pd.notna(row['primary_category_name']):
+                    elements.append(Paragraph(f"<b><font name='{all_subheading_style.fontName}' size='{all_subheading_style.fontSize}' color='{all_subheading_style.textColor}'>Primary Topic:</font></b>"
+                                        f"&nbsp;&nbsp;"
+                                f"<font name='{normal_style.fontName}' size='{normal_style.fontSize}' color='{normal_style.textColor}'>{row['primary_category_name']}</font>", normal_style))
+                    elements.append(Spacer(1, 12))
+
+                if pd.notna(row['categories']):
+                    elements.append(Paragraph(f"<b><font name='{all_subheading_style.fontName}' size='{all_subheading_style.fontSize}' color='{all_subheading_style.textColor}'>Topics:</font></b>"
+                                        f"&nbsp;&nbsp;"
+                                            f"<font name='{normal_style.fontName}' size='{normal_style.fontSize}' color='{normal_style.textColor}'>{row['categories']}</font>", normal_style))
+                    elements.append(Spacer(1, 12))
+
+                if pd.notna(row['pdf_file_url']):
+                    elements.append(Paragraph(f"<b><font name='{all_subheading_style.fontName}' size='{all_subheading_style.fontSize}' color='{all_subheading_style.textColor}'>PDF File URL:</font></b>"
+                                        f"&nbsp;&nbsp;"
+                                            f"<u><font name='{normal_style.fontName}' size='{normal_style.fontSize}' color='{normal_style.textColor}'><a href=\"{row['pdf_file_url']}\">'{row['pdf_file_url']}</a></font></u>", normal_style))
+                    elements.append(Spacer(1, 12))
+
+                # Links
+                if pd.notna(row['permalink']):
+                    elements.append(Paragraph(f"<b><font name='{all_subheading_style.fontName}' size='{all_subheading_style.fontSize}' color='{all_subheading_style.textColor}'>Permalink:</font></b>"
+                                        f"&nbsp;&nbsp;"
+                                        f"<u><font name='{normal_style.fontName}' size='{normal_style.fontSize}' color='{normal_style.textColor}'><a href=\"{row['permalink']}\">{row['permalink']}</a></font></u>", normal_style))
+                    elements.append(Spacer(1, 12))
+
+                if pd.notna(row['featured_image_url']):
+                    # Featured Image
+                    elements.append(Paragraph(f"<b><font name='{all_subheading_style.fontName}' size='{all_subheading_style.fontSize}' color='{all_subheading_style.textColor}'>Featured Image Link:</font></b>"
+                                        f"&nbsp;&nbsp;"
+                                f"<font name='{normal_style.fontName}' size='{normal_style.fontSize}' color='{normal_style.textColor}'><a href=\"{row['featured_image_url']}\">{row['featured_image_url']}</a></font>", normal_style))
+                    elements.append(Spacer(1, 12))
+
+                    try:
+                        
+                        folder_name = clean_string_for_filename(row['headline'])
+                        # Download and store featured image in the images folder
+                        # create_image_folder_and_download_image(row['featured_image_url'], folder_name)
+                        
+                        images_data.append({
+                            "featured_image_url": row['featured_image_url'], 
+                            "folder_name": folder_name,
+                        })
+                    
+                    except Exception as e:
+                        print(f"Error downloading image: {e}")
+
+                # Build the PDF
+                doc.build(elements)
+            i = i + 1
 
         get_logger().info(f"PDF created successfully: {output_pdf}")
 
