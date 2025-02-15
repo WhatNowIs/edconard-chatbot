@@ -51,18 +51,21 @@ all_subheading_style = ParagraphStyle('Heading', fontSize=14, fontName='Arial-Bo
 italic_style = ParagraphStyle('Italic', fontSize=12, fontName='Arial-Italic', leading=12, spaceAfter=6, textColor=colors.darkslategray)
 content_style = ParagraphStyle('Content', fontSize=11, fontName='Arial', leading=14, spaceAfter=10)
 
+# import re
 
-def clean_string_for_filename(input_string: str) -> str:
+def clean_string_for_filename(input_string) -> str:
+    if not isinstance(input_string, str):
+        input_string = str(input_string)  # Convert to string if it's a float or other type
+
     cleaned_string = re.sub(r'[<>:"/\\|?*\x00-\x1F\']', '_', input_string) 
-    
     cleaned_string = re.sub(r'[\s_]+', '_', cleaned_string)
-
     cleaned_string = cleaned_string.strip().strip('.')
 
     max_length = 255
     cleaned_string = cleaned_string[:max_length]
 
     return cleaned_string
+
 
 def convert_date_format(date_str):
     date_obj = datetime.strptime(date_str, '%Y-%m-%d')
