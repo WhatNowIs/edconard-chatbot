@@ -66,13 +66,16 @@ def clean_string_for_filename(input_string) -> str:
 
     return cleaned_string
 
-
 def convert_date_format(date_str):
-    date_obj = datetime.strptime(date_str, '%Y-%m-%d')
-    
-    formatted_date = date_obj.strftime('%B %d, %Y')
-    
-    return formatted_date
+    # Handle missing or invalid values
+    if not date_str or isinstance(date_str, float) or date_str.lower() in ["nan", "none", "null"]:
+        return "Unknown"
+
+    try:
+        date_obj = datetime.strptime(date_str, "%Y-%m-%d")
+        return date_obj.strftime("%B %d, %Y")
+    except ValueError:
+        return ""
 
 def csv_to_pdf(folder_path, output_dir):
     def create_table(df):
