@@ -119,7 +119,6 @@ async def fetch_users_from_workspace(
     session: dict = Depends(get_session),
     workspace_service: WorkspaceService = Depends(get_workspace_service)
 ):
-    # Check if the user is authenticated (you can customize this condition as needed)
     if "sub" in session:
         user_id = session['sub']
         users = await workspace_service.get_users_by_workspace_id(user_id, workspace_id)
