@@ -39,13 +39,13 @@ class FileHandler:
             return UnsupportedFileExtensionError(
                 f"File {file_name} with extension {file_name.split('.')[-1]} is not supported."
             )
-        # Create data folder if it does not exist
+            
         if not os.path.exists("data"):
             os.makedirs("data")
 
         with open(f"data/{file_name}", "wb") as f:
             f.write(await file.read())
-        # Index the data
+
         index_all()
         return File(name=file_name, status=FileStatus.UPLOADED)
 
