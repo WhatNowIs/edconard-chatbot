@@ -6,7 +6,7 @@ from create_llama.backend.app.engine.tools import ToolFactory
 
 async def get_chat_engine():
     try:
-        top_k = int(os.getenv("TOP_K", "4"))
+        top_k = int(os.getenv("TOP_K", "6"))
         system_prompt = os.getenv("SYSTEM_PROMPT")
         
         index = get_index()

@@ -93,7 +93,7 @@ async def parse_chat_data(data: _ChatData) -> Tuple[str, List[ChatMessage]]:
             status_code=status.HTTP_400_BAD_REQUEST,
             detail="Last message must be from user",
         )
-    # convert messages coming from the request to type ChatMessage
+
     messages = [
         ChatMessage(
             role=m.role,
@@ -104,7 +104,6 @@ async def parse_chat_data(data: _ChatData) -> Tuple[str, List[ChatMessage]]:
     return last_message.content, messages
 
 
-# streaming endpoint - delete if not needed
 @r.post("")
 async def chat(
     request: Request,
