@@ -4,22 +4,22 @@ from typing import Optional, List, Dict
 class Message(BaseModel):
     role: str
     content: str
-    refusal: Optional[str] = None  # Optional to account for null values
+    refusal: Optional[str] = None
 
 class Choice(BaseModel):
     index: int
     message: Message
-    logprobs: Optional[Dict] = None  # logprobs could be a dictionary or None
+    logprobs: Optional[Dict] = None 
     finish_reason: str
 
 class CompletionTokensDetails(BaseModel):
-    reasoning_tokens: Optional[int] = None  # Define any additional keys expected
+    reasoning_tokens: Optional[int] = None 
 
 class UsageDetails(BaseModel):
     prompt_tokens: int
     completion_tokens: int
     total_tokens: int
-    completion_tokens_details: CompletionTokensDetails  # Use a custom model
+    completion_tokens_details: CompletionTokensDetails  
 
 class Body(BaseModel):
     id: str
