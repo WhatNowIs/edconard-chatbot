@@ -21,7 +21,9 @@ from src.app.routers.management.tools import tools_router
 from src.app.routers.auth.accounts import accounts_router
 from src.app.routers.chat.threads import threads_router
 from src.app.routers.chat.workspace import workspace_router
+from src.app.controllers.article_controller import router as article_router
 from fastapi.middleware.cors import CORSMiddleware
+
 load_dotenv(
     dotenv_path=ENV_FILE_PATH,
 )
@@ -57,6 +59,7 @@ app.include_router(accounts_router, prefix="/api/auth/accounts", tags=["Auth"])
 app.include_router(threads_router, prefix="/api/chat/threads", tags=["Thread"])
 app.include_router(chat_router, prefix="/api/chat", tags=["Chat"])
 app.include_router(workspace_router, prefix="/api/workspaces", tags=["Workspaces"])
+app.include_router(article_router, prefix="/api/articles", tags=["Articles"])
 
 app.mount("/api/data", StaticFiles(directory="data"), name="static")
 
