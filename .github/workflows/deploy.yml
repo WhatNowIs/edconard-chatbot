@@ -75,5 +75,6 @@ jobs:
                 -e QDRANT_URL="${{ secrets.QDRANT_URL }}" \
                 -e OPENAI_API_VERSION="${{ secrets.OPENAI_API_VERSION }}" \
                 -e FROM_EMAIL="${{ secrets.FROM_EMAIL }}" \
+                -e API_TOKEN="${{ secrets.API_TOKEN }}" \
                 ${{ secrets.DOCKER_USERNAME }}/cri-chatbot-backend:latest
           debug: true

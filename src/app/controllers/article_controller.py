@@ -1,4 +1,5 @@
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, HTTPException, Security, Depends
+from fastapi.security import APIKeyHeader
 from pydantic import BaseModel
 from typing import List, Optional, Generator
 import os
@@ -229,7 +230,74 @@ class ArticleUploadResponse(BaseModel):
     error_count: int
     pdf_paths: List[str]
 
+# API Security
+API_TOKEN = os.getenv("API_TOKEN")
+if not API_TOKEN:
+    logger.warning("API_TOKEN not set in environment variables. Webhook endpoints will be unavailable.")
+
+api_key_header = APIKeyHeader(name="x-api-token", auto_error=False)
+
+async def verify_token(api_key: str = Security(api_key_header)):
+    if not API_TOKEN:
+        raise HTTPException(
+            status_code=503,
+            detail="API token authentication is not configured"
+        )
+    if not api_key:
+        raise HTTPException(
+            status_code=401,
+            detail="Missing API token"
+        )
+    if api_key != API_TOKEN:
+        raise HTTPException(
+            status_code=401,
+            detail="Invalid API token"
+        )
+    return api_key
+
 router = APIRouter()
+
+@router.post("/upload", response_model=ArticleUploadResponse, dependencies=[Depends(verify_token)])
+async def upload_articles(articles: List[Article]):
+    """
+    Upload and process multiple articles. Protected by x-api-token header.
+    """
+    try:
+        vector_store = get_vector_store()
+        if not vector_store:
+            raise HTTPException(status_code=500, detail="Failed to initialize vector store")
+            
+        processed_count = 0
+        error_count = 0
+        pdf_paths = []
+        
+        for article in articles:
+            try:
+                if process_article(article, vector_store):
+                    processed_count += 1
+                    pdf_path = os.path.join(
+                        STORAGE_PDFS_DIR,
+                        clean_filename(article.headline),
+                        f"{clean_filename(article.headline)}.pdf"
+                    )
+                    pdf_paths.append(pdf_path)
+                else:
+                    error_count += 1
+            except Exception as e:
+                logger.error(f"Error processing article {article.headline}: {str(e)}")
+                error_count += 1
+                continue
+                
+        return ArticleUploadResponse(
+            message=f"Processed {processed_count} articles with {error_count} errors",
+            processed_count=processed_count,
+            error_count=error_count,
+            pdf_paths=pdf_paths
+        )
+        
+    except Exception as e:
+        logger.error(f"Error in upload_articles: {str(e)}")
+        raise HTTPException(status_code=500, detail=str(e))
 
 def convert_date_format(date_str: str) -> str:
     """Convert date string to desired format"""
@@ -242,122 +310,6 @@ def convert_date_format(date_str: str) -> str:
     except ValueError as e:
         logger.warning(f"Error parsing date '{date_str}': {str(e)}")
         return date_str
-
-def clean_html(html_str: str) -> str:
-    """Clean HTML string"""
-    soup = BeautifulSoup(html_str, 'html.parser')
-    return soup.get_text()
-
-def process_article(article: Article, vector_store) -> bool:
-    """Process a single article and add it to the vector store with memory-efficient pipeline"""
-    try:
-        # Generate PDF
-        data_dir = os.path.join(STORAGE_PDFS_DIR, clean_filename(article.headline))
-        os.makedirs(data_dir, exist_ok=True)
-        pdf_path = os.path.join(data_dir, f"{clean_filename(article.headline)}.pdf")
-        
-        if not generate_pdf(article, pdf_path):
-            logger.error("Failed to generate PDF")
-            return False
-            
-        logger.info(f"Generated PDF for article: {article.headline}")
-        
-        try:
-            # Create document store
-            from llama_index.core.storage.docstore import SimpleDocumentStore
-            docstore = SimpleDocumentStore()
-            
-            # Load PDF content
-            file_config = FileLoaderConfig(data_dir=data_dir)  # Fixed: Pass as keyword argument
-            documents = get_file_documents(file_config)
-            
-            if not documents:
-                logger.warning("No documents found for article")
-                return False
-            
-            # Create ingestion pipeline
-            pipeline = IngestionPipeline(
-                transformations=[
-                    SentenceSplitter(
-                        chunk_size=Settings.chunk_size,
-                        chunk_overlap=Settings.chunk_overlap,
-                    ),
-                    Settings.embed_model,
-                ],
-                docstore=docstore,
-                docstore_strategy="upserts",
-                vector_store=vector_store,
-            )
-            
-            # Process documents in batches
-            all_nodes = []
-            node_count = 0
-            batch_size = 1000  # MAX_BATCH_SIZE from memory requirements
-            
-            for i in range(0, len(documents), batch_size):
-                doc_batch = documents[i:i + batch_size]
-                try:
-                    logger.info(f"Processing batch {i//batch_size + 1}/{(len(documents)-1)//batch_size + 1}")
-                    batch_nodes = pipeline.run(show_progress=True, documents=doc_batch)
-                    all_nodes.extend(batch_nodes)
-                    node_count += len(batch_nodes)
-                    
-                    # Periodic storage persistence and cleanup
-                    if node_count >= GC_THRESHOLD:
-                        gc.collect()
-                        logger.info(f"Memory cleanup - Processed {node_count} nodes")
-                        node_count = 0
-                except Exception as e:
-                    logger.error(f"Error processing batch {i//batch_size + 1}: {str(e)}")
-                    continue
-            
-            if all_nodes:
-                logger.info(f"Successfully processed article with {len(all_nodes)} nodes")
-                return True
-            else:
-                logger.error("No nodes generated from article")
-                return False
-                
-        except Exception as e:
-            logger.error(f"Error in document processing pipeline: {str(e)}")
-            return False
-            
-    except Exception as e:
-        logger.error(f"Error processing article: {str(e)}")
-        return False
-
-@router.post("/upload")
-async def upload_article_files(articles: List[Article]):
-    """Upload and process article files, adding them to the vector store"""
-    try:
-        total_articles = len(articles)
-        logger.info(f"Starting upload of {total_articles} articles")
-        
-        # Get vector store instance
-        vector_store = get_vector_store()
-        
-        successful_articles = 0
-        failed_articles = 0
-        
-        for article in articles:
-            if process_article(article, vector_store):
-                successful_articles += 1
-            else:
-                failed_articles += 1
-        
-        # Log final statistics
-        logger.info(f"Processing complete - Successful: {successful_articles}, Failed: {failed_articles}, Total: {total_articles}")
-        
-        return ArticleUploadResponse(
-            message="Processing complete",
-            processed_count=successful_articles,
-            error_count=failed_articles,
-            pdf_paths=[os.path.join(STORAGE_PDFS_DIR, clean_filename(article.headline), f"{clean_filename(article.headline)}.pdf") for article in articles]
-        )
-        
-    except Exception as e:
-        logger.error(f"Error in upload_article_files: {str(e)}")
-        raise HTTPException(status_code=500, detail=str(e))
 
 def clean_filename(text: str) -> str:
     """Clean text to be used as a filename"""
@@ -488,21 +440,88 @@ def generate_pdf(article: Article, output_path: str):
         get_logger().error(f"Error generating PDF for article '{article.headline}': {str(e)}")
         return False
 
-def convert_date_format(date_str: str) -> str:
-    """Convert date string to desired format"""
+def process_article(article: Article, vector_store) -> bool:
+    """Process a single article and add it to the vector store with memory-efficient pipeline"""
     try:
-        date_obj = datetime.strptime(date_str, '%Y-%m-%d')
-        return date_obj.strftime('%B %d, %Y')
-    except:
-        return date_str
+        # Generate PDF
+        data_dir = os.path.join(STORAGE_PDFS_DIR, clean_filename(article.headline))
+        os.makedirs(data_dir, exist_ok=True)
+        pdf_path = os.path.join(data_dir, f"{clean_filename(article.headline)}.pdf")
+        
+        if not generate_pdf(article, pdf_path):
+            logger.error("Failed to generate PDF")
+            return False
+            
+        logger.info(f"Generated PDF for article: {article.headline}")
+        
+        try:
+            # Create document store
+            from llama_index.core.storage.docstore import SimpleDocumentStore
+            docstore = SimpleDocumentStore()
+            
+            # Load PDF content
+            file_config = FileLoaderConfig(data_dir=data_dir)  # Fixed: Pass as keyword argument
+            documents = get_file_documents(file_config)
+            
+            if not documents:
+                logger.warning("No documents found for article")
+                return False
+            
+            # Create ingestion pipeline
+            pipeline = IngestionPipeline(
+                transformations=[
+                    SentenceSplitter(
+                        chunk_size=Settings.chunk_size,
+                        chunk_overlap=Settings.chunk_overlap,
+                    ),
+                    Settings.embed_model,
+                ],
+                docstore=docstore,
+                docstore_strategy="upserts",
+                vector_store=vector_store,
+            )
+            
+            # Process documents in batches
+            all_nodes = []
+            node_count = 0
+            batch_size = 1000  # MAX_BATCH_SIZE from memory requirements
+            
+            for i in range(0, len(documents), batch_size):
+                doc_batch = documents[i:i + batch_size]
+                try:
+                    logger.info(f"Processing batch {i//batch_size + 1}/{(len(documents)-1)//batch_size + 1}")
+                    batch_nodes = pipeline.run(show_progress=True, documents=doc_batch)
+                    all_nodes.extend(batch_nodes)
+                    node_count += len(batch_nodes)
+                    
+                    # Periodic storage persistence and cleanup
+                    if node_count >= GC_THRESHOLD:
+                        gc.collect()
+                        logger.info(f"Memory cleanup - Processed {node_count} nodes")
+                        node_count = 0
+                except Exception as e:
+                    logger.error(f"Error processing batch {i//batch_size + 1}: {str(e)}")
+                    continue
+            
+            if all_nodes:
+                logger.info(f"Successfully processed article with {len(all_nodes)} nodes")
+                return True
+            else:
+                logger.error("No nodes generated from article")
+                return False
+                
+        except Exception as e:
+            logger.error(f"Error in document processing pipeline: {str(e)}")
+            return False
+            
+    except Exception as e:
+        logger.error(f"Error processing article: {str(e)}")
+        return False
 
-def clean_html(text: str) -> str:
-    """Clean HTML from text and normalize whitespace"""
-    if not text:
-        return ""
-    soup = BeautifulSoup(text, 'html.parser')
-    clean_text = soup.get_text(separator=' ')
-    return ' '.join(clean_text.split())
+def clean_html(html_str: str) -> str:
+    """Clean HTML string"""
+    soup = BeautifulSoup(html_str, 'html.parser')
+    return soup.get_text()
 
 def keep_only_anchor_tags(html: str) -> str:
     """Keep only anchor tags from HTML and clean up the rest"""
