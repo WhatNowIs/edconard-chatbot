@@ -7,23 +7,22 @@ import logging
 import shutil
 from dotenv import load_dotenv
 from llama_index.core import Settings
-from llama_index.core.schema import Document
+from llama_index.core.schema import Document, TextNode
 from llama_index.core.node_parser import SentenceSplitter
 from llama_index.core.ingestion import IngestionPipeline
-from llama_index.core.storage import StorageContext
 from create_llama.backend.app.engine.loaders.file import FileLoaderConfig, get_file_documents
 from create_llama.backend.app.engine.vectordb import get_vector_store
 from src.utils.logger import get_logger
 from datetime import datetime
-from reportlab.lib.pagesizes import letter, landscape
+from reportlab.lib.pagesizes import letter
 from reportlab.lib.units import inch
 from llama_index.core.settings import Settings
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
-from reportlab.platypus import Paragraph, Spacer, Frame, PageTemplate, BaseDocTemplate, Table, TableStyle
+from reportlab.platypus import Paragraph, Spacer, TableStyle, BaseDocTemplate, PageTemplate, Frame, KeepTogether, Table
 from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
 from reportlab.lib import colors
-from reportlab.lib.colors import HexColor, black, darkslategray
+from reportlab.lib.colors import HexColor
 from bs4 import BeautifulSoup
 from pathlib import Path
 import pandas as pd
@@ -32,14 +31,10 @@ load_dotenv()
 
 logger = get_logger()
 
-# Configure logging
-logger = logging.getLogger(__name__)
-
 # Constants for memory management
-MAX_BATCH_SIZE = 1000  # Reduced batch size to prevent memory issues
-GC_THRESHOLD = 5000    # Nodes before forcing garbage collection
-CHUNK_SIZE = 1024      # Default chunk size for text splitting
-CHUNK_OVERLAP = 20     # Default chunk overlap
+CHUNK_SIZE = Settings.chunk_size      # Default chunk size for text splitting
+CHUNK_OVERLAP = Settings.chunk_overlap     # Default chunk overlap
+GC_THRESHOLD = 5000  # New constant for garbage collection threshold
 
 project_root = Path(__file__).parent.parent.parent.parent
 # Constants for directories
@@ -47,12 +42,7 @@ STORAGE_DIR = os.path.join(project_root, 'storage')
 ASSETS_DIR = os.path.join(project_root, 'assets')
 FONTS_DIR = os.path.join(ASSETS_DIR, 'fonts')
 LOGOS_DIR = ASSETS_DIR
-STORAGE_PDFS_DIR = os.path.join(project_root, 'data')
-
-# Configure Settings
-Settings.chunk_size = CHUNK_SIZE
-Settings.chunk_overlap = CHUNK_OVERLAP
-
+STORAGE_PDFS_DIR = os.path.join(project_root, 'data', 'macro roundup')
 
 def ensure_directories():
     """Ensure all required directories exist"""
@@ -140,21 +130,6 @@ def register_fonts():
         pdfmetrics.registerFont(TTFont('DejaVu-Bold', dejavu_bold))
         pdfmetrics.registerFont(TTFont('DejaVu-Italic', dejavu_italic))
         
-        # Register font families
-        pdfmetrics.registerFontFamily(
-            'Arial',
-            normal='Arial',
-            bold='Arial-Bold',
-            italic='Arial-Italic'
-        )
-        
-        pdfmetrics.registerFontFamily(
-            'DejaVu',
-            normal='DejaVu',
-            bold='DejaVu-Bold',
-            italic='DejaVu-Italic'
-        )
-        
         logger.info("Successfully registered all fonts")
         return True
     except Exception as e:
@@ -176,82 +151,41 @@ second_col_width = usable_width * 0.75  # 3/4 of the usable width
 
 # Define styles
 styles = getSampleStyleSheet()
-title_style = ParagraphStyle(
-    'Title',
-    fontName='Arial-Bold',
-    fontSize=20,
-    alignment=1,  # Center alignment
-    textColor=colors.black,
-    spaceAfter=0.2*inch
-)
 
-heading_style = ParagraphStyle(
-    'Heading',
-    fontName='Arial-Bold',
-    fontSize=18,
-    textColor=colors.black,
-    spaceAfter=0.2*inch
-)
+title_style = ParagraphStyle('Title', fontSize=20, fontName='Arial-Bold', spaceAfter=12, alignment=1, textColor=colors.black)
+heading_style = ParagraphStyle('Heading', fontSize=18, fontName='Arial-Bold', spaceAfter=12, textColor=colors.black)
+subheading_style = ParagraphStyle('Subheading', fontSize=14, fontName='Arial-Bold', spaceAfter=6, textColor=HexColor('#1A76BD'))
+tweet_style = ParagraphStyle('Subheading', fontSize=14, fontName='Arial', leading=12, spaceAfter=6, textColor=HexColor('#DA0000'))
+normal_style = ParagraphStyle('Normal', fontSize=12, fontName='Arial', leading=12, spaceAfter=6)
+all_subheading_style = ParagraphStyle('Heading', fontSize=14, fontName='Arial-Bold', spaceAfter=12, textColor=colors.black)
+italic_style = ParagraphStyle('Italic', fontSize=12, fontName='Arial-Italic', leading=12, spaceAfter=6, textColor=colors.darkslategray)
+content_style = ParagraphStyle('Content', fontSize=11, fontName='Arial', leading=14, spaceAfter=10)
 
-subheading_style = ParagraphStyle(
-    'Subheading',
-    fontName='Arial-Bold',
-    fontSize=14,
-    textColor=HexColor('#1A76BD'),  # Blue color
-    spaceAfter=0.1*inch
-)
-
-tweet_style = ParagraphStyle(
-    'Tweet',
-    fontName='Arial',
-    fontSize=14,
-    textColor=HexColor('#DA0000'),  # Red color
-    spaceAfter=0.2*inch,
-    leading=16  # Increased line spacing for readability
-)
-
-normal_style = ParagraphStyle(
-    'Normal',
-    fontName='Arial',
-    fontSize=12,
-    textColor=colors.black,
-    spaceAfter=0.1*inch,
-    leading=14
-)
-
-content_style = ParagraphStyle(
-    'Content',
-    fontName='Arial',
-    fontSize=11,
-    textColor=colors.black,
-    spaceAfter=0.1*inch,
-    leading=13
-)
-
-italic_style = ParagraphStyle(
-    'Italic',
-    fontName='Arial-Italic',
-    fontSize=12,
-    textColor=colors.darkslategray,
-    spaceAfter=0.1*inch,
-    leading=14
-)
-
-# Define table styles
-table_style = TableStyle([
-    ('FONTNAME', (0, 0), (0, -1), 'Arial-Bold'),  # First column headers in bold
-    ('FONTNAME', (1, 0), (-1, -1), 'Arial'),      # Content in regular
-    ('FONTSIZE', (0, 0), (-1, -1), 11),           # All text 11pt
-    ('TEXTCOLOR', (0, 0), (-1, -1), colors.black),
-    ('ALIGN', (0, 0), (-1, -1), 'LEFT'),
-    ('VALIGN', (0, 0), (-1, -1), 'TOP'),
-    ('GRID', (0, 0), (-1, -1), 0.5, colors.grey),
-    ('BACKGROUND', (0, 0), (0, -1), colors.lightgrey),
-    ('LEFTPADDING', (0, 0), (-1, -1), 6),
-    ('RIGHTPADDING', (0, 0), (-1, -1), 6),
-    ('TOPPADDING', (0, 0), (-1, -1), 3),
-    ('BOTTOMPADDING', (0, 0), (-1, -1), 3),
-])
+def add_header(canvas, doc):
+    canvas.saveState()
+    
+    # Define image paths
+    logo_path = os.path.join(LOGOS_DIR, 'edward-conard-logo.png')
+    badge_path = os.path.join(LOGOS_DIR, 'top-ten-nyt-best-seller-badge.png')
+    
+    # Calculate positions
+    left_image_x = doc.leftMargin
+    right_image_x = doc.width - 2 * inch  # Adjust based on your requirement
+    
+    # Calculate Y position (aligned at the top margin)
+    image_y = doc.height + doc.topMargin - 0.5 * inch
+    
+    # Define width and height for the images
+    image_width = 2 * inch
+    image_height = 1 * inch  # Adjust based on your requirement
+    
+    # Add the left image
+    canvas.drawImage(logo_path, left_image_x, image_y, width=image_width, height=image_height, preserveAspectRatio=True)
+    
+    # Add the right image
+    canvas.drawImage(badge_path, right_image_x, image_y, width=image_width, height=image_height, preserveAspectRatio=True)
+    
+    canvas.restoreState()
 
 # Table for article details
 details_table_style = TableStyle([
@@ -314,194 +248,83 @@ def clean_html(html_str: str) -> str:
     soup = BeautifulSoup(html_str, 'html.parser')
     return soup.get_text()
 
-def add_header(canvas, doc):
-    """Add header with logos to each page"""
-    canvas.saveState()
-    
-    # Calculate header height and positions
-    header_height = 0.75 * inch
-    header_top = doc.height + doc.topMargin
-    header_bottom = header_top - header_height
-    
-    # Left logo - edward-conard-logo.png
-    left_logo = os.path.join(LOGOS_DIR, 'edward-conard-logo.png')
-    if os.path.exists(left_logo):
-        canvas.drawImage(
-            left_logo,
-            doc.leftMargin,
-            header_bottom,
-            width=2*inch,
-            height=header_height,
-            preserveAspectRatio=True,
-            mask='auto'
-        )
-    else:
-        logger.warning(f"Left logo not found: {left_logo}")
-        canvas.setFont('Arial-Bold', 12)
-        canvas.drawString(doc.leftMargin, header_bottom + 0.25*inch, "EDWARD CONARD")
-    
-    # Right logo - top-ten-nyt-best-seller-badge.png
-    right_logo = os.path.join(LOGOS_DIR, 'top-ten-nyt-best-seller-badge.png')
-    if os.path.exists(right_logo):
-        # Right logo is square, so use header_height for both dimensions
-        canvas.drawImage(
-            right_logo,
-            doc.width - header_height,
-            header_bottom,
-            width=header_height,
-            height=header_height,
-            preserveAspectRatio=True,
-            mask='auto'
-        )
-    else:
-        logger.warning(f"Right logo not found: {right_logo}")
-        canvas.setFont('Arial-Bold', 12)
-        canvas.drawString(doc.width - 2*inch, header_bottom + 0.25*inch, "TOP TEN NYT BESTSELLER")
-    
-    # Draw a line under the header
-    canvas.setStrokeColor(colors.grey)
-    canvas.setLineWidth(0.5)
-    canvas.line(doc.leftMargin, header_bottom - 0.1*inch, doc.width, header_bottom - 0.1*inch)
-    
-    canvas.restoreState()
-
-def create_pipeline(vector_store) -> IngestionPipeline:
-    """Create ingestion pipeline with specified settings"""
+def process_article(article: Article, vector_store) -> bool:
+    """Process a single article and add it to the vector store with memory-efficient pipeline"""
     try:
-        ensure_directories()
+        # Generate PDF
+        data_dir = os.path.join(STORAGE_PDFS_DIR, clean_filename(article.headline))
+        os.makedirs(data_dir, exist_ok=True)
+        pdf_path = os.path.join(data_dir, f"{clean_filename(article.headline)}.pdf")
         
-        return IngestionPipeline(
-            transformations=[
-                SentenceSplitter(
-                    chunk_size=CHUNK_SIZE,
-                    chunk_overlap=CHUNK_OVERLAP
-                ),
-                Settings.embed_model,
-            ],
-            vector_store=vector_store,
-            docstore_strategy="upserts"  # Ensure upserts strategy is used
-        )
-    except Exception as e:
-        logger.error(f"Error creating pipeline: {str(e)}")
-        raise
-
-def process_batch(pipeline: IngestionPipeline, docs: List[Document], current: int, total: int) -> List[Document]:
-    """Process a batch of documents with comprehensive logging"""
-    try:
-        logger.info(f"Processing batch {current}/{total}")
-        processed_docs = pipeline.run(docs)
-        logger.info(f"Successfully processed batch {current}/{total}")
-        return processed_docs
-    except Exception as e:
-        logger.error(f"Error processing batch {current}/{total}: {str(e)}")
-        return []
-
-def process_article_batch(articles: List[Article], vector_store) -> bool:
-    """Process a batch of articles and add them to the vector store"""
-    try:
-        total_articles = len(articles)
-        logger.info(f"Processing {total_articles} articles with memory management settings - Batch size: {MAX_BATCH_SIZE}, GC threshold: {GC_THRESHOLD}")
-        
-        # Create pipeline with vector store and sentence splitter
-        pipeline = create_pipeline(vector_store)
-        
-        successful_articles = 0
-        failed_articles = 0
-        node_count = 0
-        
-        for batch_start in range(0, total_articles, MAX_BATCH_SIZE):
-            batch_end = min(batch_start + MAX_BATCH_SIZE, total_articles)
-            batch = articles[batch_start:batch_end]
+        if not generate_pdf(article, pdf_path):
+            logger.error("Failed to generate PDF")
+            return False
             
-            for i, article in enumerate(batch, start=batch_start):
+        logger.info(f"Generated PDF for article: {article.headline}")
+        
+        try:
+            # Create document store
+            from llama_index.core.storage.docstore import SimpleDocumentStore
+            docstore = SimpleDocumentStore()
+            
+            # Load PDF content
+            file_config = FileLoaderConfig(data_dir=data_dir)  # Fixed: Pass as keyword argument
+            documents = get_file_documents(file_config)
+            
+            if not documents:
+                logger.warning("No documents found for article")
+                return False
+            
+            # Create ingestion pipeline
+            pipeline = IngestionPipeline(
+                transformations=[
+                    SentenceSplitter(
+                        chunk_size=Settings.chunk_size,
+                        chunk_overlap=Settings.chunk_overlap,
+                    ),
+                    Settings.embed_model,
+                ],
+                docstore=docstore,
+                docstore_strategy="upserts",
+                vector_store=vector_store,
+            )
+            
+            # Process documents in batches
+            all_nodes = []
+            node_count = 0
+            batch_size = 1000  # MAX_BATCH_SIZE from memory requirements
+            
+            for i in range(0, len(documents), batch_size):
+                doc_batch = documents[i:i + batch_size]
                 try:
-                    # Generate PDF
-                    pdf_path = os.path.join(STORAGE_PDFS_DIR, f"{clean_filename(article.headline)}.pdf")
+                    logger.info(f"Processing batch {i//batch_size + 1}/{(len(documents)-1)//batch_size + 1}")
+                    batch_nodes = pipeline.run(show_progress=True, documents=doc_batch)
+                    all_nodes.extend(batch_nodes)
+                    node_count += len(batch_nodes)
                     
-                    if generate_pdf(article, pdf_path):
-                        logger.info(f"Generated PDF for article {i+1}/{total_articles}: {article.headline}")
-                        
-                        try:
-                            # Get documents using get_file_documents with configurable chunk size
-                            config = FileLoaderConfig(
-                                data_dir=STORAGE_PDFS_DIR,
-                                chunk_size=CHUNK_SIZE,
-                                chunk_overlap=CHUNK_OVERLAP
-                            )
-                            docs = get_file_documents(config)
-                            
-                            if not docs:
-                                logger.warning(f"No documents found for article {i+1}")
-                                failed_articles += 1
-                                continue
-                            
-                            # Process documents and update node count
-                            processed_docs = process_batch(pipeline, docs, i+1, total_articles)
-                            if processed_docs:
-                                node_count += len(processed_docs)
-                                successful_articles += 1
-                            else:
-                                failed_articles += 1
-                                continue
-                            
-                            # Force garbage collection if needed
-                            if node_count >= GC_THRESHOLD:
-                                gc.collect()
-                                logger.info(f"Memory cleanup - Processed {node_count} nodes, forcing garbage collection")
-                                node_count = 0
-                            
-                        except Exception as e:
-                            logger.error(f"Error processing documents for article {i+1}: {str(e)}")
-                            failed_articles += 1
-                            continue
-                    else:
-                        logger.error(f"Failed to generate PDF for article {i+1}")
-                        failed_articles += 1
-                        continue
-                        
+                    # Periodic storage persistence and cleanup
+                    if node_count >= GC_THRESHOLD:
+                        gc.collect()
+                        logger.info(f"Memory cleanup - Processed {node_count} nodes")
+                        node_count = 0
                 except Exception as e:
-                    logger.error(f"Error processing article {i+1}: {str(e)}")
-                    failed_articles += 1
+                    logger.error(f"Error processing batch {i//batch_size + 1}: {str(e)}")
                     continue
-        
-        # Log final statistics
-        logger.info(f"Batch processing complete - Successful: {successful_articles}, Failed: {failed_articles}, Total: {total_articles}")
-        return True
-        
+            
+            if all_nodes:
+                logger.info(f"Successfully processed article with {len(all_nodes)} nodes")
+                return True
+            else:
+                logger.error("No nodes generated from article")
+                return False
+                
+        except Exception as e:
+            logger.error(f"Error in document processing pipeline: {str(e)}")
+            return False
+            
     except Exception as e:
-        logger.error(f"Error in process_article_batch: {str(e)}")
+        logger.error(f"Error processing article: {str(e)}")
         return False
-
-def cleanup_storage():
-    """Clean up vector store collections"""
-    try:
-        logger.info("Starting storage cleanup...")
-        
-        # Clean up Qdrant collections
-        vector_store = get_vector_store()
-        vector_store.delete_collection()
-        logger.info("Deleted vector store collections")
-        
-        # Ensure PDF storage directory exists
-        ensure_directories()
-        logger.info("Ensured PDF storage directory exists")
-        
-        return True
-    except Exception as e:
-        logger.error(f"Error during storage cleanup: {str(e)}")
-        return False
-
-@router.post("/reset")
-async def reset_storage():
-    """Reset vector store collections"""
-    try:
-        if cleanup_storage():
-            return {"message": "Successfully reset vector store"}
-        else:
-            raise HTTPException(status_code=500, detail="Failed to reset vector store")
-    except Exception as e:
-        logger.error(f"Error in reset_storage: {str(e)}")
-        raise HTTPException(status_code=500, detail=str(e))
 
 @router.post("/upload")
 async def upload_article_files(articles: List[Article]):
@@ -513,18 +336,24 @@ async def upload_article_files(articles: List[Article]):
         # Get vector store instance
         vector_store = get_vector_store()
         
-        # Process articles in batches
-        for batch_start in range(0, total_articles, MAX_BATCH_SIZE):
-            batch_end = min(batch_start + MAX_BATCH_SIZE, total_articles)
-            batch = articles[batch_start:batch_end]
-            
-            if not process_article_batch(batch, vector_store):
-                raise HTTPException(
-                    status_code=500,
-                    detail=f"Failed to process batch starting at {batch_start}"
-                )
+        successful_articles = 0
+        failed_articles = 0
         
-        return {"message": f"Successfully processed {total_articles} articles"}
+        for article in articles:
+            if process_article(article, vector_store):
+                successful_articles += 1
+            else:
+                failed_articles += 1
+        
+        # Log final statistics
+        logger.info(f"Processing complete - Successful: {successful_articles}, Failed: {failed_articles}, Total: {total_articles}")
+        
+        return ArticleUploadResponse(
+            message="Processing complete",
+            processed_count=successful_articles,
+            error_count=failed_articles,
+            pdf_paths=[os.path.join(STORAGE_PDFS_DIR, clean_filename(article.headline), f"{clean_filename(article.headline)}.pdf") for article in articles]
+        )
         
     except Exception as e:
         logger.error(f"Error in upload_article_files: {str(e)}")
@@ -542,125 +371,121 @@ def clean_filename(text: str) -> str:
 
 def generate_pdf(article: Article, output_path: str):
     """Generate a PDF with consistent formatting for an article."""
-    try:
-        # Ensure fonts are registered
-        if not register_fonts():
-            raise Exception("Required fonts are not available")
+    try:     
+        elements = []
+        # Create the PDF
         
-        # Ensure output directory exists
-        os.makedirs(os.path.dirname(output_path), exist_ok=True)
-        
-        # Create the PDF with proper margins
-        doc = BaseDocTemplate(
-            output_path,
-            pagesize=letter,
-            rightMargin=inch,
-            leftMargin=inch,
-            topMargin=1.5*inch,  # 1.5 inch top margin as specified
-            bottomMargin=inch
-        )
-        
-        # Create page template with header
-        frame = Frame(
-            doc.leftMargin,
-            doc.bottomMargin,
-            doc.width,
-            doc.height,
-            id='normal'
-        )
+        doc = BaseDocTemplate(output_path, pagesize=letter, topMargin=0.5 * inch, bottomMargin=0.5 * inch,
+                            leftMargin=0.5 * inch, rightMargin=0.5 * inch)
+
+        frame = Frame(0.5 * inch, 0.5 * inch, doc.width, doc.height, id='normal')
         template = PageTemplate(id='macro_roundup', frames=frame, onPage=add_header)
         doc.addPageTemplates([template])
+
+        elements.append(Spacer(1, 24))
+        elements.append(Paragraph(f"Macro Roundup Article", heading_style))
+        elements.append(Spacer(1, 12))
+
+        # Headline and summary
+        elements.append(Paragraph(f"<font color='black'>Headline:&nbsp;&nbsp;</font> {str(article.headline)}", subheading_style))
+        elements.append(Spacer(1, 12))
+
         
-        elements = []
+        # Links
+        if pd.notna(article.article_link):
+            elements.append(Paragraph(f"<b><font name='{all_subheading_style.fontName}' size='{all_subheading_style.fontSize}' color='{all_subheading_style.textColor}'>Article Link:</font></b>"
+                                f"&nbsp;&nbsp;"
+                                f"<u><font name='{normal_style.fontName}' size='{normal_style.fontSize}' color='{normal_style.textColor}'><a href=\"{article.article_link}\">{article.article_link}</a></font></u>", normal_style))
+            elements.append(Spacer(1, 12))
         
-        # Title section
-        elements.append(Spacer(1, 0.2 * inch))
-        elements.append(Paragraph(clean_html(article.headline), title_style))
-        elements.append(Spacer(1, 0.2 * inch))
-        
-        # Key Takeaway section
-        if article.tweet:
-            elements.append(Paragraph("Key Takeaway", heading_style))
-            elements.append(Spacer(1, 0.2 * inch))
-            elements.append(Paragraph(clean_html(article.tweet), tweet_style))
-            elements.append(Spacer(1, 0.2 * inch))
-        
-        # Article Details section
-        elements.append(Paragraph("Article Details", heading_style))
-        elements.append(Spacer(1, 0.2 * inch))
-        
-        # Publication details in a structured format
+        # Publication details
         pub_details = [
-            ['Author(s)', clean_html(article.authors)],
-            ['Publication', clean_html(article.publication)],
-            ['Publication Date', convert_date_format(article.publication_date)],
-            ['Source', clean_html(article.source) if article.source else ''],
-            ['Primary Topic', clean_html(article.primary_category_name)],
-            ['Topics', clean_html(', '.join(article.categories))]
+            ['Author(s)', article.authors],
+            ['Publication', article.publication],
+            ['Publication Date', convert_date_format(str(article.publication_date).split(" ")[0])],
         ]
-        
-        # Create table with proper styling
         pub_table = Table(pub_details, colWidths=[first_col_width, second_col_width])
-        pub_table.setStyle(details_table_style)
-        elements.append(pub_table)
-        elements.append(Spacer(1, 0.2 * inch))
-        
-        # Summary section
-        if article.summary:
-            elements.append(Paragraph("Summary", heading_style))
-            elements.append(Spacer(1, 0.2 * inch))
-            extracted_summary, extracted_related_articles = extract_related_article(article.summary)
-            elements.append(Paragraph(clean_html(extracted_summary), content_style))
-            elements.append(Spacer(1, 0.2 * inch))
-        
-        # Extended Excerpt section
-        if article.extended_excerpt:
-            elements.append(Paragraph("Extended Excerpt", heading_style))
-            elements.append(Spacer(1, 0.2 * inch))
-            elements.append(Paragraph(clean_html(article.extended_excerpt), content_style))
-            elements.append(Spacer(1, 0.2 * inch))
-        
-        # Related Articles section
-        related_articles = None
-        if extracted_related_articles:
-            related_articles = keep_only_anchor_tags(extracted_related_articles)
-        elif article.related_articles:
-            related_articles = "\n".join([
-                f"• <a href=\"{item['link']}\">{clean_html(item['title'])}</a>"
-                for item in article.related_articles
-            ])
-        
-        if related_articles:
-            elements.append(Paragraph("Related Articles", heading_style))
-            elements.append(Spacer(1, 0.2 * inch))
-            elements.append(Paragraph(related_articles, content_style))
-            elements.append(Spacer(1, 0.2 * inch))
-        
-        # Metadata section
-        elements.append(Paragraph("Additional Information", heading_style))
-        elements.append(Spacer(1, 0.2 * inch))
-        
-        metadata = []
-        if article.article_link:
-            metadata.append(f"Article URL: <a href=\"{article.article_link}\">{article.article_link}</a>")
-        if article.permalink:
-            metadata.append(f"Permalink: <a href=\"{article.permalink}\">{article.permalink}</a>")
-        if article.pdf_file_url:
-            metadata.append(f"PDF URL: <a href=\"{article.pdf_file_url}\">{article.pdf_file_url}</a>")
-        if article.featured_image_url:
-            metadata.append(f"Featured Image: <a href=\"{article.featured_image_url}\">{article.featured_image_url}</a>")
-        
-        for meta_item in metadata:
-            elements.append(Paragraph(meta_item, italic_style))
-            elements.append(Spacer(1, 0.1 * inch))
-        
+        pub_table.setStyle(TableStyle([
+            ('FONTNAME', (0, 0), (-1, -1), 'Arial'),
+            ('FONTSIZE', (0, 0), (-1, -1), 10),
+            ('VALIGN', (0, 0), (-1, -1), 'TOP'),
+            ('GRID', (0, 0), (-1, -1), 0.5, colors.grey),
+            ('BACKGROUND', (0, 0), (0, -1), colors.lightgrey),
+        ]))
+        # Create a KeepTogether flowable
+        pub_details_block = KeepTogether([
+            pub_table,
+            Spacer(1, 12),
+        ])
+
+        elements.append(pub_details_block)
+        #  Tweet text injection
+        tweet_texts = str(article.tweet)
+        elements.append(Paragraph(f"<b><font name='{all_subheading_style.fontName}' size='{all_subheading_style.fontSize}' color='{all_subheading_style.textColor}'>Tweet:</font></b>" 
+                                f"&nbsp;&nbsp;"
+                                f"<font name='{tweet_style.fontName}' size='{tweet_style.fontSize}' color='{tweet_style.textColor}'>{tweet_texts}</font>", tweet_style))
+        elements.append(Spacer(1, 12))
+
+        # Article Summary
+        extrated_summary, extracted_related_articles = extract_related_article(article.summary)
+        summary = clean_html(str(extrated_summary))
+        elements.append(Paragraph(f"<b><font name='{all_subheading_style.fontName}' size='{all_subheading_style.fontSize}' color='{all_subheading_style.textColor}'>Summary:</font></b>"
+                                f"&nbsp;&nbsp;"
+                                f"<font name='{normal_style.fontName}' size='{normal_style.fontSize}' color='{normal_style.textColor}'>{summary}</font>", normal_style))
+        elements.append(Spacer(1, 12))
+
+        related_article_data = extracted_related_articles if extracted_related_articles != None else " ".join([f"<a href={related_article['link']}>{related_article['title']}</a>" for related_article in article.related_articles])
+        # Related Articles
+        if pd.notna(related_article_data) and related_article_data.strip():
+            related_articles = keep_only_anchor_tags(related_article_data)
+            elements.append(Paragraph(f"<b><font name='{all_subheading_style.fontName}' size='{all_subheading_style.fontSize}' color='{all_subheading_style.textColor}'>Related Articles:</font></b>"
+                                f"&nbsp;&nbsp;"
+                        f"<font name='{normal_style.fontName}' size='{normal_style.fontSize}' color='{normal_style.textColor}'>{related_articles}</font>", normal_style))
+            
+            elements.append(Spacer(1, 12))
+
+        # Topics
+        if pd.notna(article.primary_category_name):
+            elements.append(Paragraph(f"<b><font name='{all_subheading_style.fontName}' size='{all_subheading_style.fontSize}' color='{all_subheading_style.textColor}'>Primary Topic:</font></b>"
+                                f"&nbsp;&nbsp;"
+                        f"<font name='{normal_style.fontName}' size='{normal_style.fontSize}' color='{normal_style.textColor}'>{article.primary_category_name}</font>", normal_style))
+            elements.append(Spacer(1, 12))
+
+        if len(article.categories) > 0:
+            elements.append(Paragraph(f"<b><font name='{all_subheading_style.fontName}' size='{all_subheading_style.fontSize}' color='{all_subheading_style.textColor}'>Topics:</font></b>"
+                                f"&nbsp;&nbsp;"
+                                    f"<font name='{normal_style.fontName}' size='{normal_style.fontSize}' color='{normal_style.textColor}'>{','.join(article.categories)}</font>", normal_style))
+            elements.append(Spacer(1, 12))
+
+        if pd.notna(article.pdf_file_url):
+            elements.append(Paragraph(f"<b><font name='{all_subheading_style.fontName}' size='{all_subheading_style.fontSize}' color='{all_subheading_style.textColor}'>PDF File URL:</font></b>"
+                                f"&nbsp;&nbsp;"
+                                    f"<u><font name='{normal_style.fontName}' size='{normal_style.fontSize}' color='{normal_style.textColor}'><a href=\"{article.pdf_file_url}\">'{article.pdf_file_url}</a></font></u>", normal_style))
+            elements.append(Spacer(1, 12))
+
+        # Links
+        if pd.notna(article.permalink):
+            elements.append(Paragraph(f"<b><font name='{all_subheading_style.fontName}' size='{all_subheading_style.fontSize}' color='{all_subheading_style.textColor}'>Permalink:</font></b>"
+                                f"&nbsp;&nbsp;"
+                                f"<u><font name='{normal_style.fontName}' size='{normal_style.fontSize}' color='{normal_style.textColor}'><a href=\"{article.permalink}\">{article.permalink}</a></font></u>", normal_style))
+            elements.append(Spacer(1, 12))
+
+        if pd.notna(article.featured_image_url):
+            # Featured Image
+            elements.append(Paragraph(f"<b><font name='{all_subheading_style.fontName}' size='{all_subheading_style.fontSize}' color='{all_subheading_style.textColor}'>Featured Image Link:</font></b>"
+                                f"&nbsp;&nbsp;"
+                        f"<font name='{normal_style.fontName}' size='{normal_style.fontSize}' color='{normal_style.textColor}'><a href=\"{article.featured_image_url}\">{article.featured_image_url}</a></font>", normal_style))
+            elements.append(Spacer(1, 12))
+
         # Build the PDF
         doc.build(elements)
-        logger.info(f"Successfully generated PDF: {output_path}")
+        # i = i + 1
+
+        get_logger().info(f"PDF created successfully: {output_path}")
         return True
         
     except Exception as e:
-        logger.error(f"Error generating PDF for article '{article.headline}': {str(e)}")
+        get_logger().error(f"Error generating PDF for article '{article.headline}': {str(e)}")
         return False
 
 def convert_date_format(date_str: str) -> str:
@@ -700,3 +525,61 @@ def extract_related_article(text: str) -> tuple[str, Optional[str]]:
         return text, None
         
     return parts[0].strip(), parts[1].strip()
+
+def cleanup_storage():
+    """Clean up vector store collections"""
+    try:
+        logger.info("Starting storage cleanup...")
+        
+        # Clean up Qdrant collections
+        vector_store = get_vector_store()
+        
+        try:
+            # Delete collection with proper cleanup
+            vector_store.delete_collection()
+            logger.info("Deleted vector store collection")
+            
+            # Reset collection initialization flag
+            vector_store._collection_initialized = False
+            
+            # Re-initialize collection with proper config
+            if ensure_vector_store_collection(vector_store):
+                logger.info("Re-initialized vector store collection")
+            else:
+                logger.warning("Failed to re-initialize vector store collection")
+                
+        except Exception as e:
+            logger.error(f"Error cleaning up vector store: {str(e)}")
+            return False
+        
+        # Clean up storage directories
+        try:
+            shutil.rmtree(STORAGE_PDFS_DIR)
+            logger.info("Cleaned up PDF storage directory")
+        except Exception as e:
+            logger.warning(f"Error cleaning up PDF directory: {str(e)}")
+        
+        # Ensure storage directories exist
+        ensure_directories()
+        logger.info("Re-created storage directories")
+        
+        # Force garbage collection
+        gc.collect()
+        logger.info("Performed final garbage collection")
+        
+        return True
+    except Exception as e:
+        logger.error(f"Error during storage cleanup: {str(e)}")
+        return False
+
+@router.post("/reset")
+async def reset_storage():
+    """Reset vector store collections"""
+    try:
+        if cleanup_storage():
+            return {"message": "Successfully reset vector store and cleaned up storage"}
+        else:
+            raise HTTPException(status_code=500, detail="Failed to reset vector store")
+    except Exception as e:
+        logger.error(f"Error in reset_storage: {str(e)}")
+        raise HTTPException(status_code=500, detail=str(e))
