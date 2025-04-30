@@ -134,7 +134,7 @@ async def remove_thread(
 ):    
     if "sub" in session:
         user_id = session["sub"]
-        thread = await thread_service.get_by_user_id(user_id)
+        thread = await thread_service.get_by_user_id_and_thread_id(uid=user_id, thread_id=thread_id)
 
         if thread is not None and thread.id == thread_id:
             await thread_service.delete(thread_id)

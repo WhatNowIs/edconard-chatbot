@@ -1,6 +1,7 @@
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel
-from typing import List, Any, Optional, Dict, Tuple
+import asyncio
+from typing import List, Any, Optional, Dict, Tuple, Union
 from fastapi import APIRouter, Depends, HTTPException, Request, status
 from llama_index.core.chat_engine.types import BaseChatEngine
 from llama_index.core.schema import NodeWithScore
@@ -79,6 +80,17 @@ class _Result(BaseModel):
     result: _Message
     nodes: List[_SourceNodes]
 
+class MacroRoundup(BaseModel):
+    headline: str
+    publisher: str
+    summary: str
+    authors: str
+
+class MacroRoundupList(BaseModel):
+    article: List[MacroRoundup]
+
+class MacroRoundupResponse(BaseModel):
+    related_articles: str
 
 async def parse_chat_data(data: _ChatData) -> Tuple[str, List[ChatMessage]]:
     # check preconditions and get last message
@@ -103,7 +115,54 @@ async def parse_chat_data(data: _ChatData) -> Tuple[str, List[ChatMessage]]:
     ]
     return last_message.content, messages
 
+@r.post("/search", response_model=Union[MacroRoundupResponse, List[MacroRoundupResponse]])
+async def search(
+    data: Union[MacroRoundup, MacroRoundupList],
+    chat_engine: BaseChatEngine = Depends(get_chat_engine),
+):
 
+    if isinstance(data, MacroRoundup):
+        query = f"""
+        Find related articles for the article with the following headline and summary.
+        
+        #Article Headline
+        {data.headline}
+        #Article Summary
+        {data.summary}
+        """
+        
+        response = await chat_engine.achat(query, chat_history=[])
+
+        return MacroRoundupResponse(
+            related_articles=response.response,
+        )
+    elif isinstance(data, MacroRoundupList):
+        # Prepare queries for each article
+        queries = [
+            f"""
+            Find related articles for the article with the following headline and summary.
+
+            #Article Headline
+            {article.headline}
+            #Article Summary
+            {article.summary}
+            """
+            for article in data.article
+        ]
+
+        # Run all chat_engine.achat() calls in parallel
+        responses = await asyncio.gather(
+            *[chat_engine.achat(query, chat_history=[]) for query in queries]
+        )
+    
+        # Process responses as needed (example: return a list of results)
+        return [
+            MacroRoundupResponse(
+                related_articles=response.response,
+            )
+            for response in responses
+        ]
+    
 @r.post("")
 async def chat(
     request: Request,
@@ -399,8 +458,6 @@ async def update_article(
         detail="Invalid session",
         headers={"WWW-Authenticate": "Bearer"},
     )
-
-
 
 # non-streaming endpoint - delete if not needed
 @r.get("/article")
