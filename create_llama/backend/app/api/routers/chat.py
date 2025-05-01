@@ -138,9 +138,18 @@ async def search(
         
         response = await chat_engine.achat(query, chat_history=[])
 
+        if not response.response:
+            raise HTTPException(status_code=500, detail="Empty response from chat engine")
+
+        try:
+            parsed = json.loads(response.response)
+        except json.JSONDecodeError as e:
+            raise HTTPException(status_code=500, detail=f"Invalid JSON response from chat engine: {str(e)}")
+
         return MacroRoundupResponse(
-            related_articles=[ResponseDataSchema(**article) for article in json.loads(response.response)],
+            related_articles=[ResponseDataSchema(**article) for article in parsed],
         )
+
     elif isinstance(data, list) and all(isinstance(item, MacroRoundup) for item in data):
         # Prepare queries for each article
         queries = [
@@ -160,14 +169,26 @@ async def search(
         responses = await asyncio.gather(
             *[chat_engine.achat(query, chat_history=[]) for query in queries]
         )
-    
-        # Process responses as needed (example: return a list of results)
-        return [
-            MacroRoundupResponse(
-                related_articles=[ResponseDataSchema(**article) for article in json.loads(response.response)],
+
+        results = []
+        for response in responses:
+            if not response.response:
+                raise HTTPException(status_code=500, detail="One of the responses from chat engine was empty")
+
+            try:
+                parsed = json.loads(response.response)
+            except json.JSONDecodeError as e:
+                raise HTTPException(status_code=500, detail=f"Invalid JSON in chat engine response: {str(e)}")
+
+            results.append(
+                MacroRoundupResponse(
+                    related_articles=[ResponseDataSchema(**article) for article in parsed],
+                )
             )
-            for response in responses
-        ]
+
+        return results
+
+
     
 @r.post("")
 async def chat(
