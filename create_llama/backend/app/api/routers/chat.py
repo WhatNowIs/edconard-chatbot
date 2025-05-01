@@ -141,7 +141,7 @@ async def search(
         return MacroRoundupResponse(
             related_articles=[ResponseDataSchema(**article) for article in json.loads(response.response)],
         )
-    elif isinstance(data, List[MacroRoundup]):
+    elif isinstance(data, list) and all(isinstance(item, MacroRoundup) for item in data):
         # Prepare queries for each article
         queries = [
             f"""
