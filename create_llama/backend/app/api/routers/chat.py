@@ -88,9 +88,6 @@ class MacroRoundup(BaseModel):
     summary: str
     authors: str
 
-class MacroRoundupList(BaseModel):
-    article: List[MacroRoundup]
-
 class ResponseDataSchema(BaseModel):
     headline: str
     permalink: str
@@ -124,13 +121,13 @@ async def parse_chat_data(data: _ChatData) -> Tuple[str, List[ChatMessage]]:
 
 @r.post("/search", response_model=Union[MacroRoundupResponse, List[MacroRoundupResponse]])
 async def search(
-    data: Union[MacroRoundup, MacroRoundupList],
+    data: Union[MacroRoundup, List[MacroRoundup]],
     chat_engine: BaseChatEngine = Depends(get_chat_engine),
 ):
 
     if isinstance(data, MacroRoundup):
         query = f"""
-        Given the following article headline and summary, retrieve at least 3 of the most semantically related articles from the database.
+        Given the following article headline and summary, retrieve the top 3 of the most semantically related articles from the database.
 
         Headline: {data.headline}
 
@@ -144,11 +141,11 @@ async def search(
         return MacroRoundupResponse(
             related_articles=[ResponseDataSchema(**article) for article in json.loads(response.response)],
         )
-    elif isinstance(data, MacroRoundupList):
+    elif isinstance(data, List[MacroRoundup]):
         # Prepare queries for each article
         queries = [
             f"""
-            Given the following article headline and summary, retrieve at least 3 of the most semantically related articles from the database.
+            Given the following article headline and summary, retrieve the top 3 of the most semantically related articles from the database.
 
             Headline: {article.headline}
 
@@ -156,7 +153,7 @@ async def search(
 
             {OUTPUT_FORMAT}
             """
-            for article in data.article
+            for article in data
         ]
 
         # Run all chat_engine.achat() calls in parallel
