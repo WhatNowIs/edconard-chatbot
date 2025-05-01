@@ -1,6 +1,7 @@
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 import asyncio
+import json
 from typing import List, Any, Optional, Dict, Tuple, Union
 from fastapi import APIRouter, Depends, HTTPException, Request, status
 from llama_index.core.chat_engine.types import BaseChatEngine
@@ -19,6 +20,7 @@ from src.core.services.message import MessageService
 from src.core.services.thread import ThreadService
 from src.core.services.user import UserService 
 from redis.asyncio.client import Redis
+from create_llama.backend.app.utils.prompt import OUTPUT_FORMAT
 from create_llama.backend.app.utils.helpers import Article, get_document_by_url
 
 from src.schema import _UpdateChat, ChatMode, ResponseMessage, SetArticleData
@@ -89,8 +91,13 @@ class MacroRoundup(BaseModel):
 class MacroRoundupList(BaseModel):
     article: List[MacroRoundup]
 
+class ResponseDataSchema(BaseModel):
+    headline: str
+    permalink: str
+    rationale: str
+
 class MacroRoundupResponse(BaseModel):
-    related_articles: str
+    related_articles: List[ResponseDataSchema]
 
 async def parse_chat_data(data: _ChatData) -> Tuple[str, List[ChatMessage]]:
     # check preconditions and get last message
@@ -123,29 +130,31 @@ async def search(
 
     if isinstance(data, MacroRoundup):
         query = f"""
-        Find related articles for the article with the following headline and summary.
-        
-        #Article Headline
-        {data.headline}
-        #Article Summary
-        {data.summary}
+        Given the following article headline and summary, retrieve at least 3 of the most semantically related articles from the database.
+
+        Headline: {data.headline}
+
+        Summary: {data.summary}
+
+        {OUTPUT_FORMAT}
         """
         
         response = await chat_engine.achat(query, chat_history=[])
 
         return MacroRoundupResponse(
-            related_articles=response.response,
+            related_articles=[ResponseDataSchema(**article) for article in json.loads(response.response)],
         )
     elif isinstance(data, MacroRoundupList):
         # Prepare queries for each article
         queries = [
             f"""
-            Find related articles for the article with the following headline and summary.
+            Given the following article headline and summary, retrieve at least 3 of the most semantically related articles from the database.
 
-            #Article Headline
-            {article.headline}
-            #Article Summary
-            {article.summary}
+            Headline: {article.headline}
+
+            Summary: {article.summary}
+
+            {OUTPUT_FORMAT}
             """
             for article in data.article
         ]
@@ -158,7 +167,7 @@ async def search(
         # Process responses as needed (example: return a list of results)
         return [
             MacroRoundupResponse(
-                related_articles=response.response,
+                related_articles=[ResponseDataSchema(**article) for article in json.loads(response.response)],
             )
             for response in responses
         ]
