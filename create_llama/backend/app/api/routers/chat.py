@@ -144,8 +144,7 @@ async def search(
         try:
             parsed = json.loads(response.response)
         except json.JSONDecodeError as e:
-            raise HTTPException(status_code=500, detail=f"Invalid JSON response from chat engine: {str(e)}")
-
+            parsed = []
         return MacroRoundupResponse(
             related_articles=[ResponseDataSchema(**article) for article in parsed],
         )
@@ -178,13 +177,13 @@ async def search(
             try:
                 parsed = json.loads(response.response)
             except json.JSONDecodeError as e:
-                raise HTTPException(status_code=500, detail=f"Invalid JSON in chat engine response: {str(e)}")
+                parsed = []
 
-            results.append(
-                MacroRoundupResponse(
-                    related_articles=[ResponseDataSchema(**article) for article in parsed],
-                )
+        results.append(
+            MacroRoundupResponse(
+                related_articles=[ResponseDataSchema(**article) for article in parsed],
             )
+        )
 
         return results
 
