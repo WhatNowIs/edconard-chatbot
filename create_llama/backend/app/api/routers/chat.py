@@ -179,11 +179,11 @@ async def search(
             except json.JSONDecodeError as e:
                 parsed = []
 
-        results.append(
-            MacroRoundupResponse(
-                related_articles=[ResponseDataSchema(**article) for article in parsed],
+            results.append(
+                MacroRoundupResponse(
+                    related_articles=[ResponseDataSchema(**article) for article in parsed],
+                )
             )
-        )
 
         return results
 
