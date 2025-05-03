@@ -297,6 +297,7 @@ def macro_roundup_preprocessor(input_dir: str, output_dir: str):
             'pdf_file_url', 'is_ai_generated_summary', 'comments', 'extended_excerpt',
             'education', 'agreement_sentiment', 'political_perspective', 'timelessness', 'trustworthiness'
         ]
+
         df = df[columns_to_extract]
 
         # i = 0
