@@ -1,19 +1,3 @@
-<p align="center"><img alt="Logo - RAGapp" src="docs/logo.png"></p>
-
-<p align="center"><strong>The easiest way to use Agentic RAG in any enterprise.</strong></p>
-
-<p align="center">As simple to configure as <a href="https://openai.com/index/introducing-gpts" target="_blank">OpenAI's custom GPTs</a>, but deployable in your own cloud infrastructure using Docker. Built using <a href="https://github.com/run-llama/llama_index">LlamaIndex</a>.</p>
-
-<p align="center">
-  <a href="#get-started"><strong>Get Started</strong></a> ·
-  <a href="#endpoints"><strong>Endpoints</strong></a> ·
-  <a href="#deployment"><strong>Deployment</strong></a> ·
-  <a href="#contact"><strong>Contact</strong></a> 
-</p>
-
-<br/>
-<img alt="Screenshot" src="docs/screenshot.png">
-
 ## Get Started
 
 To run, start a docker container with our image:
