@@ -16,8 +16,6 @@ You can use hosted AI models from OpenAI or Gemini, and local models using [Olla
 
 The docker container exposes the following endpoints:
 
-- Admin UI: http://localhost:8000/admin
-- Chat UI: http://localhost:8000
 - API: http://localhost:8000/docs
 
 > _Note_: The Chat UI and API are only functional if the RAGapp is configured.
